@@ -4,6 +4,7 @@
  "hero": "GAR_B_car",
  "materials": [
   "plaster_charcoal",
+  "microcement_dark",
   "ceiling_black",
   "walnut_wardrobe",
   "cabinet_walnut_low",
@@ -11,6 +12,7 @@
   "led_line",
   "plaster_white",
   "plaster_greige",
+  "oak_floor",
   "walnut_door"
  ],
  "car": false,

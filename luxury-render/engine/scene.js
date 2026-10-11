@@ -352,7 +352,7 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   out.guide = r1.domElement.toDataURL('image/png');
 
   // 2. line pass (black structural + furniture edges, occluded)
-  const white = new THREE.MeshBasicMaterial({ color: 0xffffff, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 });
+  const white = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 });
   const lineGroup = new THREE.Group();
   const idLines = new THREE.Group();
   const ids = [...new Set(reg.map(r => r.id))];
@@ -383,21 +383,22 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   scene.remove(idLines);
 
   // 4. surface-ID pass (flat colour per element) -> visibility table
-  for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(idIndex.get(r.id)) });
+  for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(idIndex.get(r.id)), side: THREE.DoubleSide });
   // exterior hidden; glass is transparent in reality, so it must not occlude what is behind it
   for (const r of reg) if (r.kind === 'exterior' || r.mesh.userData.glass) r.mesh.visible = false;
   r3.render(scene, cam); out.surface_ids = r3.domElement.toDataURL('image/png');
 
   // 4b. material-ID pass -> which locked materials this camera sees
   const mats = [...new Set(reg.map(r => r.mesh.userData.mat || 'unknown'))];
-  for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(mats.indexOf(r.mesh.userData.mat || 'unknown') + 1) });
+  for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(mats.indexOf(r.mesh.userData.mat || 'unknown') + 1), side: THREE.DoubleSide });
   r3.render(scene, cam); out.mat_ids = r3.domElement.toDataURL('image/png');
   out.mat_legend = mats.map((m, i) => { const c = idColor(i + 1); return { mat: m, rgb: [c.r, c.g, c.b].map(v => Math.round(v * 255)) }; });
 
   // 5. view-space normals + 6. linear depth (24-bit) -> true geometric edges in Python
-  for (const r of reg) r.mesh.material = new THREE.MeshNormalMaterial();
+  for (const r of reg) r.mesh.material = new THREE.MeshNormalMaterial({ side: THREE.DoubleSide });
   r3.render(scene, cam); out.normals = r3.domElement.toDataURL('image/png');
   const depthMat = new THREE.ShaderMaterial({
+    side: THREE.DoubleSide,
     vertexShader: 'varying float vD; void main(){ vec4 mv = modelViewMatrix*vec4(position,1.0); vD = -mv.z; gl_Position = projectionMatrix*mv; }',
     fragmentShader: 'varying float vD; void main(){ float d = clamp(vD/8000.0,0.0,0.99999); vec3 enc = fract(d*vec3(1.0,255.0,65025.0)); enc -= enc.yzz*vec3(1.0/255.0,1.0/255.0,0.0); gl_FragColor = vec4(enc,1.0); }',
   });

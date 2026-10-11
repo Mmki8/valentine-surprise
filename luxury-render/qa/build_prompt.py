@@ -130,7 +130,7 @@ def main(plan_dir, cam_full):
         "coral, yellow = lemons); add no new objects.\n"
         f"Time of day: {g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
         f"Exterior: {g['exterior']}\n"
-        + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") else "") +
+        + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"] == "R_garage" and not car_on) else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."
     )

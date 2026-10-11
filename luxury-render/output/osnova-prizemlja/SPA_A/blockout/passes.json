@@ -3611,9 +3611,9 @@
    ]
   },
   {
-   "id": "D_g_art",
-   "kind": "decor",
-   "mat": "photo_car_bw",
+   "id": "D_g_step_led0",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     156,
     38,
@@ -3621,7 +3621,7 @@
    ]
   },
   {
-   "id": "D_g_step_led0",
+   "id": "D_g_step_led1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -3631,7 +3631,7 @@
    ]
   },
   {
-   "id": "D_g_step_led1",
+   "id": "D_g_step_led2",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -3641,9 +3641,9 @@
    ]
   },
   {
-   "id": "D_g_step_led2",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "X_lawn0",
+   "kind": "exterior",
+   "mat": "lawn",
    "rgb": [
     212,
     17,
@@ -3651,7 +3651,7 @@
    ]
   },
   {
-   "id": "X_lawn0",
+   "id": "X_lawn1",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -3661,7 +3661,7 @@
    ]
   },
   {
-   "id": "X_lawn1",
+   "id": "X_lawn2",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -3671,7 +3671,7 @@
    ]
   },
   {
-   "id": "X_lawn2",
+   "id": "X_lawn3",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -3681,9 +3681,9 @@
    ]
   },
   {
-   "id": "X_lawn3",
+   "id": "X_hedge_s",
    "kind": "exterior",
-   "mat": "lawn",
+   "mat": "hedge",
    "rgb": [
     40,
     189,
@@ -3691,7 +3691,7 @@
    ]
   },
   {
-   "id": "X_hedge_s",
+   "id": "X_hedge_e",
    "kind": "exterior",
    "mat": "hedge",
    "rgb": [
@@ -3701,9 +3701,9 @@
    ]
   },
   {
-   "id": "X_hedge_e",
+   "id": "X_tree_trunk0",
    "kind": "exterior",
-   "mat": "hedge",
+   "mat": "olive_trunk",
    "rgb": [
     117,
     166,
@@ -3711,9 +3711,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk0",
+   "id": "X_tree_crown0",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     191,
     226,
@@ -3721,9 +3721,9 @@
    ]
   },
   {
-   "id": "X_tree_crown0",
+   "id": "X_tree_trunk1",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     204,
     6,
@@ -3731,9 +3731,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk1",
+   "id": "X_tree_crown1",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     31,
     147,
@@ -3741,9 +3741,9 @@
    ]
   },
   {
-   "id": "X_tree_crown1",
+   "id": "X_tree_trunk2",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     242,
     140,
@@ -3751,9 +3751,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk2",
+   "id": "X_tree_crown2",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     82,
     77,
@@ -3761,9 +3761,9 @@
    ]
   },
   {
-   "id": "X_tree_crown2",
+   "id": "X_tree_trunk3",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     73,
     201,
@@ -3771,23 +3771,13 @@
    ]
   },
   {
-   "id": "X_tree_trunk3",
-   "kind": "exterior",
-   "mat": "olive_trunk",
-   "rgb": [
-    174,
-    4,
-    97
-   ]
-  },
-  {
    "id": "X_tree_crown3",
    "kind": "exterior",
    "mat": "olive_foliage",
    "rgb": [
-    108,
-    205,
-    224
+    174,
+    4,
+    97
    ]
   }
  ],
@@ -4353,19 +4343,11 @@
    ]
   },
   {
-   "mat": "photo_car_bw",
+   "mat": "hedge",
    "rgb": [
     201,
     29,
     152
-   ]
-  },
-  {
-   "mat": "hedge",
-   "rgb": [
-    4,
-    174,
-    172
    ]
   }
  ]
