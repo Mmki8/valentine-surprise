@@ -25,12 +25,12 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_70089946-bbe7-4f07-bfd5-59555b8aa115.png"
   },
   "BATH1_A": {
-   "job_id": "aace506b-b78f-468b-b6df-15ca89980409",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_aace506b-b78f-468b-b6df-15ca89980409.png"
+   "job_id": "e7497bb1-b7a5-4cf5-84e4-b39aab817933",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_e7497bb1-b7a5-4cf5-84e4-b39aab817933.png"
   },
   "BATH1_B": {
-   "job_id": "0a9b189b-3768-44f0-9295-898a387c248a",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_0a9b189b-3768-44f0-9295-898a387c248a.png"
+   "job_id": "993f1beb-b0c0-4c93-b53d-6ee104010ab4",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_993f1beb-b0c0-4c93-b53d-6ee104010ab4.png"
   },
   "B2_A": {
    "job_id": "ee569d57-1fcc-466a-bda5-0f982877ad76",
@@ -41,8 +41,8 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_7331a191-3d78-4cd4-8cee-f88a5db80810.png"
   },
   "PODL_A": {
-   "job_id": "82e73b81-ffee-45fc-93b5-4b646fe1ae24",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_193458_82e73b81-ffee-45fc-93b5-4b646fe1ae24.png"
+   "job_id": "ecded4ce-8c98-4329-acf1-41bc7e64291f",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_ecded4ce-8c98-4329-acf1-41bc7e64291f.png"
   },
   "B3_A": {
    "job_id": "967f4ab5-bb8e-4ebf-9adc-2a3078fb5915",
@@ -53,8 +53,8 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_e956ae38-9570-45f9-b0da-d7f795141135.png"
   },
   "PODR_A": {
-   "job_id": "df4aada8-fd0b-448e-adbc-13288d1f5bcd",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_df4aada8-fd0b-448e-adbc-13288d1f5bcd.png"
+   "job_id": "17f52468-15f2-4d3e-a2c7-28f311dc7967",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202611_17f52468-15f2-4d3e-a2c7-28f311dc7967.png"
   },
   "CORR_A": {
    "job_id": "e2ec9292-f730-4316-8a71-78f2aabf5a12",
@@ -69,5 +69,35 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194416_f2edfc67-e0f4-42e2-b0d3-abd8613f3422.png"
   }
  },
- "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/69a9d205-8f94-484a-8ca6-25f9e1370639.zip"
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/fe068ce7-6500-4f01-b656-7c8eeb587c25.zip",
+ "v2_bathrooms": {
+  "client": "bathroom cameras too tight; bathroom 1 rough slate too dominant - use it only as a detail",
+  "changes": [
+   "wide corner views (hfov 102) for bathroom 1, ultra-wide doorway views (hfov 116) for the pods - every fixture of each bathroom in frame",
+   "bathroom 1: warm greige honed limestone walls + floor, white ceiling, clear glass; rough slate only as one feature panel behind the ring-mirror vanity"
+  ],
+  "rejected": [
+   "PODR_A wide #2 (drift 0.059, structure 0.25)",
+   "PODR_A wide #4 (structure 0.445)"
+  ],
+  "final": {
+   "BATH1_A": {
+    "job_id": "e7497bb1-b7a5-4cf5-84e4-b39aab817933",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_e7497bb1-b7a5-4cf5-84e4-b39aab817933.png"
+   },
+   "BATH1_B": {
+    "job_id": "993f1beb-b0c0-4c93-b53d-6ee104010ab4",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_993f1beb-b0c0-4c93-b53d-6ee104010ab4.png"
+   },
+   "PODL_A": {
+    "job_id": "ecded4ce-8c98-4329-acf1-41bc7e64291f",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202204_ecded4ce-8c98-4329-acf1-41bc7e64291f.png"
+   },
+   "PODR_A": {
+    "job_id": "17f52468-15f2-4d3e-a2c7-28f311dc7967",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_202611_17f52468-15f2-4d3e-a2c7-28f311dc7967.png"
+   }
+  },
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/fe068ce7-6500-4f01-b656-7c8eeb587c25.zip"
+ }
 }
