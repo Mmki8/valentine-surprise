@@ -19,7 +19,7 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAX_DCHROMA = 14.0      # ~ clearly different colour / material
-MAX_DL = 32.0           # very loose: viewpoints legitimately differ in brightness
+MAX_DL = 40.0           # very loose: viewpoints legitimately differ in brightness (sun vs shade side)
 MIN_PX = 1500
 IGNORE = {"glass", "led_line", "reveal_dark", "groove_dark", "cable_black", "unknown", "lawn", "hedge",
           "crystal_ring", "water", "mirror_backlit", "black_metal"}
@@ -53,7 +53,10 @@ def stats(base, att):
         if n < MIN_PX:
             continue
         px = lab[m > 0]
-        out[l["mat"]] = dict(px=n, L=float(np.median(px[:, 0])), a=float(np.median(px[:, 1])), b=float(np.median(px[:, 2])))
+        # compare the material's mid-tones only: direct sun patches and deep shadow are lighting, not material
+        lo, hi = np.percentile(px[:, 0], [20, 60])
+        mid = px[(px[:, 0] >= lo) & (px[:, 0] <= hi)]
+        out[l["mat"]] = dict(px=n, L=float(np.median(mid[:, 0])), a=float(np.median(mid[:, 1])), b=float(np.median(mid[:, 2])))
     return out
 
 
