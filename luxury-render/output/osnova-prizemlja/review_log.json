@@ -1,0 +1,284 @@
+{
+ "plan": "osnova-prizemlja",
+ "model_final": "gpt_image_2_5 (quality high, 2k, 16:9), retexture recipe, single image input = guide_lined.png",
+ "gates": {
+  "auto": "qa/geometry_check.py: struct>=0.45 after uniform alignment, per-element recall, framing shift<=6%, zoom<=4.5% (GATES at the top of the file; LIV_B attempts before 'prod' were scored against the earlier, stricter gate)",
+  "vision": "Claude visual review vs blockout + checklist.json: openings (no extra/missing), furniture counts & orientation, room semantics, car orientation, light direction"
+ },
+ "attempts": [
+  {
+   "camera": "LIV_B",
+   "round": "bakeoff",
+   "job_id": "b4601065-1f67-4123-b4ce-9a089aa34fc2",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_123035_b4601065-1f67-4123-b4ce-9a089aa34fc2.png",
+   "auto_struct": 0.16,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "nano_banana: mirrored L-sofa, invented door + extra armchairs"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "bakeoff",
+   "job_id": "312102cc-3cb3-4c51-9535-2fe824c64768",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_123035_312102cc-3cb3-4c51-9535-2fe824c64768.png",
+   "auto_struct": 0.2,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "gpt_image_2_5 design-brief prompt: double height exaggerated, gallery shifted ~5%"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "bakeoff",
+   "job_id": "971fbf11-1e58-41c9-9120-98c2abac94a8",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_123035_971fbf11-1e58-41c9-9120-98c2abac94a8.png",
+   "auto_struct": 0.13,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "flux_3: invented two windows"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "r2",
+   "job_id": "864f265f-a66d-486c-9270-5f41e67af21d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_124826_864f265f-a66d-486c-9270-5f41e67af21d.png",
+   "auto_struct": 0.33,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "guide_lined + design brief: still drifts"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "r2",
+   "job_id": "3ab9683e-c803-4782-a012-e9e3004449b0",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_124827_3ab9683e-c803-4782-a012-e9e3004449b0.png",
+   "auto_struct": 0.18,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "guide + separate line drawing: worse"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "r2",
+   "job_id": "f1943952-6240-4f79-a02b-ec5e375a87d0",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_124826_f1943952-6240-4f79-a02b-ec5e375a87d0.png",
+   "auto_struct": 0.81,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "RETEXTURE recipe: geometry perfect, but a light leak (blockout bug) became a fake doorway -> fixed opening overlap"
+  },
+  {
+   "camera": "LIV_A",
+   "round": "prod",
+   "job_id": "bf639870-bb57-4bd5-94be-3664c7cc046b",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125618_bf639870-bb57-4bd5-94be-3664c7cc046b.png",
+   "auto_struct": 0.85,
+   "auto_pass": false,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "possible door on bronze wall"
+  },
+  {
+   "camera": "LIV_B",
+   "round": "prod",
+   "job_id": "bb6ee13d-1b47-4496-a8d9-806792ebf178",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125620_bb6ee13d-1b47-4496-a8d9-806792ebf178.png",
+   "auto_struct": 0.43,
+   "auto_pass": false,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "all pieces present; armchair partly cropped lowers auto score"
+  },
+  {
+   "camera": "KIT_A",
+   "round": "prod",
+   "job_id": "c3d45344-f244-4aba-9397-73b264487169",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_c3d45344-f244-4aba-9397-73b264487169.png",
+   "auto_struct": 0.8,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "KIT_B",
+   "round": "prod",
+   "job_id": "01a47f2c-7ef0-4af9-8b61-8a943641daab",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_01a47f2c-7ef0-4af9-8b61-8a943641daab.png",
+   "auto_struct": 0.89,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "DIN_A",
+   "round": "prod",
+   "job_id": "2566d371-eb38-4864-9644-230f178b1545",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125618_2566d371-eb38-4864-9644-230f178b1545.png",
+   "auto_struct": 0.85,
+   "auto_pass": true,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "invented walnut door on solid wall right of double door"
+  },
+  {
+   "camera": "SPA_A",
+   "round": "prod",
+   "job_id": "83e3e3d3-8438-4ab9-95f0-3d76cd4aa140",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125618_83e3e3d3-8438-4ab9-95f0-3d76cd4aa140.png",
+   "auto_struct": 0.95,
+   "auto_pass": true,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "sauna rendered as a shower"
+  },
+  {
+   "camera": "SPA_B",
+   "round": "prod",
+   "job_id": "e0e506b1-8668-403e-a032-75958d5d8d67",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_e0e506b1-8668-403e-a032-75958d5d8d67.png",
+   "auto_struct": 0.92,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "WC_A",
+   "round": "prod",
+   "job_id": "191c1426-488c-4564-97e2-a90630a35099",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125617_191c1426-488c-4564-97e2-a90630a35099.png",
+   "auto_struct": 0.91,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "GAR_A_car",
+   "round": "prod",
+   "job_id": "8093e313-00a5-467d-8ac9-ed13e903b118",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125617_8093e313-00a5-467d-8ac9-ed13e903b118.png",
+   "auto_struct": 0.55,
+   "auto_pass": true,
+   "vision": "FAIL",
+   "status": "rejected",
+   "note": "car parked backwards (plan: nose-in)"
+  },
+  {
+   "camera": "GAR_A_empty",
+   "round": "prod",
+   "job_id": "63e8a385-e153-4e37-921b-80d051c121f5",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125618_63e8a385-e153-4e37-921b-80d051c121f5.png",
+   "auto_struct": 1.0,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "GAR_B_car",
+   "round": "prod",
+   "job_id": "62a238cc-f246-4e64-ace0-6517539808de",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125620_62a238cc-f246-4e64-ace0-6517539808de.png",
+   "auto_struct": 0.68,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "rear 3/4, correct orientation"
+  },
+  {
+   "camera": "GAR_B_empty",
+   "round": "prod",
+   "job_id": "9a99bd96-ef5a-4937-8ca9-1670703d034e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_9a99bd96-ef5a-4937-8ca9-1670703d034e.png",
+   "auto_struct": 0.53,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": ""
+  },
+  {
+   "camera": "HALL_A",
+   "round": "prod",
+   "job_id": "93f971af-2f70-4391-9df1-dbc41d09325f",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125628_93f971af-2f70-4391-9df1-dbc41d09325f.png",
+   "auto_struct": 0.77,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "stair tread recall low on one step (floating treads), structure correct"
+  },
+  {
+   "camera": "LIV_A",
+   "round": "fix1",
+   "job_id": "41e9c166-440e-4154-9235-d93670972fdb",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131644_41e9c166-440e-4154-9235-d93670972fdb.png",
+   "auto_struct": 0.87,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "bronze wall solid"
+  },
+  {
+   "camera": "DIN_A",
+   "round": "fix1",
+   "job_id": "4d502709-b3b9-4aed-ba57-a7612a5ce902",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131645_4d502709-b3b9-4aed-ba57-a7612a5ce902.png",
+   "auto_struct": 0.88,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "wall right of double door plain"
+  },
+  {
+   "camera": "SPA_A",
+   "round": "fix1",
+   "job_id": "3d7cff54-2984-4f74-a2c9-b2460a4a7434",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131643_3d7cff54-2984-4f74-a2c9-b2460a4a7434.png",
+   "auto_struct": 0.86,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "sauna timber"
+  },
+  {
+   "camera": "GAR_A_car",
+   "round": "fix1",
+   "job_id": "64dac6a8-4b8a-4158-a65c-f6f48c77eb31",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131647_64dac6a8-4b8a-4158-a65c-f6f48c77eb31.png",
+   "auto_struct": 0.48,
+   "auto_pass": true,
+   "vision": "PASS",
+   "status": "FINAL",
+   "note": "G 63 nose-in, grille to camera"
+  }
+ ],
+ "final": {
+  "LIV_B": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125620_bb6ee13d-1b47-4496-a8d9-806792ebf178.png",
+  "KIT_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_c3d45344-f244-4aba-9397-73b264487169.png",
+  "KIT_B": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_01a47f2c-7ef0-4af9-8b61-8a943641daab.png",
+  "SPA_B": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_e0e506b1-8668-403e-a032-75958d5d8d67.png",
+  "WC_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125617_191c1426-488c-4564-97e2-a90630a35099.png",
+  "GAR_A_empty": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125618_63e8a385-e153-4e37-921b-80d051c121f5.png",
+  "GAR_B_car": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125620_62a238cc-f246-4e64-ace0-6517539808de.png",
+  "GAR_B_empty": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125619_9a99bd96-ef5a-4937-8ca9-1670703d034e.png",
+  "HALL_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_125628_93f971af-2f70-4391-9df1-dbc41d09325f.png",
+  "LIV_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131644_41e9c166-440e-4154-9235-d93670972fdb.png",
+  "DIN_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131645_4d502709-b3b9-4aed-ba57-a7612a5ce902.png",
+  "SPA_A": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131643_3d7cff54-2984-4f74-a2c9-b2460a4a7434.png",
+  "GAR_A_car": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_131647_64dac6a8-4b8a-4158-a65c-f6f48c77eb31.png"
+ },
+ "stats": {
+  "generations": 23,
+  "final": 13,
+  "rejected_by_auto_only": 0,
+  "rejected_by_vision_although_auto_passed": 3
+ }
+}
