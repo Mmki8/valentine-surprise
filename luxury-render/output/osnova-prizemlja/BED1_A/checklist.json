@@ -1,20 +1,25 @@
 {
  "camera": "BED1_A",
  "room": "U_R_bed1",
- "hero": "BED3_A",
+ "hero": null,
+ "mood": "mood_bed_cove_slats.jpg",
  "materials": [
-  "plaster_white",
-  "walnut_panel",
-  "plaster_greige",
+  "plaster_cove_white",
+  "oak_panel_dark",
   "sheer_linen",
-  "bed_linen",
-  "headboard_boucle",
-  "throw_cognac",
-  "pillow_white",
+  "headboard_tufted_cream",
+  "bedding_olive",
+  "throw_chevron",
+  "pillow_cream",
   "walnut_console",
   "bronze_frame",
-  "oak_floor",
-  "pendant_glass",
+  "walnut_floor_dark",
+  "led_line",
+  "ficus_tree",
+  "stone_pot",
+  "pendant_black_cyl",
+  "slat_screen_black",
+  "ficus_trunk",
   "tv_black",
   "cable_black"
  ],
@@ -49,16 +54,16 @@
    "note": null
   },
   {
-   "id": "U_F_bed1_tv",
-   "name": "TV",
-   "where": "left",
+   "id": "U_F_bed1_ns2",
+   "name": "nightstand",
+   "where": "centre",
    "share": 0.002,
    "note": null
   },
   {
-   "id": "U_F_bed1_ns2",
-   "name": "nightstand",
-   "where": "centre",
+   "id": "U_F_bed1_tv",
+   "name": "TV",
+   "where": "left",
    "share": 0.002,
    "note": null
   }

@@ -2,16 +2,19 @@
  "camera": "BATH2_A",
  "room": "U_R_bath2",
  "hero": null,
+ "mood": "mood_bath_dark_ring.jpg",
  "materials": [
-  "stone_dark",
-  "mirror_backlit",
-  "vanity_stone",
-  "shower_stone",
-  "walnut_slats_dark",
-  "toilet_black",
+  "slate_rough",
+  "vanity_dark_stone",
+  "mirror_round",
+  "vanity_walnut_drawer",
   "bronze_frame",
-  "stone_dark_floor",
-  "plaster_greige"
+  "toilet_white",
+  "niche_lit",
+  "ring_led",
+  "black_metal",
+  "ceramic_dark",
+  "marble_grey_floor"
  ],
  "car": null,
  "openings": [
@@ -19,35 +22,35 @@
    "id": "U_O_bath2_win",
    "name": "window",
    "where": "centre",
-   "share": 0.009,
+   "share": 0.018,
    "note": "bathroom 2 north window"
   }
  ],
  "furniture_counts": {
   "vanity": 1,
-  "shower": 1,
-  "toilet": 1
+  "toilet": 1,
+  "shower": 1
  },
  "items": [
   {
    "id": "U_F_bath2_vanity",
    "name": "floating vanity",
    "where": "right",
-   "share": 0.099,
-   "note": null
-  },
-  {
-   "id": "U_F_bath2_shower",
-   "name": "walk-in shower",
-   "where": "centre",
-   "share": 0.046,
+   "share": 0.117,
    "note": null
   },
   {
    "id": "U_F_bath2_wc",
    "name": "wall-hung toilet",
    "where": "centre",
-   "share": 0.029,
+   "share": 0.018,
+   "note": null
+  },
+  {
+   "id": "U_F_bath2_shower",
+   "name": "walk-in shower",
+   "where": "left",
+   "share": 0.002,
    "note": null
   }
  ],

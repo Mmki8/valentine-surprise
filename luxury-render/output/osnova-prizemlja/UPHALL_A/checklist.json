@@ -1,0 +1,55 @@
+{
+ "camera": "UPHALL_A",
+ "room": "U_R_hall",
+ "hero": "HALL_A",
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_battens",
+  "plaster_white",
+  "art_relief",
+  "oak_floor",
+  "walnut_slats",
+  "walnut_door",
+  "bronze_frame",
+  "led_line",
+  "pendant_bronze",
+  "box_slats"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "U_O_bed2_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.017,
+   "note": null
+  },
+  {
+   "id": "O_entrance",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.007,
+   "note": "MAIN ENTRANCE into stair hall"
+  },
+  {
+   "id": "U_O_entry_win",
+   "name": "window",
+   "where": "centre",
+   "share": 0.004,
+   "note": "tall window lighting the double-height entry"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

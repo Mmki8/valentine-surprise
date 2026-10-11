@@ -262,18 +262,19 @@ export function buildScene(plan, opts = {}, ds) {
       }
       case 'glass': add(f.id, 'glass', glassPane(boxMesh(x0, y0, x1, y1, z0, z1, 'glass'))); break;
       case 'bed': {
-        B(x0, y0, x1, y1, z0, z0 + 30, 'walnut_console', `${f.id}_base`);
-        B(x0 + 2, y0 + 2, x1 - 2, y1 - 2, z0 + 30, z0 + 50, 'bed_linen');
+        const im = (part, def) => DS.id_materials[`${f.id}_${part}`] ?? def;
+        B(x0, y0, x1, y1, z0, z0 + 30, im('base', 'walnut_console'), `${f.id}_base`);
+        B(x0 + 2, y0 + 2, x1 - 2, y1 - 2, z0 + 30, z0 + 50, im('linen', 'bed_linen'));
         const hb = { N: [x0, y1 - 8, x1, y1], S: [x0, y0, x1, y0 + 8], E: [x0, y0, x0 + 8, y1], W: [x1 - 8, y0, x1, y1] }[f.facing === 'S' ? 'S' : f.facing === 'N' ? 'N' : f.facing === 'E' ? 'E' : 'W'];
-        B(hb[0], hb[1], hb[2], hb[3], z0, z0 + 120, 'headboard_boucle', `${f.id}_head`);
+        B(hb[0], hb[1], hb[2], hb[3], z0, z0 + (f.head_h || 120), im('head', 'headboard_boucle'), `${f.id}_head`);
         const pl = f.facing === 'E' || f.facing === 'W';
         for (const k of [0.27, 0.73]) {               // two pillows near the headboard
           const cx = pl ? (f.facing === 'E' ? x0 + 30 : x1 - 30) : x0 + (x1 - x0) * k;
           const cy = pl ? y0 + (y1 - y0) * k : (f.facing === 'S' ? y0 + 30 : y1 - 30);
-          B(cx - (pl ? 12 : 30), cy - (pl ? 30 : 12), cx + (pl ? 12 : 30), cy + (pl ? 30 : 12), z0 + 50, z0 + 62, 'pillow_white', `${f.id}_pillow`);
+          B(cx - (pl ? 12 : 30), cy - (pl ? 30 : 12), cx + (pl ? 12 : 30), cy + (pl ? 30 : 12), z0 + 50, z0 + 62, im('pillow', 'pillow_white'), `${f.id}_pillow`);
         }
         const tb = pl ? (f.facing === 'E' ? [x1 - 45, y0 + 2, x1 - 2, y1 - 2] : [x0 + 2, y0 + 2, x0 + 45, y1 - 2]) : (f.facing === 'S' ? [x0 + 2, y1 - 45, x1 - 2, y1 - 2] : [x0 + 2, y0 + 2, x1 - 2, y0 + 45]);
-        B(tb[0], tb[1], tb[2], tb[3], z0 + 50, z0 + 53, 'throw_cognac', `${f.id}_throw`);
+        B(tb[0], tb[1], tb[2], tb[3], z0 + 50, z0 + 53, im('throw', 'throw_cognac'), `${f.id}_throw`);
         break;
       }
       default: B(x0, y0, x1, y1, z0, z1);
@@ -295,20 +296,36 @@ export function buildScene(plan, opts = {}, ds) {
     } else if (d.shape === 'sphere') {
       m = new THREE.Mesh(new THREE.SphereGeometry(d.r, 20, 14), M());
       m.position.set(d.center[0], d.center[2], d.center[1]);
-    } else if (d.shape === 'torus') {
-      m = new THREE.Mesh(new THREE.TorusGeometry(d.R, d.tube, 10, 72), new THREE.MeshBasicMaterial({ color: 0xfff6e8 }));
-      m.rotation.x = Math.PI / 2; m.position.set(d.center[0], d.center[2], d.center[1]);
+    } else if (d.shape === 'torus') {     // axis = plan axis of the ring's normal: z (hanging flat), y / x (on a wall)
+      m = new THREE.Mesh(new THREE.TorusGeometry(d.R, d.tube, 10, 96), new THREE.MeshBasicMaterial({ color: 0xfff6e8 }));
+      const ax = d.axis || 'z';
+      if (ax === 'z') m.rotation.x = Math.PI / 2; else if (ax === 'x') m.rotation.y = Math.PI / 2;
+      m.position.set(d.center[0], d.center[2], d.center[1]);
+    } else if (d.shape === 'disc') {      // flat round panel (mirror) facing plan axis d.axis
+      m = new THREE.Mesh(new THREE.CylinderGeometry(d.r, d.r, d.t, 72), M());
+      if (d.axis === 'y') m.rotation.x = Math.PI / 2; else if (d.axis === 'x') m.rotation.z = Math.PI / 2;
+      m.position.set(d.center[0], d.center[2], d.center[1]);
+    } else if (d.shape === 'seg') {       // thin bar between two 3D points lying on a surface with plan normal d.normal
+      const a = new THREE.Vector3(d.p0[0], d.p0[2], d.p0[1]), b = new THREE.Vector3(d.p1[0], d.p1[2], d.p1[1]);
+      m = new THREE.Mesh(new THREE.BoxGeometry(a.distanceTo(b), d.w, d.t), M());
+      const xa = b.clone().sub(a).normalize();
+      const n = { x: new THREE.Vector3(1, 0, 0), y: new THREE.Vector3(0, 0, 1), z: new THREE.Vector3(0, 1, 0) }[d.normal];
+      const za = n.clone().sub(xa.clone().multiplyScalar(n.dot(xa))).normalize();
+      m.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(xa, za.clone().cross(xa), za));
+      m.position.copy(a).add(b).multiplyScalar(0.5);
     }
-    if (d.mat === 'glass') { m.material.transparent = true; m.material.opacity = 0.28; m.userData.glass = true; }
+    if (d.mat === 'glass' || d.mat === 'smoked_glass') { m.material.transparent = true; m.material.opacity = d.mat === 'glass' ? 0.28 : 0.5; m.userData.glass = true; }
     if (d.kind === 'light' || d.emissive) m.castShadow = false;
     add(d.id, d.kind === 'exterior' ? 'exterior' : d.kind, m, key);
     if (d.kind === 'light' || d.emissive) m.castShadow = false;
   }
 
   // ---------------------------------------------------------- light (working rig)
-  scene.add(new THREE.HemisphereLight(0xf6f1ea, 0x8a7663, 2.4));
-  scene.add(new THREE.AmbientLight(0xfff4e8, 0.9));
-  const sun = new THREE.DirectionalLight(0xffd7a8, 3.4);   // golden hour, low sun from the south-west (design-system time_of_day)
+  const dusk = opts.rig === 'dusk';      // first floor: just after sunset, interior LEDs carry the room
+  if (dusk) scene.background = new THREE.Color(0xb7b4c4);
+  scene.add(new THREE.HemisphereLight(dusk ? 0xc9d2e6 : 0xf6f1ea, 0x8a7663, dusk ? 2.2 : 2.4));
+  scene.add(new THREE.AmbientLight(0xfff4e8, dusk ? 1.1 : 0.9));
+  const sun = new THREE.DirectionalLight(dusk ? 0xffb27a : 0xffd7a8, dusk ? 1.6 : 3.4);   // golden hour, low sun from the south-west (design-system time_of_day)
   sun.position.set(-700, 800, 2500); sun.target.position.set(900, 0, 500);
   sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
   Object.assign(sun.shadow.camera, { left: -1500, right: 1500, top: 1500, bottom: -1500, near: 10, far: 6000 });
@@ -361,7 +378,7 @@ export function idColor(i) {   // deterministic, well-separated, never black/whi
 
 export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   const out = {};
-  const { scene, reg } = buildScene(plan, opts, ds);
+  const { scene, reg } = buildScene(plan, { ...opts, rig: camDef.rig }, ds);
   const cam = makeCamera(camDef, W, H);
 
   // 1. guide pass (tinted clay, real shadows) — this is what the image model sees

@@ -1848,7 +1848,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "dark_spa",
+   "style": "bath_taupe",
    "level": "upper"
   },
   {
@@ -1882,7 +1882,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "bedroom_luxe",
+   "style": "bedroom_cove",
    "level": "upper"
   },
   {
@@ -1908,7 +1908,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "dark_spa",
+   "style": "bath_slate",
    "level": "upper"
   },
   {
@@ -1976,7 +1976,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "bedroom_luxe",
+   "style": "bedroom_noir",
    "level": "upper"
   },
   {
@@ -2002,7 +2002,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "dark_spa",
+   "style": "bath_taupe",
    "level": "upper"
   },
   {
@@ -2036,7 +2036,7 @@
    ],
    "floor": 310,
    "ceiling": 560,
-   "style": "bedroom_luxe",
+   "style": "bedroom_cove",
    "level": "upper"
   }
  ],
@@ -3691,8 +3691,8 @@
     203.1,
     85.2
    ],
-   "z0": 365,
-   "h": 30,
+   "z0": 390,
+   "h": 10,
    "room": "U_R_bath1",
    "facing": "S",
    "note": null,
@@ -3990,8 +3990,8 @@
     835.8,
     403.5
    ],
-   "z0": 365,
-   "h": 30,
+   "z0": 390,
+   "h": 10,
    "room": "U_R_bath3",
    "facing": "S",
    "note": null,
@@ -5921,14 +5921,319 @@
    "kind": "exterior"
   },
   {
-   "id": "D_bed1_headwall",
+   "id": "D_bed3_facet_wall",
    "shape": "box",
-   "mat": "walnut_panel",
+   "mat": "walnut_facets",
    "rect": [
+    870,
     26.2,
-    470,
-    28.6,
-    717
+    1158,
+    29.2
+   ],
+   "z": [
+    310,
+    551
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_facet_canopy",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    870,
+    26.2,
+    1158,
+    175
+   ],
+   "z": [
+    551,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_seam_w0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    870,
+    29.5,
+    470
+   ],
+   "p1": [
+    990,
+    29.5,
+    551
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_w1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    990,
+    29.5,
+    551
+   ],
+   "p1": [
+    1035,
+    29.5,
+    430
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_w2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1035,
+    29.5,
+    430
+   ],
+   "p1": [
+    1100,
+    29.5,
+    551
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_w3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1158,
+    29.5,
+    455
+   ],
+   "p1": [
+    1080,
+    29.5,
+    505
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_w4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1080,
+    29.5,
+    505
+   ],
+   "p1": [
+    1035,
+    29.5,
+    430
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_w5",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    930,
+    29.5,
+    430
+   ],
+   "p1": [
+    990,
+    29.5,
+    551
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_c0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    990,
+    29,
+    550.7
+   ],
+   "p1": [
+    1060,
+    110,
+    550.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_c1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1060,
+    110,
+    550.7
+   ],
+   "p1": [
+    1100,
+    29,
+    550.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_c2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1060,
+    110,
+    550.7
+   ],
+   "p1": [
+    1010,
+    175,
+    550.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_c3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    990,
+    29,
+    550.7
+   ],
+   "p1": [
+    940,
+    175,
+    550.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_seam_c4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1158,
+    90,
+    550.7
+   ],
+   "p1": [
+    1060,
+    110,
+    550.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_canopy_edge_s",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    870,
+    174,
+    1158,
+    175
+   ],
+   "z": [
+    550,
+    551
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_panel_edge868",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    868.5,
+    26.2,
+    870.0,
+    29.599999999999998
+   ],
+   "z": [
+    310,
+    551
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_panel_edge1158",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1158,
+    26.2,
+    1159.5,
+    29.599999999999998
+   ],
+   "z": [
+    310,
+    551
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_slat_l0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    845,
+    26.2,
+    849,
+    36
    ],
    "z": [
     310,
@@ -5938,16 +6243,575 @@
    "emissive": false
   },
   {
-   "id": "D_bed1_pend0",
+   "id": "D_bed3_slat_l1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    851,
+    26.2,
+    855,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_l2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    857,
+    26.2,
+    861,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_l3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    863,
+    26.2,
+    867,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_r0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1161,
+    26.2,
+    1165,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_r1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1167,
+    26.2,
+    1171,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_r2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1173,
+    26.2,
+    1177,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_slat_r3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1179,
+    26.2,
+    1183,
+    36
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_lamp0_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    906,
+    51
+   ],
+   "r": 5,
+   "z": [
+    360,
+    392
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_lamp0_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    906,
+    51
+   ],
+   "r": 10,
+   "z": [
+    392,
+    406
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_lamp0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    906,
+    51
+   ],
+   "r": 8.5,
+   "z": [
+    391,
+    392
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_lamp1_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    1122,
+    51
+   ],
+   "r": 5,
+   "z": [
+    360,
+    392
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_lamp1_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    1122,
+    51
+   ],
+   "r": 10,
+   "z": [
+    392,
+    406
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_lamp1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    1122,
+    51
+   ],
+   "r": 8.5,
+   "z": [
+    391,
+    392
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    895,
+    140,
+    1135,
+    300
+   ],
+   "z": [
+    310,
+    311.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_marble",
+   "shape": "box",
+   "mat": "marble_white_panel",
+   "rect": [
+    890,
+    322.4,
+    1134,
+    323.9
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_marble_led888",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    888.5,
+    321.4,
+    890.0,
+    323.9
+   ],
+   "z": [
+    310,
+    556
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_marble_led1134",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1134,
+    321.4,
+    1135.5,
+    323.9
+   ],
+   "z": [
+    310,
+    556
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_cove_s",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    612,
+    320.5,
+    1203,
+    323.9
+   ],
+   "z": [
+    557.5,
+    559.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed3_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    1190,
+    30,
+    1203,
+    100
+   ],
+   "z": [
+    310,
+    540
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_vase",
+   "shape": "cyl",
+   "mat": "vase_dark",
+   "center": [
+    1194,
+    106
+   ],
+   "r": 9,
+   "z": [
+    310,
+    380
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_pampas0",
    "shape": "sphere",
-   "mat": "pendant_glass",
+   "mat": "pampas",
+   "center": [
+    1190,
+    103,
+    430
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bed3_pampas1",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    1199,
+    108,
+    450
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bed3_pampas2",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    1192,
+    111,
+    468
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bed1_soffit0",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    26.2,
+    307.9,
+    353.7,
+    342.9
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_soffit1",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    26.2,
+    768.0,
+    353.7,
+    803.0
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_soffit2",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    26.2,
+    342.9,
+    61.2,
+    768.0
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_soffit3",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    318.7,
+    342.9,
+    353.7,
+    768.0
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_cove0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    61.2,
+    342.9,
+    318.7,
+    343.9
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_cove1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    61.2,
+    767.0,
+    318.7,
+    768.0
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_cove2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    61.2,
+    342.9,
+    62.2,
+    768.0
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_cove3",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    317.7,
+    342.9,
+    318.7,
+    768.0
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_wall_led452",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    26.2,
+    452,
+    28.8,
+    453.5
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_wall_led731",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    26.2,
+    731,
+    28.8,
+    732.5
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed1_pend0",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
    "center": [
     46,
-    483,
-    435
+    483
    ],
-   "r": 11,
-   "kind": "light"
+   "r": 4,
+   "z": [
+    412,
+    442
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    46,
+    483
+   ],
+   "r": 3.2,
+   "z": [
+    411.4,
+    412
+   ],
+   "kind": "light",
+   "emissive": true
   },
   {
    "id": "D_bed1_pend0_c",
@@ -5959,23 +6823,43 @@
    ],
    "r": 0.6,
    "z": [
-    446,
-    560
+    442,
+    542
    ],
    "kind": "light",
    "emissive": false
   },
   {
    "id": "D_bed1_pend1",
-   "shape": "sphere",
-   "mat": "pendant_glass",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
    "center": [
     46,
-    701,
-    435
+    701
    ],
-   "r": 11,
-   "kind": "light"
+   "r": 4,
+   "z": [
+    412,
+    442
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    46,
+    701
+   ],
+   "r": 3.2,
+   "z": [
+    411.4,
+    412
+   ],
+   "kind": "light",
+   "emissive": true
   },
   {
    "id": "D_bed1_pend1_c",
@@ -5987,8 +6871,8 @@
    ],
    "r": 0.6,
    "z": [
-    446,
-    560
+    442,
+    542
    ],
    "kind": "light",
    "emissive": false
@@ -5996,11 +6880,11 @@
   {
    "id": "D_bed1_rug",
    "shape": "box",
-   "mat": "rug_sand",
+   "mat": "rug_charcoal",
    "rect": [
-    110,
+    105,
     470,
-    330,
+    300,
     720
    ],
    "z": [
@@ -6008,6 +6892,40 @@
     311.2
    ],
    "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_screen0",
+   "shape": "box",
+   "mat": "slat_screen_black",
+   "rect": [
+    350,
+    470,
+    353.7,
+    505
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_screen1",
+   "shape": "box",
+   "mat": "slat_screen_black",
+   "rect": [
+    350,
+    675,
+    353.7,
+    710
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "panel",
    "emissive": false
   },
   {
@@ -6045,140 +6963,250 @@
    "emissive": false
   },
   {
-   "id": "D_bed3_headwall",
-   "shape": "box",
-   "mat": "walnut_panel",
-   "rect": [
-    880,
-    26.2,
-    1150,
-    28.6
+   "id": "D_bed1_ficus_pot",
+   "shape": "cyl",
+   "mat": "stone_pot",
+   "center": [
+    100,
+    758
    ],
+   "r": 20,
    "z": [
     310,
-    560
-   ],
-   "kind": "panel",
-   "emissive": false
-  },
-  {
-   "id": "D_bed3_pend0",
-   "shape": "sphere",
-   "mat": "pendant_glass",
-   "center": [
-    906,
-    51,
-    435
-   ],
-   "r": 11,
-   "kind": "light"
-  },
-  {
-   "id": "D_bed3_pend0_c",
-   "shape": "cyl",
-   "mat": "cable_black",
-   "center": [
-    906,
-    51
-   ],
-   "r": 0.6,
-   "z": [
-    446,
-    560
-   ],
-   "kind": "light",
-   "emissive": false
-  },
-  {
-   "id": "D_bed3_pend1",
-   "shape": "sphere",
-   "mat": "pendant_glass",
-   "center": [
-    1122,
-    51,
-    435
-   ],
-   "r": 11,
-   "kind": "light"
-  },
-  {
-   "id": "D_bed3_pend1_c",
-   "shape": "cyl",
-   "mat": "cable_black",
-   "center": [
-    1122,
-    51
-   ],
-   "r": 0.6,
-   "z": [
-    446,
-    560
-   ],
-   "kind": "light",
-   "emissive": false
-  },
-  {
-   "id": "D_bed3_rug",
-   "shape": "box",
-   "mat": "rug_sand",
-   "rect": [
-    900,
-    150,
-    1130,
-    300
-   ],
-   "z": [
-    310,
-    311.2
+    358
    ],
    "kind": "decor",
    "emissive": false
   },
   {
-   "id": "D_bed3_curtain0",
-   "shape": "box",
-   "mat": "sheer_linen",
-   "rect": [
-    1190,
-    98,
-    1203,
-    126
+   "id": "D_bed1_ficus_trunk",
+   "shape": "cyl",
+   "mat": "ficus_trunk",
+   "center": [
+    100,
+    758
    ],
+   "r": 4,
    "z": [
-    310,
-    540
+    358,
+    460
    ],
    "kind": "decor",
    "emissive": false
   },
   {
-   "id": "D_bed2_headwall",
+   "id": "D_bed1_ficus_crown",
+   "shape": "sphere",
+   "mat": "ficus_tree",
+   "center": [
+    100,
+    758,
+    490
+   ],
+   "r": 34,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bed2_soffit0",
    "shape": "box",
-   "mat": "walnut_panel",
+   "mat": "plaster_cove_white",
    "rect": [
-    938.2,
-    600,
+    610.5,
+    541.0,
     940.6,
-    850
+    576.0
    ],
    "z": [
-    310,
+    542,
     560
    ],
    "kind": "panel",
    "emissive": false
+  },
+  {
+   "id": "D_bed2_soffit1",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    610.5,
+    918.7,
+    940.6,
+    953.7
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_soffit2",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    610.5,
+    576.0,
+    645.5,
+    918.7
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_soffit3",
+   "shape": "box",
+   "mat": "plaster_cove_white",
+   "rect": [
+    905.6,
+    576.0,
+    940.6,
+    918.7
+   ],
+   "z": [
+    542,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_cove0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    645.5,
+    576.0,
+    905.6,
+    577.0
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed2_cove1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    645.5,
+    917.7,
+    905.6,
+    918.7
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed2_cove2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    645.5,
+    576.0,
+    646.5,
+    918.7
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed2_cove3",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    904.6,
+    576.0,
+    905.6,
+    918.7
+   ],
+   "z": [
+    543,
+    546
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed2_wall_led586",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    938.0,
+    586,
+    940.6,
+    587.5
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bed2_wall_led860",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    938.0,
+    860,
+    940.6,
+    861.5
+   ],
+   "z": [
+    310,
+    542
+   ],
+   "kind": "light",
+   "emissive": true
   },
   {
    "id": "D_bed2_pend0",
-   "shape": "sphere",
-   "mat": "pendant_glass",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
    "center": [
     918,
-    616,
-    435
+    616
    ],
-   "r": 11,
-   "kind": "light"
+   "r": 4,
+   "z": [
+    412,
+    442
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    918,
+    616
+   ],
+   "r": 3.2,
+   "z": [
+    411.4,
+    412
+   ],
+   "kind": "light",
+   "emissive": true
   },
   {
    "id": "D_bed2_pend0_c",
@@ -6190,23 +7218,43 @@
    ],
    "r": 0.6,
    "z": [
-    446,
-    560
+    442,
+    542
    ],
    "kind": "light",
    "emissive": false
   },
   {
    "id": "D_bed2_pend1",
-   "shape": "sphere",
-   "mat": "pendant_glass",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
    "center": [
     918,
-    832,
-    435
+    832
    ],
-   "r": 11,
-   "kind": "light"
+   "r": 4,
+   "z": [
+    412,
+    442
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    918,
+    832
+   ],
+   "r": 3.2,
+   "z": [
+    411.4,
+    412
+   ],
+   "kind": "light",
+   "emissive": true
   },
   {
    "id": "D_bed2_pend1_c",
@@ -6218,8 +7266,8 @@
    ],
    "r": 0.6,
    "z": [
-    446,
-    560
+    442,
+    542
    ],
    "kind": "light",
    "emissive": false
@@ -6227,16 +7275,84 @@
   {
    "id": "D_bed2_rug",
    "shape": "box",
-   "mat": "rug_sand",
+   "mat": "rug_charcoal",
    "rect": [
-    700,
-    620,
-    900,
-    830
+    690,
+    600,
+    905,
+    850
    ],
    "z": [
     310,
     311.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_bench",
+   "shape": "box",
+   "mat": "bench_tufted_cream",
+   "rect": [
+    692,
+    662,
+    736,
+    787
+   ],
+   "z": [
+    310,
+    355
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_art0",
+   "shape": "box",
+   "mat": "art_sketch",
+   "rect": [
+    610.5,
+    645,
+    613,
+    690
+   ],
+   "z": [
+    445,
+    505
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_art1",
+   "shape": "box",
+   "mat": "art_sketch",
+   "rect": [
+    610.5,
+    700,
+    613,
+    745
+   ],
+   "z": [
+    445,
+    505
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_art2",
+   "shape": "box",
+   "mat": "art_sketch",
+   "rect": [
+    610.5,
+    755,
+    613,
+    800
+   ],
+   "z": [
+    445,
+    505
    ],
    "kind": "decor",
    "emissive": false
@@ -6259,18 +7375,326 @@
    "emissive": false
   },
   {
-   "id": "D_bath1_mirror",
+   "id": "D_bed2_ficus_pot",
+   "shape": "cyl",
+   "mat": "stone_pot",
+   "center": [
+    650,
+    912
+   ],
+   "r": 20,
+   "z": [
+    310,
+    358
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_ficus_trunk",
+   "shape": "cyl",
+   "mat": "ficus_trunk",
+   "center": [
+    650,
+    912
+   ],
+   "r": 4,
+   "z": [
+    358,
+    460
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_ficus_crown",
+   "shape": "sphere",
+   "mat": "ficus_tree",
+   "center": [
+    650,
+    912,
+    490
+   ],
+   "r": 34,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath2_shower_glass",
    "shape": "box",
-   "mat": "mirror_backlit",
+   "mat": "smoked_glass",
    "rect": [
-    60,
-    26.5,
-    180,
-    28.8
+    458.0,
+    26.2,
+    459.2,
+    150
    ],
    "z": [
-    420,
-    510
+    310,
+    515
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    419,
+    105
+   ],
+   "r": 15,
+   "z": [
+    548,
+    550
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    379.9,
+    50,
+    382.6,
+    175
+   ],
+   "z": [
+    410,
+    440
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    379.9,
+    50,
+    382.9,
+    175
+   ],
+   "z": [
+    438.5,
+    440
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath2_mirror",
+   "shape": "disc",
+   "mat": "mirror_round",
+   "center": [
+    593.4,
+    27.4,
+    470
+   ],
+   "r": 36,
+   "t": 1.6,
+   "axis": "y",
+   "kind": "panel"
+  },
+  {
+   "id": "D_bath2_ring",
+   "shape": "torus",
+   "mat": "ring_led",
+   "center": [
+    593.4,
+    30.5,
+    470
+   ],
+   "R": 41,
+   "tube": 1.3,
+   "kind": "light",
+   "axis": "y"
+  },
+  {
+   "id": "D_bath2_drawer",
+   "shape": "box",
+   "mat": "vanity_walnut_drawer",
+   "rect": [
+    548,
+    28,
+    640,
+    74
+   ],
+   "z": [
+    335,
+    358
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_vanity_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    548,
+    30,
+    640,
+    72
+   ],
+   "z": [
+    333.5,
+    334.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath2_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    489,
+    26.2,
+    514,
+    28.4
+   ],
+   "z": [
+    402,
+    418
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_slot70",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    390,
+    68.8,
+    640,
+    71.2
+   ],
+   "z": [
+    558.5,
+    559.6
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath2_slot150",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    390,
+    148.8,
+    640,
+    151.2
+   ],
+   "z": [
+    558.5,
+    559.6
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath2_diffuser",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    632,
+    44
+   ],
+   "r": 3.5,
+   "z": [
+    395,
+    411
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_shelf",
+   "shape": "box",
+   "mat": "walnut_counter",
+   "rect": [
+    39.3,
+    32.1,
+    203.1,
+    81.2
+   ],
+   "z": [
+    362,
+    365
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_drawers",
+   "shape": "box",
+   "mat": "cabinet_taupe",
+   "rect": [
+    39.3,
+    34.1,
+    203.1,
+    81.2
+   ],
+   "z": [
+    318,
+    344
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    41.3,
+    36.1,
+    201.1,
+    79.2
+   ],
+   "z": [
+    316.5,
+    317.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_basin",
+   "shape": "box",
+   "mat": "basin_black_vessel",
+   "rect": [
+    128,
+    38.1,
+    176,
+    75.2
+   ],
+   "z": [
+    400,
+    414
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_mirror",
+   "shape": "box",
+   "mat": "mirror_cabinet",
+   "rect": [
+    47.3,
+    26.2,
+    197.1,
+    39.2
+   ],
+   "z": [
+    428,
+    532
    ],
    "kind": "panel",
    "emissive": false
@@ -6280,65 +7704,331 @@
    "shape": "box",
    "mat": "led_line",
    "rect": [
-    57,
-    26.2,
-    183,
-    26.5
+    47.3,
+    27.2,
+    197.1,
+    38.2
    ],
    "z": [
-    417,
-    513
+    426.5,
+    427.5
    ],
    "kind": "light",
    "emissive": true
   },
   {
-   "id": "D_bath2_mirror",
+   "id": "D_bath1_wash",
    "shape": "box",
-   "mat": "mirror_backlit",
+   "mat": "led_line",
    "rect": [
-    555,
-    26.5,
-    635,
-    28.8
+    39.3,
+    26.2,
+    203.1,
+    28.7
    ],
    "z": [
-    420,
-    510
+    556.5,
+    558.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_pend0",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    62,
+    66
+   ],
+   "r": 4,
+   "z": [
+    438,
+    468
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    62,
+    66
+   ],
+   "r": 3.2,
+   "z": [
+    437.4,
+    438
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    62,
+    66
+   ],
+   "r": 0.6,
+   "z": [
+    468,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_pend1",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    76,
+    74
+   ],
+   "r": 4,
+   "z": [
+    422,
+    452
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    76,
+    74
+   ],
+   "r": 3.2,
+   "z": [
+    421.4,
+    422
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    76,
+    74
+   ],
+   "r": 0.6,
+   "z": [
+    452,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    186,
+    62
+   ],
+   "r": 6,
+   "z": [
+    400,
+    426
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_gyps0",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    181,
+    62,
+    434
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath1_gyps1",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    191,
+    65,
+    438
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath1_gyps2",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    186,
+    59,
+    446
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath1_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    26.2,
+    207.5,
+    150,
+    208.7
+   ],
+   "z": [
+    310,
+    515
    ],
    "kind": "panel",
    "emissive": false
   },
   {
-   "id": "D_bath2_mirror_led",
+   "id": "D_bath1_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    90,
+    250
+   ],
+   "r": 15,
+   "z": [
+    548,
+    550
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    26.2,
+    220,
+    28.9,
+    285
+   ],
+   "z": [
+    405,
+    435
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_niche_led",
    "shape": "box",
    "mat": "led_line",
    "rect": [
-    552,
     26.2,
-    638,
-    26.5
+    220,
+    29.2,
+    285
    ],
    "z": [
-    417,
-    513
+    433.5,
+    435
    ],
    "kind": "light",
    "emissive": true
   },
   {
-   "id": "D_bath3_mirror",
+   "id": "D_bath3_shelf",
    "shape": "box",
-   "mat": "mirror_backlit",
+   "mat": "walnut_counter",
    "rect": [
-    760,
-    351.3,
-    830,
-    353.6
+    750.6,
+    359.6,
+    835.8,
+    399.5
    ],
    "z": [
-    420,
-    510
+    362,
+    365
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_drawers",
+   "shape": "box",
+   "mat": "cabinet_taupe",
+   "rect": [
+    750.6,
+    361.6,
+    835.8,
+    399.5
+   ],
+   "z": [
+    318,
+    344
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    752.6,
+    363.6,
+    833.8,
+    397.5
+   ],
+   "z": [
+    316.5,
+    317.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath3_basin",
+   "shape": "box",
+   "mat": "basin_black_vessel",
+   "rect": [
+    769,
+    365.6,
+    817,
+    393.5
+   ],
+   "z": [
+    400,
+    414
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_mirror",
+   "shape": "box",
+   "mat": "mirror_cabinet",
+   "rect": [
+    758.6,
+    351.1,
+    829.8,
+    364.1
+   ],
+   "z": [
+    428,
+    532
    ],
    "kind": "panel",
    "emissive": false
@@ -6348,27 +8038,192 @@
    "shape": "box",
    "mat": "led_line",
    "rect": [
-    757,
-    351,
-    833,
-    351.3
+    758.6,
+    352.1,
+    829.8,
+    363.1
    ],
    "z": [
-    417,
-    513
+    426.5,
+    427.5
    ],
    "kind": "light",
    "emissive": true
+  },
+  {
+   "id": "D_bath3_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    750.6,
+    351.1,
+    835.8,
+    353.6
+   ],
+   "z": [
+    556.5,
+    558.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath3_pend0",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    846,
+    375
+   ],
+   "r": 4,
+   "z": [
+    438,
+    468
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    846,
+    375
+   ],
+   "r": 3.2,
+   "z": [
+    437.4,
+    438
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath3_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    846,
+    375
+   ],
+   "r": 0.6,
+   "z": [
+    468,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_pend1",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    853,
+    389
+   ],
+   "r": 4,
+   "z": [
+    422,
+    452
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    853,
+    389
+   ],
+   "r": 3.2,
+   "z": [
+    421.4,
+    422
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath3_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    853,
+    389
+   ],
+   "r": 0.6,
+   "z": [
+    452,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    822,
+    372
+   ],
+   "r": 6,
+   "z": [
+    400,
+    426
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_gyps0",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    817,
+    372,
+    434
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath3_gyps1",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    827,
+    375,
+    438
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath3_gyps2",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    822,
+    369,
+    446
+   ],
+   "r": 8,
+   "kind": "decor"
   },
   {
    "id": "D_bath3_shower_glass",
    "shape": "box",
    "mat": "glass",
    "rect": [
-    861,
-    351,
+    861.0,
+    351.1,
     862.2,
-    445
+    405
    ],
    "z": [
     310,
@@ -6394,70 +8249,89 @@
    "emissive": false
   },
   {
-   "id": "D_bath2_shower_glass",
+   "id": "D_bath3_niche",
    "shape": "box",
-   "mat": "glass",
+   "mat": "niche_lit",
    "rect": [
-    551.5,
-    26.2,
-    552.7,
-    180
+    937.9,
+    365,
+    940.6,
+    430
    ],
    "z": [
-    310,
-    515
+    405,
+    435
    ],
    "kind": "panel",
    "emissive": false
   },
   {
-   "id": "D_bath2_rainhead",
-   "shape": "cyl",
-   "mat": "black_metal",
-   "center": [
-    442,
-    100
+   "id": "D_bath3_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    937.6,
+    365,
+    940.6,
+    430
    ],
-   "r": 15,
    "z": [
-    548,
-    550
+    433.5,
+    435
    ],
    "kind": "light",
-   "emissive": false
+   "emissive": true
   },
   {
-   "id": "D_bath1_shower_glass",
+   "id": "D_bath3_ladder",
    "shape": "box",
-   "mat": "glass",
+   "mat": "towel_ladder",
    "rect": [
-    26.2,
-    207.5,
-    150,
-    208.7
+    790,
+    516,
+    840,
+    521.4
    ],
    "z": [
-    310,
-    515
+    370,
+    490
    ],
    "kind": "panel",
    "emissive": false
   },
   {
-   "id": "D_bath1_rainhead",
-   "shape": "cyl",
-   "mat": "black_metal",
-   "center": [
-    90,
-    245
+   "id": "D_uh_art",
+   "shape": "box",
+   "mat": "art_relief",
+   "rect": [
+    597.0,
+    395,
+    600.0,
+    560
    ],
-   "r": 15,
    "z": [
-    548,
-    550
+    395,
+    515
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_uh_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    538,
+    225,
+    542,
+    590
+   ],
+   "z": [
+    558,
+    559.5
    ],
    "kind": "light",
-   "emissive": false
+   "emissive": true
   }
  ],
  "extra_ceilings": [

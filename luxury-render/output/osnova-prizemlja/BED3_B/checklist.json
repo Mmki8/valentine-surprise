@@ -2,64 +2,62 @@
  "camera": "BED3_B",
  "room": "U_R_bed3",
  "hero": "BED3_A",
+ "mood": null,
  "materials": [
-  "plaster_white",
-  "plaster_greige",
-  "walnut_panel",
-  "walnut_wardrobe",
-  "headboard_boucle",
+  "walnut_facets",
+  "marble_white_panel",
+  "ceiling_dark",
+  "plaster_dark_bed",
   "tv_black",
-  "bed_linen",
-  "oak_floor",
-  "walnut_door",
-  "pillow_white",
-  "throw_cognac",
+  "headboard_channel_sand",
+  "sheer_linen",
   "bronze_frame",
-  "walnut_console",
-  "pendant_glass"
+  "duvet_charcoal",
+  "plaster_greige",
+  "led_line",
+  "black_slats",
+  "pillow_grey",
+  "throw_black_knit",
+  "pampas",
+  "vase_dark",
+  "walnut_floor_dark",
+  "nightstand_black",
+  "lamp_black"
  ],
  "car": null,
  "openings": [
   {
-   "id": "U_O_bed3_door",
-   "name": "door (closed)",
-   "where": "left",
-   "share": 0.036,
-   "note": null
+   "id": "U_O_bed3_win",
+   "name": "full-height glazed sliding door",
+   "where": "centre",
+   "share": 0.022,
+   "note": "bedroom 3 east glazed door (OG.3)"
   }
  ],
  "furniture_counts": {
-  "tall_cabinet": 1,
   "tv": 1,
   "bed": 1,
   "nightstand": 1
  },
  "items": [
   {
-   "id": "U_F_bed3_wr2",
-   "name": "full-height cabinet column",
-   "where": "centre",
-   "share": 0.153,
-   "note": "wardrobes"
-  },
-  {
    "id": "U_F_bed3_tv",
    "name": "TV",
-   "where": "left",
-   "share": 0.054,
+   "where": "right",
+   "share": 0.075,
    "note": null
   },
   {
    "id": "U_F_bed3",
    "name": "bed",
    "where": "centre",
-   "share": 0.038,
+   "share": 0.022,
    "note": "king bed, headboard on north wall"
   },
   {
-   "id": "U_F_bed3_ns1",
+   "id": "U_F_bed3_ns2",
    "name": "nightstand",
-   "where": "centre",
+   "where": "left",
    "share": 0.004,
    "note": null
   }

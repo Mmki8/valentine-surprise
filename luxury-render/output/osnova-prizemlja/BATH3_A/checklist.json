@@ -1,42 +1,32 @@
 {
  "camera": "BATH3_A",
  "room": "U_R_bath3",
- "hero": "BATH2_A",
+ "hero": null,
+ "mood": "mood_bath_taupe_walnut.jpg",
  "materials": [
-  "stone_dark",
-  "mirror_backlit",
-  "vanity_stone",
-  "shower_stone",
-  "toilet_black",
-  "walnut_slats_dark"
+  "stone_taupe",
+  "mirror_cabinet",
+  "walnut_counter",
+  "niche_lit",
+  "basin_black_vessel",
+  "cabinet_taupe",
+  "pendant_black_cyl",
+  "gypsophila",
+  "ceramic_dark",
+  "led_line",
+  "cable_black"
  ],
  "car": null,
  "openings": [],
  "furniture_counts": {
-  "vanity": 1,
-  "shower": 1,
-  "toilet": 1
+  "vanity": 1
  },
  "items": [
   {
    "id": "U_F_bath3_vanity",
    "name": "floating vanity",
-   "where": "left",
-   "share": 0.088,
-   "note": null
-  },
-  {
-   "id": "U_F_bath3_shower",
-   "name": "walk-in shower",
    "where": "centre",
-   "share": 0.025,
-   "note": null
-  },
-  {
-   "id": "U_F_bath3_wc",
-   "name": "wall-hung toilet",
-   "where": "right",
-   "share": 0.013,
+   "share": 0.035,
    "note": null
   }
  ],

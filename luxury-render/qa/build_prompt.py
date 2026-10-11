@@ -42,6 +42,15 @@ def hero_for(cam_full, plan_dir):
     return h if h and h != cam_full else None
 
 
+def mood_for(cam_full, plan_dir):
+    """the client's mood reference for this space - used as IMAGE 2 only by the hero (nothing approved yet to chain to)"""
+    c = json.load(open(os.path.join(plan_dir, "cameras.json")))
+    cam = next(x for x in c["cameras"] if cam_full.startswith(x["id"]))
+    if c.get("heroes", {}).get(cam.get("space")) != cam_full:
+        return None
+    return c.get("moods", {}).get(cam.get("space"))
+
+
 def main(plan_dir, cam_full):
     plan = json.load(open(os.path.join(plan_dir, "plan.json")))
     ds = json.load(open(os.path.join(ROOT, "design-system", "design-system.json")))
@@ -110,6 +119,8 @@ def main(plan_dir, cam_full):
         inv = (inv + ", " if inv else "") + "1 x staircase"
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     hero = hero_for(cam_full, plan_dir)
+    mood = mood_for(cam_full, plan_dir)
+    upper = cam["room"].startswith("U_")
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
     g = ds["global"]
     prompt = (
@@ -124,19 +135,28 @@ def main(plan_dir, cam_full):
            f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2."
            + (" IMAGE 2 shows a parked car - ignore it: this view has NO car." if (cam["room"] == "R_garage" and not car_on) else "")
            + "\n\n" if hero else "")
+        + ("IMAGE 2 is the client's MOOD REFERENCE for this room: copy ONLY its look - the material character, colour palette, "
+           "finish quality and the warm LED lighting mood. NEVER copy its layout, furniture, objects, windows, camera or proportions: "
+           "every object and its position come ONLY from IMAGE 1.\n\n" if mood else "")
         + f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
         f"Materials, as coloured in IMAGE 1 (identical in every view of this house): {'; '.join(mat_lines)}.\n"
-        "Light fittings: ONLY those modelled in IMAGE 1 - the glowing white lines are warm 2700K LED lines, the white rings are "
-        "crystal ring chandeliers, the thin bars hanging on cables are linear bronze pendants. Add no other fittings, no spotlights, "
-        "no track lights. Decor: only the modelled objects (green spheres = olive foliage/branches, white small spheres = orchids or "
-        "coral, yellow = lemons); add no new objects.\n"
-        f"Time of day: {g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
-        f"Exterior: {g['exterior']}\n"
+        + ("Light fittings: ONLY those modelled in IMAGE 1 - every thin glowing white line is a warm 2700K LED (seams between the walnut "
+           "facets, coves, wall lines, under-counter strips), a white ring on a wall is a slim circular LED ring around a round mirror, "
+           "black cylinders hanging on cables are slim black pendants, black cylinders on the nightstands are small table lamps. Add no "
+           "other fittings, no spotlights, no downlights, no track lights. Decor: only the modelled objects (beige spheres = dried pampas "
+           "plumes, green sphere on a trunk = sculptural ficus tree, small white spheres = dried gypsophila); add no new objects.\n"
+           if upper else
+           "Light fittings: ONLY those modelled in IMAGE 1 - the glowing white lines are warm 2700K LED lines, the white rings are "
+           "crystal ring chandeliers, the thin bars hanging on cables are linear bronze pendants. Add no other fittings, no spotlights, "
+           "no track lights. Decor: only the modelled objects (green spheres = olive foliage/branches, white small spheres = orchids or "
+           "coral, yellow = lemons); add no new objects.\n") +
+        f"Time of day: {g['time_of_day_upper'] if upper else g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
+        f"Exterior: {g['exterior_upper'] if upper else g['exterior']}\n"
         + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"] == "R_garage" and not car_on) else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."
     )
-    checklist = dict(camera=cam_full, room=cam["room"], hero=hero, materials=[m for m, n in seen if n > W * H * 0.0008], car=car_on if cam["room"] == "R_garage" else None,
+    checklist = dict(camera=cam_full, room=cam["room"], hero=hero, mood=mood, materials=[m for m, n in seen if n > W * H * 0.0008], car=car_on if cam["room"] == "R_garage" else None,
                      openings=openings, furniture_counts=dict(counts), items=items,
                      manual_checks=[
                          "camera position/angle/framing identical to blockout (compare overlay)",

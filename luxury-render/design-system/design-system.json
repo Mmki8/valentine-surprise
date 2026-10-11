@@ -7,7 +7,9 @@
   "never": "no people, no text, no watermarks, no logos, no extra windows or doors, no moved or resized walls, no missing furniture, no extra seating, no fisheye, no tilted verticals, no CGI plastic look, no oversaturation, no clutter",
   "life_details_allowed": "decor may be ADDED only on existing surfaces or hung from ceiling/walls: books, ceramics, sculptural vases, fresh flowers/branches, olive trees or large potted plants in free floor corners, throws and cushions, framed art, rugs under existing furniture, candles, a bowl of fruit, folded towels, a coffee cup. Decor must never cover a window, door or required furniture piece.",
   "time_of_day": "one moment for the whole house: golden hour, about 18:00 in late spring - low warm sun from the south-west entering ONLY through the south and east glass, long soft sun patches on the floor; interior lights on at 70%",
-  "exterior": "outside every window the SAME view: a landscaped garden with lawn, a clipped hedge and a few olive trees, soft green hills far behind, clear sky with a few soft clouds. Never sea, never city."
+  "exterior": "outside every window the SAME view: a landscaped garden with lawn, a clipped hedge and a few olive trees, soft green hills far behind, clear sky with a few soft clouds. Never sea, never city.",
+  "time_of_day_upper": "one moment for every first-floor room: blue hour just after sunset, about 20:45 in late spring - outside the glass the sky is a soft gradient from warm amber at the horizon to deep dusk blue, NO direct sun anywhere; the rooms are lit by their own warm 2700K LED seams, coves, lines and lamps - dramatic, cosy and rich like a luxury hotel suite at night, deep but readable shadows",
+  "exterior_upper": "this is the FIRST FLOOR, about 4.5 m above the garden: through the glass the view looks slightly DOWN onto the lawn, the clipped hedge and the rounded crowns of the olive trees below, small garden path lights glowing, soft dark hills on the horizon at eye level under the dusk sky. Never sea, never city, never a view at ground level."
  },
  "palette": {
   "warm_oak": "#C9A47C  wide-plank brushed natural oak, matte oil finish",
@@ -285,75 +287,81 @@
    }
   },
   "U_R_bed1": {
-   "style": "bedroom_luxe",
-   "mood_refs": [],
-   "concept": "Calm luxury bedroom: warm oak, walnut, sand boucle, bronze accents.",
+   "style": "bedroom_cove",
+   "mood_refs": [
+    "mood_bed_cove_slats.jpg"
+   ],
+   "concept": "Guest suite after ref 'cove & slats': dark smoked-oak panelled walls, white tray ceiling with continuous warm LED cove, black horizontal-slat screens, cream tufted bed with olive-brown bedding and chevron throw, charcoal rug, sculptural ficus, line-art sketches.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "soft golden-hour daylight through the glazing, warm bedside light"
+    "light": "dusk outside; continuous warm LED cove around the tray ceiling, slim black pendants glowing beside the bed"
    }
   },
   "U_R_bed2": {
-   "style": "bedroom_luxe",
-   "mood_refs": [],
-   "concept": "Calm luxury bedroom: warm oak, walnut, sand boucle, bronze accents.",
+   "style": "bedroom_cove",
+   "mood_refs": [
+    "mood_bed_cove_slats.jpg"
+   ],
+   "concept": "Guest suite after ref 'cove & slats': dark smoked-oak panelled walls, white tray ceiling with continuous warm LED cove, black horizontal-slat screens, cream tufted bed with olive-brown bedding and chevron throw, charcoal rug, sculptural ficus, line-art sketches.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "soft golden-hour daylight through the glazing, warm bedside light"
+    "light": "dusk outside; continuous warm LED cove around the tray ceiling, slim black pendants glowing beside the bed"
    }
   },
   "U_R_bed3": {
-   "style": "bedroom_luxe",
-   "mood_refs": [],
-   "concept": "Calm luxury bedroom: warm oak, walnut, sand boucle, bronze accents.",
+   "style": "bedroom_noir",
+   "mood_refs": [
+    "mood_bed_walnut_facets.jpg"
+   ],
+   "concept": "Master suite after ref 'walnut facets': faceted walnut wall with LED seams folding onto the ceiling over the bed, black slats either side, white marble TV wall framed by LED lines, dark walnut floor, sand channel-tufted bed with charcoal bedding, black-glass wardrobes, pampas by the glass.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "soft golden-hour daylight through the glazing, warm bedside light"
+    "light": "dusk outside; the walnut facets glow along every LED seam, warm table lamps, LED lines framing the marble"
    }
   },
   "U_R_bath1": {
-   "style": "dark_spa",
+   "style": "bath_taupe",
    "mood_refs": [
-    "mood_spa_bath_dark.jpg"
+    "mood_bath_taupe_walnut.jpg"
    ],
-   "concept": "Dark stone en-suite bathroom.",
+   "concept": "Bathroom after ref 'taupe & walnut': textured taupe stone, cream stone floor, floating walnut counter with black vessel basin, open shelf and taupe drawers below with LED, mirror cabinet with lit niches, slim black pendants, dried gypsophila.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "dark and dramatic: warm glow behind the backlit mirror, soft daylight through the window"
+    "light": "soft warm LED: under the counter, under the mirror cabinet, wall-washer from the ceiling, black pendants glowing; dusk at the window"
    }
   },
   "U_R_bath2": {
-   "style": "dark_spa",
+   "style": "bath_slate",
    "mood_refs": [
-    "mood_spa_bath_dark.jpg"
+    "mood_bath_dark_ring.jpg"
    ],
-   "concept": "Dark stone en-suite bathroom.",
+   "concept": "Master en-suite after ref 'dark ring': rough dark slate walls, grey marble floor, black ceiling with linear LED slots, round mirror in a large LED ring, two-tone floating vanity (dark stone + walnut tray, LED under), smoked-glass shower with lit niche, white wall-hung WC.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "dark and dramatic: warm glow behind the backlit mirror, soft daylight through the window"
+    "light": "dark and dramatic: the LED ring, LED under the vanity and the lit niche graze the rough slate; dusk at the small window"
    }
   },
   "U_R_bath3": {
-   "style": "dark_spa",
+   "style": "bath_taupe",
    "mood_refs": [
-    "mood_spa_bath_dark.jpg"
+    "mood_bath_taupe_walnut.jpg"
    ],
-   "concept": "Dark stone en-suite bathroom.",
+   "concept": "Bathroom after ref 'taupe & walnut': textured taupe stone, cream stone floor, floating walnut counter with black vessel basin, open shelf and taupe drawers below with LED, mirror cabinet with lit niches, slim black pendants, dried gypsophila.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "dark and dramatic: warm glow behind the backlit mirror, soft daylight through the window"
+    "light": "soft warm LED: under the counter, under the mirror cabinet, wall-washer from the ceiling, black pendants glowing; dusk at the window"
    }
   },
   "U_R_hall": {
@@ -722,6 +730,210 @@
   "pendant_glass": {
    "tint": "#E9D9B8",
    "text": "small smoked-glass globe pendant lamp, warm glow"
+  },
+  "walnut_floor_dark": {
+   "tint": "#4A3122",
+   "text": "wide-plank dark smoked walnut floor, matte oil, long boards"
+  },
+  "plaster_dark_bed": {
+   "tint": "#3A332D",
+   "text": "deep warm taupe-brown mineral plaster walls, matte"
+  },
+  "ceiling_dark": {
+   "tint": "#2A2623",
+   "text": "matte dark charcoal-brown plaster ceiling"
+  },
+  "walnut_facets": {
+   "tint": "#7A4E30",
+   "text": "sculptural feature wall of book-matched warm walnut veneer cut into large angular facets (irregular triangles and trapezoids); every facet joint is a thin glowing warm LED seam; the same faceted walnut folds up and continues across the ceiling above the bed"
+  },
+  "black_slats": {
+   "tint": "#151413",
+   "text": "full-height matte black vertical timber slats with deep shadow gaps"
+  },
+  "marble_white_panel": {
+   "tint": "#E3DDD4",
+   "text": "large-format warm white Calacatta marble wall panels with soft grey veining, honed, framed by vertical warm LED lines"
+  },
+  "bed_upholstered_sand": {
+   "tint": "#BFAE95",
+   "text": "channel-tufted bed base upholstered in sand velvet"
+  },
+  "headboard_channel_sand": {
+   "tint": "#C4B49B",
+   "text": "tall channel-tufted headboard in sand velvet"
+  },
+  "duvet_charcoal": {
+   "tint": "#2E2C2B",
+   "text": "charcoal quilted duvet over white sheets, naturally crumpled"
+  },
+  "pillow_grey": {
+   "tint": "#8C8780",
+   "text": "grey and charcoal linen pillows"
+  },
+  "throw_black_knit": {
+   "tint": "#1D1C1B",
+   "text": "chunky black knit throw draped across the foot of the bed"
+  },
+  "nightstand_black": {
+   "tint": "#1C1B1A",
+   "text": "black lacquer nightstand with a white marble top"
+  },
+  "console_black": {
+   "tint": "#1C1B1A",
+   "text": "low black lacquer media console with a white marble top"
+  },
+  "wardrobe_black_glass": {
+   "tint": "#24201D",
+   "text": "full-height bronze-tinted black glass wardrobe doors, handle-less, with a faint warm interior glow"
+  },
+  "lamp_black": {
+   "tint": "#161616",
+   "text": "small black metal table lamp with a warm glow"
+  },
+  "vase_dark": {
+   "tint": "#2A2624",
+   "text": "tall dark ceramic floor vase"
+  },
+  "pampas": {
+   "tint": "#C9B08A",
+   "text": "tall dried pampas grass plumes"
+  },
+  "oak_panel_dark": {
+   "tint": "#2F241C",
+   "text": "dark smoked oak wall panelling with fine vertical grooves"
+  },
+  "plaster_cove_white": {
+   "tint": "#D9D2C8",
+   "text": "warm white plaster ceiling with a recessed tray: warm LED cove light glowing all around its edge"
+  },
+  "slat_screen_black": {
+   "tint": "#1A1918",
+   "text": "black metal screen of fine horizontal slats"
+  },
+  "bed_upholstered_cream": {
+   "tint": "#D2C3A6",
+   "text": "low button-tufted bed in cream boucle"
+  },
+  "headboard_tufted_cream": {
+   "tint": "#D2C3A6",
+   "text": "low button-tufted headboard in cream boucle"
+  },
+  "bedding_olive": {
+   "tint": "#6B5E45",
+   "text": "olive-brown washed linen bedding"
+  },
+  "pillow_cream": {
+   "tint": "#D9CCB4",
+   "text": "cream linen pillows"
+  },
+  "throw_chevron": {
+   "tint": "#3B3328",
+   "text": "dark brown and black chevron-knit throw"
+  },
+  "wardrobe_oak_dark": {
+   "tint": "#2F241C",
+   "text": "full-height flush dark smoked oak wardrobes with fine vertical grooves, handle-less, seamless with the wall panelling"
+  },
+  "bench_tufted_cream": {
+   "tint": "#D2C3A6",
+   "text": "button-tufted cream boucle bench"
+  },
+  "rug_charcoal": {
+   "tint": "#4A4642",
+   "text": "thick charcoal wool rug"
+  },
+  "ficus_tree": {
+   "tint": "#5E6B3A",
+   "text": "sculptural ficus tree with a twisted trunk and a rounded crown"
+  },
+  "ficus_trunk": {
+   "tint": "#6B5844",
+   "text": "twisted pale ficus trunk"
+  },
+  "art_sketch": {
+   "tint": "#EDEAE4",
+   "text": "framed black line-art figure sketch on white paper, thin black frame"
+  },
+  "pendant_black_cyl": {
+   "tint": "#141414",
+   "text": "slim black cylinder pendant light, warm glow at the bottom"
+  },
+  "slate_rough": {
+   "tint": "#2C2A28",
+   "text": "rough cleft dark slate stone walls with deep natural relief, grazed by warm light"
+  },
+  "marble_grey_floor": {
+   "tint": "#6D6A66",
+   "text": "large-format grey marble floor with white and smoky veining, honed"
+  },
+  "smoked_glass": {
+   "tint": "#7D756C",
+   "text": "frameless smoked bronze-grey glass shower screen"
+  },
+  "ring_led": {
+   "tint": "#FFF2D6",
+   "text": "large thin circular warm LED ring framing a round mirror"
+  },
+  "mirror_round": {
+   "tint": "#8E9496",
+   "text": "round frameless mirror"
+  },
+  "vanity_dark_stone": {
+   "tint": "#262422",
+   "text": "floating matte dark stone vanity with integrated basin and black tap"
+  },
+  "vanity_walnut_drawer": {
+   "tint": "#5B3D28",
+   "text": "floating walnut drawer tray under the vanity"
+  },
+  "niche_lit": {
+   "tint": "#6B5440",
+   "text": "recessed wall niche lit by warm LED, a few amber and black bottles"
+  },
+  "toilet_white": {
+   "tint": "#EDEDEA",
+   "text": "wall-hung square white ceramic toilet with a black flush plate"
+  },
+  "stone_taupe": {
+   "tint": "#7E7266",
+   "text": "large-format textured taupe stone tiles, sandblasted, warm grey-brown"
+  },
+  "stone_cream_floor": {
+   "tint": "#CFC3B3",
+   "text": "large-format warm cream stone floor tiles"
+  },
+  "plaster_taupe_ceiling": {
+   "tint": "#6E655D",
+   "text": "taupe plaster ceiling"
+  },
+  "walnut_counter": {
+   "tint": "#5E3F29",
+   "text": "thick floating walnut slab counter"
+  },
+  "cabinet_taupe": {
+   "tint": "#6A615A",
+   "text": "matte taupe handle-less drawers under an open walnut shelf"
+  },
+  "basin_black_vessel": {
+   "tint": "#1F1E1D",
+   "text": "rectangular matte black stone vessel basin with a black wall-mounted tap"
+  },
+  "mirror_cabinet": {
+   "tint": "#8B847D",
+   "text": "mirror cabinet with matte taupe doors and LED-lit open niches"
+  },
+  "towel_ladder": {
+   "tint": "#121212",
+   "text": "black ladder towel rail with charcoal towels"
+  },
+  "gypsophila": {
+   "tint": "#E8E1D6",
+   "text": "dried gypsophila (baby's breath) in a black glass vase"
+  },
+  "art_relief": {
+   "tint": "#CDBFAE",
+   "text": "large framed sand-plaster relief artwork with sculpted abstract waves"
   }
  },
  "style_materials": {
@@ -759,6 +971,26 @@
    "floor": "oak_floor",
    "wall": "plaster_greige",
    "ceiling": "plaster_white"
+  },
+  "bedroom_noir": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_dark_bed",
+   "ceiling": "ceiling_dark"
+  },
+  "bedroom_cove": {
+   "floor": "walnut_floor_dark",
+   "wall": "oak_panel_dark",
+   "ceiling": "plaster_cove_white"
+  },
+  "bath_slate": {
+   "floor": "marble_grey_floor",
+   "wall": "slate_rough",
+   "ceiling": "ceiling_black"
+  },
+  "bath_taupe": {
+   "floor": "stone_cream_floor",
+   "wall": "stone_taupe",
+   "ceiling": "plaster_taupe_ceiling"
   }
  },
  "kind_materials": {
@@ -802,10 +1034,37 @@
   "F_sauna_bench_low": "sauna_bench",
   "F_sauna_bench_high": "sauna_bench",
   "W_gkpl": "box_slats",
-  "U_F_bed1_wr1": "walnut_wardrobe",
-  "U_F_bed1_wr2": "walnut_wardrobe",
-  "U_F_bed3_wr1": "walnut_wardrobe",
-  "U_F_bed3_wr2": "walnut_wardrobe",
-  "U_F_bed2_closet": "walnut_wardrobe"
+  "U_F_bed1_wr1": "wardrobe_oak_dark",
+  "U_F_bed1_wr2": "wardrobe_oak_dark",
+  "U_F_bed3_wr1": "wardrobe_black_glass",
+  "U_F_bed3_wr2": "wardrobe_black_glass",
+  "U_F_bed2_closet": "wardrobe_oak_dark",
+  "U_F_bed3_base": "bed_upholstered_sand",
+  "U_F_bed3_head": "headboard_channel_sand",
+  "U_F_bed3_linen": "duvet_charcoal",
+  "U_F_bed3_pillow": "pillow_grey",
+  "U_F_bed3_throw": "throw_black_knit",
+  "U_F_bed3_ns1": "nightstand_black",
+  "U_F_bed3_ns2": "nightstand_black",
+  "U_F_bed3_tvunit": "console_black",
+  "U_F_bath2_vanity": "vanity_dark_stone",
+  "U_F_bath1_vanity": "walnut_counter",
+  "U_F_bath3_vanity": "walnut_counter",
+  "U_F_bath1_wc": "toilet_white",
+  "U_F_bath2_wc": "toilet_white",
+  "U_F_bath3_wc": "toilet_white",
+  "U_F_bath2_shower": "marble_grey_floor",
+  "U_F_bath1_shower": "stone_cream_floor",
+  "U_F_bath3_shower": "stone_cream_floor",
+  "U_F_bed1_base": "bed_upholstered_cream",
+  "U_F_bed1_head": "headboard_tufted_cream",
+  "U_F_bed1_linen": "bedding_olive",
+  "U_F_bed1_pillow": "pillow_cream",
+  "U_F_bed1_throw": "throw_chevron",
+  "U_F_bed2_base": "bed_upholstered_cream",
+  "U_F_bed2_head": "headboard_tufted_cream",
+  "U_F_bed2_linen": "bedding_olive",
+  "U_F_bed2_pillow": "pillow_cream",
+  "U_F_bed2_throw": "throw_chevron"
  }
 }

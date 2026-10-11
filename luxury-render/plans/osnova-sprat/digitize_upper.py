@@ -67,13 +67,13 @@ OPENINGS = [
 ]
 
 ROOMS = [
-    dict(id="U_R_bath1", name="Bathroom 1 (bedroom 1)", px=[(222, 237), (357, 237), (357, 442), (222, 442)], style="dark_spa"),
-    dict(id="U_R_bed1", name="Bedroom 1 (south-west)", px=[(366, 237), (472, 237), (472, 830), (222, 830), (222, 452), (366, 452)], style="bedroom_luxe"),
-    dict(id="U_R_bath2", name="Bathroom 2 (en-suite bedroom 3)", px=[(492, 237), (695, 237), (695, 370), (492, 370)], style="dark_spa"),
+    dict(id="U_R_bath1", name="Bathroom 1 (bedroom 1)", px=[(222, 237), (357, 237), (357, 442), (222, 442)], style="bath_taupe"),
+    dict(id="U_R_bed1", name="Bedroom 1 (south-west)", px=[(366, 237), (472, 237), (472, 830), (222, 830), (222, 452), (366, 452)], style="bedroom_cove"),
+    dict(id="U_R_bath2", name="Bathroom 2 (en-suite bedroom 3)", px=[(492, 237), (695, 237), (695, 370), (492, 370)], style="bath_slate"),
     dict(id="U_R_hall", name="Upper landing", px=[(492, 380), (660, 380), (660, 672), (572, 672), (572, 485), (492, 485)], style="warm_wood_luxe"),
-    dict(id="U_R_bed3", name="Bedroom 3 (north-east, master)", px=[(705, 237), (1122, 237), (1122, 465), (668, 465), (668, 380), (705, 380)], style="bedroom_luxe"),
-    dict(id="U_R_bath3", name="Bathroom 3 (bedroom 2)", px=[(775, 485), (920, 485), (920, 615), (775, 615)], style="dark_spa"),
-    dict(id="U_R_bed2", name="Bedroom 2 (south)", px=[(668, 485), (765, 485), (765, 630), (920, 630), (920, 945), (668, 945)], style="bedroom_luxe"),
+    dict(id="U_R_bed3", name="Bedroom 3 (north-east, master)", px=[(705, 237), (1122, 237), (1122, 465), (668, 465), (668, 380), (705, 380)], style="bedroom_noir"),
+    dict(id="U_R_bath3", name="Bathroom 3 (bedroom 2)", px=[(775, 485), (920, 485), (920, 615), (775, 615)], style="bath_taupe"),
+    dict(id="U_R_bed2", name="Bedroom 2 (south)", px=[(668, 485), (765, 485), (765, 630), (920, 630), (920, 945), (668, 945)], style="bedroom_cove"),
 ]
 # open to below: stair hole + double-height entry (railings UOG.1-3)
 VOIDS = [R(492, 485, 572, 945), R(572, 672, 660, 945)]
@@ -95,7 +95,7 @@ box("U_F_bed1_tv", "tv", (466, 625, 470, 710), 100, 70, "U_R_bed1", "W")
 box("U_F_bed1_wr1", "tall_cabinet", (222, 452, 366, 495), 0, 240, "U_R_bed1", "S", "wardrobes")
 box("U_F_bed1_wr2", "tall_cabinet", (366, 237, 472, 280), 0, 240, "U_R_bed1", "S", "wardrobes")
 # bathroom 1
-box("U_F_bath1_vanity", "vanity", (232, 240, 357, 282), 55, 30, "U_R_bath1", "S")
+box("U_F_bath1_vanity", "vanity", (232, 240, 357, 282), 80, 10, "U_R_bath1", "S")
 box("U_F_bath1_wc", "toilet", (232, 325, 275, 355), 0, 40, "U_R_bath1", "E")
 box("U_F_bath1_shower", "shower", (222, 375, 357, 442), 0, 3, "U_R_bath1")
 # bathroom 2
@@ -111,7 +111,7 @@ box("U_F_bed3_wr2", "tall_cabinet", (800, 237, 842, 380), 0, 240, "U_R_bed3", "E
 box("U_F_bed3_tvunit", "low_cabinet", (927, 450, 1022, 465), 0, 45, "U_R_bed3", "N")
 box("U_F_bed3_tv", "tv", (935, 461, 1015, 465), 100, 55, "U_R_bed3", "N")
 # bathroom 3
-box("U_F_bath3_vanity", "vanity", (775, 490, 840, 525), 55, 30, "U_R_bath3", "S")
+box("U_F_bath3_vanity", "vanity", (775, 490, 840, 525), 80, 10, "U_R_bath3", "S")
 box("U_F_bath3_shower", "shower", (860, 485, 920, 560), 0, 3, "U_R_bath3")
 box("U_F_bath3_wc", "toilet", (870, 570, 915, 605), 0, 40, "U_R_bath3", "N")
 # bedroom 2

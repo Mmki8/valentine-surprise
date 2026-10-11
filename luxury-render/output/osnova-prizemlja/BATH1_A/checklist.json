@@ -1,17 +1,26 @@
 {
  "camera": "BATH1_A",
  "room": "U_R_bath1",
- "hero": "BATH2_A",
+ "hero": null,
+ "mood": "mood_bath_taupe_walnut.jpg",
  "materials": [
-  "stone_dark",
-  "vanity_stone",
-  "mirror_backlit",
-  "bronze_frame",
-  "stone_dark_floor",
+  "stone_taupe",
+  "mirror_cabinet",
+  "cabinet_taupe",
+  "walnut_counter",
   "walnut_door",
-  "walnut_slats_dark",
-  "toilet_black",
-  "plaster_greige"
+  "stone_cream_floor",
+  "toilet_white",
+  "bronze_frame",
+  "plaster_taupe_ceiling",
+  "basin_black_vessel",
+  "plaster_greige",
+  "gypsophila",
+  "led_line",
+  "pendant_black_cyl",
+  "ceramic_dark",
+  "niche_lit",
+  "cable_black"
  ],
  "car": null,
  "openings": [
@@ -19,34 +28,34 @@
    "id": "U_O_bath1_door",
    "name": "door (closed)",
    "where": "right",
-   "share": 0.034,
+   "share": 0.048,
    "note": null
   },
   {
    "id": "U_O_bath1_win",
    "name": "window",
    "where": "left",
-   "share": 0.022,
+   "share": 0.016,
    "note": "bathroom 1 west window"
   }
  ],
  "furniture_counts": {
-  "vanity": 1,
-  "toilet": 1
+  "toilet": 1,
+  "vanity": 1
  },
  "items": [
-  {
-   "id": "U_F_bath1_vanity",
-   "name": "floating vanity",
-   "where": "right",
-   "share": 0.124,
-   "note": null
-  },
   {
    "id": "U_F_bath1_wc",
    "name": "wall-hung toilet",
    "where": "left",
-   "share": 0.01,
+   "share": 0.031,
+   "note": null
+  },
+  {
+   "id": "U_F_bath1_vanity",
+   "name": "floating vanity",
+   "where": "centre",
+   "share": 0.022,
    "note": null
   }
  ],

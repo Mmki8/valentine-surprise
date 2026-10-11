@@ -226,43 +226,65 @@
   {
    "id": "BED3_A",
    "room": "U_R_bed3",
-   "space": "bedrooms",
-   "title": "Master bedroom - from the TV wall toward the bed and east glass",
+   "space": "master",
+   "title": "Master suite - facing the faceted walnut bed wall (from the TV wall)",
    "pos": [
-    760,
-    300,
-    465
+    1014,
+    316,
+    462
    ],
    "look": [
-    1060,
-    110
+    1014,
+    26
    ],
-   "hfov": 84,
-   "shift_y": 0.02,
-   "notes": "Calm, warm master bedroom: walnut panelled wall behind the sand boucle headboard, two small glass globe pendants beside the bed."
+   "hfov": 96,
+   "shift_y": 0.06,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BED3_B",
    "room": "U_R_bed3",
-   "space": "bedrooms",
-   "title": "Master bedroom - from the east glass toward bed and wardrobes",
+   "space": "master",
+   "title": "Master suite - from the wardrobe side toward the east glass (bed, walnut canopy, marble TV wall, dusk view)",
    "pos": [
-    1185,
-    290,
+    850,
+    250,
     465
    ],
    "look": [
-    800,
-    110
+    1205,
+    175
    ],
-   "hfov": 84,
-   "shift_y": 0.02
+   "hfov": 86,
+   "shift_y": 0.04,
+   "rig": "dusk",
+   "exposure": 1.35
+  },
+  {
+   "id": "BED3_C",
+   "room": "U_R_bed3",
+   "space": "master",
+   "title": "Master suite - from the east glass toward black-glass wardrobes and door",
+   "pos": [
+    1190,
+    200,
+    465
+   ],
+   "look": [
+    700,
+    120
+   ],
+   "hfov": 90,
+   "shift_y": 0.04,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BED1_A",
    "room": "U_R_bed1",
-   "space": "bedrooms",
-   "title": "Bedroom 1 - from the entry toward bed and south glazing",
+   "space": "bedroom1",
+   "title": "Bedroom 1 - from the entry toward the bed and the south glazing",
    "pos": [
     330,
     420,
@@ -273,12 +295,14 @@
     720
    ],
    "hfov": 86,
-   "shift_y": 0.02
+   "shift_y": 0.02,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BED2_A",
    "room": "U_R_bed2",
-   "space": "bedrooms",
+   "space": "bedroom2",
    "title": "Bedroom 2 - facing the bed (headboard on the east wall)",
    "pos": [
     630,
@@ -290,58 +314,123 @@
     735
    ],
    "hfov": 88,
-   "shift_y": 0.02
+   "shift_y": 0.02,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BATH2_A",
    "room": "U_R_bath2",
-   "space": "upper_baths",
-   "title": "Bathroom 2 (master en-suite) - from the door",
+   "space": "master_bath",
+   "title": "Master en-suite - facing the north wall: smoked-glass shower, WC under the window, ring-mirror vanity",
    "pos": [
-    640,
-    180,
+    528,
+    196,
     455
    ],
    "look": [
-    460,
-    60
+    528,
+    26
    ],
-   "hfov": 100,
-   "shift_y": -0.1
+   "hfov": 98,
+   "shift_y": -0.16,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BATH1_A",
    "room": "U_R_bath1",
-   "space": "upper_baths",
-   "title": "Bathroom 1 - from the door",
+   "space": "bath1",
+   "title": "Bathroom 1 - facing the vanity wall",
    "pos": [
-    195,
-    215,
+    174,
+    286,
     455
    ],
    "look": [
-    80,
-    90
+    95,
+    26
    ],
-   "hfov": 100,
-   "shift_y": -0.1
+   "hfov": 98,
+   "shift_y": -0.14,
+   "rig": "dusk",
+   "exposure": 1.35
   },
   {
    "id": "BATH3_A",
    "room": "U_R_bath3",
-   "space": "upper_baths",
-   "title": "Bathroom 3 - from the door",
+   "space": "bath3",
+   "title": "Bathroom 3 - facing the vanity and shower",
    "pos": [
-    770,
-    512,
+    835,
+    516,
     455
    ],
    "look": [
-    905,
-    400
+    835,
+    351
    ],
    "hfov": 100,
-   "shift_y": -0.12
+   "shift_y": -0.14,
+   "rig": "dusk",
+   "exposure": 1.35
+  },
+  {
+   "id": "BED1_B",
+   "room": "U_R_bed1",
+   "space": "bedroom1",
+   "rig": "dusk",
+   "title": "Bedroom 1 - from the glazing back toward bed wall, wardrobes and TV wall",
+   "pos": [
+    300,
+    770,
+    465
+   ],
+   "look": [
+    60,
+    400
+   ],
+   "hfov": 86,
+   "shift_y": 0.02,
+   "exposure": 1.35
+  },
+  {
+   "id": "BED2_B",
+   "room": "U_R_bed2",
+   "space": "bedroom2",
+   "rig": "dusk",
+   "title": "Bedroom 2 - from the closet corner toward bed and south glazing",
+   "pos": [
+    640,
+    570,
+    465
+   ],
+   "look": [
+    920,
+    900
+   ],
+   "hfov": 86,
+   "shift_y": 0.02,
+   "exposure": 1.35
+  },
+  {
+   "id": "UPHALL_A",
+   "room": "U_R_hall",
+   "space": "landing",
+   "rig": "dusk",
+   "title": "Upper landing - over the stair and the double-height entry toward the tall window",
+   "pos": [
+    522,
+    232,
+    465
+   ],
+   "look": [
+    540,
+    950
+   ],
+   "hfov": 84,
+   "shift_y": -0.1,
+   "exposure": 1.35
   }
  ],
  "heroes": {
@@ -349,8 +438,13 @@
   "spa": "SPA_B",
   "wc": "WC_A",
   "garage": "GAR_B_car",
-  "bedrooms": "BED3_A",
-  "upper_baths": "BATH2_A"
+  "master": "BED3_A",
+  "bedroom1": "BED1_A",
+  "bedroom2": "BED2_A",
+  "master_bath": "BATH2_A",
+  "bath1": "BATH1_A",
+  "bath3": "BATH3_A",
+  "landing": "HALL_A"
  },
  "_doc_heroes": "Hero view per space is generated first and approved; every other view of that space gets it as IMAGE 2 (materials/fittings/light reference; geometry only from IMAGE 1).",
  "hero_jobs": {
@@ -360,5 +454,14 @@
   "GAR_B_car": "e676e2af-d5cb-4cec-b9d2-8d3f2a2caec1",
   "BED3_A": "6a7e8cb1-d6d8-4404-aec4-1bc7ca2a0992",
   "BATH2_A": "357b9eed-5a43-4967-9164-53541a7758fe"
- }
+ },
+ "moods": {
+  "master": "mood_bed_walnut_facets.jpg",
+  "bedroom1": "mood_bed_cove_slats.jpg",
+  "bedroom2": "mood_bed_cove_slats.jpg",
+  "master_bath": "mood_bath_dark_ring.jpg",
+  "bath1": "mood_bath_taupe_walnut.jpg",
+  "bath3": "mood_bath_taupe_walnut.jpg"
+ },
+ "_doc_moods": "A hero with no approved render yet gets the client's mood reference for its space as IMAGE 2 (materials/finish/light only, never layout)."
 }
