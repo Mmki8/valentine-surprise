@@ -5,11 +5,8 @@
  "mood": null,
  "materials": [
   "slate_rough",
-  "vanity_dark_stone",
   "mirror_round",
-  "toilet_white",
-  "vanity_walnut_drawer",
-  "marble_grey_floor",
+  "vanity_dark_stone",
   "ring_led",
   "black_metal",
   "ceramic_dark"
@@ -17,23 +14,15 @@
  "car": null,
  "openings": [],
  "furniture_counts": {
-  "vanity": 1,
-  "toilet": 1
+  "vanity": 1
  },
  "items": [
   {
    "id": "S_F_bath1_vanity",
    "name": "floating vanity",
-   "where": "centre",
-   "share": 0.052,
+   "where": "left",
+   "share": 0.067,
    "note": "basin in the GKPL installation wall"
-  },
-  {
-   "id": "S_F_bath1_wc",
-   "name": "wall-hung toilet",
-   "where": "right",
-   "share": 0.027,
-   "note": null
   }
  ],
  "manual_checks": [

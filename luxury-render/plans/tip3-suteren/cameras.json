@@ -119,15 +119,15 @@
    "title": "Bathroom 1 - facing the ring-mirror vanity",
    "pos": [
     222,
-    196,
+    150,
     152
    ],
    "look": [
     27,
-    186
+    150
    ],
-   "hfov": 100,
-   "shift_y": -0.12
+   "hfov": 76,
+   "shift_y": -0.3
   },
   {
    "id": "BATH1_B",

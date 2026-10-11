@@ -68,9 +68,11 @@ def pendant(tag, x, y, zb, zt=H):
 
 
 def pampas(tag, x, y):
+    """dried pampas: tall dark vase + slender plume stems fanning out (NOT spheres - spheres read as globe lamps)"""
     D.append(C(f"{tag}_vase", "vase_dark", x, y, 9, 0, 70))
-    for i, (dx, dy, dz) in enumerate([(-4, -3, 120), (5, 2, 140), (-2, 5, 158)]):
-        D.append(S(f"{tag}_plume{i}", "pampas", x + dx, y + dy, dz, 13))
+    for i, (dx, dy, dz) in enumerate([(-16, -6, 150), (11, 5, 168), (-3, 12, 176), (16, -9, 142), (1, -2, 182)]):
+        D.append(dict(id=f"{tag}_plume{i}", shape="seg", mat="pampas", p0=[x, y, 68], p1=[x + dx, y + dy, dz], normal="z",
+                      w=7, t=7, kind="decor", emissive=False))
 
 
 # the approved master-suite facet pattern (wall: along-wall 0..1, height 0..1; canopy: along 0..1, depth 0..1)
@@ -122,7 +124,7 @@ def marble_wall(tag, face, a0, a1, sign):
 
 
 # ======================================================================== BEDROOM 1 (headboard on the west wall)
-facet_suite("b1", "x", X(205), Y(546), Y(760), X(300) - X(205), +1)
+facet_suite("b1", "x", X(205), Y(546), Y(760), X(300) - X(205), +1, slat_w=8.4)   # same slim slats as bedrooms 2/3
 lamp("D_b1_lamp0", X(222), Y(573.5))
 lamp("D_b1_lamp1", X(222), Y(732.5))
 D.append(B("D_b1_rug", "rug_sand", 60, 395, 300, 690, 0, 1.2))

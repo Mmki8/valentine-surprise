@@ -2004,9 +2004,9 @@
    "mat": "walnut_facets",
    "rect": [
     27.6,
-    366.9,
+    382.5,
     152.3,
-    697.9
+    682.3
    ],
    "z": [
     261,
@@ -2241,9 +2241,9 @@
    "mat": "led_line",
    "rect": [
     151.3,
-    366.9,
+    382.5,
     152.3,
-    697.9
+    682.3
    ],
    "z": [
     260,
@@ -2292,9 +2292,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    367.5,
+    383.1,
     35.6,
-    372.29999999999995
+    384.0
    ],
    "z": [
     0,
@@ -2309,9 +2309,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    373.5,
+    385.20000000000005,
     35.6,
-    378.29999999999995
+    386.1
    ],
    "z": [
     0,
@@ -2326,9 +2326,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    379.5,
+    387.3,
     35.6,
-    384.29999999999995
+    388.2
    ],
    "z": [
     0,
@@ -2343,9 +2343,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    385.5,
+    389.40000000000003,
     35.6,
-    390.29999999999995
+    390.3
    ],
    "z": [
     0,
@@ -2362,7 +2362,7 @@
     27.6,
     674.5,
     35.6,
-    679.3
+    675.4
    ],
    "z": [
     0,
@@ -2377,9 +2377,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    680.5,
+    676.6,
     35.6,
-    685.3
+    677.5
    ],
    "z": [
     0,
@@ -2394,9 +2394,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    686.5,
+    678.7,
     35.6,
-    691.3
+    679.6
    ],
    "z": [
     0,
@@ -2411,9 +2411,9 @@
    "mat": "black_slats",
    "rect": [
     27.6,
-    692.5,
+    680.8,
     35.6,
-    697.3
+    681.6999999999999
    ],
    "z": [
     0,
@@ -2655,39 +2655,103 @@
   },
   {
    "id": "D_b1_pampas_plume0",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    319.0,
-    709.3,
-    120
+   "p0": [
+    323.0,
+    712.3,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    307.0,
+    706.3,
+    150
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b1_pampas_plume1",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    328.0,
-    714.3,
-    140
+   "p0": [
+    323.0,
+    712.3,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    334.0,
+    717.3,
+    168
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b1_pampas_plume2",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    321.0,
-    717.3,
-    158
+   "p0": [
+    323.0,
+    712.3,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    320.0,
+    724.3,
+    176
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pampas_plume3",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    323.0,
+    712.3,
+    68
+   ],
+   "p1": [
+    339.0,
+    703.3,
+    142
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pampas_plume4",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    323.0,
+    712.3,
+    68
+   ],
+   "p1": [
+    324.0,
+    710.3,
+    182
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b2_facet_wall",
@@ -3363,39 +3427,103 @@
   },
   {
    "id": "D_b2_pampas_plume0",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    400.4,
-    956.1,
-    120
+   "p0": [
+    404.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    388.4,
+    953.1,
+    150
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b2_pampas_plume1",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    409.4,
-    961.1,
-    140
+   "p0": [
+    404.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    415.4,
+    964.1,
+    168
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b2_pampas_plume2",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    402.4,
-    964.1,
-    158
+   "p0": [
+    404.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    401.4,
+    971.1,
+    176
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pampas_plume3",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    404.4,
+    959.1,
+    68
+   ],
+   "p1": [
+    420.4,
+    950.1,
+    142
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pampas_plume4",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    404.4,
+    959.1,
+    68
+   ],
+   "p1": [
+    405.4,
+    957.1,
+    182
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b3_facet_wall",
@@ -4071,39 +4199,103 @@
   },
   {
    "id": "D_b3_pampas_plume0",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    1264.4,
-    956.1,
-    120
+   "p0": [
+    1268.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    1252.4,
+    953.1,
+    150
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b3_pampas_plume1",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    1273.4,
-    961.1,
-    140
+   "p0": [
+    1268.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    1279.4,
+    964.1,
+    168
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_b3_pampas_plume2",
-   "shape": "sphere",
+   "shape": "seg",
    "mat": "pampas",
-   "center": [
-    1266.4,
-    964.1,
-    158
+   "p0": [
+    1268.4,
+    959.1,
+    68
    ],
-   "r": 13,
-   "kind": "decor"
+   "p1": [
+    1265.4,
+    971.1,
+    176
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_pampas_plume3",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    1268.4,
+    959.1,
+    68
+   ],
+   "p1": [
+    1284.4,
+    950.1,
+    142
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_pampas_plume4",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    1268.4,
+    959.1,
+    68
+   ],
+   "p1": [
+    1269.4,
+    957.1,
+    182
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
   },
   {
    "id": "D_bath1_drawer",
