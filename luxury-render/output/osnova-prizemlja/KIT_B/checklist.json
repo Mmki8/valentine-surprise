@@ -42,6 +42,12 @@
    "note": "installation duct, boxed in"
   },
   {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.018
+  },
+  {
    "id": "F_k_stool_3",
    "name": "bar stool",
    "where": "centre",

@@ -335,7 +335,8 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts) {
 
   // 4. surface-ID pass (flat colour per element) -> visibility table
   for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(idIndex.get(r.id)) });
-  for (const r of reg) if (r.kind === 'exterior') r.mesh.visible = false;
+  // exterior hidden; glass is transparent in reality, so it must not occlude what is behind it
+  for (const r of reg) if (r.kind === 'exterior' || r.mesh.userData.glass) r.mesh.visible = false;
   r3.render(scene, cam); out.surface_ids = r3.domElement.toDataURL('image/png');
 
   // 5. view-space normals + 6. linear depth (24-bit) -> true geometric edges in Python

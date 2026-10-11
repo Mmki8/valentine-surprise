@@ -1,0 +1,15 @@
+{
+ "LIV_A": "b43d3e9f-4f80-4d92-aa0a-73d69a49675a",
+ "LIV_B": "81c9a58b-43b7-4f65-97f3-a09b6fe14a34",
+ "KIT_A": "e5f977b7-d583-4cca-a14a-2586ec225f5b",
+ "KIT_B": "924d8fe1-8060-4072-8b28-42eb0a14ccc3",
+ "DIN_A": "b9bdf08f-1196-4a5c-8735-64d8cc503f37",
+ "SPA_A": "54656b3a-1c0e-4c53-92bb-cf31a29b34f5",
+ "SPA_B": "4a353da4-cfed-431a-ade9-148628870991",
+ "WC_A": "5d950b02-910c-44f3-bd31-a2fe4726d78a",
+ "GAR_A_car": "8b5146a1-1501-4d97-a8a5-9a25fb7f6b90",
+ "GAR_A_empty": "ee2e72fb-e630-4eaf-971b-e5c2449f30e6",
+ "GAR_B_car": "0ff96ca1-0b5e-4990-aab3-d60837c39bf8",
+ "GAR_B_empty": "45952c91-d0cf-4d1f-bc6c-ae2ea6ba9396",
+ "HALL_A": "d0031302-4023-440e-985f-e959317cb941"
+}

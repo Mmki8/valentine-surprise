@@ -4,13 +4,6 @@
  "car": null,
  "openings": [
   {
-   "id": "O_sauna_glass_e",
-   "name": "glass partition/door",
-   "where": "centre",
-   "share": 0.061,
-   "note": "sauna fixed glass side"
-  },
-  {
    "id": "O_spa_door",
    "name": "door (closed)",
    "where": "left",
@@ -18,16 +11,24 @@
    "note": "hall <-> spa"
   },
   {
+   "id": "O_sauna_glass_e",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.014,
+   "note": "sauna fixed glass side"
+  },
+  {
    "id": "O_sauna_glass_s",
    "name": "glass partition/door",
    "where": "centre",
-   "share": 0.013,
+   "share": 0.008,
    "note": "sauna glass door, opens into spa"
   }
  ],
  "furniture_counts": {
   "jacuzzi": 1,
-  "shower": 1
+  "shower": 1,
+  "bench": 2
  },
  "items": [
   {
@@ -41,8 +42,22 @@
    "id": "F_shower_tray",
    "name": "walk-in shower",
    "where": "centre",
-   "share": 0.006,
+   "share": 0.013,
    "note": "walk-in shower"
+  },
+  {
+   "id": "F_sauna_bench_low",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.011,
+   "note": null
+  },
+  {
+   "id": "F_sauna_bench_high",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.009,
+   "note": null
   }
  ],
  "manual_checks": [

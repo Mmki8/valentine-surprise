@@ -7,21 +7,21 @@
    "id": "O_south_glazing",
    "name": "floor-to-ceiling glass facade",
    "where": "left",
-   "share": 0.181,
+   "share": 0.022,
    "note": "living south facade: 3 large panels to terrace"
   },
   {
    "id": "O_double_door",
    "name": "glazed double door (closed)",
    "where": "centre",
-   "share": 0.093,
+   "share": 0.017,
    "note": "double door into dining: active leaf west (solid arc), passive leaf east (dashed arc)"
   },
   {
    "id": "O_east_glazing",
    "name": "floor-to-ceiling glass facade",
    "where": "left",
-   "share": 0.092,
+   "share": 0.014,
    "note": "living east facade: fixed glass + lift&slide between y988-1125"
   }
  ],

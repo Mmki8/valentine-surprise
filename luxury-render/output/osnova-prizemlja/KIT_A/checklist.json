@@ -57,6 +57,12 @@
    "note": "installation duct, boxed in"
   },
   {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.009
+  },
+  {
    "id": "F_d_chair_n3",
    "name": "dining chair",
    "where": "right",

@@ -14,12 +14,19 @@
    "id": "O_mud_hall_door",
    "name": "door (closed)",
    "where": "centre",
-   "share": 0.006,
+   "share": 0.007,
    "note": "mudroom <-> hall"
   }
  ],
  "furniture_counts": {},
- "items": [],
+ "items": [
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.054
+  }
+ ],
  "manual_checks": [
   "camera position/angle/framing identical to blockout (compare overlay)",
   "every opening listed is present, same position/size; NO extra window/door",

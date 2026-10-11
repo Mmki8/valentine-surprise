@@ -106,6 +106,8 @@ def main(plan_dir, cam_full):
         if k in mp and k in look:
             pairs.append(f"{look[k]} = {mp[k]}")
     inv = ", ".join(f"{n} x {NAMES.get(k, k)}" for k, n in sorted(counts.items()))
+    if any(i["name"] == "staircase" for i in items):
+        inv = (inv + ", " if inv else "") + "1 x staircase"
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     car_line = ""
     if cam["room"] == "R_garage" and not car_on:
