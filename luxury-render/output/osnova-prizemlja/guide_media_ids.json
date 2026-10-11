@@ -1,15 +1,15 @@
 {
- "LIV_A": "b43d3e9f-4f80-4d92-aa0a-73d69a49675a",
- "LIV_B": "81c9a58b-43b7-4f65-97f3-a09b6fe14a34",
- "KIT_A": "e5f977b7-d583-4cca-a14a-2586ec225f5b",
- "KIT_B": "924d8fe1-8060-4072-8b28-42eb0a14ccc3",
- "DIN_A": "b9bdf08f-1196-4a5c-8735-64d8cc503f37",
- "SPA_A": "54656b3a-1c0e-4c53-92bb-cf31a29b34f5",
- "SPA_B": "4a353da4-cfed-431a-ade9-148628870991",
- "WC_A": "5d950b02-910c-44f3-bd31-a2fe4726d78a",
- "GAR_A_car": "8b5146a1-1501-4d97-a8a5-9a25fb7f6b90",
- "GAR_A_empty": "ee2e72fb-e630-4eaf-971b-e5c2449f30e6",
- "GAR_B_car": "0ff96ca1-0b5e-4990-aab3-d60837c39bf8",
- "GAR_B_empty": "45952c91-d0cf-4d1f-bc6c-ae2ea6ba9396",
- "HALL_A": "d0031302-4023-440e-985f-e959317cb941"
+ "LIV_A": "7963649c-1038-4a8b-876c-f33eadf7e5b5",
+ "LIV_B": "3f0c1490-950e-4a88-a50f-dd99a72510a9",
+ "KIT_A": "d076779a-2bd9-4ffb-8037-1d50a5ea2b3c",
+ "KIT_B": "1b0180b7-2032-4760-a10b-90df3cb61d99",
+ "DIN_A": "d8a5c731-1eea-4724-b725-6a4fba43fb2e",
+ "SPA_A": "a3fd2efe-4380-455b-8dff-1218ee82db32",
+ "SPA_B": "95653a05-f331-4c7f-bdd1-54b0b05aab78",
+ "WC_A": "bcbf5171-5d34-4e25-b666-e9e6d2c81b83",
+ "GAR_A_car": "9e6b0723-3f1b-4583-971e-08a13c45b74e",
+ "GAR_A_empty": "ce75ea0f-c65a-48ea-a55e-7fd968c115ae",
+ "GAR_B_car": "31f688d0-599d-4f0d-9a0f-ddf6fa4a636b",
+ "GAR_B_empty": "0daf6bcd-4109-421c-a4f1-874b96a69fa8",
+ "HALL_A": "4bc87970-5db3-4dc3-b469-bedd4cc3e373"
 }
