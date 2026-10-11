@@ -54,3 +54,13 @@ Everything in `plan.json` is traced to pixels of `source/floorplan_ground.webp`
 | U2 | Bedroom glazing (bed 1 south, bed 2 south OG.2, bed 3 east OG.3) = full-height glazed doors to balconies |
 | U3 | Railings UOG.1-3 = frameless glass, 100 cm |
 | U4 | Bath 3 has no window (none drawn) |
+
+## First floor v4 - design after the client's references
+| Room | Reference | What is modelled |
+|---|---|---|
+| Master suite | walnut facets | faceted walnut wall + ceiling canopy with LED seams, black slats, marble TV wall with LED lines, black-glass wardrobes, pampas |
+| Bedrooms 1, 2 | cove & slats | dark oak panelling, white tray ceiling with LED cove, black pendants, slat screens (bed 1), bench + line-art (bed 2), ficus |
+| Master bath | dark ring | rough slate, round mirror in LED ring, dark stone + walnut floating vanity, smoked glass, lit niche, white WC |
+| Baths 1, 3 | taupe & walnut | taupe stone, walnut counter, black vessel basin, mirror cabinet, black pendants, gypsophila |
+Fixes found while modelling: bath-2 shower glass was at x 551 (mid-room) -> moved to the shower edge x 458; bath-3 glass shortened so the shower has an entry.
+First floor is shown at dusk (blue hour); the view is from 4.5 m up. Ground floor stays golden hour.

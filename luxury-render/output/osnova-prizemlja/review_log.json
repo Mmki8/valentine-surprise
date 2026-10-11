@@ -428,5 +428,68 @@
     "note": ""
    }
   }
+ },
+ "v4_first_floor": {
+  "brief": "Redesign of the first floor after the client's 4 references (refs/mood/mood_bed_*, mood_bath_*); dusk + elevated view.",
+  "bug_found": "gt_edges.png was only built when missing: re-aimed cameras carried the OLD edges into guide_lined (phantom pendant/ring in BED3_A). Fixed: rebuilt after every render.",
+  "rejected": [
+   "BED3_A #3,#4 (phantom ring/pendant from stale edges, invented bench)",
+   "BED3_A #6 (left wardrobe rendered as plaster wall)",
+   "BED2_A #5,#6 (pendants drawn against the LED lines)",
+   "BATH1_A #2/#3 (toilet read as a white cube)",
+   "BED3_B #2 (marble instead of curtain)",
+   "BED3_C #2 (door frame lost)"
+  ],
+  "accepted_with_note": [
+   "BED2_A/BED2_B: a sheer curtain also stacked at the east end of the glazing (consistent in both views); left pendant ~15 cm off its modelled spot",
+   "BED2_B vs BED2_A consistency flag on window frame colour = dusk sky behind the frame (lighting only)"
+  ],
+  "final": {
+   "BED3_A": {
+    "job_id": "41007e74-1195-46e7-b289-21647eef7aae",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_174802_41007e74-1195-46e7-b289-21647eef7aae.png"
+   },
+   "BED3_B": {
+    "job_id": "2e1b7a82-5c28-4d5b-900d-49801ff1dc08",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_175143_2e1b7a82-5c28-4d5b-900d-49801ff1dc08.png"
+   },
+   "BED3_C": {
+    "job_id": "733b0122-8be9-4124-ae6f-da6c0fd067ef",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_175143_733b0122-8be9-4124-ae6f-da6c0fd067ef.png"
+   },
+   "BATH2_A": {
+    "job_id": "1ed09705-7b6f-4d8f-ad4e-0593133b81a3",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_173150_1ed09705-7b6f-4d8f-ad4e-0593133b81a3.png"
+   },
+   "BED1_A": {
+    "job_id": "c18d2ba3-88e4-47b3-b826-6f20f594c6f3",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_173153_c18d2ba3-88e4-47b3-b826-6f20f594c6f3.png"
+   },
+   "BED1_B": {
+    "job_id": "6e441cbf-874b-4444-a326-602198953488",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_174802_6e441cbf-874b-4444-a326-602198953488.png"
+   },
+   "BATH1_A": {
+    "job_id": "e6d63dd0-161e-4b29-81cd-dcff75dbd32d",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_174802_e6d63dd0-161e-4b29-81cd-dcff75dbd32d.png"
+   },
+   "BED2_A": {
+    "job_id": "2bf3330d-4f23-4003-82c7-943c4550e831",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_173149_2bf3330d-4f23-4003-82c7-943c4550e831.png"
+   },
+   "BED2_B": {
+    "job_id": "61ac0e4a-ac0b-4a41-a582-6c801efe7570",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_174802_61ac0e4a-ac0b-4a41-a582-6c801efe7570.png"
+   },
+   "BATH3_A": {
+    "job_id": "b637182f-4e0f-4b0a-ac05-0811736242f4",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_173149_b637182f-4e0f-4b0a-ac05-0811736242f4.png"
+   },
+   "UPHALL_A": {
+    "job_id": "7b3f5598-36d7-43fa-8426-1070f6075663",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_173151_7b3f5598-36d7-43fa-8426-1070f6075663.png"
+   }
+  },
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/8426ced4-d17c-4eb4-938d-35ea2491c9b3.zip"
  }
 }

@@ -456,8 +456,12 @@
   "SPA_B": "2c3814e0-f4a9-4c22-bb23-f4bf4ce052b8",
   "WC_A": "87556219-c87a-4e88-a8e8-5516574385cb",
   "GAR_B_car": "e676e2af-d5cb-4cec-b9d2-8d3f2a2caec1",
-  "BED3_A": "6a7e8cb1-d6d8-4404-aec4-1bc7ca2a0992",
-  "BATH2_A": "357b9eed-5a43-4967-9164-53541a7758fe"
+  "BED3_A": "41007e74-1195-46e7-b289-21647eef7aae",
+  "BATH2_A": "1ed09705-7b6f-4d8f-ad4e-0593133b81a3",
+  "BED1_A": "c18d2ba3-88e4-47b3-b826-6f20f594c6f3",
+  "BED2_A": "2bf3330d-4f23-4003-82c7-943c4550e831",
+  "BATH1_A": "e6d63dd0-161e-4b29-81cd-dcff75dbd32d",
+  "BATH3_A": "b637182f-4e0f-4b0a-ac05-0811736242f4"
  },
  "moods": {
   "master": "mood_bed_walnut_facets.jpg",
