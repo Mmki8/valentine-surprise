@@ -617,78 +617,6 @@
    ]
   },
   {
-   "id": "W_up_stair_w",
-   "rect": [
-    354.9,
-    341.2,
-    378.0,
-    862.1
-   ],
-   "z0": 280,
-   "z1": 560,
-   "kind": "int",
-   "src_px": [
-    600,
-    612,
-    622,
-    1108
-   ]
-  },
-  {
-   "id": "W_up_stair_e",
-   "rect": [
-    480.9,
-    341.2,
-    491.4,
-    862.1
-   ],
-   "z0": 280,
-   "z1": 560,
-   "kind": "int",
-   "src_px": [
-    720,
-    612,
-    730,
-    1108
-   ]
-  },
-  {
-   "id": "W_up_stair_n",
-   "rect": [
-    354.9,
-    341.2,
-    491.4,
-    351.8
-   ],
-   "z0": 280,
-   "z1": 560,
-   "kind": "int",
-   "src_px": [
-    600,
-    612,
-    730,
-    622
-   ]
-  },
-  {
-   "id": "W_up_stair_s",
-   "rect": [
-    354.9,
-    853.7,
-    491.4,
-    862.1
-   ],
-   "z0": 280,
-   "z1": 560,
-   "kind": "int",
-   "src_px": [
-    600,
-    1100,
-    730,
-    1108
-   ]
-  },
-  {
    "id": "W_gkpl",
    "rect": [
     598.5,
@@ -705,6 +633,348 @@
     898,
     1050
    ]
+  },
+  {
+   "id": "U_W_north",
+   "rect": [
+    -13.1,
+    -9.2,
+    1244.5,
+    26.2
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    192,
+    210,
+    1152,
+    237
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_west",
+   "rect": [
+    -13.1,
+    -9.2,
+    26.2,
+    829.2
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    192,
+    210,
+    222,
+    850
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_east_bed3",
+   "rect": [
+    1205.2,
+    26.2,
+    1244.5,
+    324.9
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    1122,
+    237,
+    1152,
+    465
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed3_s_ext",
+   "rect": [
+    1205.2,
+    311.8,
+    1451.5,
+    351.1
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    1122,
+    455,
+    1310,
+    485
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed1_s",
+   "rect": [
+    26.2,
+    803.0,
+    353.7,
+    829.2
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    222,
+    830,
+    472,
+    850
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_entry_s",
+   "rect": [
+    353.7,
+    947.1,
+    610.5,
+    976.0
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    472,
+    940,
+    668,
+    962
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed2_s",
+   "rect": [
+    600.0,
+    953.7,
+    953.7,
+    979.9
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "ext",
+   "src_px": [
+    660,
+    945,
+    930,
+    965
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath1_e",
+   "rect": [
+    203.1,
+    26.2,
+    214.8,
+    307.9
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    357,
+    237,
+    366,
+    452
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath1_s",
+   "rect": [
+    26.2,
+    294.8,
+    214.8,
+    307.9
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    222,
+    442,
+    366,
+    452
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed1_e",
+   "rect": [
+    353.7,
+    26.2,
+    379.9,
+    829.2
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    472,
+    237,
+    492,
+    850
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath2_s",
+   "rect": [
+    379.9,
+    200.4,
+    658.9,
+    213.5
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    492,
+    370,
+    705,
+    380
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath2_e",
+   "rect": [
+    645.8,
+    26.2,
+    658.9,
+    213.5
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    695,
+    237,
+    705,
+    380
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed3_w",
+   "rect": [
+    600.0,
+    213.5,
+    610.5,
+    351.1
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    660,
+    380,
+    668,
+    485
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed3_s",
+   "rect": [
+    573.8,
+    324.9,
+    1205.2,
+    351.1
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    640,
+    465,
+    1122,
+    485
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bed2_w",
+   "rect": [
+    600.0,
+    351.1,
+    610.5,
+    953.7
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    660,
+    485,
+    668,
+    945
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath3_w",
+   "rect": [
+    737.5,
+    351.1,
+    750.6,
+    534.5
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    765,
+    485,
+    775,
+    625
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_bath3_s",
+   "rect": [
+    737.5,
+    521.4,
+    953.7,
+    541.0
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    765,
+    615,
+    930,
+    630
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_W_void_w",
+   "rect": [
+    940.6,
+    351.1,
+    966.8,
+    973.3
+   ],
+   "z0": 283,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    920,
+    485,
+    940,
+    960
+   ],
+   "level": "upper"
   }
  ],
  "openings": [
@@ -1047,6 +1317,240 @@
     1055,
     477
    ]
+  },
+  {
+   "id": "U_O_bath1_win",
+   "type": "window",
+   "sill": 420,
+   "head": 530,
+   "note": "bathroom 1 west window",
+   "rect": [
+    -13.1,
+    98.2,
+    26.2,
+    187.3
+   ],
+   "src_px": [
+    192,
+    292,
+    222,
+    360
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bath2_win",
+   "type": "window",
+   "sill": 430,
+   "head": 530,
+   "note": "bathroom 2 north window",
+   "rect": [
+    471.6,
+    -9.2,
+    534.5,
+    26.2
+   ],
+   "src_px": [
+    562,
+    210,
+    610,
+    237
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed3_win",
+   "type": "sliding",
+   "sill": 310,
+   "head": 540,
+   "note": "bedroom 3 east glazed door (OG.3)",
+   "rect": [
+    1200.0,
+    111.4,
+    1249.7,
+    311.8
+   ],
+   "src_px": [
+    1118,
+    302,
+    1156,
+    455
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed1_glz",
+   "type": "sliding",
+   "sill": 310,
+   "head": 540,
+   "note": "bedroom 1 south glazing with door to balcony",
+   "rect": [
+    30.1,
+    797.8,
+    347.2,
+    834.5
+   ],
+   "src_px": [
+    225,
+    826,
+    467,
+    854
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed2_glz",
+   "type": "sliding",
+   "sill": 310,
+   "head": 540,
+   "note": "bedroom 2 south glazed door (OG.2)",
+   "rect": [
+    744.1,
+    948.4,
+    934.0,
+    985.1
+   ],
+   "src_px": [
+    770,
+    941,
+    915,
+    969
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_entry_win",
+   "type": "window",
+   "sill": 330,
+   "head": 540,
+   "note": "tall window lighting the double-height entry",
+   "rect": [
+    495.2,
+    941.9,
+    596.1,
+    981.2
+   ],
+   "src_px": [
+    580,
+    936,
+    657,
+    966
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bath1_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    200.4,
+    108.7,
+    217.5,
+    180.8
+   ],
+   "src_px": [
+    355,
+    300,
+    368,
+    355
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed1_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    351.1,
+    230.6,
+    382.5,
+    311.8
+   ],
+   "src_px": [
+    470,
+    393,
+    494,
+    455
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bath2_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    643.2,
+    108.7,
+    661.6,
+    176.8
+   ],
+   "src_px": [
+    693,
+    300,
+    707,
+    352
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed3_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    597.4,
+    229.2,
+    613.1,
+    311.8
+   ],
+   "src_px": [
+    658,
+    392,
+    670,
+    455
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bed2_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    597.4,
+    423.1,
+    613.1,
+    508.3
+   ],
+   "src_px": [
+    658,
+    540,
+    670,
+    605
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "U_O_bath3_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "rect": [
+    734.9,
+    442.8,
+    753.2,
+    514.8
+   ],
+   "src_px": [
+    763,
+    555,
+    777,
+    610
+   ],
+   "level": "upper"
   }
  ],
  "rooms": [
@@ -1241,9 +1745,15 @@
    "ceiling_holes": [
     [
      378.0,
-     349.7,
-     480.9,
-     853.7
+     350.7,
+     483.0,
+     950.2
+    ],
+    [
+     483.0,
+     595.4,
+     598.5,
+     950.2
     ]
    ]
   },
@@ -1314,6 +1824,220 @@
    "ceiling": 560,
    "style": "living_grand",
    "ceiling_holes": []
+  },
+  {
+   "id": "U_R_bath1",
+   "name": "Bathroom 1 (bedroom 1)",
+   "polygon": [
+    [
+     26.2,
+     26.2
+    ],
+    [
+     203.1,
+     26.2
+    ],
+    [
+     203.1,
+     294.8
+    ],
+    [
+     26.2,
+     294.8
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "dark_spa",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_bed1",
+   "name": "Bedroom 1 (south-west)",
+   "polygon": [
+    [
+     214.8,
+     26.2
+    ],
+    [
+     353.7,
+     26.2
+    ],
+    [
+     353.7,
+     803.0
+    ],
+    [
+     26.2,
+     803.0
+    ],
+    [
+     26.2,
+     307.9
+    ],
+    [
+     214.8,
+     307.9
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "bedroom_luxe",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_bath2",
+   "name": "Bathroom 2 (en-suite bedroom 3)",
+   "polygon": [
+    [
+     379.9,
+     26.2
+    ],
+    [
+     645.8,
+     26.2
+    ],
+    [
+     645.8,
+     200.4
+    ],
+    [
+     379.9,
+     200.4
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "dark_spa",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_hall",
+   "name": "Upper landing",
+   "polygon": [
+    [
+     379.9,
+     213.5
+    ],
+    [
+     600.0,
+     213.5
+    ],
+    [
+     600.0,
+     596.1
+    ],
+    [
+     484.7,
+     596.1
+    ],
+    [
+     484.7,
+     351.1
+    ],
+    [
+     379.9,
+     351.1
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "warm_wood_luxe",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_bed3",
+   "name": "Bedroom 3 (north-east, master)",
+   "polygon": [
+    [
+     658.9,
+     26.2
+    ],
+    [
+     1205.2,
+     26.2
+    ],
+    [
+     1205.2,
+     324.9
+    ],
+    [
+     610.5,
+     324.9
+    ],
+    [
+     610.5,
+     213.5
+    ],
+    [
+     658.9,
+     213.5
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "bedroom_luxe",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_bath3",
+   "name": "Bathroom 3 (bedroom 2)",
+   "polygon": [
+    [
+     750.6,
+     351.1
+    ],
+    [
+     940.6,
+     351.1
+    ],
+    [
+     940.6,
+     521.4
+    ],
+    [
+     750.6,
+     521.4
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "dark_spa",
+   "level": "upper"
+  },
+  {
+   "id": "U_R_bed2",
+   "name": "Bedroom 2 (south)",
+   "polygon": [
+    [
+     610.5,
+     351.1
+    ],
+    [
+     737.5,
+     351.1
+    ],
+    [
+     737.5,
+     541.0
+    ],
+    [
+     940.6,
+     541.0
+    ],
+    [
+     940.6,
+     953.7
+    ],
+    [
+     610.5,
+     953.7
+    ]
+   ],
+   "floor": 310,
+   "ceiling": 560,
+   "style": "bedroom_luxe",
+   "level": "upper"
   }
  ],
  "void": {
@@ -2793,6 +3517,696 @@
     790,
     1631,
     905
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    26.2,
+    508.3,
+    229.2,
+    678.6
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed1",
+   "facing": "E",
+   "note": "double bed, headboard on west wall",
+   "src_px": [
+    222,
+    605,
+    377,
+    735
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    26.2,
+    458.5,
+    65.5,
+    508.3
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    222,
+    567,
+    252,
+    605
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    26.2,
+    678.6,
+    65.5,
+    724.4
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    222,
+    735,
+    252,
+    770
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_tvunit",
+   "kind": "low_cabinet",
+   "shape": "box",
+   "rect": [
+    314.4,
+    514.8,
+    351.1,
+    665.5
+   ],
+   "z0": 310,
+   "h": 45,
+   "room": "U_R_bed1",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    442,
+    610,
+    470,
+    725
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_tv",
+   "kind": "tv",
+   "shape": "box",
+   "rect": [
+    345.8,
+    534.5,
+    351.1,
+    645.8
+   ],
+   "z0": 410,
+   "h": 70,
+   "room": "U_R_bed1",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    466,
+    625,
+    470,
+    710
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_wr1",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    26.2,
+    307.9,
+    214.8,
+    364.2
+   ],
+   "z0": 310,
+   "h": 240,
+   "room": "U_R_bed1",
+   "facing": "S",
+   "note": "wardrobes",
+   "src_px": [
+    222,
+    452,
+    366,
+    495
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed1_wr2",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    214.8,
+    26.2,
+    353.7,
+    82.5
+   ],
+   "z0": 310,
+   "h": 240,
+   "room": "U_R_bed1",
+   "facing": "S",
+   "note": "wardrobes",
+   "src_px": [
+    366,
+    237,
+    472,
+    280
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath1_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    39.3,
+    30.1,
+    203.1,
+    85.2
+   ],
+   "z0": 365,
+   "h": 30,
+   "room": "U_R_bath1",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    232,
+    240,
+    357,
+    282
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath1_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    39.3,
+    141.5,
+    95.6,
+    180.8
+   ],
+   "z0": 310,
+   "h": 40,
+   "room": "U_R_bath1",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    232,
+    325,
+    275,
+    355
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath1_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    26.2,
+    207.0,
+    203.1,
+    294.8
+   ],
+   "z0": 310,
+   "h": 3,
+   "room": "U_R_bath1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    222,
+    375,
+    357,
+    442
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath2_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    379.9,
+    26.2,
+    458.5,
+    200.4
+   ],
+   "z0": 310,
+   "h": 3,
+   "room": "U_R_bath2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    492,
+    237,
+    552,
+    370
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath2_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    482.1,
+    39.3,
+    521.4,
+    95.6
+   ],
+   "z0": 310,
+   "h": 40,
+   "room": "U_R_bath2",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    570,
+    247,
+    600,
+    290
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath2_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    541.0,
+    26.2,
+    645.8,
+    78.6
+   ],
+   "z0": 365,
+   "h": 30,
+   "room": "U_R_bath2",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    615,
+    237,
+    695,
+    277
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    930.1,
+    32.8,
+    1097.8,
+    235.8
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed3",
+   "facing": "S",
+   "note": "king bed, headboard on north wall",
+   "src_px": [
+    912,
+    242,
+    1040,
+    397
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    881.6,
+    30.1,
+    930.1,
+    72.0
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed3",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    875,
+    240,
+    912,
+    272
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    1097.8,
+    30.1,
+    1146.2,
+    72.0
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed3",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1040,
+    240,
+    1077,
+    272
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_wr1",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    658.9,
+    26.2,
+    783.4,
+    82.5
+   ],
+   "z0": 310,
+   "h": 240,
+   "room": "U_R_bed3",
+   "facing": "S",
+   "note": "wardrobes",
+   "src_px": [
+    705,
+    237,
+    800,
+    280
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_wr2",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    783.4,
+    26.2,
+    838.4,
+    213.5
+   ],
+   "z0": 310,
+   "h": 240,
+   "room": "U_R_bed3",
+   "facing": "E",
+   "note": "wardrobes",
+   "src_px": [
+    800,
+    237,
+    842,
+    380
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_tvunit",
+   "kind": "low_cabinet",
+   "shape": "box",
+   "rect": [
+    949.8,
+    305.2,
+    1074.2,
+    324.9
+   ],
+   "z0": 310,
+   "h": 45,
+   "room": "U_R_bed3",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    927,
+    450,
+    1022,
+    465
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed3_tv",
+   "kind": "tv",
+   "shape": "box",
+   "rect": [
+    960.2,
+    319.6,
+    1065.0,
+    324.9
+   ],
+   "z0": 410,
+   "h": 55,
+   "room": "U_R_bed3",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    935,
+    461,
+    1015,
+    465
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath3_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    750.6,
+    357.6,
+    835.8,
+    403.5
+   ],
+   "z0": 365,
+   "h": 30,
+   "room": "U_R_bath3",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    775,
+    490,
+    840,
+    525
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath3_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    862.0,
+    351.1,
+    940.6,
+    449.3
+   ],
+   "z0": 310,
+   "h": 3,
+   "room": "U_R_bath3",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    860,
+    485,
+    920,
+    560
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bath3_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    875.1,
+    462.4,
+    934.0,
+    508.3
+   ],
+   "z0": 310,
+   "h": 40,
+   "room": "U_R_bath3",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    870,
+    570,
+    915,
+    605
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed2",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    744.1,
+    639.3,
+    940.6,
+    809.6
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed2",
+   "facing": "W",
+   "note": "double bed, headboard on east wall",
+   "src_px": [
+    770,
+    705,
+    920,
+    835
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed2_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    894.7,
+    593.4,
+    940.6,
+    639.3
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    885,
+    670,
+    920,
+    705
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed2_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    894.7,
+    809.6,
+    940.6,
+    855.4
+   ],
+   "z0": 310,
+   "h": 50,
+   "room": "U_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    885,
+    835,
+    920,
+    870
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_bed2_closet",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    626.2,
+    351.1,
+    737.5,
+    436.2
+   ],
+   "z0": 310,
+   "h": 240,
+   "room": "U_R_bed2",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    680,
+    485,
+    765,
+    550
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_rail1",
+   "kind": "glass",
+   "shape": "box",
+   "rect": [
+    478.2,
+    596.1,
+    484.7,
+    953.7
+   ],
+   "z0": 310,
+   "h": 100,
+   "room": "U_R_hall",
+   "facing": null,
+   "note": "UOG.1",
+   "src_px": [
+    567,
+    672,
+    572,
+    945
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_rail2",
+   "kind": "glass",
+   "shape": "box",
+   "rect": [
+    482.1,
+    351.1,
+    488.6,
+    596.1
+   ],
+   "z0": 310,
+   "h": 100,
+   "room": "U_R_hall",
+   "facing": null,
+   "note": "UOG.2",
+   "src_px": [
+    570,
+    485,
+    575,
+    672
+   ],
+   "group": null
+  },
+  {
+   "id": "U_F_rail3",
+   "kind": "glass",
+   "shape": "box",
+   "rect": [
+    484.7,
+    593.4,
+    600.0,
+    600.0
+   ],
+   "z0": 310,
+   "h": 100,
+   "room": "U_R_hall",
+   "facing": null,
+   "note": "UOG.3",
+   "src_px": [
+    572,
+    670,
+    660,
+    675
    ],
    "group": null
   }
@@ -4505,19 +5919,482 @@
    ],
    "r": 110,
    "kind": "exterior"
+  },
+  {
+   "id": "D_bed1_headwall",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    26.2,
+    470,
+    28.6,
+    717
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_pend0",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    46,
+    483,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed1_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    46,
+    483
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_pend1",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    46,
+    701,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed1_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    46,
+    701
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    110,
+    470,
+    330,
+    720
+   ],
+   "z": [
+    310,
+    311.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    30,
+    795,
+    62,
+    803
+   ],
+   "z": [
+    310,
+    540
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    318,
+    795,
+    350,
+    803
+   ],
+   "z": [
+    310,
+    540
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_headwall",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    880,
+    26.2,
+    1150,
+    28.6
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_pend0",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    906,
+    51,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed3_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    906,
+    51
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_pend1",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    1122,
+    51,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed3_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1122,
+    51
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    900,
+    150,
+    1130,
+    300
+   ],
+   "z": [
+    310,
+    311.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed3_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    1190,
+    98,
+    1203,
+    126
+   ],
+   "z": [
+    310,
+    540
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_headwall",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    938.2,
+    600,
+    940.6,
+    850
+   ],
+   "z": [
+    310,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_pend0",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    918,
+    616,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed2_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    918,
+    616
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_pend1",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    918,
+    832,
+    435
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_bed2_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    918,
+    832
+   ],
+   "r": 0.6,
+   "z": [
+    446,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    700,
+    620,
+    900,
+    830
+   ],
+   "z": [
+    310,
+    311.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    745,
+    944,
+    777,
+    952
+   ],
+   "z": [
+    310,
+    540
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_mirror",
+   "shape": "box",
+   "mat": "mirror_backlit",
+   "rect": [
+    60,
+    26.5,
+    180,
+    28.8
+   ],
+   "z": [
+    420,
+    510
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    57,
+    26.2,
+    183,
+    26.5
+   ],
+   "z": [
+    417,
+    513
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath2_mirror",
+   "shape": "box",
+   "mat": "mirror_backlit",
+   "rect": [
+    555,
+    26.5,
+    635,
+    28.8
+   ],
+   "z": [
+    420,
+    510
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    552,
+    26.2,
+    638,
+    26.5
+   ],
+   "z": [
+    417,
+    513
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath3_mirror",
+   "shape": "box",
+   "mat": "mirror_backlit",
+   "rect": [
+    760,
+    351.3,
+    830,
+    353.6
+   ],
+   "z": [
+    420,
+    510
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    757,
+    351,
+    833,
+    351.3
+   ],
+   "z": [
+    417,
+    513
+   ],
+   "kind": "light",
+   "emissive": true
   }
  ],
  "extra_ceilings": [
   {
-   "id": "CEIL_upper_stairwell",
+   "id": "CEIL_upper_void0",
    "rect": [
-    354.9,
-    341.2,
-    491.4,
-    862.1
+    379.9,
+    351.1,
+    484.7,
+    953.7
    ],
-   "z": 560,
-   "note": "ASSUMED stairwell ceiling on upper floor"
+   "z": 560
+  },
+  {
+   "id": "CEIL_upper_void1",
+   "rect": [
+    484.7,
+    596.1,
+    600.0,
+    953.7
+   ],
+   "z": 560
   }
+ ],
+ "upper_voids": [
+  [
+   379.9,
+   351.1,
+   484.7,
+   953.7
+  ],
+  [
+   484.7,
+   596.1,
+   600.0,
+   953.7
+  ]
  ]
 }

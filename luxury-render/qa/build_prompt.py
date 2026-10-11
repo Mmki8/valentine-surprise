@@ -23,7 +23,7 @@ NAMES = {
     "tv": "TV", "toilet": "wall-hung toilet", "vanity": "floating vanity", "basin": "vessel basin",
     "bench": "sauna bench", "jacuzzi": "round jacuzzi hot tub", "shower": "walk-in shower",
     "stair": "staircase", "car": "car (matte black Mercedes G-Wagon)", "cooktop": "cooktop", "sink": "sink",
-    "box": "boxed column",
+    "box": "boxed column", "bed": "bed", "nightstand": "nightstand",
 }
 OPEN_NAMES = {"window": "window", "door": "door (closed)", "double_door": "glazed double door (closed)",
               "sliding": "full-height glazed sliding door", "curtain": "floor-to-ceiling glass facade",
@@ -121,7 +121,9 @@ def main(plan_dir, cam_full):
         "do not add or remove anything. Closed doors stay closed; glass only where the light-blue panes are." + car_line + "\n\n"
         + (f"IMAGE 2 is the approved render of this same space from another camera. Every object, material, colour, fitting and "
            f"the light must look EXACTLY like in IMAGE 2 (same pendants, same cabinet fronts, same stone, same cushions, same "
-           f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2.\n\n" if hero else "")
+           f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2."
+           + (" IMAGE 2 shows a parked car - ignore it: this view has NO car." if (cam["room"] == "R_garage" and not car_on) else "")
+           + "\n\n" if hero else "")
         + f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
         f"Materials, as coloured in IMAGE 1 (identical in every view of this house): {'; '.join(mat_lines)}.\n"
         "Light fittings: ONLY those modelled in IMAGE 1 - the glowing white lines are warm 2700K LED lines, the white rings are "

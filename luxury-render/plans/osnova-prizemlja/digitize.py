@@ -15,6 +15,8 @@ Run:  python3 digitize.py  -> writes plan.json next to this file.
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from design_layer import DESIGN
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'osnova-sprat'))
+import digitize_upper
 
 K = 1.05
 OX, OY = 262, 287
@@ -80,11 +82,6 @@ walls = [
     ("W_kitchen_w",   (832, 597, 858, 860), 0, H, "int"),
     ("W_sauna_glz_s", (966, 477, 1052, 487), 0, H, "int"),     # header above sauna glass door
     ("W_sauna_glz_e", (1042, 407, 1052, 487), 0, H, "int"),    # header above sauna side glass
-    # ASSUMED upper-floor stairwell shell (no upper plan supplied yet)
-    ("W_up_stair_w",  (600, 612, 622, 1108), H, VH, "int"),
-    ("W_up_stair_e",  (720, 612, 730, 1108), H, VH, "int"),
-    ("W_up_stair_n",  (600, 612, 730, 622), H, VH, "int"),
-    ("W_up_stair_s",  (600, 1100, 730, 1108), H, VH, "int"),
     ("W_gkpl",        (832, 945, 898, 1050), 0, H, "box"),      # GKPL drywall box (see flags)
 ]
 
@@ -141,7 +138,7 @@ rooms = [
          px=[(845, 487), (1052, 487), (1052, 312), (1412, 312), (1412, 597), (845, 597)], floor=0, ceiling=H,
          style="dark_spa"),
     dict(id="R_hall", name="Entrance hall + stair", px=[(622, 488), (832, 488), (832, 1192), (622, 1192)], floor=0,
-         ceiling=H, style="warm_wood_luxe", ceiling_holes=[(622, 620, 720, 1100)]),
+         ceiling=H, style="warm_wood_luxe", ceiling_holes=[(622, 621, 722, 1192), (722, 854, 832, 1192)]),  # stair hole + double-height entry (1st floor plan)
     dict(id="R_kitchen_dining", name="Kitchen + dining",
          px=[(858, 622), (1180, 622), (1180, 1192), (832, 1192), (832, 860), (858, 860)], floor=0, ceiling=H,
          style="warm_wood_luxe"),
@@ -230,6 +227,8 @@ box("F_l_armchair_2", "armchair", (1452, 1002, 1530, 1078), 0, 75, "R_living", "
 box("F_l_tv_unit", "low_cabinet", (1602, 777, 1645, 918), 0, 45, "R_living", "W", "freestanding TV unit")
 box("F_l_tv", "tv", (1627, 790, 1631, 905), 95, 72, "R_living", "W", "TV mounted on the freestanding walnut media wall (not on the glass)")
 
+U_WALLS, U_OPS, U_ROOMS, U_FURN, U_VOIDS = digitize_upper.export()
+
 plan = dict(
     meta=dict(
         name="OSNOVA PRIZEMLJA - ground floor",
@@ -255,10 +254,10 @@ plan = dict(
               note="double-height over LIVING only; upper-floor slab edge = orange dashed line at px x~1180"),
     gallery_edge=dict(x=cm(1180, "x"), y0=cm(622, "y"), y1=cm(1192, "y"), z=LEVELS["slab_top"],
                       note="upper-floor slab edge overlooking living; glass balustrade ASSUMED"),
-    furniture=F,
+    furniture=F + U_FURN,
     design=DESIGN,
-    extra_ceilings=[dict(id="CEIL_upper_stairwell", rect=R(600, 612, 730, 1108), z=VH,
-                         note="ASSUMED stairwell ceiling on upper floor")],
+    extra_ceilings=[dict(id=f"CEIL_upper_void{i}", rect=v, z=VH) for i, v in enumerate(U_VOIDS)],
+    upper_voids=U_VOIDS,
 )
 
 # ---- integrity check: every opening must cut exactly the wall(s) it was drawn in
@@ -270,8 +269,18 @@ for o in openings:
             if min(x1, ox1) - max(x0, ox0) > 0.5 and min(y1, oy1) - max(y0, oy0) > 0.5]
     if len(hits) != EXPECT.get(o["id"], 1):
         problems.append(f"{o['id']} cuts {hits}")
+for o in U_OPS:                       # upper floor, in cm, height-aware
+    r = o["rect"]
+    hits = [w["id"] for w in U_WALLS if min(w["rect"][2], r[2]) - max(w["rect"][0], r[0]) > 0.5
+            and min(w["rect"][3], r[3]) - max(w["rect"][1], r[1]) > 0.5]
+    if len(hits) != 1:
+        problems.append(f"{o['id']} cuts {hits}")
 if problems:
     raise SystemExit("OPENING/WALL INTEGRITY FAILED:\n  " + "\n  ".join(problems))
+
+plan["walls"] += U_WALLS
+plan["openings"] += U_OPS
+plan["rooms"] += U_ROOMS
 
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plan.json")
 with open(out, "w") as f:

@@ -110,17 +110,17 @@
    "note": null
   },
   {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.005
+  },
+  {
    "id": "F_d_chair_n1",
    "name": "dining chair",
    "where": "centre",
    "share": 0.005,
    "note": null
-  },
-  {
-   "id": "staircase",
-   "name": "staircase",
-   "where": "left",
-   "share": 0.005
   },
   {
    "id": "F_k_stool_2",

@@ -1,0 +1,78 @@
+{
+ "camera": "BED3_A",
+ "room": "U_R_bed3",
+ "hero": null,
+ "materials": [
+  "walnut_wardrobe",
+  "plaster_white",
+  "plaster_greige",
+  "bed_linen",
+  "walnut_panel",
+  "throw_cognac",
+  "headboard_boucle",
+  "sheer_linen",
+  "tv_black",
+  "bronze_frame",
+  "oak_floor",
+  "pillow_white",
+  "walnut_console",
+  "rug_sand",
+  "pendant_glass"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "U_O_bed3_win",
+   "name": "full-height glazed sliding door",
+   "where": "right",
+   "share": 0.014,
+   "note": "bedroom 3 east glazed door (OG.3)"
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "bed": 1,
+  "tv": 1,
+  "low_cabinet": 1
+ },
+ "items": [
+  {
+   "id": "U_F_bed3_wr2",
+   "name": "full-height cabinet column",
+   "where": "left",
+   "share": 0.346,
+   "note": "wardrobes"
+  },
+  {
+   "id": "U_F_bed3",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.049,
+   "note": "king bed, headboard on north wall"
+  },
+  {
+   "id": "U_F_bed3_tv",
+   "name": "TV",
+   "where": "right",
+   "share": 0.015,
+   "note": null
+  },
+  {
+   "id": "U_F_bed3_tvunit",
+   "name": "low cabinet",
+   "where": "right",
+   "share": 0.003,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

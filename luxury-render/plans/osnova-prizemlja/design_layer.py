@@ -141,3 +141,21 @@ for i, (x, y) in enumerate([(1150, 1450), (1500, 1500), (1900, 700), (1950, 1100
     D.append(S(f"X_tree_crown{i}", "olive_foliage", x, y, 260, 110, kind="exterior"))
 
 DESIGN = D
+
+# ------------------------------------------------------------------ UPPER FLOOR (FFL 310, ceiling 560)
+U = 310
+def _bedroom(tag, panel, pendants, rug, curtains):
+    D.append(B(f"D_{tag}_headwall", "walnut_panel", *panel, U, 560, kind="panel"))
+    for i, (x, y) in enumerate(pendants):
+        D.append(S(f"D_{tag}_pend{i}", "pendant_glass", x, y, U + 125, 11, kind="light"))
+        D.append(cable(f"D_{tag}_pend{i}_c", x, y, U + 136, 560))
+    D.append(B(f"D_{tag}_rug", "rug_sand", *rug, U, U + 1.2))
+    for i, c in enumerate(curtains):
+        D.append(B(f"D_{tag}_curtain{i}", "sheer_linen", *c, U, 540))
+
+_bedroom("bed1", (26.2, 470, 28.6, 717), [(46, 483), (46, 701)], (110, 470, 330, 720), [(30, 795, 62, 803), (318, 795, 350, 803)])
+_bedroom("bed3", (880, 26.2, 1150, 28.6), [(906, 51), (1122, 51)], (900, 150, 1130, 300), [(1190, 98, 1203, 126)])
+_bedroom("bed2", (938.2, 600, 940.6, 850), [(918, 616), (918, 832)], (700, 620, 900, 830), [(745, 944, 777, 952)])
+for tag, (x0, x1), y, in [("bath1", (60, 180), 26.2), ("bath2", (555, 635), 26.2), ("bath3", (760, 830), 351)]:
+    D.append(B(f"D_{tag}_mirror", "mirror_backlit", x0, y + 0.3, x1, y + 2.6, U + 110, U + 200, kind="panel"))
+    D.append(B(f"D_{tag}_mirror_led", "led_line", x0 - 3, y, x1 + 3, y + 0.3, U + 107, U + 203, kind="light", emissive=True))

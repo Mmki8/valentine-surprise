@@ -1,0 +1,65 @@
+{
+ "camera": "BED2_A",
+ "room": "U_R_bed2",
+ "hero": "BED3_A",
+ "materials": [
+  "plaster_greige",
+  "plaster_white",
+  "walnut_panel",
+  "bed_linen",
+  "headboard_boucle",
+  "walnut_console",
+  "bronze_frame",
+  "pillow_white",
+  "oak_floor",
+  "pendant_glass",
+  "cable_black"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "U_O_bed2_glz",
+   "name": "full-height glazed sliding door",
+   "where": "right",
+   "share": 0.018,
+   "note": "bedroom 2 south glazed door (OG.2)"
+  }
+ ],
+ "furniture_counts": {
+  "bed": 1,
+  "nightstand": 2
+ },
+ "items": [
+  {
+   "id": "U_F_bed2",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.056,
+   "note": "double bed, headboard on east wall"
+  },
+  {
+   "id": "U_F_bed2_ns2",
+   "name": "nightstand",
+   "where": "right",
+   "share": 0.015,
+   "note": null
+  },
+  {
+   "id": "U_F_bed2_ns1",
+   "name": "nightstand",
+   "where": "left",
+   "share": 0.01,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

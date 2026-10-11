@@ -40,7 +40,7 @@ export function buildScene(plan, opts = {}, ds) {
     return m;
   };
   const L = plan.levels;
-  const roomOf = (x, y) => plan.rooms.find(r => pointInPoly([x, y], r.polygon));
+  const roomOf = (x, y, level) => plan.rooms.find(r => (r.level || 'ground') === (level || 'ground') && pointInPoly([x, y], r.polygon));
 
   // ---------------------------------------------------------- floors / ceilings
   for (const r of plan.rooms) {
@@ -64,6 +64,11 @@ export function buildScene(plan, opts = {}, ds) {
   add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
   for (const c of (plan.extra_ceilings || []))
     add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, 'plaster_white'));
+  for (const [i, [x0, y0, x1, y1]] of (plan.upper_voids || []).entries()) {
+    const t = 2;
+    for (const [a, b, c, d] of [[x0, y0, x1, y0 + t], [x0, y1 - t, x1, y1], [x0, y0, x0 + t, y1], [x1 - t, y0, x1, y1]])
+      add(`SLAB_void${i}`, 'slab_edge', boxMesh(a, b, c, d, L.ceiling, L.slab_top, 'plaster_white'));
+  }
   add('EXT_ground', 'exterior', boxMesh(-800, -800, 2400, 2200, -62, -61, 'lawn'));
   add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 'stone_pot'));
 
@@ -76,9 +81,9 @@ export function buildScene(plan, opts = {}, ds) {
     for (const o of plan.openings) {
       const r = o.rect;
       const ix = Math.min(x1, r[2]) - Math.max(x0, r[0]), iy = Math.min(y1, r[3]) - Math.max(y0, r[1]);
-      if (ix > 0.5 && iy > 0.5) {
+      if (ix > 0.5 && iy > 0.5 && o.head > w.z0 + 0.5 && o.sill < w.z1 - 0.5) {   // must overlap in height too
         const [b0, b1] = alongX ? [r[0], r[2]] : [r[1], r[3]];
-        cuts.push({ a: Math.max(a0, b0), b: Math.min(a1, b1), sill: o.sill, head: o.head });
+        cuts.push({ a: Math.max(a0, b0), b: Math.min(a1, b1), sill: Math.max(o.sill, w.z0), head: Math.min(o.head, w.z1) });
       }
     }
     cuts.sort((p, q) => p.a - q.a);
@@ -89,7 +94,7 @@ export function buildScene(plan, opts = {}, ds) {
       if (w.kind === 'box') return DS.id_materials[w.id] ?? 'box_slats';
       const px = alongX ? along : (side < 0 ? x0 - 15 : x1 + 15);
       const py = alongX ? (side < 0 ? y0 - 15 : y1 + 15) : along;
-      const r = roomOf(px, py);
+      const r = roomOf(px, py, w.level);
       return r ? SM(r.style, 'wall') : null;
     };
     const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
@@ -152,7 +157,7 @@ export function buildScene(plan, opts = {}, ds) {
     const outline = () => {
       frameBar(a0, a0 + f, o.sill, o.head, `${o.id}_fl`); frameBar(a1 - f, a1, o.sill, o.head, `${o.id}_fr`);
       frameBar(a0, a1, o.head - f, o.head, `${o.id}_ft`);
-      if (o.sill > (o.type === 'garage_door' ? -999 : 0)) frameBar(a0, a1, o.sill, o.sill + f, `${o.id}_fb`);
+      if (o.type === 'window') frameBar(a0, a1, o.sill, o.sill + f, `${o.id}_fb`);
     };
     if (o.type === 'glass_partition') {          // frameless sauna glass: pane + slim top/bottom channels only
       pane(a0, a1, o.sill, o.head, 1.2, 'glass', 'glass');
@@ -165,7 +170,7 @@ export function buildScene(plan, opts = {}, ds) {
       if (o.transom) frameBar(a0, a1, o.transom - 4, o.transom + 4, `${o.id}_tr`);
       if (o.type === 'sliding') frameBar((a0 + a1) / 2 - 3, (a0 + a1) / 2 + 3, o.sill, o.head, `${o.id}_mid`);
     } else if (o.type === 'door') {
-      pane(a0 + f, a1 - f, 0, o.head - f, 5, 'walnut_door', 'door');
+      pane(a0 + f, a1 - f, o.sill, o.head - f, 5, 'walnut_door', 'door');
       outline();
     } else if (o.type === 'double_door') {
       const mid = (a0 + a1) / 2;
@@ -256,6 +261,21 @@ export function buildScene(plan, opts = {}, ds) {
         break;
       }
       case 'glass': add(f.id, 'glass', glassPane(boxMesh(x0, y0, x1, y1, z0, z1, 'glass'))); break;
+      case 'bed': {
+        B(x0, y0, x1, y1, z0, z0 + 30, 'walnut_console', `${f.id}_base`);
+        B(x0 + 2, y0 + 2, x1 - 2, y1 - 2, z0 + 30, z0 + 50, 'bed_linen');
+        const hb = { N: [x0, y1 - 8, x1, y1], S: [x0, y0, x1, y0 + 8], E: [x0, y0, x0 + 8, y1], W: [x1 - 8, y0, x1, y1] }[f.facing === 'S' ? 'S' : f.facing === 'N' ? 'N' : f.facing === 'E' ? 'E' : 'W'];
+        B(hb[0], hb[1], hb[2], hb[3], z0, z0 + 120, 'headboard_boucle', `${f.id}_head`);
+        const pl = f.facing === 'E' || f.facing === 'W';
+        for (const k of [0.27, 0.73]) {               // two pillows near the headboard
+          const cx = pl ? (f.facing === 'E' ? x0 + 30 : x1 - 30) : x0 + (x1 - x0) * k;
+          const cy = pl ? y0 + (y1 - y0) * k : (f.facing === 'S' ? y0 + 30 : y1 - 30);
+          B(cx - (pl ? 12 : 30), cy - (pl ? 30 : 12), cx + (pl ? 12 : 30), cy + (pl ? 30 : 12), z0 + 50, z0 + 62, 'pillow_white', `${f.id}_pillow`);
+        }
+        const tb = pl ? (f.facing === 'E' ? [x1 - 45, y0 + 2, x1 - 2, y1 - 2] : [x0 + 2, y0 + 2, x0 + 45, y1 - 2]) : (f.facing === 'S' ? [x0 + 2, y1 - 45, x1 - 2, y1 - 2] : [x0 + 2, y0 + 2, x1 - 2, y0 + 45]);
+        B(tb[0], tb[1], tb[2], tb[3], z0 + 50, z0 + 53, 'throw_cognac', `${f.id}_throw`);
+        break;
+      }
       default: B(x0, y0, x1, y1, z0, z1);
     }
   }

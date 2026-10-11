@@ -7,9 +7,10 @@
   "stair_walnut",
   "walnut_battens",
   "plaster_greige",
+  "plaster_white",
   "walnut_slats",
-  "oak_floor",
   "walnut_door",
+  "oak_floor",
   "artwork_abstract",
   "bronze_frame",
   "led_line"
@@ -20,15 +21,22 @@
    "id": "O_wc_door",
    "name": "door (closed)",
    "where": "centre",
-   "share": 0.016,
+   "share": 0.014,
    "note": "hall <-> WC"
   },
   {
    "id": "O_mud_hall_door",
    "name": "door (closed)",
    "where": "centre",
-   "share": 0.007,
+   "share": 0.006,
    "note": "mudroom <-> hall"
+  },
+  {
+   "id": "U_O_bed2_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.002,
+   "note": null
   }
  ],
  "furniture_counts": {},
@@ -37,7 +45,7 @@
    "id": "staircase",
    "name": "staircase",
    "where": "left",
-   "share": 0.054
+   "share": 0.05
   }
  ],
  "manual_checks": [

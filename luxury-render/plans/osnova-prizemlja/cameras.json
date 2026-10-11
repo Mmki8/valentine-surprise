@@ -16,7 +16,7 @@
    ],
    "hfov": 84,
    "shift_y": 0.2,
-   "notes": "The bronze feature wall is completely solid: no door, no opening in it. The black column at the far left edge is the kitchen's fridge column.",
+   "notes": "The bronze feature wall is completely solid: no door, no opening in it. The black column at the far left edge is the kitchen's fridge column. No wall lights or sconces anywhere on the bronze wall.",
    "space": "open_plan"
   },
   {
@@ -51,7 +51,8 @@
    ],
    "hfov": 80,
    "shift_y": 0.04,
-   "space": "open_plan"
+   "space": "open_plan",
+   "notes": "The large brown block at the far left edge is the freestanding walnut-slat clad column: solid, no window, no opening."
   },
   {
    "id": "KIT_B",
@@ -207,7 +208,7 @@
   {
    "id": "HALL_A",
    "room": "R_hall",
-   "title": "Entrance hall - from front door toward stair",
+   "title": "Entrance hall - double-height entry, stair, upper landing",
    "pos": [
     535,
     925,
@@ -217,16 +218,137 @@
     505,
     210
    ],
-   "hfov": 84,
-   "shift_y": 0.06,
+   "hfov": 86,
+   "shift_y": 0.16,
    "space": "open_plan"
+  },
+  {
+   "id": "BED3_A",
+   "room": "U_R_bed3",
+   "space": "bedrooms",
+   "title": "Master bedroom - from the TV wall toward the bed and east glass",
+   "pos": [
+    760,
+    300,
+    465
+   ],
+   "look": [
+    1060,
+    110
+   ],
+   "hfov": 84,
+   "shift_y": 0.02
+  },
+  {
+   "id": "BED3_B",
+   "room": "U_R_bed3",
+   "space": "bedrooms",
+   "title": "Master bedroom - from the east glass toward bed and wardrobes",
+   "pos": [
+    1185,
+    290,
+    465
+   ],
+   "look": [
+    800,
+    110
+   ],
+   "hfov": 84,
+   "shift_y": 0.02
+  },
+  {
+   "id": "BED1_A",
+   "room": "U_R_bed1",
+   "space": "bedrooms",
+   "title": "Bedroom 1 - from the entry toward bed and south glazing",
+   "pos": [
+    330,
+    420,
+    465
+   ],
+   "look": [
+    90,
+    720
+   ],
+   "hfov": 86,
+   "shift_y": 0.02
+  },
+  {
+   "id": "BED2_A",
+   "room": "U_R_bed2",
+   "space": "bedrooms",
+   "title": "Bedroom 2 - facing the bed (headboard on the east wall)",
+   "pos": [
+    630,
+    760,
+    460
+   ],
+   "look": [
+    940,
+    735
+   ],
+   "hfov": 88,
+   "shift_y": 0.02
+  },
+  {
+   "id": "BATH2_A",
+   "room": "U_R_bath2",
+   "space": "upper_baths",
+   "title": "Bathroom 2 (master en-suite) - from the door",
+   "pos": [
+    640,
+    180,
+    455
+   ],
+   "look": [
+    460,
+    60
+   ],
+   "hfov": 100,
+   "shift_y": -0.1
+  },
+  {
+   "id": "BATH1_A",
+   "room": "U_R_bath1",
+   "space": "upper_baths",
+   "title": "Bathroom 1 - from the door",
+   "pos": [
+    195,
+    215,
+    455
+   ],
+   "look": [
+    80,
+    90
+   ],
+   "hfov": 100,
+   "shift_y": -0.1
+  },
+  {
+   "id": "BATH3_A",
+   "room": "U_R_bath3",
+   "space": "upper_baths",
+   "title": "Bathroom 3 - from the door",
+   "pos": [
+    770,
+    512,
+    455
+   ],
+   "look": [
+    905,
+    400
+   ],
+   "hfov": 100,
+   "shift_y": -0.12
   }
  ],
  "heroes": {
   "open_plan": "LIV_B",
   "spa": "SPA_B",
   "wc": "WC_A",
-  "garage": "GAR_B_car"
+  "garage": "GAR_B_car",
+  "bedrooms": "BED3_A",
+  "upper_baths": "BATH2_A"
  },
  "_doc_heroes": "Hero view per space is generated first and approved; every other view of that space gets it as IMAGE 2 (materials/fittings/light reference; geometry only from IMAGE 1).",
  "hero_jobs": {

@@ -1,0 +1,77 @@
+{
+ "camera": "BED3_B",
+ "room": "U_R_bed3",
+ "hero": "BED3_A",
+ "materials": [
+  "plaster_white",
+  "plaster_greige",
+  "walnut_panel",
+  "walnut_wardrobe",
+  "headboard_boucle",
+  "tv_black",
+  "bed_linen",
+  "oak_floor",
+  "walnut_door",
+  "pillow_white",
+  "throw_cognac",
+  "bronze_frame",
+  "walnut_console",
+  "pendant_glass"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "U_O_bed3_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.036,
+   "note": null
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "tv": 1,
+  "bed": 1,
+  "nightstand": 1
+ },
+ "items": [
+  {
+   "id": "U_F_bed3_wr2",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.153,
+   "note": "wardrobes"
+  },
+  {
+   "id": "U_F_bed3_tv",
+   "name": "TV",
+   "where": "left",
+   "share": 0.054,
+   "note": null
+  },
+  {
+   "id": "U_F_bed3",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.038,
+   "note": "king bed, headboard on north wall"
+  },
+  {
+   "id": "U_F_bed3_ns1",
+   "name": "nightstand",
+   "where": "centre",
+   "share": 0.004,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}
