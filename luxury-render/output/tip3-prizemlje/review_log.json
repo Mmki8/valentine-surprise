@@ -1,0 +1,69 @@
+{
+ "plan": "tip3-prizemlje",
+ "brief": "Client: same rules + design; terrace visible through living + spa glass; NO edge lines copied from the guide; no random lights; paintings + decor; easy wide angles; Mercedes S-Class in the garage; golden-hour views; 100% plan-accurate.",
+ "fixes": [
+  "edge-line leakage: guide lines now 1 px, soft, never white on dark surfaces (white outlines were read as LED strips); prompt states the lines are guides that must never be drawn; vision checklist item added",
+  "random lights: per-view fittings sentence lists only the fittings that camera sees, else 'NONE - daylight only'"
+ ],
+ "gates": "geometry (struct>=0.45, drift<=0.06) all 14 pass on structure; recall flags only on thin ceiling/curtain/LED elements, checked visually. Consistency: SPA_B jacuzzi and BED_B curtain/frame flagged - sun vs shade on the same materials, accepted.",
+ "first_attempt_accept": 14,
+ "final": {
+  "LIV_A": {
+   "job_id": "35399ebf-3c49-4adb-b651-598d519bb794",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223205_35399ebf-3c49-4adb-b651-598d519bb794.png"
+  },
+  "LIV_B": {
+   "job_id": "9c6ea84a-b4e0-4057-9dad-4e20dc6731a3",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225016_9c6ea84a-b4e0-4057-9dad-4e20dc6731a3.png"
+  },
+  "KIT_A": {
+   "job_id": "58d137e4-f5c5-4bf8-a7b9-020bf2102013",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225017_58d137e4-f5c5-4bf8-a7b9-020bf2102013.png"
+  },
+  "HALL_A": {
+   "job_id": "b088ef68-3682-4d76-af4a-4d449b4ea8a7",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225015_b088ef68-3682-4d76-af4a-4d449b4ea8a7.png"
+  },
+  "HALL_B": {
+   "job_id": "4f44aaef-4f3f-4f1d-96bc-e73fa43757d3",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225017_4f44aaef-4f3f-4f1d-96bc-e73fa43757d3.png"
+  },
+  "STAIR_A": {
+   "job_id": "43fbb11a-0778-44dd-beb8-7927a2db0ab0",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225015_43fbb11a-0778-44dd-beb8-7927a2db0ab0.png"
+  },
+  "SPA_A": {
+   "job_id": "bb8917e8-92c2-496a-89bb-ef3c445f739b",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223205_bb8917e8-92c2-496a-89bb-ef3c445f739b.png"
+  },
+  "SPA_B": {
+   "job_id": "6e768156-d03d-46da-8349-9c6282c63e50",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225015_6e768156-d03d-46da-8349-9c6282c63e50.png"
+  },
+  "WC_A": {
+   "job_id": "ffc9e16b-4a50-46d1-9315-550fcb7efc60",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223204_ffc9e16b-4a50-46d1-9315-550fcb7efc60.png"
+  },
+  "GAR_A": {
+   "job_id": "fe27d097-88f1-4f14-a34b-c8423eece896",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223204_fe27d097-88f1-4f14-a34b-c8423eece896.png"
+  },
+  "GAR_B": {
+   "job_id": "b5243322-82d5-4c56-b6d5-011c2215a3b0",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225016_b5243322-82d5-4c56-b6d5-011c2215a3b0.png"
+  },
+  "BED_A": {
+   "job_id": "021d5bb8-e716-4a09-8524-4f26062d3951",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223205_021d5bb8-e716-4a09-8524-4f26062d3951.png"
+  },
+  "BED_B": {
+   "job_id": "07237a8f-27f9-496a-b188-a082f767964d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_225016_07237a8f-27f9-496a-b188-a082f767964d.png"
+  },
+  "BATH_A": {
+   "job_id": "f5bb529d-9754-47c6-a167-bf620186a7ff",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_223203_f5bb529d-9754-47c6-a167-bf620186a7ff.png"
+  }
+ },
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/bc0da723-3cda-4a68-aab4-0bf2a5b05f91.zip"
+}
