@@ -1,0 +1,49 @@
+{
+ "camera": "BATH1_A",
+ "room": "S_R_bath1",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "slate_rough",
+  "vanity_dark_stone",
+  "mirror_round",
+  "toilet_white",
+  "vanity_walnut_drawer",
+  "marble_grey_floor",
+  "ring_led",
+  "black_metal",
+  "ceramic_dark"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1
+ },
+ "items": [
+  {
+   "id": "S_F_bath1_vanity",
+   "name": "floating vanity",
+   "where": "centre",
+   "share": 0.052,
+   "note": "basin in the GKPL installation wall"
+  },
+  {
+   "id": "S_F_bath1_wc",
+   "name": "wall-hung toilet",
+   "where": "right",
+   "share": 0.027,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

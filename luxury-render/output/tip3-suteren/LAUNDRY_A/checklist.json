@@ -1,0 +1,72 @@
+{
+ "camera": "LAUNDRY_A",
+ "room": "S_R_laundry",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_cabinet",
+  "plaster_white",
+  "worktop_marble",
+  "walnut_door",
+  "stone_cream_floor",
+  "appliance_white",
+  "bronze_frame",
+  "led_line",
+  "groove_dark"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_laundry_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.054,
+   "note": "north-east room -> laundry"
+  }
+ ],
+ "furniture_counts": {
+  "counter": 2,
+  "appliance": 2
+ },
+ "items": [
+  {
+   "id": "S_F_l_counter",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "right",
+   "share": 0.118,
+   "note": "worktop run with cabinets"
+  },
+  {
+   "id": "S_F_l_dryer",
+   "name": "washer/dryer",
+   "where": "centre",
+   "share": 0.014,
+   "note": null
+  },
+  {
+   "id": "S_F_l_top_wd",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "centre",
+   "share": 0.009,
+   "note": "worktop over washer + dryer"
+  },
+  {
+   "id": "S_F_l_washer",
+   "name": "washer/dryer",
+   "where": "centre",
+   "share": 0.008,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

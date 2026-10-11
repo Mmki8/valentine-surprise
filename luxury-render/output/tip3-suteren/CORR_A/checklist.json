@@ -1,0 +1,52 @@
+{
+ "camera": "CORR_A",
+ "room": "S_R_corr",
+ "hero": "CORR_B",
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_battens",
+  "bronze_frame",
+  "plaster_white",
+  "art_relief",
+  "walnut_floor_dark",
+  "walnut_door",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_b2_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.046,
+   "note": "corridor -> bedroom 2 passage"
+  },
+  {
+   "id": "O_store_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.039,
+   "note": "corridor -> store / technical room"
+  },
+  {
+   "id": "O_ne_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.012,
+   "note": "corridor -> north-east room (unlabelled)"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

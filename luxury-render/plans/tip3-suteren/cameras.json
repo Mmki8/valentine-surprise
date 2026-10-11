@@ -1,0 +1,253 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up), house type 3 souterrain. Eye heights above the floor.",
+ "exterior": "this is a walk-out garden level dug into a slope: through the south glass the view is at ground level - the sunlit stone terrace, then the lawn, clipped hedge and olive trees of the garden, the hillside rising gently on both sides, soft green hills far away under a clear warm golden sky. Never sea, never city, never a view from above.",
+ "heroes": {
+  "bedrooms": "B2_A",
+  "bath1": "BATH1_A",
+  "pods": "PODL_A",
+  "corridor": "CORR_B",
+  "laundry": "LAUNDRY_A"
+ },
+ "hero_jobs": {},
+ "cameras": [
+  {
+   "id": "B1_A",
+   "room": "S_R_bed1",
+   "space": "bedrooms",
+   "title": "Bedroom 1 - facing the faceted walnut bed wall",
+   "pos": [
+    330,
+    532,
+    152
+   ],
+   "look": [
+    27,
+    532
+   ],
+   "hfov": 96,
+   "shift_y": 0.06
+  },
+  {
+   "id": "B1_B",
+   "room": "S_R_bed1",
+   "space": "bedrooms",
+   "title": "Bedroom 1 - from the entry toward the bed and the south glazing",
+   "pos": [
+    322,
+    350,
+    155
+   ],
+   "look": [
+    110,
+    745
+   ],
+   "hfov": 88,
+   "shift_y": 0.03
+  },
+  {
+   "id": "B2_A",
+   "room": "S_R_bed2",
+   "space": "bedrooms",
+   "title": "Bedroom 2 - from the glazing, facing the faceted walnut bed wall",
+   "pos": [
+    606.6,
+    975,
+    152
+   ],
+   "look": [
+    606.6,
+    640
+   ],
+   "hfov": 92,
+   "shift_y": 0.06
+  },
+  {
+   "id": "B2_B",
+   "room": "S_R_bed2",
+   "space": "bedrooms",
+   "title": "Bedroom 2 - from the marble wall toward the bed and the south glazing",
+   "pos": [
+    800,
+    664,
+    155
+   ],
+   "look": [
+    470,
+    990
+   ],
+   "hfov": 96,
+   "shift_y": -0.05
+  },
+  {
+   "id": "B3_A",
+   "room": "S_R_bed3",
+   "space": "bedrooms",
+   "title": "Bedroom 3 - from the glazing, facing the faceted walnut bed wall",
+   "pos": [
+    1061.5,
+    975,
+    152
+   ],
+   "look": [
+    1061.5,
+    640
+   ],
+   "hfov": 92,
+   "shift_y": 0.06
+  },
+  {
+   "id": "B3_B",
+   "room": "S_R_bed3",
+   "space": "bedrooms",
+   "title": "Bedroom 3 - from the marble wall toward the bed and the south glazing",
+   "pos": [
+    858,
+    664,
+    155
+   ],
+   "look": [
+    1190,
+    990
+   ],
+   "hfov": 96,
+   "shift_y": -0.05
+  },
+  {
+   "id": "BATH1_A",
+   "room": "S_R_bath1",
+   "space": "bath1",
+   "title": "Bathroom 1 - facing the ring-mirror vanity",
+   "pos": [
+    222,
+    196,
+    152
+   ],
+   "look": [
+    27,
+    186
+   ],
+   "hfov": 100,
+   "shift_y": -0.12
+  },
+  {
+   "id": "BATH1_B",
+   "room": "S_R_bath1",
+   "space": "bath1",
+   "title": "Bathroom 1 - toward the WC and the walk-in shower",
+   "pos": [
+    60,
+    238,
+    152
+   ],
+   "look": [
+    240,
+    30
+   ],
+   "hfov": 96,
+   "shift_y": -0.12
+  },
+  {
+   "id": "PODL_A",
+   "room": "S_R_podL",
+   "space": "pods",
+   "title": "Bathroom 2 (bedroom 2) - from the door",
+   "pos": [
+    675,
+    448,
+    150
+   ],
+   "look": [
+    675,
+    282
+   ],
+   "hfov": 100,
+   "shift_y": -0.28
+  },
+  {
+   "id": "PODR_A",
+   "room": "S_R_podR",
+   "space": "pods",
+   "title": "Bathroom 3 (bedroom 3) - from the door",
+   "pos": [
+    996,
+    448,
+    150
+   ],
+   "look": [
+    996,
+    282
+   ],
+   "hfov": 100,
+   "shift_y": -0.28
+  },
+  {
+   "id": "CORR_A",
+   "room": "S_R_corr",
+   "space": "corridor",
+   "title": "Corridor - from the west end toward the stair",
+   "pos": [
+    385,
+    211,
+    155
+   ],
+   "look": [
+    1300,
+    211
+   ],
+   "hfov": 80,
+   "shift_y": 0.02
+  },
+  {
+   "id": "CORR_B",
+   "room": "S_R_corr",
+   "space": "corridor",
+   "title": "Stair - from the foot of the stair, looking up the walnut flight",
+   "pos": [
+    1292,
+    76,
+    150
+   ],
+   "look": [
+    600,
+    76
+   ],
+   "hfov": 78,
+   "shift_y": 0.16
+  },
+  {
+   "id": "LAUNDRY_A",
+   "room": "S_R_laundry",
+   "space": "laundry",
+   "title": "Laundry - walnut cabinetry, washer and dryer",
+   "pos": [
+    1345,
+    838,
+    152
+   ],
+   "look": [
+    1520,
+    520
+   ],
+   "hfov": 92,
+   "shift_y": 0.0
+  }
+ ],
+ "style_refs": {
+  "bedrooms": {
+   "job": "8583ea6e-c23d-4a3f-97a0-b90cacc446a8",
+   "text": "IMAGE 2 is the client's favourite, approved bedroom (the 'Master Suite' of their other house) at golden hour. This bedroom must have EXACTLY the same design language: the same faceted walnut with glowing LED seams on the wall and ceiling canopy, black slats, sand channel-tufted bed, charcoal bedding and grey pillows, black nightstands and small black lamps, white marble with LED lines, dark walnut floor, dark plaster, sheer curtains, pampas and the same warm golden light. Copy ONLY the look - never its layout, camera, windows or object positions: every object and its position come ONLY from IMAGE 1."
+  },
+  "bath1": {
+   "job": "a476ef64-c146-413b-9119-4ecce2933ae2",
+   "text": "IMAGE 2 is the client's approved bathroom from their other house: use EXACTLY the same rough dark slate, grey marble floor, round mirror inside a slim LED ring, floating dark stone vanity with walnut drawer and LED underneath, white wall-hung toilet with black flush plate, smoked-glass shower with lit niche, black ceiling with LED slots, and the same warm moody light. Copy ONLY the look - every object and its position come ONLY from IMAGE 1."
+  },
+  "pods": {
+   "job": "6ce987cd-48b2-4c30-9242-d971070f5b2a",
+   "text": "IMAGE 2 is the client's approved bathroom from their other house: use EXACTLY the same taupe stone, cream stone floor, floating walnut counter with black vessel basin, open walnut shelf and taupe drawers with LED below, mirror cabinet with lit niches, slim black pendants, dried gypsophila, clear glass shower with black rain head and lit niche, and the same warm glow. Copy ONLY the look - every object and its position come ONLY from IMAGE 1."
+  },
+  "corridor": {
+   "job": "3ea61ad3-6b50-4027-804f-626b60de6822",
+   "text": "IMAGE 2 is the client's approved stair landing from their other house: use EXACTLY the same solid walnut stair treads, vertical walnut battens, warm greige plaster, warm golden light and finish quality. Copy ONLY the look - the stair, walls and every position come ONLY from IMAGE 1."
+  }
+ }
+}

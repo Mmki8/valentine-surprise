@@ -1,0 +1,57 @@
+{
+ "camera": "BATH1_B",
+ "room": "S_R_bath1",
+ "hero": "BATH1_A",
+ "mood": null,
+ "materials": [
+  "slate_rough",
+  "walnut_door",
+  "marble_grey_floor",
+  "bronze_frame",
+  "ceiling_black",
+  "niche_lit",
+  "toilet_white",
+  "led_line",
+  "black_metal"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bath1_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.267,
+   "note": "bedroom 1 entry hall -> bathroom 1"
+  }
+ ],
+ "furniture_counts": {
+  "shower": 1,
+  "toilet": 1
+ },
+ "items": [
+  {
+   "id": "S_F_bath1_shower",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.017,
+   "note": null
+  },
+  {
+   "id": "S_F_bath1_wc",
+   "name": "wall-hung toilet",
+   "where": "left",
+   "share": 0.005,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

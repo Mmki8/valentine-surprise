@@ -374,6 +374,122 @@
     "add": "",
     "light": "golden hour: warm sun from the tall window over the entrance, warm LED line in the ceiling"
    }
+  },
+  "S_R_bed1": {
+   "style": "bedroom_noir",
+   "mood_refs": [],
+   "concept": "Bedroom in the style of the client's approved 'Master Suite': faceted walnut wall with glowing LED seams folding onto the ceiling over the bed, black slats either side, sand channel-tufted bed, charcoal bedding, black nightstands and lamps, white marble feature wall framed by LED lines, pampas by the glass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm low sun pours in through the south glazing, the walnut facets glow along their LED seams, warm table lamps"
+   }
+  },
+  "S_R_bed2": {
+   "style": "bedroom_noir",
+   "mood_refs": [],
+   "concept": "Bedroom in the style of the client's approved 'Master Suite': faceted walnut wall with glowing LED seams folding onto the ceiling over the bed, black slats either side, sand channel-tufted bed, charcoal bedding, black nightstands and lamps, white marble feature wall framed by LED lines, pampas by the glass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm low sun pours in through the south glazing, the walnut facets glow along their LED seams, warm table lamps"
+   }
+  },
+  "S_R_bed3": {
+   "style": "bedroom_noir",
+   "mood_refs": [],
+   "concept": "Bedroom in the style of the client's approved 'Master Suite': faceted walnut wall with glowing LED seams folding onto the ceiling over the bed, black slats either side, sand channel-tufted bed, charcoal bedding, black nightstands and lamps, white marble feature wall framed by LED lines, pampas by the glass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm low sun pours in through the south glazing, the walnut facets glow along their LED seams, warm table lamps"
+   }
+  },
+  "S_R_bath1": {
+   "style": "bath_slate",
+   "mood_refs": [
+    "mood_bath_dark_ring.jpg"
+   ],
+   "concept": "Dark slate en-suite with the LED-ring mirror (client ref).",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm and moody: the LED ring, LED under the vanity and the lit niche graze the rough slate (no window)"
+   }
+  },
+  "S_R_podL": {
+   "style": "bath_taupe",
+   "mood_refs": [
+    "mood_bath_taupe_walnut.jpg"
+   ],
+   "concept": "Taupe stone + walnut en-suite (client ref).",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm and bright: LED under the counter and mirror cabinet, wall-washer, pendants on (no window)"
+   }
+  },
+  "S_R_podR": {
+   "style": "bath_taupe",
+   "mood_refs": [
+    "mood_bath_taupe_walnut.jpg"
+   ],
+   "concept": "Taupe stone + walnut en-suite (client ref).",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm and bright: LED under the counter and mirror cabinet, wall-washer, pendants on (no window)"
+   }
+  },
+  "S_R_corr": {
+   "style": "corridor_warm",
+   "mood_refs": [],
+   "concept": "Warm corridor: dark walnut floor, walnut battens on the stair wall, relief art, walnut stair.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm LED line in the ceiling, warm daylight falling down the stairwell from above"
+   }
+  },
+  "S_R_laundry": {
+   "style": "laundry_warm",
+   "mood_refs": [],
+   "concept": "Premium laundry: walnut cabinetry, stone worktop, cream stone floor.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm LED under the wall cabinets and in the ceiling"
+   }
+  },
+  "S_R_store": {
+   "style": "corridor_warm",
+   "mood_refs": [],
+   "concept": "unlabelled room",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm"
+   }
+  },
+  "S_R_ne": {
+   "style": "corridor_warm",
+   "mood_refs": [],
+   "concept": "unlabelled room",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm"
+   }
   }
  },
  "guide_color_legend": {
@@ -991,6 +1107,16 @@
    "floor": "stone_cream_floor",
    "wall": "stone_taupe",
    "ceiling": "plaster_taupe_ceiling"
+  },
+  "corridor_warm": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_white"
+  },
+  "laundry_warm": {
+   "floor": "stone_cream_floor",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_white"
   }
  },
  "kind_materials": {
@@ -1065,6 +1191,40 @@
   "U_F_bed2_head": "headboard_tufted_cream",
   "U_F_bed2_linen": "bedding_olive",
   "U_F_bed2_pillow": "pillow_cream",
-  "U_F_bed2_throw": "throw_chevron"
+  "U_F_bed2_throw": "throw_chevron",
+  "S_F_b1_bed_base": "bed_upholstered_sand",
+  "S_F_b1_bed_head": "headboard_channel_sand",
+  "S_F_b1_bed_linen": "duvet_charcoal",
+  "S_F_b1_bed_pillow": "pillow_grey",
+  "S_F_b1_bed_throw": "throw_black_knit",
+  "S_F_b1_ns1": "nightstand_black",
+  "S_F_b1_ns2": "nightstand_black",
+  "S_F_b1_wr": "wardrobe_black_glass",
+  "S_F_b2_bed_base": "bed_upholstered_sand",
+  "S_F_b2_bed_head": "headboard_channel_sand",
+  "S_F_b2_bed_linen": "duvet_charcoal",
+  "S_F_b2_bed_pillow": "pillow_grey",
+  "S_F_b2_bed_throw": "throw_black_knit",
+  "S_F_b2_ns1": "nightstand_black",
+  "S_F_b2_ns2": "nightstand_black",
+  "S_F_b2_wr": "wardrobe_black_glass",
+  "S_F_b3_bed_base": "bed_upholstered_sand",
+  "S_F_b3_bed_head": "headboard_channel_sand",
+  "S_F_b3_bed_linen": "duvet_charcoal",
+  "S_F_b3_bed_pillow": "pillow_grey",
+  "S_F_b3_bed_throw": "throw_black_knit",
+  "S_F_b3_ns1": "nightstand_black",
+  "S_F_b3_ns2": "nightstand_black",
+  "S_F_b3_wr": "wardrobe_black_glass",
+  "S_F_bath1_vanity": "vanity_dark_stone",
+  "S_F_podL_vanity": "walnut_counter",
+  "S_F_podR_vanity": "walnut_counter",
+  "S_F_bath1_wc": "toilet_white",
+  "S_F_podL_wc": "toilet_white",
+  "S_F_podR_wc": "toilet_white",
+  "S_F_bath1_shower": "marble_grey_floor",
+  "S_F_podL_shower": "stone_cream_floor",
+  "S_F_podR_shower": "stone_cream_floor",
+  "S_F_podL_duct": "stone_taupe"
  }
 }

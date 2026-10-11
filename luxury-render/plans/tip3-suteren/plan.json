@@ -1,0 +1,5329 @@
+{
+ "meta": {
+  "name": "OSNOVA SUTERENA - house type 3, souterrain",
+  "source": "source/floorplan_suteren.webp",
+  "units": "cm",
+  "axes": "x = east (drawing right), y = south (drawing down), z = up",
+  "scale_cm_per_px": 1.313,
+  "origin_px": [
+   184,
+   247.5
+  ],
+  "overall_cm": [
+   1591,
+   1000
+  ]
+ },
+ "levels": {
+  "ffl": 0,
+  "ceiling": 270,
+  "slab_top": 300
+ },
+ "walls": [
+  {
+   "id": "W_north",
+   "rect": [
+    0.0,
+    -4.6,
+    1596.6,
+    25.6
+   ],
+   "z0": 0,
+   "z1": 570,
+   "kind": "ext",
+   "src_px": [
+    184,
+    244,
+    1400,
+    267
+   ]
+  },
+  {
+   "id": "W_west",
+   "rect": [
+    0.0,
+    -4.6,
+    27.6,
+    781.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    184,
+    244,
+    205,
+    843
+   ]
+  },
+  {
+   "id": "W_east",
+   "rect": [
+    1565.1,
+    -4.6,
+    1596.6,
+    875.1
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    1376,
+    244,
+    1400,
+    914
+   ]
+  },
+  {
+   "id": "W_b1_s",
+   "rect": [
+    0.0,
+    745.1,
+    370.3,
+    781.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    184,
+    815,
+    466,
+    843
+   ]
+  },
+  {
+   "id": "W_b2_s",
+   "rect": [
+    370.3,
+    993.3,
+    823.3,
+    1011.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    466,
+    1004,
+    811,
+    1018
+   ]
+  },
+  {
+   "id": "W_b3_s",
+   "rect": [
+    848.2,
+    993.3,
+    1301.2,
+    1011.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    830,
+    1004,
+    1175,
+    1018
+   ]
+  },
+  {
+   "id": "W_laundry_s",
+   "rect": [
+    1326.1,
+    850.2,
+    1596.6,
+    875.1
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    1194,
+    895,
+    1400,
+    914
+   ]
+  },
+  {
+   "id": "W_b1_e",
+   "rect": [
+    344.0,
+    25.6,
+    370.3,
+    1011.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    446,
+    267,
+    466,
+    1018
+   ]
+  },
+  {
+   "id": "W_b3_e",
+   "rect": [
+    1301.2,
+    25.6,
+    1326.1,
+    1011.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1175,
+    267,
+    1194,
+    1018
+   ]
+  },
+  {
+   "id": "W_div",
+   "rect": [
+    823.3,
+    272.4,
+    848.2,
+    1011.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    811,
+    455,
+    830,
+    1018
+   ]
+  },
+  {
+   "id": "W_corr_s",
+   "rect": [
+    370.3,
+    272.4,
+    1301.2,
+    281.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    466,
+    455,
+    1175,
+    462
+   ]
+  },
+  {
+   "id": "W_store_s",
+   "rect": [
+    370.3,
+    139.8,
+    605.3,
+    150.3
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    466,
+    354,
+    645,
+    362
+   ]
+  },
+  {
+   "id": "W_stair_w",
+   "rect": [
+    605.3,
+    25.6,
+    630.2,
+    150.3
+   ],
+   "z0": 0,
+   "z1": 570,
+   "kind": "int",
+   "src_px": [
+    645,
+    267,
+    664,
+    362
+   ]
+  },
+  {
+   "id": "W_stair_s",
+   "rect": [
+    605.3,
+    125.4,
+    1130.5,
+    150.3
+   ],
+   "z0": 0,
+   "z1": 570,
+   "kind": "int",
+   "src_px": [
+    645,
+    343,
+    1045,
+    362
+   ]
+  },
+  {
+   "id": "W_well_e",
+   "rect": [
+    1130.5,
+    25.6,
+    1137.1,
+    125.4
+   ],
+   "z0": 270,
+   "z1": 570,
+   "kind": "int",
+   "src_px": [
+    1045,
+    267,
+    1050,
+    343
+   ]
+  },
+  {
+   "id": "W_bath1_e",
+   "rect": [
+    224.5,
+    125.4,
+    235.0,
+    252.8
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    355,
+    343,
+    363,
+    440
+   ]
+  },
+  {
+   "id": "W_bath1_sh",
+   "rect": [
+    233.7,
+    125.4,
+    344.0,
+    134.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    362,
+    343,
+    446,
+    350
+   ]
+  },
+  {
+   "id": "W_bath1_s",
+   "rect": [
+    27.6,
+    252.8,
+    233.7,
+    264.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    205,
+    440,
+    362,
+    449
+   ]
+  },
+  {
+   "id": "W_podL_w",
+   "rect": [
+    479.2,
+    281.6,
+    487.1,
+    479.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    549,
+    462,
+    555,
+    613
+   ]
+  },
+  {
+   "id": "W_podL_s",
+   "rect": [
+    479.2,
+    452.3,
+    823.3,
+    479.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    549,
+    592,
+    811,
+    613
+   ]
+  },
+  {
+   "id": "W_podL_p",
+   "rect": [
+    719.5,
+    281.6,
+    736.6,
+    351.2
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    732,
+    462,
+    745,
+    515
+   ]
+  },
+  {
+   "id": "W_podR_e",
+   "rect": [
+    1184.3,
+    281.6,
+    1190.9,
+    479.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1086,
+    462,
+    1091,
+    613
+   ]
+  },
+  {
+   "id": "W_podR_s",
+   "rect": [
+    848.2,
+    452.3,
+    1190.9,
+    479.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    830,
+    592,
+    1091,
+    613
+   ]
+  },
+  {
+   "id": "W_podR_p",
+   "rect": [
+    937.5,
+    281.6,
+    948.0,
+    373.5
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    898,
+    462,
+    906,
+    532
+   ]
+  },
+  {
+   "id": "W_ne_s",
+   "rect": [
+    1326.1,
+    455.0,
+    1565.1,
+    479.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1194,
+    594,
+    1376,
+    613
+   ]
+  }
+ ],
+ "openings": [
+  {
+   "id": "O_b1_glz",
+   "type": "sliding",
+   "sill": 0,
+   "head": 240,
+   "note": "bedroom 1 south: 2-leaf sliding glass door",
+   "rect": [
+    48.6,
+    745.1,
+    288.9,
+    781.9
+   ],
+   "src_px": [
+    221,
+    815,
+    404,
+    843
+   ]
+  },
+  {
+   "id": "O_b2_glz",
+   "type": "curtain",
+   "sill": 0,
+   "head": 250,
+   "note": "bedroom 2 south: 3-panel glazing, middle leaf slides",
+   "rect": [
+    370.3,
+    993.3,
+    823.3,
+    1011.7
+   ],
+   "src_px": [
+    466,
+    1004,
+    811,
+    1018
+   ],
+   "mullions": [
+    525.2,
+    681.4
+   ]
+  },
+  {
+   "id": "O_b3_glz",
+   "type": "curtain",
+   "sill": 0,
+   "head": 250,
+   "note": "bedroom 3 south: 3-panel glazing, middle leaf slides",
+   "rect": [
+    848.2,
+    993.3,
+    1301.2,
+    1011.7
+   ],
+   "src_px": [
+    830,
+    1004,
+    1175,
+    1018
+   ],
+   "mullions": [
+    988.7,
+    1146.2
+   ]
+  },
+  {
+   "id": "O_b1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> bedroom 1 entry hall",
+   "rect": [
+    344.0,
+    164.8,
+    370.3,
+    248.8
+   ],
+   "src_px": [
+    446,
+    373,
+    466,
+    437
+   ],
+   "hinge": [
+    344.0,
+    248.8
+   ]
+  },
+  {
+   "id": "O_bath1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 1 entry hall -> bathroom 1",
+   "rect": [
+    224.5,
+    167.4,
+    235.0,
+    239.6
+   ],
+   "src_px": [
+    355,
+    375,
+    363,
+    430
+   ],
+   "hinge": [
+    224.5,
+    167.4
+   ]
+  },
+  {
+   "id": "O_store_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> store / technical room",
+   "rect": [
+    390.0,
+    139.8,
+    466.1,
+    150.3
+   ],
+   "src_px": [
+    481,
+    354,
+    539,
+    362
+   ],
+   "hinge": [
+    390.0,
+    139.8
+   ]
+  },
+  {
+   "id": "O_b2_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> bedroom 2 passage",
+   "rect": [
+    384.7,
+    272.4,
+    467.4,
+    281.6
+   ],
+   "src_px": [
+    477,
+    455,
+    540,
+    462
+   ],
+   "hinge": [
+    384.7,
+    281.6
+   ]
+  },
+  {
+   "id": "O_b3_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> bedroom 3 passage",
+   "rect": [
+    1202.7,
+    272.4,
+    1288.1,
+    281.6
+   ],
+   "src_px": [
+    1100,
+    455,
+    1165,
+    462
+   ],
+   "hinge": [
+    1288.1,
+    281.6
+   ]
+  },
+  {
+   "id": "O_podL_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 2 -> bathroom pod",
+   "rect": [
+    639.4,
+    452.3,
+    711.6,
+    479.9
+   ],
+   "src_px": [
+    671,
+    592,
+    726,
+    613
+   ],
+   "hinge": [
+    711.6,
+    479.9
+   ]
+  },
+  {
+   "id": "O_podR_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 3 -> bathroom pod",
+   "rect": [
+    959.8,
+    452.3,
+    1032.0,
+    479.9
+   ],
+   "src_px": [
+    915,
+    592,
+    970,
+    613
+   ],
+   "hinge": [
+    959.8,
+    479.9
+   ]
+  },
+  {
+   "id": "O_ne_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> north-east room (unlabelled)",
+   "rect": [
+    1301.2,
+    164.8,
+    1326.1,
+    246.2
+   ],
+   "src_px": [
+    1175,
+    373,
+    1194,
+    435
+   ],
+   "hinge": [
+    1326.1,
+    164.8
+   ]
+  },
+  {
+   "id": "O_laundry_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "north-east room -> laundry",
+   "rect": [
+    1381.3,
+    455.0,
+    1462.7,
+    479.9
+   ],
+   "src_px": [
+    1236,
+    594,
+    1298,
+    613
+   ],
+   "hinge": [
+    1381.3,
+    479.9
+   ]
+  },
+  {
+   "id": "O_laundry_ext",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "laundry exterior door (south)",
+   "rect": [
+    1381.3,
+    850.2,
+    1462.7,
+    875.1
+   ],
+   "src_px": [
+    1236,
+    895,
+    1298,
+    914
+   ],
+   "hinge": [
+    1381.3,
+    850.2
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "S_R_bath1",
+   "name": "Bathroom 1 (bedroom 1)",
+   "polygon": [
+    [
+     27.6,
+     25.6
+    ],
+    [
+     344.0,
+     25.6
+    ],
+    [
+     344.0,
+     125.4
+    ],
+    [
+     233.7,
+     125.4
+    ],
+    [
+     233.7,
+     252.8
+    ],
+    [
+     27.6,
+     252.8
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bath_slate",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_bed1",
+   "name": "Bedroom 1 (west) incl. entry hall",
+   "polygon": [
+    [
+     27.6,
+     264.6
+    ],
+    [
+     233.7,
+     264.6
+    ],
+    [
+     233.7,
+     134.6
+    ],
+    [
+     344.0,
+     134.6
+    ],
+    [
+     344.0,
+     745.1
+    ],
+    [
+     27.6,
+     745.1
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bedroom_noir",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_store",
+   "name": "Store / technical (unlabelled)",
+   "polygon": [
+    [
+     370.3,
+     25.6
+    ],
+    [
+     605.3,
+     25.6
+    ],
+    [
+     605.3,
+     139.8
+    ],
+    [
+     370.3,
+     139.8
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_corr",
+   "name": "Corridor + stair",
+   "polygon": [
+    [
+     370.3,
+     150.3
+    ],
+    [
+     1130.5,
+     150.3
+    ],
+    [
+     1130.5,
+     125.4
+    ],
+    [
+     630.2,
+     125.4
+    ],
+    [
+     630.2,
+     25.6
+    ],
+    [
+     1301.2,
+     25.6
+    ],
+    [
+     1301.2,
+     272.4
+    ],
+    [
+     370.3,
+     272.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": [
+    [
+     630.2,
+     25.6,
+     1130.5,
+     125.4
+    ]
+   ]
+  },
+  {
+   "id": "S_R_podL",
+   "name": "Bathroom 2 (pod, bedroom 2)",
+   "polygon": [
+    [
+     487.1,
+     281.6
+    ],
+    [
+     823.3,
+     281.6
+    ],
+    [
+     823.3,
+     452.3
+    ],
+    [
+     487.1,
+     452.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bath_taupe",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_podR",
+   "name": "Bathroom 3 (pod, bedroom 3)",
+   "polygon": [
+    [
+     848.2,
+     281.6
+    ],
+    [
+     1184.3,
+     281.6
+    ],
+    [
+     1184.3,
+     452.3
+    ],
+    [
+     848.2,
+     452.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bath_taupe",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_bed2",
+   "name": "Bedroom 2 (south, middle-west)",
+   "polygon": [
+    [
+     370.3,
+     281.6
+    ],
+    [
+     479.2,
+     281.6
+    ],
+    [
+     479.2,
+     479.9
+    ],
+    [
+     823.3,
+     479.9
+    ],
+    [
+     823.3,
+     993.3
+    ],
+    [
+     370.3,
+     993.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bedroom_noir",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_bed3",
+   "name": "Bedroom 3 (south, middle-east)",
+   "polygon": [
+    [
+     1190.9,
+     281.6
+    ],
+    [
+     1301.2,
+     281.6
+    ],
+    [
+     1301.2,
+     993.3
+    ],
+    [
+     848.2,
+     993.3
+    ],
+    [
+     848.2,
+     479.9
+    ],
+    [
+     1190.9,
+     479.9
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bedroom_noir",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_ne",
+   "name": "North-east room (unlabelled, no furniture)",
+   "polygon": [
+    [
+     1326.1,
+     25.6
+    ],
+    [
+     1565.1,
+     25.6
+    ],
+    [
+     1565.1,
+     455.0
+    ],
+    [
+     1326.1,
+     455.0
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "S_R_laundry",
+   "name": "Laundry",
+   "polygon": [
+    [
+     1326.1,
+     479.9
+    ],
+    [
+     1565.1,
+     479.9
+    ],
+    [
+     1565.1,
+     850.2
+    ],
+    [
+     1326.1,
+     850.2
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "laundry_warm",
+   "ceiling_holes": []
+  }
+ ],
+ "furniture": [
+  {
+   "id": "S_F_b1_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    30.2,
+    451.0,
+    224.5,
+    613.8
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed1",
+   "facing": "E",
+   "note": "double bed, headboard on west wall",
+   "src_px": [
+    207,
+    591,
+    355,
+    715
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b1_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    30.2,
+    405.1,
+    69.6,
+    451.0
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    207,
+    556,
+    237,
+    591
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b1_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    30.2,
+    613.8,
+    69.6,
+    659.8
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    207,
+    715,
+    237,
+    750
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b1_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    27.6,
+    264.6,
+    233.7,
+    325.0
+   ],
+   "z0": 0,
+   "h": 240,
+   "room": "S_R_bed1",
+   "facing": "S",
+   "note": "wardrobe",
+   "src_px": [
+    205,
+    449,
+    362,
+    495
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_bath1_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    38.1,
+    49.2,
+    93.2,
+    88.6
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "S_R_bath1",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    213,
+    285,
+    255,
+    315
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_bath1_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    27.6,
+    158.2,
+    82.7,
+    229.1
+   ],
+   "z0": 55,
+   "h": 30,
+   "room": "S_R_bath1",
+   "facing": "E",
+   "note": "basin in the GKPL installation wall",
+   "src_px": [
+    205,
+    368,
+    247,
+    422
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_bath1_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    233.7,
+    25.6,
+    344.0,
+    125.4
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "S_R_bath1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    362,
+    267,
+    446,
+    343
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podL_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    487.1,
+    281.6,
+    580.3,
+    452.3
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "S_R_podL",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    555,
+    462,
+    626,
+    592
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podL_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    580.3,
+    281.6,
+    719.5,
+    331.5
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "S_R_podL",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    626,
+    462,
+    732,
+    500
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podL_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    749.7,
+    285.6,
+    795.7,
+    351.2
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "S_R_podL",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    755,
+    465,
+    790,
+    515
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podL_duct",
+   "kind": "box",
+   "shape": "box",
+   "rect": [
+    739.2,
+    426.1,
+    779.9,
+    452.3
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "S_R_podL",
+   "facing": null,
+   "note": "installation duct (green box on plan)",
+   "src_px": [
+    747,
+    572,
+    778,
+    592
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podR_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    1091.1,
+    281.6,
+    1184.3,
+    452.3
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "S_R_podR",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1015,
+    462,
+    1086,
+    592
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podR_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    948.0,
+    281.6,
+    1091.1,
+    331.5
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "S_R_podR",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    906,
+    462,
+    1015,
+    500
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_podR_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    861.3,
+    285.6,
+    900.7,
+    351.2
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "S_R_podR",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    840,
+    465,
+    870,
+    515
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b2_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    480.6,
+    573.1,
+    736.6,
+    642.7
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "S_R_bed2",
+   "facing": "N",
+   "note": "full-height wardrobe wall (GKPL), doors face north (dressing zone)",
+   "src_px": [
+    550,
+    684,
+    745,
+    737
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b2_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    523.9,
+    645.3,
+    689.3,
+    839.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed2",
+   "facing": "S",
+   "note": "double bed, headboard against the wardrobe wall",
+   "src_px": [
+    583,
+    739,
+    709,
+    887
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b2_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    480.6,
+    645.3,
+    523.9,
+    684.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    550,
+    739,
+    583,
+    769
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b2_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    689.3,
+    645.3,
+    734.0,
+    684.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    709,
+    739,
+    743,
+    769
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b3_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    936.2,
+    573.1,
+    1190.9,
+    642.7
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "S_R_bed3",
+   "facing": "N",
+   "note": "full-height wardrobe wall (GKPL), doors face north (dressing zone)",
+   "src_px": [
+    897,
+    684,
+    1091,
+    737
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b3_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    979.5,
+    645.3,
+    1143.6,
+    839.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed3",
+   "facing": "S",
+   "note": "double bed, headboard against the wardrobe wall",
+   "src_px": [
+    930,
+    739,
+    1055,
+    887
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b3_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    936.2,
+    645.3,
+    979.5,
+    684.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed3",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    897,
+    739,
+    930,
+    769
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_b3_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    1143.6,
+    645.3,
+    1190.9,
+    684.7
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "S_R_bed3",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1055,
+    739,
+    1091,
+    769
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_l_washer",
+   "kind": "appliance",
+   "shape": "box",
+   "rect": [
+    1500.8,
+    487.8,
+    1559.8,
+    548.2
+   ],
+   "z0": 0,
+   "h": 85,
+   "room": "S_R_laundry",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1327,
+    619,
+    1372,
+    665
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_l_dryer",
+   "kind": "appliance",
+   "shape": "box",
+   "rect": [
+    1500.8,
+    552.1,
+    1559.8,
+    612.5
+   ],
+   "z0": 0,
+   "h": 85,
+   "room": "S_R_laundry",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1327,
+    668,
+    1372,
+    714
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_l_counter",
+   "kind": "counter",
+   "shape": "box",
+   "rect": [
+    1503.4,
+    612.5,
+    1565.1,
+    846.2
+   ],
+   "z0": 0,
+   "h": 92,
+   "room": "S_R_laundry",
+   "facing": "W",
+   "note": "worktop run with cabinets",
+   "src_px": [
+    1329,
+    714,
+    1376,
+    892
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_l_top_wd",
+   "kind": "counter",
+   "shape": "box",
+   "rect": [
+    1500.8,
+    479.9,
+    1565.1,
+    612.5
+   ],
+   "z0": 88,
+   "h": 4,
+   "room": "S_R_laundry",
+   "facing": "W",
+   "note": "worktop over washer + dryer",
+   "src_px": [
+    1327,
+    613,
+    1376,
+    714
+   ],
+   "group": null
+  },
+  {
+   "id": "S_F_stair_01",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1170.1,
+    25.6,
+    1200.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 15.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_02",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1140.1,
+    25.6,
+    1170.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 30.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_03",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1110.1,
+    25.6,
+    1140.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 45.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_04",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1080.1,
+    25.6,
+    1110.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 60.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_05",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1050.1,
+    25.6,
+    1080.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 75.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_06",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1020.1,
+    25.6,
+    1050.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 90.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_07",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    990.1,
+    25.6,
+    1020.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 105.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_08",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    960.1,
+    25.6,
+    990.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 120.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_09",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    930.1,
+    25.6,
+    960.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 135.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_10",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    900.2,
+    25.6,
+    930.1,
+    125.4
+   ],
+   "z0": 0,
+   "h": 150.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_11",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    870.2,
+    25.6,
+    900.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 165.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_12",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    840.2,
+    25.6,
+    870.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 180.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_13",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    810.2,
+    25.6,
+    840.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 195.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_14",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    780.2,
+    25.6,
+    810.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 210.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_15",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    750.2,
+    25.6,
+    780.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 225.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_16",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    720.2,
+    25.6,
+    750.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 240.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_17",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    690.2,
+    25.6,
+    720.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 255.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_18",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    660.2,
+    25.6,
+    690.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 270.0,
+   "room": "S_R_corr",
+   "group": null
+  },
+  {
+   "id": "S_F_stair_19",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    630.2,
+    25.6,
+    660.2,
+    125.4
+   ],
+   "z0": 0,
+   "h": 285.0,
+   "room": "S_R_corr",
+   "group": null
+  }
+ ],
+ "design": [
+  {
+   "id": "D_b1_facet_wall",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    27.6,
+    391.9,
+    30.200000000000003,
+    672.9
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_facet_canopy",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    27.6,
+    366.9,
+    152.3,
+    697.9
+   ],
+   "z": [
+    261,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_seam_w0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    391.9,
+    172.26000000000002
+   ],
+   "p1": [
+    30.5,
+    509.91999999999996,
+    261.0
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_w1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    509.91999999999996,
+    261.0
+   ],
+   "p1": [
+    30.5,
+    552.0699999999999,
+    130.5
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_w2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    552.0699999999999,
+    130.5
+   ],
+   "p1": [
+    30.5,
+    616.7,
+    261.0
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_w3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    672.9,
+    156.6
+   ],
+   "p1": [
+    30.5,
+    597.03,
+    211.41000000000003
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_w4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    597.03,
+    211.41000000000003
+   ],
+   "p1": [
+    30.5,
+    552.0699999999999,
+    130.5
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_w5",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    30.5,
+    450.90999999999997,
+    130.5
+   ],
+   "p1": [
+    30.5,
+    509.91999999999996,
+    261.0
+   ],
+   "normal": "x",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_c0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    27.6,
+    509.91999999999996,
+    260.7
+   ],
+   "p1": [
+    96.185,
+    577.36,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_c1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    96.185,
+    577.36,
+    260.7
+   ],
+   "p1": [
+    27.6,
+    616.7,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_c2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    96.185,
+    577.36,
+    260.7
+   ],
+   "p1": [
+    152.3,
+    529.5899999999999,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_c3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    27.6,
+    509.91999999999996,
+    260.7
+   ],
+   "p1": [
+    152.3,
+    459.34,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_seam_c4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    79.974,
+    672.9,
+    260.7
+   ],
+   "p1": [
+    96.185,
+    577.36,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_canopy_edge",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    151.3,
+    366.9,
+    152.3,
+    697.9
+   ],
+   "z": [
+    260,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_panel_edge0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    27.6,
+    390.4,
+    30.8,
+    391.9
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_panel_edge1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    27.6,
+    672.9,
+    30.8,
+    674.4
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_slat_l0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    367.5,
+    35.6,
+    372.29999999999995
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_l1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    373.5,
+    35.6,
+    378.29999999999995
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_l2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    379.5,
+    35.6,
+    384.29999999999995
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_l3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    385.5,
+    35.6,
+    390.29999999999995
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_r0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    674.5,
+    35.6,
+    679.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_r1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    680.5,
+    35.6,
+    685.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_r2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    686.5,
+    35.6,
+    691.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_slat_r3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    27.6,
+    692.5,
+    35.6,
+    697.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_lamp0_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    49.9,
+    428.0
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_lamp0_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    49.9,
+    428.0
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_lamp0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    49.9,
+    428.0
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_lamp1_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    49.9,
+    636.8
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_lamp1_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    49.9,
+    636.8
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_lamp1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    49.9,
+    636.8
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    60,
+    395,
+    300,
+    690
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_marble",
+   "shape": "box",
+   "mat": "marble_white_panel",
+   "rect": [
+    341.3,
+    410.3,
+    342.8,
+    712.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_marble_led0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    340.6,
+    408.8,
+    342.8,
+    410.3
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_marble_led1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    340.6,
+    712.3,
+    342.8,
+    713.8
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    340.0,
+    141.1,
+    343.0,
+    741.2
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    28.6,
+    736.1,
+    54.6,
+    744.1
+   ],
+   "z": [
+    0,
+    250
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    284.9,
+    736.1,
+    302.9,
+    744.1
+   ],
+   "z": [
+    0,
+    250
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pampas_vase",
+   "shape": "cyl",
+   "mat": "vase_dark",
+   "center": [
+    323.0,
+    712.3
+   ],
+   "r": 9,
+   "z": [
+    0,
+    70
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pampas_plume0",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    319.0,
+    709.3,
+    120
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b1_pampas_plume1",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    328.0,
+    714.3,
+    140
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b1_pampas_plume2",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    321.0,
+    717.3,
+    158
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b2_facet_wall",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    490.0,
+    642.7,
+    727.2,
+    645.3000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_facet_canopy",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    480.6,
+    642.7,
+    736.6,
+    778.0
+   ],
+   "z": [
+    261,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_seam_w0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    490.0,
+    645.6,
+    172.26000000000002
+   ],
+   "p1": [
+    589.624,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_w1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    589.624,
+    645.6,
+    261.0
+   ],
+   "p1": [
+    625.204,
+    645.6,
+    130.5
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_w2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    625.204,
+    645.6,
+    130.5
+   ],
+   "p1": [
+    679.76,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_w3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    727.2,
+    645.6,
+    156.6
+   ],
+   "p1": [
+    663.1560000000001,
+    645.6,
+    211.41000000000003
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_w4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    663.1560000000001,
+    645.6,
+    211.41000000000003
+   ],
+   "p1": [
+    625.204,
+    645.6,
+    130.5
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_w5",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    539.812,
+    645.6,
+    130.5
+   ],
+   "p1": [
+    589.624,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_c0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    589.624,
+    642.7,
+    260.7
+   ],
+   "p1": [
+    646.552,
+    717.115,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_c1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    646.552,
+    717.115,
+    260.7
+   ],
+   "p1": [
+    679.76,
+    642.7,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_c2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    646.552,
+    717.115,
+    260.7
+   ],
+   "p1": [
+    606.2280000000001,
+    778.0,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_c3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    589.624,
+    642.7,
+    260.7
+   ],
+   "p1": [
+    546.928,
+    778.0,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_seam_c4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    727.2,
+    699.5260000000001,
+    260.7
+   ],
+   "p1": [
+    646.552,
+    717.115,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_canopy_edge",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    480.6,
+    777.0,
+    736.6,
+    778.0
+   ],
+   "z": [
+    260,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_panel_edge0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    488.5,
+    642.7,
+    490.0,
+    645.9000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_panel_edge1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    727.2,
+    642.7,
+    728.7,
+    645.9000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_slat_l0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    481.20000000000005,
+    642.7,
+    482.1,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_l1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    483.30000000000007,
+    642.7,
+    484.20000000000005,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_l2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    485.40000000000003,
+    642.7,
+    486.3,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_l3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    487.50000000000006,
+    642.7,
+    488.40000000000003,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_r0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    728.8000000000001,
+    642.7,
+    729.7,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_r1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    730.9000000000001,
+    642.7,
+    731.8000000000001,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_r2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    733.0000000000001,
+    642.7,
+    733.9000000000001,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slat_r3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    735.1,
+    642.7,
+    736.0,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_lamp0_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    502.2,
+    665.0
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_lamp0_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    502.2,
+    665.0
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_lamp0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    502.2,
+    665.0
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_lamp1_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    711.6,
+    665.0
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_lamp1_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    711.6,
+    665.0
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_lamp1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    711.6,
+    665.0
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    500,
+    700,
+    715,
+    905
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_marble",
+   "shape": "box",
+   "mat": "marble_white_panel",
+   "rect": [
+    820.5999999999999,
+    640.1,
+    822.0999999999999,
+    955.2
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_marble_led0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    819.9,
+    638.6,
+    822.0999999999999,
+    640.1
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_marble_led1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    819.9,
+    955.2,
+    822.0999999999999,
+    956.7
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    819.3,
+    481.9,
+    822.3,
+    991.3
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    371.3,
+    984.3,
+    391.3,
+    992.3
+   ],
+   "z": [
+    0,
+    255
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    802.3,
+    984.3,
+    822.3,
+    992.3
+   ],
+   "z": [
+    0,
+    255
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pampas_vase",
+   "shape": "cyl",
+   "mat": "vase_dark",
+   "center": [
+    404.4,
+    959.1
+   ],
+   "r": 9,
+   "z": [
+    0,
+    70
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pampas_plume0",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    400.4,
+    956.1,
+    120
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b2_pampas_plume1",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    409.4,
+    961.1,
+    140
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b2_pampas_plume2",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    402.4,
+    964.1,
+    158
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b3_facet_wall",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    945.6,
+    642.7,
+    1181.5,
+    645.3000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_facet_canopy",
+   "shape": "box",
+   "mat": "walnut_facets",
+   "rect": [
+    936.2,
+    642.7,
+    1190.9,
+    778.0
+   ],
+   "z": [
+    261,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_seam_w0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    945.6,
+    645.6,
+    172.26000000000002
+   ],
+   "p1": [
+    1044.678,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_w1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1044.678,
+    645.6,
+    261.0
+   ],
+   "p1": [
+    1080.063,
+    645.6,
+    130.5
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_w2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1080.063,
+    645.6,
+    130.5
+   ],
+   "p1": [
+    1134.32,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_w3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1181.5,
+    645.6,
+    156.6
+   ],
+   "p1": [
+    1117.807,
+    645.6,
+    211.41000000000003
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_w4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1117.807,
+    645.6,
+    211.41000000000003
+   ],
+   "p1": [
+    1080.063,
+    645.6,
+    130.5
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_w5",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    995.139,
+    645.6,
+    130.5
+   ],
+   "p1": [
+    1044.678,
+    645.6,
+    261.0
+   ],
+   "normal": "y",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_c0",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1044.678,
+    642.7,
+    260.7
+   ],
+   "p1": [
+    1101.294,
+    717.115,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_c1",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1101.294,
+    717.115,
+    260.7
+   ],
+   "p1": [
+    1134.32,
+    642.7,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_c2",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1101.294,
+    717.115,
+    260.7
+   ],
+   "p1": [
+    1061.191,
+    778.0,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_c3",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1044.678,
+    642.7,
+    260.7
+   ],
+   "p1": [
+    1002.216,
+    778.0,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_seam_c4",
+   "shape": "seg",
+   "mat": "led_line",
+   "p0": [
+    1181.5,
+    699.5260000000001,
+    260.7
+   ],
+   "p1": [
+    1101.294,
+    717.115,
+    260.7
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 0.4,
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_canopy_edge",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    936.2,
+    777.0,
+    1190.9,
+    778.0
+   ],
+   "z": [
+    260,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_panel_edge0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    944.1,
+    642.7,
+    945.6,
+    645.9000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_panel_edge1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1181.5,
+    642.7,
+    1183.0,
+    645.9000000000001
+   ],
+   "z": [
+    0,
+    261
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_slat_l0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    936.8000000000001,
+    642.7,
+    937.7,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_l1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    938.9000000000001,
+    642.7,
+    939.8000000000001,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_l2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    941.0000000000001,
+    642.7,
+    941.9000000000001,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_l3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    943.1,
+    642.7,
+    944.0,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_r0",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1183.1,
+    642.7,
+    1184.0,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_r1",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1185.1999999999998,
+    642.7,
+    1186.1,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_r2",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1187.3,
+    642.7,
+    1188.2,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_slat_r3",
+   "shape": "box",
+   "mat": "black_slats",
+   "rect": [
+    1189.3999999999999,
+    642.7,
+    1190.3,
+    650.7
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_lamp0_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    957.8,
+    665.0
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_lamp0_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    957.8,
+    665.0
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_lamp0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    957.8,
+    665.0
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_lamp1_base",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    1167.3,
+    665.0
+   ],
+   "r": 5,
+   "z": [
+    50,
+    82
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_lamp1_shade",
+   "shape": "cyl",
+   "mat": "lamp_black",
+   "center": [
+    1167.3,
+    665.0
+   ],
+   "r": 10,
+   "z": [
+    82,
+    96
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_lamp1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    1167.3,
+    665.0
+   ],
+   "r": 8.5,
+   "z": [
+    81,
+    82
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    955,
+    700,
+    1170,
+    905
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_marble",
+   "shape": "box",
+   "mat": "marble_white_panel",
+   "rect": [
+    849.4000000000001,
+    640.1,
+    850.9000000000001,
+    955.2
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_marble_led0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    849.4000000000001,
+    638.6,
+    851.6,
+    640.1
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_marble_led1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    849.4000000000001,
+    955.2,
+    851.6,
+    956.7
+   ],
+   "z": [
+    0,
+    266
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    849.2,
+    481.9,
+    852.2,
+    991.3
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b3_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    849.2,
+    984.3,
+    869.2,
+    992.3
+   ],
+   "z": [
+    0,
+    255
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    1280.2,
+    984.3,
+    1300.2,
+    992.3
+   ],
+   "z": [
+    0,
+    255
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_pampas_vase",
+   "shape": "cyl",
+   "mat": "vase_dark",
+   "center": [
+    1268.4,
+    959.1
+   ],
+   "r": 9,
+   "z": [
+    0,
+    70
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b3_pampas_plume0",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    1264.4,
+    956.1,
+    120
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b3_pampas_plume1",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    1273.4,
+    961.1,
+    140
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b3_pampas_plume2",
+   "shape": "sphere",
+   "mat": "pampas",
+   "center": [
+    1266.4,
+    964.1,
+    158
+   ],
+   "r": 13,
+   "kind": "decor"
+  },
+  {
+   "id": "D_bath1_drawer",
+   "shape": "box",
+   "mat": "vanity_walnut_drawer",
+   "rect": [
+    30.2,
+    162.2,
+    80.1,
+    225.2
+   ],
+   "z": [
+    25,
+    48
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_vanity_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    30.2,
+    164.8,
+    80.1,
+    222.6
+   ],
+   "z": [
+    23.5,
+    24.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_mirror",
+   "shape": "disc",
+   "mat": "mirror_round",
+   "center": [
+    29.6,
+    193.7,
+    160
+   ],
+   "r": 33,
+   "t": 1.6,
+   "axis": "x",
+   "kind": "panel"
+  },
+  {
+   "id": "D_bath1_ring",
+   "shape": "torus",
+   "mat": "ring_led",
+   "center": [
+    31.8,
+    193.7,
+    160
+   ],
+   "R": 38,
+   "tube": 1.3,
+   "axis": "x",
+   "kind": "light"
+  },
+  {
+   "id": "D_bath1_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    28.8,
+    54.5,
+    30.6,
+    83.4
+   ],
+   "z": [
+    92,
+    108
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_shower_glass",
+   "shape": "box",
+   "mat": "smoked_glass",
+   "rect": [
+    233.1,
+    26.6,
+    234.29999999999998,
+    97.8
+   ],
+   "z": [
+    0,
+    205
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    288.9,
+    75.5
+   ],
+   "r": 15,
+   "z": [
+    266,
+    268
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    246.8,
+    26.700000000000003,
+    330.9,
+    29.200000000000003
+   ],
+   "z": [
+    95,
+    125
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    246.8,
+    26.700000000000003,
+    330.9,
+    29.5
+   ],
+   "z": [
+    123.5,
+    125
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_slot0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    34.1,
+    54.599999999999994,
+    336.1,
+    57.0
+   ],
+   "z": [
+    268.5,
+    269.6
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_slot1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    86.7,
+    199.0,
+    218.0,
+    201.39999999999998
+   ],
+   "z": [
+    268.5,
+    269.6
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath1_diffuser",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    39.4,
+    213.4
+   ],
+   "r": 3.5,
+   "z": [
+    85,
+    101
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_shelf",
+   "shape": "box",
+   "mat": "walnut_counter",
+   "rect": [
+    580.3,
+    283.6,
+    719.5,
+    327.5
+   ],
+   "z": [
+    52,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_drawers",
+   "shape": "box",
+   "mat": "cabinet_taupe",
+   "rect": [
+    580.3,
+    285.6,
+    719.5,
+    327.5
+   ],
+   "z": [
+    8,
+    34
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    582.3,
+    287.6,
+    717.5,
+    325.5
+   ],
+   "z": [
+    6.5,
+    7.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_basin",
+   "shape": "box",
+   "mat": "basin_black_vessel",
+   "rect": [
+    625.9,
+    289.6,
+    673.9,
+    321.5
+   ],
+   "z": [
+    90,
+    104
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_mirror",
+   "shape": "box",
+   "mat": "mirror_cabinet",
+   "rect": [
+    588.3,
+    282.70000000000005,
+    713.5,
+    294.6
+   ],
+   "z": [
+    118,
+    222
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    588.3,
+    283.1,
+    713.5,
+    293.6
+   ],
+   "z": [
+    116.5,
+    117.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    580.3,
+    282.70000000000005,
+    719.5,
+    285.1
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_pend0",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    594.8,
+    300.0
+   ],
+   "r": 4,
+   "z": [
+    118,
+    148
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    594.8,
+    300.0
+   ],
+   "r": 3.2,
+   "z": [
+    117.4,
+    118
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    594.8,
+    300.0
+   ],
+   "r": 0.6,
+   "z": [
+    148,
+    270
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_pend1",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    602.7,
+    311.8
+   ],
+   "r": 4,
+   "z": [
+    102,
+    132
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    602.7,
+    311.8
+   ],
+   "r": 3.2,
+   "z": [
+    101.4,
+    102
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    602.7,
+    311.8
+   ],
+   "r": 0.6,
+   "z": [
+    132,
+    270
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    706.4,
+    297.4
+   ],
+   "r": 6,
+   "z": [
+    90,
+    116
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_gyps0",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    701.4,
+    297.4,
+    124
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podL_gyps1",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    711.4,
+    300.4,
+    128
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podL_gyps2",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    706.4,
+    294.4,
+    136
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podL_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    579.6999999999999,
+    282.6,
+    580.9,
+    410.3
+   ],
+   "z": [
+    0,
+    205
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    533.1,
+    367.0
+   ],
+   "r": 15,
+   "z": [
+    266,
+    268
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    488.3,
+    318.4,
+    490.8,
+    410.3
+   ],
+   "z": [
+    95,
+    125
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podL_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    488.3,
+    318.4,
+    491.1,
+    410.3
+   ],
+   "z": [
+    123.5,
+    125
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podL_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    760.7,
+    282.70000000000005,
+    784.7,
+    284.5
+   ],
+   "z": [
+    92,
+    108
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_shelf",
+   "shape": "box",
+   "mat": "walnut_counter",
+   "rect": [
+    948.0,
+    283.6,
+    1091.1,
+    327.5
+   ],
+   "z": [
+    52,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_drawers",
+   "shape": "box",
+   "mat": "cabinet_taupe",
+   "rect": [
+    948.0,
+    285.6,
+    1091.1,
+    327.5
+   ],
+   "z": [
+    8,
+    34
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_under",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    950.0,
+    287.6,
+    1089.1,
+    325.5
+   ],
+   "z": [
+    6.5,
+    7.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_basin",
+   "shape": "box",
+   "mat": "basin_black_vessel",
+   "rect": [
+    994.9,
+    289.6,
+    1042.9,
+    321.5
+   ],
+   "z": [
+    90,
+    104
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_mirror",
+   "shape": "box",
+   "mat": "mirror_cabinet",
+   "rect": [
+    956.0,
+    282.70000000000005,
+    1085.1,
+    294.6
+   ],
+   "z": [
+    118,
+    222
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    956.0,
+    283.1,
+    1085.1,
+    293.6
+   ],
+   "z": [
+    116.5,
+    117.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    948.0,
+    282.70000000000005,
+    1091.1,
+    285.1
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_pend0",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    1076.7,
+    300.0
+   ],
+   "r": 4,
+   "z": [
+    118,
+    148
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_pend0_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    1076.7,
+    300.0
+   ],
+   "r": 3.2,
+   "z": [
+    117.4,
+    118
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_pend0_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1076.7,
+    300.0
+   ],
+   "r": 0.6,
+   "z": [
+    148,
+    270
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_pend1",
+   "shape": "cyl",
+   "mat": "pendant_black_cyl",
+   "center": [
+    1068.8,
+    311.8
+   ],
+   "r": 4,
+   "z": [
+    102,
+    132
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_pend1_glow",
+   "shape": "cyl",
+   "mat": "led_line",
+   "center": [
+    1068.8,
+    311.8
+   ],
+   "r": 3.2,
+   "z": [
+    101.4,
+    102
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_pend1_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1068.8,
+    311.8
+   ],
+   "r": 0.6,
+   "z": [
+    132,
+    270
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    961.1,
+    297.4
+   ],
+   "r": 6,
+   "z": [
+    90,
+    116
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_gyps0",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    956.1,
+    297.4,
+    124
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podR_gyps1",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    966.1,
+    300.4,
+    128
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podR_gyps2",
+   "shape": "sphere",
+   "mat": "gypsophila",
+   "center": [
+    961.1,
+    294.4,
+    136
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_podR_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    1090.5,
+    282.6,
+    1091.6999999999998,
+    410.3
+   ],
+   "z": [
+    0,
+    205
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    1137.1,
+    367.0
+   ],
+   "r": 15,
+   "z": [
+    266,
+    268
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    1180.6,
+    318.4,
+    1183.1,
+    410.3
+   ],
+   "z": [
+    95,
+    125
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_podR_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1180.6,
+    318.4,
+    1183.1,
+    410.3
+   ],
+   "z": [
+    123.5,
+    125
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_podR_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    869.0,
+    282.70000000000005,
+    893.0,
+    284.5
+   ],
+   "z": [
+    92,
+    108
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_c_battens",
+   "shape": "box",
+   "mat": "walnut_battens",
+   "rect": [
+    605.3,
+    151.4,
+    1130.5,
+    154.3
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_c_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    382.1,
+    209.2,
+    1294.6,
+    212.2
+   ],
+   "z": [
+    267.5,
+    269.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_c_art0",
+   "shape": "box",
+   "mat": "art_relief",
+   "rect": [
+    546.2,
+    268.29999999999995,
+    730.0,
+    271.29999999999995
+   ],
+   "z": [
+    95,
+    195
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_c_art1",
+   "shape": "box",
+   "mat": "art_relief",
+   "rect": [
+    944.0,
+    268.29999999999995,
+    1127.9,
+    271.29999999999995
+   ],
+   "z": [
+    95,
+    195
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_stair_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    635.5,
+    26.700000000000003,
+    1200.1,
+    28.1
+   ],
+   "z": [
+    8,
+    9
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_l_uppers",
+   "shape": "box",
+   "mat": "walnut_cabinet",
+   "rect": [
+    1531.0,
+    515.4,
+    1564.0,
+    841.0
+   ],
+   "z": [
+    150,
+    235
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_l_uppers_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1533.6,
+    518.0,
+    1563.6,
+    838.4
+   ],
+   "z": [
+    148.5,
+    149.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_l_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1386.5,
+    502.2,
+    1391.8,
+    830.5
+   ],
+   "z": [
+    267.5,
+    269.5
+   ],
+   "kind": "light",
+   "emissive": true
+  }
+ ],
+ "extra_ceilings": [
+  {
+   "id": "CEIL_stairwell",
+   "rect": [
+    630.2,
+    25.6,
+    1130.5,
+    125.4
+   ],
+   "z": 570,
+   "mat": "plaster_white"
+  }
+ ],
+ "site": [
+  {
+   "id": "EXT_ground",
+   "mat": "lawn",
+   "rect": [
+    -800,
+    -400,
+    2400,
+    2600
+   ],
+   "z": [
+    -2,
+    -1
+   ]
+  },
+  {
+   "id": "EXT_terrace_b1",
+   "mat": "stone_pot",
+   "rect": [
+    0.0,
+    781.9,
+    370.3,
+    961.8
+   ],
+   "z": [
+    -1,
+    0
+   ]
+  },
+  {
+   "id": "EXT_terrace",
+   "mat": "stone_pot",
+   "rect": [
+    332.2,
+    1011.7,
+    1340.6,
+    1073.4
+   ],
+   "z": [
+    -1,
+    0
+   ]
+  },
+  {
+   "id": "EXT_hedge",
+   "mat": "hedge",
+   "rect": [
+    -200,
+    1500,
+    2000,
+    1560
+   ],
+   "z": [
+    0,
+    110
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk0",
+   "mat": "olive_trunk",
+   "cyl": [
+    300,
+    1330,
+    8
+   ],
+   "z": [
+    0,
+    180
+   ]
+  },
+  {
+   "id": "EXT_tree_crown0",
+   "mat": "olive_foliage",
+   "sphere": [
+    300,
+    1330,
+    260,
+    110
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk1",
+   "mat": "olive_trunk",
+   "cyl": [
+    760,
+    1420,
+    8
+   ],
+   "z": [
+    0,
+    180
+   ]
+  },
+  {
+   "id": "EXT_tree_crown1",
+   "mat": "olive_foliage",
+   "sphere": [
+    760,
+    1420,
+    260,
+    110
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk2",
+   "mat": "olive_trunk",
+   "cyl": [
+    1150,
+    1300,
+    8
+   ],
+   "z": [
+    0,
+    180
+   ]
+  },
+  {
+   "id": "EXT_tree_crown2",
+   "mat": "olive_foliage",
+   "sphere": [
+    1150,
+    1300,
+    260,
+    110
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk3",
+   "mat": "olive_trunk",
+   "cyl": [
+    1500,
+    1450,
+    8
+   ],
+   "z": [
+    0,
+    180
+   ]
+  },
+  {
+   "id": "EXT_tree_crown3",
+   "mat": "olive_foliage",
+   "sphere": [
+    1500,
+    1450,
+    260,
+    110
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk4",
+   "mat": "olive_trunk",
+   "cyl": [
+    -150,
+    1200,
+    8
+   ],
+   "z": [
+    0,
+    180
+   ]
+  },
+  {
+   "id": "EXT_tree_crown4",
+   "mat": "olive_foliage",
+   "sphere": [
+    -150,
+    1200,
+    260,
+    110
+   ]
+  }
+ ]
+}

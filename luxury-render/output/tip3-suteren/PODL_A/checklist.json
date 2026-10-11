@@ -1,0 +1,60 @@
+{
+ "camera": "PODL_A",
+ "room": "S_R_podL",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "stone_taupe",
+  "walnut_counter",
+  "mirror_cabinet",
+  "cabinet_taupe",
+  "toilet_white",
+  "basin_black_vessel",
+  "stone_cream_floor",
+  "gypsophila",
+  "pendant_black_cyl",
+  "ceramic_dark",
+  "cable_black",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1,
+  "shower": 1
+ },
+ "items": [
+  {
+   "id": "S_F_podL_vanity",
+   "name": "floating vanity",
+   "where": "centre",
+   "share": 0.065,
+   "note": null
+  },
+  {
+   "id": "S_F_podL_wc",
+   "name": "wall-hung toilet",
+   "where": "right",
+   "share": 0.034,
+   "note": null
+  },
+  {
+   "id": "S_F_podL_shower",
+   "name": "walk-in shower",
+   "where": "left",
+   "share": 0.02,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

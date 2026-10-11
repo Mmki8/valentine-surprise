@@ -1,0 +1,78 @@
+{
+ "camera": "B1_A",
+ "room": "S_R_bed1",
+ "hero": "B2_A",
+ "mood": null,
+ "materials": [
+  "walnut_facets",
+  "wardrobe_black_glass",
+  "plaster_dark_bed",
+  "ceiling_dark",
+  "black_slats",
+  "headboard_channel_sand",
+  "duvet_charcoal",
+  "sheer_linen",
+  "nightstand_black",
+  "led_line",
+  "bronze_frame",
+  "pillow_grey",
+  "plaster_greige",
+  "walnut_floor_dark",
+  "lamp_black"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_b1_glz",
+   "name": "full-height glazed sliding door",
+   "where": "left",
+   "share": 0.017,
+   "note": "bedroom 1 south: 2-leaf sliding glass door"
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "bed": 1,
+  "nightstand": 2
+ },
+ "items": [
+  {
+   "id": "S_F_b1_wr",
+   "name": "full-height cabinet column",
+   "where": "right",
+   "share": 0.142,
+   "note": "wardrobe"
+  },
+  {
+   "id": "S_F_b1_bed",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.043,
+   "note": "double bed, headboard on west wall"
+  },
+  {
+   "id": "S_F_b1_ns2",
+   "name": "nightstand",
+   "where": "left",
+   "share": 0.01,
+   "note": null
+  },
+  {
+   "id": "S_F_b1_ns1",
+   "name": "nightstand",
+   "where": "right",
+   "share": 0.01,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}

@@ -60,10 +60,12 @@ export function buildScene(plan, opts = {}, ds) {
   }
   // double-height void: walnut ceiling. NO gallery - per the 1st-floor plan the void is closed by
   // plain walls (W_void_west_up, W_liv_north_up) running straight up.
-  const v = plan.void.rect;
-  add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
+  if (plan.void) {
+    const v = plan.void.rect;
+    add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
+  }
   for (const c of (plan.extra_ceilings || []))
-    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, 'walnut_slats'));
+    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, c.mat || 'walnut_slats'));
   for (const [i, [x0, y0, x1, y1]] of (plan.upper_voids || []).entries()) {
     const t = 2;
     // slab edge on each side of the opening - except where two voids meet (no floor between them)
@@ -91,8 +93,18 @@ export function buildScene(plan, opts = {}, ds) {
       }
     }
   }
-  add('EXT_ground', 'exterior', boxMesh(-800, -800, 2400, 2200, -62, -61, 'lawn'));
-  add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 'stone_pot'));
+  if (plan.site) {                      // per-plan exterior (hidden from the QA passes like every exterior mesh)
+    for (const e of plan.site) {
+      let m;
+      if (e.rect) m = boxMesh(e.rect[0], e.rect[1], e.rect[2], e.rect[3], e.z[0], e.z[1], e.mat);
+      else if (e.cyl) { m = new THREE.Mesh(new THREE.CylinderGeometry(e.cyl[2], e.cyl[2], e.z[1] - e.z[0], 16), mat(T(e.mat))); m.position.set(e.cyl[0], (e.z[0] + e.z[1]) / 2, e.cyl[1]); }
+      else { m = new THREE.Mesh(new THREE.SphereGeometry(e.sphere[3], 20, 14), mat(T(e.mat))); m.position.set(e.sphere[0], e.sphere[2], e.sphere[1]); }
+      add(e.id, 'exterior', m, e.mat);
+    }
+  } else {
+    add('EXT_ground', 'exterior', boxMesh(-800, -800, 2400, 2200, -62, -61, 'lawn'));
+    add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 'stone_pot'));
+  }
 
   // ---------------------------------------------------------- walls with openings
   for (const w of plan.walls) {

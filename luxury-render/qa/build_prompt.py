@@ -120,7 +120,9 @@ def main(plan_dir, cam_full):
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     hero = None if (cam.get("relight_from") or cam.get("style_from")) else hero_for(cam_full, plan_dir)
     mood = None if (cam.get("relight_from") or cam.get("style_from")) else mood_for(cam_full, plan_dir)
-    upper = cam["room"].startswith("U_")
+    upper = cam["room"].startswith(("U_", "S_"))
+    cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
+    style_ref = (cfg.get("heroes", {}).get(cam.get("space")) == cam_full and cam.get("space") in cfg.get("style_refs", {}))
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
     g = ds["global"]
     prompt = (
@@ -142,6 +144,7 @@ def main(plan_dir, cam_full):
         + (("IMAGE 2 is the approved render of the ground-floor entrance hall of this house: take ONLY its materials and finishes from it (walnut "
             "stair treads and battens, plaster, oak floor, glass, bronze ring pendant). The stair geometry in IMAGE 2 is outdated - take the "
             "stair, the landing and every other shape ONLY from IMAGE 1.\n\n") if cam.get("style_from") else "")
+        + ((cfg.get("style_refs", {}).get(cam.get("space"), {}).get("text", "") + "\n\n") if style_ref else "")
         + ("IMAGE 2 is the client's MOOD REFERENCE for this room: copy ONLY its look - the material character, colour palette, "
            "finish quality and the warm LED lighting mood. NEVER copy its layout, furniture, objects, windows, camera or proportions: "
            "every object and its position come ONLY from IMAGE 1.\n\n" if mood else "")
@@ -158,7 +161,7 @@ def main(plan_dir, cam_full):
            "no track lights. Decor: only the modelled objects (green spheres = olive foliage/branches, white small spheres = orchids or "
            "coral, yellow = lemons); add no new objects.\n") +
         f"Time of day: {g['time_of_day_upper'] if upper else g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
-        f"Exterior: {g['exterior_upper'] if upper else g['exterior']}\n"
+        f"Exterior: {cfg.get('exterior') or (g['exterior_upper'] if upper else g['exterior'])}\n"
         + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"] == "R_garage" and not car_on) else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."

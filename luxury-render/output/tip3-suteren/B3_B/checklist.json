@@ -1,0 +1,67 @@
+{
+ "camera": "B3_B",
+ "room": "S_R_bed3",
+ "hero": "B2_A",
+ "mood": null,
+ "materials": [
+  "plaster_dark_bed",
+  "ceiling_dark",
+  "duvet_charcoal",
+  "walnut_floor_dark",
+  "sheer_linen",
+  "walnut_facets",
+  "throw_black_knit",
+  "bronze_frame",
+  "marble_white_panel",
+  "pillow_grey",
+  "headboard_channel_sand",
+  "rug_sand",
+  "black_slats",
+  "led_line",
+  "lamp_black",
+  "nightstand_black",
+  "bed_upholstered_sand",
+  "pampas",
+  "vase_dark"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_b3_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "right",
+   "share": 0.02,
+   "note": "bedroom 3 south: 3-panel glazing, middle leaf slides"
+  }
+ ],
+ "furniture_counts": {
+  "bed": 1,
+  "nightstand": 1
+ },
+ "items": [
+  {
+   "id": "S_F_b3_bed",
+   "name": "bed",
+   "where": "left",
+   "share": 0.085,
+   "note": "double bed, headboard against the wardrobe wall"
+  },
+  {
+   "id": "S_F_b3_ns2",
+   "name": "nightstand",
+   "where": "left",
+   "share": 0.003,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
+ ]
+}
