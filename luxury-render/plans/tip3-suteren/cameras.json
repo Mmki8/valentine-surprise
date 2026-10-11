@@ -8,7 +8,12 @@
   "corridor": "CORR_B",
   "laundry": "LAUNDRY_A"
  },
- "hero_jobs": {},
+ "hero_jobs": {
+  "B2_A": "ee569d57-1fcc-466a-bda5-0f982877ad76",
+  "BATH1_A": "aace506b-b78f-468b-b6df-15ca89980409",
+  "PODL_A": "82e73b81-ffee-45fc-93b5-4b646fe1ae24",
+  "CORR_B": "8d2e0923-2147-498b-a6fb-1a94ca894d82"
+ },
  "cameras": [
   {
    "id": "B1_A",

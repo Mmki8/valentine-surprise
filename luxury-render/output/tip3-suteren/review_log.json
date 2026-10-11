@@ -1,0 +1,73 @@
+{
+ "plan": "tip3-suteren",
+ "brief": "House type 3 souterrain: client rules of house 1 (plan-exact, golden hour, QA); bedrooms in the approved 'Master Suite' style.",
+ "rejected": [
+  "B2_A #1 (drift 0.043, struct < 0)",
+  "BATH1_A #1, #2 (room widened: vanity moved off the corner) -> guide outlines made light on dark surfaces + tighter lens",
+  "B1_A #1 (copied the hero's slim slats onto wide ones) -> one slim slat design for all bedrooms",
+  "B1_B #1, B2_B #1 (pampas modelled as spheres rendered as globe lamps) -> pampas remodelled as plume stems"
+ ],
+ "accepted_with_note": [
+  "consistency: bedroom-1 floor/lamp tones differ from the bedroom-2 hero because bedroom 1 is lit from the side glass (lighting only)",
+  "CORR_A battens tone vs the stair hero = grazing golden light"
+ ],
+ "not_rendered": [
+  "north-east room (no furniture, no label)",
+  "small store"
+ ],
+ "final": {
+  "B1_A": {
+   "job_id": "f9419ba4-891d-4486-bf91-51570ffab702",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_f9419ba4-891d-4486-bf91-51570ffab702.png"
+  },
+  "B1_B": {
+   "job_id": "70089946-bbe7-4f07-bfd5-59555b8aa115",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_70089946-bbe7-4f07-bfd5-59555b8aa115.png"
+  },
+  "BATH1_A": {
+   "job_id": "aace506b-b78f-468b-b6df-15ca89980409",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_aace506b-b78f-468b-b6df-15ca89980409.png"
+  },
+  "BATH1_B": {
+   "job_id": "0a9b189b-3768-44f0-9295-898a387c248a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_0a9b189b-3768-44f0-9295-898a387c248a.png"
+  },
+  "B2_A": {
+   "job_id": "ee569d57-1fcc-466a-bda5-0f982877ad76",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_193456_ee569d57-1fcc-466a-bda5-0f982877ad76.png"
+  },
+  "B2_B": {
+   "job_id": "7331a191-3d78-4cd4-8cee-f88a5db80810",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_195000_7331a191-3d78-4cd4-8cee-f88a5db80810.png"
+  },
+  "PODL_A": {
+   "job_id": "82e73b81-ffee-45fc-93b5-4b646fe1ae24",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_193458_82e73b81-ffee-45fc-93b5-4b646fe1ae24.png"
+  },
+  "B3_A": {
+   "job_id": "967f4ab5-bb8e-4ebf-9adc-2a3078fb5915",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194416_967f4ab5-bb8e-4ebf-9adc-2a3078fb5915.png"
+  },
+  "B3_B": {
+   "job_id": "e956ae38-9570-45f9-b0da-d7f795141135",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_e956ae38-9570-45f9-b0da-d7f795141135.png"
+  },
+  "PODR_A": {
+   "job_id": "df4aada8-fd0b-448e-adbc-13288d1f5bcd",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194417_df4aada8-fd0b-448e-adbc-13288d1f5bcd.png"
+  },
+  "CORR_A": {
+   "job_id": "e2ec9292-f730-4316-8a71-78f2aabf5a12",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194418_e2ec9292-f730-4316-8a71-78f2aabf5a12.png"
+  },
+  "CORR_B": {
+   "job_id": "8d2e0923-2147-498b-a6fb-1a94ca894d82",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_193456_8d2e0923-2147-498b-a6fb-1a94ca894d82.png"
+  },
+  "LAUNDRY_A": {
+   "job_id": "f2edfc67-e0f4-42e2-b0d3-abd8613f3422",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_194416_f2edfc67-e0f4-42e2-b0d3-abd8613f3422.png"
+  }
+ },
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/69a9d205-8f94-484a-8ca6-25f9e1370639.zip"
+}
