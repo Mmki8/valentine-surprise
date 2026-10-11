@@ -128,7 +128,6 @@ for x in (110, 270):
     D.append(B(f"D_g_led_x{x}", "led_line", x - 2, 215, x + 2, 805, 278, 279.5, kind="light", emissive=True))
 for y in (330, 520, 710):
     D.append(B(f"D_g_led_y{y}", "led_line", 30, y - 2, 350, y + 2, 278, 279.5, kind="light", emissive=True))
-D.append(B("D_g_art", "photo_car_bw", 24, 400, 27, 640, 40, 170))
 for i, (y, z) in enumerate([(229, -18), (258, -33), (288, -48)]):   # under each nosing
     D.append(B(f"D_g_step_led{i}", "led_line", 247, y - 1, 353, y, z - 1, z, kind="light", emissive=True))
 

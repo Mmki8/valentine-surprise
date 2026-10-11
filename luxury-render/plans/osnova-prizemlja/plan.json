@@ -4242,23 +4242,6 @@
    "emissive": true
   },
   {
-   "id": "D_g_art",
-   "shape": "box",
-   "mat": "photo_car_bw",
-   "rect": [
-    24,
-    400,
-    27,
-    640
-   ],
-   "z": [
-    40,
-    170
-   ],
-   "kind": "decor",
-   "emissive": false
-  },
-  {
    "id": "D_g_step_led0",
    "shape": "box",
    "mat": "led_line",
