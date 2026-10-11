@@ -5,7 +5,9 @@
   "photography": "high-end architectural interior photography, full-frame camera, 24mm tilt-shift lens, perfectly vertical verticals, eye-level two-point perspective, natural exposure balanced for interior and window, subtle depth, crisp detail, no lens distortion",
   "render_quality": "photorealistic, indistinguishable from a photograph, physically correct global illumination, soft contact shadows, real material micro-detail (wood grain, stone veining, leather creases, fabric weave), Corona/V-Ray archviz quality",
   "never": "no people, no text, no watermarks, no logos, no extra windows or doors, no moved or resized walls, no missing furniture, no extra seating, no fisheye, no tilted verticals, no CGI plastic look, no oversaturation, no clutter",
-  "life_details_allowed": "decor may be ADDED only on existing surfaces or hung from ceiling/walls: books, ceramics, sculptural vases, fresh flowers/branches, olive trees or large potted plants in free floor corners, throws and cushions, framed art, rugs under existing furniture, candles, a bowl of fruit, folded towels, a coffee cup. Decor must never cover a window, door or required furniture piece."
+  "life_details_allowed": "decor may be ADDED only on existing surfaces or hung from ceiling/walls: books, ceramics, sculptural vases, fresh flowers/branches, olive trees or large potted plants in free floor corners, throws and cushions, framed art, rugs under existing furniture, candles, a bowl of fruit, folded towels, a coffee cup. Decor must never cover a window, door or required furniture piece.",
+  "time_of_day": "one moment for the whole house: golden hour, about 18:00 in late spring - low warm sun from the south-west entering ONLY through the south and east glass, long soft sun patches on the floor; interior lights on at 70%",
+  "exterior": "outside every window the SAME view: a landscaped garden with lawn, a clipped hedge and a few olive trees, soft green hills far behind, clear sky with a few soft clouds. Never sea, never city."
  },
  "palette": {
   "warm_oak": "#C9A47C  wide-plank brushed natural oak, matte oil finish",
@@ -172,7 +174,7 @@
      "door": "flush dark walnut door (closed)"
     },
     "add": "white orchids, stacked charcoal towels, candles, diffuser sticks",
-    "light": "low moody amber light, grazing light on the stone, soft dusk daylight through the glazing"
+    "light": "low, moody warm interior light: grazing light on the dark stone, warm glow from the sauna bench LEDs and the jacuzzi, soft golden-hour skylight through the east glass"
    }
   },
   "R_sauna": {
@@ -217,7 +219,7 @@
      "door": "flush dark walnut door"
     },
     "add": "a backlit mirror on the wall above the vanity, a white orchid, a diffuser, two small framed black-and-white photographs",
-    "light": "dark and dramatic: warm backlight from the mirror, pool of amber light on the basin"
+    "light": "dark and dramatic: warm glow behind the backlit mirror, soft light through the frosted high window"
    }
   },
   "R_garage": {
@@ -244,7 +246,7 @@
      "glass": "glass"
     },
     "add": "nothing else - clean car-gallery look; optionally one large framed automotive photograph on a free wall",
-    "light": "precise showroom lighting from the LED ceiling grid, subtle reflections on the floor"
+    "light": "precise car-gallery lighting from the LED line grid, soft reflections on the floor, no daylight"
    }
   },
   "R_laundry": {
@@ -324,5 +326,371 @@
   "appliance": "the white boxes",
   "sink": "the sink recess",
   "cooktop": "the black cooktop panel"
+ },
+ "materials": {
+  "oak_floor": {
+   "tint": "#C4A07A",
+   "text": "wide-plank brushed natural oak floor, matte oil, long boards"
+  },
+  "stone_dark_floor": {
+   "tint": "#4A433D",
+   "text": "large-format dark honed Pietra Grey stone floor"
+  },
+  "microcement_dark": {
+   "tint": "#6E6C69",
+   "text": "seamless dark grey polished microcement floor with soft reflections"
+  },
+  "plaster_greige": {
+   "tint": "#E2DAD0",
+   "text": "warm greige mineral plaster, matte"
+  },
+  "plaster_white": {
+   "tint": "#EEE9E2",
+   "text": "soft white plaster"
+  },
+  "plaster_charcoal": {
+   "tint": "#4B4845",
+   "text": "dark charcoal mineral plaster"
+  },
+  "stone_dark": {
+   "tint": "#3D3732",
+   "text": "dark Pietra Grey stone slabs with fine white veining, floor to ceiling"
+  },
+  "sauna_aspen": {
+   "tint": "#D7B288",
+   "text": "pale thermo-aspen timber boards"
+  },
+  "walnut_slats": {
+   "tint": "#6E4E36",
+   "text": "walnut slatted ceiling (4 cm slats, 1 cm black shadow gaps)"
+  },
+  "walnut_slats_dark": {
+   "tint": "#4A3526",
+   "text": "dark smoked-walnut slatted ceiling"
+  },
+  "ceiling_black": {
+   "tint": "#1E1D1C",
+   "text": "matte black ceiling"
+  },
+  "bronze_panels": {
+   "tint": "#7A5638",
+   "text": "large-format hand-patinated bronze panels with fine dark reveals, satin, subtle mottling"
+  },
+  "reveal_dark": {
+   "tint": "#2A211B",
+   "text": "dark reveal joint"
+  },
+  "stone_backsplash": {
+   "tint": "#8E8780",
+   "text": "grey-taupe marble slab with bronze veining, floor-to-ceiling behind the counters"
+  },
+  "walnut_battens": {
+   "tint": "#5A3E2A",
+   "text": "vertical walnut battens on the stair wall"
+  },
+  "walnut_panel": {
+   "tint": "#5E412C",
+   "text": "smoked walnut veneer panel"
+  },
+  "groove_dark": {
+   "tint": "#1C1612",
+   "text": "thin shadow-gap joint between handle-less fronts"
+  },
+  "glass": {
+   "tint": "#CFE6F2",
+   "text": "clear low-iron glass"
+  },
+  "bronze_frame": {
+   "tint": "#2E2621",
+   "text": "slim dark-bronze window and door frames"
+  },
+  "walnut_door": {
+   "tint": "#5E412C",
+   "text": "flush full-height smoked walnut door, closed"
+  },
+  "bronze_garage_door": {
+   "tint": "#3A2E25",
+   "text": "flush dark-bronze sectional garage door with thin horizontal joints"
+  },
+  "lawn": {
+   "tint": "#7E9468",
+   "text": "landscaped garden lawn"
+  },
+  "hedge": {
+   "tint": "#4F6A3E",
+   "text": "clipped green hedge"
+  },
+  "boucle_ivory": {
+   "tint": "#DCD0BD",
+   "text": "ivory-sand boucle upholstery"
+  },
+  "leather_cognac": {
+   "tint": "#7A4E33",
+   "text": "cognac saddle leather"
+  },
+  "oak_smoked_table": {
+   "tint": "#3A2C24",
+   "text": "smoked oak and dark bronze coffee tables"
+  },
+  "walnut_table": {
+   "tint": "#5B3F2B",
+   "text": "solid walnut dining table"
+  },
+  "leather_cognac_chair": {
+   "tint": "#7A4E33",
+   "text": "curved cognac leather dining chairs with dark bronze legs"
+  },
+  "stool_black": {
+   "tint": "#1F1D1C",
+   "text": "bar stools: black shell seat with low back on walnut legs"
+  },
+  "marble_island": {
+   "tint": "#B8B1A8",
+   "text": "monolithic grey-taupe marble island (Fior di Bosco), 6 cm top, waterfall ends"
+  },
+  "walnut_cabinet": {
+   "tint": "#4E3626",
+   "text": "handle-less smoked walnut base cabinets"
+  },
+  "worktop_marble": {
+   "tint": "#9E968D",
+   "text": "thin grey-taupe marble worktop"
+  },
+  "black_glass_tall": {
+   "tint": "#1A1817",
+   "text": "black-glass tall fridge column with one slim bronze pull"
+  },
+  "walnut_wardrobe": {
+   "tint": "#5A3E2A",
+   "text": "full-height smoked walnut wardrobes, handle-less"
+  },
+  "walnut_console": {
+   "tint": "#4E3626",
+   "text": "low walnut console"
+  },
+  "tv_black": {
+   "tint": "#0E0E0E",
+   "text": "slim black TV"
+  },
+  "stair_walnut": {
+   "tint": "#6B4A32",
+   "text": "solid walnut stair treads on a walnut-clad stringer"
+  },
+  "jacuzzi_stone": {
+   "tint": "#2A2826",
+   "text": "round hot tub clad in black textured crocodile-pattern stone"
+  },
+  "water": {
+   "tint": "#7FB2C0",
+   "text": "water lit warm from below"
+  },
+  "shower_stone": {
+   "tint": "#3D3833",
+   "text": "walk-in shower in dark stone, black/bronze ceiling rain head"
+  },
+  "sauna_bench": {
+   "tint": "#C99B6A",
+   "text": "slatted thermo-aspen sauna benches"
+  },
+  "vanity_stone": {
+   "tint": "#2E2925",
+   "text": "floating dark stone vanity"
+  },
+  "basin_croc": {
+   "tint": "#2C2A28",
+   "text": "black textured crocodile-pattern stone vessel basin, wall-mounted black tap"
+  },
+  "toilet_black": {
+   "tint": "#1E1E1E",
+   "text": "wall-hung black ceramic toilet"
+  },
+  "appliance_white": {
+   "tint": "#DEDAD5",
+   "text": "integrated washer and dryer"
+  },
+  "cabinet_walnut_low": {
+   "tint": "#4E3626",
+   "text": "smoked walnut low cabinets with dark stone top"
+  },
+  "car_g63": {
+   "tint": "#171717",
+   "text": "matte black Mercedes-AMG G 63 (G-Wagon): boxy body, round LED headlights, spare wheel on the tailgate"
+  },
+  "box_slats": {
+   "tint": "#6E4E36",
+   "text": "column clad in vertical walnut slats"
+  },
+  "black_metal": {
+   "tint": "#141414",
+   "text": "black metal"
+  },
+  "crystal_ring": {
+   "tint": "#F2EEE6",
+   "text": "crystal ring chandelier (glass prisms, warm glow)"
+  },
+  "cable_black": {
+   "tint": "#141414",
+   "text": "thin black suspension cable"
+  },
+  "pendant_bronze": {
+   "tint": "#8A6A48",
+   "text": "slim linear bronze pendant light"
+  },
+  "led_line": {
+   "tint": "#FFF2D6",
+   "text": "warm 2700K linear LED light line"
+  },
+  "rug_sand": {
+   "tint": "#CBBFAD",
+   "text": "hand-knotted sand-coloured wool-silk rug"
+  },
+  "stone_pot": {
+   "tint": "#8F877E",
+   "text": "large honed stone planter"
+  },
+  "olive_trunk": {
+   "tint": "#5B4A3B",
+   "text": "olive tree trunk"
+  },
+  "olive_foliage": {
+   "tint": "#7D8A63",
+   "text": "silvery-green olive foliage"
+  },
+  "sheer_linen": {
+   "tint": "#EEE8DE",
+   "text": "sheer ivory linen curtain, gathered"
+  },
+  "cushion_navy": {
+   "tint": "#1F2A44",
+   "text": "navy velvet cushion"
+  },
+  "cushion_cognac": {
+   "tint": "#8A5A3A",
+   "text": "cognac leather cushion"
+  },
+  "books_neutral": {
+   "tint": "#CFC6B8",
+   "text": "stack of neutral art books"
+  },
+  "coral_white": {
+   "tint": "#F0ECE4",
+   "text": "white coral sculpture"
+  },
+  "ceramic_dark": {
+   "tint": "#2F2B28",
+   "text": "dark matte ceramic bowl/pot"
+  },
+  "ceramic_light": {
+   "tint": "#D9D2C8",
+   "text": "pale stoneware vase"
+  },
+  "lemons": {
+   "tint": "#E3C34A",
+   "text": "fresh lemons"
+  },
+  "walnut_shelf": {
+   "tint": "#5E412C",
+   "text": "floating walnut shelf"
+  },
+  "artwork_abstract": {
+   "tint": "#B7A58E",
+   "text": "large abstract artwork in sand, charcoal and rust, thin black frame"
+  },
+  "orchid_white": {
+   "tint": "#F4F1EC",
+   "text": "white orchid"
+  },
+  "candle": {
+   "tint": "#F3E9D6",
+   "text": "lit pillar candles"
+  },
+  "towels_charcoal": {
+   "tint": "#3A3836",
+   "text": "stacked charcoal towels"
+  },
+  "mirror_backlit": {
+   "tint": "#9FA6A8",
+   "text": "backlit mirror"
+  },
+  "photo_bw": {
+   "tint": "#BEBEBE",
+   "text": "small framed black-and-white photograph"
+  },
+  "photo_car_bw": {
+   "tint": "#9A9A9A",
+   "text": "large framed black-and-white automotive photograph"
+  }
+ },
+ "style_materials": {
+  "living_grand": {
+   "floor": "oak_floor",
+   "wall": "plaster_greige",
+   "ceiling": "walnut_slats"
+  },
+  "warm_wood_luxe": {
+   "floor": "oak_floor",
+   "wall": "plaster_greige",
+   "ceiling": "walnut_slats"
+  },
+  "dark_spa": {
+   "floor": "stone_dark_floor",
+   "wall": "stone_dark",
+   "ceiling": "walnut_slats_dark"
+  },
+  "sauna_timber": {
+   "floor": "sauna_aspen",
+   "wall": "sauna_aspen",
+   "ceiling": "sauna_aspen"
+  },
+  "garage_gallery": {
+   "floor": "microcement_dark",
+   "wall": "plaster_charcoal",
+   "ceiling": "ceiling_black"
+  },
+  "service_warm": {
+   "floor": "oak_floor",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_white"
+  }
+ },
+ "kind_materials": {
+  "sofa": "boucle_ivory",
+  "armchair": "leather_cognac",
+  "coffee_table": "oak_smoked_table",
+  "table": "walnut_table",
+  "chair": "leather_cognac_chair",
+  "stool": "stool_black",
+  "island": "marble_island",
+  "counter": "walnut_cabinet",
+  "tall_cabinet": "black_glass_tall",
+  "low_cabinet": "walnut_console",
+  "appliance": "appliance_white",
+  "tv": "tv_black",
+  "toilet": "toilet_black",
+  "vanity": "vanity_stone",
+  "basin": "basin_croc",
+  "bench": "sauna_bench",
+  "jacuzzi": "jacuzzi_stone",
+  "shower": "shower_stone",
+  "stair": "stair_walnut",
+  "box": "box_slats",
+  "car": "car_g63",
+  "fixture": "black_metal",
+  "sink": "black_metal",
+  "cooktop": "black_metal",
+  "glass": "glass"
+ },
+ "id_materials": {
+  "F_wardrobe_1": "walnut_wardrobe",
+  "F_wardrobe_2": "walnut_wardrobe",
+  "F_garage_bench_1": "cabinet_walnut_low",
+  "F_garage_bench_2": "cabinet_walnut_low",
+  "F_garage_step_1": "stone_dark_floor",
+  "F_garage_step_2": "stone_dark_floor",
+  "F_garage_step_3": "stone_dark_floor",
+  "F_laundry_counter": "walnut_shelf",
+  "F_sauna_bench_low": "sauna_bench",
+  "F_sauna_bench_high": "sauna_bench",
+  "W_gkpl": "box_slats"
  }
 }

@@ -12,7 +12,9 @@ Scale calibration (from the drawing's own dimension chains):
 
 Run:  python3 digitize.py  -> writes plan.json next to this file.
 """
-import json, os
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from design_layer import DESIGN
 
 K = 1.05
 OX, OY = 262, 287
@@ -73,6 +75,8 @@ walls = [
     ("W_hall_spa",    (832, 487, 845, 597), 0, H, "int"),
     ("W_spa_s",       (832, 597, 1412, 622), 0, H, "int"),
     ("W_liv_north_up", (1180, 597, 1412, 622), H, VH, "int"),  # living feature wall above spa (double height)
+    # 1st-floor plan (OSNOVA 1. SPRATA): bedroom-2 wall rises flush with the slab edge -> plain wall, NO gallery
+    ("W_void_west_up", (1180, 622, 1200, 1192), H, VH, "int"),
     ("W_kitchen_w",   (832, 597, 858, 860), 0, H, "int"),
     ("W_sauna_glz_s", (966, 477, 1052, 487), 0, H, "int"),     # header above sauna glass door
     ("W_sauna_glz_e", (1042, 407, 1052, 487), 0, H, "int"),    # header above sauna side glass
@@ -224,7 +228,7 @@ box("F_l_table_2", "coffee_table", (1440, 857, 1502, 913), 0, 32, "R_living", No
 box("F_l_armchair_1", "armchair", (1357, 1002, 1430, 1078), 0, 75, "R_living", "N")
 box("F_l_armchair_2", "armchair", (1452, 1002, 1530, 1078), 0, 75, "R_living", "N")
 box("F_l_tv_unit", "low_cabinet", (1602, 777, 1645, 918), 0, 45, "R_living", "W", "freestanding TV unit")
-box("F_l_tv", "tv", (1622, 790, 1628, 905), 75, 70, "R_living", "W", "TV facing the sofa")
+box("F_l_tv", "tv", (1627, 790, 1631, 905), 95, 72, "R_living", "W", "TV mounted on the freestanding walnut media wall (not on the glass)")
 
 plan = dict(
     meta=dict(
@@ -252,6 +256,7 @@ plan = dict(
     gallery_edge=dict(x=cm(1180, "x"), y0=cm(622, "y"), y1=cm(1192, "y"), z=LEVELS["slab_top"],
                       note="upper-floor slab edge overlooking living; glass balustrade ASSUMED"),
     furniture=F,
+    design=DESIGN,
     extra_ceilings=[dict(id="CEIL_upper_stairwell", rect=R(600, 612, 730, 1108), z=VH,
                          note="ASSUMED stairwell ceiling on upper floor")],
 )

@@ -1,13 +1,38 @@
 {
  "camera": "LIV_A",
  "room": "R_living",
+ "hero": "LIV_B",
+ "materials": [
+  "bronze_panels",
+  "plaster_greige",
+  "walnut_panel",
+  "boucle_ivory",
+  "bronze_frame",
+  "walnut_slats",
+  "black_glass_tall",
+  "leather_cognac",
+  "crystal_ring",
+  "tv_black",
+  "walnut_console",
+  "oak_smoked_table",
+  "olive_foliage",
+  "reveal_dark",
+  "cushion_cognac",
+  "cushion_navy",
+  "marble_island",
+  "rug_sand",
+  "books_neutral",
+  "ceramic_dark",
+  "stone_pot",
+  "cable_black"
+ ],
  "car": null,
  "openings": [
   {
    "id": "O_east_glazing",
    "name": "floor-to-ceiling glass facade",
    "where": "right",
-   "share": 0.036,
+   "share": 0.028,
    "note": "living east facade: fixed glass + lift&slide between y988-1125"
   }
  ],
@@ -22,11 +47,11 @@
  },
  "items": [
   {
-   "id": "F_l_sofa_long",
+   "id": "F_l_sofa_return",
    "name": "L-shaped sofa",
    "where": "centre",
-   "share": 0.03,
-   "note": "L-sofa main run"
+   "share": 0.019,
+   "note": "L-sofa chaise/return"
   },
   {
    "id": "F_k_fridge",
@@ -40,13 +65,13 @@
    "name": "TV",
    "where": "centre",
    "share": 0.014,
-   "note": "TV facing the sofa"
+   "note": "TV mounted on the freestanding walnut media wall (not on the glass)"
   },
   {
    "id": "F_l_tv_unit",
    "name": "low cabinet",
    "where": "centre",
-   "share": 0.014,
+   "share": 0.012,
    "note": "freestanding TV unit"
   },
   {
@@ -60,14 +85,14 @@
    "id": "F_l_table_1",
    "name": "coffee table",
    "where": "centre",
-   "share": 0.007,
+   "share": 0.006,
    "note": null
   },
   {
    "id": "F_l_table_2",
    "name": "coffee table",
    "where": "centre",
-   "share": 0.006,
+   "share": 0.005,
    "note": null
   },
   {
@@ -91,6 +116,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

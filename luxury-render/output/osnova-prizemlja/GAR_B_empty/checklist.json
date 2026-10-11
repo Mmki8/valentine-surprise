@@ -1,6 +1,19 @@
 {
  "camera": "GAR_B_empty",
  "room": "R_garage",
+ "hero": "GAR_B_car",
+ "materials": [
+  "plaster_charcoal",
+  "ceiling_black",
+  "photo_car_bw",
+  "walnut_wardrobe",
+  "cabinet_walnut_low",
+  "stone_dark_floor",
+  "led_line",
+  "plaster_white",
+  "plaster_greige",
+  "walnut_door"
+ ],
  "car": false,
  "openings": [],
  "furniture_counts": {
@@ -12,28 +25,28 @@
    "id": "F_wardrobe_1",
    "name": "full-height cabinet column",
    "where": "centre",
-   "share": 0.027,
+   "share": 0.023,
    "note": "X-marked = full height"
   },
   {
    "id": "F_garage_bench_2",
    "name": "low cabinet",
    "where": "centre",
-   "share": 0.015,
+   "share": 0.012,
    "note": null
   },
   {
    "id": "F_garage_bench_1",
    "name": "low cabinet",
    "where": "centre",
-   "share": 0.011,
+   "share": 0.009,
    "note": "no X = low units/workbench"
   },
   {
    "id": "staircase",
    "name": "staircase",
    "where": "centre",
-   "share": 0.004
+   "share": 0.003
   }
  ],
  "manual_checks": [
@@ -42,6 +55,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

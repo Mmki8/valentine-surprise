@@ -1,6 +1,18 @@
 {
  "camera": "SPA_B",
  "room": "R_spa",
+ "hero": null,
+ "materials": [
+  "stone_dark",
+  "walnut_slats_dark",
+  "sauna_aspen",
+  "walnut_door",
+  "jacuzzi_stone",
+  "sauna_bench",
+  "shower_stone",
+  "bronze_frame",
+  "black_metal"
+ ],
  "car": null,
  "openings": [
   {
@@ -14,15 +26,8 @@
    "id": "O_sauna_glass_e",
    "name": "glass partition/door",
    "where": "centre",
-   "share": 0.012,
+   "share": 0.002,
    "note": "sauna fixed glass side"
-  },
-  {
-   "id": "O_sauna_glass_s",
-   "name": "glass partition/door",
-   "where": "centre",
-   "share": 0.006,
-   "note": "sauna glass door, opens into spa"
   }
  ],
  "furniture_counts": {
@@ -49,14 +54,14 @@
    "id": "F_sauna_bench_low",
    "name": "sauna bench",
    "where": "centre",
-   "share": 0.011,
+   "share": 0.012,
    "note": null
   },
   {
    "id": "F_sauna_bench_high",
    "name": "sauna bench",
    "where": "centre",
-   "share": 0.009,
+   "share": 0.01,
    "note": null
   }
  ],
@@ -66,6 +71,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

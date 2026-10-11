@@ -1,6 +1,17 @@
 {
  "camera": "WC_A",
  "room": "R_wc",
+ "hero": null,
+ "materials": [
+  "stone_dark",
+  "mirror_backlit",
+  "vanity_stone",
+  "toilet_black",
+  "basin_croc",
+  "bronze_frame",
+  "led_line",
+  "orchid_white"
+ ],
  "car": null,
  "openings": [
   {
@@ -45,6 +56,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

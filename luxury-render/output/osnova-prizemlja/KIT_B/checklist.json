@@ -1,6 +1,34 @@
 {
  "camera": "KIT_B",
  "room": "R_kitchen_dining",
+ "hero": "LIV_B",
+ "materials": [
+  "stone_backsplash",
+  "black_glass_tall",
+  "walnut_slats",
+  "marble_island",
+  "bronze_panels",
+  "stair_walnut",
+  "box_slats",
+  "plaster_greige",
+  "walnut_cabinet",
+  "stool_black",
+  "walnut_battens",
+  "leather_cognac_chair",
+  "walnut_panel",
+  "worktop_marble",
+  "olive_foliage",
+  "led_line",
+  "walnut_table",
+  "walnut_shelf",
+  "groove_dark",
+  "pendant_bronze",
+  "ceramic_light",
+  "ceramic_dark",
+  "cable_black",
+  "black_metal",
+  "lemons"
+ ],
  "car": null,
  "openings": [],
  "furniture_counts": {
@@ -17,29 +45,22 @@
    "id": "F_k_fridge",
    "name": "full-height cabinet column",
    "where": "right",
-   "share": 0.15,
+   "share": 0.149,
    "note": "'*' = fridge column"
   },
   {
    "id": "F_k_island",
    "name": "kitchen island",
    "where": "centre",
-   "share": 0.085,
+   "share": 0.083,
    "note": "overhang on south side y821-850"
   },
   {
    "id": "F_k_run_west",
    "name": "L-shaped kitchen base-cabinet run",
    "where": "centre",
-   "share": 0.038,
+   "share": 0.034,
    "note": "base run w/ cooktop"
-  },
-  {
-   "id": "F_k_duct",
-   "name": "boxed column",
-   "where": "centre",
-   "share": 0.019,
-   "note": "installation duct, boxed in"
   },
   {
    "id": "staircase",
@@ -48,10 +69,17 @@
    "share": 0.018
   },
   {
+   "id": "F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.017,
+   "note": "installation duct, boxed in"
+  },
+  {
    "id": "F_k_stool_3",
    "name": "bar stool",
    "where": "centre",
-   "share": 0.013,
+   "share": 0.016,
    "note": null
   },
   {
@@ -64,7 +92,7 @@
   {
    "id": "F_k_stool_1",
    "name": "bar stool",
-   "where": "centre",
+   "where": "left",
    "share": 0.009,
    "note": null
   },
@@ -103,6 +131,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

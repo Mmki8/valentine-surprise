@@ -5,7 +5,7 @@
 <script type="module">
   import * as THREE from 'three';
   import { renderPasses } from '/engine/scene.js';
-  window.render = (plan, cam, W, H, opts) => renderPasses(THREE, plan, cam, W, H, opts);
+  window.render = (plan, cam, W, H, opts, ds) => renderPasses(THREE, plan, cam, W, H, opts, ds);
   window.ready = true;
 </script>
 </body></html>

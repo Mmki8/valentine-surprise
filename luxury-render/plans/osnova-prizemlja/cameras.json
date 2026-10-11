@@ -16,7 +16,8 @@
    ],
    "hfov": 84,
    "shift_y": 0.2,
-   "notes": "The bronze feature wall is completely solid: no door, no opening in it. The black column at the far left edge is the kitchen's fridge column."
+   "notes": "The bronze feature wall is completely solid: no door, no opening in it. The black column at the far left edge is the kitchen's fridge column.",
+   "space": "open_plan"
   },
   {
    "id": "LIV_B",
@@ -32,7 +33,8 @@
     480
    ],
    "hfov": 86,
-   "shift_y": 0.2
+   "shift_y": 0.2,
+   "space": "open_plan"
   },
   {
    "id": "KIT_A",
@@ -48,7 +50,8 @@
     380
    ],
    "hfov": 80,
-   "shift_y": 0.04
+   "shift_y": 0.04,
+   "space": "open_plan"
   },
   {
    "id": "KIT_B",
@@ -64,7 +67,8 @@
     430
    ],
    "hfov": 70,
-   "shift_y": 0.03
+   "shift_y": 0.03,
+   "space": "open_plan"
   },
   {
    "id": "DIN_A",
@@ -81,24 +85,26 @@
    ],
    "hfov": 80,
    "shift_y": 0.04,
-   "notes": "The wall between the glazed double door and the right-hand edge of the frame is a solid plain wall: no door, no opening in it."
+   "notes": "The wall between the glazed double door and the right-hand edge of the frame is a solid plain wall: no door, no opening in it.",
+   "space": "open_plan"
   },
   {
    "id": "SPA_A",
    "room": "R_spa",
-   "title": "Spa - from entry toward jacuzzi & east glazing",
+   "title": "Spa - from entry: frameless glass sauna (left), jacuzzi, east glazing",
    "pos": [
     640,
-    300,
+    268,
     150
    ],
    "look": [
     1150,
-    120
+    110
    ],
-   "hfov": 82,
+   "hfov": 86,
    "shift_y": 0.03,
-   "notes": "The glass door on the left opens into the timber SAUNA (warm wood interior), not a shower."
+   "notes": "The sauna is a closed, frameless glass box: its glass door is CLOSED and you see the timber benches and warm bench lighting through the glass. The jacuzzi sits free in the room in front of the tall east window.",
+   "space": "spa"
   },
   {
    "id": "SPA_B",
@@ -114,7 +120,8 @@
     140
    ],
    "hfov": 82,
-   "shift_y": 0.03
+   "shift_y": 0.03,
+   "space": "spa"
   },
   {
    "id": "WC_A",
@@ -130,23 +137,24 @@
     26
    ],
    "hfov": 100,
-   "shift_y": -0.2
+   "shift_y": -0.2,
+   "space": "wc"
   },
   {
    "id": "GAR_A",
    "room": "R_garage",
-   "title": "Garage - hero 3/4 front of car from NW corner toward garage door",
+   "title": "Garage - elevated arrival view from the top of the steps (true size; shows the floor around the car)",
    "pos": [
-    45,
-    300,
-    100
+    330,
+    196,
+    150
    ],
    "look": [
-    300,
-    800
+    120,
+    770
    ],
-   "hfov": 88,
-   "shift_y": 0.0,
+   "hfov": 92,
+   "shift_y": -0.16,
    "variants": [
     {
      "suffix": "_car",
@@ -161,22 +169,23 @@
      }
     }
    ],
-   "notes": "The car is parked nose-in: its FRONT faces the camera - we see the grille with the three-pointed star, the round headlights and the windscreen. The rear with the spare wheel faces away from the camera, toward the garage door."
+   "notes": "The car is parked nose-in: its FRONT (grille, three-pointed star, round headlights, windscreen) faces this camera; its rear spare wheel faces the garage door.",
+   "space": "garage"
   },
   {
    "id": "GAR_B",
    "room": "R_garage",
    "title": "Garage - from garage-door corner toward steps (car rear 3/4)",
    "pos": [
-    330,
-    800,
-    100
+    348,
+    812,
+    75
    ],
    "look": [
-    120,
-    250
+    90,
+    230
    ],
-   "hfov": 92,
+   "hfov": 96,
    "shift_y": 0.0,
    "variants": [
     {
@@ -192,7 +201,8 @@
      }
     }
    ],
-   "notes": "The car is parked nose-in: we see its REAR (spare wheel on the tailgate) nearest the camera and its front pointing away toward the steps."
+   "notes": "The car is parked nose-in: we see its REAR (spare wheel on the tailgate) nearest the camera and its front pointing away toward the steps.",
+   "space": "garage"
   },
   {
    "id": "HALL_A",
@@ -208,7 +218,15 @@
     210
    ],
    "hfov": 84,
-   "shift_y": 0.06
+   "shift_y": 0.06,
+   "space": "open_plan"
   }
- ]
+ ],
+ "heroes": {
+  "open_plan": "LIV_B",
+  "spa": "SPA_B",
+  "wc": "WC_A",
+  "garage": "GAR_B_car"
+ },
+ "_doc_heroes": "Hero view per space is generated first and approved; every other view of that space gets it as IMAGE 2 (materials/fittings/light reference; geometry only from IMAGE 1)."
 }

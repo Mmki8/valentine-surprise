@@ -1,48 +1,46 @@
 {
  "camera": "SPA_A",
  "room": "R_spa",
+ "hero": "SPA_B",
+ "materials": [
+  "stone_dark",
+  "walnut_slats_dark",
+  "jacuzzi_stone",
+  "bronze_frame",
+  "sauna_aspen",
+  "plaster_greige",
+  "towels_charcoal",
+  "black_metal",
+  "shower_stone",
+  "orchid_white"
+ ],
  "car": null,
  "openings": [
-  {
-   "id": "O_sauna_glass_s",
-   "name": "glass partition/door",
-   "where": "centre",
-   "share": 0.042,
-   "note": "sauna glass door, opens into spa"
-  },
-  {
-   "id": "O_sauna_glass_e",
-   "name": "glass partition/door",
-   "where": "centre",
-   "share": 0.01,
-   "note": "sauna fixed glass side"
-  },
   {
    "id": "O_spa_glazing",
    "name": "full-height glazed sliding door",
    "where": "centre",
-   "share": 0.01,
+   "share": 0.009,
    "note": "spa east glazed opening ~205 cm (ASSUMED full-height slider)"
+  },
+  {
+   "id": "O_sauna_glass_s",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.006,
+   "note": "sauna glass door, opens into spa"
   }
  ],
  "furniture_counts": {
-  "jacuzzi": 1,
-  "shower": 1
+  "jacuzzi": 1
  },
  "items": [
   {
    "id": "F_jacuzzi",
    "name": "round jacuzzi hot tub",
    "where": "centre",
-   "share": 0.033,
+   "share": 0.031,
    "note": "round hot tub ~170 cm, raised 70 cm"
-  },
-  {
-   "id": "F_shower_tray",
-   "name": "walk-in shower",
-   "where": "centre",
-   "share": 0.004,
-   "note": "walk-in shower"
   }
  ],
  "manual_checks": [
@@ -51,6 +49,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

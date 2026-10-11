@@ -545,6 +545,24 @@
    ]
   },
   {
+   "id": "W_void_west_up",
+   "rect": [
+    963.9,
+    351.8,
+    984.9,
+    950.2
+   ],
+   "z0": 280,
+   "z1": 560,
+   "kind": "int",
+   "src_px": [
+    1180,
+    622,
+    1200,
+    1192
+   ]
+  },
+  {
    "id": "W_kitchen_w",
    "rect": [
     598.5,
@@ -2760,23 +2778,1750 @@
    "kind": "tv",
    "shape": "box",
    "rect": [
-    1428.0,
+    1433.2,
     528.1,
-    1434.3,
+    1437.5,
     648.9
    ],
-   "z0": 75,
-   "h": 70,
+   "z0": 95,
+   "h": 72,
    "room": "R_living",
    "facing": "W",
-   "note": "TV facing the sofa",
+   "note": "TV mounted on the freestanding walnut media wall (not on the glass)",
    "src_px": [
-    1622,
+    1627,
     790,
-    1628,
+    1631,
     905
    ],
    "group": null
+  }
+ ],
+ "design": [
+  {
+   "id": "D_liv_bronze_wall",
+   "shape": "box",
+   "mat": "bronze_panels",
+   "rect": [
+    964,
+    352,
+    1433,
+    355
+   ],
+   "z": [
+    0,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rv1081",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    1080.2,
+    355,
+    1081.8,
+    355.6
+   ],
+   "z": [
+    0,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rv1198",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    1197.2,
+    355,
+    1198.8,
+    355.6
+   ],
+   "z": [
+    0,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rv1316",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    1315.2,
+    355,
+    1316.8,
+    355.6
+   ],
+   "z": [
+    0,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rh140",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    964,
+    355,
+    1433,
+    355.6
+   ],
+   "z": [
+    139.2,
+    140.8
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rh280",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    964,
+    355,
+    1433,
+    355.6
+   ],
+   "z": [
+    279.2,
+    280.8
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_bronze_rh420",
+   "shape": "box",
+   "mat": "reveal_dark",
+   "rect": [
+    964,
+    355,
+    1433,
+    355.6
+   ],
+   "z": [
+    419.2,
+    420.8
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_1",
+   "shape": "torus",
+   "mat": "crystal_ring",
+   "center": [
+    1200,
+    590,
+    420
+   ],
+   "R": 75,
+   "tube": 6,
+   "kind": "light"
+  },
+  {
+   "id": "D_liv_ring_2",
+   "shape": "torus",
+   "mat": "crystal_ring",
+   "center": [
+    1260,
+    555,
+    385
+   ],
+   "R": 60,
+   "tube": 5,
+   "kind": "light"
+  },
+  {
+   "id": "D_liv_ring_cable0",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1125,
+    590
+   ],
+   "r": 0.6,
+   "z": [
+    420,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable1",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1275,
+    590
+   ],
+   "r": 0.6,
+   "z": [
+    420,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable2",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1200,
+    515
+   ],
+   "r": 0.6,
+   "z": [
+    420,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable3",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1200,
+    665
+   ],
+   "r": 0.6,
+   "z": [
+    420,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable4",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1200,
+    555
+   ],
+   "r": 0.6,
+   "z": [
+    385,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable5",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1320,
+    555
+   ],
+   "r": 0.6,
+   "z": [
+    385,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_ring_cable6",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1260,
+    495
+   ],
+   "r": 0.6,
+   "z": [
+    385,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    1110,
+    500,
+    1395,
+    835
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_olive_pot",
+   "shape": "cyl",
+   "mat": "stone_pot",
+   "center": [
+    1405,
+    395
+   ],
+   "r": 24,
+   "z": [
+    0,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_olive_trunk",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    1405,
+    395
+   ],
+   "r": 4,
+   "z": [
+    55,
+    140
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_olive_crown",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    1405,
+    395,
+    175
+   ],
+   "r": 50,
+   "kind": "decor"
+  },
+  {
+   "id": "D_liv_media_wall",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    1440,
+    488,
+    1452,
+    690
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_curtain_e",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    1448,
+    930,
+    1462,
+    975
+   ],
+   "z": [
+    0,
+    548
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_curtain_s",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    975,
+    962,
+    1015,
+    976
+   ],
+   "z": [
+    0,
+    548
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_cushion0",
+   "shape": "box",
+   "mat": "cushion_navy",
+   "rect": [
+    1115,
+    430,
+    1160,
+    442
+   ],
+   "z": [
+    42,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_cushion1",
+   "shape": "box",
+   "mat": "cushion_cognac",
+   "rect": [
+    1170,
+    430,
+    1215,
+    442
+   ],
+   "z": [
+    42,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_cushion2",
+   "shape": "box",
+   "mat": "cushion_cognac",
+   "rect": [
+    1265,
+    430,
+    1310,
+    442
+   ],
+   "z": [
+    42,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_cushion3",
+   "shape": "box",
+   "mat": "cushion_navy",
+   "rect": [
+    1320,
+    430,
+    1365,
+    442
+   ],
+   "z": [
+    42,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_cushion4",
+   "shape": "box",
+   "mat": "cushion_navy",
+   "rect": [
+    1097,
+    560,
+    1109,
+    605
+   ],
+   "z": [
+    42,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_books",
+   "shape": "box",
+   "mat": "books_neutral",
+   "rect": [
+    1170,
+    540,
+    1200,
+    562
+   ],
+   "z": [
+    38,
+    44
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_coral",
+   "shape": "sphere",
+   "mat": "coral_white",
+   "center": [
+    1213,
+    553,
+    47
+   ],
+   "r": 8,
+   "kind": "decor"
+  },
+  {
+   "id": "D_liv_bowl",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    1225,
+    630
+   ],
+   "r": 12,
+   "z": [
+    32,
+    38
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_led470",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    985,
+    468,
+    1430,
+    472
+   ],
+   "z": [
+    558,
+    559.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_liv_led660",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    985,
+    658,
+    1430,
+    662
+   ],
+   "z": [
+    558,
+    559.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_liv_led850",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    985,
+    848,
+    1430,
+    852
+   ],
+   "z": [
+    558,
+    559.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_backsplash_n",
+   "shape": "box",
+   "mat": "stone_backsplash",
+   "rect": [
+    663,
+    352,
+    893,
+    354
+   ],
+   "z": [
+    92,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_backsplash_w",
+   "shape": "box",
+   "mat": "stone_backsplash",
+   "rect": [
+    626,
+    352,
+    628,
+    601
+   ],
+   "z": [
+    92,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_shelf",
+   "shape": "box",
+   "mat": "walnut_shelf",
+   "rect": [
+    700,
+    354,
+    880,
+    380
+   ],
+   "z": [
+    150,
+    155
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_k_shelf_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    702,
+    360,
+    878,
+    376
+   ],
+   "z": [
+    148.5,
+    149.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_counter_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    665,
+    354,
+    892,
+    358
+   ],
+   "z": [
+    278,
+    279
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_n_split723",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    722.6,
+    412,
+    723.4,
+    412.6
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_n_split783",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    782.6,
+    412,
+    783.4,
+    412.6
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_n_split843",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    842.6,
+    412,
+    843.4,
+    412.6
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_n_drawer35",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    663,
+    412,
+    893,
+    412.6
+   ],
+   "z": [
+    34.6,
+    35.4
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_n_drawer62",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    663,
+    412,
+    893,
+    412.6
+   ],
+   "z": [
+    61.6,
+    62.4
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_w_split434",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    686,
+    433.6,
+    686.6,
+    434.4
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_w_split494",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    686,
+    493.6,
+    686.6,
+    494.4
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_w_split554",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    686,
+    553.6,
+    686.6,
+    554.4
+   ],
+   "z": [
+    10,
+    88
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_w_drawer35",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    686,
+    374,
+    686.6,
+    601
+   ],
+   "z": [
+    34.6,
+    35.4
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_w_drawer62",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    686,
+    374,
+    686.6,
+    601
+   ],
+   "z": [
+    61.6,
+    62.4
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_fridge_split",
+   "shape": "box",
+   "mat": "groove_dark",
+   "rect": [
+    922.6,
+    412,
+    923.4,
+    412.6
+   ],
+   "z": [
+    10,
+    238
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_k_pendant_island",
+   "shape": "box",
+   "mat": "pendant_bronze",
+   "rect": [
+    795,
+    543,
+    935,
+    549
+   ],
+   "z": [
+    186,
+    191
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_k_pendant_island_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    797,
+    544,
+    933,
+    548
+   ],
+   "z": [
+    185.5,
+    186
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_pendant_island_c1",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    805,
+    546
+   ],
+   "r": 0.6,
+   "z": [
+    191,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_k_pendant_island_c2",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    925,
+    546
+   ],
+   "r": 0.6,
+   "z": [
+    191,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_d_pendant",
+   "shape": "box",
+   "mat": "pendant_bronze",
+   "rect": [
+    788,
+    743,
+    940,
+    749
+   ],
+   "z": [
+    166,
+    171
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_d_pendant_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    790,
+    744,
+    938,
+    748
+   ],
+   "z": [
+    165.5,
+    166
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_d_pendant_c1",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    798,
+    746
+   ],
+   "r": 0.6,
+   "z": [
+    171,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_d_pendant_c2",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    930,
+    746
+   ],
+   "r": 0.6,
+   "z": [
+    171,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_k_led456",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    690,
+    454,
+    960,
+    458
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_led680",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    690,
+    678,
+    960,
+    682
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_k_lemons",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    830,
+    540
+   ],
+   "r": 14,
+   "z": [
+    92,
+    100
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_k_lemons_fruit",
+   "shape": "sphere",
+   "mat": "lemons",
+   "center": [
+    830,
+    540,
+    101
+   ],
+   "r": 9,
+   "kind": "decor"
+  },
+  {
+   "id": "D_k_vase",
+   "shape": "cyl",
+   "mat": "ceramic_light",
+   "center": [
+    905,
+    528
+   ],
+   "r": 6,
+   "z": [
+    92,
+    122
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_k_vase_branches",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    905,
+    528,
+    140
+   ],
+   "r": 18,
+   "kind": "decor"
+  },
+  {
+   "id": "D_d_bowl",
+   "shape": "cyl",
+   "mat": "ceramic_light",
+   "center": [
+    862,
+    746
+   ],
+   "r": 18,
+   "z": [
+    76,
+    84
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_d_bowl_fruit",
+   "shape": "sphere",
+   "mat": "lemons",
+   "center": [
+    862,
+    746,
+    85
+   ],
+   "r": 9,
+   "kind": "decor"
+  },
+  {
+   "id": "D_k_board",
+   "shape": "box",
+   "mat": "walnut_shelf",
+   "rect": [
+    760,
+    356,
+    800,
+    360
+   ],
+   "z": [
+    92,
+    132
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_h_battens",
+   "shape": "box",
+   "mat": "walnut_battens",
+   "rect": [
+    378,
+    211,
+    381,
+    950
+   ],
+   "z": [
+    0,
+    560
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_h_art",
+   "shape": "box",
+   "mat": "artwork_abstract",
+   "rect": [
+    595.5,
+    420,
+    598.5,
+    545
+   ],
+   "z": [
+    105,
+    230
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_h_pendant",
+   "shape": "torus",
+   "mat": "pendant_bronze",
+   "center": [
+    430,
+    640,
+    420
+   ],
+   "R": 28,
+   "tube": 2.5,
+   "kind": "light"
+  },
+  {
+   "id": "D_h_pendant_c",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    430,
+    612
+   ],
+   "r": 0.6,
+   "z": [
+    420,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_h_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    538,
+    230,
+    542,
+    930
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_spa_orchid_pot",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    1185,
+    235
+   ],
+   "r": 8,
+   "z": [
+    0,
+    20
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_spa_orchid",
+   "shape": "sphere",
+   "mat": "orchid_white",
+   "center": [
+    1185,
+    235,
+    42
+   ],
+   "r": 15,
+   "kind": "decor"
+  },
+  {
+   "id": "D_spa_candle0",
+   "shape": "cyl",
+   "mat": "candle",
+   "center": [
+    1172,
+    252
+   ],
+   "r": 3.5,
+   "z": [
+    0,
+    12
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_spa_candle1",
+   "shape": "cyl",
+   "mat": "candle",
+   "center": [
+    1180,
+    258
+   ],
+   "r": 3.5,
+   "z": [
+    0,
+    8
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_spa_candle2",
+   "shape": "cyl",
+   "mat": "candle",
+   "center": [
+    1166,
+    246
+   ],
+   "r": 3.5,
+   "z": [
+    0,
+    6
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_spa_towels",
+   "shape": "box",
+   "mat": "towels_charcoal",
+   "rect": [
+    1150,
+    300,
+    1190,
+    322
+   ],
+   "z": [
+    0,
+    30
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_sauna_led_low",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    737,
+    30,
+    739,
+    195
+   ],
+   "z": [
+    40,
+    41
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_sauna_led_high",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    704,
+    30,
+    706,
+    195
+   ],
+   "z": [
+    86,
+    87
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_wc_mirror",
+   "shape": "box",
+   "mat": "mirror_backlit",
+   "rect": [
+    653.5,
+    62,
+    656,
+    180
+   ],
+   "z": [
+    110,
+    200
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_wc_mirror_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    656,
+    59,
+    656.8,
+    183
+   ],
+   "z": [
+    107,
+    203
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_wc_orchid_pot",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    645,
+    75
+   ],
+   "r": 5,
+   "z": [
+    85,
+    97
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_wc_orchid",
+   "shape": "sphere",
+   "mat": "orchid_white",
+   "center": [
+    645,
+    75,
+    112
+   ],
+   "r": 10,
+   "kind": "decor"
+  },
+  {
+   "id": "D_g_led_x110",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    108,
+    215,
+    112,
+    805
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_led_x270",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    268,
+    215,
+    272,
+    805
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_led_y330",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    30,
+    328,
+    350,
+    332
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_led_y520",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    30,
+    518,
+    350,
+    522
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_led_y710",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    30,
+    708,
+    350,
+    712
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_art",
+   "shape": "box",
+   "mat": "photo_car_bw",
+   "rect": [
+    24,
+    400,
+    27,
+    640
+   ],
+   "z": [
+    40,
+    170
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_g_step_led0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    247,
+    228,
+    353,
+    229
+   ],
+   "z": [
+    -19,
+    -18
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_step_led1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    247,
+    257,
+    353,
+    258
+   ],
+   "z": [
+    -34,
+    -33
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_g_step_led2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    247,
+    287,
+    353,
+    288
+   ],
+   "z": [
+    -49,
+    -48
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "X_lawn0",
+   "shape": "box",
+   "mat": "lawn",
+   "rect": [
+    -800,
+    1000,
+    2400,
+    2200
+   ],
+   "z": [
+    -1.5,
+    -0.5
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_lawn1",
+   "shape": "box",
+   "mat": "lawn",
+   "rect": [
+    1480,
+    -800,
+    2400,
+    1000
+   ],
+   "z": [
+    -1.5,
+    -0.5
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_lawn2",
+   "shape": "box",
+   "mat": "lawn",
+   "rect": [
+    -800,
+    -800,
+    1480,
+    -40
+   ],
+   "z": [
+    -1.5,
+    -0.5
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_lawn3",
+   "shape": "box",
+   "mat": "lawn",
+   "rect": [
+    -800,
+    -40,
+    -40,
+    1000
+   ],
+   "z": [
+    -1.5,
+    -0.5
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_hedge_s",
+   "shape": "box",
+   "mat": "hedge",
+   "rect": [
+    900,
+    1230,
+    1700,
+    1290
+   ],
+   "z": [
+    0,
+    110
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_hedge_e",
+   "shape": "box",
+   "mat": "hedge",
+   "rect": [
+    1640,
+    300,
+    1700,
+    1290
+   ],
+   "z": [
+    0,
+    110
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_tree_trunk0",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    1150,
+    1450
+   ],
+   "r": 8,
+   "z": [
+    0,
+    180
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_tree_crown0",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    1150,
+    1450,
+    260
+   ],
+   "r": 110,
+   "kind": "exterior"
+  },
+  {
+   "id": "X_tree_trunk1",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    1500,
+    1500
+   ],
+   "r": 8,
+   "z": [
+    0,
+    180
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_tree_crown1",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    1500,
+    1500,
+    260
+   ],
+   "r": 110,
+   "kind": "exterior"
+  },
+  {
+   "id": "X_tree_trunk2",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    1900,
+    700
+   ],
+   "r": 8,
+   "z": [
+    0,
+    180
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_tree_crown2",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    1900,
+    700,
+    260
+   ],
+   "r": 110,
+   "kind": "exterior"
+  },
+  {
+   "id": "X_tree_trunk3",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    1950,
+    1100
+   ],
+   "r": 8,
+   "z": [
+    0,
+    180
+   ],
+   "kind": "exterior",
+   "emissive": false
+  },
+  {
+   "id": "X_tree_crown3",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    1950,
+    1100,
+    260
+   ],
+   "r": 110,
+   "kind": "exterior"
   }
  ],
  "extra_ceilings": [

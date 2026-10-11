@@ -19,6 +19,7 @@ const plan = JSON.parse(fs.readFileSync(path.join(planDir, 'plan.json')));
 const cams = JSON.parse(fs.readFileSync(path.join(planDir, 'cameras.json'))).cameras
   .filter(c => !only.length || only.includes(c.id));
 const planName = path.basename(planDir);
+const ds = JSON.parse(fs.readFileSync(path.join(ROOT, 'design-system', 'design-system.json')));
 
 const MIME = { '.js': 'text/javascript', '.mjs': 'text/javascript', '.html': 'text/html', '.json': 'application/json' };
 const server = http.createServer((req, res) => {
@@ -41,13 +42,13 @@ for (const cam of cams) {
   for (const v of variants) {
     const [W, H] = (cam.size || sizeArg).split('x').map(Number);
     const id = cam.id + (v.suffix || '');
-    const res = await page.evaluate(({ plan, cam, W, H, opts }) => window.render(plan, cam, W, H, opts),
-      { plan, cam, W, H, opts: v.opts || {} });
+    const res = await page.evaluate(({ plan, cam, W, H, opts, ds }) => window.render(plan, cam, W, H, opts, ds),
+      { plan, cam, W, H, opts: v.opts || {}, ds });
     const dir = path.join(ROOT, 'output', planName, id, 'blockout');
     fs.mkdirSync(dir, { recursive: true });
-    for (const k of ['guide', 'lines', 'edge_ids', 'surface_ids', 'normals', 'depth'])
+    for (const k of ['guide', 'lines', 'edge_ids', 'surface_ids', 'mat_ids', 'normals', 'depth'])
       fs.writeFileSync(path.join(dir, `${k}.png`), Buffer.from(res[k].split(',')[1], 'base64'));
-    fs.writeFileSync(path.join(dir, 'passes.json'), JSON.stringify({ camera: res.camera, variant: v, legend: res.legend }, null, 1));
+    fs.writeFileSync(path.join(dir, 'passes.json'), JSON.stringify({ camera: res.camera, variant: v, legend: res.legend, mat_legend: res.mat_legend }, null, 1));
     console.log('rendered', id, `${W}x${H}`);
   }
 }

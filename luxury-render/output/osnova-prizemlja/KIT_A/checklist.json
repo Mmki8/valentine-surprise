@@ -1,6 +1,37 @@
 {
  "camera": "KIT_A",
  "room": "R_kitchen_dining",
+ "hero": "LIV_B",
+ "materials": [
+  "bronze_panels",
+  "walnut_slats",
+  "stone_backsplash",
+  "box_slats",
+  "walnut_table",
+  "plaster_greige",
+  "walnut_cabinet",
+  "boucle_ivory",
+  "marble_island",
+  "pendant_bronze",
+  "black_glass_tall",
+  "leather_cognac_chair",
+  "stool_black",
+  "ceramic_light",
+  "worktop_marble",
+  "led_line",
+  "walnut_shelf",
+  "reveal_dark",
+  "stair_walnut",
+  "cushion_navy",
+  "olive_foliage",
+  "lemons",
+  "cable_black",
+  "groove_dark",
+  "walnut_panel",
+  "cushion_cognac",
+  "black_metal",
+  "ceramic_dark"
+ ],
  "car": null,
  "openings": [],
  "furniture_counts": {
@@ -18,21 +49,21 @@
    "id": "F_d_table",
    "name": "dining table",
    "where": "centre",
-   "share": 0.077,
+   "share": 0.065,
    "note": null
   },
   {
    "id": "F_k_run_west",
    "name": "L-shaped kitchen base-cabinet run",
    "where": "left",
-   "share": 0.049,
+   "share": 0.048,
    "note": "base run w/ cooktop"
   },
   {
    "id": "F_k_island",
    "name": "kitchen island",
    "where": "centre",
-   "share": 0.035,
+   "share": 0.029,
    "note": "overhang on south side y821-850"
   },
   {
@@ -46,14 +77,14 @@
    "id": "F_k_fridge",
    "name": "full-height cabinet column",
    "where": "centre",
-   "share": 0.024,
+   "share": 0.016,
    "note": "'*' = fridge column"
   },
   {
    "id": "F_k_duct",
    "name": "boxed column",
    "where": "centre",
-   "share": 0.015,
+   "share": 0.012,
    "note": "installation duct, boxed in"
   },
   {
@@ -64,8 +95,15 @@
    "note": null
   },
   {
-   "id": "F_d_chair_n2",
-   "name": "dining chair",
+   "id": "F_k_stool_3",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_k_stool_1",
+   "name": "bar stool",
    "where": "centre",
    "share": 0.005,
    "note": null
@@ -84,24 +122,17 @@
    "share": 0.005
   },
   {
-   "id": "F_k_stool_3",
-   "name": "bar stool",
-   "where": "centre",
-   "share": 0.004,
-   "note": null
-  },
-  {
-   "id": "F_k_stool_1",
-   "name": "bar stool",
-   "where": "centre",
-   "share": 0.004,
-   "note": null
-  },
-  {
    "id": "F_k_stool_2",
    "name": "bar stool",
    "where": "centre",
-   "share": 0.003,
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n2",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.004,
    "note": null
   }
  ],
@@ -111,6 +142,8 @@
   "every furniture count matches exactly; positions & orientation match",
   "ceiling heights match (double height only over living)",
   "daylight comes from the visible openings only, direction consistent",
-  "style matches design system for this room; photoreal, no AI artefacts"
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled"
  ]
 }

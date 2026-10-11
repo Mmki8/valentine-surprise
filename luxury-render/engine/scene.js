@@ -5,31 +5,23 @@
 // three axes: X = x, Y = z, Z = y   (right-handed, Y up)
 import * as THREE from 'three';
 
-// ------------------------------------------------------------ palette
-// "Guide" tints: the blockout is coloured by material intent so the image
-// model reads WHERE each finish goes, not just the shapes.
-const TINT = {
-  floor_wood: 0xc9a47c, floor_stone_dark: 0x4a433d, floor_concrete: 0x8f8d89,
-  wall_warm: 0xe4ddd3, wall_dark: 0x3a342f, wall_ext: 0xd9d2c8,
-  ceiling_wood: 0x7d5c41, ceiling_plain: 0xefeae3, slab_edge: 0x2b2420,
-  glass: 0xcfe6f2, frame: 0x2e2621, door: 0x5e412c, garage_door: 0x2d2a27,
-  sofa: 0xd9ccb9, armchair: 0x6e4f3b, coffee_table: 0x2b2522, table: 0x5b3f2b,
-  chair: 0x5a3d2c, stool: 0x1f1d1c, island: 0xb8b3ac, counter: 0x2b2724,
-  tall_cabinet: 0x1e1b19, low_cabinet: 0x4b3527, appliance: 0xdedad5,
-  tv: 0x101010, toilet: 0xf2f0ec, vanity: 0x2a2522, basin: 0x3a3632,
-  bench: 0xb3875c, jacuzzi: 0x2a2826, water: 0x7fb2c0, shower: 0x3d3833,
-  stair: 0x6b4a32, box: 0xe4ddd3, car: 0x171717, fixture: 0x222222,
-  sink: 0x1b1b1b, sauna_wood: 0xd9b48a, cooktop: 0x0d0d0d, counter_top: 0x9a948c,
-};
-const STYLE_FLOOR = { dark_spa: 'floor_stone_dark', garage_gallery: 'floor_concrete', sauna_timber: 'sauna_wood' };
-const STYLE_WALL = { dark_spa: 'wall_dark', sauna_timber: 'sauna_wood' };
+// ------------------------------------------------------------ materials
+// Every mesh carries ONE material key from design-system.json. The guide is
+// tinted with that material's real colour, the prompt uses that material's one
+// locked description, and a material-ID pass tells the prompt builder exactly
+// which materials each camera sees. Same key -> same look in every view.
+let DS = null;
+const T = (key) => new THREE.Color(DS.materials[key]?.tint ?? '#888888').getHex();
+const KIND_MAT = (f) => DS.id_materials[f.id] ?? DS.kind_materials[f.kind] ?? 'black_metal';
 
-export function buildScene(plan, opts = {}) {
+export function buildScene(plan, opts = {}, ds) {
+  DS = ds;
+  const SM = (style, part) => (DS.style_materials[style] || DS.style_materials.warm_wood_luxe)[part];
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0xdfe8ee);
   const reg = [];                       // element registry: {id, kind, group}
-  const add = (id, kind, mesh) => {
-    mesh.userData.eid = id; mesh.userData.kind = kind;
+  const add = (id, kind, mesh, matKey) => {
+    mesh.userData.eid = id; mesh.userData.kind = kind; mesh.userData.mat = matKey ?? mesh.userData.mat;
     mesh.castShadow = true; mesh.receiveShadow = true;
     scene.add(mesh);
     reg.push({ id, kind, mesh });
@@ -37,12 +29,14 @@ export function buildScene(plan, opts = {}) {
   };
   const mat = (hex, o = {}) => new THREE.MeshStandardMaterial({ color: hex, roughness: 0.85, metalness: 0, ...o });
   // axis-aligned box from plan rect + z range
-  const boxMesh = (x0, y0, x1, y1, z0, z1, color, o) => {
+  const boxMesh = (x0, y0, x1, y1, z0, z1, key, o) => {
+    const color = typeof key === 'string' ? T(key) : key;
     const [ax, bx] = [Math.min(x0, x1), Math.max(x0, x1)], [ay, by] = [Math.min(y0, y1), Math.max(y0, y1)];
     const [az, bz] = [Math.min(z0, z1), Math.max(z0, z1)];
     const g = new THREE.BoxGeometry(Math.max(bx - ax, 0.5), Math.max(bz - az, 0.5), Math.max(by - ay, 0.5));
     const m = new THREE.Mesh(g, mat(color, o));
     m.position.set((ax + bx) / 2, (az + bz) / 2, (ay + by) / 2);
+    if (typeof key === 'string') m.userData.mat = key;
     return m;
   };
   const L = plan.levels;
@@ -52,35 +46,26 @@ export function buildScene(plan, opts = {}) {
   for (const r of plan.rooms) {
     const shape = new THREE.Shape(r.polygon.map(([x, y]) => new THREE.Vector2(x, y)));
     const fg = new THREE.ShapeGeometry(shape); fg.rotateX(Math.PI / 2);   // y->Z
-    const floor = new THREE.Mesh(fg, mat(TINT[STYLE_FLOOR[r.style] || 'floor_wood'], { side: THREE.DoubleSide }));
+    const floor = new THREE.Mesh(fg, mat(T(SM(r.style, 'floor')), { side: THREE.DoubleSide }));
     floor.position.y = r.floor;
-    add(`FLOOR_${r.id}`, 'floor', floor);
+    add(`FLOOR_${r.id}`, 'floor', floor, SM(r.style, 'floor'));
     if (r.id === 'R_living') continue;                // living handled by void ceiling
     const cshape = new THREE.Shape(r.polygon.map(([x, y]) => new THREE.Vector2(x, y)));
     for (const [hx0, hy0, hx1, hy1] of (r.ceiling_holes || []))
       cshape.holes.push(new THREE.Path([new THREE.Vector2(hx0, hy0), new THREE.Vector2(hx0, hy1), new THREE.Vector2(hx1, hy1), new THREE.Vector2(hx1, hy0)]));
     const cg = new THREE.ShapeGeometry(cshape); cg.rotateX(Math.PI / 2);
-    const woodCeil = ['warm_wood_luxe', 'dark_spa', 'sauna_timber'].includes(r.style);
-    const ceil = new THREE.Mesh(cg, mat(TINT[woodCeil ? 'ceiling_wood' : 'ceiling_plain'], { side: THREE.DoubleSide }));
+    const ceil = new THREE.Mesh(cg, mat(T(SM(r.style, 'ceiling')), { side: THREE.DoubleSide }));
     ceil.position.y = r.ceiling;
-    add(`CEIL_${r.id}`, 'ceiling', ceil);
+    add(`CEIL_${r.id}`, 'ceiling', ceil, SM(r.style, 'ceiling'));
   }
-  // void ceiling + upper slab edge + gallery (ASSUMED until upper plan is supplied)
+  // double-height void: walnut ceiling. NO gallery - per the 1st-floor plan the void is closed by
+  // plain walls (W_void_west_up, W_liv_north_up) running straight up.
   const v = plan.void.rect;
-  add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, TINT.ceiling_wood));
-  const ge = plan.gallery_edge;
-  add('SLAB_edge', 'slab_edge', boxMesh(ge.x - 30, ge.y0, ge.x, ge.y1, L.ceiling, L.slab_top, TINT.slab_edge));
-  add('GALLERY_floor', 'slab_edge', boxMesh(ge.x - 160, ge.y0, ge.x - 30, ge.y1, L.ceiling, L.slab_top, TINT.ceiling_wood));
-  add('GALLERY_glass', 'glass', glassPane(boxMesh(ge.x - 6, ge.y0, ge.x - 4, ge.y1, L.slab_top, L.slab_top + 100, TINT.glass)));
-  add('GALLERY_wall', 'wall', boxMesh(ge.x - 175, ge.y0, ge.x - 160, ge.y1, L.slab_top, plan.void.ceiling, TINT.wall_warm));
-  add('GALLERY_ceil', 'ceiling', boxMesh(ge.x - 175, ge.y0, ge.x, ge.y1, plan.void.ceiling, plan.void.ceiling + 20, TINT.ceiling_wood));
-  add('GALLERY_end_n', 'wall', boxMesh(ge.x - 175, ge.y0 - 15, ge.x, ge.y0, L.ceiling, plan.void.ceiling, TINT.wall_warm));
-  add('GALLERY_end_s', 'wall', boxMesh(ge.x - 175, ge.y1, ge.x, ge.y1 + 15, L.ceiling, plan.void.ceiling, TINT.wall_warm));
+  add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
   for (const c of (plan.extra_ceilings || []))
-    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, TINT.ceiling_plain));
-  // exterior ground / terrace so glazing doesn't look onto void
-  const ground = boxMesh(-800, -800, 2400, 2200, -62, -61, 0x8c9a7c); add('EXT_ground', 'exterior', ground);
-  add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 0xb9b2a6));
+    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, 'plaster_white'));
+  add('EXT_ground', 'exterior', boxMesh(-800, -800, 2400, 2200, -62, -61, 'lawn'));
+  add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 'stone_pot'));
 
   // ---------------------------------------------------------- walls with openings
   for (const w of plan.walls) {
@@ -100,20 +85,20 @@ export function buildScene(plan, opts = {}) {
     // two-sided walls: each half of the thickness takes the colour of the room it
     // faces, sampled every 10 cm along the wall so long walls change finish at
     // room boundaries (stone in the spa, timber in the sauna, plaster in the living)
-    const colorAt = (along, side) => {
-      if (w.kind === 'box') return TINT.box;
+    const colorAt = (along, side) => {      // returns a material key
+      if (w.kind === 'box') return DS.id_materials[w.id] ?? 'box_slats';
       const px = alongX ? along : (side < 0 ? x0 - 15 : x1 + 15);
       const py = alongX ? (side < 0 ? y0 - 15 : y1 + 15) : along;
       const r = roomOf(px, py);
-      return r ? TINT[STYLE_WALL[r.style] || 'wall_warm'] : null;
+      return r ? SM(r.style, 'wall') : null;
     };
     const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
     const half = (s0, s1, z0, z1, side, id) => {
       // sample; where a sample hits a partition (no room) inherit the nearest
       // sampled colour on the same side, so corners don't get stray exterior slivers
       const cells = [];
-      for (let p = s0; p < s1 - 0.01; p += 10) {
-        const q = Math.min(s1, p + 10);
+      for (let p = s0; p < s1 - 0.01; p += 2.5) {
+        const q = Math.min(s1, p + 2.5);
         cells.push({ a: p, b: q, c: colorAt((p + q) / 2, side) });
       }
       for (let i = 0; i < cells.length; i++) if (cells[i].c == null) {
@@ -121,7 +106,7 @@ export function buildScene(plan, opts = {}) {
           const n = cells[i - d]?.c ?? cells[i + d]?.c;
           if (n != null) { cells[i].c = n; break; }
         }
-        cells[i].c ??= colorAt((cells[i].a + cells[i].b) / 2, -side) ?? TINT.wall_ext;
+        cells[i].c ??= colorAt((cells[i].a + cells[i].b) / 2, -side) ?? 'plaster_greige';
       }
       const runs = [];
       for (const cl of cells) {
@@ -162,29 +147,33 @@ export function buildScene(plan, opts = {}) {
       if (kind === 'glass') glassPane(m);
       return add(id, kind, m);
     };
-    const frameBar = (s0, s1, z0, z1, id) => pane(s0, s1, z0, z1, 8, TINT.frame, 'frame', id);
+    const frameBar = (s0, s1, z0, z1, id) => pane(s0, s1, z0, z1, 8, 'bronze_frame', 'frame', id);
     const f = 6;                                                // frame width
     const outline = () => {
       frameBar(a0, a0 + f, o.sill, o.head, `${o.id}_fl`); frameBar(a1 - f, a1, o.sill, o.head, `${o.id}_fr`);
       frameBar(a0, a1, o.head - f, o.head, `${o.id}_ft`);
       if (o.sill > (o.type === 'garage_door' ? -999 : 0)) frameBar(a0, a1, o.sill, o.sill + f, `${o.id}_fb`);
     };
-    if (o.type === 'window' || o.type === 'sliding' || o.type === 'curtain' || o.type === 'glass_partition') {
-      pane(a0, a1, o.sill, o.head, 2, TINT.glass, 'glass');
+    if (o.type === 'glass_partition') {          // frameless sauna glass: pane + slim top/bottom channels only
+      pane(a0, a1, o.sill, o.head, 1.2, 'glass', 'glass');
+      frameBar(a0, a1, o.head - 2, o.head, `${o.id}_ft`); frameBar(a0, a1, 0, 2, `${o.id}_fb`);
+      if (o.hinge) pane(a1 - 3, a1 - 2, 95, 125, 4, 'black_metal', 'frame', `${o.id}_pull`);
+    } else if (o.type === 'window' || o.type === 'sliding' || o.type === 'curtain') {
+      pane(a0, a1, o.sill, o.head, 2, 'glass', 'glass');
       outline();
       for (const m of (o.mullions || [])) frameBar(m - 3, m + 3, o.sill, o.head, `${o.id}_m${m}`);
       if (o.transom) frameBar(a0, a1, o.transom - 4, o.transom + 4, `${o.id}_tr`);
       if (o.type === 'sliding') frameBar((a0 + a1) / 2 - 3, (a0 + a1) / 2 + 3, o.sill, o.head, `${o.id}_mid`);
     } else if (o.type === 'door') {
-      pane(a0 + f, a1 - f, 0, o.head - f, 5, TINT.door, 'door');
+      pane(a0 + f, a1 - f, 0, o.head - f, 5, 'walnut_door', 'door');
       outline();
     } else if (o.type === 'double_door') {
       const mid = (a0 + a1) / 2;
-      pane(a0 + f, a1 - f, 0, o.head - f, 2, TINT.glass, 'glass');
+      pane(a0 + f, a1 - f, 0, o.head - f, 2, 'glass', 'glass');
       outline(); frameBar(mid - 4, mid + 4, 0, o.head, `${o.id}_mid`);
       frameBar(a0, a1, 0, 12, `${o.id}_kick`);
     } else if (o.type === 'garage_door') {
-      pane(a0, a1, o.sill, o.head, 6, TINT.garage_door, 'door');
+      pane(a0, a1, o.sill, o.head, 6, 'bronze_garage_door', 'door');
       for (let z = o.sill + 50; z < o.head; z += 50) frameBar(a0, a1, z - 1, z + 1, `${o.id}_g${z}`);
     }
   }
@@ -192,17 +181,17 @@ export function buildScene(plan, opts = {}) {
   // ---------------------------------------------------------- furniture
   for (const f of plan.furniture) {
     if (f.kind === 'car' && opts.car === false) continue;
-    const col = TINT[f.kind] ?? 0x888888;
+    const col = KIND_MAT(f);
     if (f.shape === 'cyl') {
       const [cx, cy] = f.center;
       if (f.kind === 'jacuzzi') {
-        const outer = new THREE.Mesh(new THREE.CylinderGeometry(f.r, f.r, f.h, 64), mat(col));
-        outer.position.set(cx, f.z0 + f.h / 2, cy); add(f.id, f.kind, outer);
-        const water = new THREE.Mesh(new THREE.CylinderGeometry(f.r - 14, f.r - 14, 2, 64), mat(TINT.water, { roughness: 0.1 }));
-        water.position.set(cx, f.z0 + f.h - 12, cy); add(`${f.id}_water`, 'water', water);
+        const outer = new THREE.Mesh(new THREE.CylinderGeometry(f.r, f.r, f.h, 64), mat(T(col)));
+        outer.position.set(cx, f.z0 + f.h / 2, cy); add(f.id, f.kind, outer, col);
+        const water = new THREE.Mesh(new THREE.CylinderGeometry(f.r - 14, f.r - 14, 2, 64), mat(T('water'), { roughness: 0.1 }));
+        water.position.set(cx, f.z0 + f.h - 12, cy); add(`${f.id}_water`, 'water', water, 'water');
       } else {
-        const m = new THREE.Mesh(new THREE.CylinderGeometry(f.r, f.r * 0.8, f.h, 40), mat(col));
-        m.position.set(cx, f.z0 + f.h / 2, cy); add(f.id, f.kind, m);
+        const m = new THREE.Mesh(new THREE.CylinderGeometry(f.r, f.r * 0.8, f.h, 40), mat(T(col)));
+        m.position.set(cx, f.z0 + f.h / 2, cy); add(f.id, f.kind, m, col);
       }
       continue;
     }
@@ -229,15 +218,16 @@ export function buildScene(plan, opts = {}) {
         const s = 6; B(x0 + s, y0 + s, x1 - s, y1 - s, z0 + 42, z0 + 47);
         const b = strip(back, 5); B(b[0] + (back === 'N' || back === 'S' ? s : 0), b[1], b[2] - (back === 'N' || back === 'S' ? s : 0), b[3], z0 + 47, z1, col, `${f.id}_back`);
         for (const [lx, ly] of [[x0 + s, y0 + s], [x1 - s - 3, y0 + s], [x0 + s, y1 - s - 3], [x1 - s - 3, y1 - s - 3]])
-          B(lx, ly, lx + 3, ly + 3, z0, z0 + 42, 0x1a1a1a, `${f.id}_leg`);
+          B(lx, ly, lx + 3, ly + 3, z0, z0 + 42, 'black_metal', `${f.id}_leg`);
         break;
       }
       case 'stool': {
         const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, r = (x1 - x0) / 2;
-        const seat = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 0.9, 6, 32), mat(col));
-        seat.position.set(cx, z1 - 3, cy); add(f.id, f.kind, seat);
+        const seat = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 0.9, 6, 32), mat(T(col)));
+        seat.position.set(cx, z1 - 3, cy); add(f.id, f.kind, seat, col);
+        const bs = strip(back, 4); B(bs[0] + 4, bs[1], bs[2] - 4, bs[3], z1, z1 + 14, col, `${f.id}_back`);   // low back
         for (const [lx, ly] of [[x0 + 4, y0 + 4], [x1 - 7, y0 + 4], [x0 + 4, y1 - 7], [x1 - 7, y1 - 7]])
-          B(lx, ly, lx + 3, ly + 3, z0, z1 - 6, 0x6b4a32, `${f.id}_leg`);
+          B(lx, ly, lx + 3, ly + 3, z0, z1 - 6, 'walnut_panel', `${f.id}_leg`);
         break;
       }
       case 'table': case 'coffee_table': {
@@ -247,36 +237,58 @@ export function buildScene(plan, opts = {}) {
         break;
       }
       case 'island': {
-        B(x0, y0, x1, y0 + 57 * 1.05, z0, z1 - 4, TINT.island);              // body (to overhang line)
-        B(x0, y0, x1, y1, z1 - 4, z1, TINT.counter_top, `${f.id}_top`);       // top incl. overhang
+        B(x0, y0, x1, y0 + 57 * 1.05, z0, z1 - 6, 'marble_island');            // body (to overhang line)
+        B(x0, y0, x1, y1, z1 - 6, z1, 'marble_island', `${f.id}_top`);         // 6 cm top incl. overhang
         break;
       }
       case 'counter': {
-        B(x0, y0, x1, y1, z0 + 10, z1 - 4); B(x0, y0, x1, y1 - 6, z0, z0 + 10, 0x111111, `${f.id}_plinth`);
-        B(x0, y0, x1, y1, z1 - 4, z1, TINT.counter_top, `${f.id}_top`);
+        B(x0, y0, x1, y1, z0 + 10, z1 - 4); B(x0, y0, x1, y1 - 6, z0, z0 + 10, 'groove_dark', `${f.id}_plinth`);
+        B(x0, y0, x1, y1, z1 - 4, z1, 'worktop_marble', `${f.id}_top`);
         break;
       }
       case 'car': {
         B(x0, y0 + 10, x1, y1 - 10, z0 + 35, z0 + 115);                          // body
         B(x0 + 12, y0 + 120, x1 - 12, y1 - 60, z0 + 115, z1, col, `${f.id}_cabin`);   // boxy cabin
         for (const yy of [y0 + 75, y1 - 75]) for (const xx of [x0 - 2, x1 - 22]) {
-          const wh = new THREE.Mesh(new THREE.CylinderGeometry(40, 40, 24, 32), mat(0x0b0b0b));
-          wh.rotation.z = Math.PI / 2; wh.position.set(xx + 12, z0 + 40, yy); add(`${f.id}_wheel`, 'car', wh);
+          const wh = new THREE.Mesh(new THREE.CylinderGeometry(40, 40, 24, 32), mat(T('black_metal')));
+          wh.rotation.z = Math.PI / 2; wh.position.set(xx + 12, z0 + 40, yy); add(`${f.id}_wheel`, 'car', wh, 'black_metal');
         }
         break;
       }
-      case 'stair': B(x0, y0, x1, y1, z0, z1, TINT.stair); break;
-      case 'glass': add(f.id, 'glass', glassPane(boxMesh(x0, y0, x1, y1, z0, z1, TINT.glass))); break;
-      case 'tv': B(x0, y0, x1, y1, z0, z1, TINT.tv); break;
+      case 'glass': add(f.id, 'glass', glassPane(boxMesh(x0, y0, x1, y1, z0, z1, 'glass'))); break;
       default: B(x0, y0, x1, y1, z0, z1);
     }
+  }
+
+  // ---------------------------------------------------------- design layer (fixed decor + fittings)
+  for (const d of (plan.design || [])) {
+    const key = d.mat, o = d.emissive ? null : {};
+    const M = () => d.emissive ? new THREE.MeshBasicMaterial({ color: 0xfff2d6 }) : mat(T(key));
+    let m;
+    if (d.shape === 'box') {
+      const [x0, y0, x1, y1] = d.rect;
+      m = boxMesh(x0, y0, x1, y1, d.z[0], d.z[1], key);
+      if (d.emissive) m.material = M();
+    } else if (d.shape === 'cyl') {
+      m = new THREE.Mesh(new THREE.CylinderGeometry(d.r, d.r, d.z[1] - d.z[0], 24), M());
+      m.position.set(d.center[0], (d.z[0] + d.z[1]) / 2, d.center[1]);
+    } else if (d.shape === 'sphere') {
+      m = new THREE.Mesh(new THREE.SphereGeometry(d.r, 20, 14), M());
+      m.position.set(d.center[0], d.center[2], d.center[1]);
+    } else if (d.shape === 'torus') {
+      m = new THREE.Mesh(new THREE.TorusGeometry(d.R, d.tube, 10, 72), new THREE.MeshBasicMaterial({ color: 0xfff6e8 }));
+      m.rotation.x = Math.PI / 2; m.position.set(d.center[0], d.center[2], d.center[1]);
+    }
+    if (d.kind === 'light' || d.emissive) m.castShadow = false;
+    add(d.id, d.kind === 'exterior' ? 'exterior' : d.kind, m, key);
+    if (d.kind === 'light' || d.emissive) m.castShadow = false;
   }
 
   // ---------------------------------------------------------- light (working rig)
   scene.add(new THREE.HemisphereLight(0xf6f1ea, 0x8a7663, 2.4));
   scene.add(new THREE.AmbientLight(0xfff4e8, 0.9));
-  const sun = new THREE.DirectionalLight(0xffe2bf, 3.2);   // late-afternoon sun from SW-S, enters south + east glass
-  sun.position.set(1700, 1100, 2600); sun.target.position.set(900, 0, 500);
+  const sun = new THREE.DirectionalLight(0xffd7a8, 3.4);   // golden hour, low sun from the south-west (design-system time_of_day)
+  sun.position.set(-700, 800, 2500); sun.target.position.set(900, 0, 500);
   sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
   Object.assign(sun.shadow.camera, { left: -1500, right: 1500, top: 1500, bottom: -1500, near: 10, far: 6000 });
   sun.shadow.bias = -0.0004;
@@ -326,9 +338,9 @@ export function idColor(i) {   // deterministic, well-separated, never black/whi
   return new THREE.Color().setHSL(h, s, l);
 }
 
-export function renderPasses(THREEref, plan, camDef, W, H, opts) {
+export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   const out = {};
-  const { scene, reg } = buildScene(plan, opts);
+  const { scene, reg } = buildScene(plan, opts, ds);
   const cam = makeCamera(camDef, W, H);
 
   // 1. guide pass (tinted clay, real shadows) — this is what the image model sees
@@ -376,6 +388,12 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts) {
   for (const r of reg) if (r.kind === 'exterior' || r.mesh.userData.glass) r.mesh.visible = false;
   r3.render(scene, cam); out.surface_ids = r3.domElement.toDataURL('image/png');
 
+  // 4b. material-ID pass -> which locked materials this camera sees
+  const mats = [...new Set(reg.map(r => r.mesh.userData.mat || 'unknown'))];
+  for (const r of reg) r.mesh.material = new THREE.MeshBasicMaterial({ color: idColor(mats.indexOf(r.mesh.userData.mat || 'unknown') + 1) });
+  r3.render(scene, cam); out.mat_ids = r3.domElement.toDataURL('image/png');
+  out.mat_legend = mats.map((m, i) => { const c = idColor(i + 1); return { mat: m, rgb: [c.r, c.g, c.b].map(v => Math.round(v * 255)) }; });
+
   // 5. view-space normals + 6. linear depth (24-bit) -> true geometric edges in Python
   for (const r of reg) r.mesh.material = new THREE.MeshNormalMaterial();
   r3.render(scene, cam); out.normals = r3.domElement.toDataURL('image/png');
@@ -389,7 +407,8 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts) {
   out.legend = ids.map(id => {
     const c = idColor(idIndex.get(id));
     const kind = reg.find(r => r.id === id).kind;
-    return { id, kind, rgb: [c.r, c.g, c.b].map(v => Math.round(v * 255)) };
+    const rr = reg.find(r => r.id === id);
+    return { id, kind, mat: rr.mesh.userData.mat || null, rgb: [c.r, c.g, c.b].map(v => Math.round(v * 255)) };
   });
   out.camera = { ...camDef, W, H, projection: cam.projectionMatrix.elements, view: cam.matrixWorldInverse.elements };
   return out;

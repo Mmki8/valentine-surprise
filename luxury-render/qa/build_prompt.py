@@ -35,6 +35,13 @@ def where(x0, x1, W):
     return "left" if c < 0.33 else ("right" if c > 0.67 else "centre")
 
 
+def hero_for(cam_full, plan_dir):
+    c = json.load(open(os.path.join(plan_dir, "cameras.json")))
+    cam = next(x for x in c["cameras"] if cam_full.startswith(x["id"]))
+    h = c.get("heroes", {}).get(cam.get("space"))
+    return h if h and h != cam_full else None
+
+
 def main(plan_dir, cam_full):
     plan = json.load(open(os.path.join(plan_dir, "plan.json")))
     ds = json.load(open(os.path.join(ROOT, "design-system", "design-system.json")))
@@ -88,45 +95,46 @@ def main(plan_dir, cam_full):
         counts.pop("car", None)
 
     room = ds["rooms"][cam["room"]]
-    rt = room["retexture"]
-    others = sorted({furn[i["id"]]["room"] for i in items if i["id"] in furn} - {cam["room"]})
-    look = ds["blockout_look"]
-    kinds = ["floor", "ceiling", "wall"] + [k for k in counts] + \
-            [k for k in ("door", "glass", "frame", "slab_edge") if any(v.startswith(("O_", "SLAB", "GALLERY")) and
-             (k != "slab_edge" or v.startswith("SLAB")) for v in vis)]
-    if any(i["name"] == "staircase" for i in items):
-        kinds.append("stair")
-    # materials of neighbouring rooms seen through openings
-    mp = {}
-    for r in [cam["room"]] + others:
-        for k, v in ds["rooms"].get(r, {}).get("retexture", {}).get("map", {}).items():
-            mp.setdefault(k, v)
-    pairs = []
-    for k in dict.fromkeys(kinds):
-        if k in mp and k in look:
-            pairs.append(f"{look[k]} = {mp[k]}")
+    # ---- materials this camera actually sees (material-ID pass), each with its ONE locked text
+    mimg = cv2.imread(os.path.join(out, "blockout", "mat_ids.png"), cv2.IMREAD_COLOR)[:, :, ::-1]
+    mcodes = (mimg[:, :, 0].astype(np.int64) << 16) | (mimg[:, :, 1].astype(np.int64) << 8) | mimg[:, :, 2]
+    mlut = {(l["rgb"][0] << 16) | (l["rgb"][1] << 8) | l["rgb"][2]: l["mat"] for l in meta["mat_legend"]}
+    mu, mc = np.unique(mcodes, return_counts=True)
+    seen = sorted(((mlut[k], n) for k, n in zip(mu, mc) if k in mlut), key=lambda t: -t[1])
+    skip = {"reveal_dark", "groove_dark", "cable_black", "unknown", "lawn", "hedge"}
+    if not car_on:
+        skip.add("car_g63")
+    mat_lines = [ds["materials"][m]["text"] for m, n in seen if m not in skip and m in ds["materials"] and n > W * H * 0.0008]
     inv = ", ".join(f"{n} x {NAMES.get(k, k)}" for k, n in sorted(counts.items()))
     if any(i["name"] == "staircase" for i in items):
         inv = (inv + ", " if inv else "") + "1 x staircase"
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
-    car_line = ""
-    if cam["room"] == "R_garage" and not car_on:
-        car_line = " The garage is EMPTY: no car anywhere."
+    hero = hero_for(cam_full, plan_dir)
+    car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
+    g = ds["global"]
     prompt = (
         "Turn IMAGE 1 into a photorealistic ultra-luxury architectural photograph WITHOUT changing its geometry. "
-        "IMAGE 1 is a colour-coded 3D blockout of the real floor plan with every edge drawn as a thin dark line; keep the identical camera, "
-        "framing and perspective, and keep every line - every wall, ceiling height, opening, column, stair and furniture piece - at exactly "
-        "the same pixel position, size and count. This is a material and lighting pass only: retexture the surfaces, do not redesign the space. "
-        "Do not add windows or doors; closed doors stay closed; glass only where the light-blue panes are." + car_line + "\n\n"
-        f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
-        f"Retexture as: {'; '.join(pairs)}.\n"
-        f"Add only: {rt['add']}.\n"
-        f"Light: {rt['light']}.\n"
+        "IMAGE 1 is a colour-coded 3D model of the real house, already showing the final design: every wall, opening, "
+        "furniture piece, light fitting and decor object is modelled at its exact place, in its real colour, with every edge "
+        "drawn as a thin dark line. Keep the identical camera, framing and perspective and keep every line at exactly the same "
+        "pixel position, size and count. This is a material and lighting pass only: make every surface real, do not redesign, "
+        "do not add or remove anything. Closed doors stay closed; glass only where the light-blue panes are." + car_line + "\n\n"
+        + (f"IMAGE 2 is the approved render of this same space from another camera. Every object, material, colour, fitting and "
+           f"the light must look EXACTLY like in IMAGE 2 (same pendants, same cabinet fronts, same stone, same cushions, same "
+           f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2.\n\n" if hero else "")
+        + f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
+        f"Materials, as coloured in IMAGE 1 (identical in every view of this house): {'; '.join(mat_lines)}.\n"
+        "Light fittings: ONLY those modelled in IMAGE 1 - the glowing white lines are warm 2700K LED lines, the white rings are "
+        "crystal ring chandeliers, the thin bars hanging on cables are linear bronze pendants. Add no other fittings, no spotlights, "
+        "no track lights. Decor: only the modelled objects (green spheres = olive foliage/branches, white small spheres = orchids or "
+        "coral, yellow = lemons); add no new objects.\n"
+        f"Time of day: {g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
+        f"Exterior: {g['exterior']}\n"
         + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."
     )
-    checklist = dict(camera=cam_full, room=cam["room"], car=car_on if cam["room"] == "R_garage" else None,
+    checklist = dict(camera=cam_full, room=cam["room"], hero=hero, materials=[m for m, n in seen if n > W * H * 0.0008], car=car_on if cam["room"] == "R_garage" else None,
                      openings=openings, furniture_counts=dict(counts), items=items,
                      manual_checks=[
                          "camera position/angle/framing identical to blockout (compare overlay)",
@@ -135,6 +143,8 @@ def main(plan_dir, cam_full):
                          "ceiling heights match (double height only over living)",
                          "daylight comes from the visible openings only, direction consistent",
                          "style matches design system for this room; photoreal, no AI artefacts",
+                         "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+                         "no light fittings or decor objects beyond those modelled",
                      ])
     open(os.path.join(out, "prompt.txt"), "w").write(prompt)
     json.dump(checklist, open(os.path.join(out, "checklist.json"), "w"), indent=1)
