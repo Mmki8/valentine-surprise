@@ -159,3 +159,9 @@ _bedroom("bed2", (938.2, 600, 940.6, 850), [(918, 616), (918, 832)], (700, 620, 
 for tag, (x0, x1), y, in [("bath1", (60, 180), 26.2), ("bath2", (555, 635), 26.2), ("bath3", (760, 830), 351)]:
     D.append(B(f"D_{tag}_mirror", "mirror_backlit", x0, y + 0.3, x1, y + 2.6, U + 110, U + 200, kind="panel"))
     D.append(B(f"D_{tag}_mirror_led", "led_line", x0 - 3, y, x1 + 3, y + 0.3, U + 107, U + 203, kind="light", emissive=True))
+# upper showers: frameless glass screen + ceiling rain head (modelled so every view shows the same shower)
+for tag, glass, head in [("bath3", (861, 351, 862.2, 445), (902, 398)),
+                         ("bath2", (551.5, 26.2, 552.7, 180), (442, 100)),
+                         ("bath1", (26.2, 207.5, 150, 208.7), (90, 245))]:
+    D.append(B(f"D_{tag}_shower_glass", "glass", *glass, U, U + 205, kind="panel"))
+    D.append(C(f"D_{tag}_rainhead", "black_metal", head[0], head[1], 15, U + 238, U + 240, kind="light"))

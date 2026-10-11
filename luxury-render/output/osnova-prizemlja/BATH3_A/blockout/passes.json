@@ -5688,6 +5688,66 @@
     40,
     82
    ]
+  },
+  {
+   "id": "D_bath3_shower_glass",
+   "kind": "panel",
+   "mat": "glass",
+   "rgb": [
+    13,
+    100,
+    165
+   ]
+  },
+  {
+   "id": "D_bath3_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
+   "rgb": [
+    202,
+    215,
+    117
+   ]
+  },
+  {
+   "id": "D_bath2_shower_glass",
+   "kind": "panel",
+   "mat": "glass",
+   "rgb": [
+    199,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "D_bath2_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
+   "rgb": [
+    6,
+    224,
+    126
+   ]
+  },
+  {
+   "id": "D_bath1_shower_glass",
+   "kind": "panel",
+   "mat": "glass",
+   "rgb": [
+    147,
+    61,
+    31
+   ]
+  },
+  {
+   "id": "D_bath1_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
+   "rgb": [
+    90,
+    95,
+    242
+   ]
   }
  ],
  "mat_legend": [

@@ -6359,6 +6359,105 @@
    ],
    "kind": "light",
    "emissive": true
+  },
+  {
+   "id": "D_bath3_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    861,
+    351,
+    862.2,
+    445
+   ],
+   "z": [
+    310,
+    515
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath3_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    902,
+    398
+   ],
+   "r": 15,
+   "z": [
+    548,
+    550
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    551.5,
+    26.2,
+    552.7,
+    180
+   ],
+   "z": [
+    310,
+    515
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath2_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    442,
+    100
+   ],
+   "r": 15,
+   "z": [
+    548,
+    550
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_shower_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    26.2,
+    207.5,
+    150,
+    208.7
+   ],
+   "z": [
+    310,
+    515
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_rainhead",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    90,
+    245
+   ],
+   "r": 15,
+   "z": [
+    548,
+    550
+   ],
+   "kind": "light",
+   "emissive": false
   }
  ],
  "extra_ceilings": [

@@ -299,6 +299,7 @@ export function buildScene(plan, opts = {}, ds) {
       m = new THREE.Mesh(new THREE.TorusGeometry(d.R, d.tube, 10, 72), new THREE.MeshBasicMaterial({ color: 0xfff6e8 }));
       m.rotation.x = Math.PI / 2; m.position.set(d.center[0], d.center[2], d.center[1]);
     }
+    if (d.mat === 'glass') { m.material.transparent = true; m.material.opacity = 0.28; m.userData.glass = true; }
     if (d.kind === 'light' || d.emissive) m.castShadow = false;
     add(d.id, d.kind === 'exterior' ? 'exterior' : d.kind, m, key);
     if (d.kind === 'light' || d.emissive) m.castShadow = false;
