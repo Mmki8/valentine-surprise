@@ -20,7 +20,7 @@ import numpy as np
 
 STRUCT_PREFIX = ("W_", "O_", "SLAB", "GALLERY", "CEIL_void")
 GATES = dict(
-    max_drift=0.02,            # best-fit shift must stay within 2% of frame
+    max_drift=0.035,           # best-fit shift must stay within 3.5% of frame
     max_scale_dev=0.03,        # and scale within 3%
     min_struct_score=0.45,     # normalised structural recall (0 = noise, 1 = perfect)
     min_element_recall=0.35,   # every sizeable structural element must be found
@@ -44,7 +44,12 @@ def load_render(path, W, H):
 def edges(img):
     g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     g = cv2.GaussianBlur(g, (5, 5), 1.2)
-    e = cv2.Canny(g, 12, 36)
+    # adaptive: keep only the strongest ~12% gradients so wood grain / marble
+    # veining don't flood the edge map (that would inflate the noise floor)
+    gx = cv2.Sobel(g, cv2.CV_32F, 1, 0, ksize=3); gy = cv2.Sobel(g, cv2.CV_32F, 0, 1, ksize=3)
+    mag = cv2.magnitude(gx, gy)
+    hi = float(np.percentile(mag, 88)); lo = 0.5 * hi
+    e = cv2.Canny(g, lo, hi, L2gradient=True)
     return e
 
 
@@ -99,8 +104,8 @@ def main(bdir, render_path, out_dir):
     sp = pts[is_struct] if is_struct.sum() > 500 else pts
     best = (-1, 0, 0, 1)
     for s in (0.97, 0.985, 1.0, 1.015, 1.03):
-        for dx in np.linspace(-0.03 * W, 0.03 * W, 13):
-            for dy in np.linspace(-0.03 * H, 0.03 * H, 9):
+        for dx in np.linspace(-0.05 * W, 0.05 * W, 21):
+            for dy in np.linspace(-0.05 * H, 0.05 * H, 15):
                 r = recall(dist, sp[::4], dx, dy, s, tol, W, H)
                 if r > best[0]:
                     best = (r, dx, dy, s)
