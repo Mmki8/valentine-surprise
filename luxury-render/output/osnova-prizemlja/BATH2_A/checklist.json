@@ -2,7 +2,7 @@
  "camera": "BATH2_A",
  "room": "U_R_bath2",
  "hero": null,
- "mood": "mood_bath_dark_ring.jpg",
+ "mood": null,
  "materials": [
   "slate_rough",
   "vanity_dark_stone",

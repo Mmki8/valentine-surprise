@@ -2,7 +2,7 @@
  "camera": "BED1_A",
  "room": "U_R_bed1",
  "hero": null,
- "mood": "mood_bed_cove_slats.jpg",
+ "mood": null,
  "materials": [
   "plaster_cove_white",
   "oak_panel_dark",

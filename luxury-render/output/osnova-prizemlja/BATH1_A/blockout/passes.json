@@ -15,8 +15,8 @@
   ],
   "hfov": 98,
   "shift_y": -0.14,
-  "rig": "dusk",
-  "exposure": 1.35,
+  "notes": "The white box at the bottom left, under the window, is a wall-hung square white toilet seen from slightly above: show its slim white lid and seat and the black flush plate on the wall above it. The camera stands inside the shower: the clear glass screen runs through the left part of the frame.",
+  "relight_from": "e6d63dd0-161e-4b29-81cd-dcff75dbd32d",
   "W": 1600,
   "H": 900,
   "projection": [
@@ -384,7 +384,7 @@
   {
    "id": "CEIL_upper_void0",
    "kind": "ceiling",
-   "mat": "plaster_white",
+   "mat": "walnut_slats",
    "rgb": [
     108,
     224,
@@ -394,7 +394,7 @@
   {
    "id": "CEIL_upper_void1",
    "kind": "ceiling",
-   "mat": "plaster_white",
+   "mat": "walnut_slats",
    "rgb": [
     238,
     58,
@@ -3332,9 +3332,9 @@
    ]
   },
   {
-   "id": "F_stair_balustrade",
-   "kind": "glass",
-   "mat": "glass",
+   "id": "F_stair_19",
+   "kind": "stair",
+   "mat": "stair_walnut",
    "rgb": [
     65,
     31,
@@ -3342,9 +3342,9 @@
    ]
   },
   {
-   "id": "F_k_duct",
-   "kind": "box",
-   "mat": "box_slats",
+   "id": "F_stair_20",
+   "kind": "stair",
+   "mat": "stair_walnut",
    "rgb": [
     90,
     242,
@@ -3352,9 +3352,9 @@
    ]
   },
   {
-   "id": "F_k_run_north",
-   "kind": "counter",
-   "mat": "walnut_cabinet",
+   "id": "F_stair_balustrade",
+   "kind": "glass",
+   "mat": "glass",
    "rgb": [
     203,
     77,
@@ -3362,9 +3362,9 @@
    ]
   },
   {
-   "id": "F_k_run_north_plinth",
-   "kind": "counter",
-   "mat": "groove_dark",
+   "id": "F_k_duct",
+   "kind": "box",
+   "mat": "box_slats",
    "rgb": [
     29,
     129,
@@ -3372,9 +3372,9 @@
    ]
   },
   {
-   "id": "F_k_run_north_top",
+   "id": "F_k_run_north",
    "kind": "counter",
-   "mat": "worktop_marble",
+   "mat": "walnut_cabinet",
    "rgb": [
     153,
     174,
@@ -3382,9 +3382,9 @@
    ]
   },
   {
-   "id": "F_k_fridge",
-   "kind": "tall_cabinet",
-   "mat": "black_glass_tall",
+   "id": "F_k_run_north_plinth",
+   "kind": "counter",
+   "mat": "groove_dark",
    "rgb": [
     204,
     108,
@@ -3392,9 +3392,9 @@
    ]
   },
   {
-   "id": "F_k_run_west",
+   "id": "F_k_run_north_top",
    "kind": "counter",
-   "mat": "walnut_cabinet",
+   "mat": "worktop_marble",
    "rgb": [
     43,
     238,
@@ -3402,9 +3402,9 @@
    ]
   },
   {
-   "id": "F_k_run_west_plinth",
-   "kind": "counter",
-   "mat": "groove_dark",
+   "id": "F_k_fridge",
+   "kind": "tall_cabinet",
+   "mat": "black_glass_tall",
    "rgb": [
     178,
     83,
@@ -3412,9 +3412,9 @@
    ]
   },
   {
-   "id": "F_k_run_west_top",
+   "id": "F_k_run_west",
    "kind": "counter",
-   "mat": "worktop_marble",
+   "mat": "walnut_cabinet",
    "rgb": [
     22,
     28,
@@ -3422,9 +3422,9 @@
    ]
   },
   {
-   "id": "F_k_sink",
-   "kind": "sink",
-   "mat": "black_metal",
+   "id": "F_k_run_west_plinth",
+   "kind": "counter",
+   "mat": "groove_dark",
    "rgb": [
     138,
     251,
@@ -3432,9 +3432,9 @@
    ]
   },
   {
-   "id": "F_k_cooktop",
-   "kind": "cooktop",
-   "mat": "black_metal",
+   "id": "F_k_run_west_top",
+   "kind": "counter",
+   "mat": "worktop_marble",
    "rgb": [
     215,
     66,
@@ -3442,9 +3442,9 @@
    ]
   },
   {
-   "id": "F_k_island",
-   "kind": "island",
-   "mat": "marble_island",
+   "id": "F_k_sink",
+   "kind": "sink",
+   "mat": "black_metal",
    "rgb": [
     17,
     196,
@@ -3452,9 +3452,9 @@
    ]
   },
   {
-   "id": "F_k_island_top",
-   "kind": "island",
-   "mat": "marble_island",
+   "id": "F_k_cooktop",
+   "kind": "cooktop",
+   "mat": "black_metal",
    "rgb": [
     138,
     118,
@@ -3462,9 +3462,9 @@
    ]
   },
   {
-   "id": "F_k_stool_1",
-   "kind": "stool",
-   "mat": "stool_black",
+   "id": "F_k_island",
+   "kind": "island",
+   "mat": "marble_island",
    "rgb": [
     165,
     99,
@@ -3472,9 +3472,9 @@
    ]
   },
   {
-   "id": "F_k_stool_1_back",
-   "kind": "stool",
-   "mat": "stool_black",
+   "id": "F_k_island_top",
+   "kind": "island",
+   "mat": "marble_island",
    "rgb": [
     31,
     249,
@@ -3482,9 +3482,9 @@
    ]
   },
   {
-   "id": "F_k_stool_1_leg",
+   "id": "F_k_stool_1",
    "kind": "stool",
-   "mat": "walnut_panel",
+   "mat": "stool_black",
    "rgb": [
     189,
     40,
@@ -3492,7 +3492,7 @@
    ]
   },
   {
-   "id": "F_k_stool_2",
+   "id": "F_k_stool_1_back",
    "kind": "stool",
    "mat": "stool_black",
    "rgb": [
@@ -3502,9 +3502,9 @@
    ]
   },
   {
-   "id": "F_k_stool_2_back",
+   "id": "F_k_stool_1_leg",
    "kind": "stool",
-   "mat": "stool_black",
+   "mat": "walnut_panel",
    "rgb": [
     182,
     215,
@@ -3512,9 +3512,9 @@
    ]
   },
   {
-   "id": "F_k_stool_2_leg",
+   "id": "F_k_stool_2",
    "kind": "stool",
-   "mat": "walnut_panel",
+   "mat": "stool_black",
    "rgb": [
     226,
     54,
@@ -3522,7 +3522,7 @@
    ]
   },
   {
-   "id": "F_k_stool_3",
+   "id": "F_k_stool_2_back",
    "kind": "stool",
    "mat": "stool_black",
    "rgb": [
@@ -3532,9 +3532,9 @@
    ]
   },
   {
-   "id": "F_k_stool_3_back",
+   "id": "F_k_stool_2_leg",
    "kind": "stool",
-   "mat": "stool_black",
+   "mat": "walnut_panel",
    "rgb": [
     147,
     84,
@@ -3542,9 +3542,9 @@
    ]
   },
   {
-   "id": "F_k_stool_3_leg",
+   "id": "F_k_stool_3",
    "kind": "stool",
-   "mat": "walnut_panel",
+   "mat": "stool_black",
    "rgb": [
     115,
     90,
@@ -3552,9 +3552,9 @@
    ]
   },
   {
-   "id": "F_d_table",
-   "kind": "table",
-   "mat": "walnut_table",
+   "id": "F_k_stool_3_back",
+   "kind": "stool",
+   "mat": "stool_black",
    "rgb": [
     93,
     203,
@@ -3562,9 +3562,9 @@
    ]
   },
   {
-   "id": "F_d_table_leg",
-   "kind": "table",
-   "mat": "walnut_table",
+   "id": "F_k_stool_3_leg",
+   "kind": "stool",
+   "mat": "walnut_panel",
    "rgb": [
     201,
     29,
@@ -3572,9 +3572,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n1",
-   "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "id": "F_d_table",
+   "kind": "table",
+   "mat": "walnut_table",
    "rgb": [
     4,
     125,
@@ -3582,9 +3582,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n1_back",
-   "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "id": "F_d_table_leg",
+   "kind": "table",
+   "mat": "walnut_table",
    "rgb": [
     224,
     223,
@@ -3592,9 +3592,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n1_leg",
+   "id": "F_d_chair_n1",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     180,
     43,
@@ -3602,7 +3602,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s1",
+   "id": "F_d_chair_n1_back",
    "kind": "chair",
    "mat": "leather_cognac_chair",
    "rgb": [
@@ -3612,9 +3612,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s1_back",
+   "id": "F_d_chair_n1_leg",
    "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "mat": "black_metal",
    "rgb": [
     156,
     38,
@@ -3622,9 +3622,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s1_leg",
+   "id": "F_d_chair_s1",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     81,
     110,
@@ -3632,7 +3632,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n2",
+   "id": "F_d_chair_s1_back",
    "kind": "chair",
    "mat": "leather_cognac_chair",
    "rgb": [
@@ -3642,9 +3642,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n2_back",
+   "id": "F_d_chair_s1_leg",
    "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "mat": "black_metal",
    "rgb": [
     212,
     17,
@@ -3652,9 +3652,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n2_leg",
+   "id": "F_d_chair_n2",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     40,
     138,
@@ -3662,7 +3662,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s2",
+   "id": "F_d_chair_n2_back",
    "kind": "chair",
    "mat": "leather_cognac_chair",
    "rgb": [
@@ -3672,9 +3672,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s2_back",
+   "id": "F_d_chair_n2_leg",
    "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "mat": "black_metal",
    "rgb": [
     112,
     31,
@@ -3682,9 +3682,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s2_leg",
+   "id": "F_d_chair_s2",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     40,
     189,
@@ -3692,7 +3692,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n3",
+   "id": "F_d_chair_s2_back",
    "kind": "chair",
    "mat": "leather_cognac_chair",
    "rgb": [
@@ -3702,9 +3702,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n3_back",
+   "id": "F_d_chair_s2_leg",
    "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "mat": "black_metal",
    "rgb": [
     117,
     166,
@@ -3712,9 +3712,9 @@
    ]
   },
   {
-   "id": "F_d_chair_n3_leg",
+   "id": "F_d_chair_n3",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     191,
     226,
@@ -3722,7 +3722,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s3",
+   "id": "F_d_chair_n3_back",
    "kind": "chair",
    "mat": "leather_cognac_chair",
    "rgb": [
@@ -3732,9 +3732,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s3_back",
+   "id": "F_d_chair_n3_leg",
    "kind": "chair",
-   "mat": "leather_cognac_chair",
+   "mat": "black_metal",
    "rgb": [
     31,
     147,
@@ -3742,9 +3742,9 @@
    ]
   },
   {
-   "id": "F_d_chair_s3_leg",
+   "id": "F_d_chair_s3",
    "kind": "chair",
-   "mat": "black_metal",
+   "mat": "leather_cognac_chair",
    "rgb": [
     242,
     140,
@@ -3752,9 +3752,9 @@
    ]
   },
   {
-   "id": "F_l_sofa_long",
-   "kind": "sofa",
-   "mat": "boucle_ivory",
+   "id": "F_d_chair_s3_back",
+   "kind": "chair",
+   "mat": "leather_cognac_chair",
    "rgb": [
     82,
     77,
@@ -3762,9 +3762,9 @@
    ]
   },
   {
-   "id": "F_l_sofa_long_back",
-   "kind": "sofa",
-   "mat": "boucle_ivory",
+   "id": "F_d_chair_s3_leg",
+   "kind": "chair",
+   "mat": "black_metal",
    "rgb": [
     73,
     201,
@@ -3772,7 +3772,7 @@
    ]
   },
   {
-   "id": "F_l_sofa_return",
+   "id": "F_l_sofa_long",
    "kind": "sofa",
    "mat": "boucle_ivory",
    "rgb": [
@@ -3782,7 +3782,7 @@
    ]
   },
   {
-   "id": "F_l_sofa_return_back",
+   "id": "F_l_sofa_long_back",
    "kind": "sofa",
    "mat": "boucle_ivory",
    "rgb": [
@@ -3792,9 +3792,9 @@
    ]
   },
   {
-   "id": "F_l_table_1",
-   "kind": "coffee_table",
-   "mat": "oak_smoked_table",
+   "id": "F_l_sofa_return",
+   "kind": "sofa",
+   "mat": "boucle_ivory",
    "rgb": [
     238,
     212,
@@ -3802,9 +3802,9 @@
    ]
   },
   {
-   "id": "F_l_table_1_base",
-   "kind": "coffee_table",
-   "mat": "oak_smoked_table",
+   "id": "F_l_sofa_return_back",
+   "kind": "sofa",
+   "mat": "boucle_ivory",
    "rgb": [
     124,
     52,
@@ -3812,7 +3812,7 @@
    ]
   },
   {
-   "id": "F_l_table_2",
+   "id": "F_l_table_1",
    "kind": "coffee_table",
    "mat": "oak_smoked_table",
    "rgb": [
@@ -3822,7 +3822,7 @@
    ]
   },
   {
-   "id": "F_l_table_2_base",
+   "id": "F_l_table_1_base",
    "kind": "coffee_table",
    "mat": "oak_smoked_table",
    "rgb": [
@@ -3832,9 +3832,9 @@
    ]
   },
   {
-   "id": "F_l_armchair_1",
-   "kind": "armchair",
-   "mat": "leather_cognac",
+   "id": "F_l_table_2",
+   "kind": "coffee_table",
+   "mat": "oak_smoked_table",
    "rgb": [
     66,
     110,
@@ -3842,9 +3842,9 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_back",
-   "kind": "armchair",
-   "mat": "leather_cognac",
+   "id": "F_l_table_2_base",
+   "kind": "coffee_table",
+   "mat": "oak_smoked_table",
    "rgb": [
     132,
     212,
@@ -3852,7 +3852,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_armW",
+   "id": "F_l_armchair_1",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3862,7 +3862,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_armE",
+   "id": "F_l_armchair_1_back",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3872,7 +3872,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_2",
+   "id": "F_l_armchair_1_armW",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3882,7 +3882,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_2_back",
+   "id": "F_l_armchair_1_armE",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3892,7 +3892,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_2_armW",
+   "id": "F_l_armchair_2",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3902,7 +3902,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_2_armE",
+   "id": "F_l_armchair_2_back",
    "kind": "armchair",
    "mat": "leather_cognac",
    "rgb": [
@@ -3912,9 +3912,9 @@
    ]
   },
   {
-   "id": "F_l_tv_unit",
-   "kind": "low_cabinet",
-   "mat": "walnut_console",
+   "id": "F_l_armchair_2_armW",
+   "kind": "armchair",
+   "mat": "leather_cognac",
    "rgb": [
     54,
     163,
@@ -3922,9 +3922,9 @@
    ]
   },
   {
-   "id": "F_l_tv",
-   "kind": "tv",
-   "mat": "tv_black",
+   "id": "F_l_armchair_2_armE",
+   "kind": "armchair",
+   "mat": "leather_cognac",
    "rgb": [
     207,
     224,
@@ -3932,9 +3932,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_base",
-   "kind": "bed",
-   "mat": "bed_upholstered_cream",
+   "id": "F_l_tv_unit",
+   "kind": "low_cabinet",
+   "mat": "walnut_console",
    "rgb": [
     122,
     31,
@@ -3942,9 +3942,9 @@
    ]
   },
   {
-   "id": "U_F_bed1",
-   "kind": "bed",
-   "mat": "bedding_olive",
+   "id": "F_l_tv",
+   "kind": "tv",
+   "mat": "tv_black",
    "rgb": [
     90,
     242,
@@ -3952,9 +3952,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_head",
+   "id": "U_F_bed1_base",
    "kind": "bed",
-   "mat": "headboard_tufted_cream",
+   "mat": "bed_upholstered_cream",
    "rgb": [
     203,
     102,
@@ -3962,9 +3962,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_pillow",
+   "id": "U_F_bed1",
    "kind": "bed",
-   "mat": "pillow_cream",
+   "mat": "bedding_olive",
    "rgb": [
     29,
     45,
@@ -3972,9 +3972,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_throw",
+   "id": "U_F_bed1_head",
    "kind": "bed",
-   "mat": "throw_chevron",
+   "mat": "headboard_tufted_cream",
    "rgb": [
     70,
     174,
@@ -3982,9 +3982,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_ns1",
-   "kind": "nightstand",
-   "mat": "walnut_console",
+   "id": "U_F_bed1_pillow",
+   "kind": "bed",
+   "mat": "pillow_cream",
    "rgb": [
     224,
     108,
@@ -3992,9 +3992,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_ns2",
-   "kind": "nightstand",
-   "mat": "walnut_console",
+   "id": "U_F_bed1_throw",
+   "kind": "bed",
+   "mat": "throw_chevron",
    "rgb": [
     43,
     231,
@@ -4002,8 +4002,8 @@
    ]
   },
   {
-   "id": "U_F_bed1_tvunit",
-   "kind": "low_cabinet",
+   "id": "U_F_bed1_ns1",
+   "kind": "nightstand",
    "mat": "walnut_console",
    "rgb": [
     178,
@@ -4012,9 +4012,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_tv",
-   "kind": "tv",
-   "mat": "tv_black",
+   "id": "U_F_bed1_ns2",
+   "kind": "nightstand",
+   "mat": "walnut_console",
    "rgb": [
     82,
     22,
@@ -4022,9 +4022,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_wr1",
-   "kind": "tall_cabinet",
-   "mat": "wardrobe_oak_dark",
+   "id": "U_F_bed1_tvunit",
+   "kind": "low_cabinet",
+   "mat": "walnut_console",
    "rgb": [
     81,
     251,
@@ -4032,9 +4032,9 @@
    ]
   },
   {
-   "id": "U_F_bed1_wr2",
-   "kind": "tall_cabinet",
-   "mat": "wardrobe_oak_dark",
+   "id": "U_F_bed1_tv",
+   "kind": "tv",
+   "mat": "tv_black",
    "rgb": [
     215,
     66,
@@ -4042,9 +4042,9 @@
    ]
   },
   {
-   "id": "U_F_bath1_vanity",
-   "kind": "vanity",
-   "mat": "walnut_counter",
+   "id": "U_F_bed1_wr1",
+   "kind": "tall_cabinet",
+   "mat": "wardrobe_oak_dark",
    "rgb": [
     17,
     100,
@@ -4052,9 +4052,9 @@
    ]
   },
   {
-   "id": "U_F_bath1_wc",
-   "kind": "toilet",
-   "mat": "toilet_white",
+   "id": "U_F_bed1_wr2",
+   "kind": "tall_cabinet",
+   "mat": "wardrobe_oak_dark",
    "rgb": [
     111,
     138,
@@ -4062,13 +4062,33 @@
    ]
   },
   {
-   "id": "U_F_bath1_shower",
-   "kind": "shower",
-   "mat": "stone_cream_floor",
+   "id": "U_F_bath1_vanity",
+   "kind": "vanity",
+   "mat": "walnut_counter",
    "rgb": [
     231,
     99,
     233
+   ]
+  },
+  {
+   "id": "U_F_bath1_wc",
+   "kind": "toilet",
+   "mat": "toilet_white",
+   "rgb": [
+    31,
+    249,
+    183
+   ]
+  },
+  {
+   "id": "U_F_bath1_shower",
+   "kind": "shower",
+   "mat": "stone_cream_floor",
+   "rgb": [
+    189,
+    101,
+    40
    ]
   },
   {
@@ -4077,8 +4097,8 @@
    "mat": "marble_grey_floor",
    "rgb": [
     31,
-    249,
-    183
+    13,
+    165
    ]
   },
   {
@@ -4086,9 +4106,9 @@
    "kind": "toilet",
    "mat": "toilet_white",
    "rgb": [
-    189,
-    101,
-    40
+    134,
+    215,
+    117
    ]
   },
   {
@@ -4096,9 +4116,9 @@
    "kind": "vanity",
    "mat": "vanity_dark_stone",
    "rgb": [
-    31,
-    13,
-    165
+    226,
+    54,
+    135
    ]
   },
   {
@@ -4106,9 +4126,9 @@
    "kind": "bed",
    "mat": "bed_upholstered_sand",
    "rgb": [
-    134,
-    215,
-    117
+    6,
+    172,
+    224
    ]
   },
   {
@@ -4116,9 +4136,9 @@
    "kind": "bed",
    "mat": "duvet_charcoal",
    "rgb": [
-    226,
-    54,
-    135
+    147,
+    141,
+    31
    ]
   },
   {
@@ -4126,9 +4146,9 @@
    "kind": "bed",
    "mat": "headboard_channel_sand",
    "rgb": [
-    6,
-    172,
-    224
+    189,
+    90,
+    242
    ]
   },
   {
@@ -4136,9 +4156,9 @@
    "kind": "bed",
    "mat": "pillow_grey",
    "rgb": [
-    147,
-    141,
-    31
+    77,
+    203,
+    123
    ]
   },
   {
@@ -4146,9 +4166,9 @@
    "kind": "bed",
    "mat": "throw_black_knit",
    "rgb": [
-    189,
-    90,
-    242
+    201,
+    41,
+    29
    ]
   },
   {
@@ -4156,9 +4176,9 @@
    "kind": "nightstand",
    "mat": "nightstand_black",
    "rgb": [
-    77,
-    203,
-    123
+    4,
+    42,
+    174
    ]
   },
   {
@@ -4166,9 +4186,9 @@
    "kind": "nightstand",
    "mat": "nightstand_black",
    "rgb": [
-    201,
-    41,
-    29
+    167,
+    224,
+    108
    ]
   },
   {
@@ -4176,9 +4196,9 @@
    "kind": "tall_cabinet",
    "mat": "wardrobe_black_glass",
    "rgb": [
-    4,
-    42,
-    174
+    238,
+    43,
+    199
    ]
   },
   {
@@ -4186,9 +4206,9 @@
    "kind": "tall_cabinet",
    "mat": "wardrobe_black_glass",
    "rgb": [
-    167,
-    224,
-    108
+    52,
+    178,
+    166
    ]
   },
   {
@@ -4196,9 +4216,9 @@
    "kind": "low_cabinet",
    "mat": "console_black",
    "rgb": [
-    238,
-    43,
-    199
+    156,
+    104,
+    22
    ]
   },
   {
@@ -4206,9 +4226,9 @@
    "kind": "tv",
    "mat": "tv_black",
    "rgb": [
-    52,
-    178,
-    166
+    135,
+    81,
+    251
    ]
   },
   {
@@ -4216,9 +4236,9 @@
    "kind": "vanity",
    "mat": "walnut_counter",
    "rgb": [
-    156,
-    104,
-    22
+    66,
+    215,
+    70
    ]
   },
   {
@@ -4226,9 +4246,9 @@
    "kind": "shower",
    "mat": "stone_cream_floor",
    "rgb": [
-    135,
-    81,
-    251
+    212,
+    17,
+    68
    ]
   },
   {
@@ -4236,9 +4256,9 @@
    "kind": "toilet",
    "mat": "toilet_white",
    "rgb": [
-    66,
-    215,
-    70
+    40,
+    95,
+    138
    ]
   },
   {
@@ -4247,8 +4267,8 @@
    "mat": "bed_upholstered_cream",
    "rgb": [
     212,
-    17,
-    68
+    233,
+    99
    ]
   },
   {
@@ -4256,9 +4276,9 @@
    "kind": "bed",
    "mat": "bedding_olive",
    "rgb": [
-    40,
-    95,
-    138
+    219,
+    31,
+    249
    ]
   },
   {
@@ -4266,9 +4286,9 @@
    "kind": "bed",
    "mat": "headboard_tufted_cream",
    "rgb": [
-    212,
-    233,
-    99
+    40,
+    189,
+    125
    ]
   },
   {
@@ -4276,9 +4296,9 @@
    "kind": "bed",
    "mat": "pillow_cream",
    "rgb": [
-    219,
-    31,
-    249
+    165,
+    56,
+    13
    ]
   },
   {
@@ -4286,9 +4306,9 @@
    "kind": "bed",
    "mat": "throw_chevron",
    "rgb": [
-    40,
-    189,
-    125
+    117,
+    118,
+    215
    ]
   },
   {
@@ -4296,9 +4316,9 @@
    "kind": "nightstand",
    "mat": "walnut_console",
    "rgb": [
-    165,
-    56,
-    13
+    107,
+    226,
+    54
    ]
   },
   {
@@ -4306,9 +4326,9 @@
    "kind": "nightstand",
    "mat": "walnut_console",
    "rgb": [
-    117,
-    118,
-    215
+    224,
+    6,
+    136
    ]
   },
   {
@@ -4316,33 +4336,13 @@
    "kind": "tall_cabinet",
    "mat": "wardrobe_oak_dark",
    "rgb": [
-    107,
-    226,
-    54
-   ]
-  },
-  {
-   "id": "U_F_rail1",
-   "kind": "glass",
-   "mat": "glass",
-   "rgb": [
-    224,
-    6,
-    136
-   ]
-  },
-  {
-   "id": "U_F_rail2",
-   "kind": "glass",
-   "mat": "glass",
-   "rgb": [
     31,
     134,
     147
    ]
   },
   {
-   "id": "U_F_rail3",
+   "id": "U_F_rail2",
    "kind": "glass",
    "mat": "glass",
    "rgb": [
@@ -4352,9 +4352,9 @@
    ]
   },
   {
-   "id": "D_liv_bronze_wall",
-   "kind": "panel",
-   "mat": "bronze_panels",
+   "id": "U_F_rail3",
+   "kind": "glass",
+   "mat": "glass",
    "rgb": [
     144,
     77,
@@ -4362,9 +4362,9 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rv1081",
+   "id": "D_liv_bronze_wall",
    "kind": "panel",
-   "mat": "reveal_dark",
+   "mat": "bronze_panels",
    "rgb": [
     29,
     201,
@@ -4372,7 +4372,7 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rv1198",
+   "id": "D_liv_bronze_rv1081",
    "kind": "panel",
    "mat": "reveal_dark",
    "rgb": [
@@ -4382,7 +4382,7 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rv1316",
+   "id": "D_liv_bronze_rv1198",
    "kind": "panel",
    "mat": "reveal_dark",
    "rgb": [
@@ -4392,7 +4392,7 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rh140",
+   "id": "D_liv_bronze_rv1316",
    "kind": "panel",
    "mat": "reveal_dark",
    "rgb": [
@@ -4402,7 +4402,7 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rh280",
+   "id": "D_liv_bronze_rh140",
    "kind": "panel",
    "mat": "reveal_dark",
    "rgb": [
@@ -4412,7 +4412,7 @@
    ]
   },
   {
-   "id": "D_liv_bronze_rh420",
+   "id": "D_liv_bronze_rh280",
    "kind": "panel",
    "mat": "reveal_dark",
    "rgb": [
@@ -4422,9 +4422,9 @@
    ]
   },
   {
-   "id": "D_liv_ring_1",
-   "kind": "light",
-   "mat": "crystal_ring",
+   "id": "D_liv_bronze_rh420",
+   "kind": "panel",
+   "mat": "reveal_dark",
    "rgb": [
     251,
     163,
@@ -4432,7 +4432,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_2",
+   "id": "D_liv_ring_1",
    "kind": "light",
    "mat": "crystal_ring",
    "rgb": [
@@ -4442,9 +4442,9 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable0",
+   "id": "D_liv_ring_2",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "crystal_ring",
    "rgb": [
     36,
     212,
@@ -4452,7 +4452,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable1",
+   "id": "D_liv_ring_cable0",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4462,7 +4462,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable2",
+   "id": "D_liv_ring_cable1",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4472,7 +4472,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable3",
+   "id": "D_liv_ring_cable2",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4482,7 +4482,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable4",
+   "id": "D_liv_ring_cable3",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4492,7 +4492,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable5",
+   "id": "D_liv_ring_cable4",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4502,7 +4502,7 @@
    ]
   },
   {
-   "id": "D_liv_ring_cable6",
+   "id": "D_liv_ring_cable5",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4512,9 +4512,9 @@
    ]
   },
   {
-   "id": "D_liv_rug",
-   "kind": "decor",
-   "mat": "rug_sand",
+   "id": "D_liv_ring_cable6",
+   "kind": "light",
+   "mat": "cable_black",
    "rgb": [
     54,
     78,
@@ -4522,9 +4522,9 @@
    ]
   },
   {
-   "id": "D_liv_olive_pot",
+   "id": "D_liv_rug",
    "kind": "decor",
-   "mat": "stone_pot",
+   "mat": "rug_sand",
    "rgb": [
     100,
     224,
@@ -4532,9 +4532,9 @@
    ]
   },
   {
-   "id": "D_liv_olive_trunk",
+   "id": "D_liv_olive_pot",
    "kind": "decor",
-   "mat": "olive_trunk",
+   "mat": "stone_pot",
    "rgb": [
     147,
     31,
@@ -4542,9 +4542,9 @@
    ]
   },
   {
-   "id": "D_liv_olive_crown",
+   "id": "D_liv_olive_trunk",
    "kind": "decor",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     90,
     242,
@@ -4552,9 +4552,9 @@
    ]
   },
   {
-   "id": "D_liv_media_wall",
-   "kind": "panel",
-   "mat": "walnut_panel",
+   "id": "D_liv_olive_crown",
+   "kind": "decor",
+   "mat": "olive_foliage",
    "rgb": [
     203,
     164,
@@ -4562,9 +4562,9 @@
    ]
   },
   {
-   "id": "D_liv_curtain_e",
-   "kind": "decor",
-   "mat": "sheer_linen",
+   "id": "D_liv_media_wall",
+   "kind": "panel",
+   "mat": "walnut_panel",
    "rgb": [
     98,
     29,
@@ -4572,7 +4572,7 @@
    ]
   },
   {
-   "id": "D_liv_curtain_s",
+   "id": "D_liv_curtain_e",
    "kind": "decor",
    "mat": "sheer_linen",
    "rgb": [
@@ -4582,9 +4582,9 @@
    ]
   },
   {
-   "id": "D_liv_cushion0",
+   "id": "D_liv_curtain_s",
    "kind": "decor",
-   "mat": "cushion_navy",
+   "mat": "sheer_linen",
    "rgb": [
     224,
     108,
@@ -4592,9 +4592,9 @@
    ]
   },
   {
-   "id": "D_liv_cushion1",
+   "id": "D_liv_cushion0",
    "kind": "decor",
-   "mat": "cushion_cognac",
+   "mat": "cushion_navy",
    "rgb": [
     43,
     135,
@@ -4602,7 +4602,7 @@
    ]
   },
   {
-   "id": "D_liv_cushion2",
+   "id": "D_liv_cushion1",
    "kind": "decor",
    "mat": "cushion_cognac",
    "rgb": [
@@ -4612,9 +4612,9 @@
    ]
   },
   {
-   "id": "D_liv_cushion3",
+   "id": "D_liv_cushion2",
    "kind": "decor",
-   "mat": "cushion_navy",
+   "mat": "cushion_cognac",
    "rgb": [
     148,
     22,
@@ -4622,7 +4622,7 @@
    ]
   },
   {
-   "id": "D_liv_cushion4",
+   "id": "D_liv_cushion3",
    "kind": "decor",
    "mat": "cushion_navy",
    "rgb": [
@@ -4632,9 +4632,9 @@
    ]
   },
   {
-   "id": "D_liv_books",
+   "id": "D_liv_cushion4",
    "kind": "decor",
-   "mat": "books_neutral",
+   "mat": "cushion_navy",
    "rgb": [
     215,
     119,
@@ -4642,9 +4642,9 @@
    ]
   },
   {
-   "id": "D_liv_coral",
+   "id": "D_liv_books",
    "kind": "decor",
-   "mat": "coral_white",
+   "mat": "books_neutral",
    "rgb": [
     30,
     17,
@@ -4652,9 +4652,9 @@
    ]
   },
   {
-   "id": "D_liv_bowl",
+   "id": "D_liv_coral",
    "kind": "decor",
-   "mat": "ceramic_dark",
+   "mat": "coral_white",
    "rgb": [
     62,
     138,
@@ -4662,9 +4662,9 @@
    ]
   },
   {
-   "id": "D_liv_led470",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_liv_bowl",
+   "kind": "decor",
+   "mat": "ceramic_dark",
    "rgb": [
     233,
     99,
@@ -4672,7 +4672,7 @@
    ]
   },
   {
-   "id": "D_liv_led660",
+   "id": "D_liv_led470",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -4682,7 +4682,7 @@
    ]
   },
   {
-   "id": "D_liv_led850",
+   "id": "D_liv_led660",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -4692,9 +4692,9 @@
    ]
   },
   {
-   "id": "D_k_backsplash_n",
-   "kind": "panel",
-   "mat": "stone_backsplash",
+   "id": "D_liv_led850",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     105,
     13,
@@ -4702,7 +4702,7 @@
    ]
   },
   {
-   "id": "D_k_backsplash_w",
+   "id": "D_k_backsplash_n",
    "kind": "panel",
    "mat": "stone_backsplash",
    "rgb": [
@@ -4712,9 +4712,9 @@
    ]
   },
   {
-   "id": "D_k_shelf",
-   "kind": "decor",
-   "mat": "walnut_shelf",
+   "id": "D_k_backsplash_w",
+   "kind": "panel",
+   "mat": "stone_backsplash",
    "rgb": [
     226,
     58,
@@ -4722,9 +4722,9 @@
    ]
   },
   {
-   "id": "D_k_shelf_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_k_shelf",
+   "kind": "decor",
+   "mat": "walnut_shelf",
    "rgb": [
     6,
     64,
@@ -4732,7 +4732,7 @@
    ]
   },
   {
-   "id": "D_k_counter_led",
+   "id": "D_k_shelf_led",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -4742,9 +4742,9 @@
    ]
   },
   {
-   "id": "D_k_n_split723",
-   "kind": "panel",
-   "mat": "groove_dark",
+   "id": "D_k_counter_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     242,
     90,
@@ -4752,7 +4752,7 @@
    ]
   },
   {
-   "id": "D_k_n_split783",
+   "id": "D_k_n_split723",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4762,7 +4762,7 @@
    ]
   },
   {
-   "id": "D_k_n_split843",
+   "id": "D_k_n_split783",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4772,7 +4772,7 @@
    ]
   },
   {
-   "id": "D_k_n_drawer35",
+   "id": "D_k_n_split843",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4782,7 +4782,7 @@
    ]
   },
   {
-   "id": "D_k_n_drawer62",
+   "id": "D_k_n_drawer35",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4792,7 +4792,7 @@
    ]
   },
   {
-   "id": "D_k_w_split434",
+   "id": "D_k_n_drawer62",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4802,7 +4802,7 @@
    ]
   },
   {
-   "id": "D_k_w_split494",
+   "id": "D_k_w_split434",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4812,7 +4812,7 @@
    ]
   },
   {
-   "id": "D_k_w_split554",
+   "id": "D_k_w_split494",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4822,7 +4822,7 @@
    ]
   },
   {
-   "id": "D_k_w_drawer35",
+   "id": "D_k_w_split554",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4832,7 +4832,7 @@
    ]
   },
   {
-   "id": "D_k_w_drawer62",
+   "id": "D_k_w_drawer35",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4842,7 +4842,7 @@
    ]
   },
   {
-   "id": "D_k_fridge_split",
+   "id": "D_k_w_drawer62",
    "kind": "panel",
    "mat": "groove_dark",
    "rgb": [
@@ -4852,9 +4852,9 @@
    ]
   },
   {
-   "id": "D_k_pendant_island",
-   "kind": "light",
-   "mat": "pendant_bronze",
+   "id": "D_k_fridge_split",
+   "kind": "panel",
+   "mat": "groove_dark",
    "rgb": [
     40,
     46,
@@ -4862,9 +4862,9 @@
    ]
   },
   {
-   "id": "D_k_pendant_island_led",
+   "id": "D_k_pendant_island",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_bronze",
    "rgb": [
     146,
     233,
@@ -4872,9 +4872,9 @@
    ]
   },
   {
-   "id": "D_k_pendant_island_c1",
+   "id": "D_k_pendant_island_led",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     249,
     31,
@@ -4882,7 +4882,7 @@
    ]
   },
   {
-   "id": "D_k_pendant_island_c2",
+   "id": "D_k_pendant_island_c1",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4892,9 +4892,9 @@
    ]
   },
   {
-   "id": "D_d_pendant",
+   "id": "D_k_pendant_island_c2",
    "kind": "light",
-   "mat": "pendant_bronze",
+   "mat": "cable_black",
    "rgb": [
     165,
     130,
@@ -4902,9 +4902,9 @@
    ]
   },
   {
-   "id": "D_d_pendant_led",
+   "id": "D_d_pendant",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_bronze",
    "rgb": [
     164,
     117,
@@ -4912,9 +4912,9 @@
    ]
   },
   {
-   "id": "D_d_pendant_c1",
+   "id": "D_d_pendant_led",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     54,
     226,
@@ -4922,7 +4922,7 @@
    ]
   },
   {
-   "id": "D_d_pendant_c2",
+   "id": "D_d_pendant_c1",
    "kind": "light",
    "mat": "cable_black",
    "rgb": [
@@ -4932,9 +4932,9 @@
    ]
   },
   {
-   "id": "D_k_led456",
+   "id": "D_d_pendant_c2",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "cable_black",
    "rgb": [
     31,
     77,
@@ -4942,7 +4942,7 @@
    ]
   },
   {
-   "id": "D_k_led680",
+   "id": "D_k_led456",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -4952,9 +4952,9 @@
    ]
   },
   {
-   "id": "D_k_lemons",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_k_led680",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     203,
     77,
@@ -4962,9 +4962,9 @@
    ]
   },
   {
-   "id": "D_k_lemons_fruit",
+   "id": "D_k_lemons",
    "kind": "decor",
-   "mat": "lemons",
+   "mat": "ceramic_dark",
    "rgb": [
     29,
     201,
@@ -4972,9 +4972,9 @@
    ]
   },
   {
-   "id": "D_k_vase",
+   "id": "D_k_lemons_fruit",
    "kind": "decor",
-   "mat": "ceramic_light",
+   "mat": "lemons",
    "rgb": [
     174,
     78,
@@ -4982,9 +4982,9 @@
    ]
   },
   {
-   "id": "D_k_vase_branches",
+   "id": "D_k_vase",
    "kind": "decor",
-   "mat": "olive_foliage",
+   "mat": "ceramic_light",
    "rgb": [
     125,
     108,
@@ -4992,9 +4992,9 @@
    ]
   },
   {
-   "id": "D_d_bowl",
+   "id": "D_k_vase_branches",
    "kind": "decor",
-   "mat": "ceramic_light",
+   "mat": "olive_foliage",
    "rgb": [
     71,
     238,
@@ -5002,9 +5002,9 @@
    ]
   },
   {
-   "id": "D_d_bowl_fruit",
+   "id": "D_d_bowl",
    "kind": "decor",
-   "mat": "lemons",
+   "mat": "ceramic_light",
    "rgb": [
     178,
     52,
@@ -5012,9 +5012,9 @@
    ]
   },
   {
-   "id": "D_k_board",
+   "id": "D_d_bowl_fruit",
    "kind": "decor",
-   "mat": "walnut_shelf",
+   "mat": "lemons",
    "rgb": [
     22,
     120,
@@ -5022,9 +5022,9 @@
    ]
   },
   {
-   "id": "D_h_battens",
-   "kind": "panel",
-   "mat": "walnut_battens",
+   "id": "D_k_board",
+   "kind": "decor",
+   "mat": "walnut_shelf",
    "rgb": [
     251,
     247,
@@ -5032,9 +5032,9 @@
    ]
   },
   {
-   "id": "D_h_art",
-   "kind": "decor",
-   "mat": "artwork_abstract",
+   "id": "D_h_battens",
+   "kind": "panel",
+   "mat": "walnut_battens",
    "rgb": [
     168,
     66,
@@ -5042,9 +5042,9 @@
    ]
   },
   {
-   "id": "D_h_pendant",
-   "kind": "light",
-   "mat": "pendant_bronze",
+   "id": "D_h_art",
+   "kind": "decor",
+   "mat": "artwork_abstract",
    "rgb": [
     17,
     212,
@@ -5052,9 +5052,9 @@
    ]
   },
   {
-   "id": "D_h_pendant_c",
+   "id": "D_h_pendant",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "pendant_bronze",
    "rgb": [
     138,
     50,
@@ -5062,9 +5062,9 @@
    ]
   },
   {
-   "id": "D_h_led",
+   "id": "D_h_pendant_c",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "cable_black",
    "rgb": [
     99,
     124,
@@ -5072,9 +5072,9 @@
    ]
   },
   {
-   "id": "D_spa_orchid_pot",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_h_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     136,
     249,
@@ -5082,9 +5082,9 @@
    ]
   },
   {
-   "id": "D_spa_orchid",
+   "id": "D_spa_orchid_pot",
    "kind": "decor",
-   "mat": "orchid_white",
+   "mat": "ceramic_dark",
    "rgb": [
     189,
     40,
@@ -5092,9 +5092,9 @@
    ]
   },
   {
-   "id": "D_spa_candle0",
-   "kind": "light",
-   "mat": "candle",
+   "id": "D_spa_orchid",
+   "kind": "decor",
+   "mat": "orchid_white",
    "rgb": [
     13,
     165,
@@ -5102,7 +5102,7 @@
    ]
   },
   {
-   "id": "D_spa_candle1",
+   "id": "D_spa_candle0",
    "kind": "light",
    "mat": "candle",
    "rgb": [
@@ -5112,7 +5112,7 @@
    ]
   },
   {
-   "id": "D_spa_candle2",
+   "id": "D_spa_candle1",
    "kind": "light",
    "mat": "candle",
    "rgb": [
@@ -5122,9 +5122,9 @@
    ]
   },
   {
-   "id": "D_spa_towels",
-   "kind": "decor",
-   "mat": "towels_charcoal",
+   "id": "D_spa_candle2",
+   "kind": "light",
+   "mat": "candle",
    "rgb": [
     6,
     224,
@@ -5132,9 +5132,9 @@
    ]
   },
   {
-   "id": "D_sauna_led_low",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_spa_towels",
+   "kind": "decor",
+   "mat": "towels_charcoal",
    "rgb": [
     147,
     31,
@@ -5142,7 +5142,7 @@
    ]
   },
   {
-   "id": "D_sauna_led_high",
+   "id": "D_sauna_led_low",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5152,9 +5152,9 @@
    ]
   },
   {
-   "id": "D_wc_mirror",
-   "kind": "panel",
-   "mat": "mirror_backlit",
+   "id": "D_sauna_led_high",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     180,
     203,
@@ -5162,9 +5162,9 @@
    ]
   },
   {
-   "id": "D_wc_mirror_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_wc_mirror",
+   "kind": "panel",
+   "mat": "mirror_backlit",
    "rgb": [
     182,
     29,
@@ -5172,9 +5172,9 @@
    ]
   },
   {
-   "id": "D_wc_orchid_pot",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_wc_mirror_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     4,
     174,
@@ -5182,9 +5182,9 @@
    ]
   },
   {
-   "id": "D_wc_orchid",
+   "id": "D_wc_orchid_pot",
    "kind": "decor",
-   "mat": "orchid_white",
+   "mat": "ceramic_dark",
    "rgb": [
     224,
     144,
@@ -5192,9 +5192,9 @@
    ]
   },
   {
-   "id": "D_g_led_x110",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_wc_orchid",
+   "kind": "decor",
+   "mat": "orchid_white",
    "rgb": [
     46,
     43,
@@ -5202,7 +5202,7 @@
    ]
   },
   {
-   "id": "D_g_led_x270",
+   "id": "D_g_led_x110",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5212,7 +5212,7 @@
    ]
   },
   {
-   "id": "D_g_led_y330",
+   "id": "D_g_led_x270",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5222,7 +5222,7 @@
    ]
   },
   {
-   "id": "D_g_led_y520",
+   "id": "D_g_led_y330",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5232,7 +5232,7 @@
    ]
   },
   {
-   "id": "D_g_led_y710",
+   "id": "D_g_led_y520",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5242,7 +5242,7 @@
    ]
   },
   {
-   "id": "D_g_step_led0",
+   "id": "D_g_led_y710",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5252,7 +5252,7 @@
    ]
   },
   {
-   "id": "D_g_step_led1",
+   "id": "D_g_step_led0",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5262,7 +5262,7 @@
    ]
   },
   {
-   "id": "D_g_step_led2",
+   "id": "D_g_step_led1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5272,9 +5272,9 @@
    ]
   },
   {
-   "id": "X_lawn0",
-   "kind": "exterior",
-   "mat": "lawn",
+   "id": "D_g_step_led2",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     31,
     100,
@@ -5282,7 +5282,7 @@
    ]
   },
   {
-   "id": "X_lawn1",
+   "id": "X_lawn0",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -5292,7 +5292,7 @@
    ]
   },
   {
-   "id": "X_lawn2",
+   "id": "X_lawn1",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -5302,7 +5302,7 @@
    ]
   },
   {
-   "id": "X_lawn3",
+   "id": "X_lawn2",
    "kind": "exterior",
    "mat": "lawn",
    "rgb": [
@@ -5312,9 +5312,9 @@
    ]
   },
   {
-   "id": "X_hedge_s",
+   "id": "X_lawn3",
    "kind": "exterior",
-   "mat": "hedge",
+   "mat": "lawn",
    "rgb": [
     226,
     143,
@@ -5322,7 +5322,7 @@
    ]
   },
   {
-   "id": "X_hedge_e",
+   "id": "X_hedge_s",
    "kind": "exterior",
    "mat": "hedge",
    "rgb": [
@@ -5332,9 +5332,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk0",
+   "id": "X_hedge_e",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "hedge",
    "rgb": [
     39,
     147,
@@ -5342,9 +5342,9 @@
    ]
   },
   {
-   "id": "X_tree_crown0",
+   "id": "X_tree_trunk0",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     242,
     90,
@@ -5352,9 +5352,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk1",
+   "id": "X_tree_crown0",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     77,
     159,
@@ -5362,9 +5362,9 @@
    ]
   },
   {
-   "id": "X_tree_crown1",
+   "id": "X_tree_trunk1",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     191,
     201,
@@ -5372,9 +5372,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk2",
+   "id": "X_tree_crown1",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     134,
     4,
@@ -5382,9 +5382,9 @@
    ]
   },
   {
-   "id": "X_tree_crown2",
+   "id": "X_tree_trunk2",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     108,
     224,
@@ -5392,9 +5392,9 @@
    ]
   },
   {
-   "id": "X_tree_trunk3",
+   "id": "X_tree_crown2",
    "kind": "exterior",
-   "mat": "olive_trunk",
+   "mat": "olive_foliage",
    "rgb": [
     238,
     78,
@@ -5402,9 +5402,9 @@
    ]
   },
   {
-   "id": "X_tree_crown3",
+   "id": "X_tree_trunk3",
    "kind": "exterior",
-   "mat": "olive_foliage",
+   "mat": "olive_trunk",
    "rgb": [
     52,
     66,
@@ -5412,9 +5412,9 @@
    ]
   },
   {
-   "id": "D_bed3_facet_wall",
-   "kind": "panel",
-   "mat": "walnut_facets",
+   "id": "X_tree_crown3",
+   "kind": "exterior",
+   "mat": "olive_foliage",
    "rgb": [
     76,
     156,
@@ -5422,7 +5422,7 @@
    ]
   },
   {
-   "id": "D_bed3_facet_canopy",
+   "id": "D_bed3_facet_wall",
    "kind": "panel",
    "mat": "walnut_facets",
    "rgb": [
@@ -5432,9 +5432,9 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w0",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bed3_facet_canopy",
+   "kind": "panel",
+   "mat": "walnut_facets",
    "rgb": [
     66,
     213,
@@ -5442,7 +5442,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w1",
+   "id": "D_bed3_seam_w0",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5452,7 +5452,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w2",
+   "id": "D_bed3_seam_w1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5462,7 +5462,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w3",
+   "id": "D_bed3_seam_w2",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5472,7 +5472,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w4",
+   "id": "D_bed3_seam_w3",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5482,7 +5482,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_w5",
+   "id": "D_bed3_seam_w4",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5492,7 +5492,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_c0",
+   "id": "D_bed3_seam_w5",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5502,7 +5502,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_c1",
+   "id": "D_bed3_seam_c0",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5512,7 +5512,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_c2",
+   "id": "D_bed3_seam_c1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5522,7 +5522,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_c3",
+   "id": "D_bed3_seam_c2",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5532,7 +5532,7 @@
    ]
   },
   {
-   "id": "D_bed3_seam_c4",
+   "id": "D_bed3_seam_c3",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5542,7 +5542,7 @@
    ]
   },
   {
-   "id": "D_bed3_canopy_edge_s",
+   "id": "D_bed3_seam_c4",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5552,7 +5552,7 @@
    ]
   },
   {
-   "id": "D_bed3_panel_edge868",
+   "id": "D_bed3_canopy_edge_s",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5562,7 +5562,7 @@
    ]
   },
   {
-   "id": "D_bed3_panel_edge1158",
+   "id": "D_bed3_panel_edge868",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5572,9 +5572,9 @@
    ]
   },
   {
-   "id": "D_bed3_slat_l0",
-   "kind": "panel",
-   "mat": "black_slats",
+   "id": "D_bed3_panel_edge1158",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     174,
     162,
@@ -5582,7 +5582,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_l1",
+   "id": "D_bed3_slat_l0",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5592,7 +5592,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_l2",
+   "id": "D_bed3_slat_l1",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5602,7 +5602,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_l3",
+   "id": "D_bed3_slat_l2",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5612,7 +5612,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_r0",
+   "id": "D_bed3_slat_l3",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5622,7 +5622,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_r1",
+   "id": "D_bed3_slat_r0",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5632,7 +5632,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_r2",
+   "id": "D_bed3_slat_r1",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5642,7 +5642,7 @@
    ]
   },
   {
-   "id": "D_bed3_slat_r3",
+   "id": "D_bed3_slat_r2",
    "kind": "panel",
    "mat": "black_slats",
    "rgb": [
@@ -5652,9 +5652,9 @@
    ]
   },
   {
-   "id": "D_bed3_lamp0_base",
-   "kind": "light",
-   "mat": "lamp_black",
+   "id": "D_bed3_slat_r3",
+   "kind": "panel",
+   "mat": "black_slats",
    "rgb": [
     138,
     98,
@@ -5662,7 +5662,7 @@
    ]
   },
   {
-   "id": "D_bed3_lamp0_shade",
+   "id": "D_bed3_lamp0_base",
    "kind": "light",
    "mat": "lamp_black",
    "rgb": [
@@ -5672,9 +5672,9 @@
    ]
   },
   {
-   "id": "D_bed3_lamp0_glow",
+   "id": "D_bed3_lamp0_shade",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "lamp_black",
    "rgb": [
     31,
     249,
@@ -5682,9 +5682,9 @@
    ]
   },
   {
-   "id": "D_bed3_lamp1_base",
+   "id": "D_bed3_lamp0_glow",
    "kind": "light",
-   "mat": "lamp_black",
+   "mat": "led_line",
    "rgb": [
     189,
     40,
@@ -5692,7 +5692,7 @@
    ]
   },
   {
-   "id": "D_bed3_lamp1_shade",
+   "id": "D_bed3_lamp1_base",
    "kind": "light",
    "mat": "lamp_black",
    "rgb": [
@@ -5702,9 +5702,9 @@
    ]
   },
   {
-   "id": "D_bed3_lamp1_glow",
+   "id": "D_bed3_lamp1_shade",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "lamp_black",
    "rgb": [
     202,
     215,
@@ -5712,9 +5712,9 @@
    ]
   },
   {
-   "id": "D_bed3_rug",
-   "kind": "decor",
-   "mat": "rug_sand",
+   "id": "D_bed3_lamp1_glow",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     199,
     54,
@@ -5722,9 +5722,9 @@
    ]
   },
   {
-   "id": "D_bed3_marble",
-   "kind": "panel",
-   "mat": "marble_white_panel",
+   "id": "D_bed3_rug",
+   "kind": "decor",
+   "mat": "rug_sand",
    "rgb": [
     6,
     224,
@@ -5732,9 +5732,9 @@
    ]
   },
   {
-   "id": "D_bed3_marble_led888",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bed3_marble",
+   "kind": "panel",
+   "mat": "marble_white_panel",
    "rgb": [
     147,
     61,
@@ -5742,7 +5742,7 @@
    ]
   },
   {
-   "id": "D_bed3_marble_led1134",
+   "id": "D_bed3_marble_led888",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5752,7 +5752,7 @@
    ]
   },
   {
-   "id": "D_bed3_cove_s",
+   "id": "D_bed3_marble_led1134",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5762,9 +5762,9 @@
    ]
   },
   {
-   "id": "D_bed3_curtain0",
-   "kind": "decor",
-   "mat": "sheer_linen",
+   "id": "D_bed3_cove_s",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     201,
     29,
@@ -5772,9 +5772,9 @@
    ]
   },
   {
-   "id": "D_bed3_vase",
+   "id": "D_bed3_curtain0",
    "kind": "decor",
-   "mat": "vase_dark",
+   "mat": "sheer_linen",
    "rgb": [
     4,
     158,
@@ -5782,9 +5782,9 @@
    ]
   },
   {
-   "id": "D_bed3_pampas0",
+   "id": "D_bed3_vase",
    "kind": "decor",
-   "mat": "pampas",
+   "mat": "vase_dark",
    "rgb": [
     224,
     201,
@@ -5792,7 +5792,7 @@
    ]
   },
   {
-   "id": "D_bed3_pampas1",
+   "id": "D_bed3_pampas0",
    "kind": "decor",
    "mat": "pampas",
    "rgb": [
@@ -5802,7 +5802,7 @@
    ]
   },
   {
-   "id": "D_bed3_pampas2",
+   "id": "D_bed3_pampas1",
    "kind": "decor",
    "mat": "pampas",
    "rgb": [
@@ -5812,9 +5812,9 @@
    ]
   },
   {
-   "id": "D_bed1_soffit0",
-   "kind": "panel",
-   "mat": "plaster_cove_white",
+   "id": "D_bed3_pampas2",
+   "kind": "decor",
+   "mat": "pampas",
    "rgb": [
     156,
     22,
@@ -5822,7 +5822,7 @@
    ]
   },
   {
-   "id": "D_bed1_soffit1",
+   "id": "D_bed1_soffit0",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -5832,7 +5832,7 @@
    ]
   },
   {
-   "id": "D_bed1_soffit2",
+   "id": "D_bed1_soffit1",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -5842,7 +5842,7 @@
    ]
   },
   {
-   "id": "D_bed1_soffit3",
+   "id": "D_bed1_soffit2",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -5852,9 +5852,9 @@
    ]
   },
   {
-   "id": "D_bed1_cove0",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bed1_soffit3",
+   "kind": "panel",
+   "mat": "plaster_cove_white",
    "rgb": [
     40,
     138,
@@ -5862,7 +5862,7 @@
    ]
   },
   {
-   "id": "D_bed1_cove1",
+   "id": "D_bed1_cove0",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5872,7 +5872,7 @@
    ]
   },
   {
-   "id": "D_bed1_cove2",
+   "id": "D_bed1_cove1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5882,7 +5882,7 @@
    ]
   },
   {
-   "id": "D_bed1_cove3",
+   "id": "D_bed1_cove2",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5892,7 +5892,7 @@
    ]
   },
   {
-   "id": "D_bed1_wall_led452",
+   "id": "D_bed1_cove3",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5902,7 +5902,7 @@
    ]
   },
   {
-   "id": "D_bed1_wall_led731",
+   "id": "D_bed1_wall_led452",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -5912,9 +5912,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend0",
+   "id": "D_bed1_wall_led731",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "led_line",
    "rgb": [
     225,
     226,
@@ -5922,9 +5922,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend0_glow",
+   "id": "D_bed1_pend0",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     162,
     6,
@@ -5932,9 +5932,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend0_c",
+   "id": "D_bed1_pend0_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     31,
     147,
@@ -5942,9 +5942,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend1",
+   "id": "D_bed1_pend0_c",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "cable_black",
    "rgb": [
     242,
     110,
@@ -5952,9 +5952,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend1_glow",
+   "id": "D_bed1_pend1",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     77,
     97,
@@ -5962,9 +5962,9 @@
    ]
   },
   {
-   "id": "D_bed1_pend1_c",
+   "id": "D_bed1_pend1_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     106,
     201,
@@ -5972,9 +5972,9 @@
    ]
   },
   {
-   "id": "D_bed1_rug",
-   "kind": "decor",
-   "mat": "rug_charcoal",
+   "id": "D_bed1_pend1_c",
+   "kind": "light",
+   "mat": "cable_black",
    "rgb": [
     174,
     4,
@@ -5982,9 +5982,9 @@
    ]
   },
   {
-   "id": "D_bed1_screen0",
-   "kind": "panel",
-   "mat": "slat_screen_black",
+   "id": "D_bed1_rug",
+   "kind": "decor",
+   "mat": "rug_charcoal",
    "rgb": [
     108,
     224,
@@ -5992,7 +5992,7 @@
    ]
   },
   {
-   "id": "D_bed1_screen1",
+   "id": "D_bed1_screen0",
    "kind": "panel",
    "mat": "slat_screen_black",
    "rgb": [
@@ -6002,9 +6002,9 @@
    ]
   },
   {
-   "id": "D_bed1_curtain0",
-   "kind": "decor",
-   "mat": "sheer_linen",
+   "id": "D_bed1_screen1",
+   "kind": "panel",
+   "mat": "slat_screen_black",
    "rgb": [
     100,
     52,
@@ -6012,7 +6012,7 @@
    ]
   },
   {
-   "id": "D_bed1_curtain1",
+   "id": "D_bed1_curtain0",
    "kind": "decor",
    "mat": "sheer_linen",
    "rgb": [
@@ -6022,9 +6022,9 @@
    ]
   },
   {
-   "id": "D_bed1_ficus_pot",
+   "id": "D_bed1_curtain1",
    "kind": "decor",
-   "mat": "stone_pot",
+   "mat": "sheer_linen",
    "rgb": [
     251,
     81,
@@ -6032,9 +6032,9 @@
    ]
   },
   {
-   "id": "D_bed1_ficus_trunk",
+   "id": "D_bed1_ficus_pot",
    "kind": "decor",
-   "mat": "ficus_trunk",
+   "mat": "stone_pot",
    "rgb": [
     66,
     139,
@@ -6042,9 +6042,9 @@
    ]
   },
   {
-   "id": "D_bed1_ficus_crown",
+   "id": "D_bed1_ficus_trunk",
    "kind": "decor",
-   "mat": "ficus_tree",
+   "mat": "ficus_trunk",
    "rgb": [
     171,
     212,
@@ -6052,9 +6052,9 @@
    ]
   },
   {
-   "id": "D_bed2_soffit0",
-   "kind": "panel",
-   "mat": "plaster_cove_white",
+   "id": "D_bed1_ficus_crown",
+   "kind": "decor",
+   "mat": "ficus_tree",
    "rgb": [
     131,
     40,
@@ -6062,7 +6062,7 @@
    ]
   },
   {
-   "id": "D_bed2_soffit1",
+   "id": "D_bed2_soffit0",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -6072,7 +6072,7 @@
    ]
   },
   {
-   "id": "D_bed2_soffit2",
+   "id": "D_bed2_soffit1",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -6082,7 +6082,7 @@
    ]
   },
   {
-   "id": "D_bed2_soffit3",
+   "id": "D_bed2_soffit2",
    "kind": "panel",
    "mat": "plaster_cove_white",
    "rgb": [
@@ -6092,9 +6092,9 @@
    ]
   },
   {
-   "id": "D_bed2_cove0",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bed2_soffit3",
+   "kind": "panel",
+   "mat": "plaster_cove_white",
    "rgb": [
     51,
     165,
@@ -6102,7 +6102,7 @@
    ]
   },
   {
-   "id": "D_bed2_cove1",
+   "id": "D_bed2_cove0",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6112,7 +6112,7 @@
    ]
   },
   {
-   "id": "D_bed2_cove2",
+   "id": "D_bed2_cove1",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6122,7 +6122,7 @@
    ]
   },
   {
-   "id": "D_bed2_cove3",
+   "id": "D_bed2_cove2",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6132,7 +6132,7 @@
    ]
   },
   {
-   "id": "D_bed2_wall_led586",
+   "id": "D_bed2_cove3",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6142,7 +6142,7 @@
    ]
   },
   {
-   "id": "D_bed2_wall_led860",
+   "id": "D_bed2_wall_led586",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6152,9 +6152,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend0",
+   "id": "D_bed2_wall_led860",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "led_line",
    "rgb": [
     203,
     78,
@@ -6162,9 +6162,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend0_glow",
+   "id": "D_bed2_pend0",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     29,
     78,
@@ -6172,9 +6172,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend0_c",
+   "id": "D_bed2_pend0_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     103,
     174,
@@ -6182,9 +6182,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend1",
+   "id": "D_bed2_pend0_c",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "cable_black",
    "rgb": [
     224,
     108,
@@ -6192,9 +6192,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend1_glow",
+   "id": "D_bed2_pend1",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     43,
     238,
@@ -6202,9 +6202,9 @@
    ]
   },
   {
-   "id": "D_bed2_pend1_c",
+   "id": "D_bed2_pend1_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     178,
     120,
@@ -6212,9 +6212,9 @@
    ]
   },
   {
-   "id": "D_bed2_rug",
-   "kind": "decor",
-   "mat": "rug_charcoal",
+   "id": "D_bed2_pend1_c",
+   "kind": "light",
+   "mat": "cable_black",
    "rgb": [
     56,
     22,
@@ -6222,9 +6222,9 @@
    ]
   },
   {
-   "id": "D_bed2_bench",
+   "id": "D_bed2_rug",
    "kind": "decor",
-   "mat": "bench_tufted_cream",
+   "mat": "rug_charcoal",
    "rgb": [
     87,
     251,
@@ -6232,9 +6232,9 @@
    ]
   },
   {
-   "id": "D_bed2_art0",
+   "id": "D_bed2_bench",
    "kind": "decor",
-   "mat": "art_sketch",
+   "mat": "bench_tufted_cream",
    "rgb": [
     215,
     66,
@@ -6242,7 +6242,7 @@
    ]
   },
   {
-   "id": "D_bed2_art1",
+   "id": "D_bed2_art0",
    "kind": "decor",
    "mat": "art_sketch",
    "rgb": [
@@ -6252,7 +6252,7 @@
    ]
   },
   {
-   "id": "D_bed2_art2",
+   "id": "D_bed2_art1",
    "kind": "decor",
    "mat": "art_sketch",
    "rgb": [
@@ -6262,9 +6262,9 @@
    ]
   },
   {
-   "id": "D_bed2_curtain0",
+   "id": "D_bed2_art2",
    "kind": "decor",
-   "mat": "sheer_linen",
+   "mat": "art_sketch",
    "rgb": [
     205,
     99,
@@ -6272,9 +6272,9 @@
    ]
   },
   {
-   "id": "D_bed2_ficus_pot",
+   "id": "D_bed2_curtain0",
    "kind": "decor",
-   "mat": "stone_pot",
+   "mat": "sheer_linen",
    "rgb": [
     31,
     249,
@@ -6282,9 +6282,9 @@
    ]
   },
   {
-   "id": "D_bed2_ficus_trunk",
+   "id": "D_bed2_ficus_pot",
    "kind": "decor",
-   "mat": "ficus_trunk",
+   "mat": "stone_pot",
    "rgb": [
     189,
     72,
@@ -6292,9 +6292,9 @@
    ]
   },
   {
-   "id": "D_bed2_ficus_crown",
+   "id": "D_bed2_ficus_trunk",
    "kind": "decor",
-   "mat": "ficus_tree",
+   "mat": "ficus_trunk",
    "rgb": [
     13,
     26,
@@ -6302,9 +6302,9 @@
    ]
   },
   {
-   "id": "D_bath2_shower_glass",
-   "kind": "panel",
-   "mat": "smoked_glass",
+   "id": "D_bed2_ficus_crown",
+   "kind": "decor",
+   "mat": "ficus_tree",
    "rgb": [
     153,
     215,
@@ -6312,9 +6312,9 @@
    ]
   },
   {
-   "id": "D_bath2_rainhead",
-   "kind": "light",
-   "mat": "black_metal",
+   "id": "D_bath2_shower_glass",
+   "kind": "panel",
+   "mat": "smoked_glass",
    "rgb": [
     226,
     54,
@@ -6322,9 +6322,9 @@
    ]
   },
   {
-   "id": "D_bath2_niche",
-   "kind": "panel",
-   "mat": "niche_lit",
+   "id": "D_bath2_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
    "rgb": [
     6,
     214,
@@ -6332,9 +6332,9 @@
    ]
   },
   {
-   "id": "D_bath2_niche_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath2_niche",
+   "kind": "panel",
+   "mat": "niche_lit",
    "rgb": [
     147,
     118,
@@ -6342,9 +6342,9 @@
    ]
   },
   {
-   "id": "D_bath2_mirror",
-   "kind": "panel",
-   "mat": "mirror_round",
+   "id": "D_bath2_niche_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     160,
     90,
@@ -6352,9 +6352,9 @@
    ]
   },
   {
-   "id": "D_bath2_ring",
-   "kind": "light",
-   "mat": "ring_led",
+   "id": "D_bath2_mirror",
+   "kind": "panel",
+   "mat": "mirror_round",
    "rgb": [
     77,
     203,
@@ -6362,9 +6362,9 @@
    ]
   },
   {
-   "id": "D_bath2_drawer",
-   "kind": "decor",
-   "mat": "vanity_walnut_drawer",
+   "id": "D_bath2_ring",
+   "kind": "light",
+   "mat": "ring_led",
    "rgb": [
     201,
     29,
@@ -6372,9 +6372,9 @@
    ]
   },
   {
-   "id": "D_bath2_vanity_under",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath2_drawer",
+   "kind": "decor",
+   "mat": "vanity_walnut_drawer",
    "rgb": [
     4,
     75,
@@ -6382,9 +6382,9 @@
    ]
   },
   {
-   "id": "D_bath2_flush",
-   "kind": "panel",
-   "mat": "black_metal",
+   "id": "D_bath2_vanity_under",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     190,
     224,
@@ -6392,9 +6392,9 @@
    ]
   },
   {
-   "id": "D_bath2_slot70",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath2_flush",
+   "kind": "panel",
+   "mat": "black_metal",
    "rgb": [
     238,
     43,
@@ -6402,7 +6402,7 @@
    ]
   },
   {
-   "id": "D_bath2_slot150",
+   "id": "D_bath2_slot70",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6412,9 +6412,9 @@
    ]
   },
   {
-   "id": "D_bath2_diffuser",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_bath2_slot150",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     156,
     78,
@@ -6422,9 +6422,9 @@
    ]
   },
   {
-   "id": "D_bath1_shelf",
+   "id": "D_bath2_diffuser",
    "kind": "decor",
-   "mat": "walnut_counter",
+   "mat": "ceramic_dark",
    "rgb": [
     102,
     81,
@@ -6432,9 +6432,9 @@
    ]
   },
   {
-   "id": "D_bath1_drawers",
+   "id": "D_bath1_shelf",
    "kind": "decor",
-   "mat": "cabinet_taupe",
+   "mat": "walnut_counter",
    "rgb": [
     90,
     215,
@@ -6442,9 +6442,9 @@
    ]
   },
   {
-   "id": "D_bath1_under",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath1_drawers",
+   "kind": "decor",
+   "mat": "cabinet_taupe",
    "rgb": [
     212,
     17,
@@ -6452,9 +6452,9 @@
    ]
   },
   {
-   "id": "D_bath1_basin",
-   "kind": "decor",
-   "mat": "basin_black_vessel",
+   "id": "D_bath1_under",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     40,
     114,
@@ -6462,9 +6462,9 @@
    ]
   },
   {
-   "id": "D_bath1_mirror",
-   "kind": "panel",
-   "mat": "mirror_cabinet",
+   "id": "D_bath1_basin",
+   "kind": "decor",
+   "mat": "basin_black_vessel",
    "rgb": [
     233,
     227,
@@ -6472,9 +6472,9 @@
    ]
   },
   {
-   "id": "D_bath1_mirror_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath1_mirror",
+   "kind": "panel",
+   "mat": "mirror_cabinet",
    "rgb": [
     177,
     31,
@@ -6482,7 +6482,7 @@
    ]
   },
   {
-   "id": "D_bath1_wash",
+   "id": "D_bath1_mirror_led",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6492,9 +6492,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend0",
+   "id": "D_bath1_wash",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "led_line",
    "rgb": [
     165,
     26,
@@ -6502,9 +6502,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend0_glow",
+   "id": "D_bath1_pend0",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     117,
     137,
@@ -6512,9 +6512,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend0_c",
+   "id": "D_bath1_pend0_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     140,
     226,
@@ -6522,9 +6522,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend1",
+   "id": "D_bath1_pend0_c",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "cable_black",
    "rgb": [
     224,
     6,
@@ -6532,9 +6532,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend1_glow",
+   "id": "D_bath1_pend1",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     31,
     147,
@@ -6542,9 +6542,9 @@
    ]
   },
   {
-   "id": "D_bath1_pend1_c",
+   "id": "D_bath1_pend1_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     242,
     185,
@@ -6552,9 +6552,9 @@
    ]
   },
   {
-   "id": "D_bath1_vase",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_bath1_pend1_c",
+   "kind": "light",
+   "mat": "cable_black",
    "rgb": [
     119,
     77,
@@ -6562,9 +6562,9 @@
    ]
   },
   {
-   "id": "D_bath1_gyps0",
+   "id": "D_bath1_vase",
    "kind": "decor",
-   "mat": "gypsophila",
+   "mat": "ceramic_dark",
    "rgb": [
     29,
     201,
@@ -6572,7 +6572,7 @@
    ]
   },
   {
-   "id": "D_bath1_gyps1",
+   "id": "D_bath1_gyps0",
    "kind": "decor",
    "mat": "gypsophila",
    "rgb": [
@@ -6582,7 +6582,7 @@
    ]
   },
   {
-   "id": "D_bath1_gyps2",
+   "id": "D_bath1_gyps1",
    "kind": "decor",
    "mat": "gypsophila",
    "rgb": [
@@ -6592,9 +6592,9 @@
    ]
   },
   {
-   "id": "D_bath1_shower_glass",
-   "kind": "panel",
-   "mat": "glass",
+   "id": "D_bath1_gyps2",
+   "kind": "decor",
+   "mat": "gypsophila",
    "rgb": [
     206,
     238,
@@ -6602,9 +6602,9 @@
    ]
   },
   {
-   "id": "D_bath1_rainhead",
-   "kind": "light",
-   "mat": "black_metal",
+   "id": "D_bath1_shower_glass",
+   "kind": "panel",
+   "mat": "glass",
    "rgb": [
     162,
     52,
@@ -6612,9 +6612,9 @@
    ]
   },
   {
-   "id": "D_bath1_niche",
-   "kind": "panel",
-   "mat": "niche_lit",
+   "id": "D_bath1_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
    "rgb": [
     22,
     156,
@@ -6622,9 +6622,9 @@
    ]
   },
   {
-   "id": "D_bath1_niche_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath1_niche",
+   "kind": "panel",
+   "mat": "niche_lit",
    "rgb": [
     251,
     130,
@@ -6632,9 +6632,9 @@
    ]
   },
   {
-   "id": "D_bath3_shelf",
-   "kind": "decor",
-   "mat": "walnut_counter",
+   "id": "D_bath1_niche_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     66,
     66,
@@ -6642,9 +6642,9 @@
    ]
   },
   {
-   "id": "D_bath3_drawers",
+   "id": "D_bath3_shelf",
    "kind": "decor",
-   "mat": "cabinet_taupe",
+   "mat": "walnut_counter",
    "rgb": [
     74,
     212,
@@ -6652,9 +6652,9 @@
    ]
   },
   {
-   "id": "D_bath3_under",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath3_drawers",
+   "kind": "decor",
+   "mat": "cabinet_taupe",
    "rgb": [
     138,
     40,
@@ -6662,9 +6662,9 @@
    ]
   },
   {
-   "id": "D_bath3_basin",
-   "kind": "decor",
-   "mat": "basin_black_vessel",
+   "id": "D_bath3_under",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     99,
     216,
@@ -6672,9 +6672,9 @@
    ]
   },
   {
-   "id": "D_bath3_mirror",
-   "kind": "panel",
-   "mat": "mirror_cabinet",
+   "id": "D_bath3_basin",
+   "kind": "decor",
+   "mat": "basin_black_vessel",
    "rgb": [
     249,
     212,
@@ -6682,9 +6682,9 @@
    ]
   },
   {
-   "id": "D_bath3_mirror_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath3_mirror",
+   "kind": "panel",
+   "mat": "mirror_cabinet",
    "rgb": [
     121,
     40,
@@ -6692,7 +6692,7 @@
    ]
   },
   {
-   "id": "D_bath3_wash",
+   "id": "D_bath3_mirror_led",
    "kind": "light",
    "mat": "led_line",
    "rgb": [
@@ -6702,9 +6702,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend0",
+   "id": "D_bath3_wash",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "led_line",
    "rgb": [
     215,
     117,
@@ -6712,9 +6712,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend0_glow",
+   "id": "D_bath3_pend0",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     54,
     112,
@@ -6722,9 +6722,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend0_c",
+   "id": "D_bath3_pend0_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     143,
     224,
@@ -6732,9 +6732,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend1",
+   "id": "D_bath3_pend0_c",
    "kind": "light",
-   "mat": "pendant_black_cyl",
+   "mat": "cable_black",
    "rgb": [
     147,
     31,
@@ -6742,9 +6742,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend1_glow",
+   "id": "D_bath3_pend1",
    "kind": "light",
-   "mat": "led_line",
+   "mat": "pendant_black_cyl",
    "rgb": [
     90,
     242,
@@ -6752,9 +6752,9 @@
    ]
   },
   {
-   "id": "D_bath3_pend1_c",
+   "id": "D_bath3_pend1_glow",
    "kind": "light",
-   "mat": "cable_black",
+   "mat": "led_line",
    "rgb": [
     203,
     140,
@@ -6762,9 +6762,9 @@
    ]
   },
   {
-   "id": "D_bath3_vase",
-   "kind": "decor",
-   "mat": "ceramic_dark",
+   "id": "D_bath3_pend1_c",
+   "kind": "light",
+   "mat": "cable_black",
    "rgb": [
     64,
     29,
@@ -6772,9 +6772,9 @@
    ]
   },
   {
-   "id": "D_bath3_gyps0",
+   "id": "D_bath3_vase",
    "kind": "decor",
-   "mat": "gypsophila",
+   "mat": "ceramic_dark",
    "rgb": [
     19,
     174,
@@ -6782,7 +6782,7 @@
    ]
   },
   {
-   "id": "D_bath3_gyps1",
+   "id": "D_bath3_gyps0",
    "kind": "decor",
    "mat": "gypsophila",
    "rgb": [
@@ -6792,7 +6792,7 @@
    ]
   },
   {
-   "id": "D_bath3_gyps2",
+   "id": "D_bath3_gyps1",
    "kind": "decor",
    "mat": "gypsophila",
    "rgb": [
@@ -6802,9 +6802,9 @@
    ]
   },
   {
-   "id": "D_bath3_shower_glass",
-   "kind": "panel",
-   "mat": "glass",
+   "id": "D_bath3_gyps2",
+   "kind": "decor",
+   "mat": "gypsophila",
    "rgb": [
     173,
     178,
@@ -6812,9 +6812,9 @@
    ]
   },
   {
-   "id": "D_bath3_rainhead",
-   "kind": "light",
-   "mat": "black_metal",
+   "id": "D_bath3_shower_glass",
+   "kind": "panel",
+   "mat": "glass",
    "rgb": [
     122,
     22,
@@ -6822,9 +6822,9 @@
    ]
   },
   {
-   "id": "D_bath3_niche",
-   "kind": "panel",
-   "mat": "niche_lit",
+   "id": "D_bath3_rainhead",
+   "kind": "light",
+   "mat": "black_metal",
    "rgb": [
     81,
     251,
@@ -6832,9 +6832,9 @@
    ]
   },
   {
-   "id": "D_bath3_niche_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_bath3_niche",
+   "kind": "panel",
+   "mat": "niche_lit",
    "rgb": [
     215,
     90,
@@ -6842,9 +6842,9 @@
    ]
   },
   {
-   "id": "D_bath3_ladder",
-   "kind": "panel",
-   "mat": "towel_ladder",
+   "id": "D_bath3_niche_led",
+   "kind": "light",
+   "mat": "led_line",
    "rgb": [
     17,
     42,
@@ -6852,9 +6852,9 @@
    ]
   },
   {
-   "id": "D_uh_art",
-   "kind": "decor",
-   "mat": "art_relief",
+   "id": "D_bath3_ladder",
+   "kind": "panel",
+   "mat": "towel_ladder",
    "rgb": [
     82,
     138,
@@ -6862,13 +6862,23 @@
    ]
   },
   {
-   "id": "D_uh_led",
-   "kind": "light",
-   "mat": "led_line",
+   "id": "D_uh_art",
+   "kind": "decor",
+   "mat": "art_relief",
    "rgb": [
     233,
     99,
     194
+   ]
+  },
+  {
+   "id": "D_uh_led",
+   "kind": "light",
+   "mat": "led_line",
+   "rgb": [
+    31,
+    249,
+    248
    ]
   }
  ],

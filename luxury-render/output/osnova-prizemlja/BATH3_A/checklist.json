@@ -2,7 +2,7 @@
  "camera": "BATH3_A",
  "room": "U_R_bath3",
  "hero": null,
- "mood": "mood_bath_taupe_walnut.jpg",
+ "mood": null,
  "materials": [
   "stone_taupe",
   "mirror_cabinet",

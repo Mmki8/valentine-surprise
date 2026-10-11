@@ -1,7 +1,7 @@
 {
  "camera": "BED1_B",
  "room": "U_R_bed1",
- "hero": "BED1_A",
+ "hero": null,
  "mood": null,
  "materials": [
   "plaster_cove_white",

@@ -2,7 +2,7 @@
  "camera": "BED3_A",
  "room": "U_R_bed3",
  "hero": null,
- "mood": "mood_bed_walnut_facets.jpg",
+ "mood": null,
  "materials": [
   "walnut_facets",
   "wardrobe_black_glass",

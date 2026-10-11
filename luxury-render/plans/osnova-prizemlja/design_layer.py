@@ -294,5 +294,5 @@ D.append(led("D_bath3_niche_led", 937.6, 365, 940.6, 430, U + 123.5, U + 125))
 D.append(B("D_bath3_ladder", "towel_ladder", 790, 516, 840, 521.4, U + 60, U + 180, kind="panel"))
 
 # ---------------- UPPER LANDING (kept in the ground-hall finishes it is seen with from below)
-D.append(B("D_uh_art", "art_relief", 597.0, 395, 600.0, 560, U + 85, U + 205))
+D.append(B("D_uh_art", "art_relief", 445, 213.5, 575, 217.0, U + 80, U + 200))   # end wall of the landing, clear of every door
 D.append(led("D_uh_led", 538, 225, 542, 590, 558, 559.5))

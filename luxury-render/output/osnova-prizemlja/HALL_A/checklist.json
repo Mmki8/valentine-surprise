@@ -1,19 +1,21 @@
 {
  "camera": "HALL_A",
  "room": "R_hall",
- "hero": "LIV_B",
+ "hero": null,
+ "mood": null,
  "materials": [
   "box_slats",
-  "stair_walnut",
   "walnut_battens",
+  "stair_walnut",
   "plaster_greige",
-  "plaster_white",
   "walnut_slats",
-  "walnut_door",
   "oak_floor",
+  "plaster_white",
+  "walnut_door",
   "artwork_abstract",
   "bronze_frame",
-  "led_line"
+  "led_line",
+  "art_relief"
  ],
  "car": null,
  "openings": [
@@ -28,7 +30,7 @@
    "id": "O_mud_hall_door",
    "name": "door (closed)",
    "where": "centre",
-   "share": 0.006,
+   "share": 0.003,
    "note": "mudroom <-> hall"
   },
   {
@@ -45,7 +47,7 @@
    "id": "staircase",
    "name": "staircase",
    "where": "left",
-   "share": 0.05
+   "share": 0.037
   }
  ],
  "manual_checks": [

@@ -1,7 +1,7 @@
 {
  "camera": "BED3_C",
  "room": "U_R_bed3",
- "hero": "BED3_A",
+ "hero": null,
  "mood": null,
  "materials": [
   "walnut_facets",

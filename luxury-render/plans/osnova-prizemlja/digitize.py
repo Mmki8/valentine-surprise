@@ -192,16 +192,29 @@ cyl("F_jacuzzi", "jacuzzi", (1305, 406), 85, 0, 70, "R_spa", "round hot tub ~170
 box("F_shower_tray", "shower", (1052, 312, 1152, 407), 0, 3, "R_spa", "S", "walk-in shower")
 box("F_shower_glass", "glass", (1149, 312, 1153, 407), 0, 210, "R_spa", None, "fixed glass screen (east side)")
 box("F_shower_rain", "fixture", (1072, 312, 1130, 330), 220, 3, "R_spa", None, "ceiling rain head")
-# stair: winder + straight flight rising north from entrance
-steps = 18
+# stair - read off BOTH plans: 3 winders at the bottom (entered from the east, by the front door), then a
+# straight flight rising north that arrives at the upper landing at the stair-hole edge (ground px y 621 =
+# upper px y 485 = 351 cm). 20 risers x 15.5 cm; straight goings 28.9 cm (upper plan treads measure ~29 cm).
+steps = 20
 rise = LEVELS["slab_top"] / steps
-y_top, y_bot = 720, 1185
-for i in range(steps):
-    ya = y_bot - (i + 1) * (y_bot - y_top) / steps
-    yb = y_bot - i * (y_bot - y_top) / steps
-    box(f"F_stair_{i+1:02d}", "stair", (622, ya, 718, yb), 0, round(rise * (i + 1), 1), "R_hall")
-box("F_stair_balustrade", "glass", (716, 720, 720, 1185), 0, 310 + 100, "R_hall", None,
-    "frameless glass balustrade on open side of stair")
+SX0, SX1 = cm(622, "x"), cm(718, "x")             # 378.0 .. 478.8
+SY_TOP, SY_BOT = cm(621, "y"), cm(1185, "y")      # 350.7 .. 942.9
+SY_W = round(SY_BOT - (SX1 - SX0), 1)             # winder square 100.8 x 100.8 at the bottom
+piv = [SX1, SY_W]                                  # winders fan around the inner (north-east) corner
+for k, poly in enumerate([[piv, [SX1, SY_BOT], [SX0 + 30, SY_BOT]],
+                          [piv, [SX0 + 30, SY_BOT], [SX0, SY_BOT], [SX0, SY_BOT - 43]],
+                          [piv, [SX0, SY_BOT - 43], [SX0, SY_W]]]):
+    F.append(dict(id=f"F_stair_{k + 1:02d}", kind="stair", shape="prism", axis="z", poly=poly, z0=0,
+                  h=round(rise * (k + 1), 1), room="R_hall", note="winder", group=None))
+g = (SY_W - SY_TOP) / (steps - 3)
+for k in range(steps - 3):
+    yb = SY_W - k * g
+    F.append(dict(id=f"F_stair_{k + 4:02d}", kind="stair", shape="box", rect=[SX0, round(yb - g, 1), SX1, round(yb, 1)],
+                  z0=0, h=round(rise * (k + 4), 1), room="R_hall", group=None))
+# raked frameless glass balustrade on the open (east) side of the straight flight, 100 cm above the nosings
+F.append(dict(id="F_stair_balustrade", kind="glass", shape="prism", axis="x", x0=SX1 - 2.2, x1=SX1 + 0.8, z0=0, h=0,
+              poly=[[SY_W, rise * 3 - 25], [SY_TOP, 310 - 25], [SY_TOP, 410], [SY_W, rise * 4 + 100]],
+              room="R_hall", note="raked frameless glass balustrade", group=None))
 # kitchen
 box("F_k_duct", "box", (857, 622, 894, 643), 0, H, "R_kitchen_dining", None, "installation duct, boxed in")
 box("F_k_run_north", "counter", (894, 622, 1113, 679), 0, 92, "R_kitchen_dining", "S", "base run w/ sink")

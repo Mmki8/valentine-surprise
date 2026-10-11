@@ -221,7 +221,8 @@
    "hfov": 86,
    "shift_y": 0.16,
    "space": "open_plan",
-   "notes": "The entrance hall is double height: above it is the open upper landing edged with frameless glass railings, the tall upper window and the stair rising to the landing. Keep it open - no ceiling over that part."
+   "notes": "The stair: 3 winder steps at the bottom by the entrance, then a straight walnut flight rising away to the upper landing; a raked frameless glass balustrade follows the open side of the flight, 1 m above the steps. The flight arrives at the upper landing - it never runs into a wall or ceiling. Above: the open double-height void with the edge of the upper landing and its glass railings.",
+   "style_from": "40753546-bc71-4c7f-9ede-68742f76875c"
   },
   {
    "id": "BED3_A",
@@ -239,9 +240,8 @@
    ],
    "hfov": 96,
    "shift_y": 0.06,
-   "rig": "dusk",
-   "exposure": 1.35,
-   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase."
+   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase.",
+   "relight_from": "41007e74-1195-46e7-b289-21647eef7aae"
   },
   {
    "id": "BED3_B",
@@ -259,9 +259,8 @@
    ],
    "hfov": 86,
    "shift_y": 0.04,
-   "rig": "dusk",
-   "exposure": 1.35,
-   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase."
+   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase.",
+   "relight_from": "2e1b7a82-5c28-4d5b-900d-49801ff1dc08"
   },
   {
    "id": "BED3_C",
@@ -279,9 +278,8 @@
    ],
    "hfov": 90,
    "shift_y": 0.04,
-   "rig": "dusk",
-   "exposure": 1.35,
-   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase."
+   "notes": "Nothing hangs in front of the faceted walnut wall: no pendant, no ring, no mirror, no picture on it - only its LED seams. No bench or ottoman at the foot of the bed. The three beige spheres by the glass are dried pampas plumes in a tall dark vase.",
+   "relight_from": "733b0122-8be9-4124-ae6f-da6c0fd067ef"
   },
   {
    "id": "BED1_A",
@@ -299,8 +297,7 @@
    ],
    "hfov": 86,
    "shift_y": 0.02,
-   "rig": "dusk",
-   "exposure": 1.35
+   "relight_from": "c18d2ba3-88e4-47b3-b826-6f20f594c6f3"
   },
   {
    "id": "BED2_A",
@@ -318,8 +315,7 @@
    ],
    "hfov": 88,
    "shift_y": 0.02,
-   "rig": "dusk",
-   "exposure": 1.35
+   "relight_from": "2bf3330d-4f23-4003-82c7-943c4550e831"
   },
   {
    "id": "BATH2_A",
@@ -337,8 +333,7 @@
    ],
    "hfov": 98,
    "shift_y": -0.16,
-   "rig": "dusk",
-   "exposure": 1.35
+   "relight_from": "1ed09705-7b6f-4d8f-ad4e-0593133b81a3"
   },
   {
    "id": "BATH1_A",
@@ -356,9 +351,8 @@
    ],
    "hfov": 98,
    "shift_y": -0.14,
-   "rig": "dusk",
-   "exposure": 1.35,
-   "notes": "The white box at the bottom left, under the window, is a wall-hung square white toilet seen from slightly above: show its slim white lid and seat and the black flush plate on the wall above it. The camera stands inside the shower: the clear glass screen runs through the left part of the frame."
+   "notes": "The white box at the bottom left, under the window, is a wall-hung square white toilet seen from slightly above: show its slim white lid and seat and the black flush plate on the wall above it. The camera stands inside the shower: the clear glass screen runs through the left part of the frame.",
+   "relight_from": "e6d63dd0-161e-4b29-81cd-dcff75dbd32d"
   },
   {
    "id": "BATH3_A",
@@ -376,14 +370,12 @@
    ],
    "hfov": 100,
    "shift_y": -0.14,
-   "rig": "dusk",
-   "exposure": 1.35
+   "relight_from": "b637182f-4e0f-4b0a-ac05-0811736242f4"
   },
   {
    "id": "BED1_B",
    "room": "U_R_bed1",
    "space": "bedroom1",
-   "rig": "dusk",
    "title": "Bedroom 1 - from the glazing back toward bed wall, wardrobes and TV wall",
    "pos": [
     300,
@@ -396,13 +388,12 @@
    ],
    "hfov": 86,
    "shift_y": 0.02,
-   "exposure": 1.35
+   "relight_from": "6e441cbf-874b-4444-a326-602198953488"
   },
   {
    "id": "BED2_B",
    "room": "U_R_bed2",
    "space": "bedroom2",
-   "rig": "dusk",
    "title": "Bedroom 2 - from the closet corner toward bed and south glazing",
    "pos": [
     640,
@@ -415,26 +406,45 @@
    ],
    "hfov": 86,
    "shift_y": 0.02,
-   "exposure": 1.35
+   "relight_from": "61ac0e4a-ac0b-4a41-a582-6c801efe7570"
   },
   {
    "id": "UPHALL_A",
    "room": "U_R_hall",
    "space": "landing",
-   "rig": "dusk",
-   "title": "Upper landing - over the stair and the double-height entry toward the tall window",
+   "title": "Upper landing - from the landing toward the top of the stair, the top landing and its doors",
    "pos": [
-    522,
-    232,
+    560,
+    590,
     465
    ],
    "look": [
-    540,
-    950
+    440,
+    300
    ],
-   "hfov": 84,
-   "shift_y": -0.1,
-   "exposure": 1.35
+   "hfov": 88,
+   "shift_y": -0.42,
+   "style_from": "40753546-bc71-4c7f-9ede-68742f76875c",
+   "notes": "The walnut stair is the hero: solid walnut treads, closed walnut stringer, a raked frameless glass balustrade along its open side; it arrives at the top landing. Frameless glass railings edge the landing over the stair and over the double-height entrance hall."
+  },
+  {
+   "id": "UPHALL_B",
+   "room": "U_R_hall",
+   "space": "landing",
+   "title": "Upper landing - from the top of the stair looking down the flight to the entrance",
+   "pos": [
+    440,
+    300,
+    465
+   ],
+   "look": [
+    452,
+    900
+   ],
+   "hfov": 86,
+   "shift_y": -0.55,
+   "style_from": "40753546-bc71-4c7f-9ede-68742f76875c",
+   "notes": "The walnut stair is the hero: solid walnut treads, closed walnut stringer, a raked frameless glass balustrade along its open side; it arrives at the top landing. Frameless glass railings edge the landing over the stair and over the double-height entrance hall."
   }
  ],
  "heroes": {

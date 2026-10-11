@@ -120,7 +120,7 @@ box("U_F_bed2_ns1", "nightstand", (885, 670, 920, 705), 0, 50, "U_R_bed2")
 box("U_F_bed2_ns2", "nightstand", (885, 835, 920, 870), 0, 50, "U_R_bed2")
 box("U_F_bed2_closet", "tall_cabinet", (680, 485, 765, 550), 0, 240, "U_R_bed2", "S")
 # railings (UOG.1/2/3), frameless glass 100 cm
-box("U_F_rail1", "glass", (567, 672, 572, 945), 0, 100, "U_R_hall", None, "UOG.1")
+# UOG.1 (px 567-572, y 672-945) is the stair's own raked glass balustrade - modelled with the stair (ground digitize.py)
 box("U_F_rail2", "glass", (570, 485, 575, 672), 0, 100, "U_R_hall", None, "UOG.2")
 box("U_F_rail3", "glass", (572, 670, 660, 675), 0, 100, "U_R_hall", None, "UOG.3")
 

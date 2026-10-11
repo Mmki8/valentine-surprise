@@ -1,47 +1,37 @@
 {
  "camera": "UPHALL_A",
  "room": "U_R_hall",
- "hero": "HALL_A",
+ "hero": null,
  "mood": null,
  "materials": [
-  "plaster_greige",
   "walnut_battens",
-  "plaster_white",
-  "art_relief",
+  "plaster_greige",
   "oak_floor",
-  "walnut_slats",
   "walnut_door",
+  "stair_walnut",
+  "art_relief",
   "bronze_frame",
-  "led_line",
-  "pendant_bronze",
-  "box_slats"
+  "plaster_white"
  ],
  "car": null,
  "openings": [
   {
    "id": "U_O_bed2_door",
    "name": "door (closed)",
-   "where": "left",
-   "share": 0.017,
+   "where": "right",
+   "share": 0.117,
    "note": null
-  },
-  {
-   "id": "O_entrance",
-   "name": "door (closed)",
-   "where": "centre",
-   "share": 0.007,
-   "note": "MAIN ENTRANCE into stair hall"
-  },
-  {
-   "id": "U_O_entry_win",
-   "name": "window",
-   "where": "centre",
-   "share": 0.004,
-   "note": "tall window lighting the double-height entry"
   }
  ],
  "furniture_counts": {},
- "items": [],
+ "items": [
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "centre",
+   "share": 0.03
+  }
+ ],
  "manual_checks": [
   "camera position/angle/framing identical to blockout (compare overlay)",
   "every opening listed is present, same position/size; NO extra window/door",

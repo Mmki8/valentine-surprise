@@ -118,8 +118,8 @@ def main(plan_dir, cam_full):
     if any(i["name"] == "staircase" for i in items):
         inv = (inv + ", " if inv else "") + "1 x staircase"
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
-    hero = hero_for(cam_full, plan_dir)
-    mood = mood_for(cam_full, plan_dir)
+    hero = None if (cam.get("relight_from") or cam.get("style_from")) else hero_for(cam_full, plan_dir)
+    mood = None if (cam.get("relight_from") or cam.get("style_from")) else mood_for(cam_full, plan_dir)
     upper = cam["room"].startswith("U_")
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
     g = ds["global"]
@@ -135,6 +135,13 @@ def main(plan_dir, cam_full):
            f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2."
            + (" IMAGE 2 shows a parked car - ignore it: this view has NO car." if (cam["room"] == "R_garage" and not car_on) else "")
            + "\n\n" if hero else "")
+        + (("IMAGE 2 is the APPROVED design of this exact view, photographed at night. Keep EVERY object, material, colour, texture, "
+            "fitting and decor detail exactly as in IMAGE 2 - the client loves the design. The ONLY change: re-light it to GOLDEN HOUR "
+            "(time of day below). Replace the night sky with warm golden-hour daylight, let low warm sun in through the glass with long "
+            "soft sun patches, brighten the room, keep the LED lines glowing softly. Take geometry from IMAGE 1.\n\n") if cam.get("relight_from") else "")
+        + (("IMAGE 2 is the approved render of the ground-floor entrance hall of this house: take ONLY its materials and finishes from it (walnut "
+            "stair treads and battens, plaster, oak floor, glass, bronze ring pendant). The stair geometry in IMAGE 2 is outdated - take the "
+            "stair, the landing and every other shape ONLY from IMAGE 1.\n\n") if cam.get("style_from") else "")
         + ("IMAGE 2 is the client's MOOD REFERENCE for this room: copy ONLY its look - the material character, colour palette, "
            "finish quality and the warm LED lighting mood. NEVER copy its layout, furniture, objects, windows, camera or proportions: "
            "every object and its position come ONLY from IMAGE 1.\n\n" if mood else "")

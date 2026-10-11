@@ -63,11 +63,33 @@ export function buildScene(plan, opts = {}, ds) {
   const v = plan.void.rect;
   add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
   for (const c of (plan.extra_ceilings || []))
-    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, 'plaster_white'));
+    add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, 'walnut_slats'));
   for (const [i, [x0, y0, x1, y1]] of (plan.upper_voids || []).entries()) {
     const t = 2;
-    for (const [a, b, c, d] of [[x0, y0, x1, y0 + t], [x0, y1 - t, x1, y1], [x0, y0, x0 + t, y1], [x1 - t, y0, x1, y1]])
-      add(`SLAB_void${i}`, 'slab_edge', boxMesh(a, b, c, d, L.ceiling, L.slab_top, 'plaster_white'));
+    // slab edge on each side of the opening - except where two voids meet (no floor between them)
+    const others = (plan.upper_voids || []).filter((_, k) => k !== i);
+    const inWall = (px, py) => plan.walls.some(w => w.z1 > L.slab_top && px > w.rect[0] && px < w.rect[2] && py > w.rect[1] && py < w.rect[3]);
+    const open = (px, py) => inWall(px, py) || others.some(([a, b, c, d]) => px > a && px < c && py > b && py < d);
+    const sides = [[x0, y0, x1, y0 + t, (x0 + x1) / 2, y0 - 3], [x0, y1 - t, x1, y1, (x0 + x1) / 2, y1 + 3],
+                   [x0, y0, x0 + t, y1, x0 - 3, (y0 + y1) / 2], [x1 - t, y0, x1, y1, x1 + 3, (y0 + y1) / 2]];
+    for (const [a, b, c, d, px, py] of sides) {
+      if (!open(px, py)) { add(`SLAB_void${i}`, 'slab_edge', boxMesh(a, b, c, d, L.ceiling, L.slab_top, 'plaster_white')); continue; }
+      // partly shared side: keep only the stretch that borders floor
+      const along = (b === d - t || d - b === t) ? 'x' : 'y';
+      const lo = along === 'x' ? a : b, hi = along === 'x' ? c : d;
+      let s0 = null;
+      for (let q = lo; q <= hi + 0.01; q += 2) {
+        const qx = along === 'x' ? q : px, qy = along === 'x' ? py : q;
+        const solid = q <= hi && !open(qx, qy);
+        if (solid && s0 === null) s0 = q;
+        if ((!solid || q > hi - 2) && s0 !== null) {
+          const e = solid ? hi : q;
+          if (e - s0 > 3) add(`SLAB_void${i}`, 'slab_edge', along === 'x' ? boxMesh(s0, b, e, d, L.ceiling, L.slab_top, 'plaster_white')
+                                                                          : boxMesh(a, s0, c, e, L.ceiling, L.slab_top, 'plaster_white'));
+          s0 = null;
+        }
+      }
+    }
   }
   add('EXT_ground', 'exterior', boxMesh(-800, -800, 2400, 2200, -62, -61, 'lawn'));
   add('EXT_terrace', 'exterior', boxMesh(960, 985, 1600, 1250, -2, 0, 'stone_pot'));
@@ -187,6 +209,17 @@ export function buildScene(plan, opts = {}, ds) {
   for (const f of plan.furniture) {
     if (f.kind === 'car' && opts.car === false) continue;
     const col = KIND_MAT(f);
+    if (f.shape === 'prism') {          // extruded polygon: axis z = plan polygon (x,y) raised z0..z0+h; axis x = (y,z) polygon, x0..x1
+      const sh = new THREE.Shape(f.poly.map(([u, v]) => new THREE.Vector2(u, v)));
+      const depth = f.axis === 'x' ? f.x1 - f.x0 : f.h;
+      const g = new THREE.ExtrudeGeometry(sh, { depth, bevelEnabled: false });
+      g.applyMatrix4(f.axis === 'x' ? new THREE.Matrix4().set(0, 0, 1, f.x0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
+                                    : new THREE.Matrix4().set(1, 0, 0, 0, 0, 0, 1, f.z0, 0, 1, 0, 0, 0, 0, 0, 1));
+      const m = new THREE.Mesh(g, mat(T(col), { side: THREE.DoubleSide }));
+      if (f.kind === 'glass') glassPane(m);
+      add(f.id, f.kind, m, col);
+      continue;
+    }
     if (f.shape === 'cyl') {
       const [cx, cy] = f.center;
       if (f.kind === 'jacuzzi') {

@@ -42,6 +42,9 @@ for o in plan["openings"]:
 for f in plan["furniture"]:
     if f["shape"] == "box":
         rect(f["rect"], (0, 220, 0, 50), (0, 150, 0, 255))
+    elif f["shape"] == "prism":
+        if f["axis"] == "z":
+            d.polygon([px(*q) for q in f["poly"]], fill=(0, 220, 0, 50), outline=(0, 150, 0, 255))
     else:
         cx, cy = px(*f["center"])
         r = f["r"] / K * S
