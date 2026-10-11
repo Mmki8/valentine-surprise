@@ -491,5 +491,75 @@
    }
   },
   "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/8426ced4-d17c-4eb4-938d-35ea2491c9b3.zip"
+ },
+ "v5_golden_hour": {
+  "brief": "Client: no night - golden hour on the first floor; the staircase image did not make sense; finish the first floor.",
+  "stair_fix": [
+   "stair digitized wrong in v1-v4: ended 104 cm short of the landing (ground px y 720 instead of the stair-hole edge 621) and had no winders - rebuilt from BOTH plans: 20 risers x 15.5 cm, 3 winders by the entrance, 17 straight goings of 28.9 cm, arriving at the landing",
+   "UOG.1 had been modelled as a horizontal glass rail floating 3.1-4.1 m above the stair: it is the stair's own raked balustrade - now a raked glass panel 1 m above the nosings",
+   "slab-edge strip between the two upper voids and slab edges against walls removed",
+   "landing artwork moved off the bedroom-2 door wall; landing/void ceilings one continuous walnut slat ceiling",
+   "HALL_A first golden candidates showed plaster on the stair wall - regenerated with the walnut battens of the model"
+  ],
+  "relight": "each approved first-floor view re-rendered from its golden-hour guide with the approved night render of the same camera as IMAGE 2 (design locked, light changed)",
+  "accepted_with_note": [
+   "consistency flags BED3_B vase / BED2_B window frame = backlit against the low sun (lighting only)",
+   "bedroom-2 pendants sit ~15 cm closer to the LED lines than modelled (as in v4)"
+  ],
+  "final": {
+   "BED3_A": {
+    "job_id": "8583ea6e-c23d-4a3f-97a0-b90cacc446a8",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183238_8583ea6e-c23d-4a3f-97a0-b90cacc446a8.png"
+   },
+   "BED3_B": {
+    "job_id": "8b3525e6-de18-4aa2-b706-217e890bb3c5",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183240_8b3525e6-de18-4aa2-b706-217e890bb3c5.png"
+   },
+   "BED3_C": {
+    "job_id": "25d98573-a7c3-4f46-a1e5-8dd523fea71a",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183239_25d98573-a7c3-4f46-a1e5-8dd523fea71a.png"
+   },
+   "BATH2_A": {
+    "job_id": "a476ef64-c146-413b-9119-4ecce2933ae2",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183238_a476ef64-c146-413b-9119-4ecce2933ae2.png"
+   },
+   "BED1_A": {
+    "job_id": "85e97ff6-9987-4f3a-a44c-ad7aa64742dc",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183240_85e97ff6-9987-4f3a-a44c-ad7aa64742dc.png"
+   },
+   "BED1_B": {
+    "job_id": "391f2507-2517-40d7-830c-87a6925712b4",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183237_391f2507-2517-40d7-830c-87a6925712b4.png"
+   },
+   "BATH1_A": {
+    "job_id": "7d6f5e4a-16a3-42b2-9ce3-372ce26223f9",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183240_7d6f5e4a-16a3-42b2-9ce3-372ce26223f9.png"
+   },
+   "BED2_A": {
+    "job_id": "a6938a5b-1c9d-465c-b610-aeb6cbb29907",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183238_a6938a5b-1c9d-465c-b610-aeb6cbb29907.png"
+   },
+   "BED2_B": {
+    "job_id": "aa99c3b9-5e42-4cdc-a085-12d12dd270ce",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183239_aa99c3b9-5e42-4cdc-a085-12d12dd270ce.png"
+   },
+   "BATH3_A": {
+    "job_id": "6ce987cd-48b2-4c30-9242-d971070f5b2a",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183237_6ce987cd-48b2-4c30-9242-d971070f5b2a.png"
+   },
+   "UPHALL_A": {
+    "job_id": "3ea61ad3-6b50-4027-804f-626b60de6822",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183320_3ea61ad3-6b50-4027-804f-626b60de6822.png"
+   },
+   "UPHALL_B": {
+    "job_id": "f3708a2a-4c1e-4620-91ca-082128c02cf6",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_183321_f3708a2a-4c1e-4620-91ca-082128c02cf6.png"
+   },
+   "HALL_A": {
+    "job_id": "0fb97941-4f8c-4b2f-937b-22fdeee58304",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_190149_0fb97941-4f8c-4b2f-937b-22fdeee58304.png"
+   }
+  },
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/147f4f08-ec6c-4252-ab8a-5b44d1568ca0.zip"
  }
 }

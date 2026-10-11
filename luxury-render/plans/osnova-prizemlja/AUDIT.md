@@ -31,7 +31,7 @@ Everything in `plan.json` is traced to pixels of `source/floorplan_ground.webp`
 | A6 | Spa east opening is a full-height glazed slider (2.05 m) | `O_spa_glazing` |
 | A7 | Mudroom + WC windows are high windows (sill 1.50 m) | `O_mud_window`, `O_wc_window` |
 | A8 | Double door into dining: west leaf active, east leaf passive (dashed arc), both glazed | `O_double_door` |
-| A9 | Stair modelled as straight run; the drawing shows 3 winders at the bottom | `F_stair_*` |
+| A9 | Stair (fixed in v5, read off BOTH plans): 3 winders at the entrance + straight flight arriving at the landing; 20 risers x 15.5 cm; raked glass balustrade = UOG.1 | `F_stair_*` |
 | A10 | `*` unit = fridge column; two small squares in kitchen corner = installation duct | furniture list |
 
 ## Open questions — I need your answer
@@ -64,3 +64,5 @@ Everything in `plan.json` is traced to pixels of `source/floorplan_ground.webp`
 | Baths 1, 3 | taupe & walnut | taupe stone, walnut counter, black vessel basin, mirror cabinet, black pendants, gypsophila |
 Fixes found while modelling: bath-2 shower glass was at x 551 (mid-room) -> moved to the shower edge x 458; bath-3 glass shortened so the shower has an entry.
 First floor is shown at dusk (blue hour); the view is from 4.5 m up. Ground floor stays golden hour.
+
+v5: the whole house is golden hour (client). The stair was wrong before v5 (ended 1 m short of the landing, UOG.1 floating above it) - fixed, see review_log v5.
