@@ -280,5 +280,153 @@
   "final": 13,
   "rejected_by_auto_only": 0,
   "rejected_by_vision_although_auto_passed": 3
+ },
+ "v3": {
+  "version": "v3 (after client feedback 2026-10-11)",
+  "changes": [
+   "1st-floor plan integrated: no gallery, plain wall over the living void; double-height entry hall with railings; 3 bedrooms + 3 bathrooms modelled",
+   "every light fitting, decor object, panel and cabinet division modelled in 3D at a fixed place (design_layer.py)",
+   "locked material registry: one description per material, used verbatim in every prompt",
+   "hero render per space; every other view gets it as IMAGE 2 (materials/fittings/light), geometry only from the 3D model",
+   "one time of day + one garden view for the whole house",
+   "TV moved onto a freestanding walnut media wall (no longer on the glass)",
+   "sauna: frameless glass box, timber colour in the model, closed door",
+   "garage: same true size, wider lenses + elevated view"
+  ],
+  "rejected_this_round": [
+   [
+    "LIV_B#8",
+    "invented garden windows behind kitchen"
+   ],
+   [
+    "LIV_A#3",
+    "invented wall light on bronze wall"
+   ],
+   [
+    "KIT_A#2",
+    "invented window at left edge"
+   ],
+   [
+    "HALL_A#2",
+    "geometry void: model lacked double-height entry"
+   ],
+   [
+    "BED3_A#2",
+    "6% camera drift"
+   ],
+   [
+    "BATH3_A#1",
+    "shower not modelled -> unrecognisable"
+   ]
+  ],
+  "consistency_flags_reviewed": [
+   "KIT_A plaster chroma (sun patch)",
+   "HALL_A white plaster lightness",
+   "SPA_A jacuzzi (window light)",
+   "BED3_B console lightness (shade)",
+   "BED2_A bedding/floor (sun)"
+  ],
+  "final": {
+   "LIV_B": {
+    "job_id": "d3fbb039-27d5-4ca4-b38c-e81c39b3370a",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_144943_d3fbb039-27d5-4ca4-b38c-e81c39b3370a.png",
+    "note": "HERO open plan"
+   },
+   "LIV_A": {
+    "job_id": "322179d0-0b79-4e5a-b3a8-b87b8d41abd5",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151112_322179d0-0b79-4e5a-b3a8-b87b8d41abd5.png",
+    "note": ""
+   },
+   "KIT_A": {
+    "job_id": "b061a940-66a4-459a-b5c6-67ee6ae2f5d3",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151112_b061a940-66a4-459a-b5c6-67ee6ae2f5d3.png",
+    "note": ""
+   },
+   "KIT_B": {
+    "job_id": "89ef5825-163a-438c-b13d-e97a95f7428e",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145905_89ef5825-163a-438c-b13d-e97a95f7428e.png",
+    "note": ""
+   },
+   "DIN_A": {
+    "job_id": "8faf5526-72da-4d66-9628-dc507c29255e",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145907_8faf5526-72da-4d66-9628-dc507c29255e.png",
+    "note": ""
+   },
+   "HALL_A": {
+    "job_id": "40753546-bc71-4c7f-9ede-68742f76875c",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151113_40753546-bc71-4c7f-9ede-68742f76875c.png",
+    "note": "double-height entry per 1st-floor plan"
+   },
+   "SPA_B": {
+    "job_id": "2c3814e0-f4a9-4c22-bb23-f4bf4ce052b8",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_144943_2c3814e0-f4a9-4c22-bb23-f4bf4ce052b8.png",
+    "note": "HERO spa"
+   },
+   "SPA_A": {
+    "job_id": "561b6c29-db7c-402f-acc5-c63cbd54a849",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145906_561b6c29-db7c-402f-acc5-c63cbd54a849.png",
+    "note": "frameless glass sauna"
+   },
+   "WC_A": {
+    "job_id": "87556219-c87a-4e88-a8e8-5516574385cb",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_144943_87556219-c87a-4e88-a8e8-5516574385cb.png",
+    "note": "HERO wc"
+   },
+   "GAR_B_car": {
+    "job_id": "e676e2af-d5cb-4cec-b9d2-8d3f2a2caec1",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_144942_e676e2af-d5cb-4cec-b9d2-8d3f2a2caec1.png",
+    "note": "HERO garage"
+   },
+   "GAR_A_car": {
+    "job_id": "2b6526f2-1584-417d-9333-b95f9a7e2e01",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145907_2b6526f2-1584-417d-9333-b95f9a7e2e01.png",
+    "note": "elevated, nose-in"
+   },
+   "GAR_A_empty": {
+    "job_id": "e1c1bf3f-3218-402f-8ee0-2219f793c5a1",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145905_e1c1bf3f-3218-402f-8ee0-2219f793c5a1.png",
+    "note": ""
+   },
+   "GAR_B_empty": {
+    "job_id": "f053c73d-6c69-4971-a393-723f9831f62e",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_145908_f053c73d-6c69-4971-a393-723f9831f62e.png",
+    "note": ""
+   },
+   "BED3_A": {
+    "job_id": "6a7e8cb1-d6d8-4404-aec4-1bc7ca2a0992",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151111_6a7e8cb1-d6d8-4404-aec4-1bc7ca2a0992.png",
+    "note": "HERO bedrooms"
+   },
+   "BED3_B": {
+    "job_id": "8bd7df47-2de0-470d-aa3d-d1fcf32d3d6f",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151435_8bd7df47-2de0-470d-aa3d-d1fcf32d3d6f.png",
+    "note": ""
+   },
+   "BED1_A": {
+    "job_id": "482910cb-ba38-464f-b368-3cf564db7734",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151435_482910cb-ba38-464f-b368-3cf564db7734.png",
+    "note": ""
+   },
+   "BED2_A": {
+    "job_id": "9b60be48-d8f1-4367-8864-60990b6faa52",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151435_9b60be48-d8f1-4367-8864-60990b6faa52.png",
+    "note": ""
+   },
+   "BATH2_A": {
+    "job_id": "357b9eed-5a43-4967-9164-53541a7758fe",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151112_357b9eed-5a43-4967-9164-53541a7758fe.png",
+    "note": "HERO upper baths"
+   },
+   "BATH1_A": {
+    "job_id": "322ae89e-6646-4774-9194-05e0a62985f4",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151435_322ae89e-6646-4774-9194-05e0a62985f4.png",
+    "note": ""
+   },
+   "BATH3_A": {
+    "job_id": "5aef81a1-ed40-4a8c-b801-e4d9f5bd1b37",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261011_151839_5aef81a1-ed40-4a8c-b801-e4d9f5bd1b37.png",
+    "note": ""
+   }
+  }
  }
 }

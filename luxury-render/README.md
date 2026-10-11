@@ -35,6 +35,20 @@ wall, a sauna rendered as a shower, and the G-Wagon parked backwards. Edges
 can't see additions on flat surfaces or which end of a box-shaped car is the
 front, so the vision review is a required gate.
 
+## v3: consistency system (after review)
+
+Feedback on v2: the same kitchen/decor/light looked different from view to view. Cause: decor and fittings existed only as
+prompt text, so the model re-invented them per camera. Fix, in layers:
+1. **Design layer** (`plans/osnova-prizemlja/design_layer.py`): pendants, chandeliers, LED lines, cushions, rug, olive tree,
+   backsplash, shelf, cabinet divisions, media wall, mirrors, shower glass... modelled at fixed 3D positions.
+2. **Locked material registry** (`design-system.json -> materials`): one description per material, used verbatim; the guide
+   is tinted in the real colours, so it is already a colour preview of the design.
+3. **Hero chaining**: one approved hero per space is IMAGE 2 for every other view of that space.
+4. **Gate 3 - consistency** (`qa/consistency_check.py`): per-material colour of each view vs. its hero (mid-tones only).
+5. One time of day and one exterior for the whole house.
+
+Gates per render: geometry (auto) -> vision review (objects, openings, counts, orientation, invented items) -> consistency.
+
 ## Run it for a plan
 
 ```bash

@@ -27,7 +27,7 @@ Everything in `plan.json` is traced to pixels of `source/floorplan_ground.webp`
 | A2 | Double-height ceiling over living **5.60 m**, only right of the orange dashed slab edge | `LEVELS.void_ceiling` |
 | A3 | Garage floor **60 cm lower** (3 treads + 4 risers drawn) | `LEVELS.garage_ffl` |
 | A4 | East + south living facades are **floor-to-ceiling glass over both storeys**, transom at 2.80 m | `O_east_glazing`, `O_south_glazing` |
-| A5 | Upper floor: 1.6 m gallery with glass balustrade along the slab edge; stairwell walls above stair | `scene.js` gallery block, `W_up_stair_*` |
+| ~~A5~~ | RESOLVED by the 1st-floor plan: no gallery - a plain wall rises over the living void; entry hall is double height with glass railings (UOG.1-3) | `osnova-sprat/digitize_upper.py` |
 | A6 | Spa east opening is a full-height glazed slider (2.05 m) | `O_spa_glazing` |
 | A7 | Mudroom + WC windows are high windows (sill 1.50 m) | `O_mud_window`, `O_wc_window` |
 | A8 | Double door into dining: west leaf active, east leaf passive (dashed arc), both glazed | `O_double_door` |
@@ -38,11 +38,19 @@ Everything in `plan.json` is traced to pixels of `source/floorplan_ground.webp`
 
 1. **GKPL box** (65 × 105 cm, freestanding at the hall/dining boundary): chimney/fireplace, or an installation shaft? Rendered as a walnut-clad column for now. If it is a fireplace it becomes a hero element.
 2. **No north arrow** on the plan → sun direction is a guess (late-afternoon sun through the big glass). Tell me which way the glass faces.
-3. **Upper floor plan** — needed for the gallery/balustrade seen from the living room, and for the **bedroom** you mentioned (there is no bedroom on the ground floor).
+3. ~~Upper floor plan~~ — received and modelled (3 bedrooms, 3 bathrooms, landing, double-height entry).
 4. Exterior view through the glass: currently left to the model (it invents hills/sea). Give me the real context (garden, city, sea…) and I'll lock it.
 
 ## Design notes (as your interior designer — the blunt version)
 
-- **TV in front of the east glass** (as drawn) means backlight glare every morning and a black rectangle against your best view. Consider moving the TV to the solid north wall and turning the sofa, or use a drop-down TV.
+- **TV in front of the east glass**: solved as a freestanding walnut media wall (2.0 x 2.7 m) at the TV position - solid backing, cables hidden, glass stays clear around it.
 - **Garage is tight**: 3.3 m inner width, G 63 is 1.98 m wide (2.19 m with mirrors) → ~55 cm each side. Driver door won't open fully if the low cabinets get deeper than drawn.
 - **AC unit** drawn on the living north wall would sit in the middle of a 5.6 m bronze feature wall — conceal it (linear slot diffuser in the ceiling).
+
+## First floor (OSNOVA 1. SPRATA) - assumptions
+| # | Assumption |
+|---|---|
+| U1 | Upper finished floor +3.10 m, ceiling +5.60 m (2.50 m clear) |
+| U2 | Bedroom glazing (bed 1 south, bed 2 south OG.2, bed 3 east OG.3) = full-height glazed doors to balconies |
+| U3 | Railings UOG.1-3 = frameless glass, 100 cm |
+| U4 | Bath 3 has no window (none drawn) |
