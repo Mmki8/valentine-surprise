@@ -1,0 +1,110 @@
+{
+ "camera": "KIT_A",
+ "room": "R_kitchen_dining",
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "table": 1,
+  "counter": 1,
+  "island": 1,
+  "sofa": 1,
+  "tall_cabinet": 1,
+  "box": 1,
+  "chair": 3,
+  "stool": 3
+ },
+ "items": [
+  {
+   "id": "F_d_table",
+   "name": "dining table",
+   "where": "centre",
+   "share": 0.077,
+   "note": null
+  },
+  {
+   "id": "F_k_run_west",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "left",
+   "share": 0.05,
+   "note": "base run w/ cooktop"
+  },
+  {
+   "id": "F_k_island",
+   "name": "kitchen island",
+   "where": "centre",
+   "share": 0.035,
+   "note": "overhang on south side y821-850"
+  },
+  {
+   "id": "F_l_sofa_return",
+   "name": "L-shaped sofa",
+   "where": "right",
+   "share": 0.029,
+   "note": "L-sofa chaise/return"
+  },
+  {
+   "id": "F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.024,
+   "note": "'*' = fridge column"
+  },
+  {
+   "id": "F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.015,
+   "note": "installation duct, boxed in"
+  },
+  {
+   "id": "F_d_chair_n3",
+   "name": "dining chair",
+   "where": "right",
+   "share": 0.006,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n2",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n1",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_k_stool_3",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.004,
+   "note": null
+  },
+  {
+   "id": "F_k_stool_1",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.004,
+   "note": null
+  },
+  {
+   "id": "F_k_stool_2",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.003,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

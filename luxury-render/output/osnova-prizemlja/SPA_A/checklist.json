@@ -1,0 +1,41 @@
+{
+ "camera": "SPA_A",
+ "room": "R_spa",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_sauna_glass_s",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.147,
+   "note": "sauna glass door, opens into spa"
+  },
+  {
+   "id": "O_spa_glazing",
+   "name": "full-height glazed sliding door",
+   "where": "centre",
+   "share": 0.082,
+   "note": "spa east glazed opening ~205 cm (ASSUMED full-height slider)"
+  }
+ ],
+ "furniture_counts": {
+  "jacuzzi": 1
+ },
+ "items": [
+  {
+   "id": "F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "centre",
+   "share": 0.033,
+   "note": "round hot tub ~170 cm, raised 70 cm"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "camera": "HALL_A",
+ "room": "R_hall",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_wc_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.016,
+   "note": "hall <-> WC"
+  },
+  {
+   "id": "O_mud_hall_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.006,
+   "note": "mudroom <-> hall"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

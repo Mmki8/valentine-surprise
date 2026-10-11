@@ -1,0 +1,122 @@
+{
+ "camera": "DIN_A",
+ "room": "R_kitchen_dining",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_south_glazing",
+   "name": "floor-to-ceiling glass facade",
+   "where": "left",
+   "share": 0.181,
+   "note": "living south facade: 3 large panels to terrace"
+  },
+  {
+   "id": "O_double_door",
+   "name": "glazed double door (closed)",
+   "where": "centre",
+   "share": 0.093,
+   "note": "double door into dining: active leaf west (solid arc), passive leaf east (dashed arc)"
+  },
+  {
+   "id": "O_east_glazing",
+   "name": "floor-to-ceiling glass facade",
+   "where": "left",
+   "share": 0.092,
+   "note": "living east facade: fixed glass + lift&slide between y988-1125"
+  }
+ ],
+ "furniture_counts": {
+  "island": 1,
+  "table": 1,
+  "armchair": 2,
+  "chair": 6,
+  "sofa": 1
+ },
+ "items": [
+  {
+   "id": "F_k_island",
+   "name": "kitchen island",
+   "where": "left",
+   "share": 0.084,
+   "note": "overhang on south side y821-850"
+  },
+  {
+   "id": "F_d_table",
+   "name": "dining table",
+   "where": "centre",
+   "share": 0.025,
+   "note": null
+  },
+  {
+   "id": "F_l_armchair_1",
+   "name": "lounge armchair",
+   "where": "left",
+   "share": 0.016,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n1",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.011,
+   "note": null
+  },
+  {
+   "id": "F_l_armchair_2",
+   "name": "lounge armchair",
+   "where": "left",
+   "share": 0.008,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n2",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.006,
+   "note": null
+  },
+  {
+   "id": "F_l_sofa_return",
+   "name": "L-shaped sofa",
+   "where": "left",
+   "share": 0.006,
+   "note": "L-sofa chaise/return"
+  },
+  {
+   "id": "F_d_chair_n3",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_s1",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.003,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_s2",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.002,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_s3",
+   "name": "dining chair",
+   "where": "centre",
+   "share": 0.002,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

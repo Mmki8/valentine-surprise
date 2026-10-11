@@ -1,0 +1,24 @@
+{
+ "camera": "GAR_A_empty",
+ "room": "R_garage",
+ "car": false,
+ "openings": [
+  {
+   "id": "O_garage_door",
+   "name": "sectional garage door (closed)",
+   "where": "centre",
+   "share": 0.163,
+   "note": "sectional garage door"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "_doc": "Single source of truth for look & feel. build_prompt.py composes every generation prompt from this file + the camera's visible elements. Change taste here, never in ad-hoc prompts.",
+ "_doc": "Single source of truth for look & feel. build_prompt.py composes every generation prompt from this file + the camera's visible elements. Change taste here, never in ad-hoc prompts. Proven recipe (bake-off 2026-10-11, LIV_B): 'retexture pass' prompt on the line-burned blockout scored 0.81 structural (= perfect self-match 0.81); design-brief prompts scored 0.06-0.42 because the model redesigns the room.",
  "global": {
   "positioning": "ultra-luxury contemporary residence; warm, wood-rich, lived-in, quietly expensive (no gold bling, no clutter)",
   "photography": "high-end architectural interior photography, full-frame camera, 24mm tilt-shift lens, perfectly vertical verticals, eye-level two-point perspective, natural exposure balanced for interior and window, subtle depth, crisp detail, no lens distortion",
@@ -31,7 +31,10 @@
  "rooms": {
   "R_living": {
    "style": "living_grand",
-   "mood_refs": ["mood_living_doubleheight.jpg", "mood_kitchen_dining_A.jpg"],
+   "mood_refs": [
+    "mood_living_doubleheight.jpg",
+    "mood_kitchen_dining_A.jpg"
+   ],
    "concept": "Grand double-height living room, light-filled, warm and sculptural.",
    "materials": {
     "floor": "wide-plank natural oak, herringbone-free, long boards running north-south",
@@ -46,11 +49,32 @@
     "tv_unit": "low walnut console with TV",
     "lighting": "two large interlocking crystal ring chandeliers hanging in the double-height void (as mood reference), floor lamp",
     "rug": "large hand-knotted wool-silk rug in sand/stone tones under the seating group"
+   },
+   "retexture": {
+    "map": {
+     "floor": "wide-plank brushed natural oak",
+     "ceiling": "walnut slatted ceiling with recessed warm linear LED lines",
+     "wall": "the full-height north wall behind the sofa = large-format hand-patinated bronze panels with fine reveals; all other walls = warm greige mineral plaster",
+     "slab_edge": "dark bronze fascia of the upper gallery, with a frameless glass balustrade above it",
+     "glass": "floor-to-ceiling glazing in slim dark-bronze frames, sheer linen curtains gathered at the sides",
+     "frame": "dark bronze window frames",
+     "sofa": "low deep ivory boucle L-sofa with navy velvet and cognac leather cushions",
+     "armchair": "sculptural cognac leather lounge armchair",
+     "coffee_table": "smoked oak and dark bronze coffee tables with art books and a coral sculpture",
+     "low_cabinet": "low walnut TV console",
+     "tv": "slim black TV",
+     "door": "flush full-height walnut door"
+    },
+    "add": "two large interlocking crystal ring chandeliers hanging in the double-height void, a large olive tree in a free corner, a sand-coloured wool-silk rug under the seating, a cashmere throw, ceramics and fresh branches",
+    "light": "warm late-afternoon daylight through the glazed facades with soft sun patches, warm 2700K LED accents"
    }
   },
   "R_kitchen_dining": {
    "style": "warm_wood_luxe",
-   "mood_refs": ["mood_kitchen_dining_A.jpg", "mood_kitchen_island_B.jpg"],
+   "mood_refs": [
+    "mood_kitchen_dining_A.jpg",
+    "mood_kitchen_island_B.jpg"
+   ],
    "concept": "Chef's kitchen and dining as one warm wood-and-stone composition.",
    "materials": {
     "floor": "wide-plank natural oak (continuous with living)",
@@ -64,22 +88,67 @@
     "dining_chairs": "six curved chairs in cognac-brown leather with dark legs",
     "lighting": "long linear bronze pendants over island and over dining table",
     "gkpl_box": "freestanding drywall box clad in walnut slats/bronze (function to be confirmed: chimney or shaft)"
+   },
+   "retexture": {
+    "map": {
+     "floor": "wide-plank brushed natural oak",
+     "ceiling": "walnut slatted ceiling with recessed warm linear LEDs and slim black track spots",
+     "wall": "warm greige plaster; kitchen back wall above the counters = backlit bronze-veined grey stone backsplash with a slim bronze-lit open shelf",
+     "counter": "handle-less smoked walnut base units with thin grey-taupe marble worktop",
+     "tall_cabinet": "black-glass integrated fridge column with bronze handle",
+     "island": "monolithic grey-taupe marble island with thick top and waterfall ends",
+     "stool": "bar stools with black shell seats on walnut legs",
+     "table": "solid walnut dining table",
+     "chair": "curved cognac leather dining chairs with dark legs",
+     "box": "column clad in vertical walnut slats",
+     "cooktop": "flush black induction cooktop",
+     "sink": "black undermount sink with bronze tap",
+     "stair": "walnut staircase with frameless glass balustrade",
+     "sofa": "ivory boucle L-sofa",
+     "armchair": "cognac leather armchair",
+     "coffee_table": "smoked oak coffee table",
+     "glass": "glazing in slim dark-bronze frames",
+     "frame": "dark bronze frames",
+     "door": "flush walnut door",
+     "slab_edge": "dark bronze gallery fascia"
+    },
+    "add": "long linear bronze pendant lights over the island and over the dining table, a bowl of lemons, branches in a vase, ceramics, a walnut cutting board",
+    "light": "warm late-afternoon daylight from the glazed facades, warm 2700K LED under-cabinet and ceiling accents"
    }
   },
   "R_hall": {
    "style": "warm_wood_luxe",
-   "mood_refs": ["mood_kitchen_island_B.jpg"],
+   "mood_refs": [
+    "mood_kitchen_island_B.jpg"
+   ],
    "concept": "Arrival hall: sculptural walnut stair, glass balustrade, warm wood.",
    "materials": {
     "floor": "wide-plank oak",
     "stair": "solid walnut treads on a closed walnut-clad stringer, frameless glass balustrade, LED under each tread",
     "walls": "walnut vertical battens on the stair wall, greige plaster elsewhere",
     "doors": "full-height flush walnut doors with concealed frames"
+   },
+   "retexture": {
+    "map": {
+     "floor": "wide-plank brushed natural oak",
+     "ceiling": "warm walnut slatted ceiling with recessed linear LED",
+     "stair": "solid walnut stair treads on a walnut-clad stringer with LED under each tread and a frameless glass balustrade",
+     "wall": "vertical walnut battens on the stair wall, warm greige plaster elsewhere",
+     "door": "flush full-height walnut doors (closed)",
+     "glass": "frameless glass",
+     "box": "column clad in walnut slats",
+     "counter": "smoked walnut kitchen units",
+     "tall_cabinet": "black-glass column"
+    },
+    "add": "one large abstract artwork on a free wall, a sculptural pendant light in the stair void",
+    "light": "soft warm daylight from the entrance side, warm LED stair lighting"
    }
   },
   "R_spa": {
    "style": "dark_spa",
-   "mood_refs": ["mood_spa_bath_dark.jpg"],
+   "mood_refs": [
+    "mood_spa_bath_dark.jpg"
+   ],
    "concept": "Private dark wellness spa: stone, water, amber light.",
    "materials": {
     "floor": "large-format dark honed stone, warm oak duckboard around the tub",
@@ -89,18 +158,66 @@
     "shower": "walk-in shower, frameless glass, ceiling rain head, black/bronze fittings",
     "sauna": "glass-fronted sauna in warm thermo-aspen/hemlock with backlit benches",
     "decor": "orchids, stacked charcoal towels, candles, diffuser sticks"
+   },
+   "retexture": {
+    "map": {
+     "floor": "large-format dark honed stone with a warm oak duckboard around the tub",
+     "ceiling": "dark walnut slats with pinhole downlights",
+     "wall": "dark Pietra Grey stone slabs floor to ceiling",
+     "jacuzzi": "round hot tub clad in black textured crocodile-pattern stone, glowing warm underwater light",
+     "shower": "walk-in shower in dark stone with ceiling rain head and black/bronze fittings",
+     "glass": "frameless glass",
+     "frame": "black frames",
+     "bench": "backlit thermo-aspen sauna benches",
+     "door": "flush dark walnut door (closed)"
+    },
+    "add": "white orchids, stacked charcoal towels, candles, diffuser sticks",
+    "light": "low moody amber light, grazing light on the stone, soft dusk daylight through the glazing"
    }
   },
-  "R_sauna": {"style": "dark_spa", "mood_refs": ["mood_spa_bath_dark.jpg"], "concept": "Warm timber sauna behind glass.", "materials": {}},
+  "R_sauna": {
+   "style": "dark_spa",
+   "mood_refs": [
+    "mood_spa_bath_dark.jpg"
+   ],
+   "concept": "Warm timber sauna behind glass.",
+   "materials": {},
+   "retexture": {
+    "map": {
+     "bench": "backlit thermo-aspen benches",
+     "wall": "thermo-aspen",
+     "floor": "dark stone"
+    },
+    "add": "sauna bucket",
+    "light": "warm"
+   }
+  },
   "R_wc": {
    "style": "dark_spa",
-   "mood_refs": ["mood_spa_bath_dark.jpg"],
+   "mood_refs": [
+    "mood_spa_bath_dark.jpg"
+   ],
    "concept": "Jewel-box guest WC, dark and dramatic.",
    "materials": {
     "walls": "dark veined stone slab, backlit mirror over the vanity",
     "vanity": "floating dark stone vanity with black textured (croc-pattern) vessel basin, wall-mounted black/bronze tap",
     "toilet": "wall-hung black ceramic toilet",
     "decor": "orchid, diffuser, small framed black-and-white photographs"
+   },
+   "retexture": {
+    "map": {
+     "floor": "dark honed stone",
+     "ceiling": "dark walnut slats with one pinhole light",
+     "wall": "dark veined stone slab walls",
+     "vanity": "floating dark stone vanity",
+     "basin": "black textured crocodile-pattern stone vessel basin with wall-mounted black tap",
+     "toilet": "wall-hung black ceramic toilet",
+     "glass": "small frosted window in a black frame",
+     "frame": "black window frame",
+     "door": "flush dark walnut door"
+    },
+    "add": "a backlit mirror on the wall above the vanity, a white orchid, a diffuser, two small framed black-and-white photographs",
+    "light": "dark and dramatic: warm backlight from the mirror, pool of amber light on the basin"
    }
   },
   "R_garage": {
@@ -113,10 +230,58 @@
     "ceiling": "black ceiling with a grid of continuous warm-white linear LED lines",
     "garage_door": "flush dark bronze sectional door",
     "car": "matte black Mercedes-AMG G 63 (G-Wagon), parked nose-in exactly where drawn"
+   },
+   "retexture": {
+    "map": {
+     "floor": "seamless dark grey polished microcement with soft reflections",
+     "ceiling": "matte black ceiling with a grid of continuous warm-white linear LED lines",
+     "wall": "dark charcoal plaster walls",
+     "low_cabinet": "smoked walnut low cabinets with dark stone top",
+     "door": "flush dark bronze sectional garage door",
+     "stair": "dark stone steps with LED strip under each nosing",
+     "car": "matte black Mercedes-AMG G 63 G-Wagon (boxy, round headlights, spare wheel on the rear door), exactly in the place and orientation of the block",
+     "tall_cabinet": "full-height walnut wardrobes",
+     "glass": "glass"
+    },
+    "add": "nothing else - clean car-gallery look; optionally one large framed automotive photograph on a free wall",
+    "light": "precise showroom lighting from the LED ceiling grid, subtle reflections on the floor"
    }
   },
-  "R_laundry": {"style": "service_warm", "mood_refs": ["mood_kitchen_island_B.jpg"], "concept": "Refined utility.", "materials": {}},
-  "R_mudroom": {"style": "service_warm", "mood_refs": ["mood_kitchen_island_B.jpg"], "concept": "Full-height walnut wardrobes, bench, warm light.", "materials": {}}
+  "R_laundry": {
+   "style": "service_warm",
+   "mood_refs": [
+    "mood_kitchen_island_B.jpg"
+   ],
+   "concept": "Refined utility.",
+   "materials": {},
+   "retexture": {
+    "map": {
+     "floor": "oak",
+     "wall": "greige plaster",
+     "appliance": "integrated washer and dryer",
+     "counter": "walnut worktop"
+    },
+    "add": "folded linen",
+    "light": "soft"
+   }
+  },
+  "R_mudroom": {
+   "style": "service_warm",
+   "mood_refs": [
+    "mood_kitchen_island_B.jpg"
+   ],
+   "concept": "Full-height walnut wardrobes, bench, warm light.",
+   "materials": {},
+   "retexture": {
+    "map": {
+     "floor": "oak",
+     "wall": "greige plaster",
+     "tall_cabinet": "full-height walnut wardrobes"
+    },
+    "add": "",
+    "light": "soft"
+   }
+  }
  },
  "guide_color_legend": {
   "tan floor": "oak plank floor (or dark stone / microcement where the floor is dark/grey)",
@@ -127,5 +292,37 @@
   "very dark thin bars": "dark bronze window frames and mullions",
   "beige boxes with backrests": "upholstered sofa",
   "light grey box with top": "marble kitchen island"
+ },
+ "blockout_look": {
+  "floor": "the floor",
+  "ceiling": "the ceiling planes",
+  "wall": "the walls",
+  "door": "dark brown door panels (keep closed)",
+  "glass": "light-blue panes",
+  "frame": "very dark thin bars",
+  "slab_edge": "the very dark thick horizontal band",
+  "sofa": "the beige L-shaped block with backrest",
+  "armchair": "the brown armchair block",
+  "coffee_table": "the dark low block(s)",
+  "table": "the brown table",
+  "chair": "the brown chairs",
+  "stool": "the black round stools",
+  "island": "the light-grey island block",
+  "counter": "the black base-cabinet run with grey top",
+  "tall_cabinet": "the black tall column",
+  "low_cabinet": "the low cabinet block(s)",
+  "tv": "the thin black panel",
+  "box": "the plain freestanding box/column",
+  "stair": "the stepped block (staircase)",
+  "toilet": "the small white block",
+  "vanity": "the dark floating slab",
+  "basin": "the round bowl",
+  "bench": "the light-wood benches",
+  "jacuzzi": "the dark round drum with water",
+  "shower": "the dark shower tray",
+  "car": "the black car-shaped block",
+  "appliance": "the white boxes",
+  "sink": "the sink recess",
+  "cooktop": "the black cooktop panel"
  }
 }

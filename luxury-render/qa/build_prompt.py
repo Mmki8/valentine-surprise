@@ -88,29 +88,41 @@ def main(plan_dir, cam_full):
         counts.pop("car", None)
 
     room = ds["rooms"][cam["room"]]
+    rt = room["retexture"]
     others = sorted({furn[i["id"]]["room"] for i in items if i["id"] in furn} - {cam["room"]})
-    mats = dict(room.get("materials", {}))
-    for r in others:
-        for k, v in ds["rooms"].get(r, {}).get("materials", {}).items():
-            mats.setdefault(f"{k} ({r[2:].replace('_', ' ')})", v)
-
-    inv = ", ".join(f"{n} x {NAMES.get(k, k)}" for k, n in sorted(counts.items()) if k not in ("stair",))
-    open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none visible"
-    car_line = ("" if car_on or cam["room"] != "R_garage" else
-                "The garage is EMPTY - no car. Show the clean, reflective empty floor. ")
-    prompt = f"""Photorealistic ultra-luxury interior render. IMAGE 1 IS THE EXACT 3D LAYOUT of this room: a grey/colour-coded blockout render of the real floor plan. Reproduce IMAGE 1 1:1 - the identical camera position, lens, perspective and framing, and every wall, ceiling height, opening and furniture piece at exactly the same place, size, shape and count. Only replace the flat blockout surfaces with real materials, lighting and decor. Keep all vertical lines perfectly vertical.
-
-LOCKED - must match IMAGE 1 exactly: walls and ceiling planes; openings: {open_txt}; furniture: {inv or 'none'}.{' Staircase as shown.' if any(i['name']=='staircase' for i in items) else ''} Do NOT add, remove, move, resize or reshape any wall, window, door or furniture piece. Do not invent windows. Closed doors stay closed.
-{car_line}
-ROOM: {room['concept']}
-MATERIALS: {'; '.join(f'{k}: {v}' for k, v in mats.items())}.
-COLOUR CODE IN IMAGE 1: {'; '.join(f'{k} = {v}' for k, v in ds['guide_color_legend'].items())}.
-LIGHT: {' '.join(ds['lighting_rules'][:3])}
-LIFE: {ds['global']['life_details_allowed']}
-{'IMAGES 2+ are MOOD REFERENCES for materials, palette and lighting atmosphere ONLY - do not copy their layout, furniture positions or windows.' if room['mood_refs'] else ''}
-STYLE: {ds['global']['positioning']}. {ds['global']['photography']}. {ds['global']['render_quality']}.
-AVOID: {ds['global']['never']}."""
-    prompt = re.sub(r"\n{3,}", "\n\n", prompt).strip()
+    look = ds["blockout_look"]
+    kinds = ["floor", "ceiling", "wall"] + [k for k in counts] + \
+            [k for k in ("door", "glass", "frame", "slab_edge") if any(v.startswith(("O_", "SLAB", "GALLERY")) and
+             (k != "slab_edge" or v.startswith("SLAB")) for v in vis)]
+    if any(i["name"] == "staircase" for i in items):
+        kinds.append("stair")
+    # materials of neighbouring rooms seen through openings
+    mp = {}
+    for r in [cam["room"]] + others:
+        for k, v in ds["rooms"].get(r, {}).get("retexture", {}).get("map", {}).items():
+            mp.setdefault(k, v)
+    pairs = []
+    for k in dict.fromkeys(kinds):
+        if k in mp and k in look:
+            pairs.append(f"{look[k]} = {mp[k]}")
+    inv = ", ".join(f"{n} x {NAMES.get(k, k)}" for k, n in sorted(counts.items()))
+    open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
+    car_line = ""
+    if cam["room"] == "R_garage" and not car_on:
+        car_line = " The garage is EMPTY: no car anywhere."
+    prompt = (
+        "Turn IMAGE 1 into a photorealistic ultra-luxury architectural photograph WITHOUT changing its geometry. "
+        "IMAGE 1 is a colour-coded 3D blockout of the real floor plan with every edge drawn as a thin dark line; keep the identical camera, "
+        "framing and perspective, and keep every line - every wall, ceiling height, opening, column, stair and furniture piece - at exactly "
+        "the same pixel position, size and count. This is a material and lighting pass only: retexture the surfaces, do not redesign the space. "
+        "Do not add windows or doors; closed doors stay closed; glass only where the light-blue panes are." + car_line + "\n\n"
+        f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
+        f"Retexture as: {'; '.join(pairs)}.\n"
+        f"Add only: {rt['add']}.\n"
+        f"Light: {rt['light']}.\n"
+        "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
+        "real material micro-detail. No people, no text, no extra furniture, no extra openings."
+    )
     checklist = dict(camera=cam_full, room=cam["room"], car=car_on if cam["room"] == "R_garage" else None,
                      openings=openings, furniture_counts=dict(counts), items=items,
                      manual_checks=[

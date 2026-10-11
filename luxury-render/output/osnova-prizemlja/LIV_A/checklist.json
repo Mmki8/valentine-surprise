@@ -1,0 +1,96 @@
+{
+ "camera": "LIV_A",
+ "room": "R_living",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_east_glazing",
+   "name": "floor-to-ceiling glass facade",
+   "where": "right",
+   "share": 0.347,
+   "note": "living east facade: fixed glass + lift&slide between y988-1125"
+  }
+ ],
+ "furniture_counts": {
+  "sofa": 1,
+  "tall_cabinet": 1,
+  "tv": 1,
+  "low_cabinet": 1,
+  "armchair": 2,
+  "coffee_table": 2,
+  "island": 1
+ },
+ "items": [
+  {
+   "id": "F_l_sofa_long",
+   "name": "L-shaped sofa",
+   "where": "centre",
+   "share": 0.03,
+   "note": "L-sofa main run"
+  },
+  {
+   "id": "F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "left",
+   "share": 0.018,
+   "note": "'*' = fridge column"
+  },
+  {
+   "id": "F_l_tv",
+   "name": "TV",
+   "where": "centre",
+   "share": 0.014,
+   "note": "TV facing the sofa"
+  },
+  {
+   "id": "F_l_tv_unit",
+   "name": "low cabinet",
+   "where": "centre",
+   "share": 0.014,
+   "note": "freestanding TV unit"
+  },
+  {
+   "id": "F_l_armchair_2",
+   "name": "lounge armchair",
+   "where": "right",
+   "share": 0.012,
+   "note": null
+  },
+  {
+   "id": "F_l_table_1",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.007,
+   "note": null
+  },
+  {
+   "id": "F_l_table_2",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.006,
+   "note": null
+  },
+  {
+   "id": "F_l_armchair_1",
+   "name": "lounge armchair",
+   "where": "right",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "F_k_island",
+   "name": "kitchen island",
+   "where": "left",
+   "share": 0.004,
+   "note": "overhang on south side y821-850"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

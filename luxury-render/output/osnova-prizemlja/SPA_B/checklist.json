@@ -1,0 +1,56 @@
+{
+ "camera": "SPA_B",
+ "room": "R_spa",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_sauna_glass_e",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.061,
+   "note": "sauna fixed glass side"
+  },
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.038,
+   "note": "hall <-> spa"
+  },
+  {
+   "id": "O_sauna_glass_s",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.013,
+   "note": "sauna glass door, opens into spa"
+  }
+ ],
+ "furniture_counts": {
+  "jacuzzi": 1,
+  "shower": 1
+ },
+ "items": [
+  {
+   "id": "F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "right",
+   "share": 0.026,
+   "note": "round hot tub ~170 cm, raised 70 cm"
+  },
+  {
+   "id": "F_shower_tray",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.006,
+   "note": "walk-in shower"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

@@ -462,7 +462,7 @@
    ]
   },
   {
-   "id": "W_liv_north_head0",
+   "id": "W_liv_north_s0",
    "kind": "wall",
    "rgb": [
     141,
@@ -471,7 +471,7 @@
    ]
   },
   {
-   "id": "W_liv_north_s1",
+   "id": "W_liv_east_n_s0",
    "kind": "wall",
    "rgb": [
     202,
@@ -480,7 +480,7 @@
    ]
   },
   {
-   "id": "W_liv_east_n_s0",
+   "id": "W_ne_fin_s0",
    "kind": "wall",
    "rgb": [
     54,
@@ -489,7 +489,7 @@
    ]
   },
   {
-   "id": "W_ne_fin_s0",
+   "id": "W_se_col_s0",
    "kind": "wall",
    "rgb": [
     224,
@@ -498,7 +498,7 @@
    ]
   },
   {
-   "id": "W_se_col_head0",
+   "id": "W_east_glz_s0",
    "kind": "wall",
    "rgb": [
     31,
@@ -507,7 +507,7 @@
    ]
   },
   {
-   "id": "W_se_col_head1",
+   "id": "W_east_glz_head0",
    "kind": "wall",
    "rgb": [
     135,
@@ -516,7 +516,7 @@
    ]
   },
   {
-   "id": "W_east_glz_s0",
+   "id": "W_east_glz_s1",
    "kind": "wall",
    "rgb": [
     203,
@@ -525,7 +525,7 @@
    ]
   },
   {
-   "id": "W_east_glz_head0",
+   "id": "W_south_glz_s0",
    "kind": "wall",
    "rgb": [
     29,
@@ -534,7 +534,7 @@
    ]
   },
   {
-   "id": "W_east_glz_s1",
+   "id": "W_south_glz_head0",
    "kind": "wall",
    "rgb": [
     174,
@@ -543,7 +543,7 @@
    ]
   },
   {
-   "id": "W_south_glz_s0",
+   "id": "W_south_glz_s1",
    "kind": "wall",
    "rgb": [
     170,
@@ -552,7 +552,7 @@
    ]
   },
   {
-   "id": "W_south_glz_head0",
+   "id": "W_s_fin_s0",
    "kind": "wall",
    "rgb": [
     43,
@@ -561,7 +561,7 @@
    ]
   },
   {
-   "id": "W_s_fin_s0",
+   "id": "W_south_dd_s0",
    "kind": "wall",
    "rgb": [
     178,
@@ -570,7 +570,7 @@
    ]
   },
   {
-   "id": "W_s_fin_head0",
+   "id": "W_south_dd_head0",
    "kind": "wall",
    "rgb": [
     22,
@@ -579,7 +579,7 @@
    ]
   },
   {
-   "id": "W_s_fin_s1",
+   "id": "W_south_dd_s1",
    "kind": "wall",
    "rgb": [
     188,
@@ -588,7 +588,7 @@
    ]
   },
   {
-   "id": "W_south_dd_s0",
+   "id": "W_south_mid_s0",
    "kind": "wall",
    "rgb": [
     215,
@@ -597,7 +597,7 @@
    ]
   },
   {
-   "id": "W_south_dd_head0",
+   "id": "W_south_ent_s0",
    "kind": "wall",
    "rgb": [
     17,
@@ -606,7 +606,7 @@
    ]
   },
   {
-   "id": "W_south_dd_s1",
+   "id": "W_south_ent_head0",
    "kind": "wall",
    "rgb": [
     138,
@@ -615,7 +615,7 @@
    ]
   },
   {
-   "id": "W_south_mid_head0",
+   "id": "W_south_ent_s1",
    "kind": "wall",
    "rgb": [
     126,
@@ -624,7 +624,7 @@
    ]
   },
   {
-   "id": "W_south_mid_s1",
+   "id": "W_south_hall_s0",
    "kind": "wall",
    "rgb": [
     51,
@@ -633,7 +633,7 @@
    ]
   },
   {
-   "id": "W_south_ent_s0",
+   "id": "W_garage_s_e_s0",
    "kind": "wall",
    "rgb": [
     189,
@@ -642,7 +642,7 @@
    ]
   },
   {
-   "id": "W_south_ent_head0",
+   "id": "W_garage_door_s0",
    "kind": "wall",
    "rgb": [
     13,
@@ -651,7 +651,7 @@
    ]
   },
   {
-   "id": "W_south_hall_s0",
+   "id": "W_garage_door_head0",
    "kind": "wall",
    "rgb": [
     212,
@@ -660,7 +660,7 @@
    ]
   },
   {
-   "id": "W_garage_s_e_head0",
+   "id": "W_garage_door_s1",
    "kind": "wall",
    "rgb": [
     182,
@@ -669,7 +669,7 @@
    ]
   },
   {
-   "id": "W_garage_s_e_s1",
+   "id": "W_laundry_s_s0",
    "kind": "wall",
    "rgb": [
     6,
@@ -678,7 +678,7 @@
    ]
   },
   {
-   "id": "W_garage_door_s0",
+   "id": "W_laundry_e_s0",
    "kind": "wall",
    "rgb": [
     147,
@@ -687,7 +687,7 @@
    ]
   },
   {
-   "id": "W_garage_door_head0",
+   "id": "W_laundry_e_head0",
    "kind": "wall",
    "rgb": [
     90,
@@ -696,7 +696,7 @@
    ]
   },
   {
-   "id": "W_garage_door_s1",
+   "id": "W_laundry_e_s1",
    "kind": "wall",
    "rgb": [
     131,
@@ -705,7 +705,7 @@
    ]
   },
   {
-   "id": "W_laundry_s_s0",
+   "id": "W_garage_e_s0",
    "kind": "wall",
    "rgb": [
     201,
@@ -714,7 +714,7 @@
    ]
   },
   {
-   "id": "W_laundry_e_s0",
+   "id": "W_mud_s_s0",
    "kind": "wall",
    "rgb": [
     4,
@@ -723,7 +723,7 @@
    ]
   },
   {
-   "id": "W_laundry_e_head0",
+   "id": "W_mud_s_head0",
    "kind": "wall",
    "rgb": [
     224,
@@ -732,7 +732,7 @@
    ]
   },
   {
-   "id": "W_laundry_e_s1",
+   "id": "W_mud_s_s1",
    "kind": "wall",
    "rgb": [
     122,
@@ -741,7 +741,7 @@
    ]
   },
   {
-   "id": "W_garage_e_s0",
+   "id": "W_mud_wc_s0",
    "kind": "wall",
    "rgb": [
     52,
@@ -750,7 +750,7 @@
    ]
   },
   {
-   "id": "W_mud_s_s0",
+   "id": "W_wc_s_s0",
    "kind": "wall",
    "rgb": [
     156,
@@ -759,7 +759,7 @@
    ]
   },
   {
-   "id": "W_mud_s_head0",
+   "id": "W_wc_s_head0",
    "kind": "wall",
    "rgb": [
     81,
@@ -768,7 +768,7 @@
    ]
   },
   {
-   "id": "W_mud_s_s1",
+   "id": "W_wc_s_s1",
    "kind": "wall",
    "rgb": [
     179,
@@ -777,7 +777,7 @@
    ]
   },
   {
-   "id": "W_mud_wc_s0",
+   "id": "W_wc_sauna_s0",
    "kind": "wall",
    "rgb": [
     202,
@@ -786,7 +786,7 @@
    ]
   },
   {
-   "id": "W_wc_s_s0",
+   "id": "W_sauna_s_s0",
    "kind": "wall",
    "rgb": [
     40,
@@ -795,7 +795,7 @@
    ]
   },
   {
-   "id": "W_wc_s_head0",
+   "id": "W_sauna_e_s0",
    "kind": "wall",
    "rgb": [
     233,
@@ -804,7 +804,7 @@
    ]
   },
   {
-   "id": "W_wc_s_s1",
+   "id": "W_hall_spa_s0",
    "kind": "wall",
    "rgb": [
     47,
@@ -813,7 +813,7 @@
    ]
   },
   {
-   "id": "W_wc_sauna_s0",
+   "id": "W_hall_spa_head0",
    "kind": "wall",
    "rgb": [
     73,
@@ -822,7 +822,7 @@
    ]
   },
   {
-   "id": "W_sauna_s_s0",
+   "id": "W_hall_spa_s1",
    "kind": "wall",
    "rgb": [
     165,
@@ -831,7 +831,7 @@
    ]
   },
   {
-   "id": "W_sauna_e_s0",
+   "id": "W_spa_s_s0",
    "kind": "wall",
    "rgb": [
     117,
@@ -840,7 +840,7 @@
    ]
   },
   {
-   "id": "W_hall_spa_s0",
+   "id": "W_liv_north_up_s0",
    "kind": "wall",
    "rgb": [
     226,
@@ -849,7 +849,7 @@
    ]
   },
   {
-   "id": "W_hall_spa_head0",
+   "id": "W_kitchen_w_s0",
    "kind": "wall",
    "rgb": [
     140,
@@ -858,7 +858,7 @@
    ]
   },
   {
-   "id": "W_hall_spa_s1",
+   "id": "W_sauna_glz_s_head0",
    "kind": "wall",
    "rgb": [
     31,
@@ -867,7 +867,7 @@
    ]
   },
   {
-   "id": "W_spa_s_s0",
+   "id": "W_sauna_glz_s_s1",
    "kind": "wall",
    "rgb": [
     242,
@@ -876,7 +876,7 @@
    ]
   },
   {
-   "id": "W_liv_north_up_s0",
+   "id": "W_sauna_glz_e_head0",
    "kind": "wall",
    "rgb": [
     77,
@@ -885,7 +885,7 @@
    ]
   },
   {
-   "id": "W_kitchen_w_s0",
+   "id": "W_sauna_glz_e_s1",
    "kind": "wall",
    "rgb": [
     124,
@@ -894,7 +894,7 @@
    ]
   },
   {
-   "id": "W_sauna_glz_s_head0",
+   "id": "W_up_stair_w_s0",
    "kind": "wall",
    "rgb": [
     174,
@@ -903,7 +903,7 @@
    ]
   },
   {
-   "id": "W_sauna_glz_s_head1",
+   "id": "W_up_stair_e_s0",
    "kind": "wall",
    "rgb": [
     108,
@@ -912,7 +912,7 @@
    ]
   },
   {
-   "id": "W_sauna_glz_e_head0",
+   "id": "W_up_stair_n_s0",
    "kind": "wall",
    "rgb": [
     238,
@@ -921,7 +921,7 @@
    ]
   },
   {
-   "id": "W_sauna_glz_e_head1",
+   "id": "W_up_stair_s_s0",
    "kind": "wall",
    "rgb": [
     87,
@@ -930,7 +930,7 @@
    ]
   },
   {
-   "id": "W_up_stair_w_s0",
+   "id": "W_gkpl_s0",
    "kind": "wall",
    "rgb": [
     24,
@@ -939,8 +939,8 @@
    ]
   },
   {
-   "id": "W_up_stair_e_s0",
-   "kind": "wall",
+   "id": "O_laundry_ext_door",
+   "kind": "door",
    "rgb": [
     251,
     81,
@@ -948,8 +948,8 @@
    ]
   },
   {
-   "id": "W_up_stair_n_s0",
-   "kind": "wall",
+   "id": "O_laundry_ext_door_fl",
+   "kind": "frame",
    "rgb": [
     66,
     155,
@@ -957,8 +957,8 @@
    ]
   },
   {
-   "id": "W_up_stair_s_s0",
-   "kind": "wall",
+   "id": "O_laundry_ext_door_fr",
+   "kind": "frame",
    "rgb": [
     190,
     212,
@@ -966,8 +966,8 @@
    ]
   },
   {
-   "id": "W_gkpl_s0",
-   "kind": "wall",
+   "id": "O_laundry_ext_door_ft",
+   "kind": "frame",
    "rgb": [
     121,
     40,
@@ -975,7 +975,7 @@
    ]
   },
   {
-   "id": "O_laundry_ext_door",
+   "id": "O_laundry_mud_door",
    "kind": "door",
    "rgb": [
     99,
@@ -984,7 +984,7 @@
    ]
   },
   {
-   "id": "O_laundry_ext_door_fl",
+   "id": "O_laundry_mud_door_fl",
    "kind": "frame",
    "rgb": [
     249,
@@ -993,7 +993,7 @@
    ]
   },
   {
-   "id": "O_laundry_ext_door_fr",
+   "id": "O_laundry_mud_door_fr",
    "kind": "frame",
    "rgb": [
     40,
@@ -1002,7 +1002,7 @@
    ]
   },
   {
-   "id": "O_laundry_ext_door_ft",
+   "id": "O_laundry_mud_door_ft",
    "kind": "frame",
    "rgb": [
     66,
@@ -1011,7 +1011,7 @@
    ]
   },
   {
-   "id": "O_laundry_mud_door",
+   "id": "O_mud_hall_door",
    "kind": "door",
    "rgb": [
     215,
@@ -1020,7 +1020,7 @@
    ]
   },
   {
-   "id": "O_laundry_mud_door_fl",
+   "id": "O_mud_hall_door_fl",
    "kind": "frame",
    "rgb": [
     54,
@@ -1029,7 +1029,7 @@
    ]
   },
   {
-   "id": "O_laundry_mud_door_fr",
+   "id": "O_mud_hall_door_fr",
    "kind": "frame",
    "rgb": [
     224,
@@ -1038,7 +1038,7 @@
    ]
   },
   {
-   "id": "O_laundry_mud_door_ft",
+   "id": "O_mud_hall_door_ft",
    "kind": "frame",
    "rgb": [
     88,
@@ -1047,7 +1047,7 @@
    ]
   },
   {
-   "id": "O_mud_hall_door",
+   "id": "O_wc_door",
    "kind": "door",
    "rgb": [
     90,
@@ -1056,7 +1056,7 @@
    ]
   },
   {
-   "id": "O_mud_hall_door_fl",
+   "id": "O_wc_door_fl",
    "kind": "frame",
    "rgb": [
     203,
@@ -1065,7 +1065,7 @@
    ]
   },
   {
-   "id": "O_mud_hall_door_fr",
+   "id": "O_wc_door_fr",
    "kind": "frame",
    "rgb": [
     29,
@@ -1074,7 +1074,7 @@
    ]
   },
   {
-   "id": "O_mud_hall_door_ft",
+   "id": "O_wc_door_ft",
    "kind": "frame",
    "rgb": [
     120,
@@ -1083,7 +1083,7 @@
    ]
   },
   {
-   "id": "O_wc_door",
+   "id": "O_spa_door",
    "kind": "door",
    "rgb": [
     224,
@@ -1092,7 +1092,7 @@
    ]
   },
   {
-   "id": "O_wc_door_fl",
+   "id": "O_spa_door_fl",
    "kind": "frame",
    "rgb": [
     43,
@@ -1101,7 +1101,7 @@
    ]
   },
   {
-   "id": "O_wc_door_fr",
+   "id": "O_spa_door_fr",
    "kind": "frame",
    "rgb": [
     178,
@@ -1110,7 +1110,7 @@
    ]
   },
   {
-   "id": "O_wc_door_ft",
+   "id": "O_spa_door_ft",
    "kind": "frame",
    "rgb": [
     43,
@@ -1119,7 +1119,7 @@
    ]
   },
   {
-   "id": "O_spa_door",
+   "id": "O_entrance",
    "kind": "door",
    "rgb": [
     105,
@@ -1128,7 +1128,7 @@
    ]
   },
   {
-   "id": "O_spa_door_fl",
+   "id": "O_entrance_fl",
    "kind": "frame",
    "rgb": [
     215,
@@ -1137,7 +1137,7 @@
    ]
   },
   {
-   "id": "O_spa_door_fr",
+   "id": "O_entrance_fr",
    "kind": "frame",
    "rgb": [
     17,
@@ -1146,7 +1146,7 @@
    ]
   },
   {
-   "id": "O_spa_door_ft",
+   "id": "O_entrance_ft",
    "kind": "frame",
    "rgb": [
     138,
@@ -1155,8 +1155,8 @@
    ]
   },
   {
-   "id": "O_entrance",
-   "kind": "door",
+   "id": "O_double_door",
+   "kind": "glass",
    "rgb": [
     192,
     99,
@@ -1164,7 +1164,7 @@
    ]
   },
   {
-   "id": "O_entrance_fl",
+   "id": "O_double_door_fl",
    "kind": "frame",
    "rgb": [
     31,
@@ -1173,7 +1173,7 @@
    ]
   },
   {
-   "id": "O_entrance_fr",
+   "id": "O_double_door_fr",
    "kind": "frame",
    "rgb": [
     189,
@@ -1182,7 +1182,7 @@
    ]
   },
   {
-   "id": "O_entrance_ft",
+   "id": "O_double_door_ft",
    "kind": "frame",
    "rgb": [
     13,
@@ -1191,8 +1191,8 @@
    ]
   },
   {
-   "id": "O_double_door",
-   "kind": "glass",
+   "id": "O_double_door_mid",
+   "kind": "frame",
    "rgb": [
     163,
     215,
@@ -1200,7 +1200,7 @@
    ]
   },
   {
-   "id": "O_double_door_fl",
+   "id": "O_double_door_kick",
    "kind": "frame",
    "rgb": [
     226,
@@ -1209,8 +1209,8 @@
    ]
   },
   {
-   "id": "O_double_door_fr",
-   "kind": "frame",
+   "id": "O_garage_door",
+   "kind": "door",
    "rgb": [
     6,
     224,
@@ -1218,7 +1218,7 @@
    ]
   },
   {
-   "id": "O_double_door_ft",
+   "id": "O_garage_door_g-10",
    "kind": "frame",
    "rgb": [
     147,
@@ -1227,7 +1227,7 @@
    ]
   },
   {
-   "id": "O_double_door_mid",
+   "id": "O_garage_door_g40",
    "kind": "frame",
    "rgb": [
     144,
@@ -1236,7 +1236,7 @@
    ]
   },
   {
-   "id": "O_double_door_kick",
+   "id": "O_garage_door_g90",
    "kind": "frame",
    "rgb": [
     77,
@@ -1245,8 +1245,8 @@
    ]
   },
   {
-   "id": "O_garage_door",
-   "kind": "door",
+   "id": "O_garage_door_g140",
+   "kind": "frame",
    "rgb": [
     201,
     29,
@@ -1254,7 +1254,7 @@
    ]
   },
   {
-   "id": "O_garage_door_g-10",
+   "id": "O_garage_door_g190",
    "kind": "frame",
    "rgb": [
     4,
@@ -1263,8 +1263,8 @@
    ]
   },
   {
-   "id": "O_garage_door_g40",
-   "kind": "frame",
+   "id": "O_mud_window",
+   "kind": "glass",
    "rgb": [
     202,
     224,
@@ -1272,7 +1272,7 @@
    ]
   },
   {
-   "id": "O_garage_door_g90",
+   "id": "O_mud_window_fl",
    "kind": "frame",
    "rgb": [
     218,
@@ -1281,7 +1281,7 @@
    ]
   },
   {
-   "id": "O_garage_door_g140",
+   "id": "O_mud_window_fr",
    "kind": "frame",
    "rgb": [
     52,
@@ -1290,7 +1290,7 @@
    ]
   },
   {
-   "id": "O_garage_door_g190",
+   "id": "O_mud_window_ft",
    "kind": "frame",
    "rgb": [
     156,
@@ -1299,8 +1299,8 @@
    ]
   },
   {
-   "id": "O_mud_window",
-   "kind": "glass",
+   "id": "O_mud_window_fb",
+   "kind": "frame",
    "rgb": [
     85,
     81,
@@ -1308,8 +1308,8 @@
    ]
   },
   {
-   "id": "O_mud_window_fl",
-   "kind": "frame",
+   "id": "O_wc_window",
+   "kind": "glass",
    "rgb": [
     106,
     215,
@@ -1317,7 +1317,7 @@
    ]
   },
   {
-   "id": "O_mud_window_fr",
+   "id": "O_wc_window_fl",
    "kind": "frame",
    "rgb": [
     212,
@@ -1326,7 +1326,7 @@
    ]
   },
   {
-   "id": "O_mud_window_ft",
+   "id": "O_wc_window_fr",
    "kind": "frame",
    "rgb": [
     40,
@@ -1335,7 +1335,7 @@
    ]
   },
   {
-   "id": "O_mud_window_fb",
+   "id": "O_wc_window_ft",
    "kind": "frame",
    "rgb": [
     233,
@@ -1344,8 +1344,8 @@
    ]
   },
   {
-   "id": "O_wc_window",
-   "kind": "glass",
+   "id": "O_wc_window_fb",
+   "kind": "frame",
    "rgb": [
     154,
     31,
@@ -1353,8 +1353,8 @@
    ]
   },
   {
-   "id": "O_wc_window_fl",
-   "kind": "frame",
+   "id": "O_spa_glazing",
+   "kind": "glass",
    "rgb": [
     40,
     189,
@@ -1362,7 +1362,7 @@
    ]
   },
   {
-   "id": "O_wc_window_fr",
+   "id": "O_spa_glazing_fl",
    "kind": "frame",
    "rgb": [
     165,
@@ -1371,7 +1371,7 @@
    ]
   },
   {
-   "id": "O_wc_window_ft",
+   "id": "O_spa_glazing_fr",
    "kind": "frame",
    "rgb": [
     117,
@@ -1380,7 +1380,7 @@
    ]
   },
   {
-   "id": "O_wc_window_fb",
+   "id": "O_spa_glazing_ft",
    "kind": "frame",
    "rgb": [
     158,
@@ -1389,8 +1389,8 @@
    ]
   },
   {
-   "id": "O_spa_glazing",
-   "kind": "glass",
+   "id": "O_spa_glazing_mid",
+   "kind": "frame",
    "rgb": [
     224,
     6,
@@ -1398,8 +1398,8 @@
    ]
   },
   {
-   "id": "O_spa_glazing_fl",
-   "kind": "frame",
+   "id": "O_east_glazing",
+   "kind": "glass",
    "rgb": [
     31,
     147,
@@ -1407,7 +1407,7 @@
    ]
   },
   {
-   "id": "O_spa_glazing_fr",
+   "id": "O_east_glazing_fl",
    "kind": "frame",
    "rgb": [
     242,
@@ -1416,7 +1416,7 @@
    ]
   },
   {
-   "id": "O_spa_glazing_ft",
+   "id": "O_east_glazing_fr",
    "kind": "frame",
    "rgb": [
     106,
@@ -1425,7 +1425,7 @@
    ]
   },
   {
-   "id": "O_spa_glazing_mid",
+   "id": "O_east_glazing_ft",
    "kind": "frame",
    "rgb": [
     39,
@@ -1434,8 +1434,8 @@
    ]
   },
   {
-   "id": "O_east_glazing",
-   "kind": "glass",
+   "id": "O_east_glazing_m651",
+   "kind": "frame",
    "rgb": [
     174,
     4,
@@ -1443,7 +1443,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_fl",
+   "id": "O_east_glazing_m736.1",
    "kind": "frame",
    "rgb": [
     108,
@@ -1452,7 +1452,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_fr",
+   "id": "O_east_glazing_m879.9",
    "kind": "frame",
    "rgb": [
     225,
@@ -1461,7 +1461,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_ft",
+   "id": "O_east_glazing_tr",
    "kind": "frame",
    "rgb": [
     149,
@@ -1470,8 +1470,8 @@
    ]
   },
   {
-   "id": "O_east_glazing_m651",
-   "kind": "frame",
+   "id": "O_south_glazing",
+   "kind": "glass",
    "rgb": [
     22,
     156,
@@ -1479,7 +1479,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_m736.1",
+   "id": "O_south_glazing_fl",
    "kind": "frame",
    "rgb": [
     251,
@@ -1488,7 +1488,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_m879.9",
+   "id": "O_south_glazing_fr",
    "kind": "frame",
    "rgb": [
     66,
@@ -1497,7 +1497,7 @@
    ]
   },
   {
-   "id": "O_east_glazing_tr",
+   "id": "O_south_glazing_ft",
    "kind": "frame",
    "rgb": [
     94,
@@ -1506,8 +1506,8 @@
    ]
   },
   {
-   "id": "O_south_glazing",
-   "kind": "glass",
+   "id": "O_south_glazing_m1131.9",
+   "kind": "frame",
    "rgb": [
     138,
     40,
@@ -1515,7 +1515,7 @@
    ]
   },
   {
-   "id": "O_south_glazing_fl",
+   "id": "O_south_glazing_m1289.4",
    "kind": "frame",
    "rgb": [
     99,
@@ -1524,7 +1524,7 @@
    ]
   },
   {
-   "id": "O_south_glazing_fr",
+   "id": "O_south_glazing_tr",
    "kind": "frame",
    "rgb": [
     249,
@@ -1533,8 +1533,8 @@
    ]
   },
   {
-   "id": "O_south_glazing_ft",
-   "kind": "frame",
+   "id": "O_sauna_glass_s",
+   "kind": "glass",
    "rgb": [
     105,
     40,
@@ -1542,7 +1542,7 @@
    ]
   },
   {
-   "id": "O_south_glazing_m1131.9",
+   "id": "O_sauna_glass_s_fl",
    "kind": "frame",
    "rgb": [
     13,
@@ -1551,7 +1551,7 @@
    ]
   },
   {
-   "id": "O_south_glazing_m1289.4",
+   "id": "O_sauna_glass_s_fr",
    "kind": "frame",
    "rgb": [
     215,
@@ -1560,7 +1560,7 @@
    ]
   },
   {
-   "id": "O_south_glazing_tr",
+   "id": "O_sauna_glass_s_ft",
    "kind": "frame",
    "rgb": [
     54,
@@ -1569,7 +1569,7 @@
    ]
   },
   {
-   "id": "O_sauna_glass_s",
+   "id": "O_sauna_glass_e",
    "kind": "glass",
    "rgb": [
     165,
@@ -1578,7 +1578,7 @@
    ]
   },
   {
-   "id": "O_sauna_glass_s_fl",
+   "id": "O_sauna_glass_e_fl",
    "kind": "frame",
    "rgb": [
     145,
@@ -1587,7 +1587,7 @@
    ]
   },
   {
-   "id": "O_sauna_glass_s_fr",
+   "id": "O_sauna_glass_e_fr",
    "kind": "frame",
    "rgb": [
     90,
@@ -1596,7 +1596,7 @@
    ]
   },
   {
-   "id": "O_sauna_glass_s_ft",
+   "id": "O_sauna_glass_e_ft",
    "kind": "frame",
    "rgb": [
     203,
@@ -1605,8 +1605,8 @@
    ]
   },
   {
-   "id": "O_sauna_glass_e",
-   "kind": "glass",
+   "id": "F_washer",
+   "kind": "appliance",
    "rgb": [
     46,
     29,
@@ -1614,8 +1614,8 @@
    ]
   },
   {
-   "id": "O_sauna_glass_e_fl",
-   "kind": "frame",
+   "id": "F_dryer",
+   "kind": "appliance",
    "rgb": [
     36,
     174,
@@ -1623,8 +1623,8 @@
    ]
   },
   {
-   "id": "O_sauna_glass_e_fr",
-   "kind": "frame",
+   "id": "F_laundry_counter",
+   "kind": "counter",
    "rgb": [
     224,
     108,
@@ -1632,8 +1632,8 @@
    ]
   },
   {
-   "id": "O_sauna_glass_e_ft",
-   "kind": "frame",
+   "id": "F_laundry_counter_plinth",
+   "kind": "counter",
    "rgb": [
     43,
     193,
@@ -1641,8 +1641,8 @@
    ]
   },
   {
-   "id": "F_washer",
-   "kind": "appliance",
+   "id": "F_laundry_counter_top",
+   "kind": "counter",
    "rgb": [
     178,
     170,
@@ -1650,8 +1650,8 @@
    ]
   },
   {
-   "id": "F_dryer",
-   "kind": "appliance",
+   "id": "F_wardrobe_1",
+   "kind": "tall_cabinet",
    "rgb": [
     109,
     22,
@@ -1659,8 +1659,8 @@
    ]
   },
   {
-   "id": "F_laundry_counter",
-   "kind": "counter",
+   "id": "F_wardrobe_2",
+   "kind": "tall_cabinet",
    "rgb": [
     81,
     251,
@@ -1668,8 +1668,8 @@
    ]
   },
   {
-   "id": "F_laundry_counter_plinth",
-   "kind": "counter",
+   "id": "F_garage_step_1",
+   "kind": "stair",
    "rgb": [
     215,
     75,
@@ -1677,8 +1677,8 @@
    ]
   },
   {
-   "id": "F_laundry_counter_top",
-   "kind": "counter",
+   "id": "F_garage_step_2",
+   "kind": "stair",
    "rgb": [
     17,
     62,
@@ -1686,8 +1686,8 @@
    ]
   },
   {
-   "id": "F_wardrobe_1",
-   "kind": "tall_cabinet",
+   "id": "F_garage_step_3",
+   "kind": "stair",
    "rgb": [
     92,
     138,
@@ -1695,8 +1695,8 @@
    ]
   },
   {
-   "id": "F_wardrobe_2",
-   "kind": "tall_cabinet",
+   "id": "F_garage_bench_1",
+   "kind": "low_cabinet",
    "rgb": [
     233,
     99,
@@ -1704,8 +1704,8 @@
    ]
   },
   {
-   "id": "F_garage_step_1",
-   "kind": "stair",
+   "id": "F_garage_bench_2",
+   "kind": "low_cabinet",
    "rgb": [
     31,
     249,
@@ -1713,8 +1713,8 @@
    ]
   },
   {
-   "id": "F_garage_step_2",
-   "kind": "stair",
+   "id": "F_wc_toilet",
+   "kind": "toilet",
    "rgb": [
     189,
     130,
@@ -1722,8 +1722,8 @@
    ]
   },
   {
-   "id": "F_garage_step_3",
-   "kind": "stair",
+   "id": "F_wc_vanity",
+   "kind": "vanity",
    "rgb": [
     60,
     13,
@@ -1731,8 +1731,8 @@
    ]
   },
   {
-   "id": "F_garage_bench_1",
-   "kind": "low_cabinet",
+   "id": "F_wc_basin",
+   "kind": "basin",
    "rgb": [
     117,
     215,
@@ -1740,8 +1740,8 @@
    ]
   },
   {
-   "id": "F_garage_bench_2",
-   "kind": "low_cabinet",
+   "id": "F_sauna_bench_low",
+   "kind": "bench",
    "rgb": [
     226,
     54,
@@ -1749,8 +1749,8 @@
    ]
   },
   {
-   "id": "F_wc_toilet",
-   "kind": "toilet",
+   "id": "F_sauna_bench_high",
+   "kind": "bench",
    "rgb": [
     6,
     129,
@@ -1758,8 +1758,8 @@
    ]
   },
   {
-   "id": "F_wc_vanity",
-   "kind": "vanity",
+   "id": "F_jacuzzi",
+   "kind": "jacuzzi",
    "rgb": [
     131,
     147,
@@ -1767,8 +1767,8 @@
    ]
   },
   {
-   "id": "F_wc_basin",
-   "kind": "basin",
+   "id": "F_jacuzzi_water",
+   "kind": "water",
    "rgb": [
     219,
     90,
@@ -1776,8 +1776,8 @@
    ]
   },
   {
-   "id": "F_sauna_bench_low",
-   "kind": "bench",
+   "id": "F_shower_tray",
+   "kind": "shower",
    "rgb": [
     77,
     203,
@@ -1785,8 +1785,8 @@
    ]
   },
   {
-   "id": "F_sauna_bench_high",
-   "kind": "bench",
+   "id": "F_shower_glass",
+   "kind": "glass",
    "rgb": [
     201,
     75,
@@ -1794,8 +1794,8 @@
    ]
   },
   {
-   "id": "F_jacuzzi",
-   "kind": "jacuzzi",
+   "id": "F_shower_rain",
+   "kind": "fixture",
    "rgb": [
     4,
     9,
@@ -1803,8 +1803,8 @@
    ]
   },
   {
-   "id": "F_jacuzzi_water",
-   "kind": "water",
+   "id": "F_stair_01",
+   "kind": "stair",
    "rgb": [
     144,
     224,
@@ -1812,8 +1812,8 @@
    ]
   },
   {
-   "id": "F_shower_tray",
-   "kind": "shower",
+   "id": "F_stair_02",
+   "kind": "stair",
    "rgb": [
     238,
     43,
@@ -1821,8 +1821,8 @@
    ]
   },
   {
-   "id": "F_shower_glass",
-   "kind": "glass",
+   "id": "F_stair_03",
+   "kind": "stair",
    "rgb": [
     52,
     165,
@@ -1830,8 +1830,8 @@
    ]
   },
   {
-   "id": "F_shower_rain",
-   "kind": "fixture",
+   "id": "F_stair_04",
+   "kind": "stair",
    "rgb": [
     156,
     130,
@@ -1839,7 +1839,7 @@
    ]
   },
   {
-   "id": "F_stair_01",
+   "id": "F_stair_05",
    "kind": "stair",
    "rgb": [
     168,
@@ -1848,7 +1848,7 @@
    ]
   },
   {
-   "id": "F_stair_02",
+   "id": "F_stair_06",
    "kind": "stair",
    "rgb": [
     66,
@@ -1857,7 +1857,7 @@
    ]
   },
   {
-   "id": "F_stair_03",
+   "id": "F_stair_07",
    "kind": "stair",
    "rgb": [
     212,
@@ -1866,7 +1866,7 @@
    ]
   },
   {
-   "id": "F_stair_04",
+   "id": "F_stair_08",
    "kind": "stair",
    "rgb": [
     40,
@@ -1875,7 +1875,7 @@
    ]
   },
   {
-   "id": "F_stair_05",
+   "id": "F_stair_09",
    "kind": "stair",
    "rgb": [
     186,
@@ -1884,7 +1884,7 @@
    ]
   },
   {
-   "id": "F_stair_06",
+   "id": "F_stair_10",
    "kind": "stair",
    "rgb": [
     249,
@@ -1893,7 +1893,7 @@
    ]
   },
   {
-   "id": "F_stair_07",
+   "id": "F_stair_11",
    "kind": "stair",
    "rgb": [
     40,
@@ -1902,7 +1902,7 @@
    ]
   },
   {
-   "id": "F_stair_08",
+   "id": "F_stair_12",
    "kind": "stair",
    "rgb": [
     165,
@@ -1911,7 +1911,7 @@
    ]
   },
   {
-   "id": "F_stair_09",
+   "id": "F_stair_13",
    "kind": "stair",
    "rgb": [
     135,
@@ -1920,7 +1920,7 @@
    ]
   },
   {
-   "id": "F_stair_10",
+   "id": "F_stair_14",
    "kind": "stair",
    "rgb": [
     73,
@@ -1929,7 +1929,7 @@
    ]
   },
   {
-   "id": "F_stair_11",
+   "id": "F_stair_15",
    "kind": "stair",
    "rgb": [
     224,
@@ -1938,7 +1938,7 @@
    ]
   },
   {
-   "id": "F_stair_12",
+   "id": "F_stair_16",
    "kind": "stair",
    "rgb": [
     31,
@@ -1947,7 +1947,7 @@
    ]
   },
   {
-   "id": "F_stair_13",
+   "id": "F_stair_17",
    "kind": "stair",
    "rgb": [
     239,
@@ -1956,7 +1956,7 @@
    ]
   },
   {
-   "id": "F_stair_14",
+   "id": "F_stair_18",
    "kind": "stair",
    "rgb": [
     168,
@@ -1965,8 +1965,8 @@
    ]
   },
   {
-   "id": "F_stair_15",
-   "kind": "stair",
+   "id": "F_stair_balustrade",
+   "kind": "glass",
    "rgb": [
     29,
     201,
@@ -1974,8 +1974,8 @@
    ]
   },
   {
-   "id": "F_stair_16",
-   "kind": "stair",
+   "id": "F_k_duct",
+   "kind": "box",
    "rgb": [
     174,
     28,
@@ -1983,8 +1983,8 @@
    ]
   },
   {
-   "id": "F_stair_17",
-   "kind": "stair",
+   "id": "F_k_run_north",
+   "kind": "counter",
    "rgb": [
     108,
     125,
@@ -1992,8 +1992,8 @@
    ]
   },
   {
-   "id": "F_stair_18",
-   "kind": "stair",
+   "id": "F_k_run_north_plinth",
+   "kind": "counter",
    "rgb": [
     129,
     238,
@@ -2001,8 +2001,8 @@
    ]
   },
   {
-   "id": "F_stair_balustrade",
-   "kind": "glass",
+   "id": "F_k_run_north_top",
+   "kind": "counter",
    "rgb": [
     178,
     52,
@@ -2010,8 +2010,8 @@
    ]
   },
   {
-   "id": "F_k_duct",
-   "kind": "box",
+   "id": "F_k_fridge",
+   "kind": "tall_cabinet",
    "rgb": [
     22,
     156,
@@ -2019,7 +2019,7 @@
    ]
   },
   {
-   "id": "F_k_run_north",
+   "id": "F_k_run_west",
    "kind": "counter",
    "rgb": [
     251,
@@ -2028,7 +2028,7 @@
    ]
   },
   {
-   "id": "F_k_run_north_plinth",
+   "id": "F_k_run_west_plinth",
    "kind": "counter",
    "rgb": [
     124,
@@ -2037,7 +2037,7 @@
    ]
   },
   {
-   "id": "F_k_run_north_top",
+   "id": "F_k_run_west_top",
    "kind": "counter",
    "rgb": [
     17,
@@ -2046,8 +2046,8 @@
    ]
   },
   {
-   "id": "F_k_fridge",
-   "kind": "tall_cabinet",
+   "id": "F_k_sink",
+   "kind": "sink",
    "rgb": [
     138,
     40,
@@ -2055,8 +2055,8 @@
    ]
   },
   {
-   "id": "F_k_run_west",
-   "kind": "counter",
+   "id": "F_k_cooktop",
+   "kind": "cooktop",
    "rgb": [
     99,
     164,
@@ -2064,8 +2064,8 @@
    ]
   },
   {
-   "id": "F_k_run_west_plinth",
-   "kind": "counter",
+   "id": "F_k_island",
+   "kind": "island",
    "rgb": [
     201,
     249,
@@ -2073,8 +2073,8 @@
    ]
   },
   {
-   "id": "F_k_run_west_top",
-   "kind": "counter",
+   "id": "F_k_island_top",
+   "kind": "island",
    "rgb": [
     179,
     40,
@@ -2082,8 +2082,8 @@
    ]
   },
   {
-   "id": "F_k_sink",
-   "kind": "sink",
+   "id": "F_k_stool_1",
+   "kind": "stool",
    "rgb": [
     13,
     165,
@@ -2091,8 +2091,8 @@
    ]
   },
   {
-   "id": "F_k_cooktop",
-   "kind": "cooktop",
+   "id": "F_k_stool_1_leg",
+   "kind": "stool",
    "rgb": [
     215,
     151,
@@ -2100,8 +2100,8 @@
    ]
   },
   {
-   "id": "F_k_island",
-   "kind": "island",
+   "id": "F_k_stool_2",
+   "kind": "stool",
    "rgb": [
     63,
     54,
@@ -2109,8 +2109,8 @@
    ]
   },
   {
-   "id": "F_k_island_top",
-   "kind": "island",
+   "id": "F_k_stool_2_leg",
+   "kind": "stool",
    "rgb": [
     58,
     224,
@@ -2118,7 +2118,7 @@
    ]
   },
   {
-   "id": "F_k_stool_1",
+   "id": "F_k_stool_3",
    "kind": "stool",
    "rgb": [
     147,
@@ -2127,7 +2127,7 @@
    ]
   },
   {
-   "id": "F_k_stool_1_leg",
+   "id": "F_k_stool_3_leg",
    "kind": "stool",
    "rgb": [
     90,
@@ -2136,8 +2136,8 @@
    ]
   },
   {
-   "id": "F_k_stool_2",
-   "kind": "stool",
+   "id": "F_d_table",
+   "kind": "table",
    "rgb": [
     203,
     189,
@@ -2145,8 +2145,8 @@
    ]
   },
   {
-   "id": "F_k_stool_2_leg",
-   "kind": "stool",
+   "id": "F_d_table_leg",
+   "kind": "table",
    "rgb": [
     131,
     29,
@@ -2154,8 +2154,8 @@
    ]
   },
   {
-   "id": "F_k_stool_3",
-   "kind": "stool",
+   "id": "F_d_chair_n1",
+   "kind": "chair",
    "rgb": [
     4,
     174,
@@ -2163,8 +2163,8 @@
    ]
   },
   {
-   "id": "F_k_stool_3_leg",
-   "kind": "stool",
+   "id": "F_d_chair_n1_back",
+   "kind": "chair",
    "rgb": [
     224,
     109,
@@ -2172,8 +2172,8 @@
    ]
   },
   {
-   "id": "F_d_table",
-   "kind": "table",
+   "id": "F_d_chair_n1_leg",
+   "kind": "chair",
    "rgb": [
     43,
     97,
@@ -2181,8 +2181,8 @@
    ]
   },
   {
-   "id": "F_d_table_leg",
-   "kind": "table",
+   "id": "F_d_chair_s1",
+   "kind": "chair",
    "rgb": [
     124,
     178,
@@ -2190,7 +2190,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n1",
+   "id": "F_d_chair_s1_back",
    "kind": "chair",
    "rgb": [
     156,
@@ -2199,7 +2199,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n1_back",
+   "id": "F_d_chair_s1_leg",
    "kind": "chair",
    "rgb": [
     81,
@@ -2208,7 +2208,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n1_leg",
+   "id": "F_d_chair_n2",
    "kind": "chair",
    "rgb": [
     215,
@@ -2217,7 +2217,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s1",
+   "id": "F_d_chair_n2_back",
    "kind": "chair",
    "rgb": [
     68,
@@ -2226,7 +2226,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s1_back",
+   "id": "F_d_chair_n2_leg",
    "kind": "chair",
    "rgb": [
     43,
@@ -2235,7 +2235,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s1_leg",
+   "id": "F_d_chair_s2",
    "kind": "chair",
    "rgb": [
     233,
@@ -2244,7 +2244,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n2",
+   "id": "F_d_chair_s2_back",
    "kind": "chair",
    "rgb": [
     31,
@@ -2253,7 +2253,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n2_back",
+   "id": "F_d_chair_s2_leg",
    "kind": "chair",
    "rgb": [
     175,
@@ -2262,7 +2262,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n2_leg",
+   "id": "F_d_chair_n3",
    "kind": "chair",
    "rgb": [
     135,
@@ -2271,7 +2271,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s2",
+   "id": "F_d_chair_n3_back",
    "kind": "chair",
    "rgb": [
     117,
@@ -2280,7 +2280,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s2_back",
+   "id": "F_d_chair_n3_leg",
    "kind": "chair",
    "rgb": [
     226,
@@ -2289,7 +2289,7 @@
    ]
   },
   {
-   "id": "F_d_chair_s2_leg",
+   "id": "F_d_chair_s3",
    "kind": "chair",
    "rgb": [
     6,
@@ -2298,7 +2298,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n3",
+   "id": "F_d_chair_s3_back",
    "kind": "chair",
    "rgb": [
     74,
@@ -2307,7 +2307,7 @@
    ]
   },
   {
-   "id": "F_d_chair_n3_back",
+   "id": "F_d_chair_s3_leg",
    "kind": "chair",
    "rgb": [
     242,
@@ -2316,8 +2316,8 @@
    ]
   },
   {
-   "id": "F_d_chair_n3_leg",
-   "kind": "chair",
+   "id": "F_l_sofa_long",
+   "kind": "sofa",
    "rgb": [
     77,
     197,
@@ -2325,8 +2325,8 @@
    ]
   },
   {
-   "id": "F_d_chair_s3",
-   "kind": "chair",
+   "id": "F_l_sofa_long_back",
+   "kind": "sofa",
    "rgb": [
     201,
     159,
@@ -2334,8 +2334,8 @@
    ]
   },
   {
-   "id": "F_d_chair_s3_back",
-   "kind": "chair",
+   "id": "F_l_sofa_return",
+   "kind": "sofa",
    "rgb": [
     84,
     4,
@@ -2343,8 +2343,8 @@
    ]
   },
   {
-   "id": "F_d_chair_s3_leg",
-   "kind": "chair",
+   "id": "F_l_sofa_return_back",
+   "kind": "sofa",
    "rgb": [
     108,
     224,
@@ -2352,8 +2352,8 @@
    ]
   },
   {
-   "id": "F_l_sofa_long",
-   "kind": "sofa",
+   "id": "F_l_table_1",
+   "kind": "coffee_table",
    "rgb": [
     238,
     43,
@@ -2361,8 +2361,8 @@
    ]
   },
   {
-   "id": "F_l_sofa_long_back",
-   "kind": "sofa",
+   "id": "F_l_table_1_base",
+   "kind": "coffee_table",
    "rgb": [
     52,
     103,
@@ -2370,8 +2370,8 @@
    ]
   },
   {
-   "id": "F_l_sofa_return",
-   "kind": "sofa",
+   "id": "F_l_table_2",
+   "kind": "coffee_table",
    "rgb": [
     116,
     156,
@@ -2379,8 +2379,8 @@
    ]
   },
   {
-   "id": "F_l_sofa_return_back",
-   "kind": "sofa",
+   "id": "F_l_table_2_base",
+   "kind": "coffee_table",
    "rgb": [
     251,
     81,
@@ -2388,8 +2388,8 @@
    ]
   },
   {
-   "id": "F_l_table_1",
-   "kind": "coffee_table",
+   "id": "F_l_armchair_1",
+   "kind": "armchair",
    "rgb": [
     66,
     215,
@@ -2397,8 +2397,8 @@
    ]
   },
   {
-   "id": "F_l_table_1_base",
-   "kind": "coffee_table",
+   "id": "F_l_armchair_1_back",
+   "kind": "armchair",
    "rgb": [
     212,
     100,
@@ -2406,8 +2406,8 @@
    ]
   },
   {
-   "id": "F_l_table_2",
-   "kind": "coffee_table",
+   "id": "F_l_armchair_1_armW",
+   "kind": "armchair",
    "rgb": [
     53,
     40,
@@ -2415,8 +2415,8 @@
    ]
   },
   {
-   "id": "F_l_table_2_base",
-   "kind": "coffee_table",
+   "id": "F_l_armchair_1_armE",
+   "kind": "armchair",
    "rgb": [
     120,
     233,
@@ -2424,7 +2424,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1",
+   "id": "F_l_armchair_2",
    "kind": "armchair",
    "rgb": [
     249,
@@ -2433,7 +2433,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_back",
+   "id": "F_l_armchair_2_back",
    "kind": "armchair",
    "rgb": [
     40,
@@ -2442,7 +2442,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_armW",
+   "id": "F_l_armchair_2_armW",
    "kind": "armchair",
    "rgb": [
     165,
@@ -2451,7 +2451,7 @@
    ]
   },
   {
-   "id": "F_l_armchair_1_armE",
+   "id": "F_l_armchair_2_armE",
    "kind": "armchair",
    "rgb": [
     183,
@@ -2460,8 +2460,8 @@
    ]
   },
   {
-   "id": "F_l_armchair_2",
-   "kind": "armchair",
+   "id": "F_l_tv_unit",
+   "kind": "low_cabinet",
    "rgb": [
     54,
     226,
@@ -2469,48 +2469,12 @@
    ]
   },
   {
-   "id": "F_l_armchair_2_back",
-   "kind": "armchair",
+   "id": "F_l_tv",
+   "kind": "tv",
    "rgb": [
     224,
     25,
     6
-   ]
-  },
-  {
-   "id": "F_l_armchair_2_armW",
-   "kind": "armchair",
-   "rgb": [
-    31,
-    55,
-    147
-   ]
-  },
-  {
-   "id": "F_l_armchair_2_armE",
-   "kind": "armchair",
-   "rgb": [
-    165,
-    242,
-    90
-   ]
-  },
-  {
-   "id": "F_l_tv_unit",
-   "kind": "low_cabinet",
-   "rgb": [
-    203,
-    77,
-    176
-   ]
-  },
-  {
-   "id": "F_l_tv",
-   "kind": "tv",
-   "rgb": [
-    29,
-    201,
-    188
    ]
   }
  ]

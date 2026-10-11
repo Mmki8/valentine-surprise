@@ -1,0 +1,40 @@
+{
+ "camera": "GAR_B_car",
+ "room": "R_garage",
+ "car": true,
+ "openings": [],
+ "furniture_counts": {
+  "car": 1,
+  "tall_cabinet": 1
+ },
+ "items": [
+  {
+   "id": "F_car",
+   "name": "car (matte black Mercedes G-Wagon)",
+   "where": "left",
+   "share": 0.427,
+   "note": "MATTE BLACK MERCEDES G-WAGON; drawing shows hood star + windscreen at the NORTH end => parked nose-in, rear/spare wheel toward garage door"
+  },
+  {
+   "id": "F_wardrobe_1",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.027,
+   "note": "X-marked = full height"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "centre",
+   "share": 0.004
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

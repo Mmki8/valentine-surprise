@@ -58,7 +58,7 @@ walls = [
     ("W_south_mid",   (826, 1192, 972, 1228), 0, H, "ext"),
     ("W_south_ent",   (732, 1192, 828, 1217), 0, H, "ext"),     # entrance door wall
     ("W_south_hall",  (585, 1192, 734, 1230), 0, H, "ext"),
-    ("W_garage_s_e",  (585, 1065, 622, 1230), G, H, "ext"),
+    ("W_garage_s_e",  (595, 1065, 622, 1230), G, H, "ext"),
     ("W_garage_door", (285, 1065, 600, 1072), G, H, "ext"),     # sectional door line
     # interior
     ("W_laundry_s",   (262, 465, 495, 482), G, H, "int"),
@@ -97,7 +97,7 @@ openings = [
          hinge=(750, 480), leaf="solid", note="hall <-> WC"),
     dict(id="O_spa_door", type="door", px=(830, 505, 847, 585), sill=0, head=210,
          hinge=(842, 584), leaf="solid", note="hall <-> spa"),
-    dict(id="O_entrance", type="door", px=(742, 1190, 828, 1219), sill=0, head=240,
+    dict(id="O_entrance", type="door", px=(742, 1190, 826, 1219), sill=0, head=240,
          hinge=(745, 1210), leaf="solid", note="MAIN ENTRANCE into stair hall"),
     dict(id="O_double_door", type="double_door", px=(975, 1190, 1152, 1219), sill=0, head=240,
          hinge=(978, 1213), leaf="glazed", note="double door into dining: active leaf west (solid arc), passive leaf east (dashed arc)"),
@@ -107,17 +107,17 @@ openings = [
          note="mudroom north window (sill ASSUMED high)"),
     dict(id="O_wc_window", type="window", px=(750, 270, 810, 315), sill=150, head=230,
          note="WC north window (sill ASSUMED high)"),
-    dict(id="O_spa_glazing", type="sliding", px=(1405, 392, 1455, 587), sill=0, head=250,
+    dict(id="O_spa_glazing", type="sliding", px=(1405, 392, 1455, 584), sill=0, head=250,
          note="spa east glazed opening ~205 cm (ASSUMED full-height slider)"),
-    dict(id="O_east_glazing", type="curtain", px=(1645, 760, 1675, 1195), sill=0, head=VH - 10,
+    dict(id="O_east_glazing", type="curtain", px=(1645, 760, 1675, 1192), sill=0, head=VH - 10,
          mullions_px=[907, 988, 1125], transom=H, slider_px=(988, 1125),
          note="living east facade: fixed glass + lift&slide between y988-1125"),
-    dict(id="O_south_glazing", type="curtain", px=(1190, 1205, 1650, 1240), sill=0, head=VH - 10,
+    dict(id="O_south_glazing", type="curtain", px=(1195, 1205, 1625, 1240), sill=0, head=VH - 10,
          mullions_px=[1340, 1490], transom=H,
          note="living south facade: 3 large panels to terrace"),
-    dict(id="O_sauna_glass_s", type="glass_partition", px=(966, 477, 1052, 490), sill=0, head=210,
+    dict(id="O_sauna_glass_s", type="glass_partition", px=(966, 477, 1042, 490), sill=0, head=210,
          hinge=(970, 482), leaf="glass", note="sauna glass door, opens into spa"),
-    dict(id="O_sauna_glass_e", type="glass_partition", px=(1040, 407, 1055, 487), sill=0, head=210,
+    dict(id="O_sauna_glass_e", type="glass_partition", px=(1040, 407, 1055, 477), sill=0, head=210,
          note="sauna fixed glass side"),
 ]
 
@@ -255,6 +255,18 @@ plan = dict(
     extra_ceilings=[dict(id="CEIL_upper_stairwell", rect=R(600, 612, 730, 1108), z=VH,
                          note="ASSUMED stairwell ceiling on upper floor")],
 )
+
+# ---- integrity check: every opening must cut exactly the wall(s) it was drawn in
+EXPECT = {"O_east_glazing": 1, "O_south_glazing": 1}
+problems = []
+for o in openings:
+    ox0, oy0, ox1, oy1 = o["px"]
+    hits = [wid for wid, (x0, y0, x1, y1), *_ in walls
+            if min(x1, ox1) - max(x0, ox0) > 0.5 and min(y1, oy1) - max(y0, oy0) > 0.5]
+    if len(hits) != EXPECT.get(o["id"], 1):
+        problems.append(f"{o['id']} cuts {hits}")
+if problems:
+    raise SystemExit("OPENING/WALL INTEGRITY FAILED:\n  " + "\n  ".join(problems))
 
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plan.json")
 with open(out, "w") as f:

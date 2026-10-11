@@ -1,0 +1,50 @@
+{
+ "camera": "WC_A",
+ "room": "R_wc",
+ "car": null,
+ "openings": [
+  {
+   "id": "O_wc_window",
+   "name": "window",
+   "where": "centre",
+   "share": 0.038,
+   "note": "WC north window (sill ASSUMED high)"
+  }
+ ],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1,
+  "basin": 1
+ },
+ "items": [
+  {
+   "id": "F_wc_vanity",
+   "name": "floating vanity",
+   "where": "right",
+   "share": 0.136,
+   "note": "floating vanity with vessel basin"
+  },
+  {
+   "id": "F_wc_toilet",
+   "name": "wall-hung toilet",
+   "where": "centre",
+   "share": 0.029,
+   "note": "wall-hung"
+  },
+  {
+   "id": "F_wc_basin",
+   "name": "vessel basin",
+   "where": "right",
+   "share": 0.018,
+   "note": "vessel basin"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}
