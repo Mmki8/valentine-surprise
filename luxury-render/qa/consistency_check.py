@@ -57,16 +57,19 @@ def stats(base, att):
     return out
 
 
-def latest(plan, cam):
+def latest(plan, cam, n=None):
     log = json.load(open(os.path.join(ROOT, "output", plan, cam, "qa_log.json")))
-    return os.path.join(ROOT, log["attempts"][-1]["dir"])
+    a = next(x for x in log["attempts"] if x["n"] == n) if n else log["attempts"][-1]
+    return os.path.join(ROOT, a["dir"])
 
 
 def main(plan_dir, cams):
     plan = os.path.basename(os.path.normpath(plan_dir))
     cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
     space = {c["id"]: c.get("space") for c in cfg["cameras"]}
-    S = {cam: stats(os.path.join(ROOT, "output", plan, cam), latest(plan, cam)) for cam in cams}
+    pick = {c.split(":")[0]: (int(c.split(":")[1]) if ":" in c else None) for c in cams}   # CAM or CAM:attempt
+    cams = list(pick)
+    S = {cam: stats(os.path.join(ROOT, "output", plan, cam), latest(plan, cam, pick[cam])) for cam in cams}
     report = {}
     for cam in cams:
         sp = next(v for k, v in space.items() if cam.startswith(k))
