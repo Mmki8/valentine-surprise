@@ -1,0 +1,90 @@
+{
+ "camera": "HALL_A",
+ "room": "P_R_entry",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_cabinet",
+  "oak_floor",
+  "art_painting_portrait",
+  "walnut_battens",
+  "worktop_marble",
+  "walnut_slats",
+  "walnut_door",
+  "stone_greige_honed",
+  "bronze_frame",
+  "stair_walnut",
+  "walnut_counter",
+  "ceramic_dark",
+  "olive_foliage"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_front_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.022,
+   "note": "main entrance (north)"
+  },
+  {
+   "id": "O_stair_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "centre",
+   "share": 0.004,
+   "note": "full-height glazing beside the front door, lighting the entry and the stair"
+  },
+  {
+   "id": "O_garage_entry",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.004,
+   "note": "garage -> entry hall"
+  }
+ ],
+ "furniture_counts": {
+  "box": 2,
+  "counter": 1
+ },
+ "items": [
+  {
+   "id": "P_F_k_duct",
+   "name": "boxed column",
+   "where": "left",
+   "share": 0.187,
+   "note": "installation duct (2 small squares)"
+  },
+  {
+   "id": "P_F_k_run1",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "left",
+   "share": 0.044,
+   "note": null
+  },
+  {
+   "id": "P_F_shaft",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.041,
+   "note": "installation shaft (X on plan)"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "centre",
+   "share": 0.002
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

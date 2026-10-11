@@ -1,0 +1,296 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up), house type 3 ground floor. pos z is ABSOLUTE: entry/spa/garage floor at -60, living/bedroom wing at 0.",
+ "exterior": "this ground floor sits a full storey above the garden on the south: through the south glass the view looks slightly DOWN over a frameless glass railing onto the sunlit lawn, clipped hedge and olive trees of the garden, soft green hills on the horizon; on the east the raised limestone terrace with teak outdoor furniture and potted olive trees, garden beyond; on the north a quiet planted entrance court. Clear warm golden-hour sky with a few soft clouds. Never sea, never city, never night.",
+ "time_of_day": "golden hour, about 18:30 in late spring - low warm sun from the south-west streams in through the glass, long soft honey-coloured sun patches on the floor and walls, warm glowing air; bright, warm and inviting - never night, never dark",
+ "fittings": {
+  "_head": "Light fittings: ONLY these, exactly as modelled in IMAGE 1:",
+  "pendant_bronze": "the slim bronze bars hanging on thin black cables are linear bronze pendant lights",
+  "pendant_black_cyl": "the black cylinder hanging on a cable is a slim black pendant light",
+  "lamp_black": "the black cylinders on the nightstands are small black table lamps",
+  "walnut_facets": "the pure-white thin lines on the faceted walnut bed wall and its ceiling canopy are its warm LED seams",
+  "marble_white_panel": "the two pure-white vertical lines framing the white marble wall are slim warm LED lines",
+  "ring_led": "the white ring around the round mirror is a slim warm LED ring",
+  "microcement_dark": "the two white lines in the black ceiling are linear warm LED lights",
+  "sauna_bench": "the white line under the upper sauna bench is its warm backlight",
+  "_none": "Light fittings: there are NONE in this view - the room is lit only by the golden-hour daylight.",
+  "_tail": "Add NO other light of any kind: no spotlights, no downlights, no recessed ceiling lights, no ceiling LED strips, no wall lights, no lamps, no glowing outlines along edges.",
+  "_decor": "Decor: only the modelled objects - framed paintings and photographs on the walls, rugs, cushions, books, ceramics, vases with slim olive branches (green stems), olive trees in stone pots (green sphere on a trunk), dried pampas (beige stems), an orchid with candles, folded towels; add no new objects."
+ },
+ "heroes": {
+  "living": "LIV_A",
+  "spa": "SPA_A",
+  "wc": "WC_A",
+  "garage": "GAR_A",
+  "bedroom": "BED_A",
+  "bath": "BATH_A"
+ },
+ "style_refs": {
+  "living": {
+   "job": "d3fbb039-27d5-4ca4-b38c-e81c39b3370a",
+   "text": "IMAGE 2 is the client's APPROVED living room of the sister house. Take ONLY its materials, colours and finish quality from it: wide-plank natural oak floor, warm greige plaster, walnut slatted ceiling, hand-patinated bronze panels with fine reveals, ivory boucle sofa with navy and cognac cushions, cognac leather armchairs, smoked-walnut kitchen with grey-taupe marble, slim linear bronze pendants. Its room shape, double-height void, ring chandeliers, windows and furniture positions are DIFFERENT - never copy them: take every shape and position ONLY from IMAGE 1 (this room has a flat 2.8 m walnut slatted ceiling and NO chandeliers)."
+  },
+  "bedroom": {
+   "job": "ee569d57-1fcc-466a-bda5-0f982877ad76",
+   "text": "IMAGE 2 is the client's APPROVED bedroom design of this house (the 'Master Suite'). Copy its materials, colours, the faceted walnut wall with glowing LED seams folding onto the ceiling, black slats, sand channel-tufted bed with charcoal bedding, black nightstands and lamps, white marble wall framed by LED lines - EXACTLY. Its room, window and furniture positions are different: take every shape and position ONLY from IMAGE 1."
+  },
+  "bath": {
+   "job": "e7497bb1-b7a5-4cf5-84e4-b39aab817933",
+   "text": "IMAGE 2 is the client's APPROVED bathroom of this house. Copy its look EXACTLY: bright warm greige honed limestone walls and floor, the rough dark slate ONLY on the one narrow feature panel behind the vanity, walnut drawer, black vessel basin, round mirror with a slim LED ring, clear glass, white wall-hung toilet, white ceiling. Its room shape and positions are different: take every shape and position ONLY from IMAGE 1."
+  },
+  "wc": {
+   "job": "e7497bb1-b7a5-4cf5-84e4-b39aab817933",
+   "text": "IMAGE 2 is the client's APPROVED bathroom of this house. Use the same look: bright warm greige honed limestone walls and floor, the rough dark slate ONLY on the one narrow panel behind the walnut vanity, black vessel basin, white wall-hung toilet. Here the round mirror has NO LED ring and the ceiling is warm walnut slats; one slim black pendant hangs beside the mirror. Take every shape and position ONLY from IMAGE 1."
+  },
+  "spa": {
+   "job": "e7497bb1-b7a5-4cf5-84e4-b39aab817933",
+   "text": "IMAGE 2 is the client's APPROVED bathroom of this house: use its bright warm greige honed limestone for the spa walls and floor and its rough dark slate ONLY on the back wall of the walk-in shower (the dark panel in IMAGE 1). Everything else - jacuzzi, sauna, glass, shapes, positions - ONLY from IMAGE 1."
+  }
+ },
+ "cameras": [
+  {
+   "id": "LIV_A",
+   "room": "P_R_living",
+   "space": "living",
+   "title": "Living - from the bronze TV wall over the sofa group to the east glass and the terrace",
+   "pos": [
+    888.9,
+    829.8,
+    150
+   ],
+   "look": [
+    1311.7,
+    1142.3
+   ],
+   "hfov": 98,
+   "shift_y": 0.03,
+   "notes": "The L-sofa faces EAST towards the two armchairs. Through the east glass: the raised limestone terrace in warm golden light - teak outdoor sofa and low table, a potted olive tree, frameless glass railing - and the garden beyond; through the south glass a frameless glass railing and the garden below."
+  },
+  {
+   "id": "LIV_B",
+   "room": "P_R_living",
+   "space": "living",
+   "title": "Living - from the terrace corner back to kitchen, island, dining and the painting",
+   "pos": [
+    1289.4,
+    1286.7,
+    150
+   ],
+   "look": [
+    613.2,
+    840.3
+   ],
+   "hfov": 98,
+   "shift_y": 0.04,
+   "notes": "The large painting hangs above the dining table on the wall left of the bronze wall; the wide walnut steps lead up from the entry at the far end."
+  },
+  {
+   "id": "KIT_A",
+   "room": "P_R_living",
+   "space": "living",
+   "title": "Kitchen + dining - from the top of the steps toward the south glass",
+   "pos": [
+    492.4,
+    761.5,
+    150
+   ],
+   "look": [
+    718.2,
+    1303.8
+   ],
+   "hfov": 96,
+   "shift_y": 0.04,
+   "notes": "Through the south glass: a frameless glass railing right outside, then the garden about 3.6 m below - lawn, clipped hedge, olive trees, soft hills in golden evening light."
+  },
+  {
+   "id": "HALL_A",
+   "room": "P_R_entry",
+   "space": "living",
+   "title": "Entry - from the living level down the wide steps to the front door and the stair",
+   "pos": [
+    481.9,
+    919.1,
+    150
+   ],
+   "look": [
+    527.8,
+    341.4
+   ],
+   "hfov": 94,
+   "shift_y": -0.2,
+   "notes": "The four wide walnut steps go DOWN from the camera to the entry floor; the walnut stair rises to the right along the battened wall."
+  },
+  {
+   "id": "HALL_B",
+   "room": "P_R_entry",
+   "space": "living",
+   "title": "Entry - from the front door up the wide steps into the living",
+   "pos": [
+    541.0,
+    374.2,
+    90
+   ],
+   "look": [
+    508.1,
+    1109.5
+   ],
+   "hfov": 94,
+   "shift_y": 0.05,
+   "notes": "The four wide walnut steps go UP from the entry to the sunlit living level."
+  },
+  {
+   "id": "STAIR_A",
+   "room": "P_R_entry",
+   "space": "living",
+   "title": "Entry - the walnut stair rising along the battened wall, corridor to the spa",
+   "pos": [
+    403.1,
+    538.3,
+    90
+   ],
+   "look": [
+    1116.0,
+    383.4
+   ],
+   "hfov": 90,
+   "shift_y": 0.08
+  },
+  {
+   "id": "SPA_A",
+   "room": "P_R_spa",
+   "space": "spa",
+   "title": "Spa - from the door over the jacuzzi to the east glass and the terrace",
+   "pos": [
+    954.6,
+    514.7,
+    90
+   ],
+   "look": [
+    1311.7,
+    676.2
+   ],
+   "hfov": 100,
+   "shift_y": 0.03,
+   "notes": "Through the east glass: the limestone terrace at floor level with two teak sun loungers and a potted olive tree, the garden beyond, warm golden light."
+  },
+  {
+   "id": "SPA_B",
+   "room": "P_R_spa",
+   "space": "spa",
+   "title": "Spa - from the terrace glass to the sauna, shower and jacuzzi",
+   "pos": [
+    1295.9,
+    758.9,
+    90
+   ],
+   "look": [
+    823.3,
+    498.9
+   ],
+   "hfov": 100,
+   "shift_y": 0.03
+  },
+  {
+   "id": "WC_A",
+   "room": "P_R_wc",
+   "space": "wc",
+   "title": "Guest WC - from the door",
+   "pos": [
+    648.6,
+    589.5,
+    100
+   ],
+   "look": [
+    791.7,
+    761.5
+   ],
+   "hfov": 115,
+   "shift_y": -0.05
+  },
+  {
+   "id": "GAR_A",
+   "room": "P_R_garage",
+   "space": "garage",
+   "title": "Garage - front three-quarter view of the S-Class",
+   "pos": [
+    350.6,
+    634.2,
+    200
+   ],
+   "look": [
+    101.1,
+    315.1
+   ],
+   "hfov": 104,
+   "shift_y": -0.28
+  },
+  {
+   "id": "GAR_B",
+   "room": "P_R_garage",
+   "space": "garage",
+   "title": "Garage - from the garage door along the S-Class",
+   "pos": [
+    42.0,
+    42.0,
+    200
+   ],
+   "look": [
+    245.5,
+    472.7
+   ],
+   "hfov": 104,
+   "shift_y": -0.28
+  },
+  {
+   "id": "BED_A",
+   "room": "P_R_bed",
+   "space": "bedroom",
+   "title": "Bedroom - from the glass door to the faceted walnut bed wall",
+   "pos": [
+    340.1,
+    1223.7,
+    150
+   ],
+   "look": [
+    36.8,
+    978.2
+   ],
+   "hfov": 96,
+   "shift_y": 0.06
+  },
+  {
+   "id": "BED_B",
+   "room": "P_R_bed",
+   "space": "bedroom",
+   "title": "Bedroom - from beside the bed to the marble wall and the glass door",
+   "pos": [
+    72.2,
+    934.9,
+    150
+   ],
+   "look": [
+    324.3,
+    1181.7
+   ],
+   "hfov": 96,
+   "shift_y": 0.04,
+   "notes": "Through the glass door: a frameless glass railing right outside and the garden below in golden evening light."
+  },
+  {
+   "id": "BATH_A",
+   "room": "P_R_bath",
+   "space": "bath",
+   "title": "Bathroom - wide corner view",
+   "pos": [
+    232.4,
+    840.3,
+    150
+   ],
+   "look": [
+    36.8,
+    664.4
+   ],
+   "hfov": 110,
+   "shift_y": -0.1
+  }
+ ]
+}

@@ -490,6 +490,94 @@
     "add": "",
     "light": "warm"
    }
+  },
+  "P_R_living": {
+   "style": "living_warm",
+   "mood_refs": [],
+   "concept": "Open living, kitchen and dining in the approved house language: oak floor, greige plaster, walnut slatted ceiling, hand-patinated bronze TV wall, smoked-walnut kitchen with grey-taupe marble, ivory boucle sofa, cognac leather.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm low sun streams in through the south and east glass, long honey-coloured sun patches across the oak floor and the bronze wall; no lamps needed"
+   }
+  },
+  "P_R_entry": {
+   "style": "living_warm",
+   "mood_refs": [],
+   "concept": "Arrival hall: walnut stair rising along the battened wall, wide walnut steps up to the living level, oak floor, greige plaster.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm daylight from the tall entrance glazing and from the sunlit living room at the top of the steps"
+   }
+  },
+  "P_R_wc": {
+   "style": "bath_greige",
+   "mood_refs": [],
+   "concept": "Guest WC: warm greige limestone, rough slate only as one feature panel behind the walnut vanity, black vessel basin, round mirror, one black pendant.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "soft warm light from the single black pendant beside the mirror"
+   }
+  },
+  "P_R_spa": {
+   "style": "spa_greige",
+   "mood_refs": [],
+   "concept": "Bright private spa: warm greige limestone, walnut slatted ceiling, travertine-clad round jacuzzi, walk-in shower with a rough slate back wall, glass-fronted sauna; full-height glass to the terrace.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm daylight through the east glass from the sunlit terrace, soft and calm"
+   }
+  },
+  "P_R_sauna": {
+   "style": "sauna_timber",
+   "mood_refs": [],
+   "concept": "Glass-fronted thermo-aspen sauna.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm backlight under the upper bench"
+   }
+  },
+  "P_R_garage": {
+   "style": "garage_gallery",
+   "mood_refs": [],
+   "concept": "Car gallery, not a garage: dark polished microcement, charcoal walls, black ceiling with two linear lines, framed photograph, black Mercedes S-Class.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "two warm linear LED lines in the black ceiling, warm golden-hour daylight through the small west window"
+   }
+  },
+  "P_R_bed": {
+   "style": "bedroom_noir",
+   "mood_refs": [],
+   "concept": "The approved 'Master Suite': faceted walnut wall with glowing LED seams folding onto the ceiling over the bed, black slats either side, sand channel-tufted bed, charcoal bedding, black nightstands and lamps, white marble wall framed by two LED lines, pampas by the glass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: warm low sun pours in through the south glass door, the walnut facets glow along their LED seams, warm table lamps"
+   }
+  },
+  "P_R_bath": {
+   "style": "bath_greige",
+   "mood_refs": [],
+   "concept": "Bright warm limestone bathroom; rough slate only as one feature panel behind the vanity with the LED-ring mirror.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "bright, warm and calm: the LED ring around the mirror, soft daylight from the small west window"
+   }
   }
  },
  "guide_color_legend": {
@@ -1062,6 +1150,62 @@
   "slate_feature": {
    "tint": "#4A443E",
    "text": "rough cleft dark slate feature panel with deep natural relief (only this one panel), grazed by warm light from above and below"
+  },
+  "car_sclass": {
+   "tint": "#3A3F46",
+   "text": "gloss obsidian-black Mercedes-Benz S-Class long-wheelbase limousine (W223): long, low, elegant saloon with a flowing roofline, chrome grille with the three-pointed star on the bonnet, slim LED headlights, flush door handles, chrome window trim, large multi-spoke alloy wheels - a sleek limousine, NOT an SUV, NOT a G-Wagon"
+  },
+  "car_glass": {
+   "tint": "#6F7C86",
+   "text": "dark tinted car windows with slim chrome surrounds"
+  },
+  "car_tyre": {
+   "tint": "#1A1A1A",
+   "text": "black low-profile tyres"
+  },
+  "car_wheel": {
+   "tint": "#9A9DA1",
+   "text": "polished multi-spoke alloy wheel"
+  },
+  "jacuzzi_travertine": {
+   "tint": "#CDBBA2",
+   "text": "round hot tub clad in warm honed travertine with a rounded travertine rim, clear turquoise water lit softly from below"
+  },
+  "terrace_stone": {
+   "tint": "#D9CDBB",
+   "text": "large-format warm beige limestone terrace paving, honed, fine joints"
+  },
+  "lounger_teak": {
+   "tint": "#A97E57",
+   "text": "teak sun lounger with thick ivory outdoor cushions"
+  },
+  "outdoor_sofa": {
+   "tint": "#CFC5B5",
+   "text": "low teak-framed outdoor lounge sofa with sand-coloured cushions"
+  },
+  "outdoor_table": {
+   "tint": "#8C6A4B",
+   "text": "low teak outdoor table"
+  },
+  "art_painting_large": {
+   "tint": "#B98A5E",
+   "text": "large contemporary abstract painting on canvas - warm ochre, sand, terracotta and charcoal brush strokes - in a thin walnut float frame"
+  },
+  "art_painting_portrait": {
+   "tint": "#A99886",
+   "text": "tall abstract painting on canvas in sand, umber and soft black layered washes, thin black float frame"
+  },
+  "art_photo_bw": {
+   "tint": "#8E8E8E",
+   "text": "large framed black-and-white fine-art photograph of a winding alpine road, white mat, thin black frame"
+  },
+  "column_plaster": {
+   "tint": "#E6DFD5",
+   "text": "slim round structural column finished in warm greige plaster"
+  },
+  "sauna_stove": {
+   "tint": "#2A2A2A",
+   "text": "black sauna stove with a basket of grey stones"
   }
  },
  "style_materials": {
@@ -1134,6 +1278,16 @@
    "floor": "stone_greige_floor",
    "wall": "stone_greige_honed",
    "ceiling": "plaster_white"
+  },
+  "living_warm": {
+   "floor": "oak_floor",
+   "wall": "plaster_greige",
+   "ceiling": "walnut_slats"
+  },
+  "spa_greige": {
+   "floor": "stone_greige_floor",
+   "wall": "stone_greige_honed",
+   "ceiling": "walnut_slats"
   }
  },
  "kind_materials": {
@@ -1242,6 +1396,31 @@
   "S_F_bath1_shower": "stone_greige_floor",
   "S_F_podL_shower": "stone_cream_floor",
   "S_F_podR_shower": "stone_cream_floor",
-  "S_F_podL_duct": "stone_taupe"
+  "S_F_podL_duct": "stone_taupe",
+  "P_F_bed_base": "bed_upholstered_sand",
+  "P_F_bed_head": "headboard_channel_sand",
+  "P_F_bed_linen": "duvet_charcoal",
+  "P_F_bed_pillow": "pillow_grey",
+  "P_F_bed_throw": "throw_black_knit",
+  "P_F_ns1": "nightstand_black",
+  "P_F_ns2": "nightstand_black",
+  "P_F_wr": "wardrobe_black_glass",
+  "P_F_bath_vanity": "walnut_counter",
+  "P_F_wc_vanity": "walnut_counter",
+  "P_F_bath_wc": "toilet_white",
+  "P_F_wc_toilet": "toilet_white",
+  "P_F_bath_shower": "stone_greige_floor",
+  "P_F_spa_shower": "stone_greige_floor",
+  "P_F_wc_duct": "stone_greige_honed",
+  "P_F_jacuzzi": "jacuzzi_travertine",
+  "P_F_k_duct": "walnut_cabinet",
+  "P_F_shaft": "walnut_battens",
+  "P_F_island": "marble_island",
+  "P_F_k_fridge": "black_glass_tall",
+  "P_F_tv_unit": "walnut_console",
+  "P_F_car": "car_sclass",
+  "P_F_car_glass": "car_glass",
+  "P_F_sink": "black_metal",
+  "P_F_cooktop": "black_metal"
  }
 }

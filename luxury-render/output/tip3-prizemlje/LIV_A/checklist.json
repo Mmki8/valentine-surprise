@@ -1,0 +1,114 @@
+{
+ "camera": "LIV_A",
+ "room": "P_R_living",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "walnut_slats",
+  "plaster_greige",
+  "bronze_panels",
+  "boucle_ivory",
+  "leather_cognac",
+  "tv_black",
+  "olive_foliage",
+  "oak_smoked_table",
+  "oak_floor",
+  "bronze_frame",
+  "cushion_cognac",
+  "rug_sand",
+  "walnut_console",
+  "sheer_linen",
+  "stone_pot",
+  "cushion_navy",
+  "reveal_dark",
+  "ceramic_dark",
+  "olive_trunk",
+  "books_neutral"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_liv_s_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "right",
+   "share": 0.013,
+   "note": "living south: 6-panel glazing, two sliding sets (OG.1), glass railing outside"
+  },
+  {
+   "id": "O_liv_e_glz",
+   "name": "full-height glazed sliding door",
+   "where": "centre",
+   "share": 0.007,
+   "note": "living east: full-height sliding glass to the terrace"
+  }
+ ],
+ "furniture_counts": {
+  "sofa": 1,
+  "tv": 1,
+  "armchair": 2,
+  "low_cabinet": 1,
+  "coffee_table": 2
+ },
+ "items": [
+  {
+   "id": "P_F_sofa",
+   "name": "L-shaped sofa",
+   "where": "right",
+   "share": 0.047,
+   "note": "L-sofa, long side (back to the dining)"
+  },
+  {
+   "id": "P_F_tv",
+   "name": "TV",
+   "where": "left",
+   "share": 0.034,
+   "note": "TV on the bronze wall"
+  },
+  {
+   "id": "P_F_arm1",
+   "name": "lounge armchair",
+   "where": "centre",
+   "share": 0.026,
+   "note": null
+  },
+  {
+   "id": "P_F_tv_unit",
+   "name": "low cabinet",
+   "where": "left",
+   "share": 0.015,
+   "note": "floating media unit under the TV"
+  },
+  {
+   "id": "P_F_ct2",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.015,
+   "note": null
+  },
+  {
+   "id": "P_F_ct1",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.014,
+   "note": null
+  },
+  {
+   "id": "P_F_arm2",
+   "name": "lounge armchair",
+   "where": "centre",
+   "share": 0.013,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

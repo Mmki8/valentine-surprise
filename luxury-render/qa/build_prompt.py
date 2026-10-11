@@ -22,7 +22,7 @@ NAMES = {
     "tall_cabinet": "full-height cabinet column", "low_cabinet": "low cabinet", "appliance": "washer/dryer",
     "tv": "TV", "toilet": "wall-hung toilet", "vanity": "floating vanity", "basin": "vessel basin",
     "bench": "sauna bench", "jacuzzi": "round jacuzzi hot tub", "shower": "walk-in shower",
-    "stair": "staircase", "car": "car (matte black Mercedes G-Wagon)", "cooktop": "cooktop", "sink": "sink",
+    "stair": "staircase", "car": "car", "island_x": "kitchen island", "cooktop": "cooktop", "sink": "sink",
     "box": "boxed column", "bed": "bed", "nightstand": "nightstand",
 }
 OPEN_NAMES = {"window": "window", "door": "door (closed)", "double_door": "glazed double door (closed)",
@@ -49,6 +49,15 @@ def mood_for(cam_full, plan_dir):
     if c.get("heroes", {}).get(cam.get("space")) != cam_full:
         return None
     return c.get("moods", {}).get(cam.get("space"))
+
+
+def fittings_txt(f, seen_mats):
+    """per-view light-fitting sentence: only the fittings whose material this camera actually sees"""
+    if isinstance(f, str):
+        return f
+    parts = [v for k, v in f.items() if not k.startswith("_") and k in seen_mats]
+    head = (f["_head"] + " " + "; ".join(parts) + ".") if parts else f["_none"]
+    return " ".join([head, f["_tail"], f["_decor"]])
 
 
 def main(plan_dir, cam_full):
@@ -81,7 +90,7 @@ def main(plan_dir, cam_full):
             continue
         if k in furn:
             f = furn[k]
-            if f["kind"] in ("glass", "fixture"):
+            if f["kind"] in ("glass", "fixture", "car_glass"):
                 continue
             if f["kind"] == "stair":
                 k2 = "staircase"
@@ -120,7 +129,7 @@ def main(plan_dir, cam_full):
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     hero = None if (cam.get("relight_from") or cam.get("style_from")) else hero_for(cam_full, plan_dir)
     mood = None if (cam.get("relight_from") or cam.get("style_from")) else mood_for(cam_full, plan_dir)
-    upper = cam["room"].startswith(("U_", "S_"))
+    upper = cam["room"].startswith(("U_", "S_", "P_"))
     cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
     style_ref = (cfg.get("heroes", {}).get(cam.get("space")) == cam_full and cam.get("space") in cfg.get("style_refs", {}))
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
@@ -128,9 +137,11 @@ def main(plan_dir, cam_full):
     prompt = (
         "Turn IMAGE 1 into a photorealistic ultra-luxury architectural photograph WITHOUT changing its geometry. "
         "IMAGE 1 is a colour-coded 3D model of the real house, already showing the final design: every wall, opening, "
-        "furniture piece, light fitting and decor object is modelled at its exact place, in its real colour, with every edge "
-        "drawn as a thin dark line. Keep the identical camera, framing and perspective and keep every line at exactly the same "
-        "pixel position, size and count. This is a material and lighting pass only: make every surface real, do not redesign, "
+        "furniture piece, light fitting and decor object is modelled at its exact place, in its real colour. Thin grey guide "
+        "lines trace the model's edges ONLY so that you place every edge exactly: match each edge to its guide line in position, "
+        "size and count, but NEVER draw the guide lines themselves - a real photograph has no outlines, no contour lines, no seam "
+        "lines and no glowing strips along edges; edges appear only as natural changes of light, shadow and material. "
+        "Keep the identical camera, framing and perspective. This is a material and lighting pass only: make every surface real, do not redesign, "
         "do not add or remove anything. Closed doors stay closed; glass only where the light-blue panes are." + car_line + "\n\n"
         + (f"IMAGE 2 is the approved render of this same space from another camera. Every object, material, colour, fitting and "
            f"the light must look EXACTLY like in IMAGE 2 (same pendants, same cabinet fronts, same stone, same cushions, same "
@@ -150,7 +161,8 @@ def main(plan_dir, cam_full):
            "every object and its position come ONLY from IMAGE 1.\n\n" if mood else "")
         + f"Locked and visible: openings: {open_txt}; furniture: {inv or 'none'}.\n"
         f"Materials, as coloured in IMAGE 1 (identical in every view of this house): {'; '.join(mat_lines)}.\n"
-        + ("Light fittings: ONLY those modelled in IMAGE 1 - every thin glowing white line is a warm 2700K LED (seams between the walnut "
+        + (fittings_txt(cfg["fittings"], [m for m, n in seen if n > W * H * 0.0003]) + "\n" if cfg.get("fittings") else "")
+        + ("" if cfg.get("fittings") else "Light fittings: ONLY those modelled in IMAGE 1 - every thin glowing white line is a warm 2700K LED (seams between the walnut "
            "facets, coves, wall lines, under-counter strips), a white ring on a wall is a slim circular LED ring around a round mirror, "
            "black cylinders hanging on cables are slim black pendants, black cylinders on the nightstands are small table lamps. Add no "
            "other fittings, no spotlights, no downlights, no track lights. Decor: only the modelled objects (beige spheres = dried pampas "
@@ -160,7 +172,7 @@ def main(plan_dir, cam_full):
            "crystal ring chandeliers, the thin bars hanging on cables are linear bronze pendants. Add no other fittings, no spotlights, "
            "no track lights. Decor: only the modelled objects (green spheres = olive foliage/branches, white small spheres = orchids or "
            "coral, yellow = lemons); add no new objects.\n") +
-        f"Time of day: {g['time_of_day_upper'] if upper else g['time_of_day']}. Room mood: {room['retexture']['light']}.\n"
+        f"Time of day: {cfg.get('time_of_day') or (g['time_of_day_upper'] if upper else g['time_of_day'])}. Room mood: {room['retexture']['light']}.\n"
         f"Exterior: {cfg.get('exterior') or (g['exterior_upper'] if upper else g['exterior'])}\n"
         + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"] == "R_garage" and not car_on) else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
@@ -177,6 +189,7 @@ def main(plan_dir, cam_full):
                          "style matches design system for this room; photoreal, no AI artefacts",
                          "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
                          "no light fittings or decor objects beyond those modelled",
+                         "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines",
                      ])
     open(os.path.join(out, "prompt.txt"), "w").write(prompt)
     json.dump(checklist, open(os.path.join(out, "checklist.json"), "w"), indent=1)

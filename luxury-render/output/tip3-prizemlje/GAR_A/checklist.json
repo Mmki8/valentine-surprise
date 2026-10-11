@@ -1,0 +1,58 @@
+{
+ "camera": "GAR_A",
+ "room": "P_R_garage",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_charcoal",
+  "car_sclass",
+  "car_glass",
+  "ceiling_black",
+  "microcement_dark",
+  "bronze_garage_door",
+  "bronze_frame",
+  "art_photo_bw",
+  "car_tyre",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_garage_door",
+   "name": "sectional garage door (closed)",
+   "where": "right",
+   "share": 0.051,
+   "note": "sectional garage door (north)"
+  },
+  {
+   "id": "O_garage_win",
+   "name": "window",
+   "where": "left",
+   "share": 0.005,
+   "note": "garage west window"
+  }
+ ],
+ "furniture_counts": {
+  "car": 1
+ },
+ "items": [
+  {
+   "id": "P_F_car",
+   "name": "car",
+   "where": "centre",
+   "share": 0.158,
+   "note": "black Mercedes-Benz S-Class, parked nose-in exactly where the car is drawn"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

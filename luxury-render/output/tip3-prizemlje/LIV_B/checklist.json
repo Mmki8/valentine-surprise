@@ -1,0 +1,163 @@
+{
+ "camera": "LIV_B",
+ "room": "P_R_living",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "walnut_slats",
+  "bronze_panels",
+  "bronze_frame",
+  "boucle_ivory",
+  "leather_cognac",
+  "plaster_greige",
+  "oak_floor",
+  "stone_backsplash",
+  "column_plaster",
+  "oak_smoked_table",
+  "tv_black",
+  "walnut_console",
+  "cushion_cognac",
+  "rug_sand",
+  "marble_island",
+  "walnut_cabinet",
+  "art_painting_large",
+  "cushion_navy",
+  "black_glass_tall",
+  "reveal_dark",
+  "walnut_table",
+  "ceramic_dark",
+  "leather_cognac_chair",
+  "walnut_door",
+  "olive_foliage",
+  "worktop_marble",
+  "sheer_linen",
+  "books_neutral",
+  "pendant_bronze"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_liv_s_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "left",
+   "share": 0.094,
+   "note": "living south: 6-panel glazing, two sliding sets (OG.1), glass railing outside"
+  },
+  {
+   "id": "O_lobby_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.002,
+   "note": "hall -> bedroom wing lobby"
+  }
+ ],
+ "furniture_counts": {
+  "armchair": 2,
+  "sofa": 1,
+  "tv": 1,
+  "low_cabinet": 1,
+  "coffee_table": 2,
+  "island_x": 1,
+  "tall_cabinet": 1,
+  "counter": 1,
+  "table": 1,
+  "box": 1
+ },
+ "items": [
+  {
+   "id": "P_F_arm2",
+   "name": "lounge armchair",
+   "where": "right",
+   "share": 0.04,
+   "note": null
+  },
+  {
+   "id": "P_F_sofa_chaise",
+   "name": "L-shaped sofa",
+   "where": "centre",
+   "share": 0.039,
+   "note": "L-sofa, short leg"
+  },
+  {
+   "id": "P_F_tv",
+   "name": "TV",
+   "where": "right",
+   "share": 0.018,
+   "note": "TV on the bronze wall"
+  },
+  {
+   "id": "P_F_arm1",
+   "name": "lounge armchair",
+   "where": "right",
+   "share": 0.016,
+   "note": null
+  },
+  {
+   "id": "P_F_tv_unit",
+   "name": "low cabinet",
+   "where": "right",
+   "share": 0.011,
+   "note": "floating media unit under the TV"
+  },
+  {
+   "id": "P_F_ct2",
+   "name": "coffee table",
+   "where": "right",
+   "share": 0.01,
+   "note": null
+  },
+  {
+   "id": "P_F_ct1",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.01,
+   "note": null
+  },
+  {
+   "id": "P_F_island",
+   "name": "kitchen island",
+   "where": "centre",
+   "share": 0.007,
+   "note": "island with cooktop; marble top runs on to px 655 (overhang) in design_layer"
+  },
+  {
+   "id": "P_F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.006,
+   "note": "fridge column (* on plan)"
+  },
+  {
+   "id": "P_F_k_run2",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "left",
+   "share": 0.005,
+   "note": "sink run"
+  },
+  {
+   "id": "P_F_table",
+   "name": "dining table",
+   "where": "centre",
+   "share": 0.003,
+   "note": "dining table joined to the island"
+  },
+  {
+   "id": "P_F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.003,
+   "note": "installation duct (2 small squares)"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

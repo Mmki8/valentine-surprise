@@ -1,0 +1,93 @@
+{
+ "camera": "SPA_B",
+ "room": "P_R_spa",
+ "hero": "SPA_A",
+ "mood": null,
+ "materials": [
+  "stone_greige_honed",
+  "walnut_slats",
+  "walnut_door",
+  "plaster_greige",
+  "jacuzzi_travertine",
+  "bronze_frame",
+  "stone_greige_floor",
+  "art_relief",
+  "sauna_aspen",
+  "oak_floor",
+  "slate_feature",
+  "walnut_counter",
+  "sauna_bench",
+  "towels_charcoal",
+  "black_metal"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_back_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.051,
+   "note": "back door (north) into the spa vestibule"
+  },
+  {
+   "id": "O_vest_glz",
+   "name": "full-height glazed sliding door",
+   "where": "right",
+   "share": 0.03,
+   "note": "glass sliding door vestibule | spa"
+  },
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.01,
+   "note": "corridor -> spa"
+  }
+ ],
+ "furniture_counts": {
+  "jacuzzi": 1,
+  "shower": 1,
+  "bench": 2
+ },
+ "items": [
+  {
+   "id": "P_F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "centre",
+   "share": 0.046,
+   "note": "round jacuzzi D 170"
+  },
+  {
+   "id": "P_F_spa_shower",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.016,
+   "note": null
+  },
+  {
+   "id": "P_F_sauna_bench_lo",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.004,
+   "note": "lower bench / step"
+  },
+  {
+   "id": "P_F_sauna_bench_hi",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.003,
+   "note": "upper bench"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

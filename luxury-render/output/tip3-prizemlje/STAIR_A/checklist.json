@@ -1,0 +1,69 @@
+{
+ "camera": "STAIR_A",
+ "room": "P_R_entry",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_door",
+  "bronze_frame",
+  "stair_walnut",
+  "walnut_slats",
+  "stone_greige_honed",
+  "art_relief",
+  "olive_foliage",
+  "oak_floor",
+  "ceramic_dark"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.05,
+   "note": "corridor -> spa"
+  },
+  {
+   "id": "O_stair_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "left",
+   "share": 0.031,
+   "note": "full-height glazing beside the front door, lighting the entry and the stair"
+  },
+  {
+   "id": "O_wc_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.008,
+   "note": "corridor -> guest WC"
+  },
+  {
+   "id": "O_front_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.007,
+   "note": "main entrance (north)"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "centre",
+   "share": 0.01
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

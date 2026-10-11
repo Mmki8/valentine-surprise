@@ -1,0 +1,78 @@
+{
+ "camera": "BATH_A",
+ "room": "P_R_bath",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "stone_greige_honed",
+  "slate_feature",
+  "stone_greige_floor",
+  "vanity_walnut_drawer",
+  "mirror_round",
+  "bronze_frame",
+  "toilet_white",
+  "walnut_door",
+  "walnut_counter",
+  "basin_black_vessel",
+  "plaster_white",
+  "ring_led",
+  "black_metal",
+  "plaster_charcoal"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bath_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.055,
+   "note": "lobby -> bathroom"
+  },
+  {
+   "id": "O_bath_win",
+   "name": "window",
+   "where": "left",
+   "share": 0.013,
+   "note": "bathroom west window (over the WC)"
+  }
+ ],
+ "furniture_counts": {
+  "shower": 1,
+  "toilet": 1,
+  "vanity": 1
+ },
+ "items": [
+  {
+   "id": "P_F_bath_shower",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.034,
+   "note": null
+  },
+  {
+   "id": "P_F_bath_wc",
+   "name": "wall-hung toilet",
+   "where": "left",
+   "share": 0.031,
+   "note": "wall-hung WC under the window"
+  },
+  {
+   "id": "P_F_bath_vanity",
+   "name": "floating vanity",
+   "where": "right",
+   "share": 0.027,
+   "note": "basin on the north wall"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

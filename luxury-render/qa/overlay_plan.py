@@ -33,8 +33,8 @@ def rect(r, fill, outline):
     d.rectangle([min(a[0], b[0]), min(a[1], b[1]), max(a[0], b[0]), max(a[1], b[1])], fill=fill, outline=outline, width=2)
 
 
-v = plan["void"]["rect"]
-rect(v, (255, 140, 0, 30), (255, 140, 0, 255))
+if plan.get("void"):
+    rect(plan["void"]["rect"], (255, 140, 0, 30), (255, 140, 0, 255))
 for w in plan["walls"]:
     rect(w["rect"], (255, 0, 0, 70), (200, 0, 0, 255))
 for o in plan["openings"]:
@@ -45,6 +45,9 @@ for f in plan["furniture"]:
     elif f["shape"] == "prism":
         if f["axis"] == "z":
             d.polygon([px(*q) for q in f["poly"]], fill=(0, 220, 0, 50), outline=(0, 150, 0, 255))
+        else:                                   # axis x: footprint = x0..x1 by the profile's y extent
+            ys = [q[0] for q in f["poly"]]
+            rect([f["x0"], min(ys), f["x1"], max(ys)], (0, 220, 0, 50), (0, 150, 0, 255))
     else:
         cx, cy = px(*f["center"])
         r = f["r"] / K * S
