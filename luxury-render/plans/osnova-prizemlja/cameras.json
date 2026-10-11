@@ -220,7 +220,8 @@
    ],
    "hfov": 86,
    "shift_y": 0.16,
-   "space": "open_plan"
+   "space": "open_plan",
+   "notes": "The entrance hall is double height: above it is the open upper landing edged with frameless glass railings, the tall upper window and the stair rising to the landing. Keep it open - no ceiling over that part."
   },
   {
    "id": "BED3_A",
@@ -237,7 +238,8 @@
     110
    ],
    "hfov": 84,
-   "shift_y": 0.02
+   "shift_y": 0.02,
+   "notes": "Calm, warm master bedroom: walnut panelled wall behind the sand boucle headboard, two small glass globe pendants beside the bed."
   },
   {
    "id": "BED3_B",
