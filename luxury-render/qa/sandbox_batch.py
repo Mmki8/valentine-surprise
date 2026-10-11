@@ -10,11 +10,12 @@ jobs = json.loads(sys.argv[1])
 os.makedirs("/home/user/prev", exist_ok=True)
 rows = []
 for j in jobs:
-    r = subprocess.run(["python3", "qa/record_attempt.py", "plans/osnova-prizemlja", j["cam"], j["label"], j["job_id"], j["url"]],
+    plan = j.get("plan", "osnova-prizemlja")
+    r = subprocess.run(["python3", "qa/record_attempt.py", f"plans/{plan}", j["cam"], j["label"], j["job_id"], j["url"]],
                        cwd=ROOT, capture_output=True, text=True)
     if r.returncode:
         rows.append((j["cam"], "ERROR", r.stderr[-200:])); continue
-    log = json.load(open(os.path.join(ROOT, "output/osnova-prizemlja", j["cam"], "qa_log.json")))
+    log = json.load(open(os.path.join(ROOT, "output", plan, j["cam"], "qa_log.json")))
     a = log["attempts"][-1]
     d = os.path.join(ROOT, a["dir"])
     from PIL import Image
