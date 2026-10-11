@@ -1,0 +1,104 @@
+{
+ "camera": "LIV_B",
+ "room": "R_living",
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "sofa": 1,
+  "tall_cabinet": 1,
+  "armchair": 1,
+  "table": 1,
+  "island": 1,
+  "coffee_table": 1,
+  "counter": 1,
+  "box": 1,
+  "chair": 3
+ },
+ "items": [
+  {
+   "id": "F_l_sofa_long",
+   "name": "L-shaped sofa",
+   "where": "right",
+   "share": 0.047,
+   "note": "L-sofa main run"
+  },
+  {
+   "id": "F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.015,
+   "note": "'*' = fridge column"
+  },
+  {
+   "id": "F_l_armchair_1",
+   "name": "lounge armchair",
+   "where": "centre",
+   "share": 0.012,
+   "note": null
+  },
+  {
+   "id": "F_d_table",
+   "name": "dining table",
+   "where": "left",
+   "share": 0.011,
+   "note": null
+  },
+  {
+   "id": "F_k_island",
+   "name": "kitchen island",
+   "where": "centre",
+   "share": 0.01,
+   "note": "overhang on south side y821-850"
+  },
+  {
+   "id": "F_l_table_1",
+   "name": "coffee table",
+   "where": "right",
+   "share": 0.006,
+   "note": null
+  },
+  {
+   "id": "F_k_run_west",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "centre",
+   "share": 0.005,
+   "note": "base run w/ cooktop"
+  },
+  {
+   "id": "F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.004,
+   "note": "installation duct, boxed in"
+  },
+  {
+   "id": "F_d_chair_s3",
+   "name": "dining chair",
+   "where": "left",
+   "share": 0.003,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_n3",
+   "name": "dining chair",
+   "where": "left",
+   "share": 0.003,
+   "note": null
+  },
+  {
+   "id": "F_d_chair_s2",
+   "name": "dining chair",
+   "where": "left",
+   "share": 0.002,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts"
+ ]
+}

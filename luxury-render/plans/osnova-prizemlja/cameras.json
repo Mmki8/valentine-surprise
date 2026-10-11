@@ -1,0 +1,209 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up). Level two-point perspective; shift_y = vertical lens shift in frame heights. hfov = horizontal FOV deg. Eye heights are above the room's own floor (garage floor is -60).",
+ "cameras": [
+  {
+   "id": "LIV_A",
+   "room": "R_living",
+   "title": "Living - toward sofa, feature wall & east glazing",
+   "pos": [
+    985,
+    935,
+    140
+   ],
+   "look": [
+    1330,
+    470
+   ],
+   "hfov": 84,
+   "shift_y": 0.2
+  },
+  {
+   "id": "LIV_B",
+   "room": "R_living",
+   "title": "Living - from SE glass corner toward kitchen & dining (shows double height + gallery edge)",
+   "pos": [
+    1425,
+    935,
+    140
+   ],
+   "look": [
+    960,
+    480
+   ],
+   "hfov": 86,
+   "shift_y": 0.2
+  },
+  {
+   "id": "KIT_A",
+   "room": "R_kitchen_dining",
+   "title": "Kitchen - from dining, island and full kitchen run",
+   "pos": [
+    880,
+    930,
+    145
+   ],
+   "look": [
+    800,
+    380
+   ],
+   "hfov": 80,
+   "shift_y": 0.04
+  },
+  {
+   "id": "KIT_B",
+   "room": "R_kitchen_dining",
+   "title": "Kitchen island - 3/4 view from living edge",
+   "pos": [
+    1120,
+    720,
+    140
+   ],
+   "look": [
+    720,
+    430
+   ],
+   "hfov": 70,
+   "shift_y": 0.03
+  },
+  {
+   "id": "DIN_A",
+   "room": "R_kitchen_dining",
+   "title": "Dining - from kitchen aisle toward double door & terrace",
+   "pos": [
+    728,
+    450,
+    145
+   ],
+   "look": [
+    930,
+    900
+   ],
+   "hfov": 80,
+   "shift_y": 0.04
+  },
+  {
+   "id": "SPA_A",
+   "room": "R_spa",
+   "title": "Spa - from entry toward jacuzzi & east glazing",
+   "pos": [
+    640,
+    300,
+    150
+   ],
+   "look": [
+    1150,
+    120
+   ],
+   "hfov": 82,
+   "shift_y": 0.03
+  },
+  {
+   "id": "SPA_B",
+   "room": "R_spa",
+   "title": "Spa - from glazing back toward jacuzzi, shower and sauna glass",
+   "pos": [
+    1175,
+    295,
+    150
+   ],
+   "look": [
+    760,
+    140
+   ],
+   "hfov": 82,
+   "shift_y": 0.03
+  },
+  {
+   "id": "WC_A",
+   "room": "R_wc",
+   "title": "Guest WC - from door",
+   "pos": [
+    520,
+    196,
+    140
+   ],
+   "look": [
+    590,
+    26
+   ],
+   "hfov": 100,
+   "shift_y": -0.2
+  },
+  {
+   "id": "GAR_A",
+   "room": "R_garage",
+   "title": "Garage - hero 3/4 front of car from NW corner toward garage door",
+   "pos": [
+    45,
+    300,
+    100
+   ],
+   "look": [
+    300,
+    800
+   ],
+   "hfov": 88,
+   "shift_y": 0.0,
+   "variants": [
+    {
+     "suffix": "_car",
+     "opts": {
+      "car": true
+     }
+    },
+    {
+     "suffix": "_empty",
+     "opts": {
+      "car": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "GAR_B",
+   "room": "R_garage",
+   "title": "Garage - from garage-door corner toward steps (car rear 3/4)",
+   "pos": [
+    330,
+    800,
+    100
+   ],
+   "look": [
+    120,
+    250
+   ],
+   "hfov": 92,
+   "shift_y": 0.0,
+   "variants": [
+    {
+     "suffix": "_car",
+     "opts": {
+      "car": true
+     }
+    },
+    {
+     "suffix": "_empty",
+     "opts": {
+      "car": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "HALL_A",
+   "room": "R_hall",
+   "title": "Entrance hall - from front door toward stair",
+   "pos": [
+    535,
+    925,
+    150
+   ],
+   "look": [
+    505,
+    210
+   ],
+   "hfov": 84,
+   "shift_y": 0.06
+  }
+ ]
+}

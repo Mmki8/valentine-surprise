@@ -1,0 +1,2544 @@
+{
+ "camera": {
+  "id": "GAR_A",
+  "room": "R_garage",
+  "title": "Garage - hero 3/4 front of car from NW corner toward garage door",
+  "pos": [
+   45,
+   300,
+   100
+  ],
+  "look": [
+   300,
+   800
+  ],
+  "hfov": 88,
+  "shift_y": 0,
+  "variants": [
+   {
+    "suffix": "_car",
+    "opts": {
+     "car": true
+    }
+   },
+   {
+    "suffix": "_empty",
+    "opts": {
+     "car": false
+    }
+   }
+  ],
+  "W": 1600,
+  "H": 900,
+  "projection": [
+   1.0355303137905696,
+   0,
+   0,
+   0,
+   0,
+   1.840942780072124,
+   0,
+   0,
+   0,
+   0,
+   -1.0012507817385867,
+   -1,
+   0,
+   0,
+   -10.006253908692933,
+   0
+  ],
+  "view": [
+   -0.8908354564627696,
+   0,
+   -0.45432608279601255,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0.45432608279601255,
+   0,
+   -0.8908354564627696,
+   0,
+   -96.21022929797914,
+   -100.00000000000003,
+   287.69531066465146,
+   1
+  ]
+ },
+ "variant": {
+  "suffix": "_car",
+  "opts": {
+   "car": true
+  }
+ },
+ "legend": [
+  {
+   "id": "FLOOR_R_garage",
+   "kind": "floor",
+   "rgb": [
+    99,
+    138,
+    233
+   ]
+  },
+  {
+   "id": "CEIL_R_garage",
+   "kind": "ceiling",
+   "rgb": [
+    158,
+    249,
+    31
+   ]
+  },
+  {
+   "id": "FLOOR_R_laundry",
+   "kind": "floor",
+   "rgb": [
+    189,
+    40,
+    171
+   ]
+  },
+  {
+   "id": "CEIL_R_laundry",
+   "kind": "ceiling",
+   "rgb": [
+    13,
+    165,
+    140
+   ]
+  },
+  {
+   "id": "FLOOR_R_mudroom",
+   "kind": "floor",
+   "rgb": [
+    215,
+    170,
+    117
+   ]
+  },
+  {
+   "id": "CEIL_R_mudroom",
+   "kind": "ceiling",
+   "rgb": [
+    97,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "FLOOR_R_wc",
+   "kind": "floor",
+   "rgb": [
+    15,
+    224,
+    6
+   ]
+  },
+  {
+   "id": "CEIL_R_wc",
+   "kind": "ceiling",
+   "rgb": [
+    147,
+    31,
+    70
+   ]
+  },
+  {
+   "id": "FLOOR_R_sauna",
+   "kind": "floor",
+   "rgb": [
+    90,
+    185,
+    242
+   ]
+  },
+  {
+   "id": "CEIL_R_sauna",
+   "kind": "ceiling",
+   "rgb": [
+    193,
+    203,
+    77
+   ]
+  },
+  {
+   "id": "FLOOR_R_spa",
+   "kind": "floor",
+   "rgb": [
+    165,
+    29,
+    201
+   ]
+  },
+  {
+   "id": "CEIL_R_spa",
+   "kind": "ceiling",
+   "rgb": [
+    4,
+    174,
+    89
+   ]
+  },
+  {
+   "id": "FLOOR_R_hall",
+   "kind": "floor",
+   "rgb": [
+    224,
+    132,
+    108
+   ]
+  },
+  {
+   "id": "CEIL_R_hall",
+   "kind": "ceiling",
+   "rgb": [
+    43,
+    59,
+    238
+   ]
+  },
+  {
+   "id": "FLOOR_R_kitchen_dining",
+   "kind": "floor",
+   "rgb": [
+    99,
+    178,
+    52
+   ]
+  },
+  {
+   "id": "CEIL_R_kitchen_dining",
+   "kind": "ceiling",
+   "rgb": [
+    156,
+    22,
+    112
+   ]
+  },
+  {
+   "id": "FLOOR_R_living",
+   "kind": "floor",
+   "rgb": [
+    81,
+    244,
+    251
+   ]
+  },
+  {
+   "id": "CEIL_void",
+   "kind": "ceiling",
+   "rgb": [
+    215,
+    177,
+    66
+   ]
+  },
+  {
+   "id": "SLAB_edge",
+   "kind": "slab_edge",
+   "rgb": [
+    106,
+    17,
+    212
+   ]
+  },
+  {
+   "id": "GALLERY_floor",
+   "kind": "slab_edge",
+   "rgb": [
+    40,
+    138,
+    56
+   ]
+  },
+  {
+   "id": "GALLERY_glass",
+   "kind": "glass",
+   "rgb": [
+    233,
+    99,
+    116
+   ]
+  },
+  {
+   "id": "GALLERY_wall",
+   "kind": "wall",
+   "rgb": [
+    31,
+    123,
+    249
+   ]
+  },
+  {
+   "id": "GALLERY_ceil",
+   "kind": "ceiling",
+   "rgb": [
+    146,
+    189,
+    40
+   ]
+  },
+  {
+   "id": "GALLERY_end_n",
+   "kind": "wall",
+   "rgb": [
+    165,
+    13,
+    165
+   ]
+  },
+  {
+   "id": "GALLERY_end_s",
+   "kind": "wall",
+   "rgb": [
+    117,
+    215,
+    186
+   ]
+  },
+  {
+   "id": "CEIL_upper_stairwell",
+   "kind": "ceiling",
+   "rgb": [
+    226,
+    125,
+    54
+   ]
+  },
+  {
+   "id": "EXT_ground",
+   "kind": "exterior",
+   "rgb": [
+    32,
+    6,
+    224
+   ]
+  },
+  {
+   "id": "EXT_terrace",
+   "kind": "exterior",
+   "rgb": [
+    51,
+    147,
+    31
+   ]
+  },
+  {
+   "id": "W_north_west_s0",
+   "kind": "wall",
+   "rgb": [
+    242,
+    90,
+    160
+   ]
+  },
+  {
+   "id": "W_north_west_sill0",
+   "kind": "wall",
+   "rgb": [
+    77,
+    172,
+    203
+   ]
+  },
+  {
+   "id": "W_north_west_head0",
+   "kind": "wall",
+   "rgb": [
+    201,
+    193,
+    29
+   ]
+  },
+  {
+   "id": "W_north_west_s1",
+   "kind": "wall",
+   "rgb": [
+    117,
+    4,
+    174
+   ]
+  },
+  {
+   "id": "W_north_west_sill1",
+   "kind": "wall",
+   "rgb": [
+    108,
+    224,
+    151
+   ]
+  },
+  {
+   "id": "W_north_west_head1",
+   "kind": "wall",
+   "rgb": [
+    238,
+    58,
+    43
+   ]
+  },
+  {
+   "id": "W_north_west_s2",
+   "kind": "wall",
+   "rgb": [
+    52,
+    79,
+    178
+   ]
+  },
+  {
+   "id": "W_west_s0",
+   "kind": "wall",
+   "rgb": [
+    90,
+    156,
+    22
+   ]
+  },
+  {
+   "id": "W_west_sill0",
+   "kind": "wall",
+   "rgb": [
+    251,
+    81,
+    216
+   ]
+  },
+  {
+   "id": "W_west_head0",
+   "kind": "wall",
+   "rgb": [
+    66,
+    215,
+    202
+   ]
+  },
+  {
+   "id": "W_west_s1",
+   "kind": "wall",
+   "rgb": [
+    212,
+    138,
+    17
+   ]
+  },
+  {
+   "id": "W_west_fin_s0",
+   "kind": "wall",
+   "rgb": [
+    72,
+    40,
+    138
+   ]
+  },
+  {
+   "id": "W_spa_east_s0",
+   "kind": "wall",
+   "rgb": [
+    99,
+    233,
+    104
+   ]
+  },
+  {
+   "id": "W_spa_east_head0",
+   "kind": "wall",
+   "rgb": [
+    249,
+    31,
+    87
+   ]
+  },
+  {
+   "id": "W_spa_east_s1",
+   "kind": "wall",
+   "rgb": [
+    40,
+    122,
+    189
+   ]
+  },
+  {
+   "id": "W_liv_north_head0",
+   "kind": "wall",
+   "rgb": [
+    141,
+    165,
+    13
+   ]
+  },
+  {
+   "id": "W_liv_north_s1",
+   "kind": "wall",
+   "rgb": [
+    202,
+    117,
+    215
+   ]
+  },
+  {
+   "id": "W_liv_east_n_s0",
+   "kind": "wall",
+   "rgb": [
+    54,
+    226,
+    154
+   ]
+  },
+  {
+   "id": "W_ne_fin_s0",
+   "kind": "wall",
+   "rgb": [
+    224,
+    68,
+    6
+   ]
+  },
+  {
+   "id": "W_se_col_head0",
+   "kind": "wall",
+   "rgb": [
+    31,
+    32,
+    147
+   ]
+  },
+  {
+   "id": "W_se_col_head1",
+   "kind": "wall",
+   "rgb": [
+    135,
+    242,
+    90
+   ]
+  },
+  {
+   "id": "W_east_glz_s0",
+   "kind": "wall",
+   "rgb": [
+    203,
+    77,
+    152
+   ]
+  },
+  {
+   "id": "W_east_glz_head0",
+   "kind": "wall",
+   "rgb": [
+    29,
+    180,
+    201
+   ]
+  },
+  {
+   "id": "W_east_glz_s1",
+   "kind": "wall",
+   "rgb": [
+    174,
+    145,
+    4
+   ]
+  },
+  {
+   "id": "W_south_glz_s0",
+   "kind": "wall",
+   "rgb": [
+    170,
+    108,
+    224
+   ]
+  },
+  {
+   "id": "W_south_glz_head0",
+   "kind": "wall",
+   "rgb": [
+    43,
+    238,
+    90
+   ]
+  },
+  {
+   "id": "W_s_fin_s0",
+   "kind": "wall",
+   "rgb": [
+    178,
+    52,
+    58
+   ]
+  },
+  {
+   "id": "W_s_fin_head0",
+   "kind": "wall",
+   "rgb": [
+    22,
+    68,
+    156
+   ]
+  },
+  {
+   "id": "W_s_fin_s1",
+   "kind": "wall",
+   "rgb": [
+    188,
+    251,
+    81
+   ]
+  },
+  {
+   "id": "W_south_dd_s0",
+   "kind": "wall",
+   "rgb": [
+    215,
+    66,
+    204
+   ]
+  },
+  {
+   "id": "W_south_dd_head0",
+   "kind": "wall",
+   "rgb": [
+    17,
+    212,
+    170
+   ]
+  },
+  {
+   "id": "W_south_dd_s1",
+   "kind": "wall",
+   "rgb": [
+    138,
+    88,
+    40
+   ]
+  },
+  {
+   "id": "W_south_mid_head0",
+   "kind": "wall",
+   "rgb": [
+    126,
+    99,
+    233
+   ]
+  },
+  {
+   "id": "W_south_mid_s1",
+   "kind": "wall",
+   "rgb": [
+    51,
+    249,
+    31
+   ]
+  },
+  {
+   "id": "W_south_ent_s0",
+   "kind": "wall",
+   "rgb": [
+    189,
+    40,
+    97
+   ]
+  },
+  {
+   "id": "W_south_ent_head0",
+   "kind": "wall",
+   "rgb": [
+    13,
+    116,
+    165
+   ]
+  },
+  {
+   "id": "W_south_hall_s0",
+   "kind": "wall",
+   "rgb": [
+    212,
+    215,
+    117
+   ]
+  },
+  {
+   "id": "W_garage_s_e_head0",
+   "kind": "wall",
+   "rgb": [
+    182,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "W_garage_s_e_s1",
+   "kind": "wall",
+   "rgb": [
+    6,
+    224,
+    104
+   ]
+  },
+  {
+   "id": "W_garage_door_s0",
+   "kind": "wall",
+   "rgb": [
+    147,
+    50,
+    31
+   ]
+  },
+  {
+   "id": "W_garage_door_head0",
+   "kind": "wall",
+   "rgb": [
+    90,
+    110,
+    242
+   ]
+  },
+  {
+   "id": "W_garage_door_s1",
+   "kind": "wall",
+   "rgb": [
+    131,
+    203,
+    77
+   ]
+  },
+  {
+   "id": "W_laundry_s_s0",
+   "kind": "wall",
+   "rgb": [
+    201,
+    29,
+    152
+   ]
+  },
+  {
+   "id": "W_laundry_e_s0",
+   "kind": "wall",
+   "rgb": [
+    4,
+    174,
+    172
+   ]
+  },
+  {
+   "id": "W_laundry_e_head0",
+   "kind": "wall",
+   "rgb": [
+    224,
+    189,
+    108
+   ]
+  },
+  {
+   "id": "W_laundry_e_s1",
+   "kind": "wall",
+   "rgb": [
+    122,
+    43,
+    238
+   ]
+  },
+  {
+   "id": "W_garage_e_s0",
+   "kind": "wall",
+   "rgb": [
+    52,
+    178,
+    66
+   ]
+  },
+  {
+   "id": "W_mud_s_s0",
+   "kind": "wall",
+   "rgb": [
+    156,
+    22,
+    46
+   ]
+  },
+  {
+   "id": "W_mud_s_head0",
+   "kind": "wall",
+   "rgb": [
+    81,
+    160,
+    251
+   ]
+  },
+  {
+   "id": "W_mud_s_s1",
+   "kind": "wall",
+   "rgb": [
+    179,
+    215,
+    66
+   ]
+  },
+  {
+   "id": "W_mud_wc_s0",
+   "kind": "wall",
+   "rgb": [
+    202,
+    17,
+    212
+   ]
+  },
+  {
+   "id": "W_wc_s_s0",
+   "kind": "wall",
+   "rgb": [
+    40,
+    138,
+    105
+   ]
+  },
+  {
+   "id": "W_wc_s_head0",
+   "kind": "wall",
+   "rgb": [
+    233,
+    148,
+    99
+   ]
+  },
+  {
+   "id": "W_wc_s_s1",
+   "kind": "wall",
+   "rgb": [
+    47,
+    31,
+    249
+   ]
+  },
+  {
+   "id": "W_wc_sauna_s0",
+   "kind": "wall",
+   "rgb": [
+    73,
+    189,
+    40
+   ]
+  },
+  {
+   "id": "W_sauna_s_s0",
+   "kind": "wall",
+   "rgb": [
+    165,
+    13,
+    91
+   ]
+  },
+  {
+   "id": "W_sauna_e_s0",
+   "kind": "wall",
+   "rgb": [
+    117,
+    195,
+    215
+   ]
+  },
+  {
+   "id": "W_hall_spa_s0",
+   "kind": "wall",
+   "rgb": [
+    226,
+    210,
+    54
+   ]
+  },
+  {
+   "id": "W_hall_spa_head0",
+   "kind": "wall",
+   "rgb": [
+    140,
+    6,
+    224
+   ]
+  },
+  {
+   "id": "W_hall_spa_s1",
+   "kind": "wall",
+   "rgb": [
+    31,
+    147,
+    69
+   ]
+  },
+  {
+   "id": "W_spa_s_s0",
+   "kind": "wall",
+   "rgb": [
+    242,
+    94,
+    90
+   ]
+  },
+  {
+   "id": "W_liv_north_up_s0",
+   "kind": "wall",
+   "rgb": [
+    77,
+    110,
+    203
+   ]
+  },
+  {
+   "id": "W_kitchen_w_s0",
+   "kind": "wall",
+   "rgb": [
+    124,
+    201,
+    29
+   ]
+  },
+  {
+   "id": "W_sauna_glz_s_head0",
+   "kind": "wall",
+   "rgb": [
+    174,
+    4,
+    148
+   ]
+  },
+  {
+   "id": "W_sauna_glz_s_head1",
+   "kind": "wall",
+   "rgb": [
+    108,
+    224,
+    208
+   ]
+  },
+  {
+   "id": "W_sauna_glz_e_head0",
+   "kind": "wall",
+   "rgb": [
+    238,
+    154,
+    43
+   ]
+  },
+  {
+   "id": "W_sauna_glz_e_head1",
+   "kind": "wall",
+   "rgb": [
+    87,
+    52,
+    178
+   ]
+  },
+  {
+   "id": "W_up_stair_w_s0",
+   "kind": "wall",
+   "rgb": [
+    24,
+    156,
+    22
+   ]
+  },
+  {
+   "id": "W_up_stair_e_s0",
+   "kind": "wall",
+   "rgb": [
+    251,
+    81,
+    133
+   ]
+  },
+  {
+   "id": "W_up_stair_n_s0",
+   "kind": "wall",
+   "rgb": [
+    66,
+    155,
+    215
+   ]
+  },
+  {
+   "id": "W_up_stair_s_s0",
+   "kind": "wall",
+   "rgb": [
+    190,
+    212,
+    17
+   ]
+  },
+  {
+   "id": "W_gkpl_s0",
+   "kind": "wall",
+   "rgb": [
+    121,
+    40,
+    138
+   ]
+  },
+  {
+   "id": "O_laundry_ext_door",
+   "kind": "door",
+   "rgb": [
+    99,
+    233,
+    170
+   ]
+  },
+  {
+   "id": "O_laundry_ext_door_fl",
+   "kind": "frame",
+   "rgb": [
+    249,
+    83,
+    31
+   ]
+  },
+  {
+   "id": "O_laundry_ext_door_fr",
+   "kind": "frame",
+   "rgb": [
+    40,
+    48,
+    189
+   ]
+  },
+  {
+   "id": "O_laundry_ext_door_ft",
+   "kind": "frame",
+   "rgb": [
+    66,
+    165,
+    13
+   ]
+  },
+  {
+   "id": "O_laundry_mud_door",
+   "kind": "door",
+   "rgb": [
+    215,
+    117,
+    179
+   ]
+  },
+  {
+   "id": "O_laundry_mud_door_fl",
+   "kind": "frame",
+   "rgb": [
+    54,
+    214,
+    226
+   ]
+  },
+  {
+   "id": "O_laundry_mud_door_fr",
+   "kind": "frame",
+   "rgb": [
+    224,
+    175,
+    6
+   ]
+  },
+  {
+   "id": "O_laundry_mud_door_ft",
+   "kind": "frame",
+   "rgb": [
+    88,
+    31,
+    147
+   ]
+  },
+  {
+   "id": "O_mud_hall_door",
+   "kind": "door",
+   "rgb": [
+    90,
+    242,
+    119
+   ]
+  },
+  {
+   "id": "O_mud_hall_door_fl",
+   "kind": "frame",
+   "rgb": [
+    203,
+    77,
+    89
+   ]
+  },
+  {
+   "id": "O_mud_hall_door_fr",
+   "kind": "frame",
+   "rgb": [
+    29,
+    96,
+    201
+   ]
+  },
+  {
+   "id": "O_mud_hall_door_ft",
+   "kind": "frame",
+   "rgb": [
+    120,
+    174,
+    4
+   ]
+  },
+  {
+   "id": "O_wc_door",
+   "kind": "door",
+   "rgb": [
+    224,
+    108,
+    221
+   ]
+  },
+  {
+   "id": "O_wc_door_fl",
+   "kind": "frame",
+   "rgb": [
+    43,
+    238,
+    186
+   ]
+  },
+  {
+   "id": "O_wc_door_fr",
+   "kind": "frame",
+   "rgb": [
+    178,
+    108,
+    52
+   ]
+  },
+  {
+   "id": "O_wc_door_ft",
+   "kind": "frame",
+   "rgb": [
+    43,
+    22,
+    156
+   ]
+  },
+  {
+   "id": "O_spa_door",
+   "kind": "door",
+   "rgb": [
+    105,
+    251,
+    81
+   ]
+  },
+  {
+   "id": "O_spa_door_fl",
+   "kind": "frame",
+   "rgb": [
+    215,
+    66,
+    130
+   ]
+  },
+  {
+   "id": "O_spa_door_fr",
+   "kind": "frame",
+   "rgb": [
+    17,
+    158,
+    212
+   ]
+  },
+  {
+   "id": "O_spa_door_ft",
+   "kind": "frame",
+   "rgb": [
+    138,
+    137,
+    40
+   ]
+  },
+  {
+   "id": "O_entrance",
+   "kind": "door",
+   "rgb": [
+    192,
+    99,
+    233
+   ]
+  },
+  {
+   "id": "O_entrance_fl",
+   "kind": "frame",
+   "rgb": [
+    31,
+    249,
+    119
+   ]
+  },
+  {
+   "id": "O_entrance_fr",
+   "kind": "frame",
+   "rgb": [
+    189,
+    56,
+    40
+   ]
+  },
+  {
+   "id": "O_entrance_ft",
+   "kind": "frame",
+   "rgb": [
+    13,
+    41,
+    165
+   ]
+  },
+  {
+   "id": "O_double_door",
+   "kind": "glass",
+   "rgb": [
+    163,
+    215,
+    117
+   ]
+  },
+  {
+   "id": "O_double_door_fl",
+   "kind": "frame",
+   "rgb": [
+    226,
+    54,
+    186
+   ]
+  },
+  {
+   "id": "O_double_door_fr",
+   "kind": "frame",
+   "rgb": [
+    6,
+    224,
+    211
+   ]
+  },
+  {
+   "id": "O_double_door_ft",
+   "kind": "frame",
+   "rgb": [
+    147,
+    107,
+    31
+   ]
+  },
+  {
+   "id": "O_double_door_mid",
+   "kind": "frame",
+   "rgb": [
+    144,
+    90,
+    242
+   ]
+  },
+  {
+   "id": "O_double_door_kick",
+   "kind": "frame",
+   "rgb": [
+    77,
+    203,
+    86
+   ]
+  },
+  {
+   "id": "O_garage_door",
+   "kind": "door",
+   "rgb": [
+    201,
+    29,
+    67
+   ]
+  },
+  {
+   "id": "O_garage_door_g-10",
+   "kind": "frame",
+   "rgb": [
+    4,
+    92,
+    174
+   ]
+  },
+  {
+   "id": "O_garage_door_g40",
+   "kind": "frame",
+   "rgb": [
+    202,
+    224,
+    108
+   ]
+  },
+  {
+   "id": "O_garage_door_g90",
+   "kind": "frame",
+   "rgb": [
+    218,
+    43,
+    238
+   ]
+  },
+  {
+   "id": "O_garage_door_g140",
+   "kind": "frame",
+   "rgb": [
+    52,
+    178,
+    128
+   ]
+  },
+  {
+   "id": "O_garage_door_g190",
+   "kind": "frame",
+   "rgb": [
+    156,
+    65,
+    22
+   ]
+  },
+  {
+   "id": "O_mud_window",
+   "kind": "glass",
+   "rgb": [
+    85,
+    81,
+    251
+   ]
+  },
+  {
+   "id": "O_mud_window_fl",
+   "kind": "frame",
+   "rgb": [
+    106,
+    215,
+    66
+   ]
+  },
+  {
+   "id": "O_mud_window_fr",
+   "kind": "frame",
+   "rgb": [
+    212,
+    17,
+    126
+   ]
+  },
+  {
+   "id": "O_mud_window_ft",
+   "kind": "frame",
+   "rgb": [
+    40,
+    124,
+    138
+   ]
+  },
+  {
+   "id": "O_mud_window_fb",
+   "kind": "frame",
+   "rgb": [
+    233,
+    214,
+    99
+   ]
+  },
+  {
+   "id": "O_wc_window",
+   "kind": "glass",
+   "rgb": [
+    154,
+    31,
+    249
+   ]
+  },
+  {
+   "id": "O_wc_window_fl",
+   "kind": "frame",
+   "rgb": [
+    40,
+    189,
+    81
+   ]
+  },
+  {
+   "id": "O_wc_window_fr",
+   "kind": "frame",
+   "rgb": [
+    165,
+    13,
+    16
+   ]
+  },
+  {
+   "id": "O_wc_window_ft",
+   "kind": "frame",
+   "rgb": [
+    117,
+    147,
+    215
+   ]
+  },
+  {
+   "id": "O_wc_window_fb",
+   "kind": "frame",
+   "rgb": [
+    158,
+    226,
+    54
+   ]
+  },
+  {
+   "id": "O_spa_glazing",
+   "kind": "glass",
+   "rgb": [
+    224,
+    6,
+    201
+   ]
+  },
+  {
+   "id": "O_spa_glazing_fl",
+   "kind": "frame",
+   "rgb": [
+    31,
+    147,
+    126
+   ]
+  },
+  {
+   "id": "O_spa_glazing_fr",
+   "kind": "frame",
+   "rgb": [
+    242,
+    169,
+    90
+   ]
+  },
+  {
+   "id": "O_spa_glazing_ft",
+   "kind": "frame",
+   "rgb": [
+    106,
+    77,
+    203
+   ]
+  },
+  {
+   "id": "O_spa_glazing_mid",
+   "kind": "frame",
+   "rgb": [
+    39,
+    201,
+    29
+   ]
+  },
+  {
+   "id": "O_east_glazing",
+   "kind": "glass",
+   "rgb": [
+    174,
+    4,
+    64
+   ]
+  },
+  {
+   "id": "O_east_glazing_fl",
+   "kind": "frame",
+   "rgb": [
+    108,
+    183,
+    224
+   ]
+  },
+  {
+   "id": "O_east_glazing_fr",
+   "kind": "frame",
+   "rgb": [
+    225,
+    238,
+    43
+   ]
+  },
+  {
+   "id": "O_east_glazing_ft",
+   "kind": "frame",
+   "rgb": [
+    149,
+    52,
+    178
+   ]
+  },
+  {
+   "id": "O_east_glazing_m651",
+   "kind": "frame",
+   "rgb": [
+    22,
+    156,
+    87
+   ]
+  },
+  {
+   "id": "O_east_glazing_m736.1",
+   "kind": "frame",
+   "rgb": [
+    251,
+    113,
+    81
+   ]
+  },
+  {
+   "id": "O_east_glazing_m879.9",
+   "kind": "frame",
+   "rgb": [
+    66,
+    81,
+    215
+   ]
+  },
+  {
+   "id": "O_east_glazing_tr",
+   "kind": "frame",
+   "rgb": [
+    94,
+    212,
+    17
+   ]
+  },
+  {
+   "id": "O_south_glazing",
+   "kind": "glass",
+   "rgb": [
+    138,
+    40,
+    108
+   ]
+  },
+  {
+   "id": "O_south_glazing_fl",
+   "kind": "frame",
+   "rgb": [
+    99,
+    230,
+    233
+   ]
+  },
+  {
+   "id": "O_south_glazing_fr",
+   "kind": "frame",
+   "rgb": [
+    249,
+    190,
+    31
+   ]
+  },
+  {
+   "id": "O_south_glazing_ft",
+   "kind": "frame",
+   "rgb": [
+    105,
+    40,
+    189
+   ]
+  },
+  {
+   "id": "O_south_glazing_m1131.9",
+   "kind": "frame",
+   "rgb": [
+    13,
+    165,
+    35
+   ]
+  },
+  {
+   "id": "O_south_glazing_m1289.4",
+   "kind": "frame",
+   "rgb": [
+    215,
+    117,
+    131
+   ]
+  },
+  {
+   "id": "O_south_glazing_tr",
+   "kind": "frame",
+   "rgb": [
+    54,
+    130,
+    226
+   ]
+  },
+  {
+   "id": "O_sauna_glass_s",
+   "kind": "glass",
+   "rgb": [
+    165,
+    224,
+    6
+   ]
+  },
+  {
+   "id": "O_sauna_glass_s_fl",
+   "kind": "frame",
+   "rgb": [
+    145,
+    31,
+    147
+   ]
+  },
+  {
+   "id": "O_sauna_glass_s_fr",
+   "kind": "frame",
+   "rgb": [
+    90,
+    242,
+    194
+   ]
+  },
+  {
+   "id": "O_sauna_glass_s_ft",
+   "kind": "frame",
+   "rgb": [
+    203,
+    127,
+    77
+   ]
+  },
+  {
+   "id": "O_sauna_glass_e",
+   "kind": "glass",
+   "rgb": [
+    46,
+    29,
+    201
+   ]
+  },
+  {
+   "id": "O_sauna_glass_e_fl",
+   "kind": "frame",
+   "rgb": [
+    36,
+    174,
+    4
+   ]
+  },
+  {
+   "id": "O_sauna_glass_e_fr",
+   "kind": "frame",
+   "rgb": [
+    224,
+    108,
+    164
+   ]
+  },
+  {
+   "id": "O_sauna_glass_e_ft",
+   "kind": "frame",
+   "rgb": [
+    43,
+    193,
+    238
+   ]
+  },
+  {
+   "id": "F_washer",
+   "kind": "appliance",
+   "rgb": [
+    178,
+    170,
+    52
+   ]
+  },
+  {
+   "id": "F_dryer",
+   "kind": "appliance",
+   "rgb": [
+    109,
+    22,
+    156
+   ]
+  },
+  {
+   "id": "F_laundry_counter",
+   "kind": "counter",
+   "rgb": [
+    81,
+    251,
+    141
+   ]
+  },
+  {
+   "id": "F_laundry_counter_plinth",
+   "kind": "counter",
+   "rgb": [
+    215,
+    75,
+    66
+   ]
+  },
+  {
+   "id": "F_laundry_counter_top",
+   "kind": "counter",
+   "rgb": [
+    17,
+    62,
+    212
+   ]
+  },
+  {
+   "id": "F_wardrobe_1",
+   "kind": "tall_cabinet",
+   "rgb": [
+    92,
+    138,
+    40
+   ]
+  },
+  {
+   "id": "F_wardrobe_2",
+   "kind": "tall_cabinet",
+   "rgb": [
+    233,
+    99,
+    208
+   ]
+  },
+  {
+   "id": "F_garage_step_1",
+   "kind": "stair",
+   "rgb": [
+    31,
+    249,
+    226
+   ]
+  },
+  {
+   "id": "F_garage_step_2",
+   "kind": "stair",
+   "rgb": [
+    189,
+    130,
+    40
+   ]
+  },
+  {
+   "id": "F_garage_step_3",
+   "kind": "stair",
+   "rgb": [
+    60,
+    13,
+    165
+   ]
+  },
+  {
+   "id": "F_garage_bench_1",
+   "kind": "low_cabinet",
+   "rgb": [
+    117,
+    215,
+    118
+   ]
+  },
+  {
+   "id": "F_garage_bench_2",
+   "kind": "low_cabinet",
+   "rgb": [
+    226,
+    54,
+    101
+   ]
+  },
+  {
+   "id": "F_car",
+   "kind": "car",
+   "rgb": [
+    6,
+    129,
+    224
+   ]
+  },
+  {
+   "id": "F_car_cabin",
+   "kind": "car",
+   "rgb": [
+    131,
+    147,
+    31
+   ]
+  },
+  {
+   "id": "F_car_wheel",
+   "kind": "car",
+   "rgb": [
+    219,
+    90,
+    242
+   ]
+  },
+  {
+   "id": "F_wc_toilet",
+   "kind": "toilet",
+   "rgb": [
+    77,
+    203,
+    148
+   ]
+  },
+  {
+   "id": "F_wc_vanity",
+   "kind": "vanity",
+   "rgb": [
+    201,
+    75,
+    29
+   ]
+  },
+  {
+   "id": "F_wc_basin",
+   "kind": "basin",
+   "rgb": [
+    4,
+    9,
+    174
+   ]
+  },
+  {
+   "id": "F_sauna_bench_low",
+   "kind": "bench",
+   "rgb": [
+    144,
+    224,
+    108
+   ]
+  },
+  {
+   "id": "F_sauna_bench_high",
+   "kind": "bench",
+   "rgb": [
+    238,
+    43,
+    161
+   ]
+  },
+  {
+   "id": "F_jacuzzi",
+   "kind": "jacuzzi",
+   "rgb": [
+    52,
+    165,
+    178
+   ]
+  },
+  {
+   "id": "F_jacuzzi_water",
+   "kind": "water",
+   "rgb": [
+    156,
+    130,
+    22
+   ]
+  },
+  {
+   "id": "F_shower_tray",
+   "kind": "shower",
+   "rgb": [
+    168,
+    81,
+    251
+   ]
+  },
+  {
+   "id": "F_shower_glass",
+   "kind": "glass",
+   "rgb": [
+    66,
+    215,
+    99
+   ]
+  },
+  {
+   "id": "F_shower_rain",
+   "kind": "fixture",
+   "rgb": [
+    212,
+    17,
+    30
+   ]
+  },
+  {
+   "id": "F_stair_01",
+   "kind": "stair",
+   "rgb": [
+    40,
+    75,
+    138
+   ]
+  },
+  {
+   "id": "F_stair_02",
+   "kind": "stair",
+   "rgb": [
+    186,
+    233,
+    99
+   ]
+  },
+  {
+   "id": "F_stair_03",
+   "kind": "stair",
+   "rgb": [
+    249,
+    31,
+    237
+   ]
+  },
+  {
+   "id": "F_stair_04",
+   "kind": "stair",
+   "rgb": [
+    40,
+    189,
+    154
+   ]
+  },
+  {
+   "id": "F_stair_05",
+   "kind": "stair",
+   "rgb": [
+    165,
+    85,
+    13
+   ]
+  },
+  {
+   "id": "F_stair_06",
+   "kind": "stair",
+   "rgb": [
+    135,
+    117,
+    215
+   ]
+  },
+  {
+   "id": "F_stair_07",
+   "kind": "stair",
+   "rgb": [
+    73,
+    226,
+    54
+   ]
+  },
+  {
+   "id": "F_stair_08",
+   "kind": "stair",
+   "rgb": [
+    224,
+    6,
+    93
+   ]
+  },
+  {
+   "id": "F_stair_09",
+   "kind": "stair",
+   "rgb": [
+    31,
+    112,
+    147
+   ]
+  },
+  {
+   "id": "F_stair_10",
+   "kind": "stair",
+   "rgb": [
+    239,
+    242,
+    90
+   ]
+  },
+  {
+   "id": "F_stair_11",
+   "kind": "stair",
+   "rgb": [
+    168,
+    77,
+    203
+   ]
+  },
+  {
+   "id": "F_stair_12",
+   "kind": "stair",
+   "rgb": [
+    29,
+    201,
+    103
+   ]
+  },
+  {
+   "id": "F_stair_13",
+   "kind": "stair",
+   "rgb": [
+    174,
+    28,
+    4
+   ]
+  },
+  {
+   "id": "F_stair_14",
+   "kind": "stair",
+   "rgb": [
+    108,
+    125,
+    224
+   ]
+  },
+  {
+   "id": "F_stair_15",
+   "kind": "stair",
+   "rgb": [
+    129,
+    238,
+    43
+   ]
+  },
+  {
+   "id": "F_stair_16",
+   "kind": "stair",
+   "rgb": [
+    178,
+    52,
+    145
+   ]
+  },
+  {
+   "id": "F_stair_17",
+   "kind": "stair",
+   "rgb": [
+    22,
+    156,
+    152
+   ]
+  },
+  {
+   "id": "F_stair_18",
+   "kind": "stair",
+   "rgb": [
+    251,
+    196,
+    81
+   ]
+  },
+  {
+   "id": "F_stair_balustrade",
+   "kind": "glass",
+   "rgb": [
+    124,
+    66,
+    215
+   ]
+  },
+  {
+   "id": "F_k_duct",
+   "kind": "box",
+   "rgb": [
+    17,
+    212,
+    36
+   ]
+  },
+  {
+   "id": "F_k_run_north",
+   "kind": "counter",
+   "rgb": [
+    138,
+    40,
+    59
+   ]
+  },
+  {
+   "id": "F_k_run_north_plinth",
+   "kind": "counter",
+   "rgb": [
+    99,
+    164,
+    233
+   ]
+  },
+  {
+   "id": "F_k_run_north_top",
+   "kind": "counter",
+   "rgb": [
+    201,
+    249,
+    31
+   ]
+  },
+  {
+   "id": "F_k_fridge",
+   "kind": "tall_cabinet",
+   "rgb": [
+    179,
+    40,
+    189
+   ]
+  },
+  {
+   "id": "F_k_run_west",
+   "kind": "counter",
+   "rgb": [
+    13,
+    165,
+    110
+   ]
+  },
+  {
+   "id": "F_k_run_west_plinth",
+   "kind": "counter",
+   "rgb": [
+    215,
+    151,
+    117
+   ]
+  },
+  {
+   "id": "F_k_run_west_top",
+   "kind": "counter",
+   "rgb": [
+    63,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "F_k_sink",
+   "kind": "sink",
+   "rgb": [
+    58,
+    224,
+    6
+   ]
+  },
+  {
+   "id": "F_k_cooktop",
+   "kind": "cooktop",
+   "rgb": [
+    147,
+    31,
+    93
+   ]
+  },
+  {
+   "id": "F_k_island",
+   "kind": "island",
+   "rgb": [
+    90,
+    214,
+    242
+   ]
+  },
+  {
+   "id": "F_k_island_top",
+   "kind": "island",
+   "rgb": [
+    203,
+    189,
+    77
+   ]
+  },
+  {
+   "id": "F_k_stool_1",
+   "kind": "stool",
+   "rgb": [
+    131,
+    29,
+    201
+   ]
+  },
+  {
+   "id": "F_k_stool_1_leg",
+   "kind": "stool",
+   "rgb": [
+    4,
+    174,
+    56
+   ]
+  },
+  {
+   "id": "F_k_stool_2",
+   "kind": "stool",
+   "rgb": [
+    224,
+    109,
+    108
+   ]
+  },
+  {
+   "id": "F_k_stool_2_leg",
+   "kind": "stool",
+   "rgb": [
+    43,
+    97,
+    238
+   ]
+  },
+  {
+   "id": "F_k_stool_3",
+   "kind": "stool",
+   "rgb": [
+    124,
+    178,
+    52
+   ]
+  },
+  {
+   "id": "F_k_stool_3_leg",
+   "kind": "stool",
+   "rgb": [
+    156,
+    22,
+    138
+   ]
+  },
+  {
+   "id": "F_d_table",
+   "kind": "table",
+   "rgb": [
+    81,
+    251,
+    224
+   ]
+  },
+  {
+   "id": "F_d_table_leg",
+   "kind": "table",
+   "rgb": [
+    215,
+    148,
+    66
+   ]
+  },
+  {
+   "id": "F_d_chair_n1",
+   "kind": "chair",
+   "rgb": [
+    68,
+    17,
+    212
+   ]
+  },
+  {
+   "id": "F_d_chair_n1_back",
+   "kind": "chair",
+   "rgb": [
+    43,
+    138,
+    40
+   ]
+  },
+  {
+   "id": "F_d_chair_n1_leg",
+   "kind": "chair",
+   "rgb": [
+    233,
+    99,
+    142
+   ]
+  },
+  {
+   "id": "F_d_chair_s1",
+   "kind": "chair",
+   "rgb": [
+    31,
+    165,
+    249
+   ]
+  },
+  {
+   "id": "F_d_chair_s1_back",
+   "kind": "chair",
+   "rgb": [
+    175,
+    189,
+    40
+   ]
+  },
+  {
+   "id": "F_d_chair_s1_leg",
+   "kind": "chair",
+   "rgb": [
+    135,
+    13,
+    165
+   ]
+  },
+  {
+   "id": "F_d_chair_n2",
+   "kind": "chair",
+   "rgb": [
+    117,
+    215,
+    167
+   ]
+  },
+  {
+   "id": "F_d_chair_n2_back",
+   "kind": "chair",
+   "rgb": [
+    226,
+    92,
+    54
+   ]
+  },
+  {
+   "id": "F_d_chair_n2_leg",
+   "kind": "chair",
+   "rgb": [
+    6,
+    22,
+    224
+   ]
+  },
+  {
+   "id": "F_d_chair_s2",
+   "kind": "chair",
+   "rgb": [
+    74,
+    147,
+    31
+   ]
+  },
+  {
+   "id": "F_d_chair_s2_back",
+   "kind": "chair",
+   "rgb": [
+    242,
+    90,
+    190
+   ]
+  },
+  {
+   "id": "F_d_chair_s2_leg",
+   "kind": "chair",
+   "rgb": [
+    77,
+    197,
+    203
+   ]
+  },
+  {
+   "id": "F_d_chair_n3",
+   "kind": "chair",
+   "rgb": [
+    201,
+    159,
+    29
+   ]
+  },
+  {
+   "id": "F_d_chair_n3_back",
+   "kind": "chair",
+   "rgb": [
+    84,
+    4,
+    174
+   ]
+  },
+  {
+   "id": "F_d_chair_n3_leg",
+   "kind": "chair",
+   "rgb": [
+    108,
+    224,
+    128
+   ]
+  },
+  {
+   "id": "F_d_chair_s3",
+   "kind": "chair",
+   "rgb": [
+    238,
+    43,
+    65
+   ]
+  },
+  {
+   "id": "F_d_chair_s3_back",
+   "kind": "chair",
+   "rgb": [
+    52,
+    103,
+    178
+   ]
+  },
+  {
+   "id": "F_d_chair_s3_leg",
+   "kind": "chair",
+   "rgb": [
+    116,
+    156,
+    22
+   ]
+  },
+  {
+   "id": "F_l_sofa_long",
+   "kind": "sofa",
+   "rgb": [
+    251,
+    81,
+    249
+   ]
+  },
+  {
+   "id": "F_l_sofa_long_back",
+   "kind": "sofa",
+   "rgb": [
+    66,
+    215,
+    173
+   ]
+  },
+  {
+   "id": "F_l_sofa_return",
+   "kind": "sofa",
+   "rgb": [
+    212,
+    100,
+    17
+   ]
+  },
+  {
+   "id": "F_l_sofa_return_back",
+   "kind": "sofa",
+   "rgb": [
+    53,
+    40,
+    138
+   ]
+  },
+  {
+   "id": "F_l_table_1",
+   "kind": "coffee_table",
+   "rgb": [
+    120,
+    233,
+    99
+   ]
+  },
+  {
+   "id": "F_l_table_1_base",
+   "kind": "coffee_table",
+   "rgb": [
+    249,
+    31,
+    129
+   ]
+  },
+  {
+   "id": "F_l_table_2",
+   "kind": "coffee_table",
+   "rgb": [
+    40,
+    151,
+    189
+   ]
+  },
+  {
+   "id": "F_l_table_2_base",
+   "kind": "coffee_table",
+   "rgb": [
+    165,
+    160,
+    13
+   ]
+  },
+  {
+   "id": "F_l_armchair_1",
+   "kind": "armchair",
+   "rgb": [
+    183,
+    117,
+    215
+   ]
+  },
+  {
+   "id": "F_l_armchair_1_back",
+   "kind": "armchair",
+   "rgb": [
+    54,
+    226,
+    120
+   ]
+  },
+  {
+   "id": "F_l_armchair_1_armW",
+   "kind": "armchair",
+   "rgb": [
+    224,
+    25,
+    6
+   ]
+  },
+  {
+   "id": "F_l_armchair_1_armE",
+   "kind": "armchair",
+   "rgb": [
+    31,
+    55,
+    147
+   ]
+  },
+  {
+   "id": "F_l_armchair_2",
+   "kind": "armchair",
+   "rgb": [
+    165,
+    242,
+    90
+   ]
+  },
+  {
+   "id": "F_l_armchair_2_back",
+   "kind": "armchair",
+   "rgb": [
+    203,
+    77,
+    176
+   ]
+  },
+  {
+   "id": "F_l_armchair_2_armW",
+   "kind": "armchair",
+   "rgb": [
+    29,
+    201,
+    188
+   ]
+  },
+  {
+   "id": "F_l_armchair_2_armE",
+   "kind": "armchair",
+   "rgb": [
+    174,
+    112,
+    4
+   ]
+  },
+  {
+   "id": "F_l_tv_unit",
+   "kind": "low_cabinet",
+   "rgb": [
+    147,
+    108,
+    224
+   ]
+  },
+  {
+   "id": "F_l_tv",
+   "kind": "tv",
+   "rgb": [
+    43,
+    238,
+    52
+   ]
+  }
+ ]
+}

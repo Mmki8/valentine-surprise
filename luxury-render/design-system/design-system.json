@@ -1,0 +1,131 @@
+{
+ "_doc": "Single source of truth for look & feel. build_prompt.py composes every generation prompt from this file + the camera's visible elements. Change taste here, never in ad-hoc prompts.",
+ "global": {
+  "positioning": "ultra-luxury contemporary residence; warm, wood-rich, lived-in, quietly expensive (no gold bling, no clutter)",
+  "photography": "high-end architectural interior photography, full-frame camera, 24mm tilt-shift lens, perfectly vertical verticals, eye-level two-point perspective, natural exposure balanced for interior and window, subtle depth, crisp detail, no lens distortion",
+  "render_quality": "photorealistic, indistinguishable from a photograph, physically correct global illumination, soft contact shadows, real material micro-detail (wood grain, stone veining, leather creases, fabric weave), Corona/V-Ray archviz quality",
+  "never": "no people, no text, no watermarks, no logos, no extra windows or doors, no moved or resized walls, no missing furniture, no extra seating, no fisheye, no tilted verticals, no CGI plastic look, no oversaturation, no clutter",
+  "life_details_allowed": "decor may be ADDED only on existing surfaces or hung from ceiling/walls: books, ceramics, sculptural vases, fresh flowers/branches, olive trees or large potted plants in free floor corners, throws and cushions, framed art, rugs under existing furniture, candles, a bowl of fruit, folded towels, a coffee cup. Decor must never cover a window, door or required furniture piece."
+ },
+ "palette": {
+  "warm_oak": "#C9A47C  wide-plank brushed natural oak, matte oil finish",
+  "walnut": "#5E412C  smoked American walnut, vertical grain",
+  "walnut_slats": "#7D5C41  slatted walnut ceiling/wall battens, 4 cm slats, 1 cm shadow gaps, warm linear LED in recess",
+  "travertine_grey": "#B8B3AC  grey-taupe marble (Fior di Bosco / Grigio Carnico), thick 6 cm slab edges, waterfall ends",
+  "bronze": "#6B4A2F  hand-patinated bronze / oxidised-copper large-format panels, satin",
+  "black_glass": "#1E1B19  smoked black glass and black-stained oak tall units, bronze handles",
+  "greige_plaster": "#E4DDD3  warm greige mineral plaster (Venetian / microcement), matte",
+  "dark_stone": "#3A342F  dark Pietra Grey / Nero Marquina honed stone, wet-look in spa",
+  "leather": "#5A3D2C  cognac-brown saddle leather",
+  "boucle": "#D9CCB9  ivory-sand boucle / linen",
+  "accent_navy": "#1F2A44  deep navy velvet accents (sparingly)",
+  "metal_dark": "#2E2621  dark bronze / black anodised window frames"
+ },
+ "lighting_rules": [
+  "Daylight enters ONLY through openings that exist in the blockout; light direction and sun patches must be consistent with where those openings are.",
+  "Late-afternoon warm daylight (approx 4500K) through glazing + warm 2700K interior accents.",
+  "Accent lighting: recessed linear LED in ceiling slats, LED strips under counters/shelves, backlit niches, magnetic track spots; all fixtures warm white.",
+  "Dark rooms (spa, WC, sauna) are lit low and moody: grazing light on stone, pools of amber light, high contrast.",
+  "Never brighten a dark-style room to look like a showroom; never darken the living room - it is light-filled."
+ ],
+ "rooms": {
+  "R_living": {
+   "style": "living_grand",
+   "mood_refs": ["mood_living_doubleheight.jpg", "mood_kitchen_dining_A.jpg"],
+   "concept": "Grand double-height living room, light-filled, warm and sculptural.",
+   "materials": {
+    "floor": "wide-plank natural oak, herringbone-free, long boards running north-south",
+    "north_feature_wall": "full double-height wall behind the sofa clad in large-format hand-patinated bronze panels with fine reveals (as mood reference)",
+    "other_walls": "warm greige mineral plaster",
+    "void_ceiling": "walnut slatted ceiling with recessed warm linear LEDs",
+    "gallery_edge": "upper-floor slab edge as a crisp dark bronze fascia with frameless glass balustrade above",
+    "glazing": "floor-to-ceiling glass with slim dark bronze frames; sheer linen curtains on a ceiling track, mostly open",
+    "sofa": "low deep L-shaped sofa in ivory-sand boucle, navy velvet and cognac cushions",
+    "armchairs": "pair of sculptural lounge armchairs in cognac leather",
+    "coffee_tables": "two nesting coffee tables: smoked oak + dark bronze, books, ceramic bowl, coral-like sculpture",
+    "tv_unit": "low walnut console with TV",
+    "lighting": "two large interlocking crystal ring chandeliers hanging in the double-height void (as mood reference), floor lamp",
+    "rug": "large hand-knotted wool-silk rug in sand/stone tones under the seating group"
+   }
+  },
+  "R_kitchen_dining": {
+   "style": "warm_wood_luxe",
+   "mood_refs": ["mood_kitchen_dining_A.jpg", "mood_kitchen_island_B.jpg"],
+   "concept": "Chef's kitchen and dining as one warm wood-and-stone composition.",
+   "materials": {
+    "floor": "wide-plank natural oak (continuous with living)",
+    "ceiling": "walnut slatted ceiling with recessed warm linear LEDs and slim black magnetic track spots",
+    "walls": "warm greige plaster; kitchen back wall above counters: backlit bronze-veined stone / bronze-lit open shelving niches",
+    "base_units": "handle-less smoked walnut fronts, thin grey-taupe marble worktops",
+    "tall_units": "black-glass/black oak tall column for integrated fridge",
+    "island": "monolithic grey-taupe marble island with thick top and overhang for stools",
+    "stools": "three low-back bar stools: black seat shells on walnut legs",
+    "dining_table": "solid walnut dining table, 6 chairs",
+    "dining_chairs": "six curved chairs in cognac-brown leather with dark legs",
+    "lighting": "long linear bronze pendants over island and over dining table",
+    "gkpl_box": "freestanding drywall box clad in walnut slats/bronze (function to be confirmed: chimney or shaft)"
+   }
+  },
+  "R_hall": {
+   "style": "warm_wood_luxe",
+   "mood_refs": ["mood_kitchen_island_B.jpg"],
+   "concept": "Arrival hall: sculptural walnut stair, glass balustrade, warm wood.",
+   "materials": {
+    "floor": "wide-plank oak",
+    "stair": "solid walnut treads on a closed walnut-clad stringer, frameless glass balustrade, LED under each tread",
+    "walls": "walnut vertical battens on the stair wall, greige plaster elsewhere",
+    "doors": "full-height flush walnut doors with concealed frames"
+   }
+  },
+  "R_spa": {
+   "style": "dark_spa",
+   "mood_refs": ["mood_spa_bath_dark.jpg"],
+   "concept": "Private dark wellness spa: stone, water, amber light.",
+   "materials": {
+    "floor": "large-format dark honed stone, warm oak duckboard around the tub",
+    "walls": "dark Pietra Grey stone slabs floor to ceiling",
+    "ceiling": "dark walnut slats with pinhole downlights",
+    "jacuzzi": "round hot tub clad in black textured (crocodile-pattern) stone as in the mood reference, warm underwater light",
+    "shower": "walk-in shower, frameless glass, ceiling rain head, black/bronze fittings",
+    "sauna": "glass-fronted sauna in warm thermo-aspen/hemlock with backlit benches",
+    "decor": "orchids, stacked charcoal towels, candles, diffuser sticks"
+   }
+  },
+  "R_sauna": {"style": "dark_spa", "mood_refs": ["mood_spa_bath_dark.jpg"], "concept": "Warm timber sauna behind glass.", "materials": {}},
+  "R_wc": {
+   "style": "dark_spa",
+   "mood_refs": ["mood_spa_bath_dark.jpg"],
+   "concept": "Jewel-box guest WC, dark and dramatic.",
+   "materials": {
+    "walls": "dark veined stone slab, backlit mirror over the vanity",
+    "vanity": "floating dark stone vanity with black textured (croc-pattern) vessel basin, wall-mounted black/bronze tap",
+    "toilet": "wall-hung black ceramic toilet",
+    "decor": "orchid, diffuser, small framed black-and-white photographs"
+   }
+  },
+  "R_garage": {
+   "style": "garage_gallery",
+   "mood_refs": [],
+   "concept": "Car gallery, not a garage: showroom-grade, dark and precise.",
+   "materials": {
+    "floor": "seamless dark grey polished microcement / epoxy, reflective",
+    "walls": "dark charcoal walls; low cabinets in smoked walnut with dark stone top",
+    "ceiling": "black ceiling with a grid of continuous warm-white linear LED lines",
+    "garage_door": "flush dark bronze sectional door",
+    "car": "matte black Mercedes-AMG G 63 (G-Wagon), parked nose-in exactly where drawn"
+   }
+  },
+  "R_laundry": {"style": "service_warm", "mood_refs": ["mood_kitchen_island_B.jpg"], "concept": "Refined utility.", "materials": {}},
+  "R_mudroom": {"style": "service_warm", "mood_refs": ["mood_kitchen_island_B.jpg"], "concept": "Full-height walnut wardrobes, bench, warm light.", "materials": {}}
+ },
+ "guide_color_legend": {
+  "tan floor": "oak plank floor (or dark stone / microcement where the floor is dark/grey)",
+  "warm brown ceiling planes": "walnut slatted ceiling",
+  "near-black tall boxes": "black-glass / black oak tall cabinetry",
+  "dark brown recessed panels in walls": "doors (closed, flush walnut)",
+  "light blue panes": "glass (windows / glazing / glass partitions)",
+  "very dark thin bars": "dark bronze window frames and mullions",
+  "beige boxes with backrests": "upholstered sofa",
+  "light grey box with top": "marble kitchen island"
+ }
+}
