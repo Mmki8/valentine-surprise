@@ -7,21 +7,21 @@
    "id": "O_spa_door",
    "name": "door (closed)",
    "where": "left",
-   "share": 0.038,
+   "share": 0.036,
    "note": "hall <-> spa"
   },
   {
    "id": "O_sauna_glass_e",
    "name": "glass partition/door",
    "where": "centre",
-   "share": 0.014,
+   "share": 0.012,
    "note": "sauna fixed glass side"
   },
   {
    "id": "O_sauna_glass_s",
    "name": "glass partition/door",
    "where": "centre",
-   "share": 0.008,
+   "share": 0.006,
    "note": "sauna glass door, opens into spa"
   }
  ],
@@ -42,7 +42,7 @@
    "id": "F_shower_tray",
    "name": "walk-in shower",
    "where": "centre",
-   "share": 0.013,
+   "share": 0.012,
    "note": "walk-in shower"
   },
   {

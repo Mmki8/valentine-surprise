@@ -17,7 +17,7 @@
    "id": "F_k_fridge",
    "name": "full-height cabinet column",
    "where": "right",
-   "share": 0.151,
+   "share": 0.15,
    "note": "'*' = fridge column"
   },
   {
@@ -38,7 +38,7 @@
    "id": "F_k_duct",
    "name": "boxed column",
    "where": "centre",
-   "share": 0.02,
+   "share": 0.019,
    "note": "installation duct, boxed in"
   },
   {

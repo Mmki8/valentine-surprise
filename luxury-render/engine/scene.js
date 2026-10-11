@@ -19,10 +19,10 @@ const TINT = {
   tv: 0x101010, toilet: 0xf2f0ec, vanity: 0x2a2522, basin: 0x3a3632,
   bench: 0xb3875c, jacuzzi: 0x2a2826, water: 0x7fb2c0, shower: 0x3d3833,
   stair: 0x6b4a32, box: 0xe4ddd3, car: 0x171717, fixture: 0x222222,
-  sink: 0x1b1b1b, cooktop: 0x0d0d0d, counter_top: 0x9a948c,
+  sink: 0x1b1b1b, sauna_wood: 0xd9b48a, cooktop: 0x0d0d0d, counter_top: 0x9a948c,
 };
-const STYLE_FLOOR = { dark_spa: 'floor_stone_dark', garage_gallery: 'floor_concrete' };
-const STYLE_WALL = { dark_spa: 'wall_dark' };
+const STYLE_FLOOR = { dark_spa: 'floor_stone_dark', garage_gallery: 'floor_concrete', sauna_timber: 'sauna_wood' };
+const STYLE_WALL = { dark_spa: 'wall_dark', sauna_timber: 'sauna_wood' };
 
 export function buildScene(plan, opts = {}) {
   const scene = new THREE.Scene();
@@ -60,7 +60,7 @@ export function buildScene(plan, opts = {}) {
     for (const [hx0, hy0, hx1, hy1] of (r.ceiling_holes || []))
       cshape.holes.push(new THREE.Path([new THREE.Vector2(hx0, hy0), new THREE.Vector2(hx0, hy1), new THREE.Vector2(hx1, hy1), new THREE.Vector2(hx1, hy0)]));
     const cg = new THREE.ShapeGeometry(cshape); cg.rotateX(Math.PI / 2);
-    const woodCeil = ['warm_wood_luxe', 'dark_spa'].includes(r.style);
+    const woodCeil = ['warm_wood_luxe', 'dark_spa', 'sauna_timber'].includes(r.style);
     const ceil = new THREE.Mesh(cg, mat(TINT[woodCeil ? 'ceiling_wood' : 'ceiling_plain'], { side: THREE.DoubleSide }));
     ceil.position.y = r.ceiling;
     add(`CEIL_${r.id}`, 'ceiling', ceil);
@@ -97,12 +97,49 @@ export function buildScene(plan, opts = {}) {
       }
     }
     cuts.sort((p, q) => p.a - q.a);
-    const room = roomOf((x0 + x1) / 2 + (alongX ? 0 : 20), (y0 + y1) / 2 + (alongX ? 20 : 0));
-    const color = w.kind === 'box' ? TINT.box : TINT[(room && STYLE_WALL[room.style]) || 'wall_warm'];
+    // two-sided walls: each half of the thickness takes the colour of the room it
+    // faces, sampled every 10 cm along the wall so long walls change finish at
+    // room boundaries (stone in the spa, timber in the sauna, plaster in the living)
+    const colorAt = (along, side) => {
+      if (w.kind === 'box') return TINT.box;
+      const px = alongX ? along : (side < 0 ? x0 - 15 : x1 + 15);
+      const py = alongX ? (side < 0 ? y0 - 15 : y1 + 15) : along;
+      const r = roomOf(px, py);
+      return r ? TINT[STYLE_WALL[r.style] || 'wall_warm'] : null;
+    };
+    const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+    const half = (s0, s1, z0, z1, side, id) => {
+      // sample; where a sample hits a partition (no room) inherit the nearest
+      // sampled colour on the same side, so corners don't get stray exterior slivers
+      const cells = [];
+      for (let p = s0; p < s1 - 0.01; p += 10) {
+        const q = Math.min(s1, p + 10);
+        cells.push({ a: p, b: q, c: colorAt((p + q) / 2, side) });
+      }
+      for (let i = 0; i < cells.length; i++) if (cells[i].c == null) {
+        for (let d = 1; d < cells.length; d++) {
+          const n = cells[i - d]?.c ?? cells[i + d]?.c;
+          if (n != null) { cells[i].c = n; break; }
+        }
+        cells[i].c ??= colorAt((cells[i].a + cells[i].b) / 2, -side) ?? TINT.wall_ext;
+      }
+      const runs = [];
+      for (const cl of cells) {
+        if (runs.length && runs[runs.length - 1].c === cl.c) runs[runs.length - 1].b = cl.b;
+        else runs.push({ ...cl });
+      }
+      for (const r of runs) {
+        // 1 cm overlap in every direction seals hairline seams that leak sunlight
+        const e = 1;
+        const m = alongX ? boxMesh(r.a - e, side < 0 ? y0 - e : my, r.b + e, side < 0 ? my : y1 + e, z0 - e, z1 + e, r.c)
+                         : boxMesh(side < 0 ? x0 - e : mx, r.a - e, side < 0 ? mx : x1 + e, r.b + e, z0 - e, z1 + e, r.c);
+        add(id, 'wall', m);
+      }
+    };
     const seg = (s0, s1, z0, z1, tag) => {
       if (s1 - s0 < 0.5 || z1 - z0 < 0.5) return;
-      const m = alongX ? boxMesh(s0, y0, s1, y1, z0, z1, color) : boxMesh(x0, s0, x1, s1, z0, z1, color);
-      add(`${w.id}${tag}`, 'wall', m);
+      half(s0, s1, z0, z1, -1, `${w.id}${tag}`);
+      half(s0, s1, z0, z1, +1, `${w.id}${tag}`);
     };
     let cur = a0, k = 0;
     for (const c of cuts) {

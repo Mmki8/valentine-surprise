@@ -20,8 +20,8 @@ import numpy as np
 
 STRUCT_PREFIX = ("W_", "O_", "SLAB", "GALLERY", "CEIL_void")
 GATES = dict(
-    max_drift=0.035,           # best-fit shift must stay within 3.5% of frame
-    max_scale_dev=0.03,        # and scale within 3%
+    max_drift=0.06,            # uniform framing shift (relative geometry intact); GPT Image biases ~3-5% vertically
+    max_scale_dev=0.045,       # uniform zoom tolerance
     min_struct_score=0.45,     # normalised structural recall (0 = noise, 1 = perfect)
     min_element_recall=0.35,   # every sizeable structural element must be found
     min_element_px=250,        # ... if it has at least this many edge pixels

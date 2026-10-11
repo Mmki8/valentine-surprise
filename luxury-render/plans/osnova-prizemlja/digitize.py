@@ -132,7 +132,7 @@ rooms = [
     dict(id="R_wc", name="Guest WC", px=[(740, 312), (888, 312), (888, 477), (740, 477)], floor=0, ceiling=H,
          style="dark_spa"),
     dict(id="R_sauna", name="Sauna", px=[(900, 312), (1042, 312), (1042, 477), (900, 477)], floor=0, ceiling=230,
-         style="dark_spa"),
+         style="sauna_timber"),
     dict(id="R_spa", name="Spa (jacuzzi + shower)",
          px=[(845, 487), (1052, 487), (1052, 312), (1412, 312), (1412, 597), (845, 597)], floor=0, ceiling=H,
          style="dark_spa"),

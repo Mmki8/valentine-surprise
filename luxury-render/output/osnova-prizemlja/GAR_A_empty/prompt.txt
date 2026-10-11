@@ -4,4 +4,5 @@ Locked and visible: openings: sectional garage door (closed) at frame centre; fu
 Retexture as: the floor = seamless dark grey polished microcement with soft reflections; the ceiling planes = matte black ceiling with a grid of continuous warm-white linear LED lines; the walls = dark charcoal plaster walls; dark brown door panels (keep closed) = flush dark bronze sectional garage door; light-blue panes = glass.
 Add only: nothing else - clean car-gallery look; optionally one large framed automotive photograph on a free wall.
 Light: precise showroom lighting from the LED ceiling grid, subtle reflections on the floor.
+Specific to this view: The car is parked nose-in: its FRONT faces the camera - we see the grille with the three-pointed star, the round headlights and the windscreen. The rear with the spare wheel faces away from the camera, toward the garage door.
 High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, real material micro-detail. No people, no text, no extra furniture, no extra openings.

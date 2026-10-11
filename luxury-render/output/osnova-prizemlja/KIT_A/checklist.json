@@ -25,7 +25,7 @@
    "id": "F_k_run_west",
    "name": "L-shaped kitchen base-cabinet run",
    "where": "left",
-   "share": 0.05,
+   "share": 0.049,
    "note": "base run w/ cooktop"
   },
   {
@@ -57,12 +57,6 @@
    "note": "installation duct, boxed in"
   },
   {
-   "id": "staircase",
-   "name": "staircase",
-   "where": "left",
-   "share": 0.009
-  },
-  {
    "id": "F_d_chair_n3",
    "name": "dining chair",
    "where": "right",
@@ -82,6 +76,12 @@
    "where": "centre",
    "share": 0.005,
    "note": null
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.005
   },
   {
    "id": "F_k_stool_3",

@@ -122,6 +122,7 @@ def main(plan_dir, cam_full):
         f"Retexture as: {'; '.join(pairs)}.\n"
         f"Add only: {rt['add']}.\n"
         f"Light: {rt['light']}.\n"
+        + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."
     )

@@ -7,7 +7,7 @@
    "id": "O_wc_window",
    "name": "window",
    "where": "centre",
-   "share": 0.011,
+   "share": 0.009,
    "note": "WC north window (sill ASSUMED high)"
   }
  ],
@@ -21,7 +21,7 @@
    "id": "F_wc_vanity",
    "name": "floating vanity",
    "where": "right",
-   "share": 0.136,
+   "share": 0.135,
    "note": "floating vanity with vessel basin"
   },
   {

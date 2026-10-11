@@ -163,7 +163,7 @@
     "map": {
      "floor": "large-format dark honed stone with a warm oak duckboard around the tub",
      "ceiling": "dark walnut slats with pinhole downlights",
-     "wall": "dark Pietra Grey stone slabs floor to ceiling",
+     "wall": "dark Pietra Grey stone slabs floor to ceiling; BUT the small glass-fronted room with light honey-wood walls is the SAUNA: render it as a timber sauna (thermo-aspen walls, slatted benches, warm backlight) - never as a shower",
      "jacuzzi": "round hot tub clad in black textured crocodile-pattern stone, glowing warm underwater light",
      "shower": "walk-in shower in dark stone with ceiling rain head and black/bronze fittings",
      "glass": "frameless glass",
@@ -239,7 +239,7 @@
      "low_cabinet": "smoked walnut low cabinets with dark stone top",
      "door": "flush dark bronze sectional garage door",
      "stair": "dark stone steps with LED strip under each nosing",
-     "car": "matte black Mercedes-AMG G 63 G-Wagon (boxy, round headlights, spare wheel on the rear door), exactly in the place and orientation of the block",
+     "car": "matte black Mercedes-AMG G 63 G-Wagon (boxy body, round headlights, spare wheel on the tailgate), exactly in the place, size and orientation of the block",
      "tall_cabinet": "full-height walnut wardrobes",
      "glass": "glass"
     },
@@ -317,7 +317,7 @@
   "toilet": "the small white block",
   "vanity": "the dark floating slab",
   "basin": "the round bowl",
-  "bench": "the light-wood benches",
+  "bench": "the light-wood benches (inside the sauna)",
   "jacuzzi": "the dark round drum with water",
   "shower": "the dark shower tray",
   "car": "the black car-shaped block",
