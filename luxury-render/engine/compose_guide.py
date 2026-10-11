@@ -15,6 +15,11 @@ for b in sys.argv[1:]:
     g = cv2.imread(os.path.join(b, "guide.png")).astype(np.float32)
     e = cv2.imread(gt, cv2.IMREAD_GRAYSCALE) < 128
     e = cv2.dilate(e.astype(np.uint8), np.ones((2, 2), np.uint8)).astype(bool)
-    g[e] = g[e] * 0.15 + np.array([20, 20, 20]) * 0.85
+    # dark outlines on light surfaces, LIGHT outlines on dark surfaces (slate, black glass): an edge must always be visible
+    luma = g[:, :, :3].mean(axis=2)
+    dark_bg = cv2.blur(luma, (9, 9)) < 70
+    ed, el = e & ~dark_bg, e & dark_bg
+    g[ed] = g[ed] * 0.15 + np.array([20, 20, 20]) * 0.85
+    g[el] = g[el] * 0.25 + np.array([215, 215, 215]) * 0.75
     cv2.imwrite(os.path.join(b, "guide_lined.png"), g.astype(np.uint8))
     print("guide_lined", b)
