@@ -121,69 +121,69 @@
    "id": "BATH1_A",
    "room": "S_R_bath1",
    "space": "bath1",
-   "title": "Bathroom 1 - facing the ring-mirror vanity",
+   "title": "Bathroom 1 - corner view: slate feature wall with ring mirror and vanity, WC, shower opening",
    "pos": [
-    222,
-    150,
-    122
+    214,
+    249,
+    150
    ],
    "look": [
     27,
-    150
+    60
    ],
-   "hfov": 84,
-   "shift_y": -0.1
+   "hfov": 102,
+   "shift_y": -0.08
   },
   {
    "id": "BATH1_B",
    "room": "S_R_bath1",
    "space": "bath1",
-   "title": "Bathroom 1 - toward the WC and the walk-in shower",
+   "title": "Bathroom 1 - corner view: walk-in shower, WC and door",
    "pos": [
-    60,
-    238,
-    152
+    36,
+    247,
+    150
    ],
    "look": [
-    240,
-    30
+    300,
+    60
    ],
-   "hfov": 96,
-   "shift_y": -0.12
+   "hfov": 102,
+   "shift_y": -0.08
   },
   {
    "id": "PODL_A",
    "room": "S_R_podL",
    "space": "pods",
-   "title": "Bathroom 2 (bedroom 2) - from the door",
+   "title": "Bathroom 2 - from the doorway: the whole bathroom (shower, vanity, WC)",
    "pos": [
     675,
-    448,
-    150
+    451,
+    165
    ],
    "look": [
     675,
     282
    ],
-   "hfov": 100,
-   "shift_y": -0.28
+   "hfov": 116,
+   "shift_y": -0.2
   },
   {
    "id": "PODR_A",
    "room": "S_R_podR",
    "space": "pods",
-   "title": "Bathroom 3 (bedroom 3) - from the door",
+   "title": "Bathroom 3 - from the doorway: the whole bathroom (shower, vanity, WC)",
    "pos": [
     996,
-    448,
-    150
+    451,
+    165
    ],
    "look": [
     996,
     282
    ],
-   "hfov": 100,
-   "shift_y": -0.28
+   "hfov": 116,
+   "shift_y": -0.2
   },
   {
    "id": "CORR_A",

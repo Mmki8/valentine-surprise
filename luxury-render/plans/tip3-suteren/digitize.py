@@ -97,7 +97,7 @@ openings = [
 # ---------------------------------------------------------------- rooms
 rooms = [
     dict(id="S_R_bath1", name="Bathroom 1 (bedroom 1)", px=[(205, 267), (446, 267), (446, 343), (362, 343), (362, 440), (205, 440)],
-         style="bath_slate"),
+         style="bath_greige"),
     dict(id="S_R_bed1", name="Bedroom 1 (west) incl. entry hall", px=[(205, 449), (362, 449), (362, 350), (446, 350), (446, 815), (205, 815)],
          style="bedroom_noir"),
     dict(id="S_R_store", name="Store / technical (unlabelled)", px=[(466, 267), (645, 267), (645, 354), (466, 354)], style="corridor_warm"),

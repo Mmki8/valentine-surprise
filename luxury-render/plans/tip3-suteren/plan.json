@@ -810,7 +810,7 @@
    ],
    "floor": 0,
    "ceiling": 270,
-   "style": "bath_slate",
+   "style": "bath_greige",
    "ceiling_holes": []
   },
   {
@@ -4298,11 +4298,45 @@
    "emissive": false
   },
   {
+   "id": "D_bath1_slate",
+   "shape": "box",
+   "mat": "slate_feature",
+   "rect": [
+    28.700000000000003,
+    142.2,
+    31.200000000000003,
+    243.1
+   ],
+   "z": [
+    0,
+    270
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_slate_wash",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    28.700000000000003,
+    142.2,
+    34.2,
+    243.1
+   ],
+   "z": [
+    266.5,
+    268.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
    "id": "D_bath1_drawer",
    "shape": "box",
    "mat": "vanity_walnut_drawer",
    "rect": [
-    30.2,
+    31.200000000000003,
     162.2,
     80.1,
     225.2
@@ -4319,7 +4353,7 @@
    "shape": "box",
    "mat": "led_line",
    "rect": [
-    30.2,
+    31.200000000000003,
     164.8,
     80.1,
     222.6
@@ -4336,7 +4370,7 @@
    "shape": "disc",
    "mat": "mirror_round",
    "center": [
-    29.6,
+    32.2,
     193.7,
     160
    ],
@@ -4350,7 +4384,7 @@
    "shape": "torus",
    "mat": "ring_led",
    "center": [
-    31.8,
+    34.400000000000006,
     193.7,
     160
    ],
@@ -4379,7 +4413,7 @@
   {
    "id": "D_bath1_shower_glass",
    "shape": "box",
-   "mat": "smoked_glass",
+   "mat": "glass",
    "rect": [
     233.1,
     26.6,
@@ -4489,6 +4523,23 @@
    "z": [
     85,
     101
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bath1_towels",
+   "shape": "box",
+   "mat": "towels_charcoal",
+   "rect": [
+    30.2,
+    233.1,
+    53.8,
+    248.8
+   ],
+   "z": [
+    0,
+    30
    ],
    "kind": "decor",
    "emissive": false

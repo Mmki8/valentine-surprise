@@ -409,16 +409,16 @@
    }
   },
   "S_R_bath1": {
-   "style": "bath_slate",
+   "style": "bath_greige",
    "mood_refs": [
     "mood_bath_dark_ring.jpg"
    ],
-   "concept": "Dark slate en-suite with the LED-ring mirror (client ref).",
+   "concept": "Bright warm limestone bathroom; the rough dark slate only as one feature panel behind the vanity carrying the LED-ring mirror.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "warm and moody: the LED ring, LED under the vanity and the lit niche graze the rough slate (no window)"
+    "light": "bright, warm and calm: LED ring, LED under the vanity, lit shower niche, linear ceiling LEDs; soft warm ambient light"
    }
   },
   "S_R_podL": {
@@ -1050,6 +1050,18 @@
   "art_relief": {
    "tint": "#CDBFAE",
    "text": "large framed sand-plaster relief artwork with sculpted abstract waves"
+  },
+  "stone_greige_honed": {
+   "tint": "#B9AEA2",
+   "text": "large-format warm greige honed limestone slabs, smooth, with soft subtle veining, floor to ceiling"
+  },
+  "stone_greige_floor": {
+   "tint": "#A89C8F",
+   "text": "large-format warm greige honed limestone floor slabs"
+  },
+  "slate_feature": {
+   "tint": "#4A443E",
+   "text": "rough cleft dark slate feature panel with deep natural relief (only this one panel), grazed by warm light from above and below"
   }
  },
  "style_materials": {
@@ -1116,6 +1128,11 @@
   "laundry_warm": {
    "floor": "stone_cream_floor",
    "wall": "plaster_greige",
+   "ceiling": "plaster_white"
+  },
+  "bath_greige": {
+   "floor": "stone_greige_floor",
+   "wall": "stone_greige_honed",
    "ceiling": "plaster_white"
   }
  },
@@ -1222,7 +1239,7 @@
   "S_F_bath1_wc": "toilet_white",
   "S_F_podL_wc": "toilet_white",
   "S_F_podR_wc": "toilet_white",
-  "S_F_bath1_shower": "marble_grey_floor",
+  "S_F_bath1_shower": "stone_greige_floor",
   "S_F_podL_shower": "stone_cream_floor",
   "S_F_podR_shower": "stone_cream_floor",
   "S_F_podL_duct": "stone_taupe"
