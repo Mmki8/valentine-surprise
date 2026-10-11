@@ -228,5 +228,11 @@
   "wc": "WC_A",
   "garage": "GAR_B_car"
  },
- "_doc_heroes": "Hero view per space is generated first and approved; every other view of that space gets it as IMAGE 2 (materials/fittings/light reference; geometry only from IMAGE 1)."
+ "_doc_heroes": "Hero view per space is generated first and approved; every other view of that space gets it as IMAGE 2 (materials/fittings/light reference; geometry only from IMAGE 1).",
+ "hero_jobs": {
+  "LIV_B": "d3fbb039-27d5-4ca4-b38c-e81c39b3370a",
+  "SPA_B": "2c3814e0-f4a9-4c22-bb23-f4bf4ce052b8",
+  "WC_A": "87556219-c87a-4e88-a8e8-5516574385cb",
+  "GAR_B_car": "e676e2af-d5cb-4cec-b9d2-8d3f2a2caec1"
+ }
 }
