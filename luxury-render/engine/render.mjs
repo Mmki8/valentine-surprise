@@ -48,6 +48,7 @@ for (const cam of cams) {
     fs.mkdirSync(dir, { recursive: true });
     for (const k of ['guide', 'lines', 'edge_ids', 'surface_ids', 'mat_ids', 'normals', 'depth'])
       fs.writeFileSync(path.join(dir, `${k}.png`), Buffer.from(res[k].split(',')[1], 'base64'));
+    fs.rmSync(path.join(dir, 'gt_edges.png'), { force: true });   // derived from depth/normals: must be rebuilt for this render
     fs.writeFileSync(path.join(dir, 'passes.json'), JSON.stringify({ camera: res.camera, variant: v, legend: res.legend, mat_legend: res.mat_legend }, null, 1));
     console.log('rendered', id, `${W}x${H}`);
   }

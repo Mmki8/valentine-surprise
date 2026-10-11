@@ -11,8 +11,7 @@ import gt_edges
 
 for b in sys.argv[1:]:
     gt = os.path.join(b, "gt_edges.png")
-    if not os.path.exists(gt):
-        gt_edges.run(b)
+    gt_edges.run(b)          # always: a gt_edges.png left from an earlier render would burn stale geometry into the guide
     g = cv2.imread(os.path.join(b, "guide.png")).astype(np.float32)
     e = cv2.imread(gt, cv2.IMREAD_GRAYSCALE) < 128
     e = cv2.dilate(e.astype(np.uint8), np.ones((2, 2), np.uint8)).astype(bool)
