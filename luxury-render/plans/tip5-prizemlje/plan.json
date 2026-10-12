@@ -3977,6 +3977,23 @@
    "emissive": false
   },
   {
+   "id": "D_art_stair4",
+   "shape": "box",
+   "mat": "art_stair_series",
+   "rect": [
+    1052,
+    416.3,
+    1148,
+    419.3
+   ],
+   "z": [
+    323.21425219445024,
+    447.21425219445024
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
    "id": "D_chand_t0",
    "shape": "cyl",
    "mat": "chandelier_crystal",

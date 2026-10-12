@@ -114,7 +114,7 @@ D.append(B("D_up_back", "plaster_greige", X(752), Y(494), X(760), Y(578), H, VH,
 D.append(B("D_up_north", "plaster_greige", X(760), Y(494), X(868), Y(497), H, VH, kind="panel"))
 D.append(B("D_up_south", "plaster_greige", X(760), Y(575), X(868), Y(578), FL, VH, kind="panel"))
 # a stepped gallery of four paintings on the fluted walnut wall, rising parallel to the stair (client: add life)
-for i, xc in enumerate((1580, 1460, 1340, 1220)):
+for i, xc in enumerate((1580, 1460, 1340, 1220, 1100)):   # 5th: client round 4 (seen in the LIV_B view)
     zc = max(0, rise * (1 + (X(1260) - xc) / go)) + 140
     art(f"D_art_stair{i}", "art_stair_series", LN + 2.8, "y", +1, xc - 48, xc + 48, zc - 62, zc + 62)
 # monumental three-tier chandelier, centrepiece of the double-height void (bottom at 3.0 m, visible from every living view)
