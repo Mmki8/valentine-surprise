@@ -5,24 +5,21 @@
  "mood": null,
  "materials": [
   "travertine_wall",
-  "plaster_warm_white",
   "wardrobe_walnut_reeded",
+  "plaster_warm_white",
   "headboard_cognac_channel",
-  "bed_linen",
-  "sheer_linen",
   "plaster_limewash_sand",
   "art_painting_bed1",
-  "olive_foliage",
-  "walnut_door",
-  "oak_herringbone_smoked",
-  "throw_chevron",
-  "walnut_console",
+  "bed_linen",
   "pillow_grey",
-  "stone_pot",
-  "led_line",
-  "olive_trunk",
+  "oak_herringbone_smoked",
+  "olive_foliage",
+  "walnut_console",
+  "throw_chevron",
   "pendant_glass",
   "bronze_frame",
+  "walnut_door",
+  "led_line",
   "cable_black"
  ],
  "car": null,
@@ -31,35 +28,42 @@
    "id": "O_bed1_door",
    "name": "door (closed)",
    "where": "left",
-   "share": 0.021,
+   "share": 0.009,
    "note": "hall -> bedroom 1"
   }
  ],
  "furniture_counts": {
   "tall_cabinet": 1,
   "bed": 1,
-  "nightstand": 1
+  "nightstand": 2
  },
  "items": [
   {
    "id": "F_F_wr2",
    "name": "full-height cabinet column",
    "where": "left",
-   "share": 0.138,
+   "share": 0.182,
    "note": "wardrobe (L, part 2)"
   },
   {
    "id": "F_F_bed1",
    "name": "bed",
    "where": "centre",
-   "share": 0.052,
+   "share": 0.046,
    "note": "double bed, headboard on the north wall"
   },
   {
    "id": "F_F_ns2",
    "name": "nightstand",
    "where": "right",
-   "share": 0.013,
+   "share": 0.008,
+   "note": null
+  },
+  {
+   "id": "F_F_ns1",
+   "name": "nightstand",
+   "where": "centre",
+   "share": 0.002,
    "note": null
   }
  ],

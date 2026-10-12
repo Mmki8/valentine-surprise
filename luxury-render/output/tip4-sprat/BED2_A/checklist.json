@@ -5,19 +5,18 @@
  "mood": null,
  "materials": [
   "plaster_limewash_greige",
-  "plaster_warm_white",
   "velvet_olive_channel",
-  "art_painting_wide",
-  "bedding_olive",
+  "plaster_warm_white",
   "art_painting_pair",
+  "art_painting_wide",
   "sheer_linen",
+  "bedding_olive",
   "nightstand_black",
-  "bronze_frame",
   "pillow_grey",
+  "bronze_frame",
   "walnut_shelf",
-  "oak_herringbone_smoked",
-  "pendant_alabaster",
   "led_line",
+  "pendant_alabaster",
   "cable_black"
  ],
  "car": null,
@@ -26,7 +25,7 @@
    "id": "O_bed2_glz",
    "name": "glazed double door (closed)",
    "where": "right",
-   "share": 0.018,
+   "share": 0.019,
    "note": "OG.2: bedroom 2 south, fixed glass + glazed door to the balcony"
   }
  ],
@@ -39,7 +38,7 @@
    "id": "F_F_bed2",
    "name": "bed",
    "where": "centre",
-   "share": 0.049,
+   "share": 0.033,
    "note": "double bed, headboard on the east wall"
   },
   {
