@@ -1946,6 +1946,10 @@
   "chair_desk_cognac": {
    "tint": "#7A4E33",
    "text": "curved cognac leather desk armchair on a slim bronze swivel base"
+  },
+  "cut_cap": {
+   "tint": "#2B2622",
+   "text": "the sliced top of the walls, dark charcoal"
   }
  },
  "style_materials": {

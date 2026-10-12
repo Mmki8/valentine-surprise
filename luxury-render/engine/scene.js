@@ -19,6 +19,10 @@ export function buildScene(plan, opts = {}, ds) {
   const SM = (style, part) => (DS.style_materials[style] || DS.style_materials.warm_wood_luxe)[part];
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0xdfe8ee);
+  // cutaway "3D floor plan" mode: no ceilings, no garden, every wall sliced at opts.cut (cm) with a dark cap,
+  // the house floating on a flat coloured ground (opts.bg); everything else above the cut is clipped by the renderer
+  const CUT = opts.cut;
+  if (CUT) scene.background = new THREE.Color(opts.bg || '#e0dfc6');
   const reg = [];                       // element registry: {id, kind, group}
   const add = (id, kind, mesh, matKey) => {
     mesh.userData.eid = id; mesh.userData.kind = kind; mesh.userData.mat = matKey ?? mesh.userData.mat;
@@ -44,12 +48,13 @@ export function buildScene(plan, opts = {}, ds) {
 
   // ---------------------------------------------------------- floors / ceilings
   for (const r of plan.rooms) {
+    if (CUT && r.floor >= CUT) continue;
     const shape = new THREE.Shape(r.polygon.map(([x, y]) => new THREE.Vector2(x, y)));
     const fg = new THREE.ShapeGeometry(shape); fg.rotateX(Math.PI / 2);   // y->Z
     const floor = new THREE.Mesh(fg, mat(T(SM(r.style, 'floor')), { side: THREE.DoubleSide }));
     floor.position.y = r.floor;
     add(`FLOOR_${r.id}`, 'floor', floor, SM(r.style, 'floor'));
-    if (r.id === 'R_living') continue;                // living handled by void ceiling
+    if (r.id === 'R_living' || CUT) continue;          // living handled by void ceiling; no ceilings in a cutaway
     const cshape = new THREE.Shape(r.polygon.map(([x, y]) => new THREE.Vector2(x, y)));
     for (const [hx0, hy0, hx1, hy1] of (r.ceiling_holes || []))
       cshape.holes.push(new THREE.Path([new THREE.Vector2(hx0, hy0), new THREE.Vector2(hx0, hy1), new THREE.Vector2(hx1, hy1), new THREE.Vector2(hx1, hy0)]));
@@ -60,13 +65,13 @@ export function buildScene(plan, opts = {}, ds) {
   }
   // double-height void: walnut ceiling. NO gallery - per the 1st-floor plan the void is closed by
   // plain walls (W_void_west_up, W_liv_north_up) running straight up.
-  if (plan.void) {
+  if (plan.void && !CUT) {
     const v = plan.void.rect;
     add('CEIL_void', 'ceiling', boxMesh(v[0], v[1], v[2], v[3], plan.void.ceiling, plan.void.ceiling + 20, 'walnut_slats'));
   }
-  for (const c of (plan.extra_ceilings || []))
+  for (const c of (CUT ? [] : (plan.extra_ceilings || [])))
     add(c.id, 'ceiling', boxMesh(c.rect[0], c.rect[1], c.rect[2], c.rect[3], c.z, c.z + 20, c.mat || 'walnut_slats'));
-  for (const [i, [x0, y0, x1, y1]] of (plan.upper_voids || []).entries()) {
+  for (const [i, [x0, y0, x1, y1]] of (CUT ? [] : (plan.upper_voids || [])).entries()) {
     const t = 2;
     // slab edge on each side of the opening - except where two voids meet (no floor between them)
     const others = (plan.upper_voids || []).filter((_, k) => k !== i);
@@ -93,7 +98,10 @@ export function buildScene(plan, opts = {}, ds) {
       }
     }
   }
-  if (plan.site) {                      // per-plan exterior (hidden from the QA passes like every exterior mesh)
+  if (CUT) {
+    const g = boxMesh(-3000, -3000, 5000, 5000, -3, -2, new THREE.Color(opts.bg || '#e0dfc6').getHex());
+    g.material.roughness = 1; add('EXT_ground', 'exterior', g);
+  } else if (plan.site) {                      // per-plan exterior (hidden from the QA passes like every exterior mesh)
     for (const e of plan.site) {
       let m;
       if (e.rect) m = boxMesh(e.rect[0], e.rect[1], e.rect[2], e.rect[3], e.z[0], e.z[1], e.mat);
@@ -107,7 +115,12 @@ export function buildScene(plan, opts = {}, ds) {
   }
 
   // ---------------------------------------------------------- walls with openings
-  for (const w of plan.walls) {
+  for (let w of plan.walls) {
+    if (CUT) {
+      if (w.z0 >= CUT) continue;
+      w = { ...w, z1: Math.min(w.z1, CUT) };
+      add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, 'cut_cap'));
+    }
     const [x0, y0, x1, y1] = w.rect;
     const alongX = (x1 - x0) >= (y1 - y0);
     const [a0, a1] = alongX ? [x0, x1] : [y0, y1];
@@ -331,6 +344,7 @@ export function buildScene(plan, opts = {}, ds) {
   // ---------------------------------------------------------- design layer (fixed decor + fittings)
   for (const d of (plan.design || [])) {
     if (opts.car === false && d.id.startsWith('D_car_')) continue;   // tyres, wheels, spare of a modelled car
+    if (CUT && (d.kind === 'exterior' || d.id.startsWith('EXT_'))) continue;   // cutaway: the house alone on the flat ground
     const key = d.mat, o = d.emissive ? null : {};
     const M = () => d.emissive ? new THREE.MeshBasicMaterial({ color: 0xfff2d6 }) : mat(T(key));
     let m;
@@ -406,7 +420,7 @@ export function makeCamera(c, W, H) {
   const [px, py, pz] = c.pos, [tx, ty] = c.look;
   cam.position.set(px, pz, py);
   cam.up.set(0, 1, 0);
-  cam.lookAt(tx, pz, ty);
+  cam.lookAt(tx, c.look.length > 2 ? c.look[2] : pz, ty);   // a 3rd look value tilts the camera (3D floor plans)
   cam.updateMatrixWorld();
   const near = cam.near;
   const halfW = Math.tan(THREE.MathUtils.degToRad(c.hfov / 2)) * near;
@@ -430,7 +444,8 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   const cam = makeCamera(camDef, W, H);
 
   // 1. guide pass (tinted clay, real shadows) — this is what the image model sees
-  const r1 = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  const clip = opts.cut ? [new THREE.Plane(new THREE.Vector3(0, -1, 0), opts.cut + 4)] : [];
+  const r1 = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true }); r1.clippingPlanes = clip;
   r1.setSize(W, H); r1.shadowMap.enabled = true; r1.shadowMap.type = THREE.PCFSoftShadowMap;
   r1.toneMapping = THREE.ACESFilmicToneMapping; r1.toneMappingExposure = camDef.exposure || 1.0;
   r1.outputColorSpace = THREE.SRGBColorSpace;
@@ -457,13 +472,13 @@ export function renderPasses(THREEref, plan, camDef, W, H, opts, ds) {
   scene.background = new THREE.Color(0xffffff);
   const lights = scene.children.filter(o => o.isLight);
   lights.forEach(l => l.visible = false);
-  const r2 = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  const r2 = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true }); r2.clippingPlanes = clip;
   r2.setSize(W, H); r2.outputColorSpace = THREE.LinearSRGBColorSpace;
   scene.add(lineGroup); r2.render(scene, cam); out.lines = r2.domElement.toDataURL('image/png');
   scene.remove(lineGroup);
 
   // 3. edge-ID pass (each element's edges in its own flat colour, no AA)
-  const r3 = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true });
+  const r3 = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true }); r3.clippingPlanes = clip;
   r3.setSize(W, H); r3.outputColorSpace = THREE.LinearSRGBColorSpace;
   scene.add(idLines); r3.render(scene, cam); out.edge_ids = r3.domElement.toDataURL('image/png');
   scene.remove(idLines);

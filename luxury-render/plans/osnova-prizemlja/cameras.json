@@ -445,6 +445,34 @@
    "shift_y": -0.55,
    "style_from": "40753546-bc71-4c7f-9ede-68742f76875c",
    "notes": "The walnut stair is the hero: solid walnut treads, closed walnut stringer, a raked frameless glass balustrade along its open side; it arrives at the top landing. Frameless glass railings edge the landing over the stair and over the double-height entrance hall."
+  },
+  {
+   "id": "FP3D_A",
+   "room": "R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - ground floor, from the south",
+   "pos": [
+    760,
+    2301.7,
+    2883.4
+   ],
+   "look": [
+    760,
+    500,
+    0
+   ],
+   "hfov": 36,
+   "shift_y": 0,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "cut": 200,
+      "bg": "#e0dfc6",
+      "car": true
+     }
+    }
+   ]
   }
  ],
  "heroes": {
