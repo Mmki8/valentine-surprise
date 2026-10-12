@@ -152,6 +152,7 @@ D.append(DSK("D_ba1_ring", "ring_led", X(578), BN + 1.3, 158, 41, 1.0, "y", kind
 D.append(DSK("D_ba1_mirror", "mirror_round", X(578), BN + 2.6, 158, 38, 1.4, "y", kind="panel"))
 D.append(B("D_ba1_towels", "towels_charcoal", X(590), BN + 2, X(612), Y(234), 26, 36))
 cove("D_ba1_cove", WB, BN, X(617), Y(335))
+D.append(B("D_ba1_skin_s", "slate_rough", X(586), Y(335) - 1.0, X(617), Y(335), 0, H - 4.5, kind="panel"))   # slate on the bath side of the short nook wall
 
 # ======================================================================== BATH 2  "dark chevron + light marble" (ref: chevron WC)
 B2N = Y(449)

@@ -2990,6 +2990,23 @@
    "emissive": true
   },
   {
+   "id": "D_ba1_skin_s",
+   "shape": "box",
+   "mat": "slate_rough",
+   "rect": [
+    266.5,
+    211.7,
+    307.2,
+    212.7
+   ],
+   "z": [
+    0,
+    275.5
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
    "id": "D_ba2_drawer",
    "shape": "box",
    "mat": "vanity_walnut_drawer",
