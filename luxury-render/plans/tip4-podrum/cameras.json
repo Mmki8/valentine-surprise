@@ -27,15 +27,15 @@
    "space": "spa",
    "title": "Spa - from the entrance over the jacuzzi to the heated bench, oak slat wall and moss wall",
    "pos": [
-    374.2,
-    220.6,
+    341.4,
+    239.0,
     150
    ],
    "look": [
     866.6,
-    120.8
+    127.4
    ],
-   "hfov": 96,
+   "hfov": 86,
    "shift_y": 0.02,
    "exposure": 2.4
   },
@@ -46,14 +46,14 @@
    "title": "Spa - from the far corner over the jacuzzi to the bench, shower and sauna",
    "pos": [
     857.4,
-    325.6,
+    299.4,
     150
    ],
    "look": [
     347.9,
-    107.7
+    173.3
    ],
-   "hfov": 102,
+   "hfov": 90,
    "shift_y": 0.02,
    "exposure": 2.4
   },

@@ -98,8 +98,8 @@ for i, x in enumerate((X(718) - 1.6, X(862))):
 D.append(led("D_spa_bench_glow", X(723), Y(160) - 9, X(856), Y(160) - 7, 4, 5.5))          # toe-kick glow under the bench
 # living moss wall on the spa side of the garage wall, grazed by a warm line above
 SW = Y(324)
-D.append(B("D_spa_moss", "moss_wall", X(690), SW - 4.0, X(880), SW - 1.2, 30, 235, kind="panel"))
-D.append(led("D_spa_moss_led", X(690), SW - 8, X(880), SW - 6, 246, 247.5))
+D.append(B("D_spa_moss", "moss_wall", X(690), SW - 4.0, X(1005), SW - 1.2, 30, 235, kind="panel"))
+D.append(led("D_spa_moss_led", X(690), SW - 8, X(1005), SW - 6, 246, 247.5))
 # jacuzzi: soft glow ring at its plinth
 D.append(T("D_spa_jac_glow", "led_line", X(962), Y(218), 4, 64 * K - 3, 1.4, "z"))
 for i, (dx, dy) in enumerate([(0, 0), (-12, 8), (10, 10)]):
