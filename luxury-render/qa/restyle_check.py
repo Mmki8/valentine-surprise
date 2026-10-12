@@ -6,7 +6,8 @@ Compares large-scale structure only (materials are SUPPOSED to change):
   * recall  = share of the original's structural edges found again within 1.5 % of the frame width
   * precision = share of the new image's structural edges that sit on an original edge
   * shift  = global translation between the two edge maps (camera drift), fraction of the width
-PASS: recall >= 0.55 and shift <= 0.03 (precision is reported - a new design legitimately adds edges).
+PASS: recall >= 0.6 and (shift <= 0.03 or recall >= 0.7) - phase correlation can lock onto repeated slats, so a high
+recall overrides a spurious shift (precision is reported - a new design legitimately adds edges).
 Writes a side-by-side preview with the original edges (red) over the new image.
 """
 import sys, os, json, urllib.request
@@ -53,7 +54,7 @@ def main(orig, new, label=""):
     fb = cv2.GaussianBlur(eb.astype(np.float32), (0, 0), 3)
     (dx, dy), _ = cv2.phaseCorrelate(fa, fb)
     shift = float(np.hypot(dx, dy) / W)
-    ok = recall >= 0.55 and shift <= 0.03
+    ok = recall >= 0.6 and (shift <= 0.03 or recall >= 0.7)
     ov = b.copy()
     ov[ea > 0] = (0, 0, 255)
     side = np.hstack([a, ov])
