@@ -1,0 +1,90 @@
+{
+ "camera": "GAL_A",
+ "room": "V_R_hall",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_warm_white",
+  "plaster_greige",
+  "walnut_fluted",
+  "desk_walnut",
+  "art_stair_series",
+  "oak_herringbone_smoked",
+  "armchair_boucle_curved",
+  "rug_dark_wool",
+  "chandelier_crystal",
+  "bronze_frame",
+  "olive_foliage",
+  "led_line",
+  "pendant_alabaster",
+  "sheer_linen",
+  "walnut_panel",
+  "cable_black",
+  "books_neutral",
+  "tv_black",
+  "ceramic_dark"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_liv_s_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "centre",
+   "share": 0.012,
+   "note": "living south: high glazing"
+  },
+  {
+   "id": "O_liv_e_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "centre",
+   "share": 0.004,
+   "note": "living east: high glazing, sliding part 795-900"
+  }
+ ],
+ "furniture_counts": {
+  "desk": 1,
+  "armchair": 2,
+  "tv": 1
+ },
+ "items": [
+  {
+   "id": "V_F_desk",
+   "name": "writing desk",
+   "where": "right",
+   "share": 0.049,
+   "note": "writing desk"
+  },
+  {
+   "id": "V_F_lc1",
+   "name": "lounge chair",
+   "where": "right",
+   "share": 0.027,
+   "note": "lounge chair"
+  },
+  {
+   "id": "V_F_lc2",
+   "name": "lounge chair",
+   "where": "centre",
+   "share": 0.01,
+   "note": "lounge chair"
+  },
+  {
+   "id": "T_F_tv",
+   "name": "TV",
+   "where": "centre",
+   "share": 0.003,
+   "note": "TV on a freestanding walnut media wall (plan: TV stand at the glass)"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

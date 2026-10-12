@@ -1,0 +1,59 @@
+{
+ "camera": "MBED_B",
+ "room": "V_R_master",
+ "hero": "MBED_A",
+ "mood": null,
+ "materials": [
+  "walnut_panel",
+  "plaster_espresso",
+  "ceiling_warm_light",
+  "tv_black",
+  "sheer_linen",
+  "olive_foliage",
+  "marble_calacatta_gold",
+  "walnut_floor_dark",
+  "bronze_frame",
+  "stone_charcoal_honed",
+  "throw_black_knit",
+  "stone_pot",
+  "olive_trunk",
+  "led_line",
+  "stone_nero_floor",
+  "plaster_greige",
+  "duvet_ivory",
+  "ceiling_dark"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_u_og1",
+   "name": "full-height glazed sliding door",
+   "where": "centre",
+   "share": 0.011,
+   "note": "OG.1 master: sliding glass (south)"
+  }
+ ],
+ "furniture_counts": {
+  "tv": 1
+ },
+ "items": [
+  {
+   "id": "V_F_mtv",
+   "name": "TV",
+   "where": "right",
+   "share": 0.105,
+   "note": "TV on the ensuite partition"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

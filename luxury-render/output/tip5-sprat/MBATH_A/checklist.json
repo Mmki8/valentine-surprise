@@ -1,0 +1,58 @@
+{
+ "camera": "MBATH_A",
+ "room": "V_R_mbath",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "stone_charcoal_honed",
+  "mirror_backlit",
+  "marble_calacatta_gold",
+  "ceiling_dark",
+  "vanity_walnut_travertine",
+  "stone_nero_floor",
+  "toilet_black",
+  "led_line",
+  "black_metal"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1,
+  "shower": 1
+ },
+ "items": [
+  {
+   "id": "V_F_mb_van",
+   "name": "floating vanity",
+   "where": "right",
+   "share": 0.056,
+   "note": "double vanity on the west wall"
+  },
+  {
+   "id": "V_F_mb_wc",
+   "name": "wall-hung toilet",
+   "where": "centre",
+   "share": 0.018,
+   "note": null
+  },
+  {
+   "id": "V_F_mb_sh",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.014,
+   "note": "walk-in shower south"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

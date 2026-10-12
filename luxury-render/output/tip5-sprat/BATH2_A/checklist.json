@@ -1,0 +1,68 @@
+{
+ "camera": "BATH2_A",
+ "room": "V_R_bath2",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "marble_emperador_wall",
+  "marble_calacatta_gold",
+  "vanity_walnut_white",
+  "ceiling_dark",
+  "walnut_door",
+  "bronze_frame",
+  "stone_nero_floor",
+  "toilet_white",
+  "mirror_backlit",
+  "led_line",
+  "marble_verde_dark",
+  "black_metal"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_u_bath2_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.068,
+   "note": "bedroom 2 -> bath 2"
+  },
+  {
+   "id": "O_u_bath2_win",
+   "name": "window",
+   "where": "centre",
+   "share": 0.005,
+   "note": "bath 2 window (north)"
+  }
+ ],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1
+ },
+ "items": [
+  {
+   "id": "V_F_bath2_van",
+   "name": "floating vanity",
+   "where": "left",
+   "share": 0.052,
+   "note": "vanity on the south wall"
+  },
+  {
+   "id": "V_F_bath2_wc",
+   "name": "wall-hung toilet",
+   "where": "centre",
+   "share": 0.022,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

@@ -9,7 +9,8 @@ Coordinates: plan cm, origin = outer NW corner of the garage.
 import math
 
 K, OX, OY = 1.313, 131, 183
-H, VH, FL = 280, 560, 310
+H, VH, FL = 280, 590, 310
+XV = 911          # px: upper slab edge / UOG.2 glass balustrade (first-floor plan)
 
 
 def X(px):
@@ -100,22 +101,23 @@ def cove(tag, x0, y0, x1, y1, z):
         D.append(led(f"{tag}{i}", *r, z - 4, z - 2.5))
 
 
-# ======================================================================== LIVING + DINING (high ceiling 5.6 m)
+# ======================================================================== LIVING + DINING (double height, open to the first-floor gallery)
 LN = Y(497)
 # full-height fluted walnut wall behind the floating stair, the stair's step lights
-D.append(B("D_liv_fluted", "walnut_fluted", X(875), LN, X(1374), LN + 2.8, 0, VH, kind="panel"))
-rise, go = FL / 18, 22 * K
-for k in range(1, 18):
-    xe = X(1260) - go * (k - 1)
+D.append(B("D_liv_fluted", "walnut_fluted", X(905), LN, X(1374), LN + 2.8, 0, VH, kind="panel"))
+NT = 16
+rise, go = FL / (NT + 1), (1259 - 905) / NT * K
+for k in range(1, NT + 1):
+    xe = X(1259) - go * (k - 1)
     D.append(led(f"D_stair_led{k:02d}", xe - go + 1, LN + 2.8, xe - 1, LN + 4.4, rise * k - 8, rise * k - 6.5))
-# the stair arrives through the opening in the high wall onto the upper landing (upper floor not drawn): close it as a small plaster landing
-D.append(B("D_up_slab", "plaster_greige", X(760), Y(497), X(868), Y(575), H, FL, kind="panel"))
-D.append(B("D_up_back", "plaster_greige", X(752), Y(494), X(760), Y(578), H, VH, kind="panel"))
-D.append(B("D_up_north", "plaster_greige", X(760), Y(494), X(868), Y(497), H, VH, kind="panel"))
-D.append(B("D_up_south", "plaster_greige", X(760), Y(575), X(868), Y(578), FL, VH, kind="panel"))
+# the upper slab edge with the UOG.2 frameless glass balustrade of the first-floor gallery (no wall above the kitchen)
+D.append(B("D_gal_fascia", "plaster_warm_white", X(XV) - 2, Y(573), X(XV), Y(953), H, FL, kind="panel"))
+D.append(B("D_gal_fascia_st", "plaster_warm_white", X(905) - 2, Y(497), X(905), Y(573), H, FL, kind="panel"))
+D.append(B("D_gal_glass", "glass", X(XV) - 1.5, Y(573), X(XV), Y(953), FL, FL + 105, kind="panel"))
+D.append(B("D_gal_cap", "bronze_frame", X(XV) - 2, Y(573), X(XV) + 0.5, Y(953), FL + 105, FL + 108, kind="panel"))
 # a stepped gallery of four paintings on the fluted walnut wall, rising parallel to the stair (client: add life)
 for i, xc in enumerate((1580, 1460, 1340, 1220, 1100)):   # 5th: client round 4 (seen in the LIV_B view)
-    zc = max(0, rise * (1 + (X(1260) - xc) / go)) + 140
+    zc = max(0, FL / 18 * (1 + (X(1260) - xc) / (22 * K))) + 140     # positions as approved (fixed)
     art(f"D_art_stair{i}", "art_stair_series", LN + 2.8, "y", +1, xc - 48, xc + 48, zc - 62, zc + 62)
 # monumental three-tier chandelier, centrepiece of the double-height void (bottom at 3.0 m, visible from every living view)
 CH_X, CH_Y = X(1050), Y(660)
@@ -125,7 +127,7 @@ for i in range(3):
     a = math.radians(90 + 120 * i)
     cable(f"D_chand_c{i}", CH_X + 30 * math.cos(a), CH_Y + 30 * math.sin(a), 400, VH)
 # monumental painting on the high wall above the kitchen side (faces east into the living)
-art("D_art_mono", "art_painting_monumental", X(875), "x", +1, Y(690), Y(850), 315, 525)
+art("D_art_mono", "art_painting_monumental", X(623), "x", +1, Y(705), Y(865), FL + 45, FL + 245)   # gallery back wall
 # freestanding walnut media wall in front of the east glass with the TV, floating console (plan: TV stand at the glass)
 D.append(B("D_media_wall", "walnut_panel", X(1376), Y(600), X(1384), Y(735), 0, 265, kind="panel"))
 D.append(B("D_media_console", "walnut_console", X(1350), Y(616), X(1376), Y(717), 18, 46))
@@ -155,7 +157,7 @@ D.append(S("D_d_fruit", "lemons", X(942), Y(786), 80, 8))
 for i, (y0, y1) in enumerate([(612, 628), (958, 976)]):
     D.append(B(f"D_liv_curtain_e{i}", "sheer_linen", X(1395) - 10, Y(y0), X(1395) - 2, Y(y1), 0, VH - 22))
 D.append(B("D_liv_curtain_s", "sheer_linen", X(920), Y(980) - 10, X(936), Y(980) - 2, 0, VH - 22))
-cove("D_liv_cove", X(875), LN + 2.8, X(1395), Y(980), VH)
+cove("D_liv_cove", X(XV), LN + 2.8, X(1395), Y(980), VH)
 
 # ======================================================================== KITCHEN + HALL (normal height, pale oak ceiling)
 KW = X(624)

@@ -853,6 +853,83 @@
     "add": "",
     "light": "soft warm light"
    }
+  },
+  "V_R_hall": {
+   "style": "gallery5",
+   "mood_refs": [],
+   "concept": "First-floor landing + gallery office overlooking the double-height living through a frameless glass balustrade: smoked-oak herringbone floor, warm greige plaster, a sculptural walnut desk with a cognac leather desk chair, two curved ivory boucle lounge chairs, a dark wool rug, an alabaster pendant, the monumental abstract painting on the back wall, a fiddle-leaf fig.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the crystal chandelier glowing in the void"
+   }
+  },
+  "V_R_master": {
+   "style": "bed_espresso5",
+   "mood_refs": [],
+   "concept": "Master bedroom, dark with bright details: dark walnut floor, deep espresso plaster, the bed wall in espresso walnut boiserie with thin brass inlays, a tall cognac leather channel headboard, a cream textured artwork above it, opal globe pendants on brass rods, cream travertine nightstands, ivory linen bedding, an ivory rug, espresso walnut + bronze-glass walk-in wardrobes lit inside, an olive tree, sheer curtains at the sliding glass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls; the room stays dark and moody, the globes glow softly"
+   }
+  },
+  "V_R_mbath": {
+   "style": "bath_master5",
+   "mood_refs": [],
+   "concept": "Master ensuite, 70 % dark: honed charcoal limestone walls, dark stone floor, a white Calacatta Gold shower wall (bright detail), a smoked-walnut double vanity with a cream travertine top, two backlit mirrors, clear glass shower, black fittings, ceiling cove.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft glow from the cove, the backlit mirrors and under the vanity"
+   }
+  },
+  "V_R_bed1": {
+   "style": "bed_olive5",
+   "mood_refs": [],
+   "concept": "Bedroom 1: smoked-oak herringbone floor, deep olive-brown plaster, the bed wall in vertical walnut slats with a warm wash light, a tall olive velvet channel headboard, cream travertine nightstands, opal globe pendants, ivory bedding, an ivory rug, a fluted smoked-oak wardrobe, a walnut TV wall, a fiddle-leaf fig, full-height french window with sheer curtains.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls; dark and cosy with bright cream details"
+   }
+  },
+  "V_R_bed2": {
+   "style": "bed_charcoal5",
+   "mood_refs": [],
+   "concept": "Bedroom 2: dark walnut floor, warm charcoal plaster, the bed wall in ribbed smoked oak, a tall sand-linen channel headboard, ivory bedding with a rust linen throw, cream travertine nightstands, alabaster pendants, an ivory rug, a reeded walnut wardrobe, a ribbed-oak TV wall, a fiddle-leaf fig, full-height window with sheer curtains.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls; dark and cosy with bright sand and rust details"
+   }
+  },
+  "V_R_bath1": {
+   "style": "bath_verde5",
+   "mood_refs": [],
+   "concept": "Bath 1, 70 % dark: deep green-black Verde Guatemala marble walls, dark stone floor, dark ceiling; bright details: a floating cream travertine vanity slab, brushed-brass fittings and rain head, a backlit mirror, a lit niche, clear glass shower; small high window.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft glow from the cove, the mirror and under the vanity, a little golden evening light from the window"
+   }
+  },
+  "V_R_bath2": {
+   "style": "bath_emperador5",
+   "mood_refs": [],
+   "concept": "Bath 2, 70 % dark: dark chocolate Emperador marble walls, dark stone floor, dark ceiling; bright details: a white Calacatta Gold shower wall, a smoked-walnut vanity with a white top, a backlit mirror, clear glass shower, black fittings; small high window.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft glow from the cove, the mirror and under the vanity, a little golden evening light from the window"
+   }
   }
  },
  "guide_color_legend": {
@@ -1773,6 +1850,102 @@
   "art_spa_pair": {
    "tint": "#B9A58C",
    "text": "pair of calm abstract paintings - soft sand, warm grey and ochre washes - in thin black float frames"
+  },
+  "art_cream_texture": {
+   "tint": "#E6D9C3",
+   "text": "large framed textured abstract artwork in cream, ivory and soft sand relief plaster, thin brass float frame"
+  },
+  "brass_brushed": {
+   "tint": "#B08D57",
+   "text": "brushed brass"
+  },
+  "marble_calacatta_gold": {
+   "tint": "#EDE6DA",
+   "text": "white Calacatta Gold marble with soft grey and gold veining, book-matched, honed"
+  },
+  "mirror_round_backlit": {
+   "tint": "#9DA3A6",
+   "text": "rounded-rectangle mirror with a soft warm backlight halo"
+  },
+  "oak_ribbed_smoked": {
+   "tint": "#5C4636",
+   "text": "full-height ribbed smoked-oak wall panelling, fine vertical ribs, matte oil"
+  },
+  "pendant_opal_globe": {
+   "tint": "#F2EBDD",
+   "text": "opal glass globe pendant on a slim brushed-brass rod, glowing softly"
+  },
+  "walnut_boiserie_brass": {
+   "tint": "#4A3324",
+   "text": "dark espresso walnut boiserie wall panelling in large rectangular panels with thin inlaid brushed-brass lines"
+  },
+  "plaster_espresso": {
+   "tint": "#3B2F27",
+   "text": "deep espresso-brown mineral plaster walls, soft trowelled texture, matte"
+  },
+  "plaster_olive_dark": {
+   "tint": "#4A4A38",
+   "text": "deep olive-brown mineral plaster walls, soft trowelled texture, matte"
+  },
+  "plaster_charcoal_warm": {
+   "tint": "#3A3633",
+   "text": "warm charcoal mineral plaster walls, soft trowelled texture, matte"
+  },
+  "marble_verde_dark": {
+   "tint": "#26302A",
+   "text": "dark Verde Guatemala marble - deep green-black with fine white veining, large book-matched slabs floor to ceiling"
+  },
+  "marble_emperador_wall": {
+   "tint": "#4B3A2E",
+   "text": "dark Emperador marble - deep chocolate brown with fine cream and gold veining, large book-matched slabs floor to ceiling"
+  },
+  "stone_charcoal_honed": {
+   "tint": "#3A3633",
+   "text": "large-format honed charcoal-brown limestone slabs (Pietra Grey) floor to ceiling"
+  },
+  "travertine_vanity_slab": {
+   "tint": "#D9C8AE",
+   "text": "floating cream travertine vanity slab with an integrated sink and a brushed-brass wall tap"
+  },
+  "vanity_walnut_white": {
+   "tint": "#5A402D",
+   "text": "floating smoked-walnut vanity with a white Calacatta top and a black wall tap, warm LED glow underneath"
+  },
+  "vanity_walnut_travertine": {
+   "tint": "#5A402D",
+   "text": "floating smoked-walnut double vanity with a cream travertine top, two basins and black wall taps, warm LED glow underneath"
+  },
+  "headboard_sand_linen": {
+   "tint": "#C9B79B",
+   "text": "tall upholstered headboard in sand linen with wide vertical channels"
+  },
+  "throw_rust_linen": {
+   "tint": "#9A4E2C",
+   "text": "rust-orange linen throw"
+  },
+  "nightstand_travertine": {
+   "tint": "#D6C6AC",
+   "text": "cream travertine nightstand with a rounded edge"
+  },
+  "wardrobe_espresso_glass": {
+   "tint": "#3E2C20",
+   "text": "full-height espresso walnut wardrobes with bronze-tinted glass doors and warm interior lighting"
+  },
+  "wardrobe_oak_fluted": {
+   "tint": "#5E4A3A",
+   "text": "full-height fluted smoked-oak wardrobe with slim brass pulls"
+  },
+  "desk_walnut": {
+   "tint": "#4E3626",
+   "text": "sculptural solid walnut writing desk with a cognac leather inlay and rounded edges"
+  },
+  "pouf_cognac": {
+   "tint": "#8A5232",
+   "text": "round cognac leather pouf"
+  },
+  "chair_desk_cognac": {
+   "tint": "#7A4E33",
+   "text": "curved cognac leather desk armchair on a slim bronze swivel base"
   }
  },
  "style_materials": {
@@ -1940,6 +2113,41 @@
    "floor": "walnut_floor_dark",
    "wall": "plaster_taupe_deep",
    "ceiling": "ceiling_warm_light"
+  },
+  "gallery5": {
+   "floor": "oak_herringbone_smoked",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_warm_white"
+  },
+  "bed_espresso5": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_espresso",
+   "ceiling": "ceiling_warm_light"
+  },
+  "bed_olive5": {
+   "floor": "oak_herringbone_smoked",
+   "wall": "plaster_olive_dark",
+   "ceiling": "ceiling_warm_light"
+  },
+  "bed_charcoal5": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_charcoal_warm",
+   "ceiling": "ceiling_warm_light"
+  },
+  "bath_verde5": {
+   "floor": "stone_nero_floor",
+   "wall": "marble_verde_dark",
+   "ceiling": "ceiling_dark"
+  },
+  "bath_emperador5": {
+   "floor": "stone_nero_floor",
+   "wall": "marble_emperador_wall",
+   "ceiling": "ceiling_dark"
+  },
+  "bath_master5": {
+   "floor": "stone_nero_floor",
+   "wall": "stone_charcoal_honed",
+   "ceiling": "ceiling_dark"
   }
  },
  "kind_materials": {
@@ -2207,6 +2415,51 @@
   "T_F_stair_14": "stair_walnut",
   "T_F_stair_15": "stair_walnut",
   "T_F_stair_16": "stair_walnut",
-  "T_F_stair_17": "stair_walnut"
+  "T_F_stair_17": "stair_walnut",
+  "V_F_b1wr": "wardrobe_oak_fluted",
+  "V_F_b2wr": "wardrobe_walnut_reeded",
+  "V_F_mwr1": "wardrobe_espresso_glass",
+  "V_F_mwr2": "wardrobe_espresso_glass",
+  "V_F_mwr3": "wardrobe_espresso_glass",
+  "V_F_mwr4": "wardrobe_espresso_glass",
+  "V_F_mpouf": "pouf_cognac",
+  "V_F_bed1_base": "bed_base_walnut",
+  "V_F_bed1_head": "velvet_olive_channel",
+  "V_F_bed1_linen": "duvet_ivory",
+  "V_F_bed1_pillow": "pillow_grey",
+  "V_F_bed1_throw": "throw_black_knit",
+  "V_F_bed2_base": "bed_base_walnut",
+  "V_F_bed2_head": "headboard_sand_linen",
+  "V_F_bed2_linen": "duvet_ivory",
+  "V_F_bed2_pillow": "pillow_grey",
+  "V_F_bed2_throw": "throw_rust_linen",
+  "V_F_mbed_base": "bed_base_walnut",
+  "V_F_mbed_head": "headboard_cognac_channel",
+  "V_F_mbed_linen": "duvet_ivory",
+  "V_F_mbed_pillow": "pillow_grey",
+  "V_F_mbed_throw": "throw_black_knit",
+  "V_F_b1ns1": "nightstand_travertine",
+  "V_F_b1ns2": "nightstand_travertine",
+  "V_F_b2ns1": "nightstand_travertine",
+  "V_F_b2ns2": "nightstand_travertine",
+  "V_F_mns1": "nightstand_travertine",
+  "V_F_mns2": "nightstand_travertine",
+  "V_F_b1tv": "tv_black",
+  "V_F_b2tv": "tv_black",
+  "V_F_mtv": "tv_black",
+  "V_F_bath1_van": "travertine_vanity_slab",
+  "V_F_bath2_van": "vanity_walnut_white",
+  "V_F_mb_van": "vanity_walnut_travertine",
+  "V_F_bath1_wc": "toilet_black",
+  "V_F_bath2_wc": "toilet_white",
+  "V_F_mb_wc": "toilet_black",
+  "V_F_bath1_sh": "stone_nero_floor",
+  "V_F_bath2_sh": "stone_nero_floor",
+  "V_F_mb_sh": "stone_nero_floor",
+  "V_F_desk": "desk_walnut",
+  "V_F_desk_base": "desk_walnut",
+  "V_F_dchair": "chair_desk_cognac",
+  "V_F_lc1": "armchair_boucle_curved",
+  "V_F_lc2": "armchair_boucle_curved"
  }
 }

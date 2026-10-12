@@ -1,0 +1,65 @@
+{
+ "camera": "BATH1_A",
+ "room": "V_R_bath1",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "marble_verde_dark",
+  "travertine_vanity_slab",
+  "ceiling_dark",
+  "walnut_door",
+  "bronze_frame",
+  "stone_nero_floor",
+  "toilet_black",
+  "mirror_round_backlit",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_u_bath1_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.059,
+   "note": "bedroom 1 -> bath 1"
+  },
+  {
+   "id": "O_u_bath1_win",
+   "name": "window",
+   "where": "centre",
+   "share": 0.004,
+   "note": "bath 1 window (north)"
+  }
+ ],
+ "furniture_counts": {
+  "vanity": 1,
+  "toilet": 1
+ },
+ "items": [
+  {
+   "id": "V_F_bath1_van",
+   "name": "floating vanity",
+   "where": "right",
+   "share": 0.051,
+   "note": "vanity on the south wall"
+  },
+  {
+   "id": "V_F_bath1_wc",
+   "name": "wall-hung toilet",
+   "where": "centre",
+   "share": 0.019,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

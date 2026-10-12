@@ -1,0 +1,78 @@
+{
+ "camera": "BED1_B",
+ "room": "V_R_bed1",
+ "hero": "BED1_A",
+ "mood": null,
+ "materials": [
+  "plaster_olive_dark",
+  "wardrobe_oak_fluted",
+  "ceiling_warm_light",
+  "walnut_panel",
+  "walnut_slats_v",
+  "duvet_ivory",
+  "oak_herringbone_smoked",
+  "throw_black_knit",
+  "sheer_linen",
+  "tv_black",
+  "velvet_olive_channel",
+  "rug_ivory",
+  "fig_foliage",
+  "bronze_frame",
+  "pillow_grey",
+  "bed_base_walnut",
+  "led_line",
+  "pendant_opal_globe",
+  "nightstand_travertine",
+  "olive_trunk",
+  "stone_pot"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_u_og4",
+   "name": "full-height glazed sliding door",
+   "where": "centre",
+   "share": 0.008,
+   "note": "OG.4 bedroom 1: full-height french window (west)"
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "bed": 1,
+  "tv": 1
+ },
+ "items": [
+  {
+   "id": "V_F_b1wr",
+   "name": "full-height cabinet column",
+   "where": "right",
+   "share": 0.202,
+   "note": "wardrobe"
+  },
+  {
+   "id": "V_F_bed1",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.041,
+   "note": "double bed, head north"
+  },
+  {
+   "id": "V_F_b1tv",
+   "name": "TV",
+   "where": "left",
+   "share": 0.019,
+   "note": "TV on the south wall"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}
