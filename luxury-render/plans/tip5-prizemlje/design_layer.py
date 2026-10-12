@@ -142,7 +142,7 @@ D.append(B("D_liv_books", "books_neutral", X(1232), Y(765), X(1232) + 26, Y(765)
 tree("D_liv_olive", X(1362), Y(952), pot_r=28, pot_h=60, trunk=170, crown=80)
 tree("D_liv_fig", X(1035), Y(948), pot_r=24, pot_h=55, trunk=120, crown=55, foliage="fig_foliage")
 # dining: two long bronze linear pendants from the high ceiling over the table
-for i, x in enumerate((934, 952)):
+for i, x in enumerate((942.5,)):   # one bronze pendant over the dining table (client)
     D.append(B(f"D_d_pend{i}", "pendant_bronze", X(x) - 1.5, Y(735), X(x) + 1.5, Y(838), 182, 186, kind="light"))
     for y in (735, 838):
         cable(f"D_d_pend{i}_c{y}", X(x), Y(y), 186, VH)
@@ -222,8 +222,7 @@ D.append(C("D_spa_rain", "black_metal", X(1057), Y(248), 16, H - 2, H))
 D.append(B("D_spa_niche", "niche_lit", X(1017) + 0.5, Y(225), X(1017) + 3.2, Y(275), 100, 128, kind="panel"))
 D.append(C("D_spa_ring_led", "led_line", X(1214), Y(288), 92, H - 3, H - 2, kind="light", emissive=True))
 D.append(C("D_spa_ring_ceil", "walnut_slats", X(1214), Y(288), 90, H - 2, H))
-tree("D_spa_plant", X(1272), Y(236), pot_r=22, pot_h=50, trunk=85, crown=55, foliage="strelitzia_foliage")
-D.append(B("D_spa_moss", "moss_wall", X(1102), Y(212), X(1245), Y(212) + 3, 45, 245, kind="panel"))
+D.append(B("D_spa_moss", "moss_wall", X(1102), Y(212), X(1245), Y(212) + 3, 75, 245, kind="panel"))
 D.append(led("D_spa_moss_led", X(1102), Y(212), X(1245), Y(212) + 3.5, 245, 246.5))
 art("D_art_spa0", "art_spa_pair", Y(477), "y", -1, X(960), X(1040), 115, 205)
 art("D_art_spa1", "art_spa_pair", Y(477), "y", -1, X(1060), X(1140), 115, 205)

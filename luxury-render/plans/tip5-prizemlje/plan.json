@@ -4831,9 +4831,9 @@
    "shape": "box",
    "mat": "pendant_bronze",
    "rect": [
-    1052.8,
+    1064.0,
     724.8,
-    1055.8,
+    1067.0,
     860.0
    ],
    "z": [
@@ -4848,7 +4848,7 @@
    "shape": "cyl",
    "mat": "cable_black",
    "center": [
-    1054.3,
+    1065.5,
     724.8
    ],
    "r": 0.6,
@@ -4864,56 +4864,7 @@
    "shape": "cyl",
    "mat": "cable_black",
    "center": [
-    1054.3,
-    860.0
-   ],
-   "r": 0.6,
-   "z": [
-    186,
-    560
-   ],
-   "kind": "light",
-   "emissive": false
-  },
-  {
-   "id": "D_d_pend1",
-   "shape": "box",
-   "mat": "pendant_bronze",
-   "rect": [
-    1076.5,
-    724.8,
-    1079.5,
-    860.0
-   ],
-   "z": [
-    182,
-    186
-   ],
-   "kind": "light",
-   "emissive": false
-  },
-  {
-   "id": "D_d_pend1_c735",
-   "shape": "cyl",
-   "mat": "cable_black",
-   "center": [
-    1078.0,
-    724.8
-   ],
-   "r": 0.6,
-   "z": [
-    186,
-    560
-   ],
-   "kind": "light",
-   "emissive": false
-  },
-  {
-   "id": "D_d_pend1_c838",
-   "shape": "cyl",
-   "mat": "cable_black",
-   "center": [
-    1078.0,
+    1065.5,
     860.0
    ],
    "r": 0.6,
@@ -7120,50 +7071,6 @@
    "emissive": false
   },
   {
-   "id": "D_spa_plant_pot",
-   "shape": "cyl",
-   "mat": "stone_pot",
-   "center": [
-    1498.1,
-    69.6
-   ],
-   "r": 22,
-   "z": [
-    0,
-    50
-   ],
-   "kind": "decor",
-   "emissive": false
-  },
-  {
-   "id": "D_spa_plant_trunk",
-   "shape": "cyl",
-   "mat": "olive_trunk",
-   "center": [
-    1498.1,
-    69.6
-   ],
-   "r": 5,
-   "z": [
-    50,
-    135
-   ],
-   "kind": "decor",
-   "emissive": false
-  },
-  {
-   "id": "D_spa_plant_crown",
-   "shape": "sphere",
-   "mat": "strelitzia_foliage",
-   "center": [
-    1498.1,
-    69.6,
-    173.5
-   ],
-   "r": 55,
-   "kind": "decor"
-  },
-  {
    "id": "D_spa_moss",
    "shape": "box",
    "mat": "moss_wall",
@@ -7174,7 +7081,7 @@
     41.1
    ],
    "z": [
-    45,
+    75,
     245
    ],
    "kind": "panel",

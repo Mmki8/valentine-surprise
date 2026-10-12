@@ -1,0 +1,38 @@
+{
+ "camera": "GAR_A_empty",
+ "room": "T_R_garage",
+ "hero": "GAR_A",
+ "mood": null,
+ "materials": [
+  "walnut_slats_v",
+  "plaster_charcoal",
+  "garage_floor_stone",
+  "ceiling_walnut_garage",
+  "bronze_garage_door",
+  "led_line",
+  "bronze_frame"
+ ],
+ "car": false,
+ "openings": [
+  {
+   "id": "O_gar_door",
+   "name": "sectional garage door (closed)",
+   "where": "centre",
+   "share": 0.065,
+   "note": "sectional garage door (west)"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

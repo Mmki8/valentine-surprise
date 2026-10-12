@@ -15,7 +15,7 @@
   "led_line",
   "bronze_frame"
  ],
- "car": null,
+ "car": true,
  "openings": [
   {
    "id": "O_gar_door2",

@@ -133,7 +133,7 @@ def main(plan_dir, cam_full):
     upper = cam["room"].startswith(("U_", "S_", "P_", "B_", "G_", "F_"))
     cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
     style_ref = (cfg.get("heroes", {}).get(cam.get("space")) == cam_full and cam.get("space") in cfg.get("style_refs", {}))
-    car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""
+    car_line = " The garage is EMPTY: no car anywhere." if (cam["room"].endswith("R_garage") and not car_on) else ""
     g = ds["global"]
     prompt = (
         "Turn IMAGE 1 into a photorealistic ultra-luxury architectural photograph WITHOUT changing its geometry. "
@@ -147,7 +147,7 @@ def main(plan_dir, cam_full):
         + (f"IMAGE 2 is the approved render of this same space from another camera. Every object, material, colour, fitting and "
            f"the light must look EXACTLY like in IMAGE 2 (same pendants, same cabinet fronts, same stone, same cushions, same "
            f"time of day). Take geometry and camera ONLY from IMAGE 1, never from IMAGE 2."
-           + (" IMAGE 2 shows a parked car - ignore it: this view has NO car." if (cam["room"] == "R_garage" and not car_on) else "")
+           + (" IMAGE 2 shows a parked car - ignore it: this view has NO car." if (cam["room"].endswith("R_garage") and not car_on) else "")
            + "\n\n" if hero else "")
         + (("IMAGE 2 is the APPROVED design of this exact view, photographed at night. Keep EVERY object, material, colour, texture, "
             "fitting and decor detail exactly as in IMAGE 2 - the client loves the design. The ONLY change: re-light it to GOLDEN HOUR "
@@ -175,11 +175,11 @@ def main(plan_dir, cam_full):
            "coral, yellow = lemons); add no new objects.\n") +
         f"Time of day: {cfg.get('time_of_day') or (g['time_of_day_upper'] if upper else g['time_of_day'])}. Room mood: {room['retexture']['light']}.\n"
         f"Exterior: {cfg.get('exterior') or (g['exterior_upper'] if upper else g['exterior'])}\n"
-        + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"] == "R_garage" and not car_on) else "") +
+        + (f"Specific to this view: {cam['notes']}\n" if cam.get("notes") and not (cam["room"].endswith("R_garage") and not car_on) else "") +
         "High-end interior photography, 24mm tilt-shift, perfectly vertical verticals, photorealistic global illumination, "
         "real material micro-detail. No people, no text, no extra furniture, no extra openings."
     )
-    checklist = dict(camera=cam_full, room=cam["room"], hero=hero, mood=mood, materials=[m for m, n in seen if n > W * H * 0.0008], car=car_on if cam["room"] == "R_garage" else None,
+    checklist = dict(camera=cam_full, room=cam["room"], hero=hero, mood=mood, materials=[m for m, n in seen if n > W * H * 0.0008], car=car_on if cam["room"].endswith("R_garage") else None,
                      openings=openings, furniture_counts=dict(counts), items=items,
                      manual_checks=[
                          "camera position/angle/framing identical to blockout (compare overlay)",

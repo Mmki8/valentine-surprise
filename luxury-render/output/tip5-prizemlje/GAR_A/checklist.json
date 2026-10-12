@@ -14,7 +14,7 @@
   "car_wheel",
   "led_line"
  ],
- "car": null,
+ "car": true,
  "openings": [
   {
    "id": "O_gar_door",

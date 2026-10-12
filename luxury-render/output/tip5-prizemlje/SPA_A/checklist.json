@@ -7,16 +7,14 @@
   "stone_basalt",
   "moss_wall",
   "jacuzzi_dark",
-  "walnut_slats_dark",
-  "led_line",
-  "strelitzia_foliage",
   "walnut_panel",
+  "walnut_slats_dark",
+  "stone_nero_floor",
+  "led_line",
+  "stone_dark_floor",
   "bronze_frame",
   "plaster_greige",
-  "stone_nero_floor",
   "niche_lit",
-  "stone_dark_floor",
-  "olive_trunk",
   "black_metal"
  ],
  "car": null,
@@ -25,7 +23,7 @@
    "id": "O_spa_glz",
    "name": "full-height glazed sliding door",
    "where": "right",
-   "share": 0.024,
+   "share": 0.021,
    "note": "spa east: sliding glass to the garden"
   }
  ],
@@ -38,14 +36,14 @@
    "id": "T_F_jacuzzi",
    "name": "round jacuzzi hot tub",
    "where": "centre",
-   "share": 0.073,
+   "share": 0.111,
    "note": "round jacuzzi D 1.70 m"
   },
   {
    "id": "T_F_shower",
    "name": "walk-in shower",
    "where": "left",
-   "share": 0.012,
+   "share": 0.032,
    "note": "walk-in shower"
   }
  ],

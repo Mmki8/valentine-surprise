@@ -184,16 +184,16 @@
    "space": "spa",
    "title": "Spa - frontal north view: shower, plant, moss wall, jacuzzi, garden glass",
    "pos": [
-    1383.9,
+    1337.9,
     374.2,
     150
    ],
    "look": [
-    1383.9,
+    1390.5,
     -109.0
    ],
-   "hfov": 90,
-   "shift_y": 0.04,
+   "hfov": 92,
+   "shift_y": -0.06,
    "notes": "Frontal north view of the spa exactly as in the plan: the walk-in shower behind its clear glass screen in the back-LEFT corner, a tall bird-of-paradise plant in a stone planter next to it, a living moss wall behind the round basalt jacuzzi, the floor-to-ceiling sliding glass to the garden on the right. Dark basalt walls, dark stone floor, dark smoked-walnut slat ceiling with a circular warm cove above the jacuzzi."
   },
   {
@@ -230,7 +230,19 @@
    ],
    "hfov": 100,
    "shift_y": -0.04,
-   "notes": "A MATTE BLACK Mercedes-AMG G 63 (G-Wagon) parked nose-in toward the camera side: satin matte black paint (not glossy), round LED headlights, black wheels. Garage gallery: dark stone floor, charcoal walls, the far wall in vertical smoked-walnut slats with an LED line at the top, dark walnut slat ceiling with linear LED lines. Sectional garage door closed."
+   "notes": "A MATTE BLACK Mercedes-AMG G 63 (G-Wagon) parked nose-in toward the camera side: satin matte black paint (not glossy), round LED headlights, black wheels. Garage gallery: dark stone floor, charcoal walls, the far wall in vertical smoked-walnut slats with an LED line at the top, dark walnut slat ceiling with linear LED lines. Sectional garage door closed.",
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {}
+    },
+    {
+     "suffix": "_empty",
+     "opts": {
+      "car": false
+     }
+    }
+   ]
   },
   {
    "id": "GAR_B",
@@ -248,7 +260,19 @@
    ],
    "hfov": 100,
    "shift_y": -0.04,
-   "notes": "A MATTE BLACK Mercedes-AMG G 63 (G-Wagon) seen from the rear three-quarter: boxy body, spare wheel on the tailgate, satin matte black paint (not glossy). Dark walnut slat ceiling with linear LED lines, charcoal walls, dark stone floor."
+   "notes": "A MATTE BLACK Mercedes-AMG G 63 (G-Wagon) seen from the rear three-quarter: boxy body, spare wheel on the tailgate, satin matte black paint (not glossy). Dark walnut slat ceiling with linear LED lines, charcoal walls, dark stone floor.",
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {}
+    },
+    {
+     "suffix": "_empty",
+     "opts": {
+      "car": false
+     }
+    }
+   ]
   }
  ]
 }

@@ -219,7 +219,7 @@ export function buildScene(plan, opts = {}, ds) {
 
   // ---------------------------------------------------------- furniture
   for (const f of plan.furniture) {
-    if (f.kind === 'car' && opts.car === false) continue;
+    if ((f.kind === 'car' || f.kind === 'car_glass') && opts.car === false) continue;
     const col = KIND_MAT(f);
     if (f.shape === 'prism') {          // extruded polygon: axis z = plan polygon (x,y) raised z0..z0+h; axis x = (y,z) polygon, x0..x1
       const sh = new THREE.Shape(f.poly.map(([u, v]) => new THREE.Vector2(u, v)));
@@ -330,6 +330,7 @@ export function buildScene(plan, opts = {}, ds) {
 
   // ---------------------------------------------------------- design layer (fixed decor + fittings)
   for (const d of (plan.design || [])) {
+    if (opts.car === false && d.id.startsWith('D_car_')) continue;   // tyres, wheels, spare of a modelled car
     const key = d.mat, o = d.emissive ? null : {};
     const M = () => d.emissive ? new THREE.MeshBasicMaterial({ color: 0xfff2d6 }) : mat(T(key));
     let m;
