@@ -1,0 +1,60 @@
+{
+ "plan": "tip4-prizemlje",
+ "brief": "Client: type 4 ground floor; same system + design as the basement but no dark ceilings everywhere; design after refs 19-22; golden hour light from the windows; double height over the living room only; easy plan-accurate angles; photoreal.",
+ "lessons": [
+  "the model invents furniture from mood refs (an ottoman at the bed foot) -> say 'no bench / ottoman' explicitly",
+  "structure retries go text + mood refs only; a previous render as reference carries its geometry"
+ ],
+ "rejected": [
+  "LIV_A #1 (structure 0.43)",
+  "LIV_A #2 (0.625 - #3 better)",
+  "LIV_B #1-#2 (0.38 / 0.42)",
+  "BED_A #1 (drift 0.071)",
+  "BED_A #2 (invented ottoman)",
+  "BED_A #3 (passed; #4 tighter)"
+ ],
+ "consistency": "KIT_A/KIT_B/HALL_A vs LIV_A PASS; LIV_B vs LIV_A cognac cushions dC 20.5 and BED_B vs BED_A floor/throw dL 32-35 - sun-lit vs shaded, same materials on vision -> accepted",
+ "final": {
+  "LIV_A": {
+   "job_id": "88d110c0-191e-4a56-be14-d7322dbdf4c8",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150043_88d110c0-191e-4a56-be14-d7322dbdf4c8.png",
+   "note": "attempt 3: structure 0.706 (text + mood refs, no render ref)"
+  },
+  "LIV_B": {
+   "job_id": "6cc0b743-ef0b-40e3-899e-50e5f9d96ee5",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150332_6cc0b743-ef0b-40e3-899e-50e5f9d96ee5.png",
+   "note": "attempt 3: structure 0.908, drift 0.055; void ceiling recall low (plain white ceiling, few edges) - vision OK"
+  },
+  "KIT_A": {
+   "job_id": "1d95bc8b-cf29-4b2e-9875-24491f543720",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150044_1d95bc8b-cf29-4b2e-9875-24491f543720.png",
+   "note": "structure 0.653, drift 0.029; pendant/GKPL recall low but present on vision"
+  },
+  "KIT_B": {
+   "job_id": "5ec9ee00-579f-47f9-a3b7-b09dbb40ee93",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150043_5ec9ee00-579f-47f9-a3b7-b09dbb40ee93.png",
+   "note": "structure 0.752"
+  },
+  "HALL_A": {
+   "job_id": "29bbff75-674b-4c44-af4e-d34d800ca9ba",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150045_29bbff75-674b-4c44-af4e-d34d800ca9ba.png",
+   "note": "structure 0.94"
+  },
+  "BED_A": {
+   "job_id": "4314ca51-ce25-4c52-a13a-69356b0646c8",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150333_4314ca51-ce25-4c52-a13a-69356b0646c8.png",
+   "note": "attempt 4: structure 0.964, no invented ottoman"
+  },
+  "BED_B": {
+   "job_id": "130e4ce4-08d3-4815-af3f-1ae336235730",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150057_130e4ce4-08d3-4815-af3f-1ae336235730.png",
+   "note": "structure 0.87"
+  },
+  "BATH_A": {
+   "job_id": "c8a4d807-746c-4971-be72-c670d92ff8f7",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_145759_c8a4d807-746c-4971-be72-c670d92ff8f7.png",
+   "note": "structure 0.756; vanity recall only"
+  }
+ },
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/af7025dc-4cf6-4369-84f0-bcebfe0dcef7.zip"
+}
