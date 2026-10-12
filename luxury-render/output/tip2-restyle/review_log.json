@@ -262,5 +262,9 @@
    "out": "10_C2_staircase.png",
    "edge_recall": 0.807
   }
- ]
+ ],
+ "zips": {
+  "prizemlje": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/17f712e3-3b73-4195-94b9-e667a1ef3e53.zip",
+  "suteren": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f97a46d5-8920-4c7f-a03b-b826158abc0c.zip"
+ }
 }
