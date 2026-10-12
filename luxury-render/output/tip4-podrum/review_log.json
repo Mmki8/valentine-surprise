@@ -1,0 +1,17 @@
+{
+ "plan": "tip4-podrum",
+ "brief": "Client: type 4 basement; same rules + design; dark design with wood accents (spa, sauna, WC) and plants after 3 refs; no windows -> beautiful lighting everywhere; sectional garage door; smaller Mercedes than a G-Wagon; furniture less boxy; 100% plan-accurate.",
+ "lessons": [
+  "dark guides give weak geometry -> spa guides rendered at exposure 2.4 (the look comes from the prompt / reference, not the guide brightness)",
+  "ultra-wide 96-102 deg lenses: the model elongates the room -> 86-90 deg",
+  "a previous render used as the look reference carries its (wrong) geometry into every retry -> geometry retries use mood refs / text only",
+  "white spheres still read as lamps -> orchid as stems; decor kept out of camera foregrounds"
+ ],
+ "rejected": [
+  "SPA_A #1-#7 (structure 0.32-0.44: room rendered deeper)",
+  "SPA_B #1-#4 (structure 0.18-0.39)",
+  "SPA_B #5 (structure 0.47 but drift 0.065)",
+  "GAR_A #1 (drift 0.075, car enlarged)",
+  "GAR_A #3 (drift 0.058, structure 0.57 - #2 better)"
+ ]
+}
