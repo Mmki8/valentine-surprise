@@ -1,0 +1,71 @@
+{
+ "camera": "BED2_A",
+ "room": "F_R_bed2",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_limewash_greige",
+  "plaster_warm_white",
+  "velvet_olive_channel",
+  "art_painting_wide",
+  "bedding_olive",
+  "art_painting_pair",
+  "sheer_linen",
+  "nightstand_black",
+  "bronze_frame",
+  "pillow_grey",
+  "walnut_shelf",
+  "oak_herringbone_smoked",
+  "pendant_alabaster",
+  "led_line",
+  "cable_black"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bed2_glz",
+   "name": "glazed double door (closed)",
+   "where": "right",
+   "share": 0.018,
+   "note": "OG.2: bedroom 2 south, fixed glass + glazed door to the balcony"
+  }
+ ],
+ "furniture_counts": {
+  "bed": 1,
+  "nightstand": 2
+ },
+ "items": [
+  {
+   "id": "F_F_bed2",
+   "name": "bed",
+   "where": "centre",
+   "share": 0.049,
+   "note": "double bed, headboard on the east wall"
+  },
+  {
+   "id": "F_F_ns3",
+   "name": "nightstand",
+   "where": "left",
+   "share": 0.012,
+   "note": null
+  },
+  {
+   "id": "F_F_ns4",
+   "name": "nightstand",
+   "where": "right",
+   "share": 0.011,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

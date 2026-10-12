@@ -1,0 +1,159 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up), house type 4 FIRST floor, floor 0 (ground floor at -310).",
+ "exterior": "this is the FIRST FLOOR, about 3.3 m above the garden: through the glass the view looks DOWN onto the sunlit lawn, the warm limestone terrace below, the clipped hedge and the rounded crowns of the olive trees below, soft green hills on the horizon under a warm golden sky with a few soft clouds. Never sea, never city, never a view at ground level, never night.",
+ "time_of_day": "golden hour, about 18:30 in late spring - low warm sun from the south-west streams in through the glass, long soft honey-coloured sun patches on the floor and walls, warm glowing air; bright, warm and inviting - never night, never dark",
+ "fittings": {
+  "_head": "Light fittings: ONLY these, exactly as modelled in IMAGE 1:",
+  "_none": "Light fittings: none in this view - golden-hour daylight only.",
+  "_tail": "Add NO other light of any kind: no spotlights, no downlights, no track lights, no recessed ceiling lights, no extra LED strips, no wall lights, no chandeliers, no glowing outlines along edges. The thin GREY guide lines are not lights.",
+  "_decor": "Decor: only the modelled objects - olive trees in stone pots (green sphere on a trunk), dried pampas (beige stems), slim olive branches in small vases, abstract paintings in frames, books, rugs, cushions, sheer linen curtains, towels; add no new objects.",
+  "pendant_glass": "the smoked-glass globes hanging on thin cables are globe pendant lamps with a warm glow",
+  "pendant_alabaster": "the small cylinders hanging on thin cables beside the bed are alabaster pendant lamps with a soft warm glow",
+  "travertine_wall": "the pure-white line along the ceiling at the travertine wall is a recessed warm wall-washer slot",
+  "velvet_olive_channel": "the pure-white line along the ceiling above the bed wall is a recessed warm wall-washer slot",
+  "ceiling_dark": "the pure-white line running all round the edge of the dark ceiling is a warm shadow-gap cove light",
+  "ring_led": "the white ring on the wall is a slim warm LED ring framing the round mirror",
+  "mirror_bronze": "the slim white vertical bar beside the bronze mirror is a warm LED wall light",
+  "vanity_stone": "the white line under the vanity is a warm LED glow",
+  "vanity_walnut_drawer": "the white line under the walnut drawer is a warm LED glow",
+  "niche_lit": "the lit niche glows warm",
+  "niche_trav": "the lit travertine niche glows warm",
+  "walnut_battens": "the short white lines at the stair treads below are warm step lights",
+  "wardrobe_walnut_reeded": "the wardrobe's reeded glass doors glow faintly from a warm interior light"
+ },
+ "heroes": {
+  "bed1": "BED1_A",
+  "bed2": "BED2_A",
+  "bath1": "BATH1_A",
+  "bath2": "BATH2_A",
+  "hall": "HALL_A"
+ },
+ "moods": {
+  "bath1": "refs/mood/mood_bath_dark_ring.jpg",
+  "bath2": "refs/mood/mood4_wc_chevron.jpg"
+ },
+ "cameras": [
+  {
+   "id": "BED1_A",
+   "room": "F_R_bed1",
+   "space": "bed1",
+   "title": "Bedroom 1 - facing the travertine bed wall",
+   "pos": [
+    849.5,
+    316.4,
+    150
+   ],
+   "look": [
+    609.2,
+    40.7
+   ],
+   "hfov": 94,
+   "shift_y": 0.06
+  },
+  {
+   "id": "BED1_B",
+   "room": "F_R_bed1",
+   "space": "bed1",
+   "title": "Bedroom 1 - from the foot of the room over the bed to the east glass",
+   "pos": [
+    475.3,
+    261.3,
+    150
+   ],
+   "look": [
+    866.6,
+    140.5
+   ],
+   "hfov": 92,
+   "shift_y": 0.04,
+   "notes": "Through the glass: the view from the first floor - looking DOWN onto the garden, the terrace and the olive crowns below, hills on the horizon, warm golden sky."
+  },
+  {
+   "id": "BATH1_A",
+   "room": "F_R_bath1",
+   "space": "bath1",
+   "title": "Bath 1 - wide corner view",
+   "pos": [
+    300.7,
+    203.5,
+    150
+   ],
+   "look": [
+    36.8,
+    38.1
+   ],
+   "hfov": 104,
+   "shift_y": 0.02
+  },
+  {
+   "id": "BED2_A",
+   "room": "F_R_bed2",
+   "space": "bed2",
+   "title": "Bedroom 2 - straight-on to the olive velvet bed wall",
+   "pos": [
+    292.8,
+    737.9,
+    150
+   ],
+   "look": [
+    606.6,
+    737.9
+   ],
+   "hfov": 90,
+   "shift_y": 0.04
+  },
+  {
+   "id": "BED2_B",
+   "room": "F_R_bed2",
+   "space": "bed2",
+   "title": "Bedroom 2 - over the bed to the glazed balcony door and the view",
+   "pos": [
+    432.0,
+    576.4,
+    150
+   ],
+   "look": [
+    501.6,
+    962.4
+   ],
+   "hfov": 90,
+   "shift_y": 0.04,
+   "notes": "Through the glass: the steel-grating balcony with a frameless glass guard, then the view from the first floor - looking DOWN onto the garden and the olive crowns below, hills on the horizon, warm golden sky."
+  },
+  {
+   "id": "BATH2_A",
+   "room": "F_R_bath2",
+   "space": "bath2",
+   "title": "Bath 2 - wide corner view",
+   "pos": [
+    414.9,
+    534.4,
+    150
+   ],
+   "look": [
+    606.6,
+    379.5
+   ],
+   "hfov": 104,
+   "shift_y": 0.02
+  },
+  {
+   "id": "HALL_A",
+   "room": "F_R_hall",
+   "space": "hall",
+   "title": "Landing - from the top of the stair down the open stair to the double-height entrance",
+   "pos": [
+    103.7,
+    235.0,
+    160
+   ],
+   "look": [
+    114.2,
+    962.4
+   ],
+   "hfov": 84,
+   "shift_y": -0.18,
+   "notes": "The floor is OPEN over the stair (right, behind the frameless glass balustrade) and over the entrance beyond the second glass balustrade: you look DOWN to the ground-floor hall 3.1 m below - the walnut stair, the honed brown marble floor and the front door; the tall glazing above the front door lights the double-height space."
+  }
+ ]
+}

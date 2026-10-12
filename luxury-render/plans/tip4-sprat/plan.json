@@ -1,0 +1,4265 @@
+{
+ "meta": {
+  "name": "OSNOVA 1 SPRAT - house type 4, first floor",
+  "source": "source/floorplan_sprat.png",
+  "units": "cm",
+  "axes": "x = east (drawing right), y = south (drawing down), z = up",
+  "scale_cm_per_px": 1.313,
+  "origin_px": [
+   383,
+   173
+  ],
+  "overall_cm": [
+   1165,
+   1035
+  ]
+ },
+ "levels": {
+  "ffl": 0,
+  "ceiling": 280,
+  "ground_ffl": -310,
+  "slab_bottom": -30
+ },
+ "walls": [
+  {
+   "id": "W_west",
+   "rect": [
+    0.0,
+    0.0,
+    36.8,
+    1001.8
+   ],
+   "z0": -310,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    383,
+    173,
+    411,
+    936
+   ]
+  },
+  {
+   "id": "W_north",
+   "rect": [
+    0.0,
+    0.0,
+    904.7,
+    38.1
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    383,
+    173,
+    1072,
+    202
+   ]
+  },
+  {
+   "id": "W_bed1_e",
+   "rect": [
+    866.6,
+    0.0,
+    904.7,
+    337.4
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    1043,
+    173,
+    1072,
+    430
+   ]
+  },
+  {
+   "id": "W_bed1_s",
+   "rect": [
+    256.0,
+    337.4,
+    904.7,
+    362.4
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    578,
+    430,
+    1072,
+    449
+   ]
+  },
+  {
+   "id": "W_south_gf",
+   "rect": [
+    0.0,
+    962.4,
+    628.9,
+    1001.8
+   ],
+   "z0": -310,
+   "z1": -55,
+   "kind": "ext",
+   "src_px": [
+    383,
+    906,
+    862,
+    936
+   ]
+  },
+  {
+   "id": "W_south",
+   "rect": [
+    0.0,
+    962.4,
+    628.9,
+    1001.8
+   ],
+   "z0": -55,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    383,
+    906,
+    862,
+    936
+   ]
+  },
+  {
+   "id": "W_void_e",
+   "rect": [
+    606.6,
+    362.4,
+    628.9,
+    962.4
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    845,
+    449,
+    862,
+    906
+   ]
+  },
+  {
+   "id": "W_bath1_s",
+   "rect": [
+    36.8,
+    212.7,
+    266.5,
+    223.2
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    411,
+    335,
+    586,
+    343
+   ]
+  },
+  {
+   "id": "W_bath1_s2",
+   "rect": [
+    266.5,
+    212.7,
+    316.4,
+    223.2
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "box",
+   "src_px": [
+    586,
+    335,
+    624,
+    343
+   ]
+  },
+  {
+   "id": "W_bath1_e",
+   "rect": [
+    307.2,
+    38.1,
+    316.4,
+    212.7
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    617,
+    202,
+    624,
+    335
+   ]
+  },
+  {
+   "id": "W_hall_e1",
+   "rect": [
+    256.0,
+    223.2,
+    266.5,
+    337.4
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    578,
+    343,
+    586,
+    430
+   ]
+  },
+  {
+   "id": "W_hall_e2",
+   "rect": [
+    257.3,
+    362.4,
+    282.3,
+    962.4
+   ],
+   "z0": -30,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    579,
+    449,
+    598,
+    906
+   ]
+  },
+  {
+   "id": "W_bath2_w",
+   "rect": [
+    396.5,
+    362.4,
+    407.0,
+    552.8
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    685,
+    449,
+    693,
+    594
+   ]
+  },
+  {
+   "id": "W_bath2_s",
+   "rect": [
+    407.0,
+    542.3,
+    606.6,
+    552.8
+   ],
+   "z0": 0,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    693,
+    586,
+    845,
+    594
+   ]
+  }
+ ],
+ "openings": [
+  {
+   "id": "O_bath1_win",
+   "type": "window",
+   "sill": 160,
+   "head": 230,
+   "note": "bath 1 high window (north)",
+   "rect": [
+    127.4,
+    0.0,
+    195.6,
+    38.1
+   ],
+   "src_px": [
+    480,
+    173,
+    532,
+    202
+   ]
+  },
+  {
+   "id": "O_bath1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 1 -> ensuite bath 1",
+   "rect": [
+    307.2,
+    127.4,
+    316.4,
+    198.3
+   ],
+   "src_px": [
+    617,
+    270,
+    624,
+    324
+   ],
+   "hinge": [
+    307.2,
+    198.3
+   ]
+  },
+  {
+   "id": "O_bed1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "hall -> bedroom 1",
+   "rect": [
+    256.0,
+    241.6,
+    266.5,
+    320.4
+   ],
+   "src_px": [
+    578,
+    357,
+    586,
+    417
+   ],
+   "hinge": [
+    266.5,
+    320.4
+   ]
+  },
+  {
+   "id": "O_bed1_glz",
+   "type": "sliding",
+   "sill": 0,
+   "head": 250,
+   "note": "OG.3: bedroom 1 east, full-height sliding glass (French balcony)",
+   "rect": [
+    866.6,
+    128.7,
+    904.7,
+    319.1
+   ],
+   "src_px": [
+    1043,
+    271,
+    1072,
+    416
+   ]
+  },
+  {
+   "id": "O_bed2_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "gallery -> bedroom 2",
+   "rect": [
+    257.3,
+    433.3,
+    282.3,
+    522.6
+   ],
+   "src_px": [
+    579,
+    503,
+    598,
+    571
+   ],
+   "hinge": [
+    282.3,
+    438.5
+   ]
+  },
+  {
+   "id": "O_bath2_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 2 vestibule -> bath 2",
+   "rect": [
+    396.5,
+    453.0,
+    407.0,
+    531.8
+   ],
+   "src_px": [
+    685,
+    518,
+    693,
+    578
+   ],
+   "hinge": [
+    407.0,
+    453.0
+   ]
+  },
+  {
+   "id": "O_bed2_glz",
+   "type": "double_door",
+   "sill": 0,
+   "head": 250,
+   "note": "OG.2: bedroom 2 south, fixed glass + glazed door to the balcony",
+   "rect": [
+    401.8,
+    962.4,
+    601.4,
+    1001.8
+   ],
+   "src_px": [
+    689,
+    906,
+    841,
+    936
+   ]
+  },
+  {
+   "id": "O_entr_glz",
+   "type": "window",
+   "sill": -50,
+   "head": 260,
+   "note": "tall glazing over the front door, lights the double-height entrance",
+   "rect": [
+    156.2,
+    962.4,
+    250.8,
+    1001.8
+   ],
+   "src_px": [
+    502,
+    906,
+    574,
+    936
+   ]
+  },
+  {
+   "id": "O_front_door",
+   "type": "door",
+   "sill": -310,
+   "head": -80,
+   "leaf": "solid",
+   "note": "front door (ground floor, seen through the open entrance)",
+   "rect": [
+    156.2,
+    962.4,
+    249.5,
+    1001.8
+   ],
+   "src_px": [
+    502,
+    906,
+    573,
+    936
+   ],
+   "hinge": [
+    249.5,
+    962.4
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "F_R_bath1",
+   "name": "Bath 1 (ensuite)",
+   "polygon": [
+    [
+     36.8,
+     38.1
+    ],
+    [
+     307.2,
+     38.1
+    ],
+    [
+     307.2,
+     212.7
+    ],
+    [
+     36.8,
+     212.7
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bath_slate",
+   "ceiling_holes": []
+  },
+  {
+   "id": "F_R_bed1",
+   "name": "Bedroom 1",
+   "polygon": [
+    [
+     316.4,
+     38.1
+    ],
+    [
+     866.6,
+     38.1
+    ],
+    [
+     866.6,
+     337.4
+    ],
+    [
+     266.5,
+     337.4
+    ],
+    [
+     266.5,
+     223.2
+    ],
+    [
+     316.4,
+     223.2
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bed_travertine",
+   "ceiling_holes": []
+  },
+  {
+   "id": "F_R_hall",
+   "name": "Landing + gallery",
+   "polygon": [
+    [
+     36.8,
+     223.2
+    ],
+    [
+     257.3,
+     223.2
+    ],
+    [
+     257.3,
+     609.2
+    ],
+    [
+     141.8,
+     609.2
+    ],
+    [
+     141.8,
+     362.4
+    ],
+    [
+     36.8,
+     362.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "hall_upper",
+   "ceiling_holes": []
+  },
+  {
+   "id": "F_R_bed2",
+   "name": "Bedroom 2",
+   "polygon": [
+    [
+     282.3,
+     362.4
+    ],
+    [
+     396.5,
+     362.4
+    ],
+    [
+     396.5,
+     552.8
+    ],
+    [
+     606.6,
+     552.8
+    ],
+    [
+     606.6,
+     962.4
+    ],
+    [
+     282.3,
+     962.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bed_olive",
+   "ceiling_holes": []
+  },
+  {
+   "id": "F_R_bath2",
+   "name": "Bath 2",
+   "polygon": [
+    [
+     407.0,
+     362.4
+    ],
+    [
+     606.6,
+     362.4
+    ],
+    [
+     606.6,
+     542.3
+    ],
+    [
+     407.0,
+     542.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bath_chevron",
+   "ceiling_holes": []
+  }
+ ],
+ "furniture": [
+  {
+   "id": "F_F_shower1",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    36.8,
+    38.1,
+    116.9,
+    212.7
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "F_R_bath1",
+   "facing": null,
+   "note": "walk-in shower, glass at x 472",
+   "src_px": [
+    411,
+    202,
+    472,
+    335
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_wc1",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    139.2,
+    40.7,
+    177.3,
+    109.0
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "F_R_bath1",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    489,
+    204,
+    518,
+    256
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_vanity1",
+   "kind": "vanity",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     301.2,
+     38.1
+    ],
+    [
+     302.8,
+     38.3
+    ],
+    [
+     304.2,
+     38.9
+    ],
+    [
+     305.4,
+     39.9
+    ],
+    [
+     306.4,
+     41.1
+    ],
+    [
+     307.0,
+     42.5
+    ],
+    [
+     307.2,
+     44.1
+    ],
+    [
+     307.2,
+     80.7
+    ],
+    [
+     307.0,
+     82.3
+    ],
+    [
+     306.4,
+     83.7
+    ],
+    [
+     305.4,
+     84.9
+    ],
+    [
+     304.2,
+     85.9
+    ],
+    [
+     302.8,
+     86.5
+    ],
+    [
+     301.2,
+     86.7
+    ],
+    [
+     214.8,
+     86.7
+    ],
+    [
+     213.2,
+     86.5
+    ],
+    [
+     211.8,
+     85.9
+    ],
+    [
+     210.6,
+     84.9
+    ],
+    [
+     209.6,
+     83.7
+    ],
+    [
+     209.0,
+     82.3
+    ],
+    [
+     208.8,
+     80.7
+    ],
+    [
+     208.8,
+     44.1
+    ],
+    [
+     209.0,
+     42.5
+    ],
+    [
+     209.6,
+     41.1
+    ],
+    [
+     210.6,
+     39.9
+    ],
+    [
+     211.8,
+     38.9
+    ],
+    [
+     213.2,
+     38.3
+    ],
+    [
+     214.8,
+     38.1
+    ]
+   ],
+   "z0": 55,
+   "h": 30,
+   "room": "F_R_bath1",
+   "note": "floating vanity with basin",
+   "src_px": [
+    542,
+    202,
+    617,
+    239
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_wr1",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    316.4,
+    38.1,
+    442.5,
+    93.2
+   ],
+   "z0": 0,
+   "h": 250,
+   "room": "F_R_bed1",
+   "facing": "S",
+   "note": "wardrobe (L, part 1)",
+   "src_px": [
+    624,
+    202,
+    720,
+    244
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_wr2",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    442.5,
+    38.1,
+    497.6,
+    223.2
+   ],
+   "z0": 0,
+   "h": 250,
+   "room": "F_R_bed1",
+   "facing": "E",
+   "note": "wardrobe (L, part 2)",
+   "src_px": [
+    720,
+    202,
+    762,
+    343
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_bed1",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    586.9,
+    44.6,
+    758.9,
+    245.5
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed1",
+   "facing": "S",
+   "note": "double bed, headboard on the north wall",
+   "src_px": [
+    830,
+    207,
+    961,
+    360
+   ],
+   "group": null,
+   "head_h": 125
+  },
+  {
+   "id": "F_F_ns1",
+   "kind": "nightstand",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     581.9,
+     43.3
+    ],
+    [
+     583.2,
+     43.5
+    ],
+    [
+     584.4,
+     44.0
+    ],
+    [
+     585.4,
+     44.8
+    ],
+    [
+     586.2,
+     45.8
+    ],
+    [
+     586.7,
+     47.0
+    ],
+    [
+     586.9,
+     48.3
+    ],
+    [
+     586.9,
+     79.0
+    ],
+    [
+     586.7,
+     80.3
+    ],
+    [
+     586.2,
+     81.5
+    ],
+    [
+     585.4,
+     82.5
+    ],
+    [
+     584.4,
+     83.3
+    ],
+    [
+     583.2,
+     83.8
+    ],
+    [
+     581.9,
+     84.0
+    ],
+    [
+     544.6,
+     84.0
+    ],
+    [
+     543.3,
+     83.8
+    ],
+    [
+     542.1,
+     83.3
+    ],
+    [
+     541.1,
+     82.5
+    ],
+    [
+     540.3,
+     81.5
+    ],
+    [
+     539.8,
+     80.3
+    ],
+    [
+     539.6,
+     79.0
+    ],
+    [
+     539.6,
+     48.3
+    ],
+    [
+     539.8,
+     47.0
+    ],
+    [
+     540.3,
+     45.8
+    ],
+    [
+     541.1,
+     44.8
+    ],
+    [
+     542.1,
+     44.0
+    ],
+    [
+     543.3,
+     43.5
+    ],
+    [
+     544.6,
+     43.3
+    ]
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed1",
+   "note": null,
+   "src_px": [
+    794,
+    206,
+    830,
+    237
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_ns2",
+   "kind": "nightstand",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     801.2,
+     43.3
+    ],
+    [
+     802.5,
+     43.5
+    ],
+    [
+     803.7,
+     44.0
+    ],
+    [
+     804.7,
+     44.8
+    ],
+    [
+     805.5,
+     45.8
+    ],
+    [
+     806.0,
+     47.0
+    ],
+    [
+     806.2,
+     48.3
+    ],
+    [
+     806.2,
+     79.0
+    ],
+    [
+     806.0,
+     80.3
+    ],
+    [
+     805.5,
+     81.5
+    ],
+    [
+     804.7,
+     82.5
+    ],
+    [
+     803.7,
+     83.3
+    ],
+    [
+     802.5,
+     83.8
+    ],
+    [
+     801.2,
+     84.0
+    ],
+    [
+     763.9,
+     84.0
+    ],
+    [
+     762.6,
+     83.8
+    ],
+    [
+     761.4,
+     83.3
+    ],
+    [
+     760.4,
+     82.5
+    ],
+    [
+     759.6,
+     81.5
+    ],
+    [
+     759.1,
+     80.3
+    ],
+    [
+     758.9,
+     79.0
+    ],
+    [
+     758.9,
+     48.3
+    ],
+    [
+     759.1,
+     47.0
+    ],
+    [
+     759.6,
+     45.8
+    ],
+    [
+     760.4,
+     44.8
+    ],
+    [
+     761.4,
+     44.0
+    ],
+    [
+     762.6,
+     43.5
+    ],
+    [
+     763.9,
+     43.3
+    ]
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed1",
+   "note": null,
+   "src_px": [
+    961,
+    206,
+    997,
+    237
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_tv1",
+   "kind": "tv",
+   "shape": "box",
+   "rect": [
+    613.2,
+    329.6,
+    731.3,
+    333.5
+   ],
+   "z0": 95,
+   "h": 62,
+   "room": "F_R_bed1",
+   "facing": "N",
+   "note": "TV on the south wall, facing the bed",
+   "src_px": [
+    850,
+    424,
+    940,
+    427
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_wr3",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    282.3,
+    362.4,
+    396.5,
+    418.8
+   ],
+   "z0": 0,
+   "h": 250,
+   "room": "F_R_bed2",
+   "facing": "S",
+   "note": "entry wardrobe (installation duct in its corner)",
+   "src_px": [
+    598,
+    449,
+    685,
+    492
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_bed2",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    399.2,
+    652.6,
+    600.0,
+    823.3
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed2",
+   "facing": "W",
+   "note": "double bed, headboard on the east wall",
+   "src_px": [
+    687,
+    670,
+    840,
+    800
+   ],
+   "group": null,
+   "head_h": 125
+  },
+  {
+   "id": "F_F_ns3",
+   "kind": "nightstand",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     599.0,
+     602.7
+    ],
+    [
+     600.3,
+     602.9
+    ],
+    [
+     601.5,
+     603.4
+    ],
+    [
+     602.5,
+     604.2
+    ],
+    [
+     603.3,
+     605.2
+    ],
+    [
+     603.8,
+     606.4
+    ],
+    [
+     604.0,
+     607.7
+    ],
+    [
+     604.0,
+     646.2
+    ],
+    [
+     603.8,
+     647.5
+    ],
+    [
+     603.3,
+     648.7
+    ],
+    [
+     602.5,
+     649.7
+    ],
+    [
+     601.5,
+     650.5
+    ],
+    [
+     600.3,
+     651.0
+    ],
+    [
+     599.0,
+     651.2
+    ],
+    [
+     565.7,
+     651.2
+    ],
+    [
+     564.4,
+     651.0
+    ],
+    [
+     563.2,
+     650.5
+    ],
+    [
+     562.2,
+     649.7
+    ],
+    [
+     561.4,
+     648.7
+    ],
+    [
+     560.9,
+     647.5
+    ],
+    [
+     560.7,
+     646.2
+    ],
+    [
+     560.7,
+     607.7
+    ],
+    [
+     560.9,
+     606.4
+    ],
+    [
+     561.4,
+     605.2
+    ],
+    [
+     562.2,
+     604.2
+    ],
+    [
+     563.2,
+     603.4
+    ],
+    [
+     564.4,
+     602.9
+    ],
+    [
+     565.7,
+     602.7
+    ]
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed2",
+   "note": null,
+   "src_px": [
+    810,
+    632,
+    843,
+    669
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_ns4",
+   "kind": "nightstand",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     599.0,
+     823.3
+    ],
+    [
+     600.3,
+     823.5
+    ],
+    [
+     601.5,
+     824.0
+    ],
+    [
+     602.5,
+     824.8
+    ],
+    [
+     603.3,
+     825.8
+    ],
+    [
+     603.8,
+     827.0
+    ],
+    [
+     604.0,
+     828.3
+    ],
+    [
+     604.0,
+     865.5
+    ],
+    [
+     603.8,
+     866.8
+    ],
+    [
+     603.3,
+     868.0
+    ],
+    [
+     602.5,
+     869.0
+    ],
+    [
+     601.5,
+     869.8
+    ],
+    [
+     600.3,
+     870.3
+    ],
+    [
+     599.0,
+     870.5
+    ],
+    [
+     565.7,
+     870.5
+    ],
+    [
+     564.4,
+     870.3
+    ],
+    [
+     563.2,
+     869.8
+    ],
+    [
+     562.2,
+     869.0
+    ],
+    [
+     561.4,
+     868.0
+    ],
+    [
+     560.9,
+     866.8
+    ],
+    [
+     560.7,
+     865.5
+    ],
+    [
+     560.7,
+     828.3
+    ],
+    [
+     560.9,
+     827.0
+    ],
+    [
+     561.4,
+     825.8
+    ],
+    [
+     562.2,
+     824.8
+    ],
+    [
+     563.2,
+     824.0
+    ],
+    [
+     564.4,
+     823.5
+    ],
+    [
+     565.7,
+     823.3
+    ]
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "F_R_bed2",
+   "note": null,
+   "src_px": [
+    810,
+    800,
+    843,
+    836
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_vanity2",
+   "kind": "vanity",
+   "shape": "prism",
+   "axis": "z",
+   "poly": [
+    [
+     510.7,
+     362.4
+    ],
+    [
+     511.7,
+     362.5
+    ],
+    [
+     512.7,
+     362.9
+    ],
+    [
+     513.5,
+     363.6
+    ],
+    [
+     514.2,
+     364.4
+    ],
+    [
+     514.6,
+     365.4
+    ],
+    [
+     514.7,
+     366.4
+    ],
+    [
+     514.7,
+     410.9
+    ],
+    [
+     514.6,
+     411.9
+    ],
+    [
+     514.2,
+     412.9
+    ],
+    [
+     513.5,
+     413.7
+    ],
+    [
+     512.7,
+     414.4
+    ],
+    [
+     511.7,
+     414.8
+    ],
+    [
+     510.7,
+     414.9
+    ],
+    [
+     413.7,
+     414.9
+    ],
+    [
+     412.7,
+     414.8
+    ],
+    [
+     411.7,
+     414.4
+    ],
+    [
+     410.9,
+     413.7
+    ],
+    [
+     410.2,
+     412.9
+    ],
+    [
+     409.8,
+     411.9
+    ],
+    [
+     409.7,
+     410.9
+    ],
+    [
+     409.7,
+     366.4
+    ],
+    [
+     409.8,
+     365.4
+    ],
+    [
+     410.2,
+     364.4
+    ],
+    [
+     410.9,
+     363.6
+    ],
+    [
+     411.7,
+     362.9
+    ],
+    [
+     412.7,
+     362.5
+    ],
+    [
+     413.7,
+     362.4
+    ]
+   ],
+   "z0": 55,
+   "h": 30,
+   "room": "F_R_bath2",
+   "note": "floating vanity, marble basin",
+   "src_px": [
+    695,
+    449,
+    775,
+    489
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_shower2",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    516.0,
+    362.4,
+    606.6,
+    453.0
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "F_R_bath2",
+   "facing": null,
+   "note": "walk-in shower, glass along x 776",
+   "src_px": [
+    776,
+    449,
+    845,
+    518
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_wc2",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    543.6,
+    477.9,
+    606.6,
+    517.3
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "F_R_bath2",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    797,
+    537,
+    845,
+    567
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_stair_01",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    827.2,
+    136.6,
+    856.1
+   ],
+   "z0": -310,
+   "h": 17.2,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_02",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    798.3,
+    136.6,
+    827.2
+   ],
+   "z0": -310,
+   "h": 34.4,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_03",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    769.4,
+    136.6,
+    798.3
+   ],
+   "z0": -310,
+   "h": 51.7,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_04",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    740.6,
+    136.6,
+    769.4
+   ],
+   "z0": -310,
+   "h": 68.9,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_05",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    711.7,
+    136.6,
+    740.6
+   ],
+   "z0": -310,
+   "h": 86.1,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_06",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    682.8,
+    136.6,
+    711.7
+   ],
+   "z0": -310,
+   "h": 103.3,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_07",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    653.9,
+    136.6,
+    682.8
+   ],
+   "z0": -310,
+   "h": 120.6,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_08",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    625.0,
+    136.6,
+    653.9
+   ],
+   "z0": -310,
+   "h": 137.8,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_09",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    596.1,
+    136.6,
+    625.0
+   ],
+   "z0": -310,
+   "h": 155.0,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_10",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    567.2,
+    136.6,
+    596.1
+   ],
+   "z0": -310,
+   "h": 172.2,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_11",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    538.4,
+    136.6,
+    567.2
+   ],
+   "z0": -310,
+   "h": 189.4,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_12",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    509.5,
+    136.6,
+    538.4
+   ],
+   "z0": -310,
+   "h": 206.7,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_13",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    480.6,
+    136.6,
+    509.5
+   ],
+   "z0": -310,
+   "h": 223.9,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_14",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    451.7,
+    136.6,
+    480.6
+   ],
+   "z0": -310,
+   "h": 241.1,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_15",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    422.8,
+    136.6,
+    451.7
+   ],
+   "z0": -310,
+   "h": 258.3,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_16",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    393.9,
+    136.6,
+    422.8
+   ],
+   "z0": -310,
+   "h": 275.6,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_stair_17",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    36.8,
+    365.0,
+    136.6,
+    393.9
+   ],
+   "z0": -310,
+   "h": 292.8,
+   "room": "F_R_hall",
+   "group": null
+  },
+  {
+   "id": "F_F_uog1",
+   "kind": "glass",
+   "shape": "prism",
+   "axis": "x",
+   "x0": 136.6,
+   "x1": 139.8,
+   "room": "F_R_hall",
+   "group": null,
+   "poly": [
+    [
+     850.8,
+     -306.9
+    ],
+    [
+     366.3,
+     -18.0
+    ],
+    [
+     366.3,
+     82.0
+    ],
+    [
+     850.8,
+     -206.9
+    ]
+   ],
+   "note": "UOG.1 raked glass balustrade of the stair"
+  },
+  {
+   "id": "F_F_uog2",
+   "kind": "glass",
+   "shape": "box",
+   "rect": [
+    147.1,
+    362.4,
+    149.7,
+    609.2
+   ],
+   "z0": 0,
+   "h": 100,
+   "room": "F_R_hall",
+   "facing": null,
+   "note": "UOG.2 glass balustrade (gallery | stair void)",
+   "src_px": [
+    495,
+    449,
+    497,
+    637
+   ],
+   "group": null
+  },
+  {
+   "id": "F_F_uog3",
+   "kind": "glass",
+   "shape": "box",
+   "rect": [
+    149.7,
+    607.9,
+    257.3,
+    610.5
+   ],
+   "z0": 0,
+   "h": 100,
+   "room": "F_R_hall",
+   "facing": null,
+   "note": "UOG.3 glass balustrade (gallery | entrance void)",
+   "src_px": [
+    497,
+    636,
+    579,
+    638
+   ],
+   "group": null
+  }
+ ],
+ "design": [
+  {
+   "id": "D_b1_trav",
+   "shape": "box",
+   "mat": "travertine_wall",
+   "rect": [
+    497.6,
+    38.1,
+    866.6,
+    40.7
+   ],
+   "z": [
+    0,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_trav_slot",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    498.9,
+    40.7,
+    865.3,
+    43.1
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b1_headpanel",
+   "shape": "box",
+   "mat": "headboard_cognac_channel",
+   "rect": [
+    534.4,
+    40.7,
+    811.4,
+    45.1
+   ],
+   "z": [
+    0,
+    128
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_art",
+   "shape": "box",
+   "mat": "art_painting_bed1",
+   "rect": [
+    604.0,
+    41.900000000000006,
+    741.8,
+    44.900000000000006
+   ],
+   "z": [
+    158,
+    236
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pend0_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    563.3,
+    64.3,
+    123
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_b1_pend0_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    563.3,
+    64.3
+   ],
+   "r": 0.6,
+   "z": [
+    134,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_pend1_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    782.5,
+    64.3,
+    123
+   ],
+   "r": 11,
+   "kind": "light"
+  },
+  {
+   "id": "D_b1_pend1_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    782.5,
+    64.3
+   ],
+   "r": 0.6,
+   "z": [
+    134,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_rug",
+   "shape": "box",
+   "mat": "rug_ivory",
+   "rect": [
+    541.0,
+    133.9,
+    810.1,
+    313.8
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_tvpanel",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    576.4,
+    334.79999999999995,
+    768.1,
+    336.2
+   ],
+   "z": [
+    0,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_console",
+   "shape": "box",
+   "mat": "walnut_console",
+   "rect": [
+    594.8,
+    303.4,
+    749.7,
+    334.79999999999995
+   ],
+   "z": [
+    24,
+    52
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_vase_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    736.6,
+    319.4
+   ],
+   "r": 8,
+   "z": [
+    52,
+    82
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_vase_br0",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    736.6,
+    319.4,
+    78
+   ],
+   "p1": [
+    726.7,
+    315.79999999999995,
+    113.5
+   ],
+   "normal": "z",
+   "w": 2.5,
+   "t": 2.5,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_vase_br1",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    736.6,
+    319.4,
+    78
+   ],
+   "p1": [
+    744.7,
+    322.09999999999997,
+    120.25
+   ],
+   "normal": "z",
+   "w": 2.5,
+   "t": 2.5,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_vase_br2",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    736.6,
+    319.4,
+    78
+   ],
+   "p1": [
+    734.8000000000001,
+    326.59999999999997,
+    124.75
+   ],
+   "normal": "z",
+   "w": 2.5,
+   "t": 2.5,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_vase_br3",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    736.6,
+    319.4,
+    78
+   ],
+   "p1": [
+    742.0,
+    313.09999999999997,
+    110.8
+   ],
+   "normal": "z",
+   "w": 2.5,
+   "t": 2.5,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_books",
+   "shape": "box",
+   "mat": "books_neutral",
+   "rect": [
+    606.6,
+    311.4,
+    636.6,
+    329.4
+   ],
+   "z": [
+    52,
+    60
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_tree_pot",
+   "shape": "cyl",
+   "mat": "stone_pot",
+   "center": [
+    416.2,
+    300.7
+   ],
+   "r": 24,
+   "z": [
+    0,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_tree_trunk",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    416.2,
+    300.7
+   ],
+   "r": 5,
+   "z": [
+    55,
+    175
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_tree_crown",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    416.2,
+    300.7,
+    213.5
+   ],
+   "r": 55,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b1_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    856.6,
+    130.0,
+    864.6,
+    153.6
+   ],
+   "z": [
+    0,
+    272
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    856.6,
+    295.4,
+    864.6,
+    319.1
+   ],
+   "z": [
+    0,
+    272
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b1_guard",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    905.7,
+    128.7,
+    906.9000000000001,
+    319.1
+   ],
+   "z": [
+    0,
+    100
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_velvet",
+   "shape": "box",
+   "mat": "velvet_olive_channel",
+   "rect": [
+    602.2,
+    589.5,
+    605.4,
+    883.6
+   ],
+   "z": [
+    0,
+    128
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_ledge",
+   "shape": "box",
+   "mat": "walnut_shelf",
+   "rect": [
+    592.6,
+    581.7,
+    605.4,
+    891.5
+   ],
+   "z": [
+    128,
+    132
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_art0",
+   "shape": "box",
+   "mat": "art_painting_pair",
+   "rect": [
+    602.4,
+    667.0,
+    605.4,
+    730.0
+   ],
+   "z": [
+    150,
+    232
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_art1",
+   "shape": "box",
+   "mat": "art_painting_pair",
+   "rect": [
+    602.4,
+    745.8,
+    605.4,
+    808.8
+   ],
+   "z": [
+    150,
+    232
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_slot",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    601.6,
+    554.1,
+    604.0,
+    961.1
+   ],
+   "z": [
+    278,
+    279.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_b2_pend0_shade",
+   "shape": "cyl",
+   "mat": "pendant_alabaster",
+   "center": [
+    581.7,
+    626.3
+   ],
+   "r": 8,
+   "z": [
+    108,
+    132
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pend0_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    581.7,
+    626.3
+   ],
+   "r": 0.6,
+   "z": [
+    132,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pend1_shade",
+   "shape": "cyl",
+   "mat": "pendant_alabaster",
+   "center": [
+    581.7,
+    846.9
+   ],
+   "r": 8,
+   "z": [
+    108,
+    132
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_pend1_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    581.7,
+    846.9
+   ],
+   "r": 0.6,
+   "z": [
+    132,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    366.3,
+    623.7,
+    563.3,
+    852.1
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_art2",
+   "shape": "box",
+   "mat": "art_painting_wide",
+   "rect": [
+    432.0,
+    554.0,
+    563.3,
+    557.0
+   ],
+   "z": [
+    120,
+    196
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_tree_pot",
+   "shape": "cyl",
+   "mat": "stone_pot",
+   "center": [
+    321.7,
+    912.5
+   ],
+   "r": 24,
+   "z": [
+    0,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_tree_trunk",
+   "shape": "cyl",
+   "mat": "olive_trunk",
+   "center": [
+    321.7,
+    912.5
+   ],
+   "r": 5,
+   "z": [
+    55,
+    175
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_tree_crown",
+   "shape": "sphere",
+   "mat": "olive_foliage",
+   "center": [
+    321.7,
+    912.5,
+    213.5
+   ],
+   "r": 55,
+   "kind": "decor"
+  },
+  {
+   "id": "D_b2_curtain0",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    401.8,
+    952.4,
+    421.5,
+    960.4
+   ],
+   "z": [
+    0,
+    272
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_b2_curtain1",
+   "shape": "box",
+   "mat": "sheer_linen",
+   "rect": [
+    581.7,
+    952.4,
+    601.4,
+    960.4
+   ],
+   "z": [
+    0,
+    272
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_balc_deck",
+   "shape": "box",
+   "mat": "steel_grating",
+   "rect": [
+    162.8,
+    1001.8,
+    592.2,
+    1138.4
+   ],
+   "z": [
+    -6,
+    0
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_balc_frame",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    162.8,
+    1127.9,
+    592.2,
+    1138.4
+   ],
+   "z": [
+    -18,
+    -6
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_balc_guard0",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    162.8,
+    1133.1,
+    592.2,
+    1135.1
+   ],
+   "z": [
+    0,
+    100
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_balc_guard1",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    162.8,
+    1001.8,
+    164.8,
+    1138.4
+   ],
+   "z": [
+    0,
+    100
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_balc_guard2",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    590.2,
+    1001.8,
+    592.2,
+    1138.4
+   ],
+   "z": [
+    0,
+    100
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    116.30000000000001,
+    39.1,
+    117.5,
+    210.1
+   ],
+   "z": [
+    0,
+    205
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_niche",
+   "shape": "box",
+   "mat": "niche_trav",
+   "rect": [
+    38.0,
+    72.2,
+    40.8,
+    173.3
+   ],
+   "z": [
+    100,
+    128
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    38.0,
+    72.2,
+    41.099999999999994,
+    173.3
+   ],
+   "z": [
+    126.5,
+    128
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba1_rain",
+   "shape": "cyl",
+   "mat": "black_metal",
+   "center": [
+    76.2,
+    124.7
+   ],
+   "r": 14,
+   "z": [
+    278,
+    280
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_ledge",
+   "shape": "box",
+   "mat": "slate_rough",
+   "rect": [
+    116.9,
+    38.1,
+    199.6,
+    53.1
+   ],
+   "z": [
+    0,
+    105
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_ledge_top",
+   "shape": "box",
+   "mat": "travertine_top",
+   "rect": [
+    116.9,
+    38.1,
+    199.6,
+    54.1
+   ],
+   "z": [
+    105,
+    108
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    149.7,
+    53.1,
+    166.8,
+    54.5
+   ],
+   "z": [
+    80,
+    95
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_basin",
+   "shape": "cyl",
+   "mat": "basin_travertine",
+   "center": [
+    256.0,
+    61.7
+   ],
+   "r": 17,
+   "z": [
+    85,
+    99
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_shelf",
+   "shape": "box",
+   "mat": "walnut_shelf",
+   "rect": [
+    212.7,
+    38.1,
+    304.6,
+    82.7
+   ],
+   "z": [
+    22,
+    26
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_vanity_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    211.4,
+    41.1,
+    305.9,
+    84.0
+   ],
+   "z": [
+    53.5,
+    55
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba1_ring",
+   "shape": "disc",
+   "mat": "ring_led",
+   "center": [
+    256.0,
+    39.4,
+    158
+   ],
+   "r": 41,
+   "t": 1.0,
+   "axis": "y",
+   "kind": "light"
+  },
+  {
+   "id": "D_ba1_mirror",
+   "shape": "disc",
+   "mat": "mirror_round",
+   "center": [
+    256.0,
+    40.7,
+    158
+   ],
+   "r": 38,
+   "t": 1.4,
+   "axis": "y",
+   "kind": "panel"
+  },
+  {
+   "id": "D_ba1_towels",
+   "shape": "box",
+   "mat": "towels_charcoal",
+   "rect": [
+    271.8,
+    40.1,
+    300.7,
+    80.1
+   ],
+   "z": [
+    26,
+    36
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba1_cove0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    36.8,
+    38.1,
+    307.2,
+    39.7
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba1_cove1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    36.8,
+    211.1,
+    307.2,
+    212.7
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba1_cove2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    36.8,
+    38.1,
+    38.4,
+    212.7
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba1_cove3",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    305.59999999999997,
+    38.1,
+    307.2,
+    212.7
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_drawer",
+   "shape": "box",
+   "mat": "vanity_walnut_drawer",
+   "rect": [
+    412.3,
+    362.4,
+    512.1,
+    412.3
+   ],
+   "z": [
+    40,
+    55
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vanity_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    412.3,
+    365.4,
+    512.1,
+    413.6
+   ],
+   "z": [
+    38.5,
+    40
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_mirror",
+   "shape": "box",
+   "mat": "mirror_bronze",
+   "rect": [
+    421.5,
+    363.59999999999997,
+    500.3,
+    365.79999999999995
+   ],
+   "z": [
+    108,
+    192
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_bar",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    505.5,
+    363.59999999999997,
+    508.1,
+    366.0
+   ],
+   "z": [
+    108,
+    192
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_glass",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    515.4,
+    363.4,
+    516.6,
+    453.0
+   ],
+   "z": [
+    0,
+    205
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_column",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    602.6,
+    374.2,
+    605.4,
+    434.6
+   ],
+   "z": [
+    30,
+    200
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_niche",
+   "shape": "box",
+   "mat": "niche_lit",
+   "rect": [
+    527.8,
+    363.59999999999997,
+    589.5,
+    366.4
+   ],
+   "z": [
+    100,
+    126
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_niche_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    527.8,
+    363.59999999999997,
+    589.5,
+    366.7
+   ],
+   "z": [
+    124.5,
+    126
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_flush",
+   "shape": "box",
+   "mat": "black_metal",
+   "rect": [
+    605.2,
+    488.4,
+    606.6,
+    506.8
+   ],
+   "z": [
+    92,
+    106
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_towels",
+   "shape": "box",
+   "mat": "towels_charcoal",
+   "rect": [
+    416.2,
+    365.4,
+    445.1,
+    408.3
+   ],
+   "z": [
+    85,
+    95
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vase_vase",
+   "shape": "cyl",
+   "mat": "ceramic_dark",
+   "center": [
+    492.4,
+    390.0
+   ],
+   "r": 5,
+   "z": [
+    85,
+    103
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vase_br0",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    492.4,
+    390.0,
+    99
+   ],
+   "p1": [
+    485.79999999999995,
+    387.6,
+    124.0
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 1.6,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vase_br1",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    492.4,
+    390.0,
+    99
+   ],
+   "p1": [
+    497.79999999999995,
+    391.8,
+    128.5
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 1.6,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vase_br2",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    492.4,
+    390.0,
+    99
+   ],
+   "p1": [
+    491.2,
+    394.8,
+    131.5
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 1.6,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_vase_br3",
+   "shape": "seg",
+   "mat": "olive_foliage",
+   "p0": [
+    492.4,
+    390.0,
+    99
+   ],
+   "p1": [
+    496.0,
+    385.8,
+    122.2
+   ],
+   "normal": "z",
+   "w": 1.6,
+   "t": 1.6,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_ba2_cove0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    407.0,
+    362.4,
+    606.6,
+    364.0
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_cove1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    407.0,
+    540.6999999999999,
+    606.6,
+    542.3
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_cove2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    407.0,
+    362.4,
+    408.6,
+    542.3
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_ba2_cove3",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    605.0,
+    362.4,
+    606.6,
+    542.3
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_art_mono",
+   "shape": "box",
+   "mat": "art_painting_monumental",
+   "rect": [
+    38.0,
+    527.8,
+    41.0,
+    711.6
+   ],
+   "z": [
+    -20,
+    225
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_stair_battens",
+   "shape": "box",
+   "mat": "walnut_battens",
+   "rect": [
+    38.0,
+    363.7,
+    40.8,
+    856.1
+   ],
+   "z": [
+    -310,
+    -40
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_stair_led01",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    853.9,
+    131.3,
+    854.9
+   ],
+   "z": [
+    -294.97777777777776,
+    -293.97777777777776
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led02",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    825.014,
+    131.3,
+    826.014
+   ],
+   "z": [
+    -277.75555555555553,
+    -276.75555555555553
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led03",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    796.1279999999999,
+    131.3,
+    797.1279999999999
+   ],
+   "z": [
+    -260.5333333333333,
+    -259.5333333333333
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led04",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    767.242,
+    131.3,
+    768.242
+   ],
+   "z": [
+    -243.3111111111111,
+    -242.3111111111111
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led05",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    738.356,
+    131.3,
+    739.356
+   ],
+   "z": [
+    -226.08888888888887,
+    -225.08888888888887
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led06",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    709.47,
+    131.3,
+    710.47
+   ],
+   "z": [
+    -208.86666666666667,
+    -207.86666666666667
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led07",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    680.584,
+    131.3,
+    681.584
+   ],
+   "z": [
+    -191.64444444444445,
+    -190.64444444444445
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led08",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    651.698,
+    131.3,
+    652.698
+   ],
+   "z": [
+    -174.42222222222222,
+    -173.42222222222222
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led09",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    622.812,
+    131.3,
+    623.812
+   ],
+   "z": [
+    -157.2,
+    -156.2
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led10",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    593.9259999999999,
+    131.3,
+    594.9259999999999
+   ],
+   "z": [
+    -139.97777777777776,
+    -138.97777777777776
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led11",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    565.04,
+    131.3,
+    566.04
+   ],
+   "z": [
+    -122.75555555555557,
+    -121.75555555555557
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led12",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    536.154,
+    131.3,
+    537.154
+   ],
+   "z": [
+    -105.53333333333335,
+    -104.53333333333335
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led13",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    507.26800000000003,
+    131.3,
+    508.26800000000003
+   ],
+   "z": [
+    -88.31111111111112,
+    -87.31111111111112
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led14",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    478.38200000000006,
+    131.3,
+    479.38200000000006
+   ],
+   "z": [
+    -71.08888888888892,
+    -70.08888888888892
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led15",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    449.49600000000004,
+    131.3,
+    450.49600000000004
+   ],
+   "z": [
+    -53.86666666666669,
+    -52.86666666666669
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led16",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    420.61000000000007,
+    131.3,
+    421.61000000000007
+   ],
+   "z": [
+    -36.64444444444446,
+    -35.64444444444446
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_stair_led17",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    40.8,
+    391.72400000000005,
+    131.3,
+    392.72400000000005
+   ],
+   "z": [
+    -19.422222222222228,
+    -18.422222222222228
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_slab_edge0",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    139.2,
+    362.4,
+    141.8,
+    609.2
+   ],
+   "z": [
+    -30,
+    0
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_slab_edge1",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    141.8,
+    609.2,
+    257.3,
+    611.9
+   ],
+   "z": [
+    -30,
+    0
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_slab_edge2",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    36.8,
+    359.8,
+    139.2,
+    362.4
+   ],
+   "z": [
+    -30,
+    0
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend0_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    182.5,
+    786.5,
+    53
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend0_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    182.5,
+    786.5
+   ],
+   "r": 0.6,
+   "z": [
+    66,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend1_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    216.6,
+    823.3,
+    21
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend1_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    216.6,
+    823.3
+   ],
+   "r": 0.6,
+   "z": [
+    34,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend2_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    190.4,
+    865.3,
+    -11
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend2_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    190.4,
+    865.3
+   ],
+   "r": 0.6,
+   "z": [
+    2,
+    280
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_art_landing",
+   "shape": "box",
+   "mat": "art_painting_wide",
+   "rect": [
+    74.8,
+    224.39999999999998,
+    221.9,
+    227.39999999999998
+   ],
+   "z": [
+    118,
+    192
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_vase",
+   "shape": "cyl",
+   "mat": "vase_dark",
+   "center": [
+    53.8,
+    242.9
+   ],
+   "r": 9,
+   "z": [
+    0,
+    70
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_plume0",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    53.8,
+    242.9,
+    68
+   ],
+   "p1": [
+    37.8,
+    236.9,
+    150
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_plume1",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    53.8,
+    242.9,
+    68
+   ],
+   "p1": [
+    64.8,
+    247.9,
+    168
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_plume2",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    53.8,
+    242.9,
+    68
+   ],
+   "p1": [
+    50.8,
+    254.9,
+    176
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_plume3",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    53.8,
+    242.9,
+    68
+   ],
+   "p1": [
+    69.8,
+    233.9,
+    142
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_land_pampas_plume4",
+   "shape": "seg",
+   "mat": "pampas",
+   "p0": [
+    53.8,
+    242.9,
+    68
+   ],
+   "p1": [
+    54.8,
+    240.9,
+    182
+   ],
+   "normal": "z",
+   "w": 7,
+   "t": 7,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_gf_floor",
+   "shape": "box",
+   "mat": "marble_brown_floor",
+   "rect": [
+    36.8,
+    362.4,
+    442.5,
+    962.4
+   ],
+   "z": [
+    -312,
+    -310
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_gf_gkpl",
+   "shape": "box",
+   "mat": "walnut_fluted",
+   "rect": [
+    257.3,
+    703.8,
+    326.9,
+    810.1
+   ],
+   "z": [
+    -310,
+    -30
+   ],
+   "kind": "decor",
+   "emissive": false
+  }
+ ],
+ "extra_ceilings": [
+  {
+   "id": "CEIL_void_stair",
+   "rect": [
+    36.8,
+    362.4,
+    141.8,
+    962.4
+   ],
+   "z": 280,
+   "mat": "plaster_warm_white"
+  },
+  {
+   "id": "CEIL_void_entr",
+   "rect": [
+    141.8,
+    609.2,
+    257.3,
+    962.4
+   ],
+   "z": 280,
+   "mat": "plaster_warm_white"
+  }
+ ],
+ "site": [
+  {
+   "id": "EXT_lawn",
+   "mat": "lawn",
+   "rect": [
+    -900,
+    -900,
+    2900,
+    2900
+   ],
+   "z": [
+    -326,
+    -325
+   ]
+  },
+  {
+   "id": "EXT_terrace_sw",
+   "mat": "terrace_stone",
+   "rect": [
+    -122.1,
+    1001.8,
+    634.2,
+    1235.5
+   ],
+   "z": [
+    -325,
+    -312
+   ]
+  },
+  {
+   "id": "EXT_terrace_s",
+   "mat": "terrace_stone",
+   "rect": [
+    634.2,
+    1005.8,
+    1138.4,
+    1156.8
+   ],
+   "z": [
+    -325,
+    -312
+   ]
+  },
+  {
+   "id": "EXT_terrace_e",
+   "mat": "terrace_stone",
+   "rect": [
+    1138.4,
+    363.7,
+    1285.4,
+    1156.8
+   ],
+   "z": [
+    -325,
+    -312
+   ]
+  },
+  {
+   "id": "EXT_terrace_ne",
+   "mat": "terrace_stone",
+   "rect": [
+    904.7,
+    0.0,
+    1046.5,
+    363.7
+   ],
+   "z": [
+    -325,
+    -312
+   ]
+  },
+  {
+   "id": "EXT_planter0",
+   "mat": "stone_pot",
+   "rect": [
+    18.4,
+    1156.8,
+    274.4,
+    1235.5
+   ],
+   "z": [
+    -312,
+    -265
+   ]
+  },
+  {
+   "id": "EXT_planter0_green",
+   "mat": "hedge",
+   "rect": [
+    24.9,
+    1162.0,
+    267.9,
+    1230.3
+   ],
+   "z": [
+    -265,
+    -220
+   ]
+  },
+  {
+   "id": "EXT_hedge_s",
+   "mat": "hedge",
+   "rect": [
+    -300,
+    2500,
+    2700,
+    2560
+   ],
+   "z": [
+    -325,
+    -200
+   ]
+  },
+  {
+   "id": "EXT_hedge_e",
+   "mat": "hedge",
+   "rect": [
+    2400,
+    -300,
+    2460,
+    2560
+   ],
+   "z": [
+    -325,
+    -200
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk0",
+   "mat": "olive_trunk",
+   "cyl": [
+    900,
+    1750,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown0",
+   "mat": "olive_foliage",
+   "sphere": [
+    900,
+    1750,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk1",
+   "mat": "olive_trunk",
+   "cyl": [
+    1450,
+    1950,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown1",
+   "mat": "olive_foliage",
+   "sphere": [
+    1450,
+    1950,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk2",
+   "mat": "olive_trunk",
+   "cyl": [
+    2000,
+    1650,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown2",
+   "mat": "olive_foliage",
+   "sphere": [
+    2000,
+    1650,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk3",
+   "mat": "olive_trunk",
+   "cyl": [
+    2150,
+    1000,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown3",
+   "mat": "olive_foliage",
+   "sphere": [
+    2150,
+    1000,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk4",
+   "mat": "olive_trunk",
+   "cyl": [
+    2100,
+    400,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown4",
+   "mat": "olive_foliage",
+   "sphere": [
+    2100,
+    400,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk5",
+   "mat": "olive_trunk",
+   "cyl": [
+    400,
+    1900,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown5",
+   "mat": "olive_foliage",
+   "sphere": [
+    400,
+    1900,
+    -40,
+    115
+   ]
+  },
+  {
+   "id": "EXT_tree_trunk6",
+   "mat": "olive_trunk",
+   "cyl": [
+    1700,
+    300,
+    9
+   ],
+   "z": [
+    -325,
+    -130
+   ]
+  },
+  {
+   "id": "EXT_tree_crown6",
+   "mat": "olive_foliage",
+   "sphere": [
+    1700,
+    300,
+    -40,
+    115
+   ]
+  }
+ ]
+}

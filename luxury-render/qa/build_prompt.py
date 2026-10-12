@@ -129,7 +129,7 @@ def main(plan_dir, cam_full):
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     hero = None if (cam.get("relight_from") or cam.get("style_from")) else hero_for(cam_full, plan_dir)
     mood = None if (cam.get("relight_from") or cam.get("style_from")) else mood_for(cam_full, plan_dir)
-    upper = cam["room"].startswith(("U_", "S_", "P_", "B_", "G_"))
+    upper = cam["room"].startswith(("U_", "S_", "P_", "B_", "G_", "F_"))
     cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
     style_ref = (cfg.get("heroes", {}).get(cam.get("space")) == cam_full and cam.get("space") in cfg.get("style_refs", {}))
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""

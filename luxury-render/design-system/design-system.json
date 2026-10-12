@@ -699,6 +699,61 @@
     "add": "",
     "light": "moody and warm: soft ambient glow from the ceiling cove, the backlit mirror, under the vanity and the shower niche; a little golden-hour daylight from the small window; dark and intimate, never gloomy"
    }
+  },
+  "F_R_bed1": {
+   "style": "bed_travertine",
+   "mood_refs": [],
+   "concept": "Bedroom 1 (new design, same warm vibe): smoked-oak herringbone floor, warm sand limewash walls, a floor-to-ceiling honed travertine bed wall washed by a ceiling slot, a wide cognac leather channel headboard, smoked-glass globe pendants, a large abstract painting over the bed, walnut nightstands, ivory rug, walnut reeded-glass wardrobes, walnut TV wall with a floating console, an olive tree, light ceiling.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the travertine wall glowing in the soft wall-wash, the globe pendants on low"
+   }
+  },
+  "F_R_bed2": {
+   "style": "bed_olive",
+   "mood_refs": [],
+   "concept": "Bedroom 2 (new design, same warm vibe): smoked-oak herringbone floor, soft greige limewash walls, an olive-green velvet channel headboard wall with a walnut picture ledge and a pair of abstract paintings, alabaster pendants, black nightstands, sand rug, walnut reeded-glass entry wardrobe, an olive tree, light ceiling, glazed door to a steel balcony.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the alabaster pendants and the wall-wash slot glowing softly"
+   }
+  },
+  "F_R_hall": {
+   "style": "hall_upper",
+   "mood_refs": [],
+   "concept": "Landing + gallery: smoked-oak herringbone, warm white walls and ceiling, frameless glass balustrades over the open walnut stair and the double-height entrance, a monumental abstract painting on the double-height wall, three smoked-glass globe pendants dropping into the entrance, pampas.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, warm daylight from the tall entrance glazing"
+   }
+  },
+  "F_R_bath1": {
+   "style": "bath_slate",
+   "mood_refs": [],
+   "concept": "Bath 1, 70 % dark (client refs): riven dark slate walls, dark stone floor, dark ceiling with a perimeter cove; light details in warm travertine - vessel basin, lit shower niche, WC ledge top; floating dark stone vanity with a walnut shelf and LED glow, round mirror in a warm LED ring, clear glass shower.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft ambient glow from the ceiling cove, the LED ring, under the vanity and the niche; a little golden-hour daylight from the small high window; dark and intimate, never gloomy"
+   }
+  },
+  "F_R_bath2": {
+   "style": "bath_chevron",
+   "mood_refs": [],
+   "concept": "Bath 2, 70 % dark (client refs): dark charcoal chevron stone walls, dark stone floor, dark ceiling with a perimeter cove; light details: a floating white-grey Carrara marble sink slab and a lit niche; walnut drawer, bronze-framed mirror with a vertical LED bar, clear glass shower with a black shower column; no window.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft ambient glow from the ceiling cove, the LED bar, under the vanity and the niche; dark and intimate, never gloomy"
+   }
   }
  },
  "guide_color_legend": {
@@ -1463,6 +1518,82 @@
   "stone_nero_floor": {
    "tint": "#2F2B28",
    "text": "large-format honed dark charcoal stone floor"
+  },
+  "oak_herringbone_smoked": {
+   "tint": "#7A5A40",
+   "text": "smoked oak herringbone parquet floor, warm mid-brown, matte oil, fine grain"
+  },
+  "plaster_limewash_sand": {
+   "tint": "#BFA88C",
+   "text": "warm sand limewash plaster walls with a soft cloudy hand-trowelled texture, matte"
+  },
+  "plaster_limewash_greige": {
+   "tint": "#BFB3A4",
+   "text": "soft warm greige limewash plaster walls with a gentle cloudy hand-trowelled texture, matte"
+  },
+  "travertine_wall": {
+   "tint": "#E6D7BD",
+   "text": "floor-to-ceiling honed warm travertine slabs, soft cream-beige with natural horizontal veining, large book-matched panels"
+  },
+  "headboard_cognac_channel": {
+   "tint": "#8A5232",
+   "text": "wide wall-mounted headboard panel in cognac leather with vertical channel stitching and a thin bronze edge"
+  },
+  "art_painting_bed1": {
+   "tint": "#A87C55",
+   "text": "large contemporary abstract painting on canvas - warm cognac, cream, umber and soft gold accents - in a thin bronze float frame"
+  },
+  "rug_ivory": {
+   "tint": "#E6DED0",
+   "text": "hand-knotted ivory wool rug with a soft high-low texture"
+  },
+  "velvet_olive_channel": {
+   "tint": "#5B5F3A",
+   "text": "upholstered wall panel in deep olive-green velvet with soft horizontal channels"
+  },
+  "art_painting_pair": {
+   "tint": "#9C8A63",
+   "text": "contemporary abstract painting on canvas, one of a matching pair - olive, sand, terracotta and cream textured brush strokes - in a thin walnut float frame"
+  },
+  "pendant_alabaster": {
+   "tint": "#EFE3CF",
+   "text": "cylindrical alabaster pendant lamp with a soft warm glow, on a thin bronze cable"
+  },
+  "art_painting_wide": {
+   "tint": "#B49574",
+   "text": "wide contemporary abstract painting on canvas - layered sand, ochre, rust and soft black horizontal washes - in a thin walnut float frame"
+  },
+  "art_painting_monumental": {
+   "tint": "#A7714A",
+   "text": "monumental vertical abstract painting on canvas - sweeping warm ochre, rust, sand and charcoal brush strokes - in a thin walnut float frame"
+  },
+  "steel_grating": {
+   "tint": "#2A2A2A",
+   "text": "black steel grating balcony deck (80x50 mesh) in a slim black steel frame"
+  },
+  "niche_trav": {
+   "tint": "#CDB592",
+   "text": "recessed wall niche lined in warm honed travertine, lit by warm LED, a few amber and black bottles"
+  },
+  "travertine_top": {
+   "tint": "#D2BE9E",
+   "text": "honed warm travertine ledge top"
+  },
+  "basin_travertine": {
+   "tint": "#D6C3A3",
+   "text": "round honed travertine vessel basin with a black wall-mounted tap"
+  },
+  "wardrobe_walnut_reeded": {
+   "tint": "#5E432F",
+   "text": "full-height smoked walnut wardrobe with reeded bronze-glass door panels, a faint warm interior glow, slim bronze pulls"
+  },
+  "walnut_bed_frame": {
+   "tint": "#5A3E2B",
+   "text": "low floating smoked walnut bed frame"
+  },
+  "marble_sink_slab": {
+   "tint": "#DCDAD6",
+   "text": "floating slab of honed white-grey Carrara marble with an integrated sloped sink and a black wall tap"
   }
  },
  "style_materials": {
@@ -1512,9 +1643,9 @@
    "ceiling": "plaster_cove_white"
   },
   "bath_slate": {
-   "floor": "marble_grey_floor",
+   "floor": "stone_nero_floor",
    "wall": "slate_rough",
-   "ceiling": "ceiling_black"
+   "ceiling": "ceiling_dark"
   },
   "bath_taupe": {
    "floor": "stone_cream_floor",
@@ -1594,6 +1725,26 @@
   "bath_dark": {
    "floor": "stone_nero_floor",
    "wall": "marble_nero_veined",
+   "ceiling": "ceiling_dark"
+  },
+  "bed_travertine": {
+   "floor": "oak_herringbone_smoked",
+   "wall": "plaster_limewash_sand",
+   "ceiling": "plaster_warm_white"
+  },
+  "bed_olive": {
+   "floor": "oak_herringbone_smoked",
+   "wall": "plaster_limewash_greige",
+   "ceiling": "plaster_warm_white"
+  },
+  "hall_upper": {
+   "floor": "oak_herringbone_smoked",
+   "wall": "plaster_warm_white",
+   "ceiling": "plaster_warm_white"
+  },
+  "bath_chevron": {
+   "floor": "stone_nero_floor",
+   "wall": "stone_chevron_dark",
    "ceiling": "ceiling_dark"
   }
  },
@@ -1776,6 +1927,31 @@
   "G_F_chair_s1": "leather_brown_chair",
   "G_F_stool2": "stool_black_shell",
   "G_F_chair_n2": "leather_brown_chair",
-  "G_F_chair_s2": "leather_brown_chair"
+  "G_F_chair_s2": "leather_brown_chair",
+  "F_F_shower1": "stone_nero_floor",
+  "F_F_wc1": "toilet_white",
+  "F_F_vanity1": "vanity_stone",
+  "F_F_wr1": "wardrobe_walnut_reeded",
+  "F_F_wr2": "wardrobe_walnut_reeded",
+  "F_F_wr3": "wardrobe_walnut_reeded",
+  "F_F_bed1_base": "walnut_bed_frame",
+  "F_F_bed1_head": "headboard_cognac_channel",
+  "F_F_bed1_linen": "bed_linen",
+  "F_F_bed1_pillow": "pillow_grey",
+  "F_F_bed1_throw": "throw_chevron",
+  "F_F_ns1": "walnut_console",
+  "F_F_ns2": "walnut_console",
+  "F_F_tv1": "tv_black",
+  "F_F_bed2_base": "bed_upholstered_sand",
+  "F_F_bed2_head": "velvet_olive_channel",
+  "F_F_bed2_linen": "bedding_olive",
+  "F_F_bed2_pillow": "pillow_grey",
+  "F_F_bed2_throw": "throw_black_knit",
+  "F_F_ns3": "nightstand_black",
+  "F_F_ns4": "nightstand_black",
+  "F_F_vanity2": "marble_sink_slab",
+  "F_F_shower2": "stone_nero_floor",
+  "F_F_wc2": "toilet_white",
+  "W_bath1_s2": "plaster_limewash_sand"
  }
 }

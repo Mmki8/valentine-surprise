@@ -1,0 +1,72 @@
+{
+ "camera": "BATH1_A",
+ "room": "F_R_bath1",
+ "hero": null,
+ "mood": "refs/mood/mood_bath_dark_ring.jpg",
+ "materials": [
+  "slate_rough",
+  "plaster_limewash_sand",
+  "mirror_round",
+  "ceiling_dark",
+  "vanity_stone",
+  "basin_travertine",
+  "stone_nero_floor",
+  "toilet_white",
+  "niche_trav",
+  "ring_led",
+  "bronze_frame",
+  "black_metal",
+  "led_line",
+  "travertine_top",
+  "plaster_greige"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bath1_win",
+   "name": "window",
+   "where": "centre",
+   "share": 0.006,
+   "note": "bath 1 high window (north)"
+  }
+ ],
+ "furniture_counts": {
+  "vanity": 1,
+  "shower": 1,
+  "toilet": 1
+ },
+ "items": [
+  {
+   "id": "F_F_vanity1",
+   "name": "floating vanity",
+   "where": "right",
+   "share": 0.032,
+   "note": "floating vanity with basin"
+  },
+  {
+   "id": "F_F_shower1",
+   "name": "walk-in shower",
+   "where": "centre",
+   "share": 0.022,
+   "note": "walk-in shower, glass at x 472"
+  },
+  {
+   "id": "F_F_wc1",
+   "name": "wall-hung toilet",
+   "where": "centre",
+   "share": 0.014,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

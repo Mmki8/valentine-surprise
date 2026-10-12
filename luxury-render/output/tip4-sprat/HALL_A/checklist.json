@@ -1,0 +1,58 @@
+{
+ "camera": "HALL_A",
+ "room": "F_R_hall",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_warm_white",
+  "walnut_door",
+  "plaster_greige",
+  "oak_herringbone_smoked",
+  "art_painting_monumental",
+  "walnut_battens",
+  "bronze_frame",
+  "plaster_limewash_greige",
+  "marble_brown_floor",
+  "pendant_glass",
+  "walnut_fluted",
+  "cable_black",
+  "steel_grating"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bed2_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.09,
+   "note": "gallery -> bedroom 2"
+  },
+  {
+   "id": "O_front_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.009,
+   "note": "front door (ground floor, seen through the open entrance)"
+  },
+  {
+   "id": "O_entr_glz",
+   "name": "window",
+   "where": "centre",
+   "share": 0.003,
+   "note": "tall glazing over the front door, lights the double-height entrance"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}
