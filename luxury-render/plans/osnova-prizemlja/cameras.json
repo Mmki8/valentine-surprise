@@ -452,16 +452,16 @@
    "space": "fp3d",
    "title": "3D floor plan - ground floor, from the south",
    "pos": [
-    760,
-    2301.7,
-    2883.4
+    762,
+    2668.1,
+    6657.4
    ],
    "look": [
-    760,
-    500,
+    762,
+    505,
     0
    ],
-   "hfov": 36,
+   "hfov": 17.5,
    "shift_y": 0,
    "variants": [
     {
@@ -472,7 +472,9 @@
       "car": true
      }
     }
-   ]
+   ],
+   "near": 4000,
+   "far": 12000
   }
  ],
  "heroes": {

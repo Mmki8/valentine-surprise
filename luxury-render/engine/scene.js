@@ -416,7 +416,7 @@ export function pointInPoly([x, y], poly) {
 // Two-point perspective: camera stays level (verticals stay vertical, like a
 // real arch-viz shift lens); framing up/down is done with lens shift.
 export function makeCamera(c, W, H) {
-  const cam = new THREE.PerspectiveCamera(10, W / H, 5, 8000);
+  const cam = new THREE.PerspectiveCamera(10, W / H, c.near || 5, c.far || 8000);   // far 3D-floor-plan cameras set near/far for depth precision
   const [px, py, pz] = c.pos, [tx, ty] = c.look;
   cam.position.set(px, pz, py);
   cam.up.set(0, 1, 0);
