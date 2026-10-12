@@ -10,15 +10,15 @@
   "art_painting_pair",
   "olive_foliage",
   "sheer_linen",
-  "bedding_olive",
-  "stone_pot",
   "bronze_frame",
-  "pillow_grey",
-  "oak_herringbone_smoked",
-  "throw_black_knit",
+  "stone_pot",
+  "bedding_olive",
   "steel_grating",
+  "pillow_grey",
   "walnut_shelf",
+  "oak_herringbone_smoked",
   "olive_trunk",
+  "throw_black_knit",
   "nightstand_black",
   "pendant_alabaster",
   "led_line",
@@ -30,7 +30,7 @@
    "id": "O_bed2_glz",
    "name": "glazed double door (closed)",
    "where": "centre",
-   "share": 0.015,
+   "share": 0.019,
    "note": "OG.2: bedroom 2 south, fixed glass + glazed door to the balcony"
   }
  ],
@@ -43,14 +43,14 @@
    "id": "F_F_bed2",
    "name": "bed",
    "where": "centre",
-   "share": 0.029,
+   "share": 0.016,
    "note": "double bed, headboard on the east wall"
   },
   {
    "id": "F_F_ns4",
    "name": "nightstand",
-   "where": "centre",
-   "share": 0.003,
+   "where": "left",
+   "share": 0.005,
    "note": null
   }
  ],
