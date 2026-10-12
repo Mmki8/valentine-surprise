@@ -7,30 +7,30 @@
   "plaster_greige",
   "walnut_fluted",
   "art_painting_monumental",
-  "bronze_frame",
-  "plaster_warm_white",
-  "marble_brown_floor",
-  "sofa_boucle_ivory",
-  "boucle_ivory",
-  "marble_grey_brown",
+  "chandelier_crystal",
   "fig_foliage",
-  "stair_walnut",
   "oak_planks_light",
+  "plaster_warm_white",
+  "marble_grey_brown",
+  "stair_walnut",
   "wardrobe_walnut_reeded",
+  "bronze_frame",
   "oak_black_tall",
-  "cushion_charcoal",
-  "cushion_cognac",
+  "art_stair_series",
+  "boucle_ivory",
   "sheer_linen",
-  "stone_pot",
-  "walnut_door",
-  "cable_black",
-  "olive_trunk",
-  "led_line",
-  "olive_foliage",
+  "marble_brown_floor",
   "leather_brown_chair",
-  "oak_black_cabinet",
+  "cushion_cognac",
+  "cushion_charcoal",
+  "walnut_door",
+  "olive_trunk",
+  "cable_black",
+  "led_line",
+  "stone_pot",
   "pendant_bronze",
   "pampas",
+  "oak_black_cabinet",
   "pendant_black_linear"
  ],
  "car": null,
@@ -39,7 +39,7 @@
    "id": "O_liv_s_glz",
    "name": "floor-to-ceiling glass facade",
    "where": "left",
-   "share": 0.04,
+   "share": 0.019,
    "note": "living south: high glazing"
   },
   {
@@ -51,25 +51,24 @@
   }
  ],
  "furniture_counts": {
-  "sofa": 1,
   "tall_cabinet": 2,
   "island_x": 1,
   "table_r": 1
  },
  "items": [
   {
-   "id": "T_F_sofa",
-   "name": "straight 3-seat sofa",
-   "where": "centre",
-   "share": 0.033,
-   "note": "3-seat sofa facing east"
-  },
-  {
    "id": "T_F_hall_wr",
    "name": "full-height cabinet column",
    "where": "centre",
-   "share": 0.017,
+   "share": 0.023,
    "note": "hall wardrobe, 4 bays"
+  },
+  {
+   "id": "T_F_k_tall",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.019,
+   "note": "tall units + fridge (*)"
   },
   {
    "id": "T_F_island",
@@ -79,24 +78,17 @@
    "note": "island, cooktop at the south end"
   },
   {
-   "id": "T_F_k_tall",
-   "name": "full-height cabinet column",
-   "where": "centre",
-   "share": 0.013,
-   "note": "tall units + fridge (*)"
-  },
-  {
    "id": "T_F_table",
    "name": "dining table for 6",
    "where": "centre",
-   "share": 0.004,
+   "share": 0.003,
    "note": "dining table for 6"
   },
   {
    "id": "staircase",
    "name": "staircase",
    "where": "right",
-   "share": 0.002
+   "share": 0.003
   }
  ],
  "manual_checks": [

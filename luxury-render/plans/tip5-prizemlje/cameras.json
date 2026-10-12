@@ -59,15 +59,15 @@
    "title": "Living - frontal west view across sofa and dining to the painting and the kitchen",
    "pos": [
     1639.9,
-    786.5,
+    757.6,
     150
    ],
    "look": [
     221.9,
-    786.5
+    757.6
    ],
-   "hfov": 88,
-   "shift_y": 0.15,
+   "hfov": 78,
+   "shift_y": 0.24,
    "notes": "Frontal west view. The tall wall above the kitchen (from 2.8 m up to 5.6 m) carries one monumental abstract painting; below it the kitchen opens under its lower pale-oak ceiling. The living + dining ceiling is completely FLAT and horizontal at 5.60 m - a plain warm-white plaster plane; every wall and the glass meet it in a crisp straight 90-degree corner. Never sloped, pitched, vaulted, angled or stepped. On the right the full-height glass to the south terrace. Through the glass: golden-hour garden - a warm stone terrace, lawn, a clipped hedge, olive trees, soft hills under a warm golden sky; low sun streaming in."
   },
   {
@@ -182,19 +182,19 @@
    "id": "SPA_A",
    "room": "T_R_spa",
    "space": "spa",
-   "title": "Spa - from the south-west toward the jacuzzi and the garden glass",
+   "title": "Spa - frontal north view: shower, plant, moss wall, jacuzzi, garden glass",
    "pos": [
-    1187.0,
-    366.3,
+    1383.9,
+    374.2,
     150
    ],
    "look": [
-    1531.0,
-    88.0
+    1383.9,
+    -109.0
    ],
    "hfov": 90,
    "shift_y": 0.04,
-   "notes": "Dark wellness room: basalt walls, dark stone floor, dark smoked-walnut slat ceiling with a circular warm cove above the round basalt jacuzzi; the walk-in shower behind clear glass on the left; floor-to-ceiling sliding glass on the right letting golden-hour sun in, an olive tree in a stone pot by the glass."
+   "notes": "Frontal north view of the spa exactly as in the plan: the walk-in shower behind its clear glass screen in the back-LEFT corner, a tall bird-of-paradise plant in a stone planter next to it, a living moss wall behind the round basalt jacuzzi, the floor-to-ceiling sliding glass to the garden on the right. Dark basalt walls, dark stone floor, dark smoked-walnut slat ceiling with a circular warm cove above the jacuzzi."
   },
   {
    "id": "SPA_B",
@@ -202,17 +202,17 @@
    "space": "spa",
    "title": "Spa - from the garden glass toward the sauna and shower",
    "pos": [
-    1498.1,
-    304.6,
+    1485.0,
+    324.3,
     150
    ],
    "look": [
     1009.7,
-    153.6
+    212.7
    ],
    "hfov": 90,
    "shift_y": 0.04,
-   "notes": "Dark wellness room: the round basalt jacuzzi in front, behind it the walk-in shower behind clear glass and the sauna with its bronze-glass front glowing amber inside; golden-hour sun from behind the camera lays warm patches on the floor."
+   "notes": "The sauna is a LARGE walk-in walnut room (1.5 m wide, 2.2 m deep): its front is a smoked-walnut panel plus a bronze-glass wall with a glass door, and its side has a bronze-glass panel; through the glass the dark thermo-walnut interior with two long bench levels runs deep back. The walk-in shower behind clear glass to its right, the round basalt jacuzzi in front right. Two calm abstract paintings hang on the long basalt wall on the left."
   },
   {
    "id": "GAR_A",

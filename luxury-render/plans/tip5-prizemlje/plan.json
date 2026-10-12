@@ -3909,6 +3909,170 @@
    "emissive": false
   },
   {
+   "id": "D_art_stair0",
+   "shape": "box",
+   "mat": "art_stair_series",
+   "rect": [
+    1532,
+    416.3,
+    1628,
+    419.3
+   ],
+   "z": [
+    78,
+    202
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_stair1",
+   "shape": "box",
+   "mat": "art_stair_series",
+   "rect": [
+    1412,
+    416.3,
+    1508,
+    419.3
+   ],
+   "z": [
+    108.57740389423563,
+    232.57740389423563
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_stair2",
+   "shape": "box",
+   "mat": "art_stair_series",
+   "rect": [
+    1292,
+    416.3,
+    1388,
+    419.3
+   ],
+   "z": [
+    180.12301999430719,
+    304.1230199943072
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_stair3",
+   "shape": "box",
+   "mat": "art_stair_series",
+   "rect": [
+    1172,
+    416.3,
+    1268,
+    419.3
+   ],
+   "z": [
+    251.6686360943787,
+    375.6686360943787
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_t0",
+   "shape": "cyl",
+   "mat": "chandelier_crystal",
+   "center": [
+    1206.6,
+    626.3
+   ],
+   "r": 75,
+   "z": [
+    300,
+    322
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_t1",
+   "shape": "cyl",
+   "mat": "chandelier_crystal",
+   "center": [
+    1206.6,
+    626.3
+   ],
+   "r": 58,
+   "z": [
+    342,
+    362
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_t2",
+   "shape": "cyl",
+   "mat": "chandelier_crystal",
+   "center": [
+    1206.6,
+    626.3
+   ],
+   "r": 42,
+   "z": [
+    382,
+    400
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_c0",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1206.6,
+    656.3
+   ],
+   "r": 0.6,
+   "z": [
+    400,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_c1",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1180.6192378864669,
+    611.3
+   ],
+   "r": 0.6,
+   "z": [
+    400,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_chand_c2",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    1232.580762113533,
+    611.3
+   ],
+   "r": 0.6,
+   "z": [
+    400,
+    560
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
    "id": "D_art_mono",
    "shape": "box",
    "mat": "art_painting_monumental",
@@ -4758,6 +4922,743 @@
     560
    ],
    "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_d_base",
+   "shape": "box",
+   "mat": "marble_grey_brown",
+   "rect": [
+    1049.1,
+    737.9,
+    1081.9,
+    846.9
+   ],
+   "z": [
+    0,
+    72
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1014.4697294022991,
+    756.2200886599267,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    752.8452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    752.8452440396716,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    745.2666077647004,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    745.2666077647004,
+    63.0
+   ],
+   "p1": [
+    995.3,
+    735.3,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    995.3,
+    735.3,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    725.3333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    725.3333922352995,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    717.7547559603283,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw0_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    717.7547559603283,
+    63.0
+   ],
+   "p1": [
+    1014.4697294022991,
+    714.3799113400732,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1117.8302705977007,
+    714.3799113400732,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    717.7547559603283,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    717.7547559603283,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    725.3333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    725.3333922352995,
+    63.0
+   ],
+   "p1": [
+    1137.0,
+    735.3,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1137.0,
+    735.3,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    745.2666077647004,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    745.2666077647004,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    752.8452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che0_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    752.8452440396716,
+    63.0
+   ],
+   "p1": [
+    1117.8302705977007,
+    756.2200886599267,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1014.4697294022991,
+    811.3200886599267,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    807.9452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    807.9452440396716,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    800.3666077647005,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    800.3666077647005,
+    63.0
+   ],
+   "p1": [
+    995.3,
+    790.4,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    995.3,
+    790.4,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    780.4333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    780.4333922352995,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    772.8547559603284,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw1_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    772.8547559603284,
+    63.0
+   ],
+   "p1": [
+    1014.4697294022991,
+    769.4799113400733,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1117.8302705977007,
+    769.4799113400733,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    772.8547559603282,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    772.8547559603282,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    780.4333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    780.4333922352995,
+    63.0
+   ],
+   "p1": [
+    1137.0,
+    790.4,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1137.0,
+    790.4,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    800.3666077647005,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    800.3666077647005,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    807.9452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che1_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    807.9452440396716,
+    63.0
+   ],
+   "p1": [
+    1117.8302705977007,
+    811.3200886599267,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1014.4697294022991,
+    867.8200886599267,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    864.4452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    864.4452440396716,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    856.8666077647005,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    856.8666077647005,
+    63.0
+   ],
+   "p1": [
+    995.3,
+    846.9,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    995.3,
+    846.9,
+    63.0
+   ],
+   "p1": [
+    997.8157707852176,
+    836.9333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    997.8157707852176,
+    836.9333922352995,
+    63.0
+   ],
+   "p1": [
+    1004.760311460513,
+    829.3547559603284,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_chw2_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1004.760311460513,
+    829.3547559603284,
+    63.0
+   ],
+   "p1": [
+    1014.4697294022991,
+    825.9799113400733,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back0",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1117.8302705977007,
+    825.9799113400733,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    829.3547559603282,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back1",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    829.3547559603282,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    836.9333922352995,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back2",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    836.9333922352995,
+    63.0
+   ],
+   "p1": [
+    1137.0,
+    846.9,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back3",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1137.0,
+    846.9,
+    63.0
+   ],
+   "p1": [
+    1134.4842292147823,
+    856.8666077647005,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back4",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1134.4842292147823,
+    856.8666077647005,
+    63.0
+   ],
+   "p1": [
+    1127.5396885394869,
+    864.4452440396716,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_che2_back5",
+   "shape": "seg",
+   "mat": "leather_brown_chair",
+   "p0": [
+    1127.5396885394869,
+    864.4452440396716,
+    63.0
+   ],
+   "p1": [
+    1117.8302705977007,
+    867.8200886599267,
+    63.0
+   ],
+   "normal": "z",
+   "w": 5,
+   "t": 34,
+   "kind": "decor",
    "emissive": false
   },
   {
@@ -5786,6 +6687,23 @@
    "emissive": true
   },
   {
+   "id": "D_ba_bar2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    990.2,
+    214.0,
+    992.6,
+    216.6
+   ],
+   "z": [
+    108,
+    190
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
    "id": "D_ba_vanity_led",
    "shape": "box",
    "mat": "led_line",
@@ -6022,6 +6940,23 @@
    "shape": "box",
    "mat": "walnut_panel",
    "rect": [
+    1003.1,
+    271.8,
+    1163.3,
+    274.2
+   ],
+   "z": [
+    215,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_sauna_head",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
     1075.3,
     261.3,
     1163.3,
@@ -6030,6 +6965,40 @@
    "z": [
     215,
     280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_sauna_east_clad",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    1163.3,
+    136.6,
+    1165.7,
+    189.1
+   ],
+   "z": [
+    0,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_sauna_front",
+   "shape": "box",
+   "mat": "walnut_panel",
+   "rect": [
+    1003.1,
+    271.8,
+    1075.3,
+    274.2
+   ],
+   "z": [
+    0,
+    215
    ],
    "kind": "panel",
    "emissive": false
@@ -6151,48 +7120,116 @@
    "emissive": false
   },
   {
-   "id": "D_spa_olive_pot",
+   "id": "D_spa_plant_pot",
    "shape": "cyl",
    "mat": "stone_pot",
    "center": [
-    1506.0,
-    361.1
+    1498.1,
+    69.6
    ],
    "r": 22,
    "z": [
     0,
-    55
+    50
    ],
    "kind": "decor",
    "emissive": false
   },
   {
-   "id": "D_spa_olive_trunk",
+   "id": "D_spa_plant_trunk",
    "shape": "cyl",
    "mat": "olive_trunk",
    "center": [
-    1506.0,
-    361.1
+    1498.1,
+    69.6
    ],
    "r": 5,
    "z": [
-    55,
-    165
+    50,
+    135
    ],
    "kind": "decor",
    "emissive": false
   },
   {
-   "id": "D_spa_olive_crown",
+   "id": "D_spa_plant_crown",
    "shape": "sphere",
-   "mat": "olive_foliage",
+   "mat": "strelitzia_foliage",
    "center": [
-    1506.0,
-    361.1,
-    200.0
+    1498.1,
+    69.6,
+    173.5
    ],
-   "r": 50,
+   "r": 55,
    "kind": "decor"
+  },
+  {
+   "id": "D_spa_moss",
+   "shape": "box",
+   "mat": "moss_wall",
+   "rect": [
+    1274.9,
+    38.1,
+    1462.7,
+    41.1
+   ],
+   "z": [
+    45,
+    245
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_spa_moss_led",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    1274.9,
+    38.1,
+    1462.7,
+    41.6
+   ],
+   "z": [
+    245,
+    246.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_art_spa0",
+   "shape": "box",
+   "mat": "art_spa_pair",
+   "rect": [
+    1088.5,
+    381.8,
+    1193.5,
+    384.8
+   ],
+   "z": [
+    115,
+    205
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_spa1",
+   "shape": "box",
+   "mat": "art_spa_pair",
+   "rect": [
+    1219.8,
+    381.8,
+    1324.8,
+    384.8
+   ],
+   "z": [
+    115,
+    205
+   ],
+   "kind": "art",
+   "emissive": false
   },
   {
    "id": "D_g_slats",

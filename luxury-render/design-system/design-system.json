@@ -1757,6 +1757,22 @@
   "armchair_boucle_curved": {
    "tint": "#DCCFBD",
    "text": "curved ivory boucle lounge armchair with a wraparound back"
+  },
+  "art_stair_series": {
+   "tint": "#C98A4E",
+   "text": "series of four matching abstract paintings on canvas - warm sand, ochre, terracotta and cream gestural strokes - in slim brushed-brass float frames"
+  },
+  "chandelier_crystal": {
+   "tint": "#F3E6C8",
+   "text": "monumental three-tier ring chandelier: three stacked rings of brushed champagne-bronze, each hung with hundreds of slim crystal rods, glowing warm"
+  },
+  "strelitzia_foliage": {
+   "tint": "#3F6B3A",
+   "text": "tall bird-of-paradise plant (Strelitzia nicolai) with large glossy paddle leaves"
+  },
+  "art_spa_pair": {
+   "tint": "#B9A58C",
+   "text": "pair of calm abstract paintings - soft sand, warm grey and ochre washes - in thin black float frames"
   }
  },
  "style_materials": {

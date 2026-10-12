@@ -6,13 +6,16 @@
  "materials": [
   "walnut_fluted",
   "plaster_greige",
+  "art_stair_series",
   "marble_brown_floor",
-  "plaster_warm_white",
+  "chandelier_crystal",
   "walnut_panel",
+  "plaster_warm_white",
   "oak_planks_light",
-  "marble_grey_brown",
   "tv_black",
   "art_painting_monumental",
+  "marble_grey_brown",
+  "leather_brown_chair",
   "stair_walnut",
   "walnut_console",
   "sheer_linen",
@@ -22,11 +25,10 @@
   "pendant_bronze",
   "bronze_frame",
   "oak_smoked_table",
-  "leather_brown_chair",
   "cable_black",
   "cushion_cognac",
-  "led_line",
   "cushion_charcoal",
+  "led_line",
   "lemons",
   "ceramic_dark",
   "olive_foliage"
@@ -52,9 +54,8 @@
   "tv": 1,
   "table_r": 1,
   "sofa": 1,
-  "island_x": 1,
   "coffee_table": 1,
-  "chair": 1
+  "island_x": 1
  },
  "items": [
   {
@@ -68,7 +69,7 @@
    "id": "T_F_table",
    "name": "dining table for 6",
    "where": "left",
-   "share": 0.015,
+   "share": 0.014,
    "note": "dining table for 6"
   },
   {
@@ -79,13 +80,6 @@
    "note": "3-seat sofa facing east"
   },
   {
-   "id": "T_F_island",
-   "name": "kitchen island",
-   "where": "left",
-   "share": 0.004,
-   "note": "island, cooktop at the south end"
-  },
-  {
    "id": "T_F_ct1",
    "name": "coffee table",
    "where": "right",
@@ -93,11 +87,11 @@
    "note": null
   },
   {
-   "id": "T_F_chair_e0",
-   "name": "dining chair",
+   "id": "T_F_island",
+   "name": "kitchen island",
    "where": "left",
-   "share": 0.002,
-   "note": null
+   "share": 0.003,
+   "note": "island, cooktop at the south end"
   }
  ],
  "manual_checks": [

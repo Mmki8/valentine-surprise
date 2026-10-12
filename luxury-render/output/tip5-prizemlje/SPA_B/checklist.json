@@ -7,45 +7,46 @@
   "stone_basalt",
   "walnut_slats_dark",
   "glass_bronze",
+  "walnut_panel",
+  "moss_wall",
+  "art_spa_pair",
   "stone_dark_floor",
   "walnut_door",
-  "jacuzzi_dark",
   "sauna_walnut",
   "stone_nero_floor",
-  "bronze_frame",
+  "jacuzzi_dark",
   "niche_lit",
-  "walnut_panel",
-  "black_metal",
-  "led_line"
+  "bronze_frame",
+  "black_metal"
  ],
  "car": null,
  "openings": [
   {
    "id": "O_spa_door",
    "name": "door (closed)",
-   "where": "left",
-   "share": 0.036,
+   "where": "centre",
+   "share": 0.034,
    "note": "corridor -> spa"
   }
  ],
  "furniture_counts": {
-  "jacuzzi": 1,
-  "shower": 1
+  "shower": 1,
+  "jacuzzi": 1
  },
  "items": [
-  {
-   "id": "T_F_jacuzzi",
-   "name": "round jacuzzi hot tub",
-   "where": "right",
-   "share": 0.02,
-   "note": "round jacuzzi D 1.70 m"
-  },
   {
    "id": "T_F_shower",
    "name": "walk-in shower",
    "where": "right",
-   "share": 0.014,
+   "share": 0.016,
    "note": "walk-in shower"
+  },
+  {
+   "id": "T_F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "right",
+   "share": 0.006,
+   "note": "round jacuzzi D 1.70 m"
   }
  ],
  "manual_checks": [
