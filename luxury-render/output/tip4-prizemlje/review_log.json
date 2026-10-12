@@ -16,14 +16,14 @@
  "consistency": "KIT_A/KIT_B/HALL_A vs LIV_A PASS; LIV_B vs LIV_A cognac cushions dC 20.5 and BED_B vs BED_A floor/throw dL 32-35 - sun-lit vs shaded, same materials on vision -> accepted",
  "final": {
   "LIV_A": {
-   "job_id": "88d110c0-191e-4a56-be14-d7322dbdf4c8",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150043_88d110c0-191e-4a56-be14-d7322dbdf4c8.png",
-   "note": "attempt 3: structure 0.706 (text + mood refs, no render ref)"
+   "job_id": "e27e2ef6-d170-4334-822c-ca1a03045316",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_161543_e27e2ef6-d170-4334-822c-ca1a03045316.png",
+   "note": "frontal, attempt 5: structure 0.602, drift 0.052; flat ceiling, void wall + art correct, triptych on the walnut"
   },
   "LIV_B": {
-   "job_id": "6cc0b743-ef0b-40e3-899e-50e5f9d96ee5",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_150332_6cc0b743-ef0b-40e3-899e-50e5f9d96ee5.png",
-   "note": "attempt 3: structure 0.908, drift 0.055; void ceiling recall low (plain white ceiling, few edges) - vision OK"
+   "job_id": "2b4554f1-933d-40c0-aea7-a008b3788be6",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_161858_2b4554f1-933d-40c0-aea7-a008b3788be6.png",
+   "note": "glass corner, attempt 5: structure 0.956, drift 0.002 - gate PASS"
   },
   "KIT_A": {
    "job_id": "1d95bc8b-cf29-4b2e-9875-24491f543720",
@@ -51,10 +51,21 @@
    "note": "structure 0.87"
   },
   "BATH_A": {
-   "job_id": "c8a4d807-746c-4971-be72-c670d92ff8f7",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_145759_c8a4d807-746c-4971-be72-c670d92ff8f7.png",
-   "note": "structure 0.756; vanity recall only"
+   "job_id": "7e3a2ea5-e4b5-4efb-bbe3-381828ce8b21",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_161543_7e3a2ea5-e4b5-4efb-bbe3-381828ce8b21.png",
+   "note": "dark ensuite, attempt 3: structure 0.895 - gate PASS"
   }
  },
- "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/af7025dc-4cf6-4369-84f0-bcebfe0dcef7.zip"
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/244279ff-0e7f-4be4-99b0-4545d432977c.zip",
+ "revision_2": {
+  "client": "living ceiling read as angled - walls must meet it at 90 deg; paintings on the fluted walnut wall; ensuite 70 % dark with nice ambient light, the light marble only as details",
+  "diagnosis": "old LIV_A: the model drew a sloped ceiling (ceiling recall 0); old LIV_B: correct geometry but the wide two-point view without a visible corner reads as a pitched plane",
+  "fix": "living re-shot as a one-point frontal view (ceiling line horizontal) + a glass-corner view (ceiling corner visible); cove line at the ceiling removed; triptych 3 x 100 x 150 cm over the sofa; ensuite: Nero Marquina walls, dark floor + ceiling with perimeter cove, warm cream marble only on the shower back wall and vanity top",
+  "rejected": [
+   "LIV_A #4 (kitchen ceiling + void wall turned into a slope)",
+   "LIV_B #4 (olive tree dropped)",
+   "BATH_A #2 (vanity recall 0.06)"
+  ],
+  "consistency": "KIT_B PASS; LIV_B frames dL 78 (backlit by the sky), KIT_A bronze mesh dC 18 (glow), HALL_A marble sliver - light, not material -> accepted on vision"
+ }
 }

@@ -20,6 +20,7 @@ Scale **1.313 cm/px** (same sheet series as the basement, checked on the dimensi
 | G2 | Stair rises north from py 710: 17 treads / 18 risers |
 | G3 | The plan draws the TV against the east glass; it sits on a freestanding walnut media wall just in front of it (a TV cannot hang on glass) |
 | G4 | South double door + front door modelled as drawn; the GKPL box is clad in fluted walnut |
+| G6 | Revision 2: triptych (3 x 100 x 150 cm) centred over the sofa on the fluted walnut wall; ensuite 70 % dark (Nero Marquina, dark floor + ceiling, perimeter cove), warm cream marble only on the shower wall + vanity top |
 | G5 | Golden hour, sun low through the living + bedroom glazing; light ceilings everywhere except a walnut canopy over the bed (part of the client's Master Suite ref) |
 
 ## Open questions
