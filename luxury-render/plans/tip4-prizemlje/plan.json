@@ -134,6 +134,24 @@
    "rect": [
     0.0,
     962.4,
+    257.3,
+    1001.8
+   ],
+   "z0": 0,
+   "z1": 255,
+   "kind": "ext",
+   "src_px": [
+    381,
+    792,
+    577,
+    822
+   ]
+  },
+  {
+   "id": "W_south_w2",
+   "rect": [
+    257.3,
+    962.4,
     636.8,
     1001.8
    ],
@@ -141,7 +159,7 @@
    "z1": 280,
    "kind": "ext",
    "src_px": [
-    381,
+    577,
     792,
     866,
     822
@@ -346,57 +364,75 @@
    ]
   },
   {
-   "id": "W_well_e",
+   "id": "W_up_e",
    "rect": [
-    139.2,
-    363.7,
-    143.1,
-    657.8
+    257.3,
+    362.4,
+    282.3,
+    962.4
    ],
    "z0": 280,
    "z1": 600,
    "kind": "int",
    "src_px": [
-    487,
-    336,
-    490,
-    560
+    577,
+    335,
+    596,
+    792
    ]
   },
   {
-   "id": "W_well_s",
+   "id": "W_up_n",
    "rect": [
-    38.1,
-    657.8,
-    143.1,
-    661.8
+    36.8,
+    212.7,
+    266.5,
+    223.2
    ],
-   "z0": 280,
+   "z0": 310,
    "z1": 600,
    "kind": "int",
    "src_px": [
-    410,
-    560,
-    490,
-    563
+    409,
+    221,
+    584,
+    229
    ]
   },
   {
-   "id": "W_well_n",
+   "id": "W_up_ne",
    "rect": [
-    38.1,
-    359.8,
-    143.1,
-    363.7
+    256.0,
+    223.2,
+    266.5,
+    337.4
    ],
-   "z0": 280,
+   "z0": 310,
    "z1": 600,
    "kind": "int",
    "src_px": [
-    410,
-    333,
-    490,
-    336
+    576,
+    229,
+    584,
+    316
+   ]
+  },
+  {
+   "id": "W_south_up",
+   "rect": [
+    0.0,
+    962.4,
+    257.3,
+    1001.8
+   ],
+   "z0": 255,
+   "z1": 600,
+   "kind": "ext",
+   "src_px": [
+    381,
+    792,
+    577,
+    822
    ]
   }
  ],
@@ -508,6 +544,73 @@
    "hinge": [
     249.5,
     962.4
+   ]
+  },
+  {
+   "id": "O_entr_glz",
+   "type": "window",
+   "sill": 260,
+   "head": 570,
+   "note": "tall glazing above the front door (first-floor plan), lights the double-height entrance",
+   "rect": [
+    156.2,
+    962.4,
+    250.8,
+    1001.8
+   ],
+   "src_px": [
+    500,
+    792,
+    572,
+    822
+   ]
+  },
+  {
+   "id": "O_up_bed2_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "leaf": "solid",
+   "note": "first-floor bedroom 2 door off the gallery",
+   "rect": [
+    257.3,
+    433.3,
+    282.3,
+    522.6
+   ],
+   "src_px": [
+    577,
+    389,
+    596,
+    457
+   ],
+   "hinge": [
+    282.3,
+    438.5
+   ]
+  },
+  {
+   "id": "O_up_bed1_door",
+   "type": "door",
+   "sill": 310,
+   "head": 520,
+   "leaf": "solid",
+   "note": "first-floor bedroom 1 door off the landing",
+   "rect": [
+    256.0,
+    241.6,
+    266.5,
+    320.4
+   ],
+   "src_px": [
+    576,
+    243,
+    584,
+    303
+   ],
+   "hinge": [
+    266.5,
+    320.4
    ]
   },
   {
@@ -682,9 +785,15 @@
    "ceiling_holes": [
     [
      38.1,
-     363.7,
-     139.2,
-     657.8
+     362.4,
+     141.8,
+     962.4
+    ],
+    [
+     141.8,
+     609.2,
+     257.3,
+     962.4
     ]
    ]
   },
@@ -6322,9 +6431,195 @@
    ],
    "z": [
     0,
-    600
+    270
    ],
    "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_slab_edge0",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    139.2,
+    362.4,
+    141.8,
+    609.2
+   ],
+   "z": [
+    280,
+    310
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_slab_edge1",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    141.8,
+    609.2,
+    257.3,
+    611.9
+   ],
+   "z": [
+    280,
+    310
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_slab_edge2",
+   "shape": "box",
+   "mat": "plaster_warm_white",
+   "rect": [
+    36.8,
+    359.8,
+    139.2,
+    362.4
+   ],
+   "z": [
+    280,
+    310
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_uog2",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    147.1,
+    362.4,
+    149.7,
+    609.2
+   ],
+   "z": [
+    310,
+    410
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_uog3",
+   "shape": "box",
+   "mat": "glass",
+   "rect": [
+    149.7,
+    607.9,
+    257.3,
+    610.5
+   ],
+   "z": [
+    310,
+    410
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_art_mono",
+   "shape": "box",
+   "mat": "art_painting_monumental",
+   "rect": [
+    39.300000000000004,
+    527.8,
+    42.300000000000004,
+    711.6
+   ],
+   "z": [
+    290,
+    535
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend0_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    182.5,
+    786.5,
+    363
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend0_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    182.5,
+    786.5
+   ],
+   "r": 0.6,
+   "z": [
+    376,
+    590
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend1_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    216.6,
+    823.3,
+    331
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend1_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    216.6,
+    823.3
+   ],
+   "r": 0.6,
+   "z": [
+    344,
+    590
+   ],
+   "kind": "light",
+   "emissive": false
+  },
+  {
+   "id": "D_entr_pend2_shade",
+   "shape": "sphere",
+   "mat": "pendant_glass",
+   "center": [
+    190.4,
+    865.3,
+    299
+   ],
+   "r": 13,
+   "kind": "light"
+  },
+  {
+   "id": "D_entr_pend2_cable",
+   "shape": "cyl",
+   "mat": "cable_black",
+   "center": [
+    190.4,
+    865.3
+   ],
+   "r": 0.6,
+   "z": [
+    312,
+    590
+   ],
+   "kind": "light",
    "emissive": false
   },
   {
@@ -7847,15 +8142,15 @@
  ],
  "extra_ceilings": [
   {
-   "id": "CEIL_stairwell",
+   "id": "CEIL_upper",
    "rect": [
-    38.1,
-    363.7,
-    139.2,
-    657.8
+    36.8,
+    212.7,
+    282.3,
+    962.4
    ],
-   "z": 600,
-   "mat": "plaster_white"
+   "z": 590,
+   "mat": "plaster_warm_white"
   }
  ],
  "site": [

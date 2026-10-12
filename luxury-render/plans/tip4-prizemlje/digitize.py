@@ -33,7 +33,8 @@ def P(x, y):
 
 H = 280            # ASSUMED clear height
 VH = 560           # living double height (client)
-UP = 600           # stairwell
+UP = 600           # top of the walls that rise through the open stair + entrance
+UPC = 590          # first-floor ceiling over the open stair + entrance (310 floor-to-floor + 280)
 LEVELS = {"ffl": 0, "ceiling": H, "void_ceiling": VH, "slab_top": 310}
 
 # ---------------------------------------------------------------- walls  (px rect, z0, z1, kind)
@@ -44,7 +45,8 @@ walls = [
     ("W_liv_n", (1062, 305, 1231, 336), 0, VH, "ext"),         # living north, exterior part (double height)
     ("W_east", (1231, 305, 1248, 812), 0, VH, "ext"),          # living east glazing (double height)
     ("W_east_fin", (1248, 418, 1288, 447), 0, VH, "ext"),      # projecting fin on the east facade
-    ("W_south_w", (381, 792, 866, 822), 0, H, "ext"),          # front door + double door
+    ("W_south_w", (381, 792, 577, 822), 0, 255, "ext"),        # front door; tall glazing above it (first-floor plan)
+    ("W_south_w2", (577, 792, 866, 822), 0, H, "ext"),         # double door
     ("W_south_glz", (866, 811, 1248, 825), 0, VH, "ext"),      # living south glazing (double height)
     ("W_col_se", (1211, 790, 1233, 812), 0, VH, "ext"),
     ("W_col_e", (1211, 418, 1233, 445), 0, VH, "int"),
@@ -57,9 +59,12 @@ walls = [
     ("W_liv_n_up", (852, 316, 1062, 336), H, VH, "int"),       # wall rising above the bedroom slab over the living void
     ("W_kit_w", (576, 336, 597, 522), 0, H, "int"),            # stair | kitchen west run
     ("W_void_w", (845, 336, 852, 811), H, VH, "int"),          # upper-floor wall closing the living void on the west
-    ("W_well_e", (487, 336, 490, 560), H, UP, "int"),          # stairwell shaft above the hall ceiling
-    ("W_well_s", (410, 560, 490, 563), H, UP, "int"),
-    ("W_well_n", (410, 333, 490, 336), H, UP, "int"),
+    # per the FIRST-FLOOR plan (OSNOVA 1 SPRAT) the floor above is OPEN over the whole stair and over the entrance
+    # south of UOG.3: a double-height stair + entrance. Walls of the first floor that bound that open space:
+    ("W_up_e", (577, 335, 596, 792), H, UP, "int"),            # first-floor gallery | bedroom 2 wall (on a beam)
+    ("W_up_n", (409, 221, 584, 229), H + 30, UP, "int"),       # first-floor landing | bath 1
+    ("W_up_ne", (576, 229, 584, 316), H + 30, UP, "int"),      # first-floor landing | bedroom 1
+    ("W_south_up", (381, 792, 577, 822), 255, UP, "ext"),      # south wall above the front door: tall glazing
 ]
 
 # ---------------------------------------------------------------- openings
@@ -72,6 +77,12 @@ openings = [
          mullions_px=[985, 1101], note="living south: double-height glazing, sliding at the bottom"),
     dict(id="O_front_door", type="door", px=(500, 792, 571, 822), sill=0, head=230, hinge=(571, 792), leaf="solid",
          note="entrance (south-west, beside the stair)"),
+    dict(id="O_entr_glz", type="window", px=(500, 792, 572, 822), sill=260, head=570,
+         note="tall glazing above the front door (first-floor plan), lights the double-height entrance"),
+    dict(id="O_up_bed2_door", type="door", px=(577, 389, 596, 457), sill=310, head=520, hinge=(596, 393), leaf="solid",
+         note="first-floor bedroom 2 door off the gallery"),
+    dict(id="O_up_bed1_door", type="door", px=(576, 243, 584, 303), sill=310, head=520, hinge=(584, 303), leaf="solid",
+         note="first-floor bedroom 1 door off the landing"),
     dict(id="O_double_door", type="double_door", px=(690, 792, 838, 822), sill=0, head=240, note="glazed double door (south)"),
     dict(id="O_bath_door", type="door", px=(622, 158, 631, 208), sill=0, head=210, hinge=(631, 158), leaf="solid", note="bedroom -> ensuite"),
     dict(id="O_bed_door", type="door", px=(577, 244, 585, 302), sill=0, head=210, hinge=(585, 244), leaf="solid", note="hall -> bedroom"),
@@ -82,7 +93,7 @@ rooms = [
     dict(id="G_R_bath", name="Ensuite bathroom", px=[(410, 88), (622, 88), (622, 221), (410, 221)], style="bath_dark"),
     dict(id="G_R_bed", name="Bedroom", px=[(631, 88), (1041, 88), (1041, 316), (585, 316), (585, 229), (631, 229)], style="bedroom_tray"),
     dict(id="G_R_hall", name="Hall + stair", px=[(410, 229), (577, 229), (577, 336), (576, 336), (576, 522), (597, 522), (597, 792),
-                                                (410, 792)], style="hall_light", ceiling_holes=[(410, 336, 487, 560)]),
+                                                (410, 792)], style="hall_light", ceiling_holes=[(410, 335, 489, 792), (489, 523, 577, 792)]),
     dict(id="G_R_kitchen", name="Kitchen + dining", px=[(597, 336), (852, 336), (852, 811), (838, 811), (838, 792), (597, 792)],
          style="kitchen_oak"),
     dict(id="G_R_living", name="Living (double height)", px=[(852, 336), (1231, 336), (1231, 811), (852, 811)], style="living_void",
@@ -180,14 +191,15 @@ plan = dict(
                 ceiling_holes=[R(*h) for h in r.get("ceiling_holes", [])]) for r in rooms],
     furniture=F,
     design=DESIGN,
-    extra_ceilings=[dict(id="CEIL_stairwell", rect=R(410, 336, 487, 560), z=UP, mat="plaster_white")],
+    extra_ceilings=[dict(id="CEIL_upper", rect=R(409, 221, 596, 792), z=UPC, mat="plaster_warm_white")],
     site=SITE,
 )
 
 problems = []
 for o in openings:
     ox0, oy0, ox1, oy1 = o["px"]
-    hits = [wid for wid, (x0, y0, x1, y1), *_ in walls if min(x1, ox1) - max(x0, ox0) > 0.5 and min(y1, oy1) - max(y0, oy0) > 0.5]
+    hits = [wid for wid, (x0, y0, x1, y1), z0, z1, _ in walls if min(x1, ox1) - max(x0, ox0) > 0.5 and min(y1, oy1) - max(y0, oy0) > 0.5
+            and min(z1, o["head"]) - max(z0, o["sill"]) > 0.5]
     if len(hits) != 1:
         problems.append(f"{o['id']} cuts {hits}")
 if problems:

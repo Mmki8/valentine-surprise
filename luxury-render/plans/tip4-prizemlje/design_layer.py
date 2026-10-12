@@ -166,7 +166,17 @@ for i, a in enumerate((710, 825, 940)):     # cm: 3 x 100 cm canvases, 15 cm gap
 
 # ======================================================================== HALL + STAIR
 WW = X(410)
-D.append(B("D_stair_battens", "walnut_battens", WW + 1.2, Y(336), WW + 4.0, Y(710), 0, 600, kind="panel"))
+D.append(B("D_stair_battens", "walnut_battens", WW + 1.2, Y(336), WW + 4.0, Y(710), 0, 270, kind="panel"))
+# the open stair + entrance (first-floor plan): gallery slab edges, glass balustrades UOG.2 / UOG.3, the monumental
+# painting on the double-height wall, three smoked-glass globe pendants dropping into the entrance
+for i, r in enumerate([(X(487), Y(335), X(489), Y(523)), (X(489), Y(523), X(577), Y(525)), (X(409), Y(333), X(487), Y(335))]):
+    D.append(B(f"D_slab_edge{i}", "plaster_warm_white", *r, H, H + 30, kind="panel"))
+D.append(B("D_uog2", "glass", X(493), Y(335), X(495), Y(523), H + 30, H + 130, kind="panel"))
+D.append(B("D_uog3", "glass", X(495), Y(522), X(577), Y(524), H + 30, H + 130, kind="panel"))
+art("D_art_mono", "art_painting_monumental", WW, "x", +1, Y(461), Y(601), 290, 535)
+for i, (x, y, z) in enumerate([(520, 658, 350), (546, 686, 318), (526, 718, 286)]):
+    D.append(S(f"D_entr_pend{i}_shade", "pendant_glass", X(x), Y(y), z + 13, 13, kind="light"))
+    D.append(C(f"D_entr_pend{i}_cable", "cable_black", X(x), Y(y), 0.6, z + 26, 590, kind="light"))
 for k in range(1, 18):
     yb = Y(710) - 22 * K * (k - 1)
     D.append(led(f"D_stair_led{k:02d}", WW + 4, yb - 2.2, X(483), yb - 1.2, 310 / 18 * k - 2.2, 310 / 18 * k - 1.2))
