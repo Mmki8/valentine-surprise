@@ -1,0 +1,116 @@
+{
+ "camera": "KIT_B",
+ "room": "G_R_kitchen",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "oak_planks_light",
+  "marble_grey_brown",
+  "plaster_greige",
+  "oak_black_tall",
+  "walnut_fluted",
+  "cabinet_greige",
+  "marble_brown_floor",
+  "oak_black_cabinet",
+  "stair_walnut",
+  "walnut_battens",
+  "leather_brown_chair",
+  "stool_black_shell",
+  "worktop_marble",
+  "pendant_black_linear",
+  "ceramic_light",
+  "ceramic_dark",
+  "art_painting_monumental",
+  "walnut_shelf",
+  "pendant_bronze",
+  "cable_black",
+  "led_line",
+  "black_metal",
+  "lemons",
+  "olive_foliage"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "box": 2,
+  "counter": 2,
+  "table_r": 1,
+  "stool": 2
+ },
+ "items": [
+  {
+   "id": "G_F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "right",
+   "share": 0.117,
+   "note": "fridge column (* on plan)"
+  },
+  {
+   "id": "G_F_gkpl",
+   "name": "boxed column",
+   "where": "left",
+   "share": 0.113,
+   "note": "GKPL-clad installation box (green on plan)"
+  },
+  {
+   "id": "G_F_k_run_n",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "right",
+   "share": 0.029,
+   "note": "north run: sink, fridge * at the end"
+  },
+  {
+   "id": "G_F_table",
+   "name": "dining table",
+   "where": "left",
+   "share": 0.027,
+   "note": "dining table for 6"
+  },
+  {
+   "id": "G_F_k_run_w",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "centre",
+   "share": 0.017,
+   "note": "west run with cooktop"
+  },
+  {
+   "id": "G_F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.009,
+   "note": "installation duct (2 squares)"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "centre",
+   "share": 0.006
+  },
+  {
+   "id": "G_F_stool0",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.004,
+   "note": null
+  },
+  {
+   "id": "G_F_stool1",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.003,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

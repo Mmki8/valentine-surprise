@@ -1,0 +1,62 @@
+{
+ "camera": "HALL_A",
+ "room": "G_R_hall",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "walnut_fluted",
+  "walnut_battens",
+  "stair_walnut",
+  "plaster_greige",
+  "plaster_warm_white",
+  "marble_brown_floor",
+  "art_painting_monumental",
+  "oak_planks_light",
+  "art_painting_tall",
+  "stool_black_shell",
+  "art_sketch",
+  "leather_brown_chair",
+  "pampas",
+  "marble_grey_brown",
+  "vase_dark"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "box": 1,
+  "stool": 1
+ },
+ "items": [
+  {
+   "id": "G_F_gkpl",
+   "name": "boxed column",
+   "where": "right",
+   "share": 0.354,
+   "note": "GKPL-clad installation box (green on plan)"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.03
+  },
+  {
+   "id": "G_F_stool1",
+   "name": "bar stool",
+   "where": "right",
+   "share": 0.004,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

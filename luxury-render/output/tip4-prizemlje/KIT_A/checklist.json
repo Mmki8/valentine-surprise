@@ -1,0 +1,127 @@
+{
+ "camera": "KIT_A",
+ "room": "G_R_kitchen",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "walnut_fluted",
+  "oak_planks_light",
+  "marble_grey_brown",
+  "plaster_greige",
+  "marble_brown_floor",
+  "leather_brown_chair",
+  "art_painting_tall",
+  "cabinet_greige",
+  "stair_walnut",
+  "oak_black_tall",
+  "walnut_battens",
+  "oak_black_cabinet",
+  "boucle_ivory",
+  "stool_black_shell",
+  "pendant_bronze",
+  "cable_black",
+  "worktop_marble",
+  "ceramic_dark",
+  "bronze_mesh",
+  "led_line",
+  "walnut_shelf",
+  "plaster_warm_white",
+  "lemons",
+  "ceramic_light",
+  "olive_foliage",
+  "walnut_panel"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "box": 2,
+  "table_r": 1,
+  "counter": 2,
+  "tall_cabinet": 1,
+  "sofa": 1,
+  "island_x": 1,
+  "stool": 1
+ },
+ "items": [
+  {
+   "id": "G_F_gkpl",
+   "name": "boxed column",
+   "where": "left",
+   "share": 0.206,
+   "note": "GKPL-clad installation box (green on plan)"
+  },
+  {
+   "id": "G_F_table",
+   "name": "dining table",
+   "where": "centre",
+   "share": 0.061,
+   "note": "dining table for 6"
+  },
+  {
+   "id": "G_F_k_run_w",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "centre",
+   "share": 0.019,
+   "note": "west run with cooktop"
+  },
+  {
+   "id": "G_F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.016,
+   "note": "fridge column (* on plan)"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.007
+  },
+  {
+   "id": "G_F_k_run_n",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "centre",
+   "share": 0.007,
+   "note": "north run: sink, fridge * at the end"
+  },
+  {
+   "id": "G_F_sofa",
+   "name": "L-shaped sofa",
+   "where": "right",
+   "share": 0.007,
+   "note": "L-sofa, long side"
+  },
+  {
+   "id": "G_F_k_duct",
+   "name": "boxed column",
+   "where": "centre",
+   "share": 0.006,
+   "note": "installation duct (2 squares)"
+  },
+  {
+   "id": "G_F_island",
+   "name": "kitchen island",
+   "where": "centre",
+   "share": 0.004,
+   "note": "island; stools on the south side"
+  },
+  {
+   "id": "G_F_stool1",
+   "name": "bar stool",
+   "where": "centre",
+   "share": 0.002,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}
