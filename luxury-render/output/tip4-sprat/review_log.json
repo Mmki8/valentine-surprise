@@ -1,0 +1,59 @@
+{
+ "plan": "tip4-sprat",
+ "brief": "Client: type 4 first floor; 100 % plan-accurate; new bedroom designs in the same vibe; paintings + decor; baths darker (refs); golden hour with the view from a higher position.",
+ "lessons": [
+  "90-94 deg lenses again made the model push the walls back (bedrooms 0.36/0.41) -> 82-86 deg",
+  "hero chaining can drag the hero's geometry in (BED2_B 0.28/0.15); a geometry-correct text-only render + a targeted edit of ONLY the paintings fixed consistency without losing geometry",
+  "a double-height void seen obliquely reads as a sloped ceiling (ground KIT_A) -> re-aim the camera so the void leaves the frame"
+ ],
+ "rejected": [
+  "BED1_A #1 (0.356, drift 0.062)",
+  "BED1_A #2 (0.443)",
+  "BED2_A #1 (0.412)",
+  "BED2_A #2 (0.665 - #3 better)",
+  "BED1_B #2 (0.474 - #1 better)",
+  "BED2_B #1 (0.368)",
+  "BED2_B #2 (paintings differ from the hero)",
+  "BED2_B #3-4 (0.275 / 0.151)",
+  "BED2_B #6 (0.479 - #5 better)"
+ ],
+ "consistency": "BED1_B vs BED1_A floor dL 43 (sun vs shade), BED2_B vs BED2_A nightstand dC 16 (backlit) -> same materials on vision",
+ "final": {
+  "HALL_A": {
+   "job_id": "c7c7fb20-6e9a-4e92-8f8a-bd6b341f32ad",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_171856_c7c7fb20-6e9a-4e92-8f8a-bd6b341f32ad.png",
+   "note": "0.849 PASS"
+  },
+  "BED1_A": {
+   "job_id": "f52e5269-3397-4864-a382-6055ec78746e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_173310_f52e5269-3397-4864-a382-6055ec78746e.png",
+   "note": "attempt 3 @86 deg: 0.901, drift 0.057"
+  },
+  "BED1_B": {
+   "job_id": "b641a284-0b79-4acd-83ae-1f1fad72cf56",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_173921_b641a284-0b79-4acd-83ae-1f1fad72cf56.png",
+   "note": "0.859 PASS (hero-chained)"
+  },
+  "BATH1_A": {
+   "job_id": "d75224ab-c306-43a9-8901-4cd8617b0529",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_171857_d75224ab-c306-43a9-8901-4cd8617b0529.png",
+   "note": "0.786; WC recall 0.26 - present on vision"
+  },
+  "BED2_A": {
+   "job_id": "a62f4865-f194-4590-9ca4-431dc9af819f",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_173310_a62f4865-f194-4590-9ca4-431dc9af819f.png",
+   "note": "attempt 3 @82 deg: 0.874"
+  },
+  "BED2_B": {
+   "job_id": "04c8a4b3-fe3e-486a-88bb-8dd8acb22cdc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_175041_04c8a4b3-fe3e-486a-88bb-8dd8acb22cdc.png",
+   "note": "targeted edit of attempt 2 (0.465): paintings replaced with the hero pair -> 0.495"
+  },
+  "BATH2_A": {
+   "job_id": "d625624d-cca0-46b8-b62a-6f33b346764a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_171857_d625624d-cca0-46b8-b62a-6f33b346764a.png",
+   "note": "0.556 PASS"
+  }
+ },
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/aa667f1b-3f20-4723-b6fd-eed83a6219c8.zip"
+}
