@@ -50,5 +50,12 @@
    "GAR_B_empty": "a7d7788f (0.666 pass)"
   },
   "model_note": "TV/media wall stays at the plan position in the 3D model; the hall view was edited per client."
+ },
+ "v4": {
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/981fe541-578f-4fbd-9ce5-70fa89372c99.zip",
+  "replaced": {
+   "LIV_B": "3e054e30 (edit: 5th stair painting, placed from the model guide)",
+   "HALL_A": "f9e88668 (edit: chandelier removed)"
+  }
  }
 }
