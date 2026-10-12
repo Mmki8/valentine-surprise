@@ -27,5 +27,16 @@
   "SPA_B": "0.503 pass",
   "GAR_A": "0.995 pass",
   "GAR_B": "0.513, spare-wheel recall low (cropped) - approved"
+ },
+ "v2": {
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/fd8755be-f252-481d-8236-05b7c053e876.zip",
+  "replaced": {
+   "LIV_A": "7a851fc5 (edit: stair gallery + chandelier)",
+   "LIV_B": "7ce826c7 (new camera hfov 78)",
+   "HALL_A": "0c4e2f19 (edit: chandelier glimpse)",
+   "BATH_A": "d7f02470 (edit: second LED bar)",
+   "SPA_A": "5d270b0a (frontal north, shower NW per plan, moss wall, strelitzia)",
+   "SPA_B": "4db323ac (r2 46bdbc95 rejected: door/painting drift 0.046 -> r3 drift 0.019)"
+  }
  }
 }
