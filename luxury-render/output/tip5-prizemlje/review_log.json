@@ -57,5 +57,12 @@
    "LIV_B": "3e054e30 (edit: 5th stair painting, placed from the model guide)",
    "HALL_A": "f9e88668 (edit: chandelier removed)"
   }
+ },
+ "v5": {
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/61f9e7ee-7d38-4758-af34-f18e29a59936.zip",
+  "replaced": {
+   "LIV_A": "308f8d56 (edit: open gallery + UOG.2 glass)",
+   "LIV_B": "f9f4b2d4 (edit: open gallery + office)"
+  }
  }
 }

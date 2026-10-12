@@ -1,0 +1,17 @@
+{
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/295abe0c-c7a8-452f-98fe-8ea4d55d8384.zip",
+ "final": {
+  "GAL_A": "c079cd8c (0.866, small-item recalls; visually approved)",
+  "GAL_B": "77ebb4bf (0.929)",
+  "GAL_C": "2da3bdff (0.992)",
+  "MBED_A": "e66bae79 (0.558, door frame recall)",
+  "MBED_B": "5b119863 (0.126 dark/curtains; overlay aligned, approved)",
+  "MBATH_A": "f5d6da24 (0.721 pass)",
+  "BED1_A": "c97f3c5a (0.674)",
+  "BED1_B": "9d35d0e3 (0.31; overlay aligned, approved)",
+  "BATH1_A": "1e4d6702 (0.992)",
+  "BED2_A": "2fbbca80 (0.99)",
+  "BED2_B": "be550f9c (0.981, drift 0.068)",
+  "BATH2_A": "347da0fb (0.987)"
+ }
+}
