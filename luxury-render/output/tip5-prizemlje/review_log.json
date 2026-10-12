@@ -38,5 +38,17 @@
    "SPA_A": "5d270b0a (frontal north, shower NW per plan, moss wall, strelitzia)",
    "SPA_B": "4db323ac (r2 46bdbc95 rejected: door/painting drift 0.046 -> r3 drift 0.019)"
   }
+ },
+ "v3": {
+  "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/57feeed1-2895-4d69-9296-ca0956e27dc5.zip",
+  "replaced": {
+   "LIV_B": "1df8eb91 (edit: chandelier centred; 30226ff8 rejected - landed at 39% width)",
+   "KIT_A": "7245c6dd (edit: one bronze pendant)",
+   "HALL_A": "8a0ece72 (edit: TV/media wall moved right)",
+   "SPA_A": "19b33ea0 (no plant, jacuzzi under moss wall; drift 0.023)",
+   "GAR_A_empty": "cb7a68c8 (0.963 pass)",
+   "GAR_B_empty": "a7d7788f (0.666 pass)"
+  },
+  "model_note": "TV/media wall stays at the plan position in the 3D model; the hall view was edited per client."
  }
 }
