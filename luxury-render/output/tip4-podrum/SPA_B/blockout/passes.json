@@ -15,6 +15,7 @@
   ],
   "hfov": 102,
   "shift_y": 0.02,
+  "exposure": 2.4,
   "W": 1600,
   "H": 900,
   "projection": [

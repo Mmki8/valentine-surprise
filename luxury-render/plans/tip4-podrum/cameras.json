@@ -36,7 +36,8 @@
     120.8
    ],
    "hfov": 96,
-   "shift_y": 0.02
+   "shift_y": 0.02,
+   "exposure": 2.4
   },
   {
    "id": "SPA_B",
@@ -53,7 +54,8 @@
     107.7
    ],
    "hfov": 102,
-   "shift_y": 0.02
+   "shift_y": 0.02,
+   "exposure": 2.4
   },
   {
    "id": "SAUNA_A",
