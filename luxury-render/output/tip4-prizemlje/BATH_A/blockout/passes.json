@@ -15,6 +15,7 @@
   ],
   "hfov": 104,
   "shift_y": 0.02,
+  "notes": "This ensuite is 70 % DARK: near-black Nero Marquina marble walls, dark stone floor, dark ceiling; ONLY the shower back wall and the vanity top are the warm cream marble (the light details). Ambient, intimate lighting from the ceiling cove, the backlit mirror, under the vanity and the niche, plus a little warm daylight from the small window - moody and luxurious, not bright.",
   "W": 1600,
   "H": 900,
   "projection": [
@@ -1152,7 +1153,7 @@
   {
    "id": "G_F_shower",
    "kind": "shower",
-   "mat": "stone_greige_floor",
+   "mat": "stone_nero_floor",
    "rgb": [
     203,
     77,
@@ -4614,7 +4615,7 @@
    ]
   },
   {
-   "mat": "stone_greige_floor",
+   "mat": "toilet_white",
    "rgb": [
     40,
     138,
@@ -4622,7 +4623,7 @@
    ]
   },
   {
-   "mat": "toilet_white",
+   "mat": "vanity_black",
    "rgb": [
     233,
     99,
@@ -4630,7 +4631,7 @@
    ]
   },
   {
-   "mat": "vanity_black",
+   "mat": "wardrobe_black_glass",
    "rgb": [
     31,
     123,
@@ -4638,7 +4639,7 @@
    ]
   },
   {
-   "mat": "wardrobe_black_glass",
+   "mat": "bed_upholstered_sand",
    "rgb": [
     146,
     189,
@@ -4646,7 +4647,7 @@
    ]
   },
   {
-   "mat": "bed_upholstered_sand",
+   "mat": "duvet_charcoal",
    "rgb": [
     165,
     13,
@@ -4654,7 +4655,7 @@
    ]
   },
   {
-   "mat": "duvet_charcoal",
+   "mat": "headboard_channel_sand",
    "rgb": [
     117,
     215,
@@ -4662,7 +4663,7 @@
    ]
   },
   {
-   "mat": "headboard_channel_sand",
+   "mat": "pillow_grey",
    "rgb": [
     226,
     125,
@@ -4670,7 +4671,7 @@
    ]
   },
   {
-   "mat": "pillow_grey",
+   "mat": "throw_black_knit",
    "rgb": [
     32,
     6,
@@ -4678,7 +4679,7 @@
    ]
   },
   {
-   "mat": "throw_black_knit",
+   "mat": "nightstand_black",
    "rgb": [
     51,
     147,
@@ -4686,7 +4687,7 @@
    ]
   },
   {
-   "mat": "nightstand_black",
+   "mat": "oak_black_tall",
    "rgb": [
     242,
     90,
@@ -4694,7 +4695,7 @@
    ]
   },
   {
-   "mat": "oak_black_tall",
+   "mat": "oak_black_cabinet",
    "rgb": [
     77,
     172,
@@ -4702,7 +4703,7 @@
    ]
   },
   {
-   "mat": "oak_black_cabinet",
+   "mat": "groove_dark",
    "rgb": [
     201,
     193,
@@ -4710,7 +4711,7 @@
    ]
   },
   {
-   "mat": "groove_dark",
+   "mat": "worktop_marble",
    "rgb": [
     117,
     4,
@@ -4718,7 +4719,7 @@
    ]
   },
   {
-   "mat": "worktop_marble",
+   "mat": "black_metal",
    "rgb": [
     108,
     224,
@@ -4726,7 +4727,7 @@
    ]
   },
   {
-   "mat": "black_metal",
+   "mat": "marble_grey_brown",
    "rgb": [
     238,
     58,
@@ -4734,7 +4735,7 @@
    ]
   },
   {
-   "mat": "marble_grey_brown",
+   "mat": "stool_black_shell",
    "rgb": [
     52,
     79,
@@ -4742,7 +4743,7 @@
    ]
   },
   {
-   "mat": "stool_black_shell",
+   "mat": "leather_brown_chair",
    "rgb": [
     90,
     156,
@@ -4750,7 +4751,7 @@
    ]
   },
   {
-   "mat": "leather_brown_chair",
+   "mat": "walnut_fluted",
    "rgb": [
     251,
     81,
@@ -4758,7 +4759,7 @@
    ]
   },
   {
-   "mat": "walnut_fluted",
+   "mat": "boucle_ivory",
    "rgb": [
     66,
     215,
@@ -4766,7 +4767,7 @@
    ]
   },
   {
-   "mat": "boucle_ivory",
+   "mat": "oak_smoked_table",
    "rgb": [
     212,
     138,
@@ -4774,7 +4775,7 @@
    ]
   },
   {
-   "mat": "oak_smoked_table",
+   "mat": "walnut_console",
    "rgb": [
     72,
     40,
@@ -4782,7 +4783,7 @@
    ]
   },
   {
-   "mat": "walnut_console",
+   "mat": "tv_black",
    "rgb": [
     99,
     233,
@@ -4790,7 +4791,7 @@
    ]
   },
   {
-   "mat": "tv_black",
+   "mat": "stair_walnut",
    "rgb": [
     249,
     31,
@@ -4798,7 +4799,7 @@
    ]
   },
   {
-   "mat": "stair_walnut",
+   "mat": "cabinet_greige",
    "rgb": [
     40,
     122,
@@ -4806,7 +4807,7 @@
    ]
   },
   {
-   "mat": "cabinet_greige",
+   "mat": "led_line",
    "rgb": [
     141,
     165,
@@ -4814,7 +4815,7 @@
    ]
   },
   {
-   "mat": "led_line",
+   "mat": "walnut_shelf",
    "rgb": [
     202,
     117,
@@ -4822,7 +4823,7 @@
    ]
   },
   {
-   "mat": "walnut_shelf",
+   "mat": "bronze_mesh",
    "rgb": [
     54,
     226,
@@ -4830,7 +4831,7 @@
    ]
   },
   {
-   "mat": "bronze_mesh",
+   "mat": "ceramic_dark",
    "rgb": [
     224,
     68,
@@ -4838,7 +4839,7 @@
    ]
   },
   {
-   "mat": "ceramic_dark",
+   "mat": "ceramic_light",
    "rgb": [
     31,
     32,
@@ -4846,7 +4847,7 @@
    ]
   },
   {
-   "mat": "ceramic_light",
+   "mat": "walnut_panel",
    "rgb": [
     135,
     242,
@@ -4854,7 +4855,7 @@
    ]
   },
   {
-   "mat": "walnut_panel",
+   "mat": "pendant_black_linear",
    "rgb": [
     203,
     77,
@@ -4862,7 +4863,7 @@
    ]
   },
   {
-   "mat": "pendant_black_linear",
+   "mat": "cable_black",
    "rgb": [
     29,
     180,
@@ -4870,7 +4871,7 @@
    ]
   },
   {
-   "mat": "cable_black",
+   "mat": "pendant_bronze",
    "rgb": [
     174,
     145,
@@ -4878,7 +4879,7 @@
    ]
   },
   {
-   "mat": "pendant_bronze",
+   "mat": "lemons",
    "rgb": [
     170,
     108,
@@ -4886,7 +4887,7 @@
    ]
   },
   {
-   "mat": "lemons",
+   "mat": "cushion_cognac",
    "rgb": [
     43,
     238,
@@ -4894,7 +4895,7 @@
    ]
   },
   {
-   "mat": "cushion_cognac",
+   "mat": "cushion_charcoal",
    "rgb": [
     178,
     52,
@@ -4902,7 +4903,7 @@
    ]
   },
   {
-   "mat": "cushion_charcoal",
+   "mat": "rug_dark_wool",
    "rgb": [
     22,
     68,
@@ -4910,7 +4911,7 @@
    ]
   },
   {
-   "mat": "rug_dark_wool",
+   "mat": "books_neutral",
    "rgb": [
     188,
     251,
@@ -4918,7 +4919,7 @@
    ]
   },
   {
-   "mat": "books_neutral",
+   "mat": "sheer_linen",
    "rgb": [
     215,
     66,
@@ -4926,7 +4927,7 @@
    ]
   },
   {
-   "mat": "sheer_linen",
+   "mat": "art_painting_large",
    "rgb": [
     17,
     212,
@@ -4934,7 +4935,7 @@
    ]
   },
   {
-   "mat": "art_painting_large",
+   "mat": "art_painting_tall",
    "rgb": [
     138,
     88,
@@ -4942,7 +4943,7 @@
    ]
   },
   {
-   "mat": "art_painting_tall",
+   "mat": "walnut_battens",
    "rgb": [
     126,
     99,
@@ -4950,7 +4951,7 @@
    ]
   },
   {
-   "mat": "walnut_battens",
+   "mat": "art_sketch",
    "rgb": [
     51,
     249,
@@ -4958,7 +4959,7 @@
    ]
   },
   {
-   "mat": "art_sketch",
+   "mat": "vase_dark",
    "rgb": [
     189,
     40,
@@ -4966,7 +4967,7 @@
    ]
   },
   {
-   "mat": "vase_dark",
+   "mat": "pampas",
    "rgb": [
     13,
     116,
@@ -4974,7 +4975,7 @@
    ]
   },
   {
-   "mat": "pampas",
+   "mat": "walnut_facets",
    "rgb": [
     212,
     215,
@@ -4982,7 +4983,7 @@
    ]
   },
   {
-   "mat": "walnut_facets",
+   "mat": "black_slats",
    "rgb": [
     182,
     54,
@@ -4990,7 +4991,7 @@
    ]
   },
   {
-   "mat": "black_slats",
+   "mat": "lamp_black",
    "rgb": [
     6,
     224,
@@ -4998,7 +4999,7 @@
    ]
   },
   {
-   "mat": "lamp_black",
+   "mat": "rug_sand",
    "rgb": [
     147,
     50,
@@ -5006,7 +5007,7 @@
    ]
   },
   {
-   "mat": "rug_sand",
+   "mat": "marble_white_panel",
    "rgb": [
     90,
     110,
@@ -5014,7 +5015,7 @@
    ]
   },
   {
-   "mat": "marble_white_panel",
+   "mat": "marble_warm_veined",
    "rgb": [
     131,
     203,
@@ -5022,7 +5023,7 @@
    ]
   },
   {
-   "mat": "marble_warm_veined",
+   "mat": "mirror_backlit",
    "rgb": [
     201,
     29,
@@ -5030,7 +5031,7 @@
    ]
   },
   {
-   "mat": "mirror_backlit",
+   "mat": "basin_black_vessel",
    "rgb": [
     4,
     174,
@@ -5038,7 +5039,7 @@
    ]
   },
   {
-   "mat": "basin_black_vessel",
+   "mat": "niche_lit",
    "rgb": [
     224,
     189,
@@ -5046,19 +5047,11 @@
    ]
   },
   {
-   "mat": "niche_lit",
+   "mat": "towels_charcoal",
    "rgb": [
     122,
     43,
     238
-   ]
-  },
-  {
-   "mat": "towels_charcoal",
-   "rgb": [
-    52,
-    178,
-    66
    ]
   }
  ]
