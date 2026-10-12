@@ -12,6 +12,51 @@
   "SPA_B #1-#4 (structure 0.18-0.39)",
   "SPA_B #5 (structure 0.47 but drift 0.065)",
   "GAR_A #1 (drift 0.075, car enlarged)",
-  "GAR_A #3 (drift 0.058, structure 0.57 - #2 better)"
- ]
+  "GAR_A #3 (drift 0.058, structure 0.57 - #2 better)",
+  "SPA_A #8 (0.438)"
+ ],
+ "final": {
+  "SPA_A": {
+   "job_id": "41fe1557-3942-435b-aeca-693c6d190b6f",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_141510_41fe1557-3942-435b-aeca-693c6d190b6f.png",
+   "note": "attempt 9: structure 0.43 (gate 0.45), drift 0.026 - accepted on vision after a 9-attempt plateau: walls, tub, bench, slat wall on their guide lines; tub rim drawn slightly taller"
+  },
+  "SPA_B": {
+   "job_id": "86cab121-632f-4d98-8f53-cdd31b4d9719",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_141510_86cab121-632f-4d98-8f53-cdd31b4d9719.png",
+   "note": "structure 0.70"
+  },
+  "SAUNA_A": {
+   "job_id": "3fddccdf-0c88-4875-8ee0-f8ae2ace28e3",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_140519_3fddccdf-0c88-4875-8ee0-f8ae2ace28e3.png",
+   "note": "0.79"
+  },
+  "WC_A": {
+   "job_id": "072db1e5-0c2c-490e-b2ef-897ffe92d173",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_135658_072db1e5-0c2c-490e-b2ef-897ffe92d173.png",
+   "note": "0.96"
+  },
+  "CORR_A": {
+   "job_id": "a7628e0e-cc09-4db6-b485-3888bc2761e6",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_140519_a7628e0e-cc09-4db6-b485-3888bc2761e6.png",
+   "note": "0.50"
+  },
+  "LAUNDRY_A": {
+   "job_id": "0412c295-fd50-42e6-970d-95789063a980",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_140518_0412c295-fd50-42e6-970d-95789063a980.png",
+   "note": "0.83"
+  },
+  "GAR_A": {
+   "job_id": "bffef308-0ab1-4856-a601-7c19fd2d6c06",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_140442_bffef308-0ab1-4856-a601-7c19fd2d6c06.png",
+   "note": "attempt 2: 0.52, drift 0.032"
+  },
+  "GAR_B": {
+   "job_id": "407b0f78-874d-4813-9d10-d74984a2791e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_140520_407b0f78-874d-4813-9d10-d74984a2791e.png",
+   "note": "0.94"
+  }
+ },
+ "consistency": "GAR_B PASS; SPA_B / SAUNA_A flagged oak slats (backlit vs shade) and a 5 cm bench sliver - same materials, accepted",
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/3fc15b54-84b6-4915-8e50-015390baf94e.zip"
 }
