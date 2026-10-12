@@ -602,7 +602,7 @@
    ],
    "floor": 0,
    "ceiling": 280,
-   "style": "bath_marble",
+   "style": "bath_dark",
    "ceiling_holes": []
   },
   {
@@ -6260,21 +6260,55 @@
    "emissive": false
   },
   {
-   "id": "D_liv_cove",
+   "id": "D_art_trip0",
    "shape": "box",
-   "mat": "led_line",
+   "mat": "art_painting_tall",
    "rect": [
-    623.7,
-    369.0,
-    1110.8,
-    371.6
+    710,
+    368.9,
+    810,
+    371.9
    ],
    "z": [
-    556,
-    557.5
+    115,
+    265
    ],
-   "kind": "light",
-   "emissive": true
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_trip1",
+   "shape": "box",
+   "mat": "art_painting_tall",
+   "rect": [
+    825,
+    368.9,
+    925,
+    371.9
+   ],
+   "z": [
+    115,
+    265
+   ],
+   "kind": "art",
+   "emissive": false
+  },
+  {
+   "id": "D_art_trip2",
+   "shape": "box",
+   "mat": "art_painting_tall",
+   "rect": [
+    940,
+    368.9,
+    1040,
+    371.9
+   ],
+   "z": [
+    115,
+    265
+   ],
+   "kind": "art",
+   "emissive": false
   },
   {
    "id": "D_stair_battens",
@@ -7541,6 +7575,108 @@
    "emissive": false
   },
   {
+   "id": "D_bath_shower_wall",
+   "shape": "box",
+   "mat": "marble_warm_veined",
+   "rect": [
+    38.300000000000004,
+    38.300000000000004,
+    39.300000000000004,
+    212.5
+   ],
+   "z": [
+    0,
+    279.8
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath_vanity_top",
+   "shape": "box",
+   "mat": "marble_warm_veined",
+   "rect": [
+    210.1,
+    38.300000000000004,
+    315.1,
+    85.3
+   ],
+   "z": [
+    85,
+    87.5
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bath_cove0",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    38.300000000000004,
+    38.300000000000004,
+    316.2,
+    39.9
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath_cove1",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    38.300000000000004,
+    210.89999999999998,
+    316.2,
+    212.5
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath_cove2",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    39.300000000000004,
+    38.300000000000004,
+    40.9,
+    212.5
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
+   "id": "D_bath_cove3",
+   "shape": "box",
+   "mat": "led_line",
+   "rect": [
+    314.59999999999997,
+    38.300000000000004,
+    316.2,
+    212.5
+   ],
+   "z": [
+    276,
+    277.5
+   ],
+   "kind": "light",
+   "emissive": true
+  },
+  {
    "id": "D_bath_mirror",
    "shape": "box",
    "mat": "mirror_backlit",
@@ -7601,8 +7737,8 @@
    ],
    "r": 18,
    "z": [
-    85,
-    98
+    87.5,
+    100
    ],
    "kind": "decor",
    "emissive": false

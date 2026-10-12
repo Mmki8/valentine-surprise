@@ -1,0 +1,149 @@
+{
+ "camera": "LIV_A",
+ "room": "G_R_living",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "walnut_fluted",
+  "plaster_greige",
+  "walnut_panel",
+  "art_painting_tall",
+  "boucle_ivory",
+  "cabinet_greige",
+  "art_painting_large",
+  "marble_grey_brown",
+  "oak_planks_light",
+  "plaster_warm_white",
+  "oak_black_tall",
+  "tv_black",
+  "stool_black_shell",
+  "walnut_console",
+  "marble_brown_floor",
+  "oak_black_cabinet",
+  "sheer_linen",
+  "oak_smoked_table",
+  "cushion_charcoal",
+  "cushion_cognac",
+  "bronze_mesh",
+  "bronze_frame",
+  "rug_dark_wool",
+  "led_line",
+  "ceramic_dark",
+  "worktop_marble",
+  "olive_foliage",
+  "pendant_black_linear",
+  "walnut_shelf",
+  "ceramic_light"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_liv_e_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "right",
+   "share": 0.005,
+   "note": "living east: double-height glazing"
+  }
+ ],
+ "furniture_counts": {
+  "sofa": 1,
+  "tv": 1,
+  "tall_cabinet": 1,
+  "counter": 1,
+  "island_x": 1,
+  "low_cabinet": 1,
+  "stool": 2,
+  "coffee_table": 2,
+  "box": 1
+ },
+ "items": [
+  {
+   "id": "G_F_sofa",
+   "name": "L-shaped sofa",
+   "where": "centre",
+   "share": 0.032,
+   "note": "L-sofa, long side"
+  },
+  {
+   "id": "G_F_tv",
+   "name": "TV",
+   "where": "right",
+   "share": 0.019,
+   "note": "TV on the freestanding walnut media wall"
+  },
+  {
+   "id": "G_F_k_fridge",
+   "name": "full-height cabinet column",
+   "where": "left",
+   "share": 0.019,
+   "note": "fridge column (* on plan)"
+  },
+  {
+   "id": "G_F_k_run_n",
+   "name": "L-shaped kitchen base-cabinet run",
+   "where": "left",
+   "share": 0.013,
+   "note": "north run: sink, fridge * at the end"
+  },
+  {
+   "id": "G_F_island",
+   "name": "kitchen island",
+   "where": "left",
+   "share": 0.013,
+   "note": "island; stools on the south side"
+  },
+  {
+   "id": "G_F_tv_unit",
+   "name": "low cabinet",
+   "where": "right",
+   "share": 0.012,
+   "note": "floating unit in front of the media wall"
+  },
+  {
+   "id": "G_F_stool2",
+   "name": "bar stool",
+   "where": "left",
+   "share": 0.008,
+   "note": null
+  },
+  {
+   "id": "G_F_stool1",
+   "name": "bar stool",
+   "where": "left",
+   "share": 0.006,
+   "note": null
+  },
+  {
+   "id": "G_F_ct2",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.005,
+   "note": null
+  },
+  {
+   "id": "G_F_k_duct",
+   "name": "boxed column",
+   "where": "left",
+   "share": 0.004,
+   "note": "installation duct (2 squares)"
+  },
+  {
+   "id": "G_F_ct1",
+   "name": "coffee table",
+   "where": "centre",
+   "share": 0.004,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

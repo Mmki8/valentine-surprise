@@ -17,7 +17,8 @@
   "plaster_white": "a pure-white line along the edge of a dropped ceiling band is a warm cove light",
   "_none": "Light fittings: none in this view - golden-hour daylight only.",
   "_tail": "Add NO other light of any kind: no spotlights, no downlights, no track lights, no recessed ceiling lights, no extra LED strips, no wall lights, no chandeliers, no glowing outlines along edges. The thin GREY guide lines are not lights.",
-  "_decor": "Decor: only the modelled objects - olive trees in stone pots (green sphere on a trunk), dried pampas (beige stems), slim olive branches in small vases, line-art sketches and a large abstract painting in frames, books, ceramic bowls, lemons, rugs, cushions, sheer linen curtains; add no new objects."
+  "_decor": "Decor: only the modelled objects - olive trees in stone pots (green sphere on a trunk), dried pampas (beige stems), slim olive branches in small vases, line-art sketches and large abstract paintings and a triptych of tall abstract paintings in frames, books, ceramic bowls, lemons, rugs, cushions, sheer linen curtains; add no new objects.",
+  "ceiling_dark": "the pure-white line running all round the edge of the dark ceiling is a warm shadow-gap cove light"
  },
  "heroes": {
   "living": "LIV_A",
@@ -29,37 +30,37 @@
    "id": "LIV_A",
    "room": "G_R_living",
    "space": "living",
-   "title": "Living - double height, from the south-west corner to the sofa, media wall and east glass",
+   "title": "Living - frontal view of the fluted walnut wall with the triptych over the sofa",
    "pos": [
-    655.2,
-    949.3,
+    875.0,
+    965.0,
     150
    ],
    "look": [
-    1116.0,
-    506.8
+    875.0,
+    300.0
    ],
-   "hfov": 94,
-   "shift_y": 0.24,
-   "notes": "The living is DOUBLE HEIGHT (5.6 m) - show the full height. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
+   "hfov": 90,
+   "shift_y": 0.167,
+   "notes": "Straight-on frontal view: the fluted walnut wall rises the full DOUBLE HEIGHT (5.6 m) and its top edge meets the ceiling in one perfectly horizontal line. Three tall abstract paintings (triptych) hang on the walnut wall above the sofa. The living ceiling is completely FLAT and horizontal at 5.60 m - a plain warm-white plaster plane; every wall and the glass meet it in a crisp straight 90-degree corner. Never sloped, pitched, vaulted, angled or stepped. On the left the dining under its lower 2.8 m pale-oak ceiling. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
   },
   {
    "id": "LIV_B",
    "room": "G_R_living",
    "space": "living",
-   "title": "Living - from the east glass back over the sofa to the fluted walnut wall and the kitchen",
+   "title": "Living - from beside the sofa to the double-height glass corner",
    "pos": [
-    1009.7,
-    944.0,
+    650.0,
+    420.0,
     150
    ],
    "look": [
-    628.9,
-    434.6
+    1116.0,
+    987.0
    ],
-   "hfov": 94,
-   "shift_y": 0.22,
-   "notes": "The living is DOUBLE HEIGHT (5.6 m); the kitchen beyond has a normal 2.8 m pale oak ceiling. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
+   "hfov": 86,
+   "shift_y": 0.1,
+   "notes": "The double-height glass corner: both glass walls rise the full 5.6 m and meet the flat ceiling; the vertical corner where they meet is a straight vertical line. The living ceiling is completely FLAT and horizontal at 5.60 m - a plain warm-white plaster plane; every wall and the glass meet it in a crisp straight 90-degree corner. Never sloped, pitched, vaulted, angled or stepped. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
   },
   {
    "id": "KIT_A",

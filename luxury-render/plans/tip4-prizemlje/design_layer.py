@@ -160,7 +160,9 @@ for i, (y0, y1) in enumerate([(452, 470), (770, 788)]):
     D.append(B(f"D_liv_curtain_e{i}", "sheer_linen", X(1231) - 10, Y(y0), X(1231) - 2, Y(y1), 0, 538))
 D.append(B("D_liv_curtain_s", "sheer_linen", X(868), Y(811) - 10, X(888), Y(811) - 2, 0, 538))
 art("D_art_void", "art_painting_large", X(852), "x", +1, Y(470), Y(680), 330, 500)
-D.append(led("D_liv_cove", X(856), Y(340), X(1227), Y(342), VH - 4, VH - 2.5))
+# client: paintings on the fluted walnut wall - a triptych centred over the sofa (no picture lights: lit by the sun)
+for i, a in enumerate((710, 825, 940)):     # cm: 3 x 100 cm canvases, 15 cm gaps, centred on the sofa (x 875)
+    art(f"D_art_trip{i}", "art_painting_tall", LN + 4.0, "y", +1, a, a + 100, 115, 265)
 
 # ======================================================================== HALL + STAIR
 WW = X(410)
@@ -220,12 +222,20 @@ pampas("D_bed_pampas", X(1022), Y(135))
 D.append(B("D_bed_curtain0", "sheer_linen", X(1041) - 10, Y(152), X(1041) - 2, Y(170), 0, 270))
 D.append(B("D_bed_curtain1", "sheer_linen", X(1041) - 10, Y(290), X(1041) - 2, Y(308), 0, 270))
 
-# ======================================================================== BATH (warm veined marble, black vanity, backlit mirror)
+# ======================================================================== BATH (70 % dark nero marble; warm cream marble as the details; ambient light)
 BN = Y(88)
+BS, BW, BE = Y(221), X(410), X(622)
+# warm marble details: full-height shower back wall + vanity top
+D.append(B("D_bath_shower_wall", "marble_warm_veined", BW + 0.2, BN + 0.2, BW + 1.2, BS - 0.2, 0, H - 0.2, kind="panel"))
+D.append(B("D_bath_vanity_top", "marble_warm_veined", X(541), BN + 0.2, X(621), Y(124), 85, 87.5, kind="panel"))
+# perimeter shadow-gap cove all round the dark ceiling
+for i, r in enumerate([(BW + 0.2, BN + 0.2, BE - 0.2, BN + 1.8), (BW + 0.2, BS - 1.8, BE - 0.2, BS - 0.2),
+                       (BW + 1.2, BN + 0.2, BW + 2.8, BS - 0.2), (BE - 1.8, BN + 0.2, BE - 0.2, BS - 0.2)]):
+    D.append(led(f"D_bath_cove{i}", *r, H - 4, H - 2.5))
 D.append(B("D_bath_mirror", "mirror_backlit", X(545), BN + 1.2, X(618), BN + 3.0, 110, 200, kind="panel"))
 D.append(led("D_bath_mirror_glow", X(543), BN + 1.2, X(620), BN + 3.4, 201, 202.5))
 D.append(led("D_bath_vanity_led", X(542), BN + 3, X(620), Y(123), 53.5, 55))
-D.append(C("D_bath_basin", "basin_black_vessel", X(581), Y(106), 18, 85, 98))
+D.append(C("D_bath_basin", "basin_black_vessel", X(581), Y(106), 18, 87.5, 100))
 D.append(B("D_bath_glass", "glass", X(470) - 0.6, BN + 1.2, X(470) + 0.6, Y(215), 0, 205, kind="panel"))
 D.append(C("D_bath_rain", "black_metal", X(440), Y(150), 15, H - 2, H, kind="light"))
 D.append(B("D_bath_niche", "niche_lit", X(410) + 1.2, Y(110), X(410) + 3.6, Y(170), 100, 130, kind="panel"))

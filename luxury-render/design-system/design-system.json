@@ -648,7 +648,7 @@
   "G_R_living": {
    "style": "living_void",
    "mood_refs": [],
-   "concept": "Double-height living (5.6 m) after the client's references: honed brown marble floor, full-height fluted walnut wall with two LED lines, warm white plaster ceiling high above, soft ivory boucle L-sofa, round boucle tub chairs, freestanding walnut media wall, sculptural olive tree, double-height glass to the garden.",
+   "concept": "Double-height living (5.6 m) after the client's references: honed brown marble floor, full-height fluted walnut wall with two LED lines and a triptych of tall abstract paintings over the sofa, a completely flat warm white plaster ceiling high above meeting every wall at a crisp 90-degree corner, soft ivory boucle L-sofa, round boucle tub chairs, freestanding walnut media wall, sculptural olive tree, double-height glass to the garden.",
    "materials": {},
    "retexture": {
     "map": {},
@@ -690,14 +690,14 @@
    }
   },
   "G_R_bath": {
-   "style": "bath_marble",
+   "style": "bath_dark",
    "mood_refs": [],
-   "concept": "Ensuite: warm cream marble with caramel veining, floating black vanity with LED underneath, wide backlit mirror, black vessel basin, clear glass shower with a lit niche.",
+   "concept": "Ensuite, 70 % dark: book-matched Nero Marquina marble walls, dark stone floor, dark ceiling with a perimeter cove; the warm cream caramel-veined marble only as the details - the full-height shower back wall and the vanity top; floating black vanity, black vessel basin, backlit mirror, clear glass shower with a lit niche.",
    "materials": {},
    "retexture": {
     "map": {},
     "add": "",
-    "light": "bright and warm: backlit mirror, glow under the vanity, lit niche, daylight from the high window"
+    "light": "moody and warm: soft ambient glow from the ceiling cove, the backlit mirror, under the vanity and the shower niche; a little golden-hour daylight from the small window; dark and intimate, never gloomy"
    }
   }
  },
@@ -1446,11 +1446,23 @@
   },
   "vanity_black": {
    "tint": "#1C1A19",
-   "text": "floating matte black vanity with a slim marble top, warm LED glow underneath"
+   "text": "floating matte black vanity with a warm cream marble top, warm LED glow underneath"
   },
   "cushion_charcoal": {
    "tint": "#3A3836",
    "text": "charcoal linen cushion"
+  },
+  "art_painting_tall": {
+   "tint": "#B07A52",
+   "text": "tall contemporary abstract painting on canvas, one of a matching triptych - warm ochre, terracotta, cream and charcoal brush strokes - in a thin walnut float frame"
+  },
+  "marble_nero_veined": {
+   "tint": "#26221F",
+   "text": "book-matched dark Nero Marquina marble - deep near-black with fine white and warm-gold veining, honed, large slabs floor to ceiling"
+  },
+  "stone_nero_floor": {
+   "tint": "#2F2B28",
+   "text": "large-format honed dark charcoal stone floor"
   }
  },
  "style_materials": {
@@ -1578,6 +1590,11 @@
    "floor": "marble_brown_floor",
    "wall": "plaster_greige",
    "ceiling": "plaster_warm_white"
+  },
+  "bath_dark": {
+   "floor": "stone_nero_floor",
+   "wall": "marble_nero_veined",
+   "ceiling": "ceiling_dark"
   }
  },
  "kind_materials": {

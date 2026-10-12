@@ -79,7 +79,7 @@ openings = [
 
 # ---------------------------------------------------------------- rooms
 rooms = [
-    dict(id="G_R_bath", name="Ensuite bathroom", px=[(410, 88), (622, 88), (622, 221), (410, 221)], style="bath_marble"),
+    dict(id="G_R_bath", name="Ensuite bathroom", px=[(410, 88), (622, 88), (622, 221), (410, 221)], style="bath_dark"),
     dict(id="G_R_bed", name="Bedroom", px=[(631, 88), (1041, 88), (1041, 316), (585, 316), (585, 229), (631, 229)], style="bedroom_tray"),
     dict(id="G_R_hall", name="Hall + stair", px=[(410, 229), (577, 229), (577, 336), (576, 336), (576, 522), (597, 522), (597, 792),
                                                 (410, 792)], style="hall_light", ceiling_holes=[(410, 336, 487, 560)]),
