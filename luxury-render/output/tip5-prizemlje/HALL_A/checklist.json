@@ -1,0 +1,64 @@
+{
+ "camera": "HALL_A",
+ "room": "T_R_hall",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "wardrobe_walnut_reeded",
+  "plaster_greige",
+  "walnut_door",
+  "oak_planks_light",
+  "marble_brown_floor",
+  "art_painting_wide",
+  "bronze_frame",
+  "walnut_fluted",
+  "stair_walnut",
+  "pampas",
+  "oak_black_tall",
+  "walnut_panel",
+  "vase_dark",
+  "tv_black",
+  "marble_grey_brown",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_bed_door",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.138,
+   "note": "hall -> bedroom"
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 2
+ },
+ "items": [
+  {
+   "id": "T_F_hall_wr",
+   "name": "full-height cabinet column",
+   "where": "left",
+   "share": 0.375,
+   "note": "hall wardrobe, 4 bays"
+  },
+  {
+   "id": "T_F_k_tall",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.005,
+   "note": "tall units + fridge (*)"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

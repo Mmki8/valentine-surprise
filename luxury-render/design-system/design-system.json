@@ -754,6 +754,105 @@
     "add": "",
     "light": "moody and warm: soft ambient glow from the ceiling cove, the LED bar, under the vanity and the niche; dark and intimate, never gloomy"
    }
+  },
+  "T_R_living": {
+   "style": "living_void",
+   "mood_refs": [],
+   "concept": "Living + dining under the 5.6 m flat ceiling: Emperador brown marble floor, warm greige plaster, a full-height fluted smoked-walnut wall behind the floating walnut stair with raked glass, a monumental abstract painting high on the kitchen-side wall, ivory boucle sofa, curved boucle armchairs, smoked-oak coffee tables, a dark wool rug, a freestanding walnut media wall with the TV, a dining table for 6 in grey-brown marble with chocolate leather chairs under long bronze linear pendants, an olive tree and a fiddle-leaf fig, sheer linen curtains, floor-to-ceiling glass on two sides.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the stair step lights and the cove glowing softly"
+   }
+  },
+  "T_R_hall": {
+   "style": "kitchen_oak",
+   "mood_refs": [],
+   "concept": "Kitchen + entrance hall at normal height (2.8 m) with a pale oak plank ceiling: black-stained oak tall units and base run, grey-brown marble worktop and backsplash with a walnut shelf and LED, a grey-brown marble island with the cooktop, black linear pendant, a reeded walnut hall wardrobe, a painting in the hall, pampas grass.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls from the living glass, the shelf LED and the pendant glowing"
+   }
+  },
+  "T_R_bed": {
+   "style": "bed_dark5",
+   "mood_refs": [],
+   "concept": "Master bedroom, darker with bright details: dark smoked-walnut floor, deep taupe plaster walls, the bed wall in vertical smoked-walnut slats with a backlit honey-onyx panel behind a tall ivory channel headboard (the bright detail), alabaster pendants, ivory bedding, an ivory rug, reeded walnut wardrobes, a painting, a fiddle-leaf fig, a light ceiling with a cove, sliding glass to the garden.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls; the room stays dark and moody, the onyx panel and the alabaster pendants glow warm gold"
+   }
+  },
+  "T_R_bath2": {
+   "style": "bath_dark",
+   "mood_refs": [],
+   "concept": "Ensuite, 70 % dark: Nero Marquina marble walls, dark stone floor, a cream caramel-veined marble shower wall, floating black vanity with a black vessel basin, backlit mirror, clear glass shower screen, black fittings, ceiling cove.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft glow from the cove, the backlit mirror and under the vanity"
+   }
+  },
+  "T_R_bath": {
+   "style": "bath_chevron",
+   "mood_refs": [],
+   "concept": "Bath, 70 % dark: dark charcoal chevron stone walls, dark stone floor, floating Carrara marble vanity, bronze mirror with a vertical LED bar, wall-hung toilet with black plate, small window high in the north wall, ceiling cove.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "moody and warm: soft glow from the cove, the LED bar and under the vanity, a little evening daylight from the small window"
+   }
+  },
+  "T_R_spa": {
+   "style": "spa_dark",
+   "mood_refs": [],
+   "concept": "Spa: dark basalt walls, dark stone floor, smoked-walnut slat ceiling with a circular LED cove over a round basalt jacuzzi, a walk-in shower behind glass, a lit niche, an olive tree, sliding glass to the garden, bronze-glass sauna front.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls through the sliding glass, the circular cove glowing"
+   }
+  },
+  "T_R_sauna": {
+   "style": "sauna_walnut",
+   "mood_refs": [],
+   "concept": "Sauna in dark thermo-walnut with two-level benches, LED under the benches, a stove, bronze-glass front and door.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "warm amber glow under the benches"
+   }
+  },
+  "T_R_garage": {
+   "style": "garage_walnut",
+   "mood_refs": [],
+   "concept": "Garage gallery: dark grey stone floor, charcoal walls, the south wall in vertical smoked-walnut slats with an LED line, dark walnut slat ceiling with linear LED lines, a matte black Mercedes-AMG G 63, a wall charger, sectional garage door.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "dramatic and clean: linear LED lines and the slat wall glow, the car lit with soft reflections"
+   }
+  },
+  "T_R_util": {
+   "style": "laundry_dark",
+   "mood_refs": [],
+   "concept": "Utility: dark stone floor, dark plaster, washer and dryer under a worktop, tall black oak cabinets.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "soft warm light"
+   }
   }
  },
  "guide_color_legend": {
@@ -1594,6 +1693,70 @@
   "marble_sink_slab": {
    "tint": "#DCDAD6",
    "text": "floating slab of honed white-grey Carrara marble with an integrated sloped sink and a black wall tap"
+  },
+  "walnut_slats_v": {
+   "tint": "#5A3F2C",
+   "text": "full-height vertical smoked-walnut slats (4 cm slats, 1.5 cm black shadow gaps)"
+  },
+  "onyx_backlit": {
+   "tint": "#E9C27E",
+   "text": "backlit honey onyx stone panel glowing warm amber-gold with natural translucent veining"
+  },
+  "fig_foliage": {
+   "tint": "#4F6B3A",
+   "text": "large glossy fiddle-leaf fig leaves"
+  },
+  "glass_bronze": {
+   "tint": "#9C8064",
+   "text": "bronze-tinted glass sauna front in a slim black frame"
+  },
+  "car_g63_matte": {
+   "tint": "#151515",
+   "text": "MATTE BLACK (satin, not glossy) Mercedes-AMG G 63 G-Wagon: boxy upright body, round LED headlights, black grille, black wheels, spare wheel on the tailgate"
+  },
+  "garage_floor_stone": {
+   "tint": "#5C5753",
+   "text": "large-format honed dark grey stone floor with tight joints, soft reflections"
+  },
+  "ceiling_walnut_garage": {
+   "tint": "#4E3828",
+   "text": "dark smoked-walnut slatted ceiling with recessed linear LED lines"
+  },
+  "plaster_taupe_deep": {
+   "tint": "#4A3F36",
+   "text": "deep warm taupe mineral plaster walls with a soft hand-trowelled texture, matte"
+  },
+  "ceiling_warm_light": {
+   "tint": "#DCD2C4",
+   "text": "warm light greige plaster ceiling with a perimeter LED cove"
+  },
+  "sauna_walnut": {
+   "tint": "#6A4B33",
+   "text": "dark heat-treated thermo-walnut tongue-and-groove boards"
+  },
+  "headboard_ivory_channel": {
+   "tint": "#E6DCCB",
+   "text": "tall ivory boucle headboard with wide vertical channel tufting"
+  },
+  "bed_base_walnut": {
+   "tint": "#4E3726",
+   "text": "low smoked-walnut bed platform"
+  },
+  "duvet_ivory": {
+   "tint": "#E8E1D5",
+   "text": "ivory linen duvet over white sheets with a cognac throw, naturally crumpled"
+  },
+  "jacuzzi_dark": {
+   "tint": "#2B2724",
+   "text": "round hot tub clad in dark honed basalt with a warm-lit water surface"
+  },
+  "sofa_boucle_ivory": {
+   "tint": "#E3D9C9",
+   "text": "deep low ivory boucle sofa with rounded corners"
+  },
+  "armchair_boucle_curved": {
+   "tint": "#DCCFBD",
+   "text": "curved ivory boucle lounge armchair with a wraparound back"
   }
  },
  "style_materials": {
@@ -1746,6 +1909,21 @@
    "floor": "stone_nero_floor",
    "wall": "stone_chevron_dark",
    "ceiling": "ceiling_dark"
+  },
+  "garage_walnut": {
+   "floor": "garage_floor_stone",
+   "wall": "plaster_charcoal",
+   "ceiling": "ceiling_walnut_garage"
+  },
+  "sauna_walnut": {
+   "floor": "stone_dark_floor",
+   "wall": "sauna_walnut",
+   "ceiling": "sauna_walnut"
+  },
+  "bed_dark5": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_taupe_deep",
+   "ceiling": "ceiling_warm_light"
   }
  },
  "kind_materials": {
@@ -1952,6 +2130,67 @@
   "F_F_vanity2": "marble_sink_slab",
   "F_F_shower2": "stone_nero_floor",
   "F_F_wc2": "toilet_white",
-  "W_bath1_s2": "plaster_limewash_sand"
+  "W_bath1_s2": "plaster_limewash_sand",
+  "T_F_hall_wr": "wardrobe_walnut_reeded",
+  "T_F_wr1": "wardrobe_walnut_reeded",
+  "T_F_wr2": "wardrobe_walnut_reeded",
+  "T_F_util_tall": "oak_black_tall",
+  "T_F_k_tall": "oak_black_tall",
+  "T_F_k_run": "oak_black_cabinet",
+  "T_F_island": "marble_grey_brown",
+  "T_F_k_sink": "black_metal",
+  "T_F_k_cooktop": "black_metal",
+  "T_F_table": "marble_grey_brown",
+  "T_F_sofa": "sofa_boucle_ivory",
+  "T_F_sofa_leg": "sofa_boucle_ivory",
+  "T_F_arm1": "armchair_boucle_curved",
+  "T_F_arm2": "armchair_boucle_curved",
+  "T_F_ct1": "oak_smoked_table",
+  "T_F_ct2": "oak_smoked_table",
+  "T_F_tv": "tv_black",
+  "T_F_bed_base": "bed_base_walnut",
+  "T_F_bed_head": "headboard_ivory_channel",
+  "T_F_bed_linen": "duvet_ivory",
+  "T_F_bed_pillow": "pillow_grey",
+  "T_F_bed_throw": "throw_black_knit",
+  "T_F_ns1": "nightstand_black",
+  "T_F_ns2": "nightstand_black",
+  "T_F_vanity": "marble_sink_slab",
+  "T_F_vanity2": "vanity_black",
+  "T_F_wc": "toilet_white",
+  "T_F_wc2": "toilet_black",
+  "T_F_shower": "stone_nero_floor",
+  "T_F_shower2": "stone_nero_floor",
+  "T_F_jacuzzi": "jacuzzi_dark",
+  "T_F_sauna_b1": "sauna_walnut",
+  "T_F_sauna_b2": "sauna_walnut",
+  "T_F_washer": "appliance_white",
+  "T_F_dryer": "appliance_white",
+  "T_F_car": "car_g63_matte",
+  "T_F_car_glass": "car_glass",
+  "T_F_uog1": "glass",
+  "T_F_chair_w0": "leather_brown_chair",
+  "T_F_chair_e0": "leather_brown_chair",
+  "T_F_chair_w1": "leather_brown_chair",
+  "T_F_chair_e1": "leather_brown_chair",
+  "T_F_chair_w2": "leather_brown_chair",
+  "T_F_chair_e2": "leather_brown_chair",
+  "T_F_stair_01": "stair_walnut",
+  "T_F_stair_02": "stair_walnut",
+  "T_F_stair_03": "stair_walnut",
+  "T_F_stair_04": "stair_walnut",
+  "T_F_stair_05": "stair_walnut",
+  "T_F_stair_06": "stair_walnut",
+  "T_F_stair_07": "stair_walnut",
+  "T_F_stair_08": "stair_walnut",
+  "T_F_stair_09": "stair_walnut",
+  "T_F_stair_10": "stair_walnut",
+  "T_F_stair_11": "stair_walnut",
+  "T_F_stair_12": "stair_walnut",
+  "T_F_stair_13": "stair_walnut",
+  "T_F_stair_14": "stair_walnut",
+  "T_F_stair_15": "stair_walnut",
+  "T_F_stair_16": "stair_walnut",
+  "T_F_stair_17": "stair_walnut"
  }
 }

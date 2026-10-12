@@ -45,6 +45,9 @@ for f in plan["furniture"]:
     elif f["shape"] == "prism":
         if f["axis"] == "z":
             d.polygon([px(*q) for q in f["poly"]], fill=(0, 220, 0, 50), outline=(0, 150, 0, 255))
+        elif f["axis"] == "y":                  # axis y: footprint = the profile's x extent by y0..y1
+            xs = [q[0] for q in f["poly"]]
+            rect([min(xs), f["y0"], max(xs), f["y1"]], (0, 220, 0, 50), (0, 150, 0, 255))
         else:                                   # axis x: footprint = x0..x1 by the profile's y extent
             ys = [q[0] for q in f["poly"]]
             rect([f["x0"], min(ys), f["x1"], max(ys)], (0, 220, 0, 50), (0, 150, 0, 255))

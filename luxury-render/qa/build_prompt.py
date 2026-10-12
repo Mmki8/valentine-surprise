@@ -65,6 +65,7 @@ def main(plan_dir, cam_full):
     ds = json.load(open(os.path.join(ROOT, "design-system", "design-system.json")))
     cams = json.load(open(os.path.join(plan_dir, "cameras.json")))["cameras"]
     cam = next(c for c in cams if cam_full.startswith(c["id"]))
+    NAMES.update(json.load(open(os.path.join(plan_dir, "cameras.json"))).get("names", {}))   # per-plan wording overrides
     out = os.path.join(ROOT, "output", os.path.basename(os.path.normpath(plan_dir)), cam_full)
     meta = json.load(open(os.path.join(out, "blockout", "passes.json")))
     sid = cv2.imread(os.path.join(out, "blockout", "surface_ids.png"), cv2.IMREAD_COLOR)[:, :, ::-1]

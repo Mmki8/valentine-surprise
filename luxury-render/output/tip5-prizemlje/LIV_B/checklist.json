@@ -1,0 +1,113 @@
+{
+ "camera": "LIV_B",
+ "room": "T_R_living",
+ "hero": "LIV_A",
+ "mood": null,
+ "materials": [
+  "plaster_greige",
+  "walnut_fluted",
+  "art_painting_monumental",
+  "bronze_frame",
+  "plaster_warm_white",
+  "marble_brown_floor",
+  "sofa_boucle_ivory",
+  "boucle_ivory",
+  "marble_grey_brown",
+  "fig_foliage",
+  "stair_walnut",
+  "oak_planks_light",
+  "wardrobe_walnut_reeded",
+  "oak_black_tall",
+  "cushion_charcoal",
+  "cushion_cognac",
+  "sheer_linen",
+  "stone_pot",
+  "walnut_door",
+  "cable_black",
+  "olive_trunk",
+  "led_line",
+  "olive_foliage",
+  "leather_brown_chair",
+  "oak_black_cabinet",
+  "pendant_bronze",
+  "pampas",
+  "pendant_black_linear"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_liv_s_glz",
+   "name": "floor-to-ceiling glass facade",
+   "where": "left",
+   "share": 0.04,
+   "note": "living south: high glazing"
+  },
+  {
+   "id": "O_gar_door2",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.004,
+   "note": "garage -> hall"
+  }
+ ],
+ "furniture_counts": {
+  "sofa": 1,
+  "tall_cabinet": 2,
+  "island_x": 1,
+  "table_r": 1
+ },
+ "items": [
+  {
+   "id": "T_F_sofa",
+   "name": "straight 3-seat sofa",
+   "where": "centre",
+   "share": 0.033,
+   "note": "3-seat sofa facing east"
+  },
+  {
+   "id": "T_F_hall_wr",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.017,
+   "note": "hall wardrobe, 4 bays"
+  },
+  {
+   "id": "T_F_island",
+   "name": "kitchen island",
+   "where": "centre",
+   "share": 0.015,
+   "note": "island, cooktop at the south end"
+  },
+  {
+   "id": "T_F_k_tall",
+   "name": "full-height cabinet column",
+   "where": "centre",
+   "share": 0.013,
+   "note": "tall units + fridge (*)"
+  },
+  {
+   "id": "T_F_table",
+   "name": "dining table for 6",
+   "where": "centre",
+   "share": 0.004,
+   "note": "dining table for 6"
+  },
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "right",
+   "share": 0.002
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

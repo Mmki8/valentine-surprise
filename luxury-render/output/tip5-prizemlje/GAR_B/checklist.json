@@ -1,0 +1,51 @@
+{
+ "camera": "GAR_B",
+ "room": "T_R_garage",
+ "hero": "GAR_A",
+ "mood": null,
+ "materials": [
+  "car_g63_matte",
+  "walnut_slats_v",
+  "car_tyre",
+  "ceiling_walnut_garage",
+  "garage_floor_stone",
+  "plaster_charcoal",
+  "walnut_door",
+  "car_wheel",
+  "led_line",
+  "bronze_frame"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_gar_door2",
+   "name": "door (closed)",
+   "where": "right",
+   "share": 0.017,
+   "note": "garage -> hall"
+  }
+ ],
+ "furniture_counts": {
+  "car": 1
+ },
+ "items": [
+  {
+   "id": "T_F_car",
+   "name": "car",
+   "where": "left",
+   "share": 0.47,
+   "note": "matte black Mercedes-AMG G 63, nose-in (east) as drawn"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

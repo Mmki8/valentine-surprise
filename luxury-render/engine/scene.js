@@ -223,10 +223,12 @@ export function buildScene(plan, opts = {}, ds) {
     const col = KIND_MAT(f);
     if (f.shape === 'prism') {          // extruded polygon: axis z = plan polygon (x,y) raised z0..z0+h; axis x = (y,z) polygon, x0..x1
       const sh = new THREE.Shape(f.poly.map(([u, v]) => new THREE.Vector2(u, v)));
-      const depth = f.axis === 'x' ? f.x1 - f.x0 : f.h;
+      // axis y = (x,z) polygon extruded over plan y0..y1 (profiles that run along plan x: cars, raked glass)
+      const depth = f.axis === 'x' ? f.x1 - f.x0 : f.axis === 'y' ? f.y1 - f.y0 : f.h;
       const g = new THREE.ExtrudeGeometry(sh, { depth, bevelEnabled: false });
       g.applyMatrix4(f.axis === 'x' ? new THREE.Matrix4().set(0, 0, 1, f.x0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
-                                    : new THREE.Matrix4().set(1, 0, 0, 0, 0, 0, 1, f.z0, 0, 1, 0, 0, 0, 0, 0, 1));
+                     : f.axis === 'y' ? new THREE.Matrix4().set(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, f.y0, 0, 0, 0, 1)
+                                      : new THREE.Matrix4().set(1, 0, 0, 0, 0, 0, 1, f.z0, 0, 1, 0, 0, 0, 0, 0, 1));
       const m = new THREE.Mesh(g, mat(T(col), { side: THREE.DoubleSide }));
       if (f.kind === 'glass') glassPane(m);
       add(f.id, f.kind, m, col);

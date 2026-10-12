@@ -1,0 +1,62 @@
+{
+ "camera": "SPA_B",
+ "room": "T_R_spa",
+ "hero": "SPA_A",
+ "mood": null,
+ "materials": [
+  "stone_basalt",
+  "walnut_slats_dark",
+  "glass_bronze",
+  "stone_dark_floor",
+  "walnut_door",
+  "jacuzzi_dark",
+  "sauna_walnut",
+  "stone_nero_floor",
+  "bronze_frame",
+  "niche_lit",
+  "walnut_panel",
+  "black_metal",
+  "led_line"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.036,
+   "note": "corridor -> spa"
+  }
+ ],
+ "furniture_counts": {
+  "jacuzzi": 1,
+  "shower": 1
+ },
+ "items": [
+  {
+   "id": "T_F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "right",
+   "share": 0.02,
+   "note": "round jacuzzi D 1.70 m"
+  },
+  {
+   "id": "T_F_shower",
+   "name": "walk-in shower",
+   "where": "right",
+   "share": 0.014,
+   "note": "walk-in shower"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}
