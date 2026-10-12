@@ -1,0 +1,31 @@
+{
+ "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/cb051c7b-1764-47bb-b2fb-508d851bb741.zip",
+ "final": {
+  "LIV_A": "73487e6a",
+  "LIV_B": "51451709",
+  "KIT_A": "29966471",
+  "HALL_A": "f577867c",
+  "BED_A": "6eccb106",
+  "BED_B": "67bb2626",
+  "BBATH_A": "49698a98",
+  "BATH_A": "47e25f03",
+  "SPA_A": "e37ad52c",
+  "SPA_B": "5ee7e2e2",
+  "GAR_A": "97ca34a6",
+  "GAR_B": "2ac0e20a"
+ },
+ "gate": {
+  "LIV_A": "0.723/0.017 fail on pendant recall only - visually approved",
+  "LIV_B": "0.964 pass",
+  "KIT_A": "r1 0.536 fail (low ceiling pushed back) -> r2 0.997 pass",
+  "HALL_A": "0.911, ceiling-line recall low - visually approved",
+  "BED_A": "0.803 pass",
+  "BED_B": "0.947, ceiling recall low - visually approved",
+  "BBATH_A": "0.597, shower wall recall 0.28 - overlay matches, approved",
+  "BATH_A": "0.803 pass",
+  "SPA_A": "0.622, jacuzzi recall 0.17 - overlay matches, approved",
+  "SPA_B": "0.503 pass",
+  "GAR_A": "0.995 pass",
+  "GAR_B": "0.513, spare-wheel recall low (cropped) - approved"
+ }
+}
