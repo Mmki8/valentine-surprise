@@ -1,0 +1,13 @@
+{
+ "tip1_prizemlje": {
+  "final": "85884296 (edit of 8595e480: glass artefact removed) - gate 0.869 / drift 0.013",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_223818_85884296-f372-45a7-a30f-cb81d73265ca.png",
+  "rejected": {
+   "a98e8f24": "oblique 55deg view: invented east glass balcony, distorted facades (client)",
+   "cafc01b2": "glass rail outside NE + ring artefact",
+   "cb35e73f": "glass panels inside along the south facade",
+   "5ac1ba1c": "ring artefact over the sofa"
+  },
+  "camera": "plans/osnova-prizemlja/cameras.json FP3D_A: from the south, 72deg down, 7000 cm, hfov 17.5 (north up like the drawing), cut 200 cm, bg #e0dfc6"
+ }
+}
