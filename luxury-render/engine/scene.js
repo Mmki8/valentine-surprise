@@ -189,6 +189,11 @@ export function buildScene(plan, opts = {}, ds) {
   }
 
   // ---------------------------------------------------------- opening infill
+  // cutaway: glazing that runs through the cut gets the same dark cap as the walls, so a sliced glass wall reads as a wall
+  if (CUT) for (const o of plan.openings) {
+    if (!['window', 'sliding', 'curtain', 'glass_partition'].includes(o.type) || o.sill >= CUT || o.head <= CUT) continue;
+    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, 'cut_cap'));
+  }
   for (const o of plan.openings) {
     const [x0, y0, x1, y1] = o.rect;
     const alongX = (x1 - x0) >= (y1 - y0);
