@@ -1,0 +1,168 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up), house type 4 ground floor, floor 0.",
+ "exterior": "ground floor at garden level: through the glass a landscaped garden in golden-hour light - lawn, a clipped hedge, olive trees, a warm limestone terrace right outside, soft green hills far away under a warm golden sky with a few soft clouds. Never sea, never city, never night.",
+ "time_of_day": "golden hour, about 18:30 in late spring - low warm sun from the south-west streams in through the glass, long soft honey-coloured sun patches on the floor and walls, warm glowing air; bright, warm and inviting - never night, never dark",
+ "fittings": {
+  "_head": "Light fittings: ONLY these, exactly as modelled in IMAGE 1:",
+  "pendant_black_linear": "the slim black bar hanging on cables over the island is a linear black pendant",
+  "pendant_bronze": "the angled bronze bars on cables over the dining table are sculptural linear bronze pendants",
+  "lamp_black": "black cylinders on the nightstands are small black table lamps",
+  "walnut_facets": "the pure-white lines on the faceted walnut bed wall and its canopy are its warm LED seams",
+  "marble_white_panel": "the two pure-white vertical lines framing the white marble wall are slim LED lines",
+  "cabinet_greige": "the white line under the upper cabinets is a warm under-cabinet LED",
+  "bronze_mesh": "the island's bronze mesh front glows with a soft warm backlight",
+  "walnut_fluted": "the two pure-white vertical lines at the edges of the fluted walnut wall are slim warm LED lines",
+  "walnut_battens": "the short white lines under the stair nosings are warm step lights",
+  "mirror_backlit": "the mirror glows softly from behind",
+  "plaster_white": "a pure-white line along the edge of a dropped ceiling band is a warm cove light",
+  "_none": "Light fittings: none in this view - golden-hour daylight only.",
+  "_tail": "Add NO other light of any kind: no spotlights, no downlights, no track lights, no recessed ceiling lights, no extra LED strips, no wall lights, no chandeliers, no glowing outlines along edges. The thin GREY guide lines are not lights.",
+  "_decor": "Decor: only the modelled objects - olive trees in stone pots (green sphere on a trunk), dried pampas (beige stems), slim olive branches in small vases, line-art sketches and a large abstract painting in frames, books, ceramic bowls, lemons, rugs, cushions, sheer linen curtains; add no new objects."
+ },
+ "heroes": {
+  "living": "LIV_A",
+  "bedroom": "BED_A",
+  "bath": "BATH_A"
+ },
+ "cameras": [
+  {
+   "id": "LIV_A",
+   "room": "G_R_living",
+   "space": "living",
+   "title": "Living - double height, from the south-west corner to the sofa, media wall and east glass",
+   "pos": [
+    655.2,
+    949.3,
+    150
+   ],
+   "look": [
+    1116.0,
+    506.8
+   ],
+   "hfov": 94,
+   "shift_y": 0.24,
+   "notes": "The living is DOUBLE HEIGHT (5.6 m) - show the full height. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
+  },
+  {
+   "id": "LIV_B",
+   "room": "G_R_living",
+   "space": "living",
+   "title": "Living - from the east glass back over the sofa to the fluted walnut wall and the kitchen",
+   "pos": [
+    1009.7,
+    944.0,
+    150
+   ],
+   "look": [
+    628.9,
+    434.6
+   ],
+   "hfov": 94,
+   "shift_y": 0.22,
+   "notes": "The living is DOUBLE HEIGHT (5.6 m); the kitchen beyond has a normal 2.8 m pale oak ceiling. Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
+  },
+  {
+   "id": "KIT_A",
+   "room": "G_R_kitchen",
+   "space": "living",
+   "title": "Kitchen + dining - from the dining toward the island and the kitchen",
+   "pos": [
+    605.3,
+    933.5,
+    150
+   ],
+   "look": [
+    313.8,
+    375.5
+   ],
+   "hfov": 92,
+   "shift_y": 0.04
+  },
+  {
+   "id": "KIT_B",
+   "room": "G_R_kitchen",
+   "space": "living",
+   "title": "Kitchen - from the living toward the cooktop run, island and stair",
+   "pos": [
+    688.0,
+    657.8,
+    150
+   ],
+   "look": [
+    283.6,
+    539.6
+   ],
+   "hfov": 94,
+   "shift_y": 0.04
+  },
+  {
+   "id": "HALL_A",
+   "room": "G_R_hall",
+   "space": "living",
+   "title": "Hall - from the entrance along the stair to the bedroom door",
+   "pos": [
+    206.1,
+    940.1,
+    150
+   ],
+   "look": [
+    208.8,
+    231.1
+   ],
+   "hfov": 90,
+   "shift_y": 0.06
+  },
+  {
+   "id": "BED_A",
+   "room": "G_R_bed",
+   "space": "bedroom",
+   "title": "Bedroom - facing the faceted walnut bed wall",
+   "pos": [
+    849.5,
+    316.4,
+    150
+   ],
+   "look": [
+    609.2,
+    40.7
+   ],
+   "hfov": 94,
+   "shift_y": 0.06
+  },
+  {
+   "id": "BED_B",
+   "room": "G_R_bed",
+   "space": "bedroom",
+   "title": "Bedroom - from beside the bed to the marble wall and the east glass",
+   "pos": [
+    550.1,
+    119.5,
+    150
+   ],
+   "look": [
+    866.6,
+    316.4
+   ],
+   "hfov": 96,
+   "shift_y": 0.04,
+   "notes": "Through the glass: golden-hour garden - lawn, clipped hedge, olive trees, a stone terrace outside the glass, soft hills under a warm golden sky."
+  },
+  {
+   "id": "BATH_A",
+   "room": "G_R_bath",
+   "space": "bath",
+   "title": "Ensuite - wide corner view",
+   "pos": [
+    308.6,
+    206.1,
+    150
+   ],
+   "look": [
+    38.1,
+    40.7
+   ],
+   "hfov": 104,
+   "shift_y": 0.02
+  }
+ ]
+}

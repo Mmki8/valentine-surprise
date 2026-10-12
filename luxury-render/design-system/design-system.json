@@ -644,6 +644,61 @@
     "add": "",
     "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - two linear LED lines in the black ceiling, the lit oak niche in the cabinet wall"
    }
+  },
+  "G_R_living": {
+   "style": "living_void",
+   "mood_refs": [],
+   "concept": "Double-height living (5.6 m) after the client's references: honed brown marble floor, full-height fluted walnut wall with two LED lines, warm white plaster ceiling high above, soft ivory boucle L-sofa, round boucle tub chairs, freestanding walnut media wall, sculptural olive tree, double-height glass to the garden.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the fluted walnut glowing in the sun"
+   }
+  },
+  "G_R_kitchen": {
+   "style": "kitchen_oak",
+   "mood_refs": [],
+   "concept": "Kitchen + dining after the client's references: black-stained oak, grey-brown marble, light-greige uppers with LED under, waterfall marble island with a backlit bronze mesh front and black shell stools, pale oak plank ceiling, curved leather dining shells, sculptural bronze linear pendants.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, warm LED under the upper cabinets, the bronze mesh softly backlit"
+   }
+  },
+  "G_R_hall": {
+   "style": "hall_light",
+   "mood_refs": [],
+   "concept": "Arrival hall: walnut stair with glass balustrade and step lights, walnut battens, honed brown marble floor, warm white ceiling, three line-art sketches.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, warm daylight from the living room"
+   }
+  },
+  "G_R_bed": {
+   "style": "bedroom_tray",
+   "mood_refs": [],
+   "concept": "The approved Master Suite (faceted walnut wall with LED seams folding onto the ceiling, black slats, sand bed, charcoal bedding, black nightstands and lamps, white marble wall with LED lines) under a LIGHT tray ceiling with a warm cove, walnut floor, pampas.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "golden hour: low warm sun streams in through the glass, long honey-coloured sun patches on the floor and walls, the facet seams and the cove glowing softly"
+   }
+  },
+  "G_R_bath": {
+   "style": "bath_marble",
+   "mood_refs": [],
+   "concept": "Ensuite: warm cream marble with caramel veining, floating black vanity with LED underneath, wide backlit mirror, black vessel basin, clear glass shower with a lit niche.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "bright and warm: backlit mirror, glow under the vanity, lit niche, daylight from the high window"
+   }
   }
  },
  "guide_color_legend": {
@@ -1332,6 +1387,70 @@
   "car_cle": {
    "tint": "#3A3F46",
    "text": "gloss obsidian-black Mercedes-Benz CLE Coupe: sleek, low two-door coupe with a long bonnet, chrome grille with the large star, frameless side windows, slim LED headlights and tail lights, multi-spoke alloy wheels - compact and elegant, NOT an SUV, NOT a G-Wagon, NOT a limousine"
+  },
+  "marble_grey_brown": {
+   "tint": "#8F8579",
+   "text": "grey-brown marble with soft white and gold veining (Fior di Bosco), honed, book-matched, thick slab edges"
+  },
+  "cabinet_greige": {
+   "tint": "#CFC8BE",
+   "text": "handle-less warm light-greige lacquered upper cabinets, flush, with a warm LED line underneath"
+  },
+  "oak_black_cabinet": {
+   "tint": "#2A2420",
+   "text": "handle-less black-stained oak cabinet fronts with visible grain"
+  },
+  "oak_black_tall": {
+   "tint": "#221D1A",
+   "text": "full-height black-stained oak tall units with an integrated fridge, flush, slim black pulls"
+  },
+  "bronze_mesh": {
+   "tint": "#8C6A44",
+   "text": "perforated bronze mesh panel glowing with warm backlight"
+  },
+  "stool_black_shell": {
+   "tint": "#1E1E1E",
+   "text": "bar stool with a curved matte black shell seat on slim splayed walnut legs"
+  },
+  "pendant_black_linear": {
+   "tint": "#151515",
+   "text": "slim matte black linear pendant with a warm downlight strip, hung on thin cables"
+  },
+  "leather_brown_chair": {
+   "tint": "#5B3E2E",
+   "text": "curved dining chair with a rounded shell back in soft chocolate-brown leather on slim black legs"
+  },
+  "walnut_fluted": {
+   "tint": "#6A4A33",
+   "text": "full-height fluted smoked-walnut wall panelling with fine vertical reeds"
+  },
+  "rug_dark_wool": {
+   "tint": "#4A4642",
+   "text": "hand-knotted charcoal-brown wool rug with a soft texture"
+  },
+  "marble_brown_floor": {
+   "tint": "#6D5A4A",
+   "text": "large-format honed brown marble floor with warm gold and cream veining (Emperador)"
+  },
+  "oak_planks_light": {
+   "tint": "#C9B394",
+   "text": "pale natural oak plank ceiling, long boards, matte"
+  },
+  "plaster_warm_white": {
+   "tint": "#EEE8E0",
+   "text": "warm white mineral plaster, matte"
+  },
+  "marble_warm_veined": {
+   "tint": "#D8C3A6",
+   "text": "warm cream marble with bold caramel and brown veining, book-matched slabs, honed"
+  },
+  "vanity_black": {
+   "tint": "#1C1A19",
+   "text": "floating matte black vanity with a slim marble top, warm LED glow underneath"
+  },
+  "cushion_charcoal": {
+   "tint": "#3A3836",
+   "text": "charcoal linen cushion"
   }
  },
  "style_materials": {
@@ -1434,6 +1553,31 @@
    "floor": "stone_dark_floor",
    "wall": "plaster_dark",
    "ceiling": "ceiling_dark"
+  },
+  "bath_marble": {
+   "floor": "stone_greige_floor",
+   "wall": "marble_warm_veined",
+   "ceiling": "plaster_white"
+  },
+  "bedroom_tray": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_dark_bed",
+   "ceiling": "plaster_white"
+  },
+  "hall_light": {
+   "floor": "marble_brown_floor",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_warm_white"
+  },
+  "kitchen_oak": {
+   "floor": "marble_brown_floor",
+   "wall": "plaster_greige",
+   "ceiling": "oak_planks_light"
+  },
+  "living_void": {
+   "floor": "marble_brown_floor",
+   "wall": "plaster_greige",
+   "ceiling": "plaster_warm_white"
   }
  },
  "kind_materials": {
@@ -1578,6 +1722,43 @@
   "B_F_l_counter": "walnut_cabinet",
   "B_F_l_top": "worktop_marble",
   "B_F_car": "car_cle",
-  "B_F_car_glass": "car_glass"
+  "B_F_car_glass": "car_glass",
+  "G_F_shower": "stone_greige_floor",
+  "G_F_wc": "toilet_white",
+  "G_F_vanity": "vanity_black",
+  "G_F_wr1": "wardrobe_black_glass",
+  "G_F_wr2": "wardrobe_black_glass",
+  "G_F_bed_base": "bed_upholstered_sand",
+  "G_F_bed_head": "headboard_channel_sand",
+  "G_F_bed_linen": "duvet_charcoal",
+  "G_F_bed_pillow": "pillow_grey",
+  "G_F_bed_throw": "throw_black_knit",
+  "G_F_ns1": "nightstand_black",
+  "G_F_ns2": "nightstand_black",
+  "G_F_k_duct": "oak_black_tall",
+  "G_F_k_run_n": "oak_black_cabinet",
+  "G_F_k_run_w": "oak_black_cabinet",
+  "G_F_k_fridge": "oak_black_tall",
+  "G_F_island": "marble_grey_brown",
+  "G_F_table": "marble_grey_brown",
+  "G_F_gkpl": "walnut_fluted",
+  "G_F_sofa": "boucle_ivory",
+  "G_F_sofa_leg": "boucle_ivory",
+  "G_F_ct1": "oak_smoked_table",
+  "G_F_ct2": "oak_smoked_table",
+  "G_F_arm1": "boucle_ivory",
+  "G_F_arm2": "boucle_ivory",
+  "G_F_tv_unit": "walnut_console",
+  "G_F_k_cooktop": "black_metal",
+  "G_F_k_sink": "black_metal",
+  "G_F_stool0": "stool_black_shell",
+  "G_F_chair_n0": "leather_brown_chair",
+  "G_F_chair_s0": "leather_brown_chair",
+  "G_F_stool1": "stool_black_shell",
+  "G_F_chair_n1": "leather_brown_chair",
+  "G_F_chair_s1": "leather_brown_chair",
+  "G_F_stool2": "stool_black_shell",
+  "G_F_chair_n2": "leather_brown_chair",
+  "G_F_chair_s2": "leather_brown_chair"
  }
 }
