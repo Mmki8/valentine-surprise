@@ -1,0 +1,61 @@
+{
+ "camera": "GAR_A",
+ "room": "B_R_garage",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "walnut_cabinet",
+  "plaster_charcoal",
+  "car_cle",
+  "ceiling_black",
+  "microcement_dark",
+  "bronze_garage_door",
+  "car_glass",
+  "car_tyre",
+  "led_line",
+  "car_wheel",
+  "bronze_frame",
+  "oak_slats_h"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_garage_door",
+   "name": "sectional garage door (closed)",
+   "where": "centre",
+   "share": 0.051,
+   "note": "sectional garage door (south)"
+  }
+ ],
+ "furniture_counts": {
+  "tall_cabinet": 1,
+  "car": 1
+ },
+ "items": [
+  {
+   "id": "B_F_g_cab",
+   "name": "full-height cabinet column",
+   "where": "right",
+   "share": 0.251,
+   "note": "full-height cabinet wall"
+  },
+  {
+   "id": "B_F_car",
+   "name": "car",
+   "where": "left",
+   "share": 0.23,
+   "note": "black Mercedes-Benz CLE Coupe, nose-in as drawn"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

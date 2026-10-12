@@ -578,6 +578,72 @@
     "add": "",
     "light": "bright, warm and calm: the LED ring around the mirror, soft daylight from the small west window"
    }
+  },
+  "B_R_spa": {
+   "style": "spa_dark",
+   "mood_refs": [],
+   "concept": "Dark private spa after the client's references: dark textured basalt, dark honed stone floor, smoked-walnut slatted ceiling, warm oak slat feature wall with backlit edges, curved heated stone bench, round croc-textured black stone jacuzzi, living moss wall, olive tree, cherry blossom, orchid and candles.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - cove light washing the walls, backlit oak slats, glow under the bench and around the jacuzzi plinth, grazing light on the moss wall; moody, warm and calm"
+   }
+  },
+  "B_R_sauna": {
+   "style": "sauna_timber",
+   "mood_refs": [],
+   "concept": "Glass-fronted thermo-aspen sauna.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - warm backlight under both benches"
+   }
+  },
+  "B_R_wc": {
+   "style": "wc_dark",
+   "mood_refs": [],
+   "concept": "Jewel-box WC after the client's reference: dark chevron stone, floating marble trough basin over a walnut drawer, bronze-framed mirror with a vertical light bar, warm oak slats behind the white wall-hung WC.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - vertical light bar beside the mirror, glow under the vanity, cove light"
+   }
+  },
+  "B_R_corr": {
+   "style": "corridor_dark",
+   "mood_refs": [],
+   "concept": "Gallery corridor: smoked walnut floor, deep charcoal-brown plaster, walnut stair with a glass balustrade and step lights, walnut battens along the stair, black-and-white photographs with bronze picture lights, olive tree and ferns.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - cove light along the walls, warm light under every stair nosing, picture lights on the photographs"
+   }
+  },
+  "B_R_laundry": {
+   "style": "laundry_dark",
+   "mood_refs": [],
+   "concept": "Dark laundry: walnut cabinets, marble worktop, integrated washer and dryer, floating walnut shelf with light under it.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - light under the shelf and cove light"
+   }
+  },
+  "B_R_garage": {
+   "style": "garage_gallery",
+   "mood_refs": [],
+   "concept": "Car gallery: dark polished microcement, charcoal walls, black ceiling with two linear lines, walnut cabinet wall with a lit oak niche, framed photograph, black Mercedes CLE Coupe.",
+   "materials": {},
+   "retexture": {
+    "map": {},
+    "add": "",
+    "light": "no daylight at all (basement): lit only by the modelled warm 2700K architectural lighting - two linear LED lines in the black ceiling, the lit oak niche in the cabinet wall"
+   }
   }
  },
  "guide_color_legend": {
@@ -1206,6 +1272,66 @@
   "sauna_stove": {
    "tint": "#2A2A2A",
    "text": "black sauna stove with a basket of grey stones"
+  },
+  "stone_basalt": {
+   "tint": "#36332F",
+   "text": "large-format dark textured basalt stone slabs with a fine sandblasted grain, floor to ceiling"
+  },
+  "oak_slats_h": {
+   "tint": "#9A6B43",
+   "text": "warm natural oak in slim horizontal slats with fine black shadow gaps"
+  },
+  "bench_heated": {
+   "tint": "#3B3632",
+   "text": "curved heated spa bench with a softly reclined back, clad in smooth dark honed stone, rounded edges, rolled charcoal towels"
+  },
+  "moss_wall": {
+   "tint": "#4F6B3A",
+   "text": "living wall of preserved moss and ferns in deep greens, grazed by warm light from above"
+  },
+  "stone_chevron_dark": {
+   "tint": "#2E2F33",
+   "text": "dark charcoal stone tiles laid in a fine chevron pattern"
+  },
+  "stone_chevron_floor": {
+   "tint": "#5E6064",
+   "text": "grey honed stone floor tiles in a chevron pattern"
+  },
+  "marble_trough": {
+   "tint": "#CBC8C2",
+   "text": "thick floating grey-white veined marble counter with an integrated sloped trough basin and a black wall tap, softly rounded corners"
+  },
+  "mirror_bronze": {
+   "tint": "#8C8F8E",
+   "text": "rounded-rectangle mirror in a deep bronze frame"
+  },
+  "plaster_dark": {
+   "tint": "#3A322C",
+   "text": "deep warm charcoal-brown mineral plaster, matte"
+  },
+  "art_photo_portrait_bw": {
+   "tint": "#707070",
+   "text": "large black-and-white fine-art photograph in a slim black frame with a white mat"
+  },
+  "picture_light": {
+   "tint": "#8A6A48",
+   "text": "slim bronze picture light casting a warm glow down onto the artwork"
+  },
+  "blossom": {
+   "tint": "#F0D3DA",
+   "text": "flowering pale-pink cherry blossom branches"
+  },
+  "fern_foliage": {
+   "tint": "#3E6B35",
+   "text": "lush green ferns"
+  },
+  "rattan_basket": {
+   "tint": "#A07A50",
+   "text": "woven rattan basket"
+  },
+  "car_cle": {
+   "tint": "#3A3F46",
+   "text": "gloss obsidian-black Mercedes-Benz CLE Coupe: sleek, low two-door coupe with a long bonnet, chrome grille with the large star, frameless side windows, slim LED headlights and tail lights, multi-spoke alloy wheels - compact and elegant, NOT an SUV, NOT a G-Wagon, NOT a limousine"
   }
  },
  "style_materials": {
@@ -1288,6 +1414,26 @@
    "floor": "stone_greige_floor",
    "wall": "stone_greige_honed",
    "ceiling": "walnut_slats"
+  },
+  "spa_dark": {
+   "floor": "stone_dark_floor",
+   "wall": "stone_basalt",
+   "ceiling": "walnut_slats_dark"
+  },
+  "wc_dark": {
+   "floor": "stone_chevron_floor",
+   "wall": "stone_chevron_dark",
+   "ceiling": "ceiling_dark"
+  },
+  "corridor_dark": {
+   "floor": "walnut_floor_dark",
+   "wall": "plaster_dark",
+   "ceiling": "ceiling_dark"
+  },
+  "laundry_dark": {
+   "floor": "stone_dark_floor",
+   "wall": "plaster_dark",
+   "ceiling": "ceiling_dark"
   }
  },
  "kind_materials": {
@@ -1421,6 +1567,17 @@
   "P_F_car": "car_sclass",
   "P_F_car_glass": "car_glass",
   "P_F_sink": "black_metal",
-  "P_F_cooktop": "black_metal"
+  "P_F_cooktop": "black_metal",
+  "B_F_wc_toilet": "toilet_white",
+  "B_F_wc_vanity": "marble_trough",
+  "B_F_shower": "stone_dark_floor",
+  "B_F_jacuzzi": "jacuzzi_stone",
+  "B_F_bench_w": "bench_heated",
+  "B_F_bench_e": "bench_heated",
+  "B_F_g_cab": "walnut_cabinet",
+  "B_F_l_counter": "walnut_cabinet",
+  "B_F_l_top": "worktop_marble",
+  "B_F_car": "car_cle",
+  "B_F_car_glass": "car_glass"
  }
 }

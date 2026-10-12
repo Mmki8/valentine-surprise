@@ -22,7 +22,7 @@ NAMES = {
     "tall_cabinet": "full-height cabinet column", "low_cabinet": "low cabinet", "appliance": "washer/dryer",
     "tv": "TV", "toilet": "wall-hung toilet", "vanity": "floating vanity", "basin": "vessel basin",
     "bench": "sauna bench", "jacuzzi": "round jacuzzi hot tub", "shower": "walk-in shower",
-    "stair": "staircase", "car": "car", "island_x": "kitchen island", "cooktop": "cooktop", "sink": "sink",
+    "stair": "staircase", "car": "car", "island_x": "kitchen island", "heated_bench": "curved heated spa bench", "counter_r": "cabinet run", "worktop": "worktop", "cooktop": "cooktop", "sink": "sink",
     "box": "boxed column", "bed": "bed", "nightstand": "nightstand",
 }
 OPEN_NAMES = {"window": "window", "door": "door (closed)", "double_door": "glazed double door (closed)",
@@ -90,7 +90,7 @@ def main(plan_dir, cam_full):
             continue
         if k in furn:
             f = furn[k]
-            if f["kind"] in ("glass", "fixture", "car_glass"):
+            if f["kind"] in ("glass", "fixture", "car_glass", "worktop"):
                 continue
             if f["kind"] == "stair":
                 k2 = "staircase"
@@ -129,7 +129,7 @@ def main(plan_dir, cam_full):
     open_txt = "; ".join(f"{o['name']} at frame {o['where']}" for o in openings) or "none"
     hero = None if (cam.get("relight_from") or cam.get("style_from")) else hero_for(cam_full, plan_dir)
     mood = None if (cam.get("relight_from") or cam.get("style_from")) else mood_for(cam_full, plan_dir)
-    upper = cam["room"].startswith(("U_", "S_", "P_"))
+    upper = cam["room"].startswith(("U_", "S_", "P_", "B_"))
     cfg = json.load(open(os.path.join(plan_dir, "cameras.json")))
     style_ref = (cfg.get("heroes", {}).get(cam.get("space")) == cam_full and cam.get("space") in cfg.get("style_refs", {}))
     car_line = " The garage is EMPTY: no car anywhere." if (cam["room"] == "R_garage" and not car_on) else ""

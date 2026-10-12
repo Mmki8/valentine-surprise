@@ -1,0 +1,53 @@
+{
+ "camera": "GAR_B",
+ "room": "B_R_garage",
+ "hero": "GAR_A",
+ "mood": null,
+ "materials": [
+  "plaster_charcoal",
+  "car_cle",
+  "walnut_cabinet",
+  "ceiling_black",
+  "microcement_dark",
+  "car_glass",
+  "art_photo_bw",
+  "car_tyre",
+  "car_wheel",
+  "oak_slats_h",
+  "led_line",
+  "stone_basalt"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "car": 1,
+  "tall_cabinet": 1
+ },
+ "items": [
+  {
+   "id": "B_F_car",
+   "name": "car",
+   "where": "centre",
+   "share": 0.189,
+   "note": "black Mercedes-Benz CLE Coupe, nose-in as drawn"
+  },
+  {
+   "id": "B_F_g_cab",
+   "name": "full-height cabinet column",
+   "where": "left",
+   "share": 0.15,
+   "note": "full-height cabinet wall"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

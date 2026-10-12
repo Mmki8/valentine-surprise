@@ -1,0 +1,161 @@
+{
+ "_doc": "Cameras in plan cm (x east, y south, z up), house type 4 basement, floor 0.",
+ "exterior": "this is a basement - there are NO windows; never show sky or garden anywhere.",
+ "time_of_day": "evening; no daylight at all - the rooms are lit ONLY by the modelled warm 2700K architectural lighting, moody but well lit, rich warm glow and deep soft shadows, like a five-star hotel spa at night",
+ "fittings": {
+  "_head": "Light fittings: ONLY these, exactly as modelled in IMAGE 1:",
+  "led_line": "every thin pure-white line is a warm 2700K concealed LED strip exactly where it is drawn (cove light under the ceiling edge, the backlit edges of the oak slat wall, the glow under the heated bench, the lines in the garage ceiling, under the stair nosings, under the vanity, under the shelf, under the sauna benches, the lit shower niche)",
+  "jacuzzi_stone": "the white ring at the base of the jacuzzi is a soft warm glow around its plinth",
+  "picture_light": "the slim bronze bars above the photographs are picture lights glowing down onto them",
+  "mirror_bronze": "the vertical white bar beside the mirror is a slim warm wall light bar",
+  "candle": "a few lit candles",
+  "_none": "Light fittings: only the warm concealed LED lines drawn in IMAGE 1.",
+  "_tail": "Add NO other light of any kind: no spotlights, no downlights, no recessed ceiling lights, no pendants, no lamps, no extra LED strips, no glowing outlines along edges. The thin GREY guide lines are not lights.",
+  "_decor": "Decor: only the modelled objects - olive trees in stone pots (green sphere on a trunk), lush ferns in dark pots (green sphere in a pot), tall dark vases with pale-pink cherry blossom branches, an orchid with candles, rolled and stacked charcoal towels, framed photographs, a rattan basket; add no new objects."
+ },
+ "heroes": {
+  "spa": "SPA_A",
+  "wc": "WC_A",
+  "corridor": "CORR_A",
+  "laundry": "LAUNDRY_A",
+  "garage": "GAR_A"
+ },
+ "cameras": [
+  {
+   "id": "SPA_A",
+   "room": "B_R_spa",
+   "space": "spa",
+   "title": "Spa - from the entrance over the jacuzzi to the heated bench, oak slat wall and moss wall",
+   "pos": [
+    374.2,
+    220.6,
+    150
+   ],
+   "look": [
+    866.6,
+    120.8
+   ],
+   "hfov": 96,
+   "shift_y": 0.02
+  },
+  {
+   "id": "SPA_B",
+   "room": "B_R_spa",
+   "space": "spa",
+   "title": "Spa - from the far corner over the jacuzzi to the bench, shower and sauna",
+   "pos": [
+    857.4,
+    325.6,
+    150
+   ],
+   "look": [
+    347.9,
+    107.7
+   ],
+   "hfov": 102,
+   "shift_y": 0.02
+  },
+  {
+   "id": "SAUNA_A",
+   "room": "B_R_spa",
+   "space": "spa",
+   "title": "Sauna through its glass front, shower beside it",
+   "pos": [
+    459.5,
+    304.6,
+    150
+   ],
+   "look": [
+    229.8,
+    107.7
+   ],
+   "hfov": 96,
+   "shift_y": 0.02
+  },
+  {
+   "id": "WC_A",
+   "room": "B_R_wc",
+   "space": "wc",
+   "title": "WC - from the door",
+   "pos": [
+    157.6,
+    207.5,
+    150
+   ],
+   "look": [
+    38.1,
+    65.6
+   ],
+   "hfov": 118,
+   "shift_y": -0.12
+  },
+  {
+   "id": "CORR_A",
+   "room": "B_R_corr",
+   "space": "corridor",
+   "title": "Corridor - from the laundry end to the stair and the gallery of photographs",
+   "pos": [
+    210.1,
+    950.6,
+    150
+   ],
+   "look": [
+    157.6,
+    225.8
+   ],
+   "hfov": 92,
+   "shift_y": 0.03
+  },
+  {
+   "id": "LAUNDRY_A",
+   "room": "B_R_laundry",
+   "space": "laundry",
+   "title": "Laundry - from the door",
+   "pos": [
+    242.9,
+    995.3,
+    150
+   ],
+   "look": [
+    38.1,
+    1210.6
+   ],
+   "hfov": 104,
+   "shift_y": -0.05
+  },
+  {
+   "id": "GAR_A",
+   "room": "B_R_garage",
+   "space": "garage",
+   "title": "Garage - front three-quarter of the Mercedes CLE",
+   "pos": [
+    709.0,
+    380.8,
+    200
+   ],
+   "look": [
+    938.8,
+    829.8
+   ],
+   "hfov": 100,
+   "shift_y": -0.25
+  },
+  {
+   "id": "GAR_B",
+   "room": "B_R_garage",
+   "space": "garage",
+   "title": "Garage - from the garage door along the car and the walnut cabinet wall",
+   "pos": [
+    1083.2,
+    950.6,
+    200
+   ],
+   "look": [
+    741.8,
+    462.2
+   ],
+   "hfov": 100,
+   "shift_y": -0.22
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "camera": "SAUNA_A",
+ "room": "B_R_spa",
+ "hero": "SPA_A",
+ "mood": null,
+ "materials": [
+  "stone_basalt",
+  "walnut_door",
+  "sauna_aspen",
+  "sauna_bench",
+  "oak_slats_h",
+  "bronze_frame",
+  "walnut_slats_dark",
+  "niche_lit",
+  "bench_heated",
+  "led_line",
+  "black_metal",
+  "stone_dark_floor"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "left",
+   "share": 0.214,
+   "note": "corridor -> spa"
+  },
+  {
+   "id": "O_sauna_side",
+   "name": "glass partition/door",
+   "where": "centre",
+   "share": 0.003,
+   "note": "sauna glass side"
+  }
+ ],
+ "furniture_counts": {
+  "bench": 2,
+  "heated_bench": 1,
+  "shower": 1
+ },
+ "items": [
+  {
+   "id": "B_F_sauna_lo",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.031,
+   "note": "lower bench / step"
+  },
+  {
+   "id": "B_F_sauna_hi",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.029,
+   "note": "upper bench"
+  },
+  {
+   "id": "B_F_bench_w",
+   "name": "curved heated spa bench",
+   "where": "right",
+   "share": 0.013,
+   "note": "heated stone bench 'topla klupa', curved reclining back"
+  },
+  {
+   "id": "B_F_shower",
+   "name": "walk-in shower",
+   "where": "right",
+   "share": 0.002,
+   "note": null
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

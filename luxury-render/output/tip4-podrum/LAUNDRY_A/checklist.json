@@ -1,0 +1,60 @@
+{
+ "camera": "LAUNDRY_A",
+ "room": "B_R_laundry",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "plaster_dark",
+  "appliance_white",
+  "worktop_marble",
+  "ceiling_dark",
+  "walnut_cabinet",
+  "stone_dark_floor",
+  "walnut_shelf",
+  "led_line",
+  "rattan_basket",
+  "fern_foliage",
+  "towels_charcoal",
+  "ceramic_dark"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "appliance": 2,
+  "counter_r": 1
+ },
+ "items": [
+  {
+   "id": "B_F_l_washer",
+   "name": "washer/dryer",
+   "where": "right",
+   "share": 0.042,
+   "note": null
+  },
+  {
+   "id": "B_F_l_dryer",
+   "name": "washer/dryer",
+   "where": "centre",
+   "share": 0.039,
+   "note": null
+  },
+  {
+   "id": "B_F_l_counter",
+   "name": "cabinet run",
+   "where": "centre",
+   "share": 0.031,
+   "note": "cabinet run"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

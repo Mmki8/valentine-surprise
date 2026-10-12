@@ -1,0 +1,80 @@
+{
+ "camera": "SPA_B",
+ "room": "B_R_spa",
+ "hero": "SPA_A",
+ "mood": null,
+ "materials": [
+  "stone_basalt",
+  "walnut_slats_dark",
+  "jacuzzi_stone",
+  "stone_dark_floor",
+  "oak_slats_h",
+  "bench_heated",
+  "walnut_door",
+  "moss_wall",
+  "sauna_aspen",
+  "led_line",
+  "sauna_bench",
+  "bronze_frame",
+  "orchid_white",
+  "towels_charcoal",
+  "ceramic_dark",
+  "niche_lit"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_spa_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.016,
+   "note": "corridor -> spa"
+  }
+ ],
+ "furniture_counts": {
+  "jacuzzi": 1,
+  "heated_bench": 1,
+  "bench": 2
+ },
+ "items": [
+  {
+   "id": "B_F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "right",
+   "share": 0.073,
+   "note": "round jacuzzi D 168"
+  },
+  {
+   "id": "B_F_bench_e",
+   "name": "curved heated spa bench",
+   "where": "centre",
+   "share": 0.019,
+   "note": "heated stone bench 'topla klupa', curved reclining back"
+  },
+  {
+   "id": "B_F_sauna_hi",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.003,
+   "note": "upper bench"
+  },
+  {
+   "id": "B_F_sauna_lo",
+   "name": "sauna bench",
+   "where": "centre",
+   "share": 0.003,
+   "note": "lower bench / step"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

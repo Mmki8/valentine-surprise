@@ -1,0 +1,57 @@
+{
+ "camera": "CORR_A",
+ "room": "B_R_corr",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "art_photo_portrait_bw",
+  "walnut_battens",
+  "plaster_dark",
+  "stair_walnut",
+  "ceiling_dark",
+  "walnut_floor_dark",
+  "walnut_door",
+  "picture_light",
+  "bronze_frame",
+  "led_line",
+  "vase_dark",
+  "fern_foliage"
+ ],
+ "car": null,
+ "openings": [
+  {
+   "id": "O_wc_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.006,
+   "note": "corridor -> WC"
+  },
+  {
+   "id": "O_mid_door",
+   "name": "door (closed)",
+   "where": "centre",
+   "share": 0.003,
+   "note": "corridor -> middle room (unlabelled)"
+  }
+ ],
+ "furniture_counts": {},
+ "items": [
+  {
+   "id": "staircase",
+   "name": "staircase",
+   "where": "left",
+   "share": 0.032
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}

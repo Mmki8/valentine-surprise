@@ -1,0 +1,56 @@
+{
+ "camera": "SPA_A",
+ "room": "B_R_spa",
+ "hero": null,
+ "mood": null,
+ "materials": [
+  "stone_basalt",
+  "oak_slats_h",
+  "moss_wall",
+  "walnut_slats_dark",
+  "bench_heated",
+  "stone_dark_floor",
+  "jacuzzi_stone",
+  "olive_foliage",
+  "led_line",
+  "plaster_charcoal",
+  "stone_pot",
+  "towels_charcoal",
+  "orchid_white",
+  "ceramic_dark",
+  "olive_trunk"
+ ],
+ "car": null,
+ "openings": [],
+ "furniture_counts": {
+  "heated_bench": 1,
+  "jacuzzi": 1
+ },
+ "items": [
+  {
+   "id": "B_F_bench_w",
+   "name": "curved heated spa bench",
+   "where": "left",
+   "share": 0.056,
+   "note": "heated stone bench 'topla klupa', curved reclining back"
+  },
+  {
+   "id": "B_F_jacuzzi",
+   "name": "round jacuzzi hot tub",
+   "where": "centre",
+   "share": 0.047,
+   "note": "round jacuzzi D 168"
+  }
+ ],
+ "manual_checks": [
+  "camera position/angle/framing identical to blockout (compare overlay)",
+  "every opening listed is present, same position/size; NO extra window/door",
+  "every furniture count matches exactly; positions & orientation match",
+  "ceiling heights match (double height only over living)",
+  "daylight comes from the visible openings only, direction consistent",
+  "style matches design system for this room; photoreal, no AI artefacts",
+  "CONSISTENCY: every shared object/material/fitting/light matches the hero render of this space",
+  "no light fittings or decor objects beyond those modelled",
+  "NO drawn outline/contour/seam lines and NO glowing strips copied from the guide lines"
+ ]
+}
