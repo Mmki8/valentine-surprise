@@ -859,23 +859,15 @@
   },
   {
    "id": "P_R_entry",
-   "name": "Entry hall + stair + corridor + steps",
+   "name": "Entry hall + corridor + steps",
    "polygon": [
     [
      442.5,
      341.4
     ],
     [
-     1116.0,
-     341.4
-    ],
-    [
-     1116.0,
-     442.5
-    ],
-    [
      643.4,
-     442.5
+     341.4
     ],
     [
      643.4,
@@ -913,14 +905,33 @@
    "floor": -60,
    "ceiling": 280,
    "style": "entry_warm",
-   "ceiling_holes": [
+   "ceiling_holes": []
+  },
+  {
+   "id": "P_R_stair",
+   "name": "Stairwell down to the souterrain",
+   "polygon": [
     [
      643.4,
-     341.4,
+     341.4
+    ],
+    [
+     1116.0,
+     341.4
+    ],
+    [
      1116.0,
      442.5
+    ],
+    [
+     643.4,
+     442.5
     ]
-   ]
+   ],
+   "floor": -360,
+   "ceiling": 280,
+   "style": "entry_warm",
+   "ceiling_holes": []
   },
   {
    "id": "P_R_vest",
@@ -2052,9 +2063,9 @@
     672.9,
     442.5
    ],
-   "z0": -60,
-   "h": 20,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 285,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2067,9 +2078,9 @@
     702.5,
     442.5
    ],
-   "z0": -60,
-   "h": 40,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 270,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2082,9 +2093,9 @@
     732.0,
     442.5
    ],
-   "z0": -60,
-   "h": 60,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 255,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2097,9 +2108,9 @@
     761.5,
     442.5
    ],
-   "z0": -60,
-   "h": 80,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 240,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2112,9 +2123,9 @@
     791.1,
     442.5
    ],
-   "z0": -60,
-   "h": 100,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 225,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2127,9 +2138,9 @@
     820.6,
     442.5
    ],
-   "z0": -60,
-   "h": 120,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 210,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2142,9 +2153,9 @@
     850.2,
     442.5
    ],
-   "z0": -60,
-   "h": 140,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 195,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2157,9 +2168,9 @@
     879.7,
     442.5
    ],
-   "z0": -60,
-   "h": 160,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 180,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2172,9 +2183,9 @@
     909.2,
     442.5
    ],
-   "z0": -60,
-   "h": 180,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 165,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2187,9 +2198,9 @@
     938.8,
     442.5
    ],
-   "z0": -60,
-   "h": 200,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 150,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2202,9 +2213,9 @@
     968.3,
     442.5
    ],
-   "z0": -60,
-   "h": 220,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 135,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2217,9 +2228,9 @@
     997.9,
     442.5
    ],
-   "z0": -60,
-   "h": 240,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 120,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2232,9 +2243,9 @@
     1027.4,
     442.5
    ],
-   "z0": -60,
-   "h": 260,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 105,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2247,9 +2258,9 @@
     1056.9,
     442.5
    ],
-   "z0": -60,
-   "h": 280,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 90,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2262,9 +2273,9 @@
     1086.5,
     442.5
    ],
-   "z0": -60,
-   "h": 300,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 75,
+   "room": "P_R_stair",
    "group": null
   },
   {
@@ -2277,9 +2288,9 @@
     1116.0,
     442.5
    ],
-   "z0": -60,
-   "h": 320,
-   "room": "P_R_entry",
+   "z0": -360,
+   "h": 60,
+   "room": "P_R_stair",
    "group": null
   },
   {

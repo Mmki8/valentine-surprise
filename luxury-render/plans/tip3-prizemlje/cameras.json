@@ -291,6 +291,46 @@
    ],
    "hfov": 110,
    "shift_y": -0.1
+  },
+  {
+   "id": "FP3D_P3",
+   "room": "P_R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - straight top-down (north up)",
+   "pos": [
+    676,
+    692,
+    30000
+   ],
+   "look": [
+    676,
+    692,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 5.1,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true,
+      "cut": 290
+     }
+    }
+   ]
   }
  ]
 }

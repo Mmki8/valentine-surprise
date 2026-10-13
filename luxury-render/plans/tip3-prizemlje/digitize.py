@@ -105,9 +105,11 @@ openings = [
 # ---------------------------------------------------------------- rooms  (floor = level, all ceilings on one slab)
 rooms = [
     dict(id="P_R_garage", name="Garage", px=[(201, 88), (445, 88), (445, 545), (201, 545)], floor=LO, style="garage_gallery"),
-    dict(id="P_R_entry", name="Entry hall + stair + corridor + steps",
-         px=[(510, 320), (1023, 320), (1023, 397), (663, 397), (663, 416), (777, 416), (777, 497), (643, 497), (643, 565),
-             (465, 565), (465, 406), (510, 406)], floor=LO, style="entry_warm", ceiling_holes=[(663, 320, 1023, 397)]),
+    dict(id="P_R_entry", name="Entry hall + corridor + steps",
+         px=[(510, 320), (663, 320), (663, 416), (777, 416), (777, 497), (643, 497), (643, 565),
+             (465, 565), (465, 406), (510, 406)], floor=LO, style="entry_warm"),
+    dict(id="P_R_stair", name="Stairwell down to the souterrain", px=[(663, 320), (1023, 320), (1023, 397), (663, 397)],
+         floor=LO - 300, style="entry_warm"),
     dict(id="P_R_vest", name="Back vestibule", px=[(1043, 320), (1172, 320), (1172, 397), (1043, 397)], floor=LO, style="entry_warm"),
     dict(id="P_R_wc", name="Guest WC", px=[(663, 505), (776, 505), (776, 648), (663, 648)], floor=LO, style="bath_greige"),
     dict(id="P_R_sauna", name="Sauna", px=[(784, 505), (900, 505), (900, 648), (784, 648)], floor=LO, ceiling=LO + 220,
@@ -178,14 +180,16 @@ box("P_F_shaft", "box", (465, 320, 510, 406), LO, H - LO, "P_R_entry", None, "in
 # steps between the levels: 4 risers rising SOUTH, 3 treads of 30 cm (lines py 497 / 520 / 543 / 565)
 for k, (y0, y1) in enumerate([(497, 520), (520, 543), (543, 565)]):
     box(f"P_F_step_{k + 1}", "stair", (465, y0, 643, y1), LO, 15 * (k + 1), "P_R_entry")
-# stair to the 1st floor: rises EAST along the north wall, 16 goings of 23 px (30 cm) + 17 risers of 20 cm
+# stair DOWN to the souterrain (corrected): it lies exactly over the souterrain stair, which rises west and arrives here
+# at the west end (px 663). The treads are drawn solid over the whole run (all below the cut) = a stair going down.
+# 16 goings of 23 px (30 cm) visible in the stairwell, risers of 15 cm (souterrain: 20 risers over 300 cm).
 SX0, SX1 = cm(663, "x"), cm(1023, "x")
 SY0, SY1 = cm(320, "y"), cm(397, "y")
-n_go, rise = 16, 20
+n_go, rise = 16, 15
 g = (SX1 - SX0) / n_go
 for k in range(n_go):
     F.append(dict(id=f"P_F_stair_{k + 1:02d}", kind="stair", shape="box", rect=[round(SX0 + g * k, 1), SY0, round(SX0 + g * (k + 1), 1), SY1],
-                  z0=LO, h=rise * (k + 1), room="P_R_entry", group=None))
+                  z0=LO - 300, h=300 - rise * (k + 1), room="P_R_stair", group=None))
 
 from design_layer import DESIGN, SITE, CAR                # noqa: E402
 F.extend(CAR)
