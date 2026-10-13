@@ -67,5 +67,19 @@
   "check": "mean pixel diff vs approved v1 outside the stair strip 6.1 (edge re-render only), inside 29.2",
   "final": "9e828817 -> 4K upscale 0690932f + background locked to #ECE8E0",
   "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f34a75b7-33f5-4d7e-aff6-1b141415d0f3.zip"
+ },
+ "tip2_suteren_topdown": {
+  "status": "delivered",
+  "model": "plans/tip2-suteren (new digitization, overlay check plan_check.png)",
+  "guide_media": "25633f31 (FP3D_T @ fa68b1d)",
+  "candidates": {
+   "67b28883": "selected: clear stair, all rooms; basins missing",
+   "1c6de589": "stair rendered as a flat panel",
+   "00ac39cb": "stair missing"
+  },
+  "gate": "all three pass (0.999-1.0, drift 0.005-0.018)",
+  "edit": "a8cdf080: basins added to both bathrooms (diff outside 4.3)",
+  "final": "a8cdf080 -> 4K upscale e2e163ec + background locked to #ECE8E0",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/85f43b6b-5335-4d54-884d-337c0ac1336c.zip"
  }
 }
