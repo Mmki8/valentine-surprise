@@ -8,6 +8,19 @@
    "cb35e73f": "glass panels inside along the south facade",
    "5ac1ba1c": "ring artefact over the sofa"
   },
-  "camera": "plans/osnova-prizemlja/cameras.json FP3D_A: from the south, 72deg down, 7000 cm, hfov 17.5 (north up like the drawing), cut 200 cm, bg #e0dfc6"
+  "camera": "plans/osnova-prizemlja/cameras.json FP3D_A: from the south, 72deg down, 7000 cm, hfov 17.5 (north up like the drawing), cut 200 cm, bg #e0dfc6",
+  "status": "superseded by tip1_prizemlje_v2 (client: low quality, wrong style)"
+ },
+ "tip1_prizemlje_v2": {
+  "final": "3b4fdee8 (4K upscale of 524225f5) + background locked to #ECE8E0 by soft-mask colour shift - gate 0.888 / drift 0.003",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/485353bc-2b8b-4394-93ea-e63a8476c525.zip",
+  "style_ref": "refs/fp3d/style_ref_floorplan.webp",
+  "bg_ref": "refs/fp3d/background_color.png (#ECE8E0)",
+  "candidates": {
+   "e88735de": "gate fail: drift 0.065",
+   "8ee46fc2": "pass 0.799 / 0.016, weaker than 524225f5",
+   "524225f5": "pass 0.888 / 0.003 - selected"
+  },
+  "camera": "plans/osnova-prizemlja/cameras.json FP3D_B: corner view from the SE, 47deg down, cut 250 cm, white wall caps, doors open"
  }
 }
