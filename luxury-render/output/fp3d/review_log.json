@@ -34,5 +34,16 @@
    "41226d7c": "pass (style ref 31.webp); invented a rug in the mudroom"
   },
   "camera": "plans/osnova-prizemlja/cameras.json FP3D_C: straight down from 300 m, hfov 4.1 (near-orthographic), north up, cut 282, no_upper, no_ceiling_lights, glass_cap cut_glass"
+ },
+ "tip1_sprat_topdown": {
+  "status": "generated, awaiting QA (Higgsfield connection lost after submit)",
+  "guide_media": "8f60901d-7d0d-43b4-aee7-b8a3eda5695e (FP3D_U guide_lined @ a9b1ae0)",
+  "jobs": {
+   "049dfdab-0fdc-47e7-8e7d-c0edd003ce8a": "guide only",
+   "d020b5f2-f16d-4640-9626-5b5e081e2e71": "guide + ground final f875db19",
+   "272dd6e9-25ce-4503-b405-285364ec6c28": "guide + ground final f875db19"
+  },
+  "pre_check": "FP3D_U guide overlaid on the client's sheet 32.png (identical to source/floorplan_first.png): walls, columns, doors, fixtures aligned",
+  "void": "double-height living shown open to below (no first floor there), living visible one storey down"
  }
 }
