@@ -23,7 +23,7 @@ Scale from the drawing's own dimension chains: 1326 cm = px 182 -> 1192, 1000 cm
 |---|---|
 | P1 | **Split level** - 4 risers drawn across the hall (py 497/520/543/565) and the same 4 risers outside on the terrace (py 648-716): the entry / spa / garage side sits **60 cm lower** than the living / bedroom side. Direction (living higher) chosen because the souterrain bedrooms lie under the living and need the height. |
 | P2 | One flat ceiling at +2.80 (living 2.80 m clear, entry and spa 3.40 m) |
-| P3 | Stair to the 1st floor: 16 goings x 30 cm, 17 risers x 20 cm, rising east (top above the back vestibule) |
+| P3 | Stair DOWN to the souterrain (corrected): it lies exactly over the souterrain stair and its treads are drawn solid over the whole run; 16 goings of 30 cm visible, risers of 15 cm, descending east |
 | P4 | OG.1 / OG.2 / OG.3 / OG.4 = frameless glass railings (OG = ograda). The south glass is a French balcony; the garden lies a full storey below (souterrain walk-out). |
 | P5 | Car modelled at the real size of a Mercedes S-Class LWB (5.18 x 1.92 m) - longer than the drawn symbol; it fits with ~48 cm behind and ~33 cm in front |
 | P6 | Double line between the back vestibule and the spa read as a glass sliding door |

@@ -94,5 +94,29 @@
   "edit": "4e23173d: invented side table between the armchairs removed (diff outside 3.3)",
   "final": "4e23173d -> 4K upscale 80471711 + background locked to #ECE8E0",
   "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/a787637a-d8e1-416c-b587-683eaa52f5ed.zip"
+ },
+ "tip3_suteren_topdown": {
+  "status": "delivered",
+  "guide_media": "0954c722 (FP3D_S3 @ 085472a)",
+  "candidates": {
+   "f4aaa683": "pass",
+   "c5b2e53e": "pass",
+   "1eba2330": "pass, sharpest - selected"
+  },
+  "edit": "14721886: pampas crosses removed (diff 3.5)",
+  "final": "14721886 -> 4K 7d543a7d (first upscale f1b3ba21 failed) + bg #ECE8E0",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/2c938a1c-9490-44a1-ae77-a9bf21b1729b.zip"
+ },
+ "tip3_prizemlje_topdown": {
+  "status": "delivered",
+  "guide_media": "1e454775 (FP3D_P3 @ 085472a)",
+  "model_change": "stair corrected: descends east to the souterrain (was modelled rising to an assumed 1st floor)",
+  "candidates": {
+   "15cb2430": "pass 0.959 - selected (correct sedan, jacuzzi with water)",
+   "0f192431": "pass",
+   "2d1cd5c3": "pass but SUV instead of the S-Class"
+  },
+  "final": "15cb2430 -> 4K 53187530 + bg #ECE8E0",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/c82e617a-ce2f-4e59-a4b6-c2a8b3de985a.zip"
  }
 }
