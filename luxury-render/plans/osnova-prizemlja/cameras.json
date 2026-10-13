@@ -545,6 +545,45 @@
      }
     }
    ]
+  },
+  {
+   "id": "FP3D_U",
+   "room": "U_R_hall",
+   "space": "fp3d",
+   "title": "3D floor plan - first floor, straight top-down (north up), same framing as FP3D_C",
+   "pos": [
+    759,
+    519,
+    30000
+   ],
+   "look": [
+    759,
+    519,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.1,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "cut": 562,
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true
+     }
+    }
+   ]
   }
  ],
  "heroes": {

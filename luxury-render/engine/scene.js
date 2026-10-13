@@ -351,6 +351,10 @@ export function buildScene(plan, opts = {}, ds) {
   for (const d of (plan.design || [])) {
     if (opts.car === false && d.id.startsWith('D_car_')) continue;   // tyres, wheels, spare of a modelled car
     if (CUT && (d.kind === 'exterior' || d.id.startsWith('EXT_'))) continue;   // cutaway: the house alone on the flat ground
+    if (CUT && opts.no_ceiling_items) {   // top-down plan: drop soffits, canopies and anything else hung > 2 m above its own floor
+      const zb = d.z ? d.z[0] : d.center && d.center.length > 2 ? d.center[2] - (d.r || d.R || 0) : d.p0 ? Math.min(d.p0[2], d.p1[2]) : 0;
+      if (zb > (zb >= 300 ? 310 : 0) + 200) continue;
+    }
     if (CUT && opts.no_ceiling_lights && d.kind === 'light') {   // top-down plan: pendants, cables and coves would hide the furniture
       const zt = d.z ? d.z[1] : d.center && d.center.length > 2 ? d.center[2] : d.p0 ? Math.max(d.p0[2], d.p1[2]) : 0;
       if (zt > 120 && !['lamp_black', 'candle'].includes(d.mat)) continue;
