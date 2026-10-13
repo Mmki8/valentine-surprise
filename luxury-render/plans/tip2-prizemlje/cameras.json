@@ -1,0 +1,46 @@
+{
+ "_doc": "House type 2 ground floor: top-down 3D floor plan camera (plan cm, x east, y south, z up).",
+ "heroes": {},
+ "cameras": [
+  {
+   "id": "FP3D_P",
+   "room": "P2_R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - ground floor, straight top-down (north up)",
+   "pos": [
+    683,
+    535,
+    30000
+   ],
+   "look": [
+    683,
+    535,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.15,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "cut": 290,
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true
+     }
+    }
+   ]
+  }
+ ]
+}

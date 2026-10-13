@@ -1,0 +1,1910 @@
+{
+ "meta": {
+  "name": "OSNOVA PRIZEMLJA - house type 2, ground floor",
+  "source": "source/floorplan_prizemlje.png",
+  "units": "cm",
+  "axes": "x = east (drawing right), y = south (drawing down), z = up",
+  "scale_cm_per_px": 1.313,
+  "origin_px": [
+   161,
+   235
+  ],
+  "overall_cm": [
+   1356,
+   1060
+  ]
+ },
+ "levels": {
+  "ffl": 0,
+  "living": -51,
+  "ceiling": 280
+ },
+ "walls": [
+  {
+   "id": "W_gar_w",
+   "rect": [
+    0.0,
+    124.7,
+    26.3,
+    815.4
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    161,
+    330,
+    181,
+    856
+   ]
+  },
+  {
+   "id": "W_gar_n",
+   "rect": [
+    0.0,
+    124.7,
+    375.5,
+    151.0
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    161,
+    330,
+    447,
+    350
+   ]
+  },
+  {
+   "id": "W_gar_s",
+   "rect": [
+    0.0,
+    790.4,
+    375.5,
+    815.4
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    161,
+    837,
+    447,
+    856
+   ]
+  },
+  {
+   "id": "W_west",
+   "rect": [
+    375.5,
+    0.0,
+    401.8,
+    1070.1
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    447,
+    235,
+    467,
+    1050
+   ]
+  },
+  {
+   "id": "W_north",
+   "rect": [
+    375.5,
+    0.0,
+    1366.8,
+    24.9
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    447,
+    235,
+    1202,
+    254
+   ]
+  },
+  {
+   "id": "W_east",
+   "rect": [
+    1331.4,
+    0.0,
+    1366.8,
+    1011.0
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    1175,
+    235,
+    1202,
+    1005
+   ]
+  },
+  {
+   "id": "W_south",
+   "rect": [
+    401.8,
+    991.3,
+    1331.4,
+    1011.0
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "ext",
+   "src_px": [
+    467,
+    990,
+    1175,
+    1005
+   ]
+  },
+  {
+   "id": "W_stair_s",
+   "rect": [
+    609.2,
+    124.7,
+    1121.3,
+    151.0
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    625,
+    330,
+    1015,
+    350
+   ]
+  },
+  {
+   "id": "W_stair_e",
+   "rect": [
+    1095.0,
+    24.9,
+    1105.5,
+    124.7
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    995,
+    254,
+    1003,
+    330
+   ]
+  },
+  {
+   "id": "W_ne_s",
+   "rect": [
+    1121.3,
+    139.2,
+    1331.4,
+    152.3
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    1015,
+    341,
+    1175,
+    351
+   ]
+  },
+  {
+   "id": "W_hall_e",
+   "rect": [
+    609.2,
+    151.0,
+    635.5,
+    455.6
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    625,
+    350,
+    645,
+    582
+   ]
+  },
+  {
+   "id": "W_bath_n",
+   "rect": [
+    635.5,
+    254.7,
+    941.4,
+    269.2
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    645,
+    429,
+    878,
+    440
+   ]
+  },
+  {
+   "id": "W_bath12",
+   "rect": [
+    745.8,
+    269.2,
+    756.3,
+    455.6
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    729,
+    440,
+    737,
+    582
+   ]
+  },
+  {
+   "id": "W_bath2_e",
+   "rect": [
+    927.0,
+    256.0,
+    941.4,
+    455.6
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    867,
+    430,
+    878,
+    582
+   ]
+  },
+  {
+   "id": "W_liv_n",
+   "rect": [
+    609.2,
+    454.3,
+    1331.4,
+    480.6
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    625,
+    581,
+    1175,
+    601
+   ]
+  },
+  {
+   "id": "W_hall_sw",
+   "rect": [
+    401.8,
+    454.3,
+    460.9,
+    480.6
+   ],
+   "z0": -51,
+   "z1": 280,
+   "kind": "int",
+   "src_px": [
+    467,
+    581,
+    512,
+    601
+   ]
+  }
+ ],
+ "openings": [
+  {
+   "id": "O_gar_win",
+   "type": "window",
+   "sill": 120,
+   "head": 220,
+   "note": "garage north: long strip window",
+   "rect": [
+    34.1,
+    124.7,
+    334.8,
+    151.0
+   ],
+   "src_px": [
+    187,
+    330,
+    416,
+    350
+   ]
+  },
+  {
+   "id": "O_gar_door",
+   "type": "garage_door",
+   "sill": 0,
+   "head": 240,
+   "note": "garage south: sectional door",
+   "rect": [
+    60.4,
+    790.4,
+    300.7,
+    815.4
+   ],
+   "src_px": [
+    207,
+    837,
+    390,
+    856
+   ]
+  },
+  {
+   "id": "O_gar_house",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "garage -> entrance hall",
+   "rect": [
+    375.5,
+    165.4,
+    401.8,
+    249.5
+   ],
+   "src_px": [
+    447,
+    361,
+    467,
+    425
+   ],
+   "hinge": [
+    375.5,
+    165.4
+   ]
+  },
+  {
+   "id": "O_entry",
+   "type": "door",
+   "sill": 0,
+   "head": 230,
+   "leaf": "solid",
+   "note": "front door (north)",
+   "rect": [
+    467.4,
+    0.0,
+    560.7,
+    24.9
+   ],
+   "src_px": [
+    517,
+    235,
+    588,
+    254
+   ],
+   "hinge": [
+    472.7,
+    24.9
+   ]
+  },
+  {
+   "id": "O_stair_glz",
+   "type": "curtain",
+   "sill": 0,
+   "head": 280,
+   "note": "glazing over the hall and stairwell",
+   "rect": [
+    560.7,
+    0.0,
+    850.8,
+    24.9
+   ],
+   "src_px": [
+    588,
+    235,
+    809,
+    254
+   ]
+  },
+  {
+   "id": "O_ne_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "north-east vestibule exterior door",
+   "rect": [
+    1122.6,
+    0.0,
+    1219.8,
+    24.9
+   ],
+   "src_px": [
+    1016,
+    235,
+    1090,
+    254
+   ],
+   "hinge": [
+    1127.9,
+    24.9
+   ]
+  },
+  {
+   "id": "O_ne_win",
+   "type": "window",
+   "sill": 90,
+   "head": 220,
+   "note": "north-east vestibule window",
+   "rect": [
+    1219.8,
+    0.0,
+    1331.4,
+    24.9
+   ],
+   "src_px": [
+    1090,
+    235,
+    1175,
+    254
+   ]
+  },
+  {
+   "id": "O_bed_win",
+   "type": "curtain",
+   "sill": 0,
+   "head": 280,
+   "note": "bedroom east glazing",
+   "rect": [
+    1331.4,
+    164.1,
+    1366.8,
+    449.0
+   ],
+   "src_px": [
+    1175,
+    360,
+    1202,
+    577
+   ]
+  },
+  {
+   "id": "O_liv_e",
+   "type": "sliding",
+   "sill": 0,
+   "head": 280,
+   "note": "living east sliding door",
+   "rect": [
+    1331.4,
+    560.7,
+    1366.8,
+    846.9
+   ],
+   "src_px": [
+    1175,
+    662,
+    1202,
+    880
+   ]
+  },
+  {
+   "id": "O_liv_s",
+   "type": "sliding",
+   "sill": 0,
+   "head": 280,
+   "note": "living south: sliding glazing OG.1",
+   "rect": [
+    401.8,
+    991.3,
+    1331.4,
+    1011.0
+   ],
+   "src_px": [
+    467,
+    990,
+    1175,
+    1005
+   ],
+   "mullions": [
+    710.3,
+    865.3,
+    1021.5,
+    1176.4
+   ]
+  },
+  {
+   "id": "O_bz_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "hall -> bedroom corridor",
+   "rect": [
+    609.2,
+    165.4,
+    635.5,
+    249.5
+   ],
+   "src_px": [
+    625,
+    361,
+    645,
+    425
+   ],
+   "hinge": [
+    625.0,
+    249.5
+   ]
+  },
+  {
+   "id": "O_b1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "hall -> bathroom 1 (guest)",
+   "rect": [
+    609.2,
+    278.4,
+    635.5,
+    354.5
+   ],
+   "src_px": [
+    625,
+    447,
+    645,
+    505
+   ],
+   "hinge": [
+    635.5,
+    282.3
+   ]
+  },
+  {
+   "id": "O_b2_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom corridor -> bathroom 2 (en-suite)",
+   "rect": [
+    854.8,
+    254.7,
+    927.0,
+    269.2
+   ],
+   "src_px": [
+    812,
+    429,
+    867,
+    440
+   ],
+   "hinge": [
+    927.0,
+    269.2
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "P2_R_garage",
+   "name": "Garage",
+   "polygon": [
+    [
+     26.3,
+     151.0
+    ],
+    [
+     375.5,
+     151.0
+    ],
+    [
+     375.5,
+     790.4
+    ],
+    [
+     26.3,
+     790.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "garage_walnut",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_hall",
+   "name": "Entrance hall",
+   "polygon": [
+    [
+     401.8,
+     24.9
+    ],
+    [
+     640.7,
+     24.9
+    ],
+    [
+     640.7,
+     124.7
+    ],
+    [
+     609.2,
+     124.7
+    ],
+    [
+     609.2,
+     390.0
+    ],
+    [
+     460.9,
+     390.0
+    ],
+    [
+     460.9,
+     454.3
+    ],
+    [
+     401.8,
+     454.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "hall_light",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_stair",
+   "name": "Stairwell (down to the souterrain)",
+   "polygon": [
+    [
+     640.7,
+     24.9
+    ],
+    [
+     1095.0,
+     24.9
+    ],
+    [
+     1095.0,
+     124.7
+    ],
+    [
+     640.7,
+     124.7
+    ]
+   ],
+   "floor": -300,
+   "ceiling": 280,
+   "style": "hall_light",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_ne",
+   "name": "North-east vestibule (exterior door)",
+   "polygon": [
+    [
+     1105.5,
+     24.9
+    ],
+    [
+     1331.4,
+     24.9
+    ],
+    [
+     1331.4,
+     139.2
+    ],
+    [
+     1105.5,
+     139.2
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "hall_light",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_bed",
+   "name": "Bedroom incl. corridor",
+   "polygon": [
+    [
+     635.5,
+     151.0
+    ],
+    [
+     1331.4,
+     151.0
+    ],
+    [
+     1331.4,
+     454.3
+    ],
+    [
+     941.4,
+     454.3
+    ],
+    [
+     941.4,
+     254.7
+    ],
+    [
+     635.5,
+     254.7
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bedroom_luxe",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_bath1",
+   "name": "Bathroom 1 (guest WC)",
+   "polygon": [
+    [
+     635.5,
+     269.2
+    ],
+    [
+     745.8,
+     269.2
+    ],
+    [
+     745.8,
+     454.3
+    ],
+    [
+     635.5,
+     454.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "wc_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_bath2",
+   "name": "Bathroom 2 (en-suite)",
+   "polygon": [
+    [
+     756.3,
+     269.2
+    ],
+    [
+     927.0,
+     269.2
+    ],
+    [
+     927.0,
+     454.3
+    ],
+    [
+     756.3,
+     454.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 280,
+   "style": "bath_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "P2_R_living",
+   "name": "Kitchen + dining + living (3 steps down)",
+   "polygon": [
+    [
+     401.8,
+     480.6
+    ],
+    [
+     460.9,
+     480.6
+    ],
+    [
+     460.9,
+     390.0
+    ],
+    [
+     609.2,
+     390.0
+    ],
+    [
+     609.2,
+     480.6
+    ],
+    [
+     1331.4,
+     480.6
+    ],
+    [
+     1331.4,
+     991.3
+    ],
+    [
+     401.8,
+     991.3
+    ]
+   ],
+   "floor": -51,
+   "ceiling": 280,
+   "style": "living_warm",
+   "ceiling_holes": []
+  }
+ ],
+ "furniture": [
+  {
+   "id": "P2_F_hall_wr_n",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    401.8,
+    24.9,
+    462.2,
+    137.9
+   ],
+   "z0": 0,
+   "h": 240,
+   "room": "P2_R_hall",
+   "facing": "E",
+   "note": "wardrobe by the front door",
+   "src_px": [
+    467,
+    254,
+    513,
+    340
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_hall_wr_w",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    401.8,
+    252.1,
+    460.9,
+    454.3
+   ],
+   "z0": 0,
+   "h": 240,
+   "room": "P2_R_hall",
+   "facing": "E",
+   "note": "full-height walnut wardrobe wall",
+   "src_px": [
+    467,
+    427,
+    512,
+    581
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_step1",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    460.9,
+    390.0,
+    609.2,
+    420.2
+   ],
+   "z0": -51,
+   "h": 34,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": "step 1 (top -17)",
+   "src_px": [
+    512,
+    532,
+    625,
+    555
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_step2",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    460.9,
+    420.2,
+    609.2,
+    453.0
+   ],
+   "z0": -51,
+   "h": 17,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": "step 2 (top -34)",
+   "src_px": [
+    512,
+    555,
+    625,
+    580
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_car",
+   "kind": "car",
+   "shape": "box",
+   "rect": [
+    110.3,
+    242.9,
+    294.1,
+    676.2
+   ],
+   "z0": 0,
+   "h": 195,
+   "room": "P2_R_garage",
+   "facing": "S",
+   "note": "car as drawn, nose south",
+   "src_px": [
+    245,
+    420,
+    385,
+    750
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b1_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    701.1,
+    304.6,
+    744.5,
+    363.7
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "P2_R_bath1",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    695,
+    467,
+    728,
+    512
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b1_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    661.8,
+    383.4,
+    701.1,
+    439.9
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "P2_R_bath1",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    665,
+    527,
+    695,
+    570
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b1_duct",
+   "kind": "box",
+   "shape": "box",
+   "rect": [
+    714.3,
+    270.5,
+    745.8,
+    295.4
+   ],
+   "z0": 0,
+   "h": 110,
+   "room": "P2_R_bath1",
+   "facing": null,
+   "note": "installation box",
+   "src_px": [
+    705,
+    441,
+    729,
+    460
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b2_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    758.9,
+    286.2,
+    804.9,
+    347.9
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "P2_R_bath2",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    739,
+    453,
+    774,
+    500
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b2_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    756.3,
+    363.7,
+    845.6,
+    454.3
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "P2_R_bath2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    737,
+    512,
+    805,
+    581
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_b2_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    877.1,
+    384.7,
+    916.5,
+    439.9
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "P2_R_bath2",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    829,
+    528,
+    859,
+    570
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_bed_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    951.9,
+    256.0,
+    1012.3,
+    455.6
+   ],
+   "z0": 0,
+   "h": 240,
+   "room": "P2_R_bed",
+   "facing": "E",
+   "note": "wardrobe (glass fronts in the render)",
+   "src_px": [
+    886,
+    430,
+    932,
+    582
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    1097.7,
+    262.6,
+    1261.8,
+    455.6
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "P2_R_bed",
+   "facing": "N",
+   "note": "double bed, headboard on the south wall",
+   "src_px": [
+    997,
+    435,
+    1122,
+    582
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_bed_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    1051.7,
+    416.2,
+    1097.7,
+    455.6
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "P2_R_bed",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    962,
+    552,
+    997,
+    582
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_bed_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    1261.8,
+    416.2,
+    1305.1,
+    455.6
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "P2_R_bed",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1122,
+    552,
+    1155,
+    582
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_k_tall",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    401.8,
+    481.9,
+    460.9,
+    630.2
+   ],
+   "z0": -51,
+   "h": 240,
+   "room": "P2_R_living",
+   "facing": "E",
+   "note": "fridge + oven column",
+   "src_px": [
+    467,
+    602,
+    512,
+    715
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_k_counter",
+   "kind": "counter",
+   "shape": "box",
+   "rect": [
+    401.8,
+    630.2,
+    460.9,
+    949.3
+   ],
+   "z0": -51,
+   "h": 92,
+   "room": "P2_R_living",
+   "facing": "E",
+   "note": "counter run with sink",
+   "src_px": [
+    467,
+    715,
+    512,
+    958
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_k_sink",
+   "kind": "sink",
+   "shape": "box",
+   "rect": [
+    405.7,
+    761.5,
+    458.2,
+    816.7
+   ],
+   "z0": 37,
+   "h": 6,
+   "room": "P2_R_living",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    470,
+    815,
+    510,
+    857
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_k_island",
+   "kind": "island",
+   "shape": "box",
+   "rect": [
+    559.3,
+    630.2,
+    651.2,
+    849.5
+   ],
+   "z0": -51,
+   "h": 92,
+   "room": "P2_R_living",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    587,
+    715,
+    657,
+    882
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_k_cooktop",
+   "kind": "cooktop",
+   "shape": "box",
+   "rect": [
+    563.3,
+    748.4,
+    605.3,
+    810.1
+   ],
+   "z0": 41,
+   "h": 1,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    590,
+    805,
+    622,
+    852
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_table",
+   "kind": "table",
+   "shape": "box",
+   "rect": [
+    651.2,
+    690.6,
+    831.1,
+    770.7
+   ],
+   "z0": -51,
+   "h": 75,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    657,
+    761,
+    794,
+    822
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_n0",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    664.4,
+    659.1,
+    703.8,
+    699.8
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    667,
+    737,
+    697,
+    768
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_s0",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    664.4,
+    760.2,
+    703.8,
+    800.9
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    667,
+    814,
+    697,
+    845
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_n1",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    720.8,
+    659.1,
+    760.2,
+    699.8
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    710,
+    737,
+    740,
+    768
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_s1",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    720.8,
+    760.2,
+    760.2,
+    800.9
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    710,
+    814,
+    740,
+    845
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_n2",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    776.0,
+    659.1,
+    815.4,
+    699.8
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    752,
+    737,
+    782,
+    768
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_chair_s2",
+   "kind": "chair",
+   "shape": "box",
+   "rect": [
+    776.0,
+    760.2,
+    815.4,
+    800.9
+   ],
+   "z0": -51,
+   "h": 85,
+   "room": "P2_R_living",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    752,
+    814,
+    782,
+    845
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_sofa",
+   "kind": "sofa",
+   "shape": "box",
+   "rect": [
+    932.2,
+    597.4,
+    1024.1,
+    888.9
+   ],
+   "z0": -51,
+   "h": 80,
+   "room": "P2_R_living",
+   "facing": "E",
+   "note": "L-sofa, main run",
+   "src_px": [
+    871,
+    690,
+    941,
+    912
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_sofa_chaise",
+   "kind": "sofa",
+   "shape": "box",
+   "rect": [
+    1024.1,
+    797.0,
+    1114.7,
+    888.9
+   ],
+   "z0": -51,
+   "h": 80,
+   "room": "P2_R_living",
+   "facing": "N",
+   "note": "L-sofa, chaise",
+   "src_px": [
+    941,
+    842,
+    1010,
+    912
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_ct1",
+   "kind": "coffee_table",
+   "shape": "box",
+   "rect": [
+    1057.0,
+    688.0,
+    1117.4,
+    752.3
+   ],
+   "z0": -51,
+   "h": 35,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    966,
+    759,
+    1012,
+    808
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_ct2",
+   "kind": "coffee_table",
+   "shape": "box",
+   "rect": [
+    1097.7,
+    651.2,
+    1158.1,
+    715.6
+   ],
+   "z0": -51,
+   "h": 40,
+   "room": "P2_R_living",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    997,
+    731,
+    1043,
+    780
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_arm1",
+   "kind": "armchair",
+   "shape": "box",
+   "rect": [
+    1193.5,
+    615.8,
+    1273.6,
+    695.9
+   ],
+   "z0": -51,
+   "h": 80,
+   "room": "P2_R_living",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1070,
+    704,
+    1131,
+    765
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_arm2",
+   "kind": "armchair",
+   "shape": "box",
+   "rect": [
+    1193.5,
+    719.5,
+    1273.6,
+    800.9
+   ],
+   "z0": -51,
+   "h": 80,
+   "room": "P2_R_living",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1070,
+    783,
+    1131,
+    845
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_tv",
+   "kind": "low_cabinet",
+   "shape": "box",
+   "rect": [
+    1045.1,
+    484.5,
+    1196.1,
+    530.5
+   ],
+   "z0": -51,
+   "h": 50,
+   "room": "P2_R_living",
+   "facing": "S",
+   "note": "TV console",
+   "src_px": [
+    957,
+    604,
+    1072,
+    639
+   ],
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_01",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    640.7,
+    24.9,
+    670.8,
+    124.7
+   ],
+   "z0": -300,
+   "h": 285,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_02",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    670.8,
+    24.9,
+    700.9,
+    124.7
+   ],
+   "z0": -300,
+   "h": 270,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_03",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    700.9,
+    24.9,
+    731.0,
+    124.7
+   ],
+   "z0": -300,
+   "h": 255,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_04",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    731.0,
+    24.9,
+    761.1,
+    124.7
+   ],
+   "z0": -300,
+   "h": 240,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_05",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    761.1,
+    24.9,
+    791.2,
+    124.7
+   ],
+   "z0": -300,
+   "h": 225,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_06",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    791.2,
+    24.9,
+    821.3,
+    124.7
+   ],
+   "z0": -300,
+   "h": 210,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_07",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    821.3,
+    24.9,
+    851.4,
+    124.7
+   ],
+   "z0": -300,
+   "h": 195,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_08",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    851.4,
+    24.9,
+    881.5,
+    124.7
+   ],
+   "z0": -300,
+   "h": 180,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_09",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    881.5,
+    24.9,
+    911.6,
+    124.7
+   ],
+   "z0": -300,
+   "h": 165,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_10",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    911.6,
+    24.9,
+    941.7,
+    124.7
+   ],
+   "z0": -300,
+   "h": 150,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_11",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    941.7,
+    24.9,
+    971.8,
+    124.7
+   ],
+   "z0": -300,
+   "h": 135,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_12",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    971.8,
+    24.9,
+    1001.9,
+    124.7
+   ],
+   "z0": -300,
+   "h": 120,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_13",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1001.9,
+    24.9,
+    1032.0,
+    124.7
+   ],
+   "z0": -300,
+   "h": 105,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_14",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1032.0,
+    24.9,
+    1062.1,
+    124.7
+   ],
+   "z0": -300,
+   "h": 90,
+   "room": "P2_R_stair",
+   "group": null
+  },
+  {
+   "id": "P2_F_stair_15",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1062.1,
+    24.9,
+    1092.2,
+    124.7
+   ],
+   "z0": -300,
+   "h": 75,
+   "room": "P2_R_stair",
+   "group": null
+  }
+ ],
+ "design": [
+  {
+   "id": "D_liv_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    970.3,
+    626.3,
+    1180.4,
+    846.9
+   ],
+   "z": [
+    -51,
+    -49.8
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_liv_column",
+   "shape": "cyl",
+   "mat": "cut_cap",
+   "center": [
+    866.6,
+    962.4
+   ],
+   "r": 13,
+   "z": [
+    -51,
+    280
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    1081.9,
+    308.6,
+    1278.9,
+    426.7
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  }
+ ],
+ "extra_ceilings": [],
+ "site": []
+}

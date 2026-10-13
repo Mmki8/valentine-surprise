@@ -99,7 +99,8 @@ export function buildScene(plan, opts = {}, ds) {
     }
   }
   if (CUT) {
-    const g = boxMesh(-3000, -3000, 5000, 5000, -3, -2, new THREE.Color(opts.bg || '#e0dfc6').getHex());
+    const zg = Math.min(0, ...plan.rooms.map(r => r.floor || 0));   // below the lowest floor (split levels, stairwells)
+    const g = boxMesh(-3000, -3000, 5000, 5000, zg - 3, zg - 2, new THREE.Color(opts.bg || '#e0dfc6').getHex());
     g.material.roughness = 1; add('EXT_ground', 'exterior', g);
   } else if (plan.site) {                      // per-plan exterior (hidden from the QA passes like every exterior mesh)
     for (const e of plan.site) {
