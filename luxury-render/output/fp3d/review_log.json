@@ -54,5 +54,18 @@
    "0aa0398d": "FAIL: north wall + bed3 facet wall lost"
   },
   "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/37439df9-0848-419a-9796-b551b8a155a4.zip"
+ },
+ "tip1_sprat_topdown_v2": {
+  "status": "delivered",
+  "client_feedback": "stair did not read as rising to this floor; floor must be cut around the stair as on the 2D plan",
+  "fix": "engine/depth_shade.py height-shaded guide (da8f2b9e) + targeted edit of 1e6bfbc5 limited to the stair strip",
+  "candidates": {
+   "9e828817": "selected: straight flight + winders at the south, open arrival at the north, UOG.1-3 correct, void south of UOG.3",
+   "87eb3f57": "UOG.3 too far north",
+   "b7fc3d7b": "odd box under the winders"
+  },
+  "check": "mean pixel diff vs approved v1 outside the stair strip 6.1 (edge re-render only), inside 29.2",
+  "final": "9e828817 -> 4K upscale 0690932f + background locked to #ECE8E0",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f34a75b7-33f5-4d7e-aff6-1b141415d0f3.zip"
  }
 }
