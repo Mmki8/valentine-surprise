@@ -21,6 +21,18 @@
    "8ee46fc2": "pass 0.799 / 0.016, weaker than 524225f5",
    "524225f5": "pass 0.888 / 0.003 - selected"
   },
-  "camera": "plans/osnova-prizemlja/cameras.json FP3D_B: corner view from the SE, 47deg down, cut 250 cm, white wall caps, doors open"
+  "camera": "plans/osnova-prizemlja/cameras.json FP3D_B: corner view from the SE, 47deg down, cut 250 cm, white wall caps, doors open",
+  "status": "superseded by tip1_prizemlje_topdown (client asked for a straight top-down angle, ref 31.webp)"
+ },
+ "tip1_prizemlje_topdown": {
+  "final": "f875db19 + background locked to #ECE8E0; 4K copy is a Lanczos resize (bytedance upscale failed twice: f39d9550, 9e1495b8)",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/cc0e3713-349d-4dad-95c7-73a576f7e057.zip",
+  "pre_check": "FP3D_C guide overlaid on source/floorplan_ground.webp: every wall and column aligned",
+  "candidates": {
+   "f875db19": "pass, selected (walnut tall cabinet correct, cleanest)",
+   "d2dba6e3": "pass; tall cabinet rendered as dark stone",
+   "41226d7c": "pass (style ref 31.webp); invented a rug in the mudroom"
+  },
+  "camera": "plans/osnova-prizemlja/cameras.json FP3D_C: straight down from 300 m, hfov 4.1 (near-orthographic), north up, cut 282, no_upper, no_ceiling_lights, glass_cap cut_glass"
  }
 }
