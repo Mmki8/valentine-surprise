@@ -81,5 +81,18 @@
   "edit": "a8cdf080: basins added to both bathrooms (diff outside 4.3)",
   "final": "a8cdf080 -> 4K upscale e2e163ec + background locked to #ECE8E0",
   "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/85f43b6b-5335-4d54-884d-337c0ac1336c.zip"
+ },
+ "tip2_prizemlje_topdown": {
+  "status": "delivered",
+  "model": "plans/tip2-prizemlje (new digitization, split level, overlay plan_check.png)",
+  "guide_media": "6609db36 (FP3D_P @ 7168b39)",
+  "candidates": {
+   "8eda1ec1": "pass 0.939; headboard drawn on the wrong (north) side",
+   "7e2487d7": "pass 0.931/0.026 - selected",
+   "ca4b8e21": "pass 1.0 but dining table rotated 90 deg (rejected by eye)"
+  },
+  "edit": "4e23173d: invented side table between the armchairs removed (diff outside 3.3)",
+  "final": "4e23173d -> 4K upscale 80471711 + background locked to #ECE8E0",
+  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/a787637a-d8e1-416c-b587-683eaa52f5ed.zip"
  }
 }
