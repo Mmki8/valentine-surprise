@@ -1,0 +1,2025 @@
+{
+ "camera": {
+  "id": "FP3D_T",
+  "room": "T2_R_corr",
+  "space": "fp3d",
+  "title": "3D floor plan - souterrain, straight top-down (north up)",
+  "pos": [
+   810,
+   537,
+   30000
+  ],
+  "look": [
+   810,
+   537,
+   0
+  ],
+  "up": [
+   0,
+   -1,
+   0
+  ],
+  "hfov": 4.15,
+  "shift_y": 0,
+  "near": 25000,
+  "far": 35000,
+  "variants": [
+   {
+    "suffix": "",
+    "opts": {
+     "cut": 300,
+     "bg": "#ece8e0",
+     "cap": "cut_cap",
+     "glass_cap": "cut_glass",
+     "open_doors": true,
+     "no_ceiling_lights": true,
+     "no_ceiling_items": true,
+     "no_headers": true
+    }
+   }
+  ],
+  "W": 1600,
+  "H": 900,
+  "projection": [
+   27.60035094539688,
+   0,
+   0,
+   0,
+   0,
+   49.06729056959445,
+   0,
+   0,
+   0,
+   0,
+   -6,
+   -1,
+   0,
+   0,
+   -175000,
+   0
+  ],
+  "view": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   2.220446049250313e-16,
+   1,
+   0,
+   0,
+   -1,
+   2.220446049250313e-16,
+   0,
+   -810,
+   536.9999999999933,
+   -30000,
+   1
+  ]
+ },
+ "variant": {
+  "suffix": "",
+  "opts": {
+   "cut": 300,
+   "bg": "#ece8e0",
+   "cap": "cut_cap",
+   "glass_cap": "cut_glass",
+   "open_doors": true,
+   "no_ceiling_lights": true,
+   "no_ceiling_items": true,
+   "no_headers": true
+  }
+ },
+ "legend": [
+  {
+   "id": "FLOOR_T2_R_wc",
+   "kind": "floor",
+   "mat": "stone_chevron_floor",
+   "rgb": [
+    99,
+    138,
+    233
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_sauna",
+   "kind": "floor",
+   "mat": "stone_dark_floor",
+   "rgb": [
+    158,
+    249,
+    31
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_spa",
+   "kind": "floor",
+   "mat": "stone_dark_floor",
+   "rgb": [
+    189,
+    40,
+    171
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_store",
+   "kind": "floor",
+   "mat": "walnut_floor_dark",
+   "rgb": [
+    13,
+    165,
+    140
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_stair",
+   "kind": "floor",
+   "mat": "walnut_floor_dark",
+   "rgb": [
+    215,
+    170,
+    117
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_corr",
+   "kind": "floor",
+   "mat": "walnut_floor_dark",
+   "rgb": [
+    97,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_bed1",
+   "kind": "floor",
+   "mat": "oak_floor",
+   "rgb": [
+    15,
+    224,
+    6
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_bath1",
+   "kind": "floor",
+   "mat": "stone_nero_floor",
+   "rgb": [
+    147,
+    31,
+    70
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_bath2",
+   "kind": "floor",
+   "mat": "stone_nero_floor",
+   "rgb": [
+    90,
+    185,
+    242
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_bed2",
+   "kind": "floor",
+   "mat": "oak_floor",
+   "rgb": [
+    193,
+    203,
+    77
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_east",
+   "kind": "floor",
+   "mat": "walnut_floor_dark",
+   "rgb": [
+    165,
+    29,
+    201
+   ]
+  },
+  {
+   "id": "FLOOR_T2_R_laundry",
+   "kind": "floor",
+   "mat": "stone_cream_floor",
+   "rgb": [
+    4,
+    174,
+    89
+   ]
+  },
+  {
+   "id": "EXT_ground",
+   "kind": "exterior",
+   "mat": null,
+   "rgb": [
+    224,
+    132,
+    108
+   ]
+  },
+  {
+   "id": "W_north_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    43,
+    59,
+    238
+   ]
+  },
+  {
+   "id": "W_north_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    99,
+    178,
+    52
+   ]
+  },
+  {
+   "id": "W_west_up_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    156,
+    22,
+    112
+   ]
+  },
+  {
+   "id": "W_west_up_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    81,
+    244,
+    251
+   ]
+  },
+  {
+   "id": "W_spa_n_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    215,
+    177,
+    66
+   ]
+  },
+  {
+   "id": "W_spa_n_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    106,
+    17,
+    212
+   ]
+  },
+  {
+   "id": "W_spa_w_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    40,
+    138,
+    56
+   ]
+  },
+  {
+   "id": "W_spa_w_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    233,
+    99,
+    116
+   ]
+  },
+  {
+   "id": "W_spa_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    31,
+    123,
+    249
+   ]
+  },
+  {
+   "id": "W_spa_s_s0",
+   "kind": "wall",
+   "mat": "stone_basalt",
+   "rgb": [
+    146,
+    189,
+    40
+   ]
+  },
+  {
+   "id": "W_spa_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    165,
+    13,
+    165
+   ]
+  },
+  {
+   "id": "W_spa_s_s1",
+   "kind": "wall",
+   "mat": "stone_basalt",
+   "rgb": [
+    117,
+    215,
+    186
+   ]
+  },
+  {
+   "id": "W_main_w_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    226,
+    125,
+    54
+   ]
+  },
+  {
+   "id": "W_main_w_s0",
+   "kind": "wall",
+   "mat": "stone_basalt",
+   "rgb": [
+    32,
+    6,
+    224
+   ]
+  },
+  {
+   "id": "W_main_w_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    51,
+    147,
+    31
+   ]
+  },
+  {
+   "id": "W_main_w_s1",
+   "kind": "wall",
+   "mat": "stone_basalt",
+   "rgb": [
+    242,
+    90,
+    160
+   ]
+  },
+  {
+   "id": "W_east_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    77,
+    172,
+    203
+   ]
+  },
+  {
+   "id": "W_east_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    201,
+    193,
+    29
+   ]
+  },
+  {
+   "id": "W_east_in_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    117,
+    4,
+    174
+   ]
+  },
+  {
+   "id": "W_east_in_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    108,
+    224,
+    151
+   ]
+  },
+  {
+   "id": "W_east_in_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    238,
+    58,
+    43
+   ]
+  },
+  {
+   "id": "W_east_in_s1",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    52,
+    79,
+    178
+   ]
+  },
+  {
+   "id": "W_south_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    90,
+    156,
+    22
+   ]
+  },
+  {
+   "id": "W_south_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    251,
+    81,
+    216
+   ]
+  },
+  {
+   "id": "W_laundry_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    66,
+    215,
+    202
+   ]
+  },
+  {
+   "id": "W_laundry_s_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    212,
+    138,
+    17
+   ]
+  },
+  {
+   "id": "W_laundry_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    72,
+    40,
+    138
+   ]
+  },
+  {
+   "id": "W_laundry_s_s1",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    99,
+    233,
+    104
+   ]
+  },
+  {
+   "id": "W_stair_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    249,
+    31,
+    87
+   ]
+  },
+  {
+   "id": "W_stair_s_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    40,
+    122,
+    189
+   ]
+  },
+  {
+   "id": "W_stair_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    141,
+    165,
+    13
+   ]
+  },
+  {
+   "id": "W_stair_s_s1",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    202,
+    117,
+    215
+   ]
+  },
+  {
+   "id": "W_corr_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    54,
+    226,
+    154
+   ]
+  },
+  {
+   "id": "W_corr_s_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    224,
+    68,
+    6
+   ]
+  },
+  {
+   "id": "W_corr_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    31,
+    32,
+    147
+   ]
+  },
+  {
+   "id": "W_corr_s_s1",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    135,
+    242,
+    90
+   ]
+  },
+  {
+   "id": "W_corr_s_s2_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    203,
+    77,
+    152
+   ]
+  },
+  {
+   "id": "W_corr_s_s2",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    29,
+    180,
+    201
+   ]
+  },
+  {
+   "id": "W_mid_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    174,
+    145,
+    4
+   ]
+  },
+  {
+   "id": "W_mid_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    170,
+    108,
+    224
+   ]
+  },
+  {
+   "id": "W_podL_w_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    43,
+    238,
+    90
+   ]
+  },
+  {
+   "id": "W_podL_w_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    178,
+    52,
+    58
+   ]
+  },
+  {
+   "id": "W_podL_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    22,
+    68,
+    156
+   ]
+  },
+  {
+   "id": "W_podL_s_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    188,
+    251,
+    81
+   ]
+  },
+  {
+   "id": "W_podL_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    215,
+    66,
+    204
+   ]
+  },
+  {
+   "id": "W_podL_s_s1",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    17,
+    212,
+    170
+   ]
+  },
+  {
+   "id": "W_podL_p_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    138,
+    88,
+    40
+   ]
+  },
+  {
+   "id": "W_podL_p_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    126,
+    99,
+    233
+   ]
+  },
+  {
+   "id": "W_podR_e_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    51,
+    249,
+    31
+   ]
+  },
+  {
+   "id": "W_podR_e_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    189,
+    40,
+    97
+   ]
+  },
+  {
+   "id": "W_podR_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    13,
+    116,
+    165
+   ]
+  },
+  {
+   "id": "W_podR_s_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    212,
+    215,
+    117
+   ]
+  },
+  {
+   "id": "W_podR_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    182,
+    54,
+    226
+   ]
+  },
+  {
+   "id": "W_podR_s_s1",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    6,
+    224,
+    104
+   ]
+  },
+  {
+   "id": "W_podR_p_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    147,
+    50,
+    31
+   ]
+  },
+  {
+   "id": "W_podR_p_s0",
+   "kind": "wall",
+   "mat": "marble_nero_veined",
+   "rgb": [
+    90,
+    110,
+    242
+   ]
+  },
+  {
+   "id": "W_er_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    131,
+    203,
+    77
+   ]
+  },
+  {
+   "id": "W_er_s_s0",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    201,
+    29,
+    152
+   ]
+  },
+  {
+   "id": "W_er_s_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    4,
+    174,
+    172
+   ]
+  },
+  {
+   "id": "W_er_s_s1",
+   "kind": "wall",
+   "mat": "plaster_greige",
+   "rgb": [
+    224,
+    189,
+    108
+   ]
+  },
+  {
+   "id": "W_wc_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    122,
+    43,
+    238
+   ]
+  },
+  {
+   "id": "W_wc_s_s0",
+   "kind": "wall",
+   "mat": "stone_chevron_dark",
+   "rgb": [
+    52,
+    178,
+    66
+   ]
+  },
+  {
+   "id": "W_wc_e_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    156,
+    22,
+    46
+   ]
+  },
+  {
+   "id": "W_wc_e_s0",
+   "kind": "wall",
+   "mat": "stone_chevron_dark",
+   "rgb": [
+    81,
+    160,
+    251
+   ]
+  },
+  {
+   "id": "W_wc_e_s1_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    179,
+    215,
+    66
+   ]
+  },
+  {
+   "id": "W_wc_e_s1",
+   "kind": "wall",
+   "mat": "stone_chevron_dark",
+   "rgb": [
+    202,
+    17,
+    212
+   ]
+  },
+  {
+   "id": "W_sauna_s_s0_cap",
+   "kind": "wall",
+   "mat": "cut_cap",
+   "rgb": [
+    40,
+    138,
+    105
+   ]
+  },
+  {
+   "id": "W_sauna_s_s0",
+   "kind": "wall",
+   "mat": "sauna_walnut",
+   "rgb": [
+    233,
+    148,
+    99
+   ]
+  },
+  {
+   "id": "O_spa_glz_cap",
+   "kind": "wall",
+   "mat": "cut_glass",
+   "rgb": [
+    47,
+    31,
+    249
+   ]
+  },
+  {
+   "id": "O_b1_glz_cap",
+   "kind": "wall",
+   "mat": "cut_glass",
+   "rgb": [
+    73,
+    189,
+    40
+   ]
+  },
+  {
+   "id": "O_b2_glz_cap",
+   "kind": "wall",
+   "mat": "cut_glass",
+   "rgb": [
+    165,
+    13,
+    91
+   ]
+  },
+  {
+   "id": "O_sauna_glass_cap",
+   "kind": "wall",
+   "mat": "cut_glass",
+   "rgb": [
+    117,
+    195,
+    215
+   ]
+  },
+  {
+   "id": "O_spa_glz",
+   "kind": "glass",
+   "mat": "glass",
+   "rgb": [
+    226,
+    210,
+    54
+   ]
+  },
+  {
+   "id": "O_spa_glz_fl",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    140,
+    6,
+    224
+   ]
+  },
+  {
+   "id": "O_spa_glz_fr",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    31,
+    147,
+    69
+   ]
+  },
+  {
+   "id": "O_spa_glz_ft",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    242,
+    94,
+    90
+   ]
+  },
+  {
+   "id": "O_spa_glz_mid",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    77,
+    110,
+    203
+   ]
+  },
+  {
+   "id": "O_b1_glz",
+   "kind": "glass",
+   "mat": "glass",
+   "rgb": [
+    124,
+    201,
+    29
+   ]
+  },
+  {
+   "id": "O_b1_glz_fl",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    174,
+    4,
+    148
+   ]
+  },
+  {
+   "id": "O_b1_glz_fr",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    108,
+    224,
+    208
+   ]
+  },
+  {
+   "id": "O_b1_glz_ft",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    238,
+    154,
+    43
+   ]
+  },
+  {
+   "id": "O_b1_glz_m555.4",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    87,
+    52,
+    178
+   ]
+  },
+  {
+   "id": "O_b1_glz_m709",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    24,
+    156,
+    22
+   ]
+  },
+  {
+   "id": "O_b2_glz",
+   "kind": "glass",
+   "mat": "glass",
+   "rgb": [
+    251,
+    81,
+    133
+   ]
+  },
+  {
+   "id": "O_b2_glz_fl",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    66,
+    155,
+    215
+   ]
+  },
+  {
+   "id": "O_b2_glz_fr",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    190,
+    212,
+    17
+   ]
+  },
+  {
+   "id": "O_b2_glz_ft",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    121,
+    40,
+    138
+   ]
+  },
+  {
+   "id": "O_b2_glz_m1020.2",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    99,
+    233,
+    170
+   ]
+  },
+  {
+   "id": "O_b2_glz_m1175.1",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    249,
+    83,
+    31
+   ]
+  },
+  {
+   "id": "O_sauna_glass",
+   "kind": "glass",
+   "mat": "glass",
+   "rgb": [
+    40,
+    48,
+    189
+   ]
+  },
+  {
+   "id": "O_sauna_glass_ft",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    66,
+    165,
+    13
+   ]
+  },
+  {
+   "id": "O_sauna_glass_fb",
+   "kind": "frame",
+   "mat": "bronze_frame",
+   "rgb": [
+    215,
+    117,
+    179
+   ]
+  },
+  {
+   "id": "T2_F_wc_toilet",
+   "kind": "toilet",
+   "mat": "toilet_black",
+   "rgb": [
+    54,
+    214,
+    226
+   ]
+  },
+  {
+   "id": "T2_F_wc_vanity",
+   "kind": "vanity",
+   "mat": "vanity_stone",
+   "rgb": [
+    224,
+    175,
+    6
+   ]
+  },
+  {
+   "id": "T2_F_sauna_bench1",
+   "kind": "bench",
+   "mat": "sauna_bench",
+   "rgb": [
+    88,
+    31,
+    147
+   ]
+  },
+  {
+   "id": "T2_F_sauna_bench2",
+   "kind": "bench",
+   "mat": "sauna_bench",
+   "rgb": [
+    90,
+    242,
+    119
+   ]
+  },
+  {
+   "id": "T2_F_spa_shower",
+   "kind": "shower",
+   "mat": "shower_stone",
+   "rgb": [
+    203,
+    77,
+    89
+   ]
+  },
+  {
+   "id": "T2_F_jacuzzi",
+   "kind": "jacuzzi",
+   "mat": "jacuzzi_stone",
+   "rgb": [
+    29,
+    96,
+    201
+   ]
+  },
+  {
+   "id": "T2_F_jacuzzi_water",
+   "kind": "water",
+   "mat": "water",
+   "rgb": [
+    120,
+    174,
+    4
+   ]
+  },
+  {
+   "id": "T2_F_b1_shower",
+   "kind": "shower",
+   "mat": "shower_stone",
+   "rgb": [
+    224,
+    108,
+    221
+   ]
+  },
+  {
+   "id": "T2_F_b1_vanity",
+   "kind": "vanity",
+   "mat": "vanity_stone",
+   "rgb": [
+    43,
+    238,
+    186
+   ]
+  },
+  {
+   "id": "T2_F_b1_duct",
+   "kind": "box",
+   "mat": "box_slats",
+   "rgb": [
+    178,
+    108,
+    52
+   ]
+  },
+  {
+   "id": "T2_F_b1_wc",
+   "kind": "toilet",
+   "mat": "toilet_black",
+   "rgb": [
+    43,
+    22,
+    156
+   ]
+  },
+  {
+   "id": "T2_F_b2_wc",
+   "kind": "toilet",
+   "mat": "toilet_black",
+   "rgb": [
+    105,
+    251,
+    81
+   ]
+  },
+  {
+   "id": "T2_F_b2_vanity",
+   "kind": "vanity",
+   "mat": "vanity_stone",
+   "rgb": [
+    215,
+    66,
+    130
+   ]
+  },
+  {
+   "id": "T2_F_b2_shower",
+   "kind": "shower",
+   "mat": "shower_stone",
+   "rgb": [
+    17,
+    158,
+    212
+   ]
+  },
+  {
+   "id": "T2_F_b2_ledge",
+   "kind": "box",
+   "mat": "box_slats",
+   "rgb": [
+    138,
+    137,
+    40
+   ]
+  },
+  {
+   "id": "T2_F_bed1_wr",
+   "kind": "tall_cabinet",
+   "mat": "black_glass_tall",
+   "rgb": [
+    192,
+    99,
+    233
+   ]
+  },
+  {
+   "id": "T2_F_bed1_bed_base",
+   "kind": "bed",
+   "mat": "walnut_console",
+   "rgb": [
+    31,
+    249,
+    119
+   ]
+  },
+  {
+   "id": "T2_F_bed1_bed",
+   "kind": "bed",
+   "mat": "bed_linen",
+   "rgb": [
+    189,
+    56,
+    40
+   ]
+  },
+  {
+   "id": "T2_F_bed1_bed_head",
+   "kind": "bed",
+   "mat": "headboard_boucle",
+   "rgb": [
+    13,
+    41,
+    165
+   ]
+  },
+  {
+   "id": "T2_F_bed1_bed_pillow",
+   "kind": "bed",
+   "mat": "pillow_white",
+   "rgb": [
+    163,
+    215,
+    117
+   ]
+  },
+  {
+   "id": "T2_F_bed1_bed_throw",
+   "kind": "bed",
+   "mat": "throw_cognac",
+   "rgb": [
+    226,
+    54,
+    186
+   ]
+  },
+  {
+   "id": "T2_F_bed1_ns1",
+   "kind": "nightstand",
+   "mat": "walnut_console",
+   "rgb": [
+    6,
+    224,
+    211
+   ]
+  },
+  {
+   "id": "T2_F_bed1_ns2",
+   "kind": "nightstand",
+   "mat": "walnut_console",
+   "rgb": [
+    147,
+    107,
+    31
+   ]
+  },
+  {
+   "id": "T2_F_bed2_wr",
+   "kind": "tall_cabinet",
+   "mat": "black_glass_tall",
+   "rgb": [
+    144,
+    90,
+    242
+   ]
+  },
+  {
+   "id": "T2_F_bed2_bed_base",
+   "kind": "bed",
+   "mat": "walnut_console",
+   "rgb": [
+    77,
+    203,
+    86
+   ]
+  },
+  {
+   "id": "T2_F_bed2_bed",
+   "kind": "bed",
+   "mat": "bed_linen",
+   "rgb": [
+    201,
+    29,
+    67
+   ]
+  },
+  {
+   "id": "T2_F_bed2_bed_head",
+   "kind": "bed",
+   "mat": "headboard_boucle",
+   "rgb": [
+    4,
+    92,
+    174
+   ]
+  },
+  {
+   "id": "T2_F_bed2_bed_pillow",
+   "kind": "bed",
+   "mat": "pillow_white",
+   "rgb": [
+    202,
+    224,
+    108
+   ]
+  },
+  {
+   "id": "T2_F_bed2_bed_throw",
+   "kind": "bed",
+   "mat": "throw_cognac",
+   "rgb": [
+    218,
+    43,
+    238
+   ]
+  },
+  {
+   "id": "T2_F_bed2_ns1",
+   "kind": "nightstand",
+   "mat": "walnut_console",
+   "rgb": [
+    52,
+    178,
+    128
+   ]
+  },
+  {
+   "id": "T2_F_bed2_ns2",
+   "kind": "nightstand",
+   "mat": "walnut_console",
+   "rgb": [
+    156,
+    65,
+    22
+   ]
+  },
+  {
+   "id": "T2_F_l_washer",
+   "kind": "appliance",
+   "mat": "appliance_white",
+   "rgb": [
+    85,
+    81,
+    251
+   ]
+  },
+  {
+   "id": "T2_F_l_dryer",
+   "kind": "appliance",
+   "mat": "appliance_white",
+   "rgb": [
+    106,
+    215,
+    66
+   ]
+  },
+  {
+   "id": "T2_F_l_counter",
+   "kind": "counter",
+   "mat": "walnut_cabinet",
+   "rgb": [
+    212,
+    17,
+    126
+   ]
+  },
+  {
+   "id": "T2_F_l_counter_plinth",
+   "kind": "counter",
+   "mat": "groove_dark",
+   "rgb": [
+    40,
+    124,
+    138
+   ]
+  },
+  {
+   "id": "T2_F_l_counter_top",
+   "kind": "counter",
+   "mat": "worktop_marble",
+   "rgb": [
+    233,
+    214,
+    99
+   ]
+  },
+  {
+   "id": "T2_F_stair_01",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    154,
+    31,
+    249
+   ]
+  },
+  {
+   "id": "T2_F_stair_02",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    40,
+    189,
+    81
+   ]
+  },
+  {
+   "id": "T2_F_stair_03",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    165,
+    13,
+    16
+   ]
+  },
+  {
+   "id": "T2_F_stair_04",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    117,
+    147,
+    215
+   ]
+  },
+  {
+   "id": "T2_F_stair_05",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    158,
+    226,
+    54
+   ]
+  },
+  {
+   "id": "T2_F_stair_06",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    224,
+    6,
+    201
+   ]
+  },
+  {
+   "id": "T2_F_stair_07",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    31,
+    147,
+    126
+   ]
+  },
+  {
+   "id": "T2_F_stair_08",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    242,
+    169,
+    90
+   ]
+  },
+  {
+   "id": "T2_F_stair_09",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    106,
+    77,
+    203
+   ]
+  },
+  {
+   "id": "T2_F_stair_10",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    39,
+    201,
+    29
+   ]
+  },
+  {
+   "id": "T2_F_stair_11",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    174,
+    4,
+    64
+   ]
+  },
+  {
+   "id": "T2_F_stair_12",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    108,
+    183,
+    224
+   ]
+  },
+  {
+   "id": "T2_F_stair_13",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    225,
+    238,
+    43
+   ]
+  },
+  {
+   "id": "T2_F_stair_14",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    149,
+    52,
+    178
+   ]
+  },
+  {
+   "id": "T2_F_stair_15",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    22,
+    156,
+    87
+   ]
+  },
+  {
+   "id": "T2_F_stair_16",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    251,
+    113,
+    81
+   ]
+  },
+  {
+   "id": "T2_F_stair_17",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    66,
+    81,
+    215
+   ]
+  },
+  {
+   "id": "T2_F_stair_18",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    94,
+    212,
+    17
+   ]
+  },
+  {
+   "id": "T2_F_stair_19",
+   "kind": "stair",
+   "mat": "stair_walnut",
+   "rgb": [
+    138,
+    40,
+    108
+   ]
+  },
+  {
+   "id": "D_bed1_rug",
+   "kind": "decor",
+   "mat": "rug_sand",
+   "rgb": [
+    99,
+    230,
+    233
+   ]
+  },
+  {
+   "id": "D_bed1_bench",
+   "kind": "panel",
+   "mat": "leather_cognac",
+   "rgb": [
+    249,
+    190,
+    31
+   ]
+  },
+  {
+   "id": "D_bed2_rug",
+   "kind": "decor",
+   "mat": "rug_sand",
+   "rgb": [
+    105,
+    40,
+    189
+   ]
+  },
+  {
+   "id": "D_bed2_bench",
+   "kind": "panel",
+   "mat": "leather_cognac",
+   "rgb": [
+    13,
+    165,
+    35
+   ]
+  }
+ ],
+ "mat_legend": [
+  {
+   "mat": "stone_chevron_floor",
+   "rgb": [
+    99,
+    138,
+    233
+   ]
+  },
+  {
+   "mat": "stone_dark_floor",
+   "rgb": [
+    158,
+    249,
+    31
+   ]
+  },
+  {
+   "mat": "walnut_floor_dark",
+   "rgb": [
+    189,
+    40,
+    171
+   ]
+  },
+  {
+   "mat": "oak_floor",
+   "rgb": [
+    13,
+    165,
+    140
+   ]
+  },
+  {
+   "mat": "stone_nero_floor",
+   "rgb": [
+    215,
+    170,
+    117
+   ]
+  },
+  {
+   "mat": "stone_cream_floor",
+   "rgb": [
+    97,
+    54,
+    226
+   ]
+  },
+  {
+   "mat": "unknown",
+   "rgb": [
+    15,
+    224,
+    6
+   ]
+  },
+  {
+   "mat": "cut_cap",
+   "rgb": [
+    147,
+    31,
+    70
+   ]
+  },
+  {
+   "mat": "plaster_greige",
+   "rgb": [
+    90,
+    185,
+    242
+   ]
+  },
+  {
+   "mat": "stone_chevron_dark",
+   "rgb": [
+    193,
+    203,
+    77
+   ]
+  },
+  {
+   "mat": "stone_basalt",
+   "rgb": [
+    165,
+    29,
+    201
+   ]
+  },
+  {
+   "mat": "sauna_walnut",
+   "rgb": [
+    4,
+    174,
+    89
+   ]
+  },
+  {
+   "mat": "marble_nero_veined",
+   "rgb": [
+    224,
+    132,
+    108
+   ]
+  },
+  {
+   "mat": "cut_glass",
+   "rgb": [
+    43,
+    59,
+    238
+   ]
+  },
+  {
+   "mat": "glass",
+   "rgb": [
+    99,
+    178,
+    52
+   ]
+  },
+  {
+   "mat": "bronze_frame",
+   "rgb": [
+    156,
+    22,
+    112
+   ]
+  },
+  {
+   "mat": "toilet_black",
+   "rgb": [
+    81,
+    244,
+    251
+   ]
+  },
+  {
+   "mat": "vanity_stone",
+   "rgb": [
+    215,
+    177,
+    66
+   ]
+  },
+  {
+   "mat": "sauna_bench",
+   "rgb": [
+    106,
+    17,
+    212
+   ]
+  },
+  {
+   "mat": "shower_stone",
+   "rgb": [
+    40,
+    138,
+    56
+   ]
+  },
+  {
+   "mat": "jacuzzi_stone",
+   "rgb": [
+    233,
+    99,
+    116
+   ]
+  },
+  {
+   "mat": "water",
+   "rgb": [
+    31,
+    123,
+    249
+   ]
+  },
+  {
+   "mat": "box_slats",
+   "rgb": [
+    146,
+    189,
+    40
+   ]
+  },
+  {
+   "mat": "black_glass_tall",
+   "rgb": [
+    165,
+    13,
+    165
+   ]
+  },
+  {
+   "mat": "walnut_console",
+   "rgb": [
+    117,
+    215,
+    186
+   ]
+  },
+  {
+   "mat": "bed_linen",
+   "rgb": [
+    226,
+    125,
+    54
+   ]
+  },
+  {
+   "mat": "headboard_boucle",
+   "rgb": [
+    32,
+    6,
+    224
+   ]
+  },
+  {
+   "mat": "pillow_white",
+   "rgb": [
+    51,
+    147,
+    31
+   ]
+  },
+  {
+   "mat": "throw_cognac",
+   "rgb": [
+    242,
+    90,
+    160
+   ]
+  },
+  {
+   "mat": "appliance_white",
+   "rgb": [
+    77,
+    172,
+    203
+   ]
+  },
+  {
+   "mat": "walnut_cabinet",
+   "rgb": [
+    201,
+    193,
+    29
+   ]
+  },
+  {
+   "mat": "groove_dark",
+   "rgb": [
+    117,
+    4,
+    174
+   ]
+  },
+  {
+   "mat": "worktop_marble",
+   "rgb": [
+    108,
+    224,
+    151
+   ]
+  },
+  {
+   "mat": "stair_walnut",
+   "rgb": [
+    238,
+    58,
+    43
+   ]
+  },
+  {
+   "mat": "rug_sand",
+   "rgb": [
+    52,
+    79,
+    178
+   ]
+  },
+  {
+   "mat": "leather_cognac",
+   "rgb": [
+    90,
+    156,
+    22
+   ]
+  }
+ ]
+}

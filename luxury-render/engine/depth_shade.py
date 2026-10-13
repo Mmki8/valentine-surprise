@@ -4,7 +4,8 @@ Through the stair hole and the double-height voids the camera sees the floor bel
 has the same colour as the upper floor, so the opening does not read. Shading by real height fixes it: the upper floor
 stays at full brightness, the lower floor is dimmed, and each stair tread gets a brightness set by its own height,
 so the flight visibly climbs to the landing.
-usage: python3 engine/depth_shade.py plans/<plan> output/<plan>/<CAM>/blockout [floor_z]
+usage: python3 engine/depth_shade.py plans/<plan> output/<plan>/<CAM>/blockout [floor_z] [stair_top_z]
+With floor_z 0 (a lowest level) only the stair is graded, from LOW at its foot to full brightness at stair_top_z.
 """
 import json, sys
 import numpy as np
@@ -12,6 +13,7 @@ from PIL import Image
 
 plan_dir, bdir = sys.argv[1], sys.argv[2]
 FZ = float(sys.argv[3]) if len(sys.argv) > 3 else 310.0
+TOP = float(sys.argv[4]) if len(sys.argv) > 4 else FZ
 LOW = 0.42                                           # brightness of the lower floor
 
 plan = json.load(open(f"{plan_dir}/plan.json"))
@@ -31,6 +33,8 @@ ztop = {d["id"]: top(d) for d in plan["furniture"] + plan["design"]}
 
 def factor(e):
     i, k = e["id"], e["kind"]
+    if FZ <= 0:                                      # lowest level: grade the stair only, the rest stays as rendered
+        return LOW + (1 - LOW) * min(ztop.get(i) or 0, TOP) / TOP if k == "stair" else 1.0
     if i.startswith(("U_", "FLOOR_U_")) or i.endswith("_cap"): return 1.0
     if k == "floor": return LOW
     if i == "F_stair_balustrade": return 0.8

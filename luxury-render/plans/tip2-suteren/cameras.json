@@ -1,0 +1,46 @@
+{
+ "_doc": "House type 2 souterrain: top-down 3D floor plan camera (plan cm, x east, y south, z up).",
+ "heroes": {},
+ "cameras": [
+  {
+   "id": "FP3D_T",
+   "room": "T2_R_corr",
+   "space": "fp3d",
+   "title": "3D floor plan - souterrain, straight top-down (north up)",
+   "pos": [
+    810,
+    537,
+    30000
+   ],
+   "look": [
+    810,
+    537,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.15,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "cut": 300,
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -119,7 +119,8 @@ export function buildScene(plan, opts = {}, ds) {
     if (CUT) {
       if (w.z0 >= CUT || (opts.no_upper && w.z0 > 0)) continue;   // no_upper: top-down plans drop walls that start on the upper level
       w = { ...w, z1: Math.min(w.z1, CUT) };
-      add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap'));
+      if (!opts.no_headers)   // no_headers: capped per solid segment below, so doorways stay open from above
+        add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap'));
     }
     const [x0, y0, x1, y1] = w.rect;
     const alongX = (x1 - x0) >= (y1 - y0);
@@ -175,6 +176,9 @@ export function buildScene(plan, opts = {}, ds) {
     };
     const seg = (s0, s1, z0, z1, tag) => {
       if (s1 - s0 < 0.5 || z1 - z0 < 0.5) return;
+      if (CUT && opts.no_headers && z1 >= w.z1 - 0.01)
+        add(`${w.id}${tag}_cap`, 'wall', alongX ? boxMesh(s0, y0, s1, y1, w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap')
+                                                : boxMesh(x0, s0, x1, s1, w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap'));
       half(s0, s1, z0, z1, -1, `${w.id}${tag}`);
       half(s0, s1, z0, z1, +1, `${w.id}${tag}`);
     };
@@ -182,7 +186,7 @@ export function buildScene(plan, opts = {}, ds) {
     for (const c of cuts) {
       seg(cur, c.a, w.z0, w.z1, `_s${k}`);
       if (c.sill > w.z0) seg(c.a, c.b, w.z0, c.sill, `_sill${k}`);
-      if (c.head < w.z1) seg(c.a, c.b, c.head, w.z1, `_head${k}`);
+      if (c.head < w.z1 && !(CUT && opts.no_headers)) seg(c.a, c.b, c.head, w.z1, `_head${k}`);   // top-down plans: openings read as gaps
       cur = Math.max(cur, c.b); k++;
     }
     seg(cur, a1, w.z0, w.z1, `_s${k}`);
@@ -191,8 +195,10 @@ export function buildScene(plan, opts = {}, ds) {
   // ---------------------------------------------------------- opening infill
   // cutaway: glazing that runs through the cut gets a cap (the wall cap, or opts.glass_cap to read as glass from above)
   if (CUT) for (const o of plan.openings) {
-    if (!['window', 'sliding', 'curtain', 'glass_partition'].includes(o.type) || o.sill >= CUT || o.head <= CUT) continue;
-    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, opts.glass_cap || opts.cap || 'cut_cap'));
+    if (!['window', 'sliding', 'curtain', 'glass_partition'].includes(o.type) || o.sill >= CUT) continue;
+    if (o.head > CUT) add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, opts.glass_cap || opts.cap || 'cut_cap'));
+    else if (opts.no_headers && opts.glass_cap)   // top-down: glazing below the cut reads as a thin glass line, not as its frame
+      add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], o.head - 1, o.head + 1.6, opts.glass_cap));
   }
   for (const o of plan.openings) {
     if (CUT && opts.open_doors && (o.type === 'door' || o.type === 'garage_door')) continue;   // 3D floor plan: doorways shown open

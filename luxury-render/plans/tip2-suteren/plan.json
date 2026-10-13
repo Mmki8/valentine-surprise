@@ -1,0 +1,2027 @@
+{
+ "meta": {
+  "name": "OSNOVA SUTERENA - house type 2, souterrain",
+  "source": "source/floorplan_suteren.png",
+  "units": "cm",
+  "axes": "x = east (drawing right), y = south (drawing down), z = up",
+  "scale_cm_per_px": 1.313,
+  "origin_px": [
+   170,
+   220
+  ],
+  "overall_cm": [
+   1621,
+   1060
+  ]
+ },
+ "levels": {
+  "ffl": 0,
+  "ceiling": 270,
+  "slab_top": 300
+ },
+ "walls": [
+  {
+   "id": "W_north",
+   "rect": [
+    370.3,
+    -1.3,
+    1621.6,
+    27.6
+   ],
+   "z0": 0,
+   "z1": 570,
+   "kind": "ext",
+   "src_px": [
+    452,
+    219,
+    1405,
+    241
+   ]
+  },
+  {
+   "id": "W_west_up",
+   "rect": [
+    370.3,
+    -1.3,
+    400.5,
+    153.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    452,
+    219,
+    475,
+    337
+   ]
+  },
+  {
+   "id": "W_spa_n",
+   "rect": [
+    0.0,
+    127.4,
+    370.3,
+    153.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    170,
+    317,
+    452,
+    337
+   ]
+  },
+  {
+   "id": "W_spa_w",
+   "rect": [
+    0.0,
+    127.4,
+    26.3,
+    816.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    170,
+    317,
+    190,
+    842
+   ]
+  },
+  {
+   "id": "W_spa_s",
+   "rect": [
+    0.0,
+    791.7,
+    374.2,
+    816.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    170,
+    823,
+    455,
+    842
+   ]
+  },
+  {
+   "id": "W_main_w",
+   "rect": [
+    374.2,
+    153.6,
+    400.5,
+    1072.7
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    455,
+    337,
+    475,
+    1037
+   ]
+  },
+  {
+   "id": "W_east",
+   "rect": [
+    1596.6,
+    -1.3,
+    1621.6,
+    878.4
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    1386,
+    219,
+    1405,
+    889
+   ]
+  },
+  {
+   "id": "W_east_in",
+   "rect": [
+    1331.4,
+    27.6,
+    1357.6,
+    1004.4
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1184,
+    241,
+    1204,
+    985
+   ]
+  },
+  {
+   "id": "W_south",
+   "rect": [
+    400.5,
+    995.3,
+    1331.4,
+    1016.3
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    475,
+    978,
+    1184,
+    994
+   ]
+  },
+  {
+   "id": "W_laundry_s",
+   "rect": [
+    1357.6,
+    852.1,
+    1596.6,
+    878.4
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "ext",
+   "src_px": [
+    1204,
+    869,
+    1386,
+    889
+   ]
+  },
+  {
+   "id": "W_stair_s",
+   "rect": [
+    400.5,
+    127.4,
+    1210.6,
+    152.3
+   ],
+   "z0": 0,
+   "z1": 570,
+   "kind": "int",
+   "src_px": [
+    475,
+    317,
+    1092,
+    336
+   ]
+  },
+  {
+   "id": "W_corr_s",
+   "rect": [
+    400.5,
+    273.1,
+    1331.4,
+    284.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    475,
+    428,
+    1184,
+    437
+   ]
+  },
+  {
+   "id": "W_mid",
+   "rect": [
+    853.4,
+    284.9,
+    879.7,
+    995.3
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    820,
+    437,
+    840,
+    978
+   ]
+  },
+  {
+   "id": "W_podL_w",
+   "rect": [
+    508.1,
+    284.9,
+    517.3,
+    455.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    557,
+    437,
+    564,
+    567
+   ]
+  },
+  {
+   "id": "W_podL_s",
+   "rect": [
+    508.1,
+    455.6,
+    853.4,
+    481.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    557,
+    567,
+    820,
+    587
+   ]
+  },
+  {
+   "id": "W_podL_p",
+   "rect": [
+    751.0,
+    284.9,
+    764.2,
+    374.2
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    742,
+    437,
+    752,
+    505
+   ]
+  },
+  {
+   "id": "W_podR_e",
+   "rect": [
+    1214.5,
+    284.9,
+    1223.7,
+    455.6
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1095,
+    437,
+    1102,
+    567
+   ]
+  },
+  {
+   "id": "W_podR_s",
+   "rect": [
+    879.7,
+    455.6,
+    1223.7,
+    481.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    840,
+    567,
+    1102,
+    587
+   ]
+  },
+  {
+   "id": "W_podR_p",
+   "rect": [
+    967.7,
+    284.9,
+    978.2,
+    361.1
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    907,
+    437,
+    915,
+    495
+   ]
+  },
+  {
+   "id": "W_er_s",
+   "rect": [
+    1357.6,
+    455.6,
+    1596.6,
+    481.9
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    1204,
+    567,
+    1386,
+    587
+   ]
+  },
+  {
+   "id": "W_wc_s",
+   "rect": [
+    26.3,
+    262.6,
+    225.8,
+    274.4
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    190,
+    420,
+    342,
+    429
+   ]
+  },
+  {
+   "id": "W_wc_e",
+   "rect": [
+    225.8,
+    153.6,
+    236.3,
+    433.3
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    342,
+    337,
+    350,
+    550
+   ]
+  },
+  {
+   "id": "W_sauna_s",
+   "rect": [
+    26.3,
+    422.8,
+    225.8,
+    433.3
+   ],
+   "z0": 0,
+   "z1": 270,
+   "kind": "int",
+   "src_px": [
+    190,
+    542,
+    342,
+    550
+   ]
+  }
+ ],
+ "openings": [
+  {
+   "id": "O_spa_glz",
+   "type": "sliding",
+   "sill": 0,
+   "head": 270,
+   "note": "spa south: 2-leaf sliding glass door",
+   "rect": [
+    59.1,
+    791.7,
+    299.4,
+    816.7
+   ],
+   "src_px": [
+    215,
+    823,
+    398,
+    842
+   ]
+  },
+  {
+   "id": "O_b1_glz",
+   "type": "curtain",
+   "sill": 0,
+   "head": 270,
+   "note": "bedroom 1 south: glazing, middle leaf slides",
+   "rect": [
+    401.8,
+    995.3,
+    866.6,
+    1016.3
+   ],
+   "src_px": [
+    476,
+    978,
+    830,
+    994
+   ],
+   "mullions": [
+    555.4,
+    709.0
+   ]
+  },
+  {
+   "id": "O_b2_glz",
+   "type": "curtain",
+   "sill": 0,
+   "head": 270,
+   "note": "bedroom 2 south: glazing, middle leaf slides",
+   "rect": [
+    866.6,
+    995.3,
+    1331.4,
+    1016.3
+   ],
+   "src_px": [
+    830,
+    978,
+    1184,
+    994
+   ],
+   "mullions": [
+    1020.2,
+    1175.1
+   ]
+  },
+  {
+   "id": "O_spa_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> spa",
+   "rect": [
+    374.2,
+    164.1,
+    400.5,
+    249.5
+   ],
+   "src_px": [
+    455,
+    345,
+    475,
+    410
+   ],
+   "hinge": [
+    387.3,
+    249.5
+   ]
+  },
+  {
+   "id": "O_store_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> store under the stair landing",
+   "rect": [
+    416.2,
+    127.4,
+    495.0,
+    152.3
+   ],
+   "src_px": [
+    487,
+    317,
+    547,
+    336
+   ],
+   "hinge": [
+    416.2,
+    152.3
+   ]
+  },
+  {
+   "id": "O_b1_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> bedroom 1 vestibule",
+   "rect": [
+    413.6,
+    273.1,
+    498.9,
+    284.9
+   ],
+   "src_px": [
+    485,
+    428,
+    550,
+    437
+   ],
+   "hinge": [
+    416.2,
+    284.9
+   ]
+  },
+  {
+   "id": "O_b2_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> bedroom 2 vestibule",
+   "rect": [
+    1234.2,
+    273.1,
+    1318.3,
+    284.9
+   ],
+   "src_px": [
+    1110,
+    428,
+    1174,
+    437
+   ],
+   "hinge": [
+    1315.6,
+    284.9
+   ]
+  },
+  {
+   "id": "O_podL_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 1 -> bathroom 1",
+   "rect": [
+    665.7,
+    455.6,
+    744.5,
+    481.9
+   ],
+   "src_px": [
+    677,
+    567,
+    737,
+    587
+   ],
+   "hinge": [
+    744.5,
+    481.9
+   ]
+  },
+  {
+   "id": "O_podR_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "bedroom 2 -> bathroom 2 (no leaf drawn)",
+   "rect": [
+    986.1,
+    455.6,
+    1066.2,
+    481.9
+   ],
+   "src_px": [
+    921,
+    567,
+    982,
+    587
+   ],
+   "hinge": [
+    986.1,
+    481.9
+   ]
+  },
+  {
+   "id": "O_er_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "corridor -> east room",
+   "rect": [
+    1331.4,
+    164.1,
+    1357.6,
+    249.5
+   ],
+   "src_px": [
+    1184,
+    345,
+    1204,
+    410
+   ],
+   "hinge": [
+    1344.5,
+    166.8
+   ]
+  },
+  {
+   "id": "O_laundry_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "east room -> laundry",
+   "rect": [
+    1399.7,
+    455.6,
+    1486.3,
+    481.9
+   ],
+   "src_px": [
+    1236,
+    567,
+    1302,
+    587
+   ],
+   "hinge": [
+    1402.3,
+    481.9
+   ]
+  },
+  {
+   "id": "O_laundry_ext",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "laundry exterior door (south)",
+   "rect": [
+    1399.7,
+    852.1,
+    1486.3,
+    878.4
+   ],
+   "src_px": [
+    1236,
+    869,
+    1302,
+    889
+   ],
+   "hinge": [
+    1402.3,
+    852.1
+   ]
+  },
+  {
+   "id": "O_wc_door",
+   "type": "door",
+   "sill": 0,
+   "head": 210,
+   "leaf": "solid",
+   "note": "spa -> WC",
+   "rect": [
+    225.8,
+    166.8,
+    236.3,
+    241.6
+   ],
+   "src_px": [
+    342,
+    347,
+    350,
+    404
+   ],
+   "hinge": [
+    225.8,
+    166.8
+   ]
+  },
+  {
+   "id": "O_sauna_glass",
+   "type": "glass_partition",
+   "sill": 0,
+   "head": 210,
+   "note": "sauna glass front with glass door",
+   "rect": [
+    225.8,
+    344.0,
+    236.3,
+    433.3
+   ],
+   "src_px": [
+    342,
+    482,
+    350,
+    550
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "T2_R_wc",
+   "name": "WC",
+   "polygon": [
+    [
+     26.3,
+     153.6
+    ],
+    [
+     225.8,
+     153.6
+    ],
+    [
+     225.8,
+     262.6
+    ],
+    [
+     26.3,
+     262.6
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "wc_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_sauna",
+   "name": "Sauna",
+   "polygon": [
+    [
+     26.3,
+     274.4
+    ],
+    [
+     225.8,
+     274.4
+    ],
+    [
+     225.8,
+     422.8
+    ],
+    [
+     26.3,
+     422.8
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "sauna_walnut",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_spa",
+   "name": "Spa (jacuzzi, shower)",
+   "polygon": [
+    [
+     236.3,
+     153.6
+    ],
+    [
+     374.2,
+     153.6
+    ],
+    [
+     374.2,
+     791.7
+    ],
+    [
+     26.3,
+     791.7
+    ],
+    [
+     26.3,
+     433.3
+    ],
+    [
+     236.3,
+     433.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "spa_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_store",
+   "name": "Store under the stair landing",
+   "polygon": [
+    [
+     400.5,
+     27.6
+    ],
+    [
+     639.4,
+     27.6
+    ],
+    [
+     639.4,
+     127.4
+    ],
+    [
+     400.5,
+     127.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_stair",
+   "name": "Stair",
+   "polygon": [
+    [
+     639.4,
+     27.6
+    ],
+    [
+     1331.4,
+     27.6
+    ],
+    [
+     1331.4,
+     127.4
+    ],
+    [
+     639.4,
+     127.4
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_corr",
+   "name": "Corridor",
+   "polygon": [
+    [
+     400.5,
+     152.3
+    ],
+    [
+     1331.4,
+     152.3
+    ],
+    [
+     1331.4,
+     273.1
+    ],
+    [
+     400.5,
+     273.1
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_bed1",
+   "name": "Bedroom 1 (south-west) incl. vestibule",
+   "polygon": [
+    [
+     400.5,
+     284.9
+    ],
+    [
+     508.1,
+     284.9
+    ],
+    [
+     508.1,
+     481.9
+    ],
+    [
+     853.4,
+     481.9
+    ],
+    [
+     853.4,
+     995.3
+    ],
+    [
+     400.5,
+     995.3
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bedroom_luxe",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_bath1",
+   "name": "Bathroom 1",
+   "polygon": [
+    [
+     517.3,
+     284.9
+    ],
+    [
+     853.4,
+     284.9
+    ],
+    [
+     853.4,
+     455.6
+    ],
+    [
+     517.3,
+     455.6
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bath_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_bath2",
+   "name": "Bathroom 2",
+   "polygon": [
+    [
+     879.7,
+     284.9
+    ],
+    [
+     1214.5,
+     284.9
+    ],
+    [
+     1214.5,
+     455.6
+    ],
+    [
+     879.7,
+     455.6
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bath_dark",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_bed2",
+   "name": "Bedroom 2 (south-east) incl. vestibule",
+   "polygon": [
+    [
+     1223.7,
+     284.9
+    ],
+    [
+     1331.4,
+     284.9
+    ],
+    [
+     1331.4,
+     995.3
+    ],
+    [
+     879.7,
+     995.3
+    ],
+    [
+     879.7,
+     481.9
+    ],
+    [
+     1223.7,
+     481.9
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "bedroom_luxe",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_east",
+   "name": "East room (unlabelled, no furniture)",
+   "polygon": [
+    [
+     1357.6,
+     27.6
+    ],
+    [
+     1596.6,
+     27.6
+    ],
+    [
+     1596.6,
+     455.6
+    ],
+    [
+     1357.6,
+     455.6
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "corridor_warm",
+   "ceiling_holes": []
+  },
+  {
+   "id": "T2_R_laundry",
+   "name": "Laundry",
+   "polygon": [
+    [
+     1357.6,
+     481.9
+    ],
+    [
+     1596.6,
+     481.9
+    ],
+    [
+     1596.6,
+     852.1
+    ],
+    [
+     1357.6,
+     852.1
+    ]
+   ],
+   "floor": 0,
+   "ceiling": 270,
+   "style": "laundry_warm",
+   "ceiling_holes": []
+  }
+ ],
+ "furniture": [
+  {
+   "id": "T2_F_wc_toilet",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    39.4,
+    170.7,
+    94.5,
+    207.5
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "T2_R_wc",
+   "facing": "E",
+   "note": null,
+   "src_px": [
+    200,
+    350,
+    242,
+    378
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_wc_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    111.6,
+    229.8,
+    170.7,
+    262.6
+   ],
+   "z0": 55,
+   "h": 30,
+   "room": "T2_R_wc",
+   "facing": "N",
+   "note": null,
+   "src_px": [
+    255,
+    395,
+    300,
+    420
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_sauna_bench1",
+   "kind": "bench",
+   "shape": "box",
+   "rect": [
+    26.3,
+    274.4,
+    225.8,
+    342.7
+   ],
+   "z0": 0,
+   "h": 45,
+   "room": "T2_R_sauna",
+   "facing": "S",
+   "note": "lower bench, edge = magenta line py 481",
+   "src_px": [
+    190,
+    429,
+    342,
+    481
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_sauna_bench2",
+   "kind": "bench",
+   "shape": "box",
+   "rect": [
+    26.3,
+    274.4,
+    225.8,
+    308.6
+   ],
+   "z0": 0,
+   "h": 90,
+   "room": "T2_R_sauna",
+   "facing": "S",
+   "note": "upper bench",
+   "src_px": [
+    190,
+    429,
+    342,
+    455
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_spa_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    26.3,
+    433.3,
+    124.7,
+    538.3
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "T2_R_spa",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    190,
+    550,
+    265,
+    630
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_jacuzzi",
+   "kind": "jacuzzi",
+   "shape": "cyl",
+   "center": [
+    120.8,
+    660.4
+   ],
+   "r": 85.3,
+   "z0": 0,
+   "h": 62,
+   "room": "T2_R_spa",
+   "note": "round jacuzzi D 1.70 m"
+  },
+  {
+   "id": "T2_F_b1_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    517.3,
+    284.9,
+    610.5,
+    455.6
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "T2_R_bath1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    564,
+    437,
+    635,
+    567
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b1_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    610.5,
+    284.9,
+    715.6,
+    334.8
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "T2_R_bath1",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    635,
+    437,
+    715,
+    475
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b1_duct",
+   "kind": "box",
+   "shape": "box",
+   "rect": [
+    715.6,
+    284.9,
+    751.0,
+    298.1
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "T2_R_bath1",
+   "facing": null,
+   "note": "installation box (black square on plan)",
+   "src_px": [
+    715,
+    437,
+    742,
+    447
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b1_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    783.9,
+    298.1,
+    823.3,
+    350.6
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "T2_R_bath1",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    767,
+    447,
+    797,
+    487
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b2_wc",
+   "kind": "toilet",
+   "shape": "box",
+   "rect": [
+    892.8,
+    298.1,
+    932.2,
+    350.6
+   ],
+   "z0": 0,
+   "h": 40,
+   "room": "T2_R_bath2",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    850,
+    447,
+    880,
+    487
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b2_vanity",
+   "kind": "vanity",
+   "shape": "box",
+   "rect": [
+    978.2,
+    284.9,
+    1122.6,
+    334.8
+   ],
+   "z0": 80,
+   "h": 10,
+   "room": "T2_R_bath2",
+   "facing": "S",
+   "note": null,
+   "src_px": [
+    915,
+    437,
+    1025,
+    475
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b2_shower",
+   "kind": "shower",
+   "shape": "box",
+   "rect": [
+    1122.6,
+    284.9,
+    1214.5,
+    455.6
+   ],
+   "z0": 0,
+   "h": 3,
+   "room": "T2_R_bath2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1025,
+    437,
+    1095,
+    567
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_b2_ledge",
+   "kind": "box",
+   "shape": "box",
+   "rect": [
+    879.7,
+    439.9,
+    967.7,
+    455.6
+   ],
+   "z0": 0,
+   "h": 110,
+   "room": "T2_R_bath2",
+   "facing": null,
+   "note": "GKPL ledge with floor drain (green on plan)",
+   "src_px": [
+    840,
+    555,
+    907,
+    567
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed1_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    509.4,
+    575.1,
+    766.8,
+    644.7
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "T2_R_bed1",
+   "facing": "N",
+   "note": "full-height wardrobe wall (GKPL), doors face north",
+   "src_px": [
+    558,
+    658,
+    754,
+    711
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed1_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    554.1,
+    649.9,
+    718.2,
+    842.9
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed1",
+   "facing": "S",
+   "note": "double bed, headboard against the wardrobe wall",
+   "src_px": [
+    592,
+    715,
+    717,
+    862
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed1_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    509.4,
+    647.3,
+    554.1,
+    688.0
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    558,
+    713,
+    592,
+    744
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed1_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    718.2,
+    647.3,
+    762.9,
+    688.0
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed1",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    717,
+    713,
+    751,
+    744
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed2_wr",
+   "kind": "tall_cabinet",
+   "shape": "box",
+   "rect": [
+    965.1,
+    575.1,
+    1222.4,
+    644.7
+   ],
+   "z0": 0,
+   "h": 270,
+   "room": "T2_R_bed2",
+   "facing": "N",
+   "note": "full-height wardrobe wall (GKPL), doors face north",
+   "src_px": [
+    905,
+    658,
+    1101,
+    711
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed2_bed",
+   "kind": "bed",
+   "shape": "box",
+   "rect": [
+    1009.7,
+    649.9,
+    1173.8,
+    842.9
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed2",
+   "facing": "S",
+   "note": "double bed, headboard against the wardrobe wall",
+   "src_px": [
+    939,
+    715,
+    1064,
+    862
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed2_ns1",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    965.1,
+    647.3,
+    1009.7,
+    688.0
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    905,
+    713,
+    939,
+    744
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_bed2_ns2",
+   "kind": "nightstand",
+   "shape": "box",
+   "rect": [
+    1173.8,
+    647.3,
+    1218.5,
+    688.0
+   ],
+   "z0": 0,
+   "h": 50,
+   "room": "T2_R_bed2",
+   "facing": null,
+   "note": null,
+   "src_px": [
+    1064,
+    713,
+    1098,
+    744
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_l_washer",
+   "kind": "appliance",
+   "shape": "box",
+   "rect": [
+    1531.0,
+    488.4,
+    1590.0,
+    548.8
+   ],
+   "z0": 0,
+   "h": 85,
+   "room": "T2_R_laundry",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1336,
+    592,
+    1381,
+    638
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_l_dryer",
+   "kind": "appliance",
+   "shape": "box",
+   "rect": [
+    1531.0,
+    551.5,
+    1590.0,
+    614.5
+   ],
+   "z0": 0,
+   "h": 85,
+   "room": "T2_R_laundry",
+   "facing": "W",
+   "note": null,
+   "src_px": [
+    1336,
+    640,
+    1381,
+    688
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_l_counter",
+   "kind": "counter",
+   "shape": "box",
+   "rect": [
+    1533.6,
+    614.5,
+    1596.6,
+    849.5
+   ],
+   "z0": 0,
+   "h": 92,
+   "room": "T2_R_laundry",
+   "facing": "W",
+   "note": "worktop run with cabinets (magenta edge)",
+   "src_px": [
+    1338,
+    688,
+    1386,
+    867
+   ],
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_01",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1180.5,
+    27.6,
+    1210.6,
+    127.4
+   ],
+   "z0": 0,
+   "h": 15.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_02",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1150.5,
+    27.6,
+    1180.5,
+    127.4
+   ],
+   "z0": 0,
+   "h": 30.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_03",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1120.4,
+    27.6,
+    1150.5,
+    127.4
+   ],
+   "z0": 0,
+   "h": 45.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_04",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1090.3,
+    27.6,
+    1120.4,
+    127.4
+   ],
+   "z0": 0,
+   "h": 60.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_05",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1060.3,
+    27.6,
+    1090.3,
+    127.4
+   ],
+   "z0": 0,
+   "h": 75.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_06",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1030.2,
+    27.6,
+    1060.3,
+    127.4
+   ],
+   "z0": 0,
+   "h": 90.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_07",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    1000.2,
+    27.6,
+    1030.2,
+    127.4
+   ],
+   "z0": 0,
+   "h": 105.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_08",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    970.1,
+    27.6,
+    1000.2,
+    127.4
+   ],
+   "z0": 0,
+   "h": 120.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_09",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    940.0,
+    27.6,
+    970.1,
+    127.4
+   ],
+   "z0": 0,
+   "h": 135.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_10",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    910.0,
+    27.6,
+    940.0,
+    127.4
+   ],
+   "z0": 0,
+   "h": 150.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_11",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    879.9,
+    27.6,
+    910.0,
+    127.4
+   ],
+   "z0": 0,
+   "h": 165.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_12",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    849.8,
+    27.6,
+    879.9,
+    127.4
+   ],
+   "z0": 0,
+   "h": 180.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_13",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    819.8,
+    27.6,
+    849.8,
+    127.4
+   ],
+   "z0": 0,
+   "h": 195.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_14",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    789.7,
+    27.6,
+    819.8,
+    127.4
+   ],
+   "z0": 0,
+   "h": 210.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_15",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    759.7,
+    27.6,
+    789.7,
+    127.4
+   ],
+   "z0": 0,
+   "h": 225.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_16",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    729.6,
+    27.6,
+    759.7,
+    127.4
+   ],
+   "z0": 0,
+   "h": 240.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_17",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    699.5,
+    27.6,
+    729.6,
+    127.4
+   ],
+   "z0": 0,
+   "h": 255.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_18",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    669.5,
+    27.6,
+    699.5,
+    127.4
+   ],
+   "z0": 0,
+   "h": 270.0,
+   "room": "T2_R_stair",
+   "group": null
+  },
+  {
+   "id": "T2_F_stair_19",
+   "kind": "stair",
+   "shape": "box",
+   "rect": [
+    639.4,
+    27.6,
+    669.5,
+    127.4
+   ],
+   "z0": 0,
+   "h": 285.0,
+   "room": "T2_R_stair",
+   "group": null
+  }
+ ],
+ "design": [
+  {
+   "id": "D_bed1_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    527.8,
+    748.4,
+    744.5,
+    938.8
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed1_bench",
+   "shape": "box",
+   "mat": "leather_cognac",
+   "rect": [
+    564.6,
+    850.8,
+    707.7,
+    877.1
+   ],
+   "z": [
+    0,
+    45
+   ],
+   "kind": "panel",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_rug",
+   "shape": "box",
+   "mat": "rug_sand",
+   "rect": [
+    983.4,
+    748.4,
+    1200.1,
+    938.8
+   ],
+   "z": [
+    0,
+    1.2
+   ],
+   "kind": "decor",
+   "emissive": false
+  },
+  {
+   "id": "D_bed2_bench",
+   "shape": "box",
+   "mat": "leather_cognac",
+   "rect": [
+    1020.2,
+    850.8,
+    1163.3,
+    877.1
+   ],
+   "z": [
+    0,
+    45
+   ],
+   "kind": "panel",
+   "emissive": false
+  }
+ ],
+ "extra_ceilings": [],
+ "site": []
+}
