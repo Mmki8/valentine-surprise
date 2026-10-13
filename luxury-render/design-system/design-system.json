@@ -1950,6 +1950,10 @@
   "cut_cap": {
    "tint": "#2B2622",
    "text": "the sliced top of the walls, dark charcoal"
+  },
+  "cut_cap_white": {
+   "tint": "#F4F1EA",
+   "text": "the sliced top of the walls, clean matte white"
   }
  },
  "style_materials": {

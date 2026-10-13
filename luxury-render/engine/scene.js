@@ -119,7 +119,7 @@ export function buildScene(plan, opts = {}, ds) {
     if (CUT) {
       if (w.z0 >= CUT) continue;
       w = { ...w, z1: Math.min(w.z1, CUT) };
-      add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, 'cut_cap'));
+      add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap'));
     }
     const [x0, y0, x1, y1] = w.rect;
     const alongX = (x1 - x0) >= (y1 - y0);
@@ -192,9 +192,10 @@ export function buildScene(plan, opts = {}, ds) {
   // cutaway: glazing that runs through the cut gets the same dark cap as the walls, so a sliced glass wall reads as a wall
   if (CUT) for (const o of plan.openings) {
     if (!['window', 'sliding', 'curtain', 'glass_partition'].includes(o.type) || o.sill >= CUT || o.head <= CUT) continue;
-    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, 'cut_cap'));
+    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, opts.cap || 'cut_cap'));
   }
   for (const o of plan.openings) {
+    if (CUT && opts.open_doors && (o.type === 'door' || o.type === 'garage_door')) continue;   // 3D floor plan: doorways shown open
     const [x0, y0, x1, y1] = o.rect;
     const alongX = (x1 - x0) >= (y1 - y0);
     const c = alongX ? (y0 + y1) / 2 : (x0 + x1) / 2;          // centre line across wall
