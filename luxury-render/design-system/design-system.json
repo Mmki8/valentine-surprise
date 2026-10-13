@@ -1954,6 +1954,10 @@
   "cut_cap_white": {
    "tint": "#F4F1EA",
    "text": "the sliced top of the walls, clean matte white"
+  },
+  "cut_glass": {
+   "tint": "#C9CFCE",
+   "text": "glazing seen from above, a thin light grey glass line set in the wall"
   }
  },
  "style_materials": {

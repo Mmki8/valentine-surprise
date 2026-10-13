@@ -117,7 +117,7 @@ export function buildScene(plan, opts = {}, ds) {
   // ---------------------------------------------------------- walls with openings
   for (let w of plan.walls) {
     if (CUT) {
-      if (w.z0 >= CUT) continue;
+      if (w.z0 >= CUT || (opts.no_upper && w.z0 > 0)) continue;   // no_upper: top-down plans drop walls that start on the upper level
       w = { ...w, z1: Math.min(w.z1, CUT) };
       add(`${w.id}_cap`, 'wall', boxMesh(w.rect[0], w.rect[1], w.rect[2], w.rect[3], w.z1 - 0.3, w.z1 + 1.6, opts.cap || 'cut_cap'));
     }
@@ -189,10 +189,10 @@ export function buildScene(plan, opts = {}, ds) {
   }
 
   // ---------------------------------------------------------- opening infill
-  // cutaway: glazing that runs through the cut gets the same dark cap as the walls, so a sliced glass wall reads as a wall
+  // cutaway: glazing that runs through the cut gets a cap (the wall cap, or opts.glass_cap to read as glass from above)
   if (CUT) for (const o of plan.openings) {
     if (!['window', 'sliding', 'curtain', 'glass_partition'].includes(o.type) || o.sill >= CUT || o.head <= CUT) continue;
-    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, opts.cap || 'cut_cap'));
+    add(`${o.id}_cap`, 'wall', boxMesh(o.rect[0], o.rect[1], o.rect[2], o.rect[3], CUT - 3, CUT + 1.6, opts.glass_cap || opts.cap || 'cut_cap'));
   }
   for (const o of plan.openings) {
     if (CUT && opts.open_doors && (o.type === 'door' || o.type === 'garage_door')) continue;   // 3D floor plan: doorways shown open
@@ -351,6 +351,10 @@ export function buildScene(plan, opts = {}, ds) {
   for (const d of (plan.design || [])) {
     if (opts.car === false && d.id.startsWith('D_car_')) continue;   // tyres, wheels, spare of a modelled car
     if (CUT && (d.kind === 'exterior' || d.id.startsWith('EXT_'))) continue;   // cutaway: the house alone on the flat ground
+    if (CUT && opts.no_ceiling_lights && d.kind === 'light') {   // top-down plan: pendants, cables and coves would hide the furniture
+      const zt = d.z ? d.z[1] : d.center && d.center.length > 2 ? d.center[2] : d.p0 ? Math.max(d.p0[2], d.p1[2]) : 0;
+      if (zt > 120 && !['lamp_black', 'candle'].includes(d.mat)) continue;
+    }
     const key = d.mat, o = d.emissive ? null : {};
     const M = () => d.emissive ? new THREE.MeshBasicMaterial({ color: 0xfff2d6 }) : mat(T(key));
     let m;
@@ -425,7 +429,8 @@ export function makeCamera(c, W, H) {
   const cam = new THREE.PerspectiveCamera(10, W / H, c.near || 5, c.far || 8000);   // far 3D-floor-plan cameras set near/far for depth precision
   const [px, py, pz] = c.pos, [tx, ty] = c.look;
   cam.position.set(px, pz, py);
-  cam.up.set(0, 1, 0);
+  const u = c.up || [0, 0, 1];                    // plan-space up vector; top-down plans set [0,-1,0] (north up)
+  cam.up.set(u[0], u[2], u[1]);
   cam.lookAt(tx, c.look.length > 2 ? c.look[2] : pz, ty);   // a 3rd look value tilts the camera (3D floor plans)
   cam.updateMatrixWorld();
   const near = cam.near;

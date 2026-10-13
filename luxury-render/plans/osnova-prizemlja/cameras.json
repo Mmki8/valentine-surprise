@@ -506,6 +506,45 @@
      }
     }
    ]
+  },
+  {
+   "id": "FP3D_C",
+   "room": "R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - ground floor, straight top-down (north up, like the drawing)",
+   "pos": [
+    759,
+    519,
+    30000
+   ],
+   "look": [
+    759,
+    519,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.1,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "cut": 282,
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_upper": true
+     }
+    }
+   ]
   }
  ],
  "heroes": {
