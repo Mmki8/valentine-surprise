@@ -1,122 +1,157 @@
 {
- "tip1_prizemlje": {
-  "final": "85884296 (edit of 8595e480: glass artefact removed) - gate 0.869 / drift 0.013",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_223818_85884296-f372-45a7-a30f-cb81d73265ca.png",
-  "rejected": {
-   "a98e8f24": "oblique 55deg view: invented east glass balcony, distorted facades (client)",
-   "cafc01b2": "glass rail outside NE + ring artefact",
-   "cb35e73f": "glass panels inside along the south facade",
-   "5ac1ba1c": "ring artefact over the sofa"
+  "tip1_prizemlje": {
+    "final": "85884296 (edit of 8595e480: glass artefact removed) - gate 0.869 / drift 0.013",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_223818_85884296-f372-45a7-a30f-cb81d73265ca.png",
+    "rejected": {
+      "a98e8f24": "oblique 55deg view: invented east glass balcony, distorted facades (client)",
+      "cafc01b2": "glass rail outside NE + ring artefact",
+      "cb35e73f": "glass panels inside along the south facade",
+      "5ac1ba1c": "ring artefact over the sofa"
+    },
+    "camera": "plans/osnova-prizemlja/cameras.json FP3D_A: from the south, 72deg down, 7000 cm, hfov 17.5 (north up like the drawing), cut 200 cm, bg #e0dfc6",
+    "status": "superseded by tip1_prizemlje_v2 (client: low quality, wrong style)"
   },
-  "camera": "plans/osnova-prizemlja/cameras.json FP3D_A: from the south, 72deg down, 7000 cm, hfov 17.5 (north up like the drawing), cut 200 cm, bg #e0dfc6",
-  "status": "superseded by tip1_prizemlje_v2 (client: low quality, wrong style)"
- },
- "tip1_prizemlje_v2": {
-  "final": "3b4fdee8 (4K upscale of 524225f5) + background locked to #ECE8E0 by soft-mask colour shift - gate 0.888 / drift 0.003",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/485353bc-2b8b-4394-93ea-e63a8476c525.zip",
-  "style_ref": "refs/fp3d/style_ref_floorplan.webp",
-  "bg_ref": "refs/fp3d/background_color.png (#ECE8E0)",
-  "candidates": {
-   "e88735de": "gate fail: drift 0.065",
-   "8ee46fc2": "pass 0.799 / 0.016, weaker than 524225f5",
-   "524225f5": "pass 0.888 / 0.003 - selected"
+  "tip1_prizemlje_v2": {
+    "final": "3b4fdee8 (4K upscale of 524225f5) + background locked to #ECE8E0 by soft-mask colour shift - gate 0.888 / drift 0.003",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/485353bc-2b8b-4394-93ea-e63a8476c525.zip",
+    "style_ref": "refs/fp3d/style_ref_floorplan.webp",
+    "bg_ref": "refs/fp3d/background_color.png (#ECE8E0)",
+    "candidates": {
+      "e88735de": "gate fail: drift 0.065",
+      "8ee46fc2": "pass 0.799 / 0.016, weaker than 524225f5",
+      "524225f5": "pass 0.888 / 0.003 - selected"
+    },
+    "camera": "plans/osnova-prizemlja/cameras.json FP3D_B: corner view from the SE, 47deg down, cut 250 cm, white wall caps, doors open",
+    "status": "superseded by tip1_prizemlje_topdown (client asked for a straight top-down angle, ref 31.webp)"
   },
-  "camera": "plans/osnova-prizemlja/cameras.json FP3D_B: corner view from the SE, 47deg down, cut 250 cm, white wall caps, doors open",
-  "status": "superseded by tip1_prizemlje_topdown (client asked for a straight top-down angle, ref 31.webp)"
- },
- "tip1_prizemlje_topdown": {
-  "final": "f875db19 + background locked to #ECE8E0; 4K copy is a Lanczos resize (bytedance upscale failed twice: f39d9550, 9e1495b8)",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/cc0e3713-349d-4dad-95c7-73a576f7e057.zip",
-  "pre_check": "FP3D_C guide overlaid on source/floorplan_ground.webp: every wall and column aligned",
-  "candidates": {
-   "f875db19": "pass, selected (walnut tall cabinet correct, cleanest)",
-   "d2dba6e3": "pass; tall cabinet rendered as dark stone",
-   "41226d7c": "pass (style ref 31.webp); invented a rug in the mudroom"
+  "tip1_prizemlje_topdown": {
+    "final": "f875db19 + background locked to #ECE8E0; 4K copy is a Lanczos resize (bytedance upscale failed twice: f39d9550, 9e1495b8)",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/cc0e3713-349d-4dad-95c7-73a576f7e057.zip",
+    "pre_check": "FP3D_C guide overlaid on source/floorplan_ground.webp: every wall and column aligned",
+    "candidates": {
+      "f875db19": "pass, selected (walnut tall cabinet correct, cleanest)",
+      "d2dba6e3": "pass; tall cabinet rendered as dark stone",
+      "41226d7c": "pass (style ref 31.webp); invented a rug in the mudroom"
+    },
+    "camera": "plans/osnova-prizemlja/cameras.json FP3D_C: straight down from 300 m, hfov 4.1 (near-orthographic), north up, cut 282, no_upper, no_ceiling_lights, glass_cap cut_glass"
   },
-  "camera": "plans/osnova-prizemlja/cameras.json FP3D_C: straight down from 300 m, hfov 4.1 (near-orthographic), north up, cut 282, no_upper, no_ceiling_lights, glass_cap cut_glass"
- },
- "tip1_sprat_topdown": {
-  "status": "delivered",
-  "guide_media": "8f60901d-7d0d-43b4-aee7-b8a3eda5695e (FP3D_U guide_lined @ a9b1ae0)",
-  "jobs": {
-   "049dfdab-0fdc-47e7-8e7d-c0edd003ce8a": "guide only",
-   "d020b5f2-f16d-4640-9626-5b5e081e2e71": "guide + ground final f875db19",
-   "272dd6e9-25ce-4503-b405-285364ec6c28": "guide + ground final f875db19"
+  "tip1_sprat_topdown": {
+    "status": "delivered",
+    "guide_media": "8f60901d-7d0d-43b4-aee7-b8a3eda5695e (FP3D_U guide_lined @ a9b1ae0)",
+    "jobs": {
+      "049dfdab-0fdc-47e7-8e7d-c0edd003ce8a": "guide only",
+      "d020b5f2-f16d-4640-9626-5b5e081e2e71": "guide + ground final f875db19",
+      "272dd6e9-25ce-4503-b405-285364ec6c28": "guide + ground final f875db19"
+    },
+    "pre_check": "FP3D_U guide overlaid on the client's sheet 32.png (identical to source/floorplan_first.png): walls, columns, doors, fixtures aligned",
+    "void": "double-height living shown open to below (no first floor there), living visible one storey down",
+    "final": "1e6bfbc5 (quality edit of 049dfdab with ground final f875db19 as style ref) -> 4K upscale d33b825c + background locked to #ECE8E0",
+    "gate": {
+      "049dfdab": "pass 1.0/0.016, accurate but flat",
+      "d020b5f2": "pass, void living muddy",
+      "272dd6e9": "pass, void living muddy",
+      "1e6bfbc5": "pass 0.967/0.015 - selected",
+      "0aa0398d": "FAIL: north wall + bed3 facet wall lost"
+    },
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/37439df9-0848-419a-9796-b551b8a155a4.zip"
   },
-  "pre_check": "FP3D_U guide overlaid on the client's sheet 32.png (identical to source/floorplan_first.png): walls, columns, doors, fixtures aligned",
-  "void": "double-height living shown open to below (no first floor there), living visible one storey down",
-  "final": "1e6bfbc5 (quality edit of 049dfdab with ground final f875db19 as style ref) -> 4K upscale d33b825c + background locked to #ECE8E0",
-  "gate": {
-   "049dfdab": "pass 1.0/0.016, accurate but flat",
-   "d020b5f2": "pass, void living muddy",
-   "272dd6e9": "pass, void living muddy",
-   "1e6bfbc5": "pass 0.967/0.015 - selected",
-   "0aa0398d": "FAIL: north wall + bed3 facet wall lost"
+  "tip1_sprat_topdown_v2": {
+    "status": "delivered",
+    "client_feedback": "stair did not read as rising to this floor; floor must be cut around the stair as on the 2D plan",
+    "fix": "engine/depth_shade.py height-shaded guide (da8f2b9e) + targeted edit of 1e6bfbc5 limited to the stair strip",
+    "candidates": {
+      "9e828817": "selected: straight flight + winders at the south, open arrival at the north, UOG.1-3 correct, void south of UOG.3",
+      "87eb3f57": "UOG.3 too far north",
+      "b7fc3d7b": "odd box under the winders"
+    },
+    "check": "mean pixel diff vs approved v1 outside the stair strip 6.1 (edge re-render only), inside 29.2",
+    "final": "9e828817 -> 4K upscale 0690932f + background locked to #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f34a75b7-33f5-4d7e-aff6-1b141415d0f3.zip"
   },
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/37439df9-0848-419a-9796-b551b8a155a4.zip"
- },
- "tip1_sprat_topdown_v2": {
-  "status": "delivered",
-  "client_feedback": "stair did not read as rising to this floor; floor must be cut around the stair as on the 2D plan",
-  "fix": "engine/depth_shade.py height-shaded guide (da8f2b9e) + targeted edit of 1e6bfbc5 limited to the stair strip",
-  "candidates": {
-   "9e828817": "selected: straight flight + winders at the south, open arrival at the north, UOG.1-3 correct, void south of UOG.3",
-   "87eb3f57": "UOG.3 too far north",
-   "b7fc3d7b": "odd box under the winders"
+  "tip2_suteren_topdown": {
+    "status": "delivered",
+    "model": "plans/tip2-suteren (new digitization, overlay check plan_check.png)",
+    "guide_media": "25633f31 (FP3D_T @ fa68b1d)",
+    "candidates": {
+      "67b28883": "selected: clear stair, all rooms; basins missing",
+      "1c6de589": "stair rendered as a flat panel",
+      "00ac39cb": "stair missing"
+    },
+    "gate": "all three pass (0.999-1.0, drift 0.005-0.018)",
+    "edit": "a8cdf080: basins added to both bathrooms (diff outside 4.3)",
+    "final": "a8cdf080 -> 4K upscale e2e163ec + background locked to #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/85f43b6b-5335-4d54-884d-337c0ac1336c.zip"
   },
-  "check": "mean pixel diff vs approved v1 outside the stair strip 6.1 (edge re-render only), inside 29.2",
-  "final": "9e828817 -> 4K upscale 0690932f + background locked to #ECE8E0",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f34a75b7-33f5-4d7e-aff6-1b141415d0f3.zip"
- },
- "tip2_suteren_topdown": {
-  "status": "delivered",
-  "model": "plans/tip2-suteren (new digitization, overlay check plan_check.png)",
-  "guide_media": "25633f31 (FP3D_T @ fa68b1d)",
-  "candidates": {
-   "67b28883": "selected: clear stair, all rooms; basins missing",
-   "1c6de589": "stair rendered as a flat panel",
-   "00ac39cb": "stair missing"
+  "tip2_prizemlje_topdown": {
+    "status": "delivered",
+    "model": "plans/tip2-prizemlje (new digitization, split level, overlay plan_check.png)",
+    "guide_media": "6609db36 (FP3D_P @ 7168b39)",
+    "candidates": {
+      "8eda1ec1": "pass 0.939; headboard drawn on the wrong (north) side",
+      "7e2487d7": "pass 0.931/0.026 - selected",
+      "ca4b8e21": "pass 1.0 but dining table rotated 90 deg (rejected by eye)"
+    },
+    "edit": "4e23173d: invented side table between the armchairs removed (diff outside 3.3)",
+    "final": "4e23173d -> 4K upscale 80471711 + background locked to #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/a787637a-d8e1-416c-b587-683eaa52f5ed.zip"
   },
-  "gate": "all three pass (0.999-1.0, drift 0.005-0.018)",
-  "edit": "a8cdf080: basins added to both bathrooms (diff outside 4.3)",
-  "final": "a8cdf080 -> 4K upscale e2e163ec + background locked to #ECE8E0",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/85f43b6b-5335-4d54-884d-337c0ac1336c.zip"
- },
- "tip2_prizemlje_topdown": {
-  "status": "delivered",
-  "model": "plans/tip2-prizemlje (new digitization, split level, overlay plan_check.png)",
-  "guide_media": "6609db36 (FP3D_P @ 7168b39)",
-  "candidates": {
-   "8eda1ec1": "pass 0.939; headboard drawn on the wrong (north) side",
-   "7e2487d7": "pass 0.931/0.026 - selected",
-   "ca4b8e21": "pass 1.0 but dining table rotated 90 deg (rejected by eye)"
+  "tip3_suteren_topdown": {
+    "status": "delivered",
+    "guide_media": "0954c722 (FP3D_S3 @ 085472a)",
+    "candidates": {
+      "f4aaa683": "pass",
+      "c5b2e53e": "pass",
+      "1eba2330": "pass, sharpest - selected"
+    },
+    "edit": "14721886: pampas crosses removed (diff 3.5)",
+    "final": "14721886 -> 4K 7d543a7d (first upscale f1b3ba21 failed) + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/2c938a1c-9490-44a1-ae77-a9bf21b1729b.zip"
   },
-  "edit": "4e23173d: invented side table between the armchairs removed (diff outside 3.3)",
-  "final": "4e23173d -> 4K upscale 80471711 + background locked to #ECE8E0",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/a787637a-d8e1-416c-b587-683eaa52f5ed.zip"
- },
- "tip3_suteren_topdown": {
-  "status": "delivered",
-  "guide_media": "0954c722 (FP3D_S3 @ 085472a)",
-  "candidates": {
-   "f4aaa683": "pass",
-   "c5b2e53e": "pass",
-   "1eba2330": "pass, sharpest - selected"
+  "tip3_prizemlje_topdown": {
+    "status": "delivered",
+    "guide_media": "1e454775 (FP3D_P3 @ 085472a)",
+    "model_change": "stair corrected: descends east to the souterrain (was modelled rising to an assumed 1st floor)",
+    "candidates": {
+      "15cb2430": "pass 0.959 - selected (correct sedan, jacuzzi with water)",
+      "0f192431": "pass",
+      "2d1cd5c3": "pass but SUV instead of the S-Class"
+    },
+    "final": "15cb2430 -> 4K 53187530 + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/c82e617a-ce2f-4e59-a4b6-c2a8b3de985a.zip"
   },
-  "edit": "14721886: pampas crosses removed (diff 3.5)",
-  "final": "14721886 -> 4K 7d543a7d (first upscale f1b3ba21 failed) + bg #ECE8E0",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/2c938a1c-9490-44a1-ae77-a9bf21b1729b.zip"
- },
- "tip3_prizemlje_topdown": {
-  "status": "delivered",
-  "guide_media": "1e454775 (FP3D_P3 @ 085472a)",
-  "model_change": "stair corrected: descends east to the souterrain (was modelled rising to an assumed 1st floor)",
-  "candidates": {
-   "15cb2430": "pass 0.959 - selected (correct sedan, jacuzzi with water)",
-   "0f192431": "pass",
-   "2d1cd5c3": "pass but SUV instead of the S-Class"
+  "tip4_podrum_topdown": {
+    "guide_media": "f1483f8e (FP3D_B4 @ 17e41b8)",
+    "candidates": {
+      "ab0a02c9": "generation failed",
+      "1da192b1": "pass 1.0 - selected: car nose north as drawn, washer/dryer on the west wall",
+      "93c78d37": "pass 1.0 but car nose south (drawn north), laundry machines on the south wall"
+    },
+    "edit": "b0b792d7: car -> CLE Coupe nose north, laundry exactly 2 machines (mean diff 4.37)",
+    "final": "b0b792d7 -> 4K 870ce5af (3 upscale failures before) + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/c8ca658e-5416-4bb9-98f6-c3b09e97c30c.zip",
+    "status": "delivered"
   },
-  "final": "15cb2430 -> 4K 53187530 + bg #ECE8E0",
-  "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/c82e617a-ce2f-4e59-a4b6-c2a8b3de985a.zip"
- }
+  "tip4_prizemlje_topdown": {
+    "guide_media": "06fc6deb (FP3D_G4 @ 17e41b8)",
+    "candidates": {
+      "1d50a386": "pass 1.0",
+      "a04b98a7": "selected (QA download error only; by-eye check vs plan: kitchen run, island + 3 stools, table + 6 chairs, GKPL box, L-sofa, 2 coffee tables, 2 armchairs, TV east, bed head north, L wardrobe all correct)",
+      "a84062c3": "pass 1.0"
+    },
+    "final": "a04b98a7 -> 4K b73a456d (2 upscale failures before) + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/524d8f01-df51-4dd0-9220-29ccfcecfc8e.zip",
+    "status": "delivered"
+  },
+  "tip4_sprat_topdown": {
+    "guide_media": "de055ec3 (FP3D_F4 @ 17e41b8)",
+    "candidates": {
+      "5cb91505": "pass 1.0, stair not depth-graded, pouf instead of olive tree",
+      "76f043a6": "pass 0.984, stair not depth-graded",
+      "81903766": "pass 1.0 - selected: stair graded going down, void + entrance void read as open to below; invented plant by the sofa"
+    },
+    "edit": "d4e9cf35: removed invented plant at the sofa NE end (mean diff 5.18)",
+    "final": "d4e9cf35 -> 4K c917c8a0 + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/9c4236b9-dff6-4fde-9acb-ec3900c4861d.zip",
+    "status": "delivered"
+  }
 }
