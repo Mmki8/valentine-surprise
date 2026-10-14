@@ -279,8 +279,9 @@ CAR += [
 ]
 for i, u in enumerate((98, 409)):
     for s_, y, o in (("l", SY0, -1), ("r", SY1, +1)):
-        D.append(DSK(f"D_carS_tyre{i}{s_}", "car_tyre", SXR + u, y + o * 2, 36, 36, 24, "y"))
-        D.append(DSK(f"D_carS_wheel{i}{s_}", "car_wheel", SXR + u, y + o * 14, 36, 26, 1.2, "y"))
+        # tyres tucked under the body (outer face 4 cm inside the body line): from straight above no wheel may stick out
+        D.append(DSK(f"D_carS_tyre{i}{s_}", "car_tyre", SXR + u, y - o * 16, 36, 36, 24, "y"))
+        D.append(DSK(f"D_carS_wheel{i}{s_}", "car_wheel", SXR + u, y - o * 4.6, 36, 26, 1.2, "y"))
 
 # ======================================================================== SITE (golden-hour garden at garden level)
 G = -15
