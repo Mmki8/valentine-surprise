@@ -6281,6 +6281,93 @@
      132
     ]
    ]
+  },
+  {
+   "id": "T_F_carS",
+   "kind": "car",
+   "alt": true,
+   "shape": "prism",
+   "axis": "y",
+   "y0": 110.1,
+   "y1": 302.1,
+   "room": "T_R_garage",
+   "group": null,
+   "poly": [
+    [
+     80.8,
+     25
+    ],
+    [
+     75.8,
+     60
+    ],
+    [
+     77.8,
+     95
+    ],
+    [
+     85.8,
+     105
+    ],
+    [
+     175.8,
+     110
+    ],
+    [
+     275.8,
+     148
+    ],
+    [
+     395.8,
+     150
+    ],
+    [
+     480.8,
+     112
+    ],
+    [
+     580.8,
+     100
+    ],
+    [
+     593.8,
+     75
+    ],
+    [
+     591.8,
+     30
+    ]
+   ],
+   "note": "black Mercedes-Benz S-Class saloon, nose-in (east) as drawn"
+  },
+  {
+   "id": "T_F_carS_glass",
+   "kind": "car_glass",
+   "alt": true,
+   "shape": "prism",
+   "axis": "y",
+   "y0": 120.1,
+   "y1": 292.1,
+   "room": "T_R_garage",
+   "group": null,
+   "poly": [
+    [
+     185.8,
+     112
+    ],
+    [
+     275.8,
+     144
+    ],
+    [
+     395.8,
+     146
+    ],
+    [
+     473.8,
+     113
+    ]
+   ]
   }
  ],
  "design": [
@@ -10114,6 +10201,118 @@
    "r": 38,
    "t": 16,
    "axis": "x",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_tyre0l",
+   "shape": "disc",
+   "mat": "car_tyre",
+   "center": [
+    173.8,
+    108.1,
+    36
+   ],
+   "r": 36,
+   "t": 24,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_wheel0l",
+   "shape": "disc",
+   "mat": "car_wheel",
+   "center": [
+    173.8,
+    96.1,
+    36
+   ],
+   "r": 26,
+   "t": 1.2,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_tyre0r",
+   "shape": "disc",
+   "mat": "car_tyre",
+   "center": [
+    173.8,
+    304.1,
+    36
+   ],
+   "r": 36,
+   "t": 24,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_wheel0r",
+   "shape": "disc",
+   "mat": "car_wheel",
+   "center": [
+    173.8,
+    316.1,
+    36
+   ],
+   "r": 26,
+   "t": 1.2,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_tyre1l",
+   "shape": "disc",
+   "mat": "car_tyre",
+   "center": [
+    484.8,
+    108.1,
+    36
+   ],
+   "r": 36,
+   "t": 24,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_wheel1l",
+   "shape": "disc",
+   "mat": "car_wheel",
+   "center": [
+    484.8,
+    96.1,
+    36
+   ],
+   "r": 26,
+   "t": 1.2,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_tyre1r",
+   "shape": "disc",
+   "mat": "car_tyre",
+   "center": [
+    484.8,
+    304.1,
+    36
+   ],
+   "r": 36,
+   "t": 24,
+   "axis": "y",
+   "kind": "decor"
+  },
+  {
+   "id": "D_carS_wheel1r",
+   "shape": "disc",
+   "mat": "car_wheel",
+   "center": [
+    484.8,
+    316.1,
+    36
+   ],
+   "r": 26,
+   "t": 1.2,
+   "axis": "y",
    "kind": "decor"
   },
   {

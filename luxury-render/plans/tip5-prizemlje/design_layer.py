@@ -260,6 +260,28 @@ for i, u in enumerate((82, 372)):
         D.append(DSK(f"D_car_wheel{i}{s}", "car_wheel", CXR + u, y + o * 13.6, 40, 28, 1.2, "y"))
 D.append(DSK("D_car_spare", "car_tyre", CXR - 8, (CY0 + CY1) / 2, 112, 38, 16, "x"))
 
+# ALTERNATIVE CAR (opts.car_alt, used by the 3D floor plans): black Mercedes-Benz S-Class saloon (W223), 518 x 192 cm,
+# same drawn centre, nose EAST as drawn
+SXR = X(386) - 259
+SY0, SY1 = Y(340) - 96, Y(340) + 96
+
+
+def sprof(pts):
+    return [[round(SXR + u, 1), round(z, 1)] for u, z in pts]
+
+
+CAR += [
+    dict(id="T_F_carS", kind="car", alt=True, shape="prism", axis="y", y0=SY0, y1=SY1, room="T_R_garage", group=None,
+         poly=sprof([(5, 25), (0, 60), (2, 95), (10, 105), (100, 110), (200, 148), (320, 150), (405, 112), (505, 100),
+                     (518, 75), (516, 30)]), note="black Mercedes-Benz S-Class saloon, nose-in (east) as drawn"),
+    dict(id="T_F_carS_glass", kind="car_glass", alt=True, shape="prism", axis="y", y0=SY0 + 10, y1=SY1 - 10, room="T_R_garage",
+         group=None, poly=sprof([(110, 112), (200, 144), (320, 146), (398, 113)])),
+]
+for i, u in enumerate((98, 409)):
+    for s_, y, o in (("l", SY0, -1), ("r", SY1, +1)):
+        D.append(DSK(f"D_carS_tyre{i}{s_}", "car_tyre", SXR + u, y + o * 2, 36, 36, 24, "y"))
+        D.append(DSK(f"D_carS_wheel{i}{s_}", "car_wheel", SXR + u, y + o * 14, 36, 26, 1.2, "y"))
+
 # ======================================================================== SITE (golden-hour garden at garden level)
 G = -15
 SITE = [

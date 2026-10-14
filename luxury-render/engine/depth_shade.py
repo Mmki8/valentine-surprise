@@ -34,6 +34,7 @@ def top(d):
 
 
 ztop = {d["id"]: top(d) for d in plan["furniture"] + plan["design"]}
+rfloor = {r["id"]: r.get("floor", 0) for r in plan["rooms"]}
 
 
 def factor(e):
@@ -43,9 +44,9 @@ def factor(e):
     if FZ <= 0:                                      # lowest level: grade the stair only, the rest stays as rendered
         return LOW + (1 - LOW) * min(ztop.get(i) or 0, TOP) / TOP if k == "stair" else 1.0
     if i.startswith(("U_", "FLOOR_U_")) or i.endswith("_cap"): return 1.0
-    if k == "floor": return LOW
+    if k == "floor": return 1.0 if rfloor.get(i[6:], 0) >= FZ - 10 else LOW   # FLOOR_<room>: by the room's own level
     if i == "F_stair_balustrade": return 0.8
-    if i.startswith("F_stair_"):
+    if i.startswith("F_stair_") or k == "stair":
         return LOW + (1 - LOW) * min(ztop.get(i) or 0, FZ) / FZ
     if k in ("wall", "frame"): return 0.6               # side faces of walls seen down the void
     z = ztop.get(i)

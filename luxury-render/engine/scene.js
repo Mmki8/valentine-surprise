@@ -245,7 +245,7 @@ export function buildScene(plan, opts = {}, ds) {
 
   // ---------------------------------------------------------- furniture
   for (const f of plan.furniture) {
-    if ((f.kind === 'car' || f.kind === 'car_glass') && opts.car === false) continue;
+    if ((f.kind === 'car' || f.kind === 'car_glass') && (opts.car === false || !!f.alt !== !!opts.car_alt)) continue;   // alt = second car model, only with opts.car_alt
     const col = KIND_MAT(f);
     if (f.shape === 'prism') {          // extruded polygon: axis z = plan polygon (x,y) raised z0..z0+h; axis x = (y,z) polygon, x0..x1
       const sh = new THREE.Shape(f.poly.map(([u, v]) => new THREE.Vector2(u, v)));
@@ -357,6 +357,8 @@ export function buildScene(plan, opts = {}, ds) {
   // ---------------------------------------------------------- design layer (fixed decor + fittings)
   for (const d of (plan.design || [])) {
     if (opts.car === false && d.id.startsWith('D_car_')) continue;   // tyres, wheels, spare of a modelled car
+    if ((opts.car === false || !opts.car_alt) && d.id.startsWith('D_carS_')) continue;   // wheels of the alternative car
+    if (opts.car_alt && d.id.startsWith('D_car_')) continue;
     if (CUT && (d.kind === 'exterior' || d.id.startsWith('EXT_'))) continue;   // cutaway: the house alone on the flat ground
     if (CUT && opts.hide_prefix && opts.hide_prefix.some(p => d.id.startsWith(p))) continue;   // e.g. balconies outside the walls
     if (CUT && opts.hide_mat && opts.hide_mat.includes(d.mat)) continue;   // e.g. pampas, which reads as stray crosses from above
