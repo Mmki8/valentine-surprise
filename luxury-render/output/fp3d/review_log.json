@@ -164,9 +164,10 @@
       "3f1708aa": "selected: cooktop south as drawn, S-Class nose east, all rooms as drawn"
     },
     "edit": "6c2a6950: stair given individual treads rising west (mean diff 6.02)",
-    "final": "6c2a6950 -> 4K 918d7120 + bg #ECE8E0",
-    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/ae6872de-48e1-4cc2-8156-a204e9103920.zip",
-    "status": "delivered"
+    "final": "bd0e3e56 -> 4K 3393041b + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/7b32c644-8a01-4640-9a89-d3619843407e.zip",
+    "status": "delivered",
+    "client_fix_1": "client: left-side (north) wheels of the S-Class stuck out of the body. Model fixed (tyres tucked under the body, 1bd481e); image edit bd0e3e56 on 6c2a6950 (mean diff 5.3), all 4 wheels tucked, rest unchanged"
   },
   "tip5_sprat_topdown": {
     "guide_media": "2558897c (FP3D_F5 @ c9ab557)",
