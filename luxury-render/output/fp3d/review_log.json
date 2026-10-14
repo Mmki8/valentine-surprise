@@ -153,5 +153,32 @@
     "final": "d4e9cf35 -> 4K c917c8a0 + bg #ECE8E0",
     "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/9c4236b9-dff6-4fde-9acb-ec3900c4861d.zip",
     "status": "delivered"
+  },
+  "tip5_prizemlje_topdown": {
+    "guide_media": "00eeb953 (FP3D_G5 @ c9ab557)",
+    "car": "black Mercedes S-Class saloon (client request; interior renders keep the G 63), nose east as drawn",
+    "floors": "garage + utility honed dark grey stone; bath + ensuite honed dark charcoal stone; spa dark Pietra Grey; sauna walnut; hall/kitchen/living/dining honed Emperador brown marble; bedroom wide-plank dark smoked walnut (all from the type 5 render prompts)",
+    "candidates": {
+      "20528b7f": "cooktop at the north end of the island (drawn south)",
+      "52a0c592": "island without cooktop",
+      "3f1708aa": "selected: cooktop south as drawn, S-Class nose east, all rooms as drawn"
+    },
+    "edit": "6c2a6950: stair given individual treads rising west (mean diff 6.02)",
+    "final": "6c2a6950 -> 4K 918d7120 + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/ae6872de-48e1-4cc2-8156-a204e9103920.zip",
+    "status": "delivered"
+  },
+  "tip5_sprat_topdown": {
+    "guide_media": "2558897c (FP3D_F5 @ c9ab557)",
+    "floors": "bedroom 1 + landing/gallery smoked oak herringbone; bedroom 2 + master wide-plank dark smoked walnut; all baths honed dark charcoal stone; void shows the Emperador living below",
+    "candidates": {
+      "5531c73e": "selected: all rooms as drawn, void reads open",
+      "ca9e8c51": "stair drawn as a flat slab",
+      "2835c55d": "glass sheet over the void"
+    },
+    "edit": "a353dc69: stair graded to read as descending east (mean diff 5.89)",
+    "final": "a353dc69 -> 4K c0c27998 + bg #ECE8E0",
+    "delivery": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/fedb1d03-e1d7-49a4-ba98-2ba1df1d0438.zip",
+    "status": "delivered"
   }
 }
