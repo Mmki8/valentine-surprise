@@ -165,6 +165,94 @@
    "hfov": 104,
    "shift_y": 0.02,
    "notes": "This ensuite is 70 % DARK: near-black Nero Marquina marble walls, dark stone floor, dark ceiling; ONLY the shower back wall and the vanity top are the warm cream marble (the light details). Ambient, intimate lighting from the ceiling cove, the backlit mirror, under the vanity and the niche, plus a little warm daylight from the small window - moody and luxurious, not bright."
+  },
+  {
+   "id": "FP3D_G4",
+   "room": "G_R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - straight top-down (north up)",
+   "pos": [
+    595,
+    530,
+    30000
+   ],
+   "look": [
+    595,
+    530,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.3,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true,
+      "cut": 290,
+      "no_upper": true,
+      "hide_mat": [
+       "pampas"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "FP3D_G4L",
+   "room": "G_R_living",
+   "space": "fp3d",
+   "title": "3D floor plan - straight top-down (north up)",
+   "pos": [
+    595,
+    530,
+    30310
+   ],
+   "look": [
+    595,
+    530,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.3,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true,
+      "cut": 290,
+      "no_upper": true,
+      "hide_mat": [
+       "pampas"
+      ]
+     }
+    }
+   ]
   }
  ]
 }

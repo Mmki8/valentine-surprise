@@ -154,6 +154,54 @@
    "hfov": 84,
    "shift_y": -0.18,
    "notes": "The floor is OPEN over the stair (right, behind the frameless glass balustrade) and over the entrance beyond the second glass balustrade: you look DOWN to the ground-floor hall 3.1 m below - the walnut stair, the honed brown marble floor and the front door; the tall glazing above the front door lights the double-height space."
+  },
+  {
+   "id": "FP3D_F4",
+   "room": "F_R_hall",
+   "space": "fp3d",
+   "title": "3D floor plan - straight top-down (north up)",
+   "pos": [
+    595,
+    530,
+    30000
+   ],
+   "look": [
+    595,
+    530,
+    0
+   ],
+   "up": [
+    0,
+    -1,
+    0
+   ],
+   "hfov": 4.3,
+   "shift_y": 0,
+   "near": 25000,
+   "far": 35000,
+   "variants": [
+    {
+     "suffix": "",
+     "opts": {
+      "bg": "#ece8e0",
+      "cap": "cut_cap",
+      "glass_cap": "cut_glass",
+      "open_doors": true,
+      "no_ceiling_lights": true,
+      "no_ceiling_items": true,
+      "no_headers": true,
+      "cut": 300,
+      "hide_prefix": [
+       "D_balc_",
+       "D_gf_",
+       "D_entr_pend"
+      ],
+      "hide_mat": [
+       "pampas"
+      ]
+     }
+    }
+   ]
   }
  ]
 }
