@@ -108,16 +108,16 @@ D.append(B("D_liv_bronze", "bronze_panels", X(828), TVF + 1.2, X(1172), TVF + 3.
 for x in (X(914), X(1000), X(1086)):
     D.append(B(f"D_liv_bronze_rv{int(x)}", "reveal_dark", x - 0.7, TVF + 3.0, x + 0.7, TVF + 3.4, 0, H, kind="panel"))
 D.append(B("D_liv_bronze_rh", "reveal_dark", X(828), TVF + 3.0, X(1172), TVF + 3.4, 139.3, 140.7, kind="panel"))
-D.append(B("D_liv_rug", "rug_sand", X(838), Y(780), X(1112), Y(1000), 0, 1.2))
+D.append(B("D_liv_rug", "rug_sand", X(892), Y(735), X(1128), Y(1000), 0, 1.2))
 # cushions along the sofa back (sofa faces south) + one on the chaise
-for i, (x, m) in enumerate([(870, "cushion_cognac"), (915, "cushion_navy"), (975, "cushion_cognac"), (1020, "cushion_navy")]):
-    D.append(B(f"D_liv_cush{i}", m, X(x), Y(792), X(x) + 44, Y(792) + 12, 42, 82))
-D.append(B("D_liv_cush4", "cushion_cognac", X(852), Y(880), X(852) + 12, Y(880) + 44, 42, 82))
-D.append(B("D_liv_books", "books_neutral", X(952), Y(895), X(952) + 30, Y(895) + 22, 34, 40))
-D.append(C("D_liv_bowl", "ceramic_dark", X(1010), Y(930), 13, 40, 47))
-branches("D_liv_vase", X(970), Y(920), 34, h=24, r=7, reach=0.4, w=2.5)
+for i, (x, m) in enumerate([(927, "cushion_cognac"), (972, "cushion_navy"), (1032, "cushion_cognac"), (1072, "cushion_navy")]):
+    D.append(B(f"D_liv_cush{i}", m, X(x), Y(747), X(x) + 44, Y(747) + 12, 42, 82))
+D.append(B("D_liv_cush4", "cushion_cognac", X(909), Y(835), X(909) + 12, Y(835) + 44, 42, 82))
+D.append(B("D_liv_books", "books_neutral", X(992), Y(855), X(992) + 30, Y(855) + 22, 34, 40))
+D.append(C("D_liv_bowl", "ceramic_dark", X(1050), Y(890), 13, 40, 47))
+branches("D_liv_vase", X(1008), Y(882), 34, h=24, r=7, reach=0.4, w=2.5)
 # TV floor stand (client reference: slim black screen on one dark post, light oak + linen soundbar, rectangular base)
-TX, TY = X(955.5), Y(1021.5)
+TX, TY = X(1011.5), Y(1021.5)
 D.append(B("D_tvs_base", "black_metal", TX - 45, TY - 4, TX + 45, TY + 36, 0, 3, kind="panel"))
 D.append(B("D_tvs_post", "black_metal", TX - 3, TY + 3, TX + 3, TY + 8, 0, 64, kind="panel"))
 D.append(B("D_tvs_bar", "oak_planks_light", TX - 62, TY - 6, TX + 62, TY + 3, 48, 60, kind="panel"))

@@ -5,17 +5,17 @@
   "space": "living",
   "title": "Living - from the bronze TV wall over the sofa group to the east glass and the terrace",
   "pos": [
-   888.9,
-   829.8,
+   760,
+   870,
    150
   ],
   "look": [
-   1311.7,
-   1142.3
+   1182.8000000000002,
+   1182.5
   ],
   "hfov": 98,
   "shift_y": 0.03,
-  "notes": "The L-sofa faces EAST towards the two armchairs. Through the east glass: the raised limestone terrace in warm golden light - teak outdoor sofa and low table, a potted olive tree, frameless glass railing - and the garden beyond; through the south glass a frameless glass railing and the garden below.",
+  "notes": "The L-sofa faces EAST towards the two armchairs. Through the east glass: the raised limestone terrace in warm golden light - teak outdoor sofa and low table, a potted olive tree, frameless glass railing - and the garden beyond; through the south glass a frameless glass railing and the garden below. | 2026-10-15 client revision: pulled back 1.3 m west + 0.4 m off the bronze wall (was [888.9, 829.8]) so the new painting on the bronze wall reads; same look direction",
   "W": 1600,
   "H": 900,
   "projection": [
@@ -37,21 +37,21 @@
    0
   ],
   "view": [
-   -0.5943857130525102,
+   -0.59438571305251,
    0,
-   -0.8041800943315239,
+   -0.8041800943315245,
    0,
    0,
    1,
    0,
    0,
-   0.8041800943315239,
+   0.8041800943315245,
    0,
-   -0.5943857130525102,
+   -0.59438571305251,
    0,
-   -138.95918194392218,
+   -247.9035401485187,
    -150,
-   1208.0569505422648,
+   1128.2924420476422,
    1
   ]
  },
