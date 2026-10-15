@@ -79,6 +79,45 @@
       "KIT_A": "8d5bd60d -> 4K 4cf3552f"
     },
     "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/3f65b554-1f21-4441-be0f-2b656e0ac078.zip",
-    "open": "the delivered type 3 ground-floor 3D floor plan (FP3D_P3) still shows the old living layout"
+    "open": "the delivered type 3 ground-floor 3D floor plan (FP3D_P3) still shows the old living layout",
+    "client_round_2": {
+      "feedback": "Long part of the round-corner sofa must face out through the windows, standing in front of the painting (rotate 180 deg); first image had no painting on the left wall; fix all views.",
+      "fix": "Model: sofa long side moved against the bronze painting wall (backrest to wall, seats facing the south glass), chaise at west end. LIV_A camera pulled back from [888.9,829.8] to [760,870] so the painting reads on the left wall. Stopped chaining from old same-camera renders.",
+      "finals": {
+        "01_Living_sofa_group_and_terrace": {
+          "gen": "9a6c808b-3bf0-48d1-a67e-d535fa31fae6",
+          "upscale_4k": "2cc184c0-5301-463d-8acc-7ae9a74a48dd",
+          "rejected": [
+            "62629e97-257b-4c16-b9cc-b660dab96059",
+            "20243a85-7731-4d88-a34b-3e1c16192df0"
+          ]
+        },
+        "02_Living_to_kitchen_and_dining": {
+          "gen": "9667f55c-0dcd-4652-83bb-98e05197b3b2",
+          "upscale_4k": "c144123d-2bad-43e1-b4d6-466b3ff0a55d",
+          "refs": "guide 29a34a50 + LIV_A 9a6c808b + TV stand 3fd15c67",
+          "rejected": [
+            "ff17f956-cf53-43cd-93d3-3dc7a2f35ffc (TV seen edge-on, framing drift)"
+          ]
+        },
+        "03_Kitchen_and_dining_south_view": {
+          "gen": "aa4e9269-6b0c-43ec-9d46-52326fa5b093",
+          "upscale_4k": "22a514dd-c553-4d69-8359-9011b10f0b7f",
+          "refs": "guide fa373302 + LIV_A 9a6c808b + TV stand 3fd15c67",
+          "rejected": [
+            "1db43d29, 95aaa77c: painting wall leaked from IMAGE 2 over the east glass - prompt now states the bronze wall is out of view",
+            "2e110a52",
+            "078f2916"
+          ]
+        }
+      },
+      "qa": "Painting on the bronze wall in 01 and 02; sofa long part under the painting facing the glass in 01/02; TV only on the floor stand by the south glass; east glass + terrace intact at frame left in 03; verticals straight.",
+      "delivery": {
+        "zip": "Tip3_Prizemlje_living_rev2.zip",
+        "media_id": "13403c34-55c7-4212-9b84-53b05edc9bbf",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/13403c34-55c7-4212-9b84-53b05edc9bbf.zip",
+        "verified": "206"
+      }
+    }
   }
 }
