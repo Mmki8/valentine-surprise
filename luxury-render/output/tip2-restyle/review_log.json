@@ -276,6 +276,16 @@
       "L2": "bb236621 -> 4K 0eac3b6f (full-height glazing)",
       "L3": "88d33b5c -> 4K 0fa62654"
     },
-    "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/479d1cf0-a38e-4721-897c-09e8bbd9ff9a.zip"
+    "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/479d1cf0-a38e-4721-897c-09e8bbd9ff9a.zip",
+    "client_round_2": {
+      "feedback": "L1: walls not flat/straight, round-corner sofa not straight, window bottom frame missing; L2: fluted walnut wall panel missing (as in L1/L3); L3 perfect",
+      "fix": "L1 regenerated from the original L1 with architecture locked (plumb walls, all glazing frames incl. bottom frame) and a strictly rectilinear sofa: 4 candidates, bfd36b73 chosen (sofa straight, armchairs as original, LED lines plumb at full res); L2: walnut fluted panel + 2 vertical LED lines added on the far part of the left (east) wall behind the sofa, painting kept on the plaster part, 8438b177 chosen (330048ac rejected: walnut wrapped onto the back wall, not seen in other views)",
+      "final": {
+        "L1": "bfd36b73 -> 4K e3fd1ee9",
+        "L2": "8438b177 -> 4K 24f02491 (1 upscale failure)",
+        "L3": "unchanged 0fa62654"
+      },
+      "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/5726e489-5695-4114-904d-cd544fab565b.zip"
+    }
   }
 }
