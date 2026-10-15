@@ -1,270 +1,281 @@
 {
- "task": "Type 2 restyle of the existing Drive renders (ProGarden/Renderi/Tip 2) - same cameras, furniture, windows; new woody/darker luxury design; raised flat walnut ceiling over living+kitchen; matte black G-Wagon; golden hour with a slightly elevated view on the ground floor",
- "method": "each original as IMAGE 1 (geometry), an approved render as IMAGE 2 (materials only); living/kitchen chained to the approved type-2 L1/K1; gate = structural-edge recall vs the original (qa/restyle_check.py) + vision",
- "sources": "ground floor: originals from Drive (JPEG 2048); suteren: the Drive originals are 7-8 MB and the Drive connector cannot return them -> the 10 tiles of _contact_sheet.jpg (600 px) were used as the layout source",
- "missing": "prizemlje 08_B1_bedroom.png (6.6 MB, over the connector limit) - not re-rendered",
- "rejected": [
-  "L1 first two attempts (ceiling not raised)",
-  "L2 / L3 round 1 (ceiling barely raised)",
-  "L3 variant b (plain TV wall, inconsistent with L1)"
- ],
- "final": [
-  {
-   "label": "P01_L1",
-   "src": "refs/tip2_src_jpg/prizemlje_01_L1_living_hero.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_183908_79de42b4-b46d-4fe2-b7a3-33b200883a6f.png",
-   "job_id": "79de42b4-b46d-4fe2-b7a3-33b200883a6f",
-   "ts": "183908",
-   "name": "prizemlje_01_L1_living_hero",
-   "floor": "Prizemlje",
-   "out": "01_L1_living_hero.png",
-   "edge_recall": 0.765
+  "task": "Type 2 restyle of the existing Drive renders (ProGarden/Renderi/Tip 2) - same cameras, furniture, windows; new woody/darker luxury design; raised flat walnut ceiling over living+kitchen; matte black G-Wagon; golden hour with a slightly elevated view on the ground floor",
+  "method": "each original as IMAGE 1 (geometry), an approved render as IMAGE 2 (materials only); living/kitchen chained to the approved type-2 L1/K1; gate = structural-edge recall vs the original (qa/restyle_check.py) + vision",
+  "sources": "ground floor: originals from Drive (JPEG 2048); suteren: the Drive originals are 7-8 MB and the Drive connector cannot return them -> the 10 tiles of _contact_sheet.jpg (600 px) were used as the layout source",
+  "missing": "prizemlje 08_B1_bedroom.png (6.6 MB, over the connector limit) - not re-rendered",
+  "rejected": [
+    "L1 first two attempts (ceiling not raised)",
+    "L2 / L3 round 1 (ceiling barely raised)",
+    "L3 variant b (plain TV wall, inconsistent with L1)"
+  ],
+  "final": [
+    {
+      "label": "P01_L1",
+      "src": "refs/tip2_src_jpg/prizemlje_01_L1_living_hero.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_183908_79de42b4-b46d-4fe2-b7a3-33b200883a6f.png",
+      "job_id": "79de42b4-b46d-4fe2-b7a3-33b200883a6f",
+      "ts": "183908",
+      "name": "prizemlje_01_L1_living_hero",
+      "floor": "Prizemlje",
+      "out": "01_L1_living_hero.png",
+      "edge_recall": 0.765
+    },
+    {
+      "label": "P02_L2",
+      "src": "refs/tip2_src_jpg/prizemlje_02_L2_living_from_kitchen.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184531_b472c5fd-2863-41a8-8b80-96845193a3a0.png",
+      "job_id": "b472c5fd-2863-41a8-8b80-96845193a3a0",
+      "ts": "184531",
+      "name": "prizemlje_02_L2_living_from_kitchen",
+      "floor": "Prizemlje",
+      "out": "02_L2_living_from_kitchen.png",
+      "edge_recall": 0.914
+    },
+    {
+      "label": "P03_L3",
+      "src": "refs/tip2_src_jpg/prizemlje_03_L3_living_lounge.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184531_de09deed-a634-4d42-b991-a276082c6769.png",
+      "job_id": "de09deed-a634-4d42-b991-a276082c6769",
+      "ts": "184531",
+      "name": "prizemlje_03_L3_living_lounge",
+      "floor": "Prizemlje",
+      "out": "03_L3_living_lounge.png",
+      "edge_recall": 0.734
+    },
+    {
+      "label": "P04_K1",
+      "src": "refs/tip2_src_jpg/prizemlje_04_K1_kitchen_dining.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_183909_04a7f9ea-f997-4220-a13c-dc89d2762b1d.png",
+      "job_id": "04a7f9ea-f997-4220-a13c-dc89d2762b1d",
+      "ts": "183909",
+      "name": "prizemlje_04_K1_kitchen_dining",
+      "floor": "Prizemlje",
+      "out": "04_K1_kitchen_dining.png",
+      "edge_recall": 0.982
+    },
+    {
+      "label": "P06_H3",
+      "src": "refs/tip2_src_jpg/prizemlje_06_H3_entry_steps_down.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_f9d64f77-3746-4372-b2bc-11022c96970c.png",
+      "job_id": "f9d64f77-3746-4372-b2bc-11022c96970c",
+      "ts": "184116",
+      "name": "prizemlje_06_H3_entry_steps_down",
+      "floor": "Prizemlje",
+      "out": "06_H3_entry_steps_down.png",
+      "edge_recall": 0.911
+    },
+    {
+      "label": "P07_H2",
+      "src": "refs/tip2_src_jpg/prizemlje_07_H2_entry_front_door.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184118_da4e7399-9753-43f9-b876-b30aaa84eebc.png",
+      "job_id": "da4e7399-9753-43f9-b876-b30aaa84eebc",
+      "ts": "184118",
+      "name": "prizemlje_07_H2_entry_front_door",
+      "floor": "Prizemlje",
+      "out": "07_H2_entry_front_door.png",
+      "edge_recall": 0.979
+    },
+    {
+      "label": "P09_B2",
+      "src": "refs/tip2_src_jpg/prizemlje_09_B2_bedroom_wardrobe.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184115_b8428baf-92fa-42ae-859e-3d0f0225ccc3.png",
+      "job_id": "b8428baf-92fa-42ae-859e-3d0f0225ccc3",
+      "ts": "184115",
+      "name": "prizemlje_09_B2_bedroom_wardrobe",
+      "floor": "Prizemlje",
+      "out": "09_B2_bedroom_wardrobe.png",
+      "edge_recall": 0.923
+    },
+    {
+      "label": "P10_BA1",
+      "src": "refs/tip2_src_jpg/prizemlje_10_BA1_ensuite.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184117_4a1c8184-71b7-4935-9427-04a95bf104eb.png",
+      "job_id": "4a1c8184-71b7-4935-9427-04a95bf104eb",
+      "ts": "184117",
+      "name": "prizemlje_10_BA1_ensuite",
+      "floor": "Prizemlje",
+      "out": "10_BA1_ensuite.png",
+      "edge_recall": 0.857
+    },
+    {
+      "label": "P11_WC1",
+      "src": "refs/tip2_src_jpg/prizemlje_11_WC1_guest_wc.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184115_317bd7ed-7bfe-47f6-9c82-7ff200bdff61.png",
+      "job_id": "317bd7ed-7bfe-47f6-9c82-7ff200bdff61",
+      "ts": "184115",
+      "name": "prizemlje_11_WC1_guest_wc",
+      "floor": "Prizemlje",
+      "out": "11_WC1_guest_wc.png",
+      "edge_recall": 0.989
+    },
+    {
+      "label": "P12_G1",
+      "src": "refs/tip2_src_jpg/prizemlje_12_G1_garage_with_car.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_6de892cb-95ec-42a0-83e6-2ad7edfe668e.png",
+      "job_id": "6de892cb-95ec-42a0-83e6-2ad7edfe668e",
+      "ts": "184116",
+      "name": "prizemlje_12_G1_garage_with_car",
+      "floor": "Prizemlje",
+      "out": "12_G1_garage_with_car.png",
+      "edge_recall": 0.743
+    },
+    {
+      "label": "P13_G2",
+      "src": "refs/tip2_src_jpg/prizemlje_13_G2_garage_empty.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_154b55cc-97c5-4f95-8ff8-7054c2479a04.png",
+      "job_id": "154b55cc-97c5-4f95-8ff8-7054c2479a04",
+      "ts": "184116",
+      "name": "prizemlje_13_G2_garage_empty",
+      "floor": "Prizemlje",
+      "out": "13_G2_garage_empty.png",
+      "edge_recall": 0.938
+    },
+    {
+      "label": "P14_G3",
+      "src": "refs/tip2_src_jpg/prizemlje_14_G3_garage_with_car_2.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_a6d49a47-7816-48a2-a0f8-0a80c6022571.png",
+      "job_id": "a6d49a47-7816-48a2-a0f8-0a80c6022571",
+      "ts": "184116",
+      "name": "prizemlje_14_G3_garage_with_car_2",
+      "floor": "Prizemlje",
+      "out": "14_G3_garage_with_car_2.png",
+      "edge_recall": 0.908
+    },
+    {
+      "label": "P15_G4",
+      "src": "refs/tip2_src_jpg/prizemlje_15_G4_garage_empty_2.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_6dbe0f5c-4bab-4794-ac51-7360f21b2687.png",
+      "job_id": "6dbe0f5c-4bab-4794-ac51-7360f21b2687",
+      "ts": "184116",
+      "name": "prizemlje_15_G4_garage_empty_2",
+      "floor": "Prizemlje",
+      "out": "15_G4_garage_empty_2.png",
+      "edge_recall": 0.978
+    },
+    {
+      "label": "S01_B1",
+      "src": "refs/tip2_src_jpg/suteren_01_B1_west_suite_hero.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_399e67d5-0b17-4a78-9e15-d2ffa8da1449.png",
+      "job_id": "399e67d5-0b17-4a78-9e15-d2ffa8da1449",
+      "ts": "184241",
+      "name": "suteren_01_B1_west_suite_hero",
+      "floor": "Suteren",
+      "out": "01_B1_west_suite_hero.png",
+      "edge_recall": 0.883
+    },
+    {
+      "label": "S02_B2",
+      "src": "refs/tip2_src_jpg/suteren_02_B2_west_suite_garden_view.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_0c3dcc85-f780-46fc-9d53-2c734bdf39bd.png",
+      "job_id": "0c3dcc85-f780-46fc-9d53-2c734bdf39bd",
+      "ts": "184242",
+      "name": "suteren_02_B2_west_suite_garden_view",
+      "floor": "Suteren",
+      "out": "02_B2_west_suite_garden_view.png",
+      "edge_recall": 0.829
+    },
+    {
+      "label": "S03_B3",
+      "src": "refs/tip2_src_jpg/suteren_03_B3_west_suite_dressing_aisle.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_bc874d94-8744-49df-8383-1f787ef38c24.png",
+      "job_id": "bc874d94-8744-49df-8383-1f787ef38c24",
+      "ts": "184241",
+      "name": "suteren_03_B3_west_suite_dressing_aisle",
+      "floor": "Suteren",
+      "out": "03_B3_west_suite_dressing_aisle.png",
+      "edge_recall": 0.977
+    },
+    {
+      "label": "S04_B4",
+      "src": "refs/tip2_src_jpg/suteren_04_B4_west_ensuite_bathroom.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184240_4dba7562-7842-4e75-b7d4-6adbeeade72f.png",
+      "job_id": "4dba7562-7842-4e75-b7d4-6adbeeade72f",
+      "ts": "184240",
+      "name": "suteren_04_B4_west_ensuite_bathroom",
+      "floor": "Suteren",
+      "out": "04_B4_west_ensuite_bathroom.png",
+      "edge_recall": 0.783
+    },
+    {
+      "label": "S05_E1",
+      "src": "refs/tip2_src_jpg/suteren_05_E1_east_suite_hero.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184243_b342d502-f466-44bd-a361-3bf23d76a0de.png",
+      "job_id": "b342d502-f466-44bd-a361-3bf23d76a0de",
+      "ts": "184243",
+      "name": "suteren_05_E1_east_suite_hero",
+      "floor": "Suteren",
+      "out": "05_E1_east_suite_hero.png",
+      "edge_recall": 0.708
+    },
+    {
+      "label": "S06_E2",
+      "src": "refs/tip2_src_jpg/suteren_06_E2_east_ensuite_bathroom.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_cfdedeb1-1b71-4a86-b127-1f86afbfdf0a.png",
+      "job_id": "cfdedeb1-1b71-4a86-b127-1f86afbfdf0a",
+      "ts": "184242",
+      "name": "suteren_06_E2_east_ensuite_bathroom",
+      "floor": "Suteren",
+      "out": "06_E2_east_ensuite_bathroom.png",
+      "edge_recall": 0.879
+    },
+    {
+      "label": "S07_W1",
+      "src": "refs/tip2_src_jpg/suteren_07_W1_wellness_spa_hero.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_65378d54-e20f-4535-a71b-d3dc7d1d8ad4.png",
+      "job_id": "65378d54-e20f-4535-a71b-d3dc7d1d8ad4",
+      "ts": "184241",
+      "name": "suteren_07_W1_wellness_spa_hero",
+      "floor": "Suteren",
+      "out": "07_W1_wellness_spa_hero.png",
+      "edge_recall": 0.925
+    },
+    {
+      "label": "S08_W3",
+      "src": "refs/tip2_src_jpg/suteren_08_W3_wellness_sauna_shower.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_13275e61-2baa-42a6-9830-7b4688cfe55b.png",
+      "job_id": "13275e61-2baa-42a6-9830-7b4688cfe55b",
+      "ts": "184242",
+      "name": "suteren_08_W3_wellness_sauna_shower",
+      "floor": "Suteren",
+      "out": "08_W3_wellness_sauna_shower.png",
+      "edge_recall": 0.936
+    },
+    {
+      "label": "S09_C1",
+      "src": "refs/tip2_src_jpg/suteren_09_C1_gallery_corridor.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184240_7f7fdb7d-14cf-4b8d-84b8-4d53ab0bafab.png",
+      "job_id": "7f7fdb7d-14cf-4b8d-84b8-4d53ab0bafab",
+      "ts": "184240",
+      "name": "suteren_09_C1_gallery_corridor",
+      "floor": "Suteren",
+      "out": "09_C1_gallery_corridor.png",
+      "edge_recall": 0.976
+    },
+    {
+      "label": "S10_C2",
+      "src": "refs/tip2_src_jpg/suteren_10_C2_staircase.jpg",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184244_d4a3a027-b118-486e-9b45-5accdf7c18f7.png",
+      "job_id": "d4a3a027-b118-486e-9b45-5accdf7c18f7",
+      "ts": "184244",
+      "name": "suteren_10_C2_staircase",
+      "floor": "Suteren",
+      "out": "10_C2_staircase.png",
+      "edge_recall": 0.807
+    }
+  ],
+  "zips": {
+    "prizemlje": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/17f712e3-3b73-4195-94b9-e667a1ef3e53.zip",
+    "suteren": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f97a46d5-8920-4c7f-a03b-b826158abc0c.zip"
   },
-  {
-   "label": "P02_L2",
-   "src": "refs/tip2_src_jpg/prizemlje_02_L2_living_from_kitchen.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184531_b472c5fd-2863-41a8-8b80-96845193a3a0.png",
-   "job_id": "b472c5fd-2863-41a8-8b80-96845193a3a0",
-   "ts": "184531",
-   "name": "prizemlje_02_L2_living_from_kitchen",
-   "floor": "Prizemlje",
-   "out": "02_L2_living_from_kitchen.png",
-   "edge_recall": 0.914
-  },
-  {
-   "label": "P03_L3",
-   "src": "refs/tip2_src_jpg/prizemlje_03_L3_living_lounge.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184531_de09deed-a634-4d42-b991-a276082c6769.png",
-   "job_id": "de09deed-a634-4d42-b991-a276082c6769",
-   "ts": "184531",
-   "name": "prizemlje_03_L3_living_lounge",
-   "floor": "Prizemlje",
-   "out": "03_L3_living_lounge.png",
-   "edge_recall": 0.734
-  },
-  {
-   "label": "P04_K1",
-   "src": "refs/tip2_src_jpg/prizemlje_04_K1_kitchen_dining.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_183909_04a7f9ea-f997-4220-a13c-dc89d2762b1d.png",
-   "job_id": "04a7f9ea-f997-4220-a13c-dc89d2762b1d",
-   "ts": "183909",
-   "name": "prizemlje_04_K1_kitchen_dining",
-   "floor": "Prizemlje",
-   "out": "04_K1_kitchen_dining.png",
-   "edge_recall": 0.982
-  },
-  {
-   "label": "P06_H3",
-   "src": "refs/tip2_src_jpg/prizemlje_06_H3_entry_steps_down.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_f9d64f77-3746-4372-b2bc-11022c96970c.png",
-   "job_id": "f9d64f77-3746-4372-b2bc-11022c96970c",
-   "ts": "184116",
-   "name": "prizemlje_06_H3_entry_steps_down",
-   "floor": "Prizemlje",
-   "out": "06_H3_entry_steps_down.png",
-   "edge_recall": 0.911
-  },
-  {
-   "label": "P07_H2",
-   "src": "refs/tip2_src_jpg/prizemlje_07_H2_entry_front_door.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184118_da4e7399-9753-43f9-b876-b30aaa84eebc.png",
-   "job_id": "da4e7399-9753-43f9-b876-b30aaa84eebc",
-   "ts": "184118",
-   "name": "prizemlje_07_H2_entry_front_door",
-   "floor": "Prizemlje",
-   "out": "07_H2_entry_front_door.png",
-   "edge_recall": 0.979
-  },
-  {
-   "label": "P09_B2",
-   "src": "refs/tip2_src_jpg/prizemlje_09_B2_bedroom_wardrobe.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184115_b8428baf-92fa-42ae-859e-3d0f0225ccc3.png",
-   "job_id": "b8428baf-92fa-42ae-859e-3d0f0225ccc3",
-   "ts": "184115",
-   "name": "prizemlje_09_B2_bedroom_wardrobe",
-   "floor": "Prizemlje",
-   "out": "09_B2_bedroom_wardrobe.png",
-   "edge_recall": 0.923
-  },
-  {
-   "label": "P10_BA1",
-   "src": "refs/tip2_src_jpg/prizemlje_10_BA1_ensuite.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184117_4a1c8184-71b7-4935-9427-04a95bf104eb.png",
-   "job_id": "4a1c8184-71b7-4935-9427-04a95bf104eb",
-   "ts": "184117",
-   "name": "prizemlje_10_BA1_ensuite",
-   "floor": "Prizemlje",
-   "out": "10_BA1_ensuite.png",
-   "edge_recall": 0.857
-  },
-  {
-   "label": "P11_WC1",
-   "src": "refs/tip2_src_jpg/prizemlje_11_WC1_guest_wc.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184115_317bd7ed-7bfe-47f6-9c82-7ff200bdff61.png",
-   "job_id": "317bd7ed-7bfe-47f6-9c82-7ff200bdff61",
-   "ts": "184115",
-   "name": "prizemlje_11_WC1_guest_wc",
-   "floor": "Prizemlje",
-   "out": "11_WC1_guest_wc.png",
-   "edge_recall": 0.989
-  },
-  {
-   "label": "P12_G1",
-   "src": "refs/tip2_src_jpg/prizemlje_12_G1_garage_with_car.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_6de892cb-95ec-42a0-83e6-2ad7edfe668e.png",
-   "job_id": "6de892cb-95ec-42a0-83e6-2ad7edfe668e",
-   "ts": "184116",
-   "name": "prizemlje_12_G1_garage_with_car",
-   "floor": "Prizemlje",
-   "out": "12_G1_garage_with_car.png",
-   "edge_recall": 0.743
-  },
-  {
-   "label": "P13_G2",
-   "src": "refs/tip2_src_jpg/prizemlje_13_G2_garage_empty.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_154b55cc-97c5-4f95-8ff8-7054c2479a04.png",
-   "job_id": "154b55cc-97c5-4f95-8ff8-7054c2479a04",
-   "ts": "184116",
-   "name": "prizemlje_13_G2_garage_empty",
-   "floor": "Prizemlje",
-   "out": "13_G2_garage_empty.png",
-   "edge_recall": 0.938
-  },
-  {
-   "label": "P14_G3",
-   "src": "refs/tip2_src_jpg/prizemlje_14_G3_garage_with_car_2.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_a6d49a47-7816-48a2-a0f8-0a80c6022571.png",
-   "job_id": "a6d49a47-7816-48a2-a0f8-0a80c6022571",
-   "ts": "184116",
-   "name": "prizemlje_14_G3_garage_with_car_2",
-   "floor": "Prizemlje",
-   "out": "14_G3_garage_with_car_2.png",
-   "edge_recall": 0.908
-  },
-  {
-   "label": "P15_G4",
-   "src": "refs/tip2_src_jpg/prizemlje_15_G4_garage_empty_2.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184116_6dbe0f5c-4bab-4794-ac51-7360f21b2687.png",
-   "job_id": "6dbe0f5c-4bab-4794-ac51-7360f21b2687",
-   "ts": "184116",
-   "name": "prizemlje_15_G4_garage_empty_2",
-   "floor": "Prizemlje",
-   "out": "15_G4_garage_empty_2.png",
-   "edge_recall": 0.978
-  },
-  {
-   "label": "S01_B1",
-   "src": "refs/tip2_src_jpg/suteren_01_B1_west_suite_hero.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_399e67d5-0b17-4a78-9e15-d2ffa8da1449.png",
-   "job_id": "399e67d5-0b17-4a78-9e15-d2ffa8da1449",
-   "ts": "184241",
-   "name": "suteren_01_B1_west_suite_hero",
-   "floor": "Suteren",
-   "out": "01_B1_west_suite_hero.png",
-   "edge_recall": 0.883
-  },
-  {
-   "label": "S02_B2",
-   "src": "refs/tip2_src_jpg/suteren_02_B2_west_suite_garden_view.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_0c3dcc85-f780-46fc-9d53-2c734bdf39bd.png",
-   "job_id": "0c3dcc85-f780-46fc-9d53-2c734bdf39bd",
-   "ts": "184242",
-   "name": "suteren_02_B2_west_suite_garden_view",
-   "floor": "Suteren",
-   "out": "02_B2_west_suite_garden_view.png",
-   "edge_recall": 0.829
-  },
-  {
-   "label": "S03_B3",
-   "src": "refs/tip2_src_jpg/suteren_03_B3_west_suite_dressing_aisle.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_bc874d94-8744-49df-8383-1f787ef38c24.png",
-   "job_id": "bc874d94-8744-49df-8383-1f787ef38c24",
-   "ts": "184241",
-   "name": "suteren_03_B3_west_suite_dressing_aisle",
-   "floor": "Suteren",
-   "out": "03_B3_west_suite_dressing_aisle.png",
-   "edge_recall": 0.977
-  },
-  {
-   "label": "S04_B4",
-   "src": "refs/tip2_src_jpg/suteren_04_B4_west_ensuite_bathroom.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184240_4dba7562-7842-4e75-b7d4-6adbeeade72f.png",
-   "job_id": "4dba7562-7842-4e75-b7d4-6adbeeade72f",
-   "ts": "184240",
-   "name": "suteren_04_B4_west_ensuite_bathroom",
-   "floor": "Suteren",
-   "out": "04_B4_west_ensuite_bathroom.png",
-   "edge_recall": 0.783
-  },
-  {
-   "label": "S05_E1",
-   "src": "refs/tip2_src_jpg/suteren_05_E1_east_suite_hero.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184243_b342d502-f466-44bd-a361-3bf23d76a0de.png",
-   "job_id": "b342d502-f466-44bd-a361-3bf23d76a0de",
-   "ts": "184243",
-   "name": "suteren_05_E1_east_suite_hero",
-   "floor": "Suteren",
-   "out": "05_E1_east_suite_hero.png",
-   "edge_recall": 0.708
-  },
-  {
-   "label": "S06_E2",
-   "src": "refs/tip2_src_jpg/suteren_06_E2_east_ensuite_bathroom.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_cfdedeb1-1b71-4a86-b127-1f86afbfdf0a.png",
-   "job_id": "cfdedeb1-1b71-4a86-b127-1f86afbfdf0a",
-   "ts": "184242",
-   "name": "suteren_06_E2_east_ensuite_bathroom",
-   "floor": "Suteren",
-   "out": "06_E2_east_ensuite_bathroom.png",
-   "edge_recall": 0.879
-  },
-  {
-   "label": "S07_W1",
-   "src": "refs/tip2_src_jpg/suteren_07_W1_wellness_spa_hero.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184241_65378d54-e20f-4535-a71b-d3dc7d1d8ad4.png",
-   "job_id": "65378d54-e20f-4535-a71b-d3dc7d1d8ad4",
-   "ts": "184241",
-   "name": "suteren_07_W1_wellness_spa_hero",
-   "floor": "Suteren",
-   "out": "07_W1_wellness_spa_hero.png",
-   "edge_recall": 0.925
-  },
-  {
-   "label": "S08_W3",
-   "src": "refs/tip2_src_jpg/suteren_08_W3_wellness_sauna_shower.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184242_13275e61-2baa-42a6-9830-7b4688cfe55b.png",
-   "job_id": "13275e61-2baa-42a6-9830-7b4688cfe55b",
-   "ts": "184242",
-   "name": "suteren_08_W3_wellness_sauna_shower",
-   "floor": "Suteren",
-   "out": "08_W3_wellness_sauna_shower.png",
-   "edge_recall": 0.936
-  },
-  {
-   "label": "S09_C1",
-   "src": "refs/tip2_src_jpg/suteren_09_C1_gallery_corridor.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184240_7f7fdb7d-14cf-4b8d-84b8-4d53ab0bafab.png",
-   "job_id": "7f7fdb7d-14cf-4b8d-84b8-4d53ab0bafab",
-   "ts": "184240",
-   "name": "suteren_09_C1_gallery_corridor",
-   "floor": "Suteren",
-   "out": "09_C1_gallery_corridor.png",
-   "edge_recall": 0.976
-  },
-  {
-   "label": "S10_C2",
-   "src": "refs/tip2_src_jpg/suteren_10_C2_staircase.jpg",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/hf_20261012_184244_d4a3a027-b118-486e-9b45-5accdf7c18f7.png",
-   "job_id": "d4a3a027-b118-486e-9b45-5accdf7c18f7",
-   "ts": "184244",
-   "name": "suteren_10_C2_staircase",
-   "floor": "Suteren",
-   "out": "10_C2_staircase.png",
-   "edge_recall": 0.807
+  "revision_living_2026_10_15": {
+    "client": "sofa must face the windows (rotate the living 180 deg); TV next to the windows on a freestanding floor stand (refs/tip2_living_rev/tv_floor_stand.png); L2: the glazing left of the column must reach the ceiling (remove the wall above); same on all angles",
+    "interpretation": "a literal 180 deg turn would face the sofa to the kitchen (it faced south to the armchairs, TV at its side): sofa turned to face the west glass, back to the fluted walnut wall, chaise at the kitchen end; coffee tables between sofa and glass; TV off the walls onto the floor stand in front of the glass by the columns; armchairs kept at the south end",
+    "method": "L3 edited first (3 candidates, hero), then L1/L2 edited with the new L3 as IMAGE 3 + TV stand as IMAGE 2",
+    "final": {
+      "L1": "0c8e8cf5 -> 4K fe5e3e7e",
+      "L2": "bb236621 -> 4K 0eac3b6f (full-height glazing)",
+      "L3": "88d33b5c -> 4K 0fa62654"
+    },
+    "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/479d1cf0-a38e-4721-897c-09e8bbd9ff9a.zip"
   }
- ],
- "zips": {
-  "prizemlje": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/17f712e3-3b73-4195-94b9-e667a1ef3e53.zip",
-  "suteren": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/f97a46d5-8920-4c7f-a03b-b826158abc0c.zip"
- }
 }
