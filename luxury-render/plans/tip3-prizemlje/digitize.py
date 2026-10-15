@@ -132,15 +132,17 @@ def box(id, kind, px, z0, h, room, facing=None, note=None, group=None, **kw):
                   src_px=list(px), group=group, **kw))
 
 
-# living (drawn: L-sofa facing east + chaise facing north, 2 armchairs facing west, 2 coffee tables, TV unit)
-box("P_F_sofa", "sofa", (870, 757, 939, 978), 0, 78, "P_R_living", "E", "L-sofa, long side (back to the dining)", group="sofa")
-box("P_F_sofa_chaise", "sofa", (939, 908, 1008, 978), 0, 78, "P_R_living", "N", "L-sofa, short leg", group="sofa")
-box("P_F_arm1", "armchair", (1067, 770, 1129, 828), 0, 75, "P_R_living", "W")
-box("P_F_arm2", "armchair", (1067, 850, 1129, 910), 0, 75, "P_R_living", "W")
-box("P_F_ct1", "coffee_table", (964, 825, 1010, 875), 0, 34, "P_R_living")
-box("P_F_ct2", "coffee_table", (996, 797, 1041, 847), 0, 40, "P_R_living")
-box("P_F_tv_unit", "low_cabinet", (955, 670, 1070, 705), 18, 28, "P_R_living", "S", "floating media unit under the TV")
-box("P_F_tv", "tv", (967, 669.5, 1058, 673), 95, 66, "P_R_living", "S", "TV on the bronze wall")
+# living - CLIENT REVISION 2026-10-15: the L-sofa is turned to face the south panorama glazing (plan drawing had it
+# facing east); the TV moves off the bronze wall onto a freestanding floor stand in front of the south glass, facing the
+# sofa; a large painting takes the TV's place on the bronze wall; armchairs stay on the east side (U-shaped group)
+box("P_F_sofa", "sofa", (850, 790, 1060, 859), 0, 78, "P_R_living", "S", "L-sofa, long side, back to the bronze wall, facing the south glass", group="sofa")
+box("P_F_sofa_chaise", "sofa", (850, 859, 919, 928), 0, 78, "P_R_living", "E", "L-sofa, chaise at the west end pointing south", group="sofa")
+box("P_F_arm1", "armchair", (1082, 862, 1142, 920), 0, 75, "P_R_living", "W")
+box("P_F_arm2", "armchair", (1082, 940, 1142, 998), 0, 75, "P_R_living", "W")
+box("P_F_ct1", "coffee_table", (945, 884, 991, 934), 0, 34, "P_R_living")
+box("P_F_ct2", "coffee_table", (987, 904, 1032, 954), 0, 40, "P_R_living")
+box("P_F_tv_unit", "low_cabinet", (955, 670, 1070, 705), 18, 28, "P_R_living", "S", "floating walnut console under the painting")
+box("P_F_tv", "tv", (900, 1020, 1011, 1023), 62, 82, "P_R_living", "N", "TV on a freestanding floor stand in front of the south glass, facing the sofa")
 # round structural column by the south glass (px 808-828, py 1024-1044): modelled in design_layer (straight cylinder)
 # kitchen (single run on the west wall, island with cooktop, dining table joined to the island)
 box("P_F_k_duct", "box", (465, 667, 495, 687), 0, H, "P_R_living", None, "installation duct (2 small squares)")

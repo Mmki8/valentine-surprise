@@ -108,13 +108,19 @@ D.append(B("D_liv_bronze", "bronze_panels", X(828), TVF + 1.2, X(1172), TVF + 3.
 for x in (X(914), X(1000), X(1086)):
     D.append(B(f"D_liv_bronze_rv{int(x)}", "reveal_dark", x - 0.7, TVF + 3.0, x + 0.7, TVF + 3.4, 0, H, kind="panel"))
 D.append(B("D_liv_bronze_rh", "reveal_dark", X(828), TVF + 3.0, X(1172), TVF + 3.4, 139.3, 140.7, kind="panel"))
-D.append(B("D_liv_rug", "rug_sand", X(882), Y(765), X(1108), Y(972), 0, 1.2))
-for i, (y, m) in enumerate([(780, "cushion_cognac"), (815, "cushion_navy"), (860, "cushion_cognac"), (905, "cushion_navy")]):
-    D.append(B(f"D_liv_cush{i}", m, X(886), Y(y), X(886) + 12, Y(y) + 44, 42, 82))
-D.append(B("D_liv_cush4", "cushion_cognac", X(975), Y(963) - 12, X(975) + 44, Y(963), 42, 82))
-D.append(B("D_liv_books", "books_neutral", X(1000), Y(806), X(1000) + 30, Y(806) + 22, 40, 46))
-D.append(C("D_liv_bowl", "ceramic_dark", X(986), Y(850), 13, 34, 41))
-branches("D_liv_vase", X(1026), Y(822), 40, h=24, r=7, reach=0.4, w=2.5)
+D.append(B("D_liv_rug", "rug_sand", X(838), Y(780), X(1112), Y(1000), 0, 1.2))
+# cushions along the sofa back (sofa faces south) + one on the chaise
+for i, (x, m) in enumerate([(870, "cushion_cognac"), (915, "cushion_navy"), (975, "cushion_cognac"), (1020, "cushion_navy")]):
+    D.append(B(f"D_liv_cush{i}", m, X(x), Y(792), X(x) + 44, Y(792) + 12, 42, 82))
+D.append(B("D_liv_cush4", "cushion_cognac", X(852), Y(880), X(852) + 12, Y(880) + 44, 42, 82))
+D.append(B("D_liv_books", "books_neutral", X(952), Y(895), X(952) + 30, Y(895) + 22, 34, 40))
+D.append(C("D_liv_bowl", "ceramic_dark", X(1010), Y(930), 13, 40, 47))
+branches("D_liv_vase", X(970), Y(920), 34, h=24, r=7, reach=0.4, w=2.5)
+# TV floor stand (client reference: slim black screen on one dark post, light oak + linen soundbar, rectangular base)
+TX, TY = X(955.5), Y(1021.5)
+D.append(B("D_tvs_base", "black_metal", TX - 45, TY - 4, TX + 45, TY + 36, 0, 3, kind="panel"))
+D.append(B("D_tvs_post", "black_metal", TX - 3, TY + 3, TX + 3, TY + 8, 0, 64, kind="panel"))
+D.append(B("D_tvs_bar", "oak_planks_light", TX - 62, TY - 6, TX + 62, TY + 3, 48, 60, kind="panel"))
 for i, (y0, y1) in enumerate([(1053 - 7, 1053 - 1)]):
     D.append(B("D_liv_curtain_sw", "sheer_linen", X(466) + 1, Y(y0), X(484), Y(y1), 0, 272))
     D.append(B("D_liv_curtain_se", "sheer_linen", X(1153), Y(y0), X(1172) - 1, Y(y1), 0, 272))
@@ -123,6 +129,8 @@ tree("D_liv_olive", X(1148), Y(692), 0)
 D.append(C("D_liv_column", "column_plaster", X(818), Y(1034), 13, 0, H, kind="panel"))
 # paintings (life): large canvas over the dining (WC-block wall), portrait canvas in the upper hall
 art("D_art_dining", "art_painting_large", TVF, "y", +1, X(684), X(790), 100, 215)
+# big painting on the bronze wall where the TV was (client revision 2026-10-15), over the floating console
+art("D_art_liv", "art_painting_monumental", TVF + 3.0, "y", +1, X(1012) - 115, X(1012) + 115, 80, 235)
 art("D_art_hall", "art_painting_portrait", X(643), "x", -1, Y(574), Y(640), 95, 215)
 
 # ======================================================================== KITCHEN + DINING
