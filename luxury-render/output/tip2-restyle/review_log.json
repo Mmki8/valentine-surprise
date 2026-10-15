@@ -286,6 +286,17 @@
         "L3": "unchanged 0fa62654"
       },
       "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/5726e489-5695-4114-904d-cd544fab565b.zip"
+    },
+    "client_round_3": {
+      "feedback": "L1 only: window bottom frame now right, but the living furniture is not straight - turned more than 180 deg",
+      "diagnosis": "sofa already parallel to the walnut wall in perspective, but the armchairs stood in the right corner at ~45 deg facing the back of the sofa, coffee tables / TV not squared - unlike the approved L3 (armchairs side by side, backs to camera)",
+      "fix": "edit on bfd36b73 (architecture + bottom frame locked) squaring every piece to the room grid as in L3; 4 candidates all orthogonal, ff9a66c4 chosen (symmetric armchairs, straight sofa); bottom frame verified at full res",
+      "final": {
+        "L1": "ff9a66c4 -> 4K bc8a8ca2",
+        "L2": "unchanged 24f02491",
+        "L3": "unchanged 0fa62654"
+      },
+      "zip": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/dbb281cb-8710-4a1c-b90c-3d9418cde6b5.zip"
     }
   }
 }
