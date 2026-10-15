@@ -157,6 +157,27 @@
         "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/4eb0bb47-4a01-405d-b385-beebc0f7b6bd.zip",
         "verified": "206"
       }
+    },
+    "client_round_4": {
+      "feedback": "View 01 (client image 47.webp): remove the column at right (client: not visible in this shot, put a window frame), move the TV a little left, square the armchairs (straight, same line).",
+      "note": "Plan column D_liv_column (plan px 818,1034) does fall inside LIV_A's frustum; removed on client instruction. View 03 still shows it (added in round 3 on client request) - flagged to the client.",
+      "finals": {
+        "01_Living_sofa_group_and_terrace": {
+          "gen": "ee931914-bb28-41e6-8abc-4cd5957f4514 (edit of ea22c71c)",
+          "upscale_4k": "d5df0d48-e9a4-4d9b-9966-3e06dbb112a9",
+          "rejected": [
+            "f776a60c (TV moved less)",
+            "6e111200"
+          ]
+        },
+        "02/03": "unchanged from round 3"
+      },
+      "delivery": {
+        "zip": "Tip3_Prizemlje_living_rev4.zip",
+        "media_id": "e5b6a0ba-3944-4285-98fb-2d530e4f4a9f",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/e5b6a0ba-3944-4285-98fb-2d530e4f4a9f.zip",
+        "verified": "206"
+      }
     }
   }
 }
