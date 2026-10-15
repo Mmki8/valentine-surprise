@@ -118,6 +118,45 @@
         "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/13403c34-55c7-4212-9b84-53b05edc9bbf.zip",
         "verified": "206"
       }
+    },
+    "client_round_3": {
+      "feedback": "Only view 02 has sofa + armchairs right. View 01: armchairs must be in the same place / rotation as 02. View 03: sofa and armchairs wrong, round column from the floor plan missing.",
+      "diagnosis": "01: armchairs drifted ~1.5 m right next to the TV and turned toward the painting wall; the 3D guide has them directly behind the coffee tables in front of the terrace door, facing the camera (west). 03: sofa ~1.5x too large/close vs guide (guide: sofa block left 20% of frame, bottom at 89%); round column D_liv_column (plan px 818,1034) dropped by the generator.",
+      "finals": {
+        "01_Living_sofa_group_and_terrace": {
+          "gen": "ea22c71c-5b39-462c-87da-26d6e4058379 (edit of 9a6c808b with the LIV_A guide as layout ref)",
+          "upscale_4k": "9ffef3bf-9925-42f4-8c39-62d8db4e74ea",
+          "rejected": [
+            "14f40fd9",
+            "2ce641b9",
+            "42fb2e43",
+            "fec4681b (armchairs barely rotated)",
+            "aa0e2f92",
+            "7eafaeb4 (fresh: sofa reshaped, armchairs still facing the wall)",
+            "8429f3b6 (near-identical alt)"
+          ]
+        },
+        "02_Living_to_kitchen_and_dining": {
+          "unchanged": "9667f55c / 4k c144123d (client-approved)"
+        },
+        "03_Kitchen_and_dining_south_view": {
+          "gen": "ac5e6c68-e399-424e-b487-a3a5751e8fd4 (edit of aa4e9269 with the KIT_A guide + view 02 as refs)",
+          "upscale_4k": "dc5fe652-3f61-4c8a-8380-42633deef745",
+          "rejected": [
+            "73641adc",
+            "c5940466",
+            "38838963 (fresh: east glass pulled next to camera, sofa group lost)",
+            "7b751d3b (alt edit, column less clear)"
+          ]
+        }
+      },
+      "lesson": "For furniture fixes in an otherwise approved image, edit the approved render with the colour-coded guide as IMAGE 2 layout reference and state position relative to neighbours (behind the coffee tables, gap to the TV) - pure rotation wording did not move the generator.",
+      "delivery": {
+        "zip": "Tip3_Prizemlje_living_rev3.zip",
+        "media_id": "4eb0bb47-4a01-405d-b385-beebc0f7b6bd",
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D5QRzUWL7jHxR8OISxDp1MS4zQ/4eb0bb47-4a01-405d-b385-beebc0f7b6bd.zip",
+        "verified": "206"
+      }
     }
   }
 }
